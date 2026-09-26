@@ -36,17 +36,15 @@ Week 3 notebook links can be found here:
 https://colab.research.google.com/github/edwardoughton/Agentic-GeoAI/blob/main/03_01_ggs662_route_planning_data_acquisition.ipynb
 https://colab.research.google.com/github/edwardoughton/Agentic-GeoAI/blob/main/03_02_ggs662_agentic_application_route_planning.ipynb 
 
-Week 2 local environment
-========================
+Week 4 notebook links can be found here:
 
-From PowerShell in the repository root:
+https://colab.research.google.com/github/edwardoughton/Agentic-GeoAI/blob/main/04_01_agentic_geoai_applications.ipynb
 
-```powershell
-python -m venv .venv-week2
-.\.venv-week2\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements-week2.txt
-```
+https://colab.research.google.com/github/edwardoughton/Agentic-GeoAI/blob/main/04_02_agentic_geoai_verification_validation.ipynb
 
-In VS Code, open the Week 2 notebook and select the `.venv-week2` Python kernel.
+Local setup: Windows and macOS
+==============================
 
+Follow [Getting started](GETTING_STARTED.md) for short, copy-and-paste commands for **Windows Command Prompt** and **macOS Terminal**. The guide covers creating and reusing one virtual environment, installing `requirements.txt`, selecting the notebook kernel, and common errors.
+
+Use **64-bit Python 3.12** and the same `.venv-agentic-geoai` environment for all course notebooks. The requirements include the Week 2 analysis packages and the Week 3-4 geospatial and routing packages.
