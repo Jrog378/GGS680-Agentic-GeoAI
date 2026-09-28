@@ -42,6 +42,12 @@ https://colab.research.google.com/github/edwardoughton/Agentic-GeoAI/blob/main/0
 
 https://colab.research.google.com/github/edwardoughton/Agentic-GeoAI/blob/main/04_02_agentic_geoai_verification_validation.ipynb
 
+Week 5 notebook links can be found here:
+
+https://colab.research.google.com/github/edwardoughton/Agentic-GeoAI/blob/main/05_01_agentic_geoai_scientific_discovery.ipynb
+
+https://colab.research.google.com/github/edwardoughton/Agentic-GeoAI/blob/main/05_02_multi_agent_geoai_lab.ipynb
+
 Local setup: Windows and macOS
 ==============================
 
