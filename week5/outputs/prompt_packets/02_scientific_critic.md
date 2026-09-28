@@ -51,9 +51,7 @@ Critique the candidate research questions. Recommend the strongest question or r
 
 # 🌍 Broad research problem
 
-Choose or replace this example.
-
-**Example:** How can GeoAI help us understand and anticipate the effects of drought on inland waterway
+How can GeoAI help us understand and anticipate the effects of drought on inland waterway
 transportation and freight-system resilience?
 
 ## Initial boundary conditions

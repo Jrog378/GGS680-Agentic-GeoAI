@@ -46,9 +46,7 @@ Design a GeoAI methodology capable of testing the approved hypothesis.
 
 # 🌍 Broad research problem
 
-Choose or replace this example.
-
-**Example:** How can GeoAI help us understand and anticipate the effects of drought on inland waterway
+How can GeoAI help us understand and anticipate the effects of drought on inland waterway
 transportation and freight-system resilience?
 
 ## Initial boundary conditions
