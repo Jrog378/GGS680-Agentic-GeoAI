@@ -17,7 +17,7 @@ high-consequence decisions, and determine whether conclusions are scientifically
 
 ## Suggested class sequence
 
-1. `05_01_agentic_geoai_scientific_discovery.ipynb`
+1. [05_01_agentic_geoai_scientific_discovery.ipynb](../05_01_agentic_geoai_scientific_discovery.ipynb)
    - conceptual framing;
    - scientific reasoning autonomy versus workflow autonomy;
    - research-question and hypothesis generation;
@@ -25,7 +25,7 @@ high-consequence decisions, and determine whether conclusions are scientifically
    - methodology and evidence planning;
    - validation and human governance.
 
-2. `05_02_multi_agent_geoai_lab.ipynb`
+2. [05_02_multi_agent_geoai_lab.ipynb](../05_02_multi_agent_geoai_lab.ipynb)
    - practical VS Code workflow;
    - inspect agent specifications;
    - generate a research question;
