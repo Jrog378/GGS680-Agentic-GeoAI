@@ -1,0 +1,4 @@
+site_id,claim,lon,lat,source,source_date,provenance,independent_of_osm,observation,supports_claim
+rail_endpoint_connector_3,"No mapped rail line closer than 195 m to the endpoint (connector is new construction, not a missing segment)",39.591099,-4.008849,,,,,,
+rail_endpoint_connector_4,"No mapped rail line closer than 373 m to the endpoint (connector is new construction, not a missing segment)",39.472359,-3.864413,,,,,,
+rail_crossing_1,rail route transfers 891041250 -> 239559205 at grade (no bridge/tunnel separating them),39.54626,-3.993745,,,,,,

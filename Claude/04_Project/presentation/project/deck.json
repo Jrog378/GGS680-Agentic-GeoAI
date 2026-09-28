@@ -1,0 +1,17 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-09-26T20:00:00Z"},
+  "title": "Verifying an Agentic Routing Workflow",
+  "order": ["cover", "framework", "human", "approach", "map", "checks", "caught", "sensitivity", "conclusions", "sources", "supp-divider", "supp-routes", "supp-data", "supp-other", "supp-synthetic", "supp-files"],
+  "sections": {
+    "s1": {"description": "What the routing agent was asked to do and who decides what", "start": "cover"},
+    "s2": {"description": "How the results were checked and what the checks found", "start": "approach"},
+    "s3": {"description": "What I trust, what stays unresolved, sources and AI use", "start": "conclusions"},
+    "s4": {"description": "Supporting detail: full check table, synthetic cases and evidence files", "start": "supp-divider"}
+  },
+  "faces": {
+    "source-serif-4": {"family": "Source Serif 4", "href": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400..700&display=swap"},
+    "ibm-plex-sans": {"family": "IBM Plex Sans", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap"}
+  },
+  "designSystems": []
+}

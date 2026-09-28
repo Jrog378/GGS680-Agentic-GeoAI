@@ -1,0 +1,19 @@
+<section id="conclusions" data-transition="fade" style="background:#F7F6F2; color:#1F2A37; font-family:'IBM Plex Sans', Arial, sans-serif; padding:96px 128px 144px; display:flex; flex-direction:column; gap:28px">
+<div style="display:flex; flex-direction:column; gap:10px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#B45309">Conclusions</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:60px; font-weight:600; line-height:1.1; color:#14213D">What I trust and what stays unresolved</h2>
+</div>
+<table style="font-size:25px; color:#1F2A37; background:#FFFFFF">
+<tr style="background:#E8E4DA"><th style="width:52%">Conclusion</th><th style="width:30%">Label</th><th style="width:18%">Evidence</th></tr>
+<tr><td>Lengths, endpoints, containment and costs are computed correctly</td><td style="color:#0F766E">VERIFIED</td><td>R-*, C-*</td></tr>
+<tr><td>Connectors within limits, counted once; all are endpoint connectors</td><td style="color:#0F766E">VERIFIED</td><td>R-*-conn*</td></tr>
+<tr><td>Power is unavailable because its start is 1,839 m from mapped lines</td><td style="color:#0F766E">VERIFIED (a real line there: UNRESOLVED)</td><td>U-power</td></tr>
+<tr><td>Ranking baseline &lt; roads &lt; rail holds for a 25–250 m gap tolerance</td><td>Not SENSITIVE to this one setting</td><td>S-*</td></tr>
+<tr><td>The rail transfer at the bridge is buildable</td><td style="color:#B91C1C">UNRESOLVED (check failed)</td><td>V-crossings</td></tr>
+<tr><td>Connector sites and the crossing match conditions on the ground</td><td style="color:#B45309">PENDING: imagery</td><td>E-*</td></tr>
+<tr><td>Access rights, permits, feasibility and real costs</td><td style="color:#B91C1C">UNRESOLVED</td><td>none in data</td></tr>
+</table>
+<p style="background:#FDE68A; color:#422006; padding:10px 20px; border-radius:8px; font-size:24px; font-weight:600">TODO: PENDING. Add your imagery screenshots of the 3 sites in external_evidence.csv, rerun week4_audit.py, then relabel the E-* row EXTERNALLY SUPPORTED or UNRESOLVED.</p>
+<p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#5B6573">GGS 662 · Assignment 2 · 9 · Labels follow 04_02 §16; they can overlap</p>
+<aside>About 35 seconds. What I trust: the computations are verified. Every length, endpoint, cost and connector checks out, and the power failure is real under this data. The ranking does not depend on the gap tolerance. What I do not trust yet: the rail route's transfer at the bridge, which failed the crossing check, and whether the connector sites look the way the model assumes, which is pending imagery. [TODO: say what your imagery showed.] And nothing here establishes access rights, permits or real costs. Proximity to a road or railway is not permission to build, and 10 dollars per metre is a classroom value. So the result is verified but not yet validated.</aside>
+</section>

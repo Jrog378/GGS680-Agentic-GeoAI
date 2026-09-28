@@ -1,0 +1,34 @@
+<section id="checks" data-transition="fade" style="background:#F7F6F2; color:#1F2A37; font-family:'IBM Plex Sans', Arial, sans-serif; padding:96px 128px 144px; display:flex; flex-direction:column; gap:28px">
+<div style="display:flex; flex-direction:column; gap:10px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#B45309">Verification evidence</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:60px; font-weight:600; line-height:1.1; color:#14213D">75 reproducible checks, each with expected and observed values</h2>
+</div>
+<div style="display:flex; gap:24px">
+<div style="flex:1; display:flex; flex-direction:column; gap:4px; background:#FFFFFF; padding:20px 28px; border:1px solid #DAD6CC; border-radius:12px">
+<p style="font-family:'Source Serif 4', Georgia, serif; font-size:56px; font-weight:600; color:#0F766E">71</p>
+<p style="font-size:24px; font-weight:600">PASS</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px; background:#FFFFFF; padding:20px 28px; border:1px solid #DAD6CC; border-radius:12px">
+<p style="font-family:'Source Serif 4', Georgia, serif; font-size:56px; font-weight:600; color:#B91C1C">1</p>
+<p style="font-size:24px; font-weight:600">FAIL: 2D crossing at a bridge</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:4px; background:#FFFFFF; padding:20px 28px; border:1px solid #DAD6CC; border-radius:12px">
+<p style="font-family:'Source Serif 4', Georgia, serif; font-size:56px; font-weight:600; color:#B45309">3</p>
+<p style="font-size:24px; font-weight:600">NOT_CHECKED: external evidence</p>
+</div>
+</div>
+<table style="font-size:24px; color:#1F2A37; background:#FFFFFF">
+<tr style="background:#E8E4DA"><th style="width:30%">Category</th><th style="width:10%; text-align:right">PASS</th><th style="width:10%; text-align:right">FAIL</th><th style="width:12%; text-align:right">NOT_CHK</th><th style="width:38%">What it checks</th></tr>
+<tr><td>Provenance and data QA</td><td style="text-align:right">7</td><td style="text-align:right">0</td><td style="text-align:right">0</td><td>counts, CRS, invalid geometry, duplicates</td></tr>
+<tr><td>Comparison table and cost</td><td style="text-align:right">9</td><td style="text-align:right">0</td><td style="text-align:right">0</td><td>4 rows, blanks, length × USD 10/m</td></tr>
+<tr><td>Route geometry and length</td><td style="text-align:right">23</td><td style="text-align:right">0</td><td style="text-align:right">0</td><td>endpoints, continuity, metres, edge sum</td></tr>
+<tr><td>Connectors</td><td style="text-align:right">6</td><td style="text-align:right">0</td><td style="text-align:right">0</td><td>limits, containment, counted once</td></tr>
+<tr><td>Unavailable route (power)</td><td style="text-align:right">1</td><td style="text-align:right">0</td><td style="text-align:right">0</td><td>endpoint distance recomputed</td></tr>
+<tr><td>Synthetic cases</td><td style="text-align:right">20</td><td style="text-align:right">0</td><td style="text-align:right">0</td><td>6 cases × 3 runs, plus 230 m oracle</td></tr>
+<tr><td>Sensitivity</td><td style="text-align:right">5</td><td style="text-align:right">0</td><td style="text-align:right">0</td><td>only the gap setting changed</td></tr>
+<tr><td>Spatial assumption</td><td style="text-align:right">0</td><td style="text-align:right; color:#B91C1C">1</td><td style="text-align:right">0</td><td>transfers only at OSM junctions</td></tr>
+<tr><td>External evidence</td><td style="text-align:right">0</td><td style="text-align:right">0</td><td style="text-align:right; color:#B45309">3</td><td>imagery at flagged sites (pending)</td></tr>
+</table>
+<p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#5B6573">GGS 662 · Assignment 2 · 6 · Full table: validation_table.csv (supporting slides)</p>
+<aside>About 35 seconds. Each check records the method, expected value, observed value, evidence file and a status of PASS, FAIL or NOT_CHECKED; missing evidence is never counted as a pass. 71 pass. The computational checks all pass: exact endpoints, geometry length equal to the traversed-edge sum within one centimetre, lengths in metres (UTM within 0.036 percent of geodesic), costs equal length times 10, and connectors counted exactly once. The synthetic cases cover the five AGENTS.md situations plus a connector-counted-once case, in each of the three runs, and a hand-calculated oracle: 80 plus 120 plus a 30 m gap is 230 m and 2,300 dollars. One check fails and three are not checked, and those are the interesting ones.</aside>
+</section>

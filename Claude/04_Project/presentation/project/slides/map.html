@@ -1,0 +1,20 @@
+<section id="map" data-transition="fade" style="background:#F7F6F2; color:#1F2A37; font-family:'IBM Plex Sans', Arial, sans-serif; padding:64px 128px 64px 96px; display:flex; flex-direction:row; align-items:center; gap:48px">
+<img src="/_blob/0b96cf7bb352c405a041847629f92425" alt="Map of the shortened corridor study rectangle showing the baseline, roads and rail routes, green rings on the four endpoint connectors, and a red cross where the rail route switches onto a bridge-tagged line. OpenStreetMap and Esri attribution at the bottom." style="width:1000px; height:952px; object-fit:contain; background:#FFFFFF; border:1px solid #DAD6CC; border-radius:12px">
+<div style="flex:1; display:flex; flex-direction:column; gap:28px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#B45309">Route map</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:56px; font-weight:600; line-height:1.1; color:#14213D">What the agent built and what it inferred</h2>
+<div style="display:flex; flex-direction:column; gap:8px; border-left:6px solid #15803D; padding:4px 0 4px 24px">
+<h3 style="font-size:30px; font-weight:600; color:#14213D">Green rings: inferred connectors</h3>
+<p style="font-size:26px; line-height:1.35">Roads 0.59 m and 0.72 m; rail 194.8 m and 372.7 m. All four are endpoint connectors, i.e. hypothetical new construction.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:8px; border-left:6px solid #B91C1C; padding:4px 0 4px 24px">
+<h3 style="font-size:30px; font-weight:600; color:#14213D">Red cross: flagged crossing</h3>
+<p style="font-size:26px; line-height:1.35">The rail route switches onto a bridge-tagged line where the two lines share no OSM vertex.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:8px; border-left:6px solid #14213D; padding:4px 0 4px 24px">
+<h3 style="font-size:30px; font-weight:600; color:#14213D">Lengths</h3>
+<p style="font-size:26px; line-height:1.35">Baseline 22,896.8 m; roads 22,897.6 m; rail 25,902.4 m. Power: endpoint_too_far.</p>
+</div>
+</div>
+<aside>About 35 seconds. The grey baseline and the black roads route overlap almost everywhere, less than one metre apart in total length. Purple is the rail route, 3 km longer. The green rings mark every place the model invented geometry: two sub-metre snaps for roads, and 195 and 373 metre links for rail, all endpoint connectors, so they are drawn separately from mapped infrastructure. The red cross, south of the corridor, is where the rail route jumps onto a bridge at a point where the two lines share no node, which is the one failed check. Power has no route: its start point is 1.8 km from any mapped power line. Map data OpenStreetMap contributors; basemap Esri.</aside>
+</section>

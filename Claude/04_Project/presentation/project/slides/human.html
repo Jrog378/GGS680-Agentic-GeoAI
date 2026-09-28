@@ -1,0 +1,20 @@
+<section id="human" data-transition="fade" style="background:#F7F6F2; color:#1F2A37; font-family:'IBM Plex Sans', Arial, sans-serif; padding:112px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#B45309">Human responsibility and feedback</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#14213D">Where the human decides and where the agent revises</h2>
+</div>
+<div style="display:flex; gap:32px">
+<div style="flex:1; display:flex; flex-direction:column; gap:16px; background:#FFFFFF; padding:40px; border:1px solid #DAD6CC; border-top:8px solid #14213D; border-radius:12px">
+<h3 style="font-size:36px; font-weight:600; color:#14213D">Stays with a human</h3>
+<p style="font-size:28px; line-height:1.4">Whether an inferred connector or a 2D crossing is actually buildable, and which corridor to pursue.</p>
+<p style="font-size:28px; line-height:1.4">Access rights, permits and engineering feasibility are not in the data, so the agent cannot establish them.</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:16px; background:#FFFFFF; padding:40px; border:1px solid #DAD6CC; border-top:8px solid #B45309; border-radius:12px">
+<h3 style="font-size:36px; font-weight:600; color:#14213D">Feedback that changes the next action</h3>
+<p style="font-size:28px; line-height:1.4">The audit flags the rail route switching lines at a bridge (−3.99374, 39.54626) with no shared OSM node.</p>
+<p style="font-size:28px; line-height:1.4">If imagery shows the lines are grade-separated: remove that transfer and reroute rail, then report the new length or no_path. Do not raise a threshold to keep the old answer.</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#5B6573">GGS 662 · Assignment 2 · 3</p>
+<aside>About 25 seconds. One decision that must stay human: whether anything the model inferred, meaning a connector or a crossing, can actually be built, and which corridor to pursue. That depends on access rights and engineering, which are not in the data. One piece of feedback that should change the agent's next action: the audit found the rail route switching onto a bridge at a point where the two lines share no OSM node. If imagery confirms the lines are at different levels, the agent should delete that transfer and reroute, accepting a longer route or a no_path result, rather than loosening a threshold.</aside>
+</section>

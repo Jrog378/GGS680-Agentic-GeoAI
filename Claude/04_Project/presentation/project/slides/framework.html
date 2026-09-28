@@ -1,0 +1,34 @@
+<section id="framework" data-transition="fade" style="background:#F7F6F2; color:#1F2A37; font-family:'IBM Plex Sans', Arial, sans-serif; padding:112px 128px 160px; display:flex; flex-direction:column; gap:36px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#B45309">Agent framework (04_01)</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#14213D">Six dimensions of the routing agent</h2>
+</div>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:24px">
+<div style="display:flex; flex-direction:column; gap:10px; background:#FFFFFF; padding:28px; border:1px solid #DAD6CC; border-radius:12px">
+<h3 style="font-size:32px; font-weight:600; color:#14213D">Goal</h3>
+<p style="font-size:26px; line-height:1.35">Compare baseline, roads, power and rail routes between the exact route1_short endpoints; report length and USD 10/m cost.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:10px; background:#FFFFFF; padding:28px; border:1px solid #DAD6CC; border-radius:12px">
+<h3 style="font-size:32px; font-weight:600; color:#14213D">Environment</h3>
+<p style="font-size:26px; line-height:1.35">Saved 03_01 GeoPackages, AGENTS.md rules, a 3,000 m study rectangle, measured in EPSG:32737.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:10px; background:#FFFFFF; padding:28px; border:1px solid #DAD6CC; border-radius:12px">
+<h3 style="font-size:32px; font-weight:600; color:#14213D">Tools</h3>
+<p style="font-size:26px; line-height:1.35">geopandas, shapely, networkx Dijkstra shortest path, pandas; matplotlib and contextily for maps.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:10px; background:#FFFFFF; padding:28px; border:1px solid #DAD6CC; border-radius:12px">
+<h3 style="font-size:32px; font-weight:600; color:#14213D">Agency</h3>
+<p style="font-size:26px; line-height:1.35">Agent cleans, nodes, repairs gaps and routes. Human fixed endpoints, 50 m gap and 500 m endpoint limits, and the rate.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:10px; background:#FFFFFF; padding:28px; border:1px solid #DAD6CC; border-radius:12px">
+<h3 style="font-size:32px; font-weight:600; color:#14213D">Feedback</h3>
+<p style="font-size:26px; line-height:1.35">Stop with endpoint_too_far, no_path or empty_network. A failed check means revise, never relax a threshold.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:10px; background:#FFFFFF; padding:28px; border:1px solid #DAD6CC; border-radius:12px">
+<h3 style="font-size:32px; font-weight:600; color:#14213D">Verification</h3>
+<p style="font-size:26px; line-height:1.35">An independent audit script, synthetic cases and reruns. Real-world claims need imagery or authoritative data.</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#5B6573">GGS 662 · Assignment 2 · 2</p>
+<aside>About 40 seconds. Goal: compare four candidate routes between the exact endpoints of the shortened baseline, with the easterly point as the start, and report length and a classroom cost of 10 dollars per metre. Environment: only the saved 03_01 files and the AGENTS.md rules; no new downloads. Tools: geopandas, shapely and networkx. Agency: the agent chooses how to clean, node, repair and route, but a human set the endpoints, the 50 m gap limit, the 500 m endpoint limit and the rate. Feedback: the agent must stop with a named status rather than invent a route, and a failed check should make it revise, not raise a threshold. Verification: an audit that recomputes everything from the saved files, plus evidence from outside the data for anything about the real world.</aside>
+</section>

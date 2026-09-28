@@ -1,0 +1,16 @@
+\frametitle{Supporting: evidence files, run commands and versions}
+\scriptsize
+\textbf{Run commands} (every argument has a default)
+\begin{itemize}
+\item \tl{python Claude/03_Project/week3_routing.py} $\to$ \tl{outputs/default/}
+\item \verb|python week3_routing.py --gap-tolerance-m 25 --out outputs/sensitivity_gap_25m|
+\item \verb|python week3_routing.py --gap-tolerance-m 250 --out outputs/gap_tolerance_250m|
+\item \tl{python Claude/04_Project/week4_audit.py} $\to$ \tl{outputs/week4_validation/}
+\end{itemize}
+\textbf{Evidence files}
+\begin{itemize}
+\item Each run folder: \tl{route_comparison.csv}, \tl{routes.gpkg}, \tl{connectors.gpkg}, \tl{route_map.png}, \tl{routing_report.md}
+\item \tl{Claude/04_Project/outputs/week4_validation/}: \tl{validation_table.csv}, \tl{validation_report.md}, \tl{validation_map.png}, \tl{inferred_crossings.gpkg}, \tl{external_evidence.csv}
+\end{itemize}
+\textbf{Versions}: Python 3.12.2; geopandas 1.1.4; shapely 2.1.2; pyproj 3.8.0; networkx 3.6.1; pandas 2.3.3.\\[4pt]
+\textbf{Output location}: 04\_02 names \tl{outputs/week3_routing/} and \tl{outputs/week4_validation/} at the repo root; these are kept under \tl{Claude/} so the course repo inputs stay read-only.

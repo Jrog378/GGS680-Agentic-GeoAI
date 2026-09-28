@@ -1,0 +1,49 @@
+<section id="approach" data-transition="fade" style="background:#F7F6F2; color:#1F2A37; font-family:'IBM Plex Sans', Arial, sans-serif; padding:112px 128px 160px; display:flex; flex-direction:column; gap:48px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#B45309">Approach</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#14213D">Checks were designed around the agent, not after it</h2>
+</div>
+<div style="display:flex; align-items:center; gap:12px">
+<div style="flex:1; display:flex; flex-direction:column; gap:8px; background:#FFFFFF; padding:18px; border:1px solid #DAD6CC; border-radius:12px">
+<h3 style="font-size:26px; font-weight:600; color:#14213D">Data QA</h3>
+<p style="font-size:24px; line-height:1.3">counts, CRS, invalid, duplicates</p>
+</div>
+<x-shape kind="arrow-right" style="background:#B45309; width:36px; height:24px"></x-shape>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px; background:#FFFFFF; padding:18px; border:1px solid #DAD6CC; border-radius:12px">
+<h3 style="font-size:26px; font-weight:600; color:#14213D">Routing agent</h3>
+<p style="font-size:24px; line-height:1.3">week3_ routing.py</p>
+</div>
+<x-shape kind="arrow-right" style="background:#B45309; width:36px; height:24px"></x-shape>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px; background:#14213D; padding:18px; border:1px solid #14213D; border-radius:12px">
+<h3 style="font-size:26px; font-weight:600; color:#F7F6F2">Independent audit</h3>
+<p style="font-size:24px; line-height:1.3; color:#C9D3E3">week4_ audit.py, 75 checks</p>
+</div>
+<x-shape kind="arrow-right" style="background:#B45309; width:36px; height:24px"></x-shape>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px; background:#FFFFFF; padding:18px; border:1px solid #DAD6CC; border-radius:12px">
+<h3 style="font-size:26px; font-weight:600; color:#14213D">Sensitivity</h3>
+<p style="font-size:24px; line-height:1.3">gap 25 / 50 / 250 m</p>
+</div>
+<x-shape kind="arrow-right" style="background:#B45309; width:36px; height:24px"></x-shape>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px; background:#FFFFFF; padding:18px; border:1px solid #DAD6CC; border-radius:12px">
+<h3 style="font-size:26px; font-weight:600; color:#14213D">External evidence</h3>
+<p style="font-size:24px; line-height:1.3">imagery at flagged sites</p>
+</div>
+<x-shape kind="arrow-right" style="background:#B45309; width:36px; height:24px"></x-shape>
+<div style="flex:1; display:flex; flex-direction:column; gap:8px; background:#FFFFFF; padding:18px; border:1px solid #DAD6CC; border-radius:12px">
+<h3 style="font-size:26px; font-weight:600; color:#14213D">Human review</h3>
+<p style="font-size:24px; line-height:1.3">labels and decisions</p>
+</div>
+</div>
+<div style="display:flex; gap:32px">
+<div style="flex:1; display:flex; flex-direction:column; gap:12px; border-left:6px solid #0F766E; padding:8px 0 8px 28px">
+<h3 style="font-size:32px; font-weight:600; color:#14213D">Independent of the code</h3>
+<p style="font-size:28px; line-height:1.4">The audit never imports the routing script. It recomputes every value from the saved files and the 03_01 inputs.</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:12px; border-left:6px solid #B45309; padding:8px 0 8px 28px">
+<h3 style="font-size:32px; font-weight:600; color:#14213D">Not independent of the author</h3>
+<p style="font-size:28px; line-height:1.4">The same AI tool wrote both scripts, so the audit verifies computations. Real-world claims need outside evidence.</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#5B6573">GGS 662 · Assignment 2 · 4</p>
+<aside>About 25 seconds. I followed the 04_02 validation stack. Data QA on the inputs, then the routing agent, then a separate audit script that does not import any routing code: it rebuilds every length, cost and connector from the saved files. Then controlled reruns that change only the gap tolerance, then outside evidence at the specific sites the audit flags, and finally a human applies the labels. One honest caveat: the same AI tool wrote both scripts, so the audit is verification of the computations, not independent validation of the world.</aside>
+</section>

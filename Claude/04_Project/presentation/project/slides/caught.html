@@ -1,0 +1,26 @@
+<section id="caught" data-transition="fade" style="background:#F7F6F2; color:#1F2A37; font-family:'IBM Plex Sans', Arial, sans-serif; padding:96px 128px 144px; display:flex; flex-direction:column; gap:32px">
+<div style="display:flex; flex-direction:column; gap:10px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#B45309">Findings</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:60px; font-weight:600; line-height:1.1; color:#14213D">What the checks caught</h2>
+</div>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:24px">
+<div style="display:flex; flex-direction:column; gap:10px; background:#FFFFFF; padding:28px 32px; border:1px solid #DAD6CC; border-left:8px solid #B91C1C; border-radius:12px">
+<h3 style="font-size:30px; font-weight:600; color:#14213D">FAIL: a 2D crossing at a rail bridge</h3>
+<p style="font-size:26px; line-height:1.35">The rail route moves from way 891041250 onto bridge-tagged way 239559205 at (−3.993745, 39.54626). Neither line has a vertex there. This is a modelling assumption, not a proven error, so it needs imagery.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:10px; background:#FFFFFF; padding:28px 32px; border:1px solid #DAD6CC; border-left:8px solid #B45309; border-radius:12px">
+<h3 style="font-size:30px; font-weight:600; color:#14213D">A wrong claim in the Week 3 answers</h3>
+<p style="font-size:26px; line-height:1.35">The write-up said rail used a gap connector. connectors.gpkg shows all four used connectors are endpoint connectors (rail: 194.8 m and 372.7 m). Corrected.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:10px; background:#FFFFFF; padding:28px 32px; border:1px solid #DAD6CC; border-left:8px solid #B45309; border-radius:12px">
+<h3 style="font-size:30px; font-weight:600; color:#14213D">A bug in the agent's own checker</h3>
+<p style="font-size:26px; line-height:1.35">The connector-limit check had 50 m hard-coded, so the 250 m rerun was checked against the wrong limit. It now reads the run's setting.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:10px; background:#FFFFFF; padding:28px 32px; border:1px solid #DAD6CC; border-left:8px solid #0F766E; border-radius:12px">
+<h3 style="font-size:30px; font-weight:600; color:#14213D">A justified failure: power</h3>
+<p style="font-size:26px; line-height:1.35">endpoint_too_far confirmed independently: the start is 1,839.2 m and the end 995.1 m from the nearest mapped power line, against a 500 m limit.</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#5B6573">GGS 662 · Assignment 2 · 7 · Evidence: inferred_crossings.gpkg, connectors.gpkg, validation_table.csv</p>
+<aside>About 45 seconds. Four findings. First, the one failure: the audit looks for places where the route changes from one OSM line to another at a point that is not a shared vertex, which is exactly where the "2D crossings connect" assumption can be wrong. It found one, and it is on a bridge-tagged rail line, so the route may be jumping between two levels. Second, the agent's own Week 3 discussion claimed rail used a gap connector; the saved connectors file shows all four connectors are endpoint connectors, so the prose was wrong even though the numbers were right. Third, the agent's built-in check hard-coded the 50 m limit, which would have silently mis-checked the 250 m rerun. Fourth, a no-route result that is justified: power really is 1.8 km from the start point. A successful run alone would have hidden the first three.</aside>
+</section>

@@ -1,0 +1,24 @@
+<section id="sensitivity" data-transition="fade" style="background:#F7F6F2; color:#1F2A37; font-family:'IBM Plex Sans', Arial, sans-serif; padding:96px 128px 144px; display:flex; flex-direction:column; gap:36px">
+<div style="display:flex; flex-direction:column; gap:10px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#B45309">Sensitivity</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:60px; font-weight:600; line-height:1.1; color:#14213D">Changing only the gap tolerance changes no route outcome</h2>
+</div>
+<table style="font-size:26px; color:#1F2A37; background:#FFFFFF">
+<tr style="background:#E8E4DA"><th style="width:17%">Gap tolerance</th><th style="width:17%">Roads</th><th style="width:19%">Power</th><th style="width:17%">Rail</th><th style="width:12%; text-align:right">Power parts*</th><th style="width:18%">Ranking</th></tr>
+<tr><td>25 m</td><td>ok, 22,897.6 m</td><td>endpoint_too_far</td><td>ok, 25,902.4 m</td><td style="text-align:right">6</td><td>base &lt; roads &lt; rail</td></tr>
+<tr style="background:#F1EEE6"><td>50 m (original)</td><td>ok, 22,897.6 m</td><td>endpoint_too_far</td><td>ok, 25,902.4 m</td><td style="text-align:right">3</td><td>base &lt; roads &lt; rail</td></tr>
+<tr><td>250 m</td><td>ok, 22,897.6 m</td><td>endpoint_too_far</td><td>ok, 25,902.4 m</td><td style="text-align:right">1</td><td>base &lt; roads &lt; rail</td></tr>
+</table>
+<div style="display:flex; gap:32px">
+<div style="flex:1; display:flex; flex-direction:column; gap:10px; border-left:6px solid #14213D; padding:4px 0 4px 24px">
+<h3 style="font-size:30px; font-weight:600; color:#14213D">Why nothing moves</h3>
+<p style="font-size:26px; line-height:1.4">No route uses a gap connector, and power fails on the 1,839 m endpoint distance, which no gap setting can fix. Connector counts and lengths are identical in all three runs.</p>
+</div>
+<div style="flex:1; display:flex; flex-direction:column; gap:10px; border-left:6px solid #B45309; padding:4px 0 4px 24px">
+<h3 style="font-size:30px; font-weight:600; color:#14213D">What this does not show</h3>
+<p style="font-size:26px; line-height:1.4">One setting at three values is not global robustness (Saltelli et al., 2019). A common rate of USD 5, 10 or 20/m scales costs but keeps the same order.</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#5B6573">* Power components after gap repair (9 before). Runs: outputs/sensitivity_gap_25m, default, gap_tolerance_250m</p>
+<aside>About 30 seconds. The controlled rerun changes only the gap tolerance, and the audit confirms nothing else in the settings changed. At 25, 50 and 250 m, every status, length, connector and the ranking are identical. The only thing that responds is the internal fragmentation of the power layer: 9 raw pieces become 6, 3 or 1 connected parts. That tells us the power failure is not a threshold artefact: its start point is 1.8 km from any mapped line. The honest limit: this is a single-parameter rerun, so it cannot show robustness to other assumptions, such as the endpoint limit or the crossing rule.</aside>
+</section>
