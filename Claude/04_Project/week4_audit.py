@@ -601,9 +601,36 @@ def conclusions(table, crossings):
     st = dict(zip(table.check_id, table.status))
     allpass = lambda prefix: all(v == "PASS" for k, v in st.items() if k.startswith(prefix))
     ext = table[table.category == "External evidence"]
-    ext_label = ("EXTERNALLY SUPPORTED" if len(ext) and (ext.status == "PASS").all()
-                 else "UNRESOLVED")
+
+    def ext_label(rows, contradicted):
+        # FAIL = independent evidence contradicts the claim; NOT_CHECKED = no usable evidence.
+        if not len(rows) or (rows.status == "NOT_CHECKED").any():
+            return "UNRESOLVED"
+        if (rows.status == "PASS").all():
+            return "EXTERNALLY SUPPORTED"
+        return contradicted
+
+    conn_ext = ext[ext.check_id.str.contains("_connector_")]
+    cross_ext = ext[ext.check_id.str.contains("_crossing_")]
     n_cross = len(crossings)
+    if not n_cross:
+        cross_line = ("- Every network route transfers only at mapped junctions — **VERIFIED** "
+                      "(V-crossings); grade separation along mapped lines still needs imagery.")
+    else:
+        where = f"{n_cross} transfer(s) on the {', '.join(sorted(crossings.route.unique()))} route"
+        cross_label = ext_label(cross_ext, "CONTRADICTED BY INDEPENDENT EVIDENCE")
+        if cross_label == "UNRESOLVED":
+            cross_line = (f"- Every network route transfers only at mapped junctions — **UNRESOLVED**: "
+                          f"{where} happen at unverified 2D crossings (V-crossings, map); these need imagery.")
+        elif cross_label == "EXTERNALLY SUPPORTED":
+            cross_line = (f"- The {where} at 2D crossings are at-grade junctions — **EXTERNALLY SUPPORTED** "
+                          f"(V-crossings, E-*crossing*).")
+        else:
+            cross_line = (f"- The route is continuous through every crossing — **{cross_label}**: "
+                          f"imagery shows the {where} occur at a grade separation, not a junction "
+                          f"(V-crossings, E-*crossing*). The route as computed cannot be followed "
+                          f"there; the agent should forbid that transfer and re-route (or report "
+                          f"no_path) rather than relax a threshold.")
     return [
         f"- Route lengths, endpoints, containment and costs are computed correctly "
         f"— **{'VERIFIED' if allpass('R-') and allpass('C-') else 'NOT VERIFIED'}** (R-*, C-*).",
@@ -615,13 +642,10 @@ def conclusions(table, crossings):
         "- Availability and ranking (baseline < roads < rail) do not change between 25, 50 and "
         "250 m gap tolerance — **not SENSITIVE** to this one setting (S-*). This is a single "
         "setting rerun, not a global robustness test.",
-        (f"- Every network route transfers only at mapped junctions — **UNRESOLVED**: "
-         f"{n_cross} transfer(s) on the {', '.join(sorted(crossings.route.unique()))} route happen "
-         f"at unverified 2D crossings (V-crossings, map); these need imagery."
-         if n_cross else
-         "- Every network route transfers only at mapped junctions — **VERIFIED** (V-crossings); "
-         "grade separation along mapped lines still needs imagery."),
-        f"- Connector sites and crossings match reality on the ground — **{ext_label}** (E-*).",
+        cross_line,
+        f"- Endpoint connectors are new construction, not stand-ins for unmapped track — "
+        f"**{ext_label(conn_ext, 'CONTRADICTED BY INDEPENDENT EVIDENCE')}** (E-*connector*); "
+        f"imagery is one source at one date, and does not show buildability.",
         "- Access rights, permits and construction feasibility along any corridor — **UNRESOLVED**; "
         "mapped proximity does not establish them, and no legal or engineering evidence was used.",
         "- Costs are relative, invented classroom values (USD 10/m) — not a construction estimate.",

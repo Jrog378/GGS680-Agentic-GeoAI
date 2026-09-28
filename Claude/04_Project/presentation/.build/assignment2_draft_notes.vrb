@@ -9,8 +9,8 @@
 \end{itemize}
 \textbf{Evidence files}
 \begin{itemize}
-\item Each run folder: \tl{route_comparison.csv}, \tl{routes.gpkg}, \tl{connectors.gpkg}, \tl{route_map.png}, \tl{routing_report.md}
-\item \tl{Claude/04_Project/outputs/week4_validation/}: \tl{validation_table.csv}, \tl{validation_report.md}, \tl{validation_map.png}, \tl{inferred_crossings.gpkg}, \tl{external_evidence.csv}
+\item \tl{outputs/week3_routing/} and each rerun subfolder: \tl{route_comparison.csv}, \tl{routes.gpkg}, \tl{connectors.gpkg}, \tl{route_map.png}, \tl{routing_report.md}
+\item \tl{outputs/week4_validation/}: \tl{week4_audit.py}, \tl{validation_table.csv}, \tl{validation_report.md}, \tl{validation_map.png}, \tl{inferred_crossings.gpkg}, \tl{external_evidence.csv}
 \end{itemize}
 \textbf{Versions}: Python 3.12.2; geopandas 1.1.4; shapely 2.1.2; pyproj 3.8.0; networkx 3.6.1; pandas 2.3.3.\\[4pt]
-\textbf{Output location}: 04\_02 names \tl{outputs/week3_routing/} and \tl{outputs/week4_validation/} at the repo root; these are kept under \tl{Claude/} so the course repo inputs stay read-only.
+\textbf{Output location}: as 04\_02 specifies, under the repo root: \tl{outputs/week3_routing/} (original run, plus \tl{sensitivity_gap_25m/} and \tl{gap_tolerance_250m/}) and \tl{outputs/week4_validation/}. Copied from the working folders under \tl{Claude/} by \tl{Claude/04_Project/export_evidence.py}.

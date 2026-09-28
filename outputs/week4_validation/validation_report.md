@@ -10,11 +10,12 @@ The audit is independent of `week3_routing.py`: it recomputes every value from s
 
 ## Check summary
 
-FAIL: 1, NOT_CHECKED: 3, PASS: 71 (of 75 checks). Full table: `validation_table.csv`.
+FAIL: 2, PASS: 73 (of 75 checks). Full table: `validation_table.csv`.
 
 ### Failed checks
 
 - **V-crossings** Route transfers only at mapped junctions: expected 0 transfers at points that are not shared OSM vertices; observed 1 unverified 2D crossing transfer(s); 1 involve bridge/tunnel-tagged features.
+- **E-rail_crossing_1** rail route transfers 891041250 -> 239559205 at grade (no bridge/tunnel separating them) [-3.993745, 39.54626]: expected independent source supports the claim; observed Google Maps satellite imagery (2026; Google Maps satellite view, credit "Imagery ©2026 Maxar Technologies" (checked 2026-09-27); credit year, not exact capture date): The two rail lines cross at an overpass (grade-separated), not an at-grade junction, so the route cannot transfer between them here..
 
 ## Sensitivity (gap tolerance only)
 
@@ -36,7 +37,7 @@ Labels follow 04_02 section 16 and can overlap. Each cites check IDs in the tabl
 - Connectors are within their limits and counted once; every used connector is an endpoint connector — **VERIFIED** (R-*-conn*).
 - Power is unavailable because its start point is far from any mapped power line, not because of the gap threshold — **VERIFIED** (U-power, S-*); whether a real line exists there is **UNRESOLVED** without utility data.
 - Availability and ranking (baseline < roads < rail) do not change between 25, 50 and 250 m gap tolerance — **not SENSITIVE** to this one setting (S-*). This is a single setting rerun, not a global robustness test.
-- Every network route transfers only at mapped junctions — **UNRESOLVED**: 1 transfer(s) on the rail route happen at unverified 2D crossings (V-crossings, map); these need imagery.
-- Connector sites and crossings match reality on the ground — **UNRESOLVED** (E-*).
+- The route is continuous through every crossing — **CONTRADICTED BY INDEPENDENT EVIDENCE**: imagery shows the 1 transfer(s) on the rail route occur at a grade separation, not a junction (V-crossings, E-*crossing*). The route as computed cannot be followed there; the agent should forbid that transfer and re-route (or report no_path) rather than relax a threshold.
+- Endpoint connectors are new construction, not stand-ins for unmapped track — **EXTERNALLY SUPPORTED** (E-*connector*); imagery is one source at one date, and does not show buildability.
 - Access rights, permits and construction feasibility along any corridor — **UNRESOLVED**; mapped proximity does not establish them, and no legal or engineering evidence was used.
 - Costs are relative, invented classroom values (USD 10/m) — not a construction estimate.

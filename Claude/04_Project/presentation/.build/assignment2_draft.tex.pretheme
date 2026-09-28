@@ -4,12 +4,10 @@
 % Speaker notes: \note{} on each frame. Build assignment2_draft_notes.tex to see them.
 % Every number comes from Claude/03_Project/outputs/* and Claude/04_Project/outputs/week4_validation/*.
 \documentclass[aspectratio=169,11pt]{beamer}
-\usetheme[progressbar=frametitle,numbering=fraction,block=fill,sectionpage=none]{metropolis}
+\usetheme[progressbar=frametitle,numbering=fraction]{metropolis}
 \usepackage[T1]{fontenc}
-\usepackage[sfdefault,scale=0.93]{FiraSans}
-\usepackage[scale=0.88]{FiraMono}
+\usepackage{lmodern}
 \usepackage{booktabs}
-\usepackage{colortbl}
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{tikz}
@@ -19,36 +17,18 @@
   \setbeameroption{show notes on second screen=right}
 \fi
 
-% ---- palette: deep ink, map-teal accent, amber highlight on warm paper
-\definecolor{navy}{HTML}{102A43}
-\definecolor{ink}{HTML}{1F2933}
-\definecolor{muted}{HTML}{616E7C}
-\definecolor{amber}{HTML}{C2410C}
+\definecolor{navy}{HTML}{14213D}
+\definecolor{amber}{HTML}{B45309}
 \definecolor{teal}{HTML}{0F766E}
 \definecolor{failred}{HTML}{B91C1C}
-\definecolor{paper}{HTML}{FBFAF7}
-\definecolor{rule}{HTML}{E4E0D8}
-\definecolor{tealtint}{HTML}{E6F2F1}
-
-\setbeamercolor{normal text}{fg=ink,bg=paper}
+\definecolor{paper}{HTML}{F7F6F2}
+\definecolor{rule}{HTML}{DAD6CC}
+\setbeamercolor{frametitle}{bg=navy,fg=paper}
+\setbeamercolor{progress bar}{fg=amber,bg=rule}
+\setbeamercolor{title separator}{fg=amber}
 \setbeamercolor{background canvas}{bg=paper}
-\setbeamercolor{frametitle}{bg=paper,fg=navy}
-\setbeamercolor{progress bar}{fg=teal,bg=rule}
-\setbeamercolor{title separator}{fg=teal}
-\setbeamercolor{alerted text}{fg=amber}
-\setbeamercolor{block title}{bg=tealtint,fg=navy}
-\setbeamercolor{block body}{bg=white,fg=ink}
-\setbeamercolor{page number in head/foot}{fg=muted}
-\setbeamercolor{footline}{fg=muted}
-\setbeamercolor{palette primary}{bg=navy,fg=paper}  % standout frames
-\setbeamerfont{frametitle}{size=\large,series=\bfseries}
-\setbeamerfont{block title}{series=\bfseries}
-\setbeamerfont{footline}{size=\tiny}
-\setbeamerfont{page number in head/foot}{size=\tiny}
-\setbeamertemplate{frame footer}{GGS 662 \enskip·\enskip Assignment 2 \enskip·\enskip Verifying an agentic routing workflow}
-\setbeamertemplate{itemize item}{\textcolor{teal}{\small$\blacktriangleright$}}
-\setbeamertemplate{itemize subitem}{\textcolor{muted}{\tiny$\bullet$}}
-\arrayrulecolor{muted}
+\setbeamercolor{block title}{bg=navy!12,fg=navy}
+\setbeamercolor{block body}{bg=white}
 
 \newcommand{\todo}[1]{\textcolor{red}{\textbf{TODO: #1}}}
 \newcommand{\pass}{\textcolor{teal}{\textbf{PASS}}}
@@ -67,36 +47,18 @@
 \begin{document}
 
 % ------------------------------------------------------------------ 1
-\begin{frame}[plain]
-\begin{tikzpicture}[remember picture,overlay]
-  \fill[navy] (current page.south west) rectangle (current page.north east);
-  \node[anchor=east,inner sep=0,opacity=0.9] at ([xshift=-0.4cm]current page.east)
-    {\includegraphics[height=0.84\paperheight]{../outputs/week4_validation/validation_map.png}};
-  \fill[teal] ([xshift=0.9cm,yshift=-2.55cm]current page.north west) rectangle ++(2.2cm,0.09cm);
-  \node[anchor=north west,text width=6.2cm,text=paper,align=left]
-    at ([xshift=0.9cm,yshift=-1.0cm]current page.north west)
-    {{\LARGE\bfseries Verifying an agentic\\[2pt] GIS routing workflow}};
-  \node[anchor=north west,text width=6.2cm,text=paper!80,align=left]
-    at ([xshift=0.9cm,yshift=-2.85cm]current page.north west)
-    {\normalsize\hyphenpenalty=10000 Fiber route comparison on the shortened Mombasa corridor: baseline, roads, power and rail};
-  \node[anchor=south west,text width=6.2cm,text=paper,align=left]
-    at ([xshift=0.9cm,yshift=0.8cm]current page.south west)
-    {\bfseries Justin Rogers\\[2pt]\mdseries\small GGS 662: Agentic GeoAI · Assignment 2\\September 28, 2026};
-  \node[anchor=south east,text=paper!60,font=\tiny] at ([xshift=-0.4cm,yshift=0.15cm]current page.south east)
-    {Map data \textcopyright\ OpenStreetMap contributors (ODbL); basemap Esri};
-\end{tikzpicture}
-\end{frame}
+\maketitle
 \note{About 15 s. Last week an agent built a fiber-routing workflow for the shortened Mombasa corridor and produced routes, a map and a cost table. This week the question is not whether it ran, but whether the results are correct and defensible. I will give the agent framework briefly, then spend most of the time on the checks and what they found.}
 
 % ------------------------------------------------------------------ 2
-\begin{frame}{Agent framework}
+\begin{frame}{Agent framework: six dimensions (04\_01)}
 \footnotesize
 \begin{columns}[T,onlytextwidth]
 \column{0.32\textwidth}
 \begin{block}{Goal}Compare baseline, roads, power and rail routes between the exact \tl{route1_short} endpoints (east = start); report length and USD 10/m cost.\end{block}
 \begin{block}{Agency}Agent cleans, nodes, repairs gaps and routes. \textbf{Human} fixed endpoints, 50\,m gap limit, 500\,m endpoint limit and the rate.\end{block}
 \column{0.32\textwidth}
-\begin{block}{Environment}Saved 03\_01 OpenStreetMap (OSM) GeoPackages, AGENTS.md rules, 3{,}000\,m study rectangle, measured in EPSG:32737. No new downloads.\end{block}
+\begin{block}{Environment}Saved 03\_01 GeoPackages, AGENTS.md rules, 3{,}000\,m study rectangle, measured in EPSG:32737. No new downloads.\end{block}
 \begin{block}{Feedback}Stop with \tl{endpoint_too_far}, \tl{no_path} or \tl{empty_network}. A failed check means revise, never relax a threshold.\end{block}
 \column{0.32\textwidth}
 \begin{block}{Tools}geopandas, shapely, networkx (Dijkstra), pandas; matplotlib + contextily for maps.\end{block}
@@ -111,15 +73,16 @@
 \begin{columns}[T,onlytextwidth]
 \column{0.48\textwidth}
 \begin{block}{Stays with a human}
-Whether an inferred connector or a 2D crossing is actually buildable, and which corridor to pursue.
+Whether an inferred connector or a 2D crossing is actually buildable, and which corridor to pursue.\\[4pt]
+Access rights, permits and engineering feasibility are not in the data, so the agent cannot establish them.
 \end{block}
 \column{0.48\textwidth}
 \begin{block}{Feedback that changes the next action}
 The audit flags the rail route switching lines at a bridge ($-3.99374$, $39.54626$) with no shared OSM node.\\[4pt]
-Imagery showed an overpass, so the agent should \textbf{remove that transfer and reroute rail}, then report the new length or \tl{no_path}. It should not raise a threshold to keep the old answer.
+If imagery shows the lines are grade-separated: \textbf{remove that transfer and reroute rail}, then report the new length or \tl{no_path}. Do not raise a threshold to keep the old answer.
 \end{block}
 \end{columns}
-\note{About 25 s. One decision that must stay human: whether anything the model inferred, a connector or a crossing, can actually be built, and which corridor to pursue; that depends on access rights and engineering that are not in the data. One piece of feedback that should change the agent's next action: the audit found the rail route switching onto a bridge where the two lines share no OSM node. Imagery confirmed they are at different levels, an overpass, so the agent should delete that transfer and reroute, accepting a longer route or no\_path, rather than loosening a threshold.}
+\note{About 25 s. One decision that must stay human: whether anything the model inferred, a connector or a crossing, can actually be built, and which corridor to pursue; that depends on access rights and engineering that are not in the data. One piece of feedback that should change the agent's next action: the audit found the rail route switching onto a bridge where the two lines share no OSM node. If imagery confirms they are at different levels, the agent should delete that transfer and reroute, accepting a longer route or no\_path, rather than loosening a threshold.}
 \end{frame}
 
 % ------------------------------------------------------------------ 4
@@ -144,7 +107,7 @@ Imagery showed an overpass, so the agent should \textbf{remove that transfer and
 \column{0.48\textwidth}
 \textcolor{teal}{\textbf{Independent of the code.}} The audit never imports the routing script; it recomputes every value from the saved files and the 03\_01 inputs.
 \column{0.48\textwidth}
-\textcolor{amber}{\textbf{Not independent of the author.}} The same AI tool wrote both scripts, so they can share a wrong assumption, such as treating every 2D crossing as a junction. The audit can only confirm the computations, so the flagged sites were also checked in satellite imagery, which is independent of both OSM and the code.
+\textcolor{amber}{\textbf{Not independent of the author.}} The same AI tool wrote both scripts, so the audit verifies computations. Real-world claims need outside evidence.
 \end{columns}
 \note{About 25 s. I followed the 04\_02 validation stack: data QA, the routing agent, then a separate audit script that imports no routing code and rebuilds every length, cost and connector from the saved files; controlled reruns that change only the gap tolerance; outside evidence at the sites the audit flags; and a human applies the labels. Caveat: the same AI tool wrote both scripts, so the audit is verification, not independent validation.}
 \end{frame}
@@ -240,10 +203,10 @@ No rail closer than the 373\,m end connector & \pass\\
 \end{tabularx}
 
 \vspace{6pt}\footnotesize
-Source: Google Maps satellite (Maxar, Airbus; \textcopyright 2026), checked 27 Sep 2026; independent of OSM. Picture: Esri imagery with the model's lines.\\[4pt]
-Both OSM ways are the metre-gauge main line, and Google labels the spot ``Mazeras Railway Spiral'': the line loops over itself. The audit's FAIL was a real error.
+Source: Google Maps satellite imagery (\todo{year}); independent of OSM, used for validation only, not as a routing input.\\[4pt]
+The audit's FAIL was a real error: the rail route is continuous on paper but not on the ground.
 \end{columns}
-\note{About 25 s. I checked the three sites the audit flagged in satellite imagery, which is independent of OpenStreetMap. The crossing where the rail route switches lines is an overpass. Both lines are the old metre-gauge railway, and Google labels the spot the Mazeras Railway Spiral: the line loops round and crosses over itself, so there is no junction, and the rail route as computed cannot actually be followed. The two endpoint connectors hold up: there is no closer track than the mapped line, so they really are new construction. This is one image source at one date.}
+\note{About 25 s. I checked the three sites the audit flagged in satellite imagery, which is independent of OpenStreetMap. The crossing where the rail route switches lines is an overpass: one railway passes over the other, so there is no junction, and the rail route as computed cannot actually be followed. The two endpoint connectors hold up: there is no closer track than the mapped line, so they really are new construction. This is one image source at one date.}
 \end{frame}
 
 % ------------------------------------------------------------------ 8
@@ -308,31 +271,19 @@ Access rights, permits, feasibility and real costs & \textcolor{failred}{\textbf
 \item Saltelli et al. (2019), \emph{Environmental Modelling \& Software}, doi:10.1016/j.envsoft.2019.01.012
 \end{itemize}
 \column{0.46\textwidth}
-\begin{block}{AI-use statement}
-\textbf{Tool:} Claude Code (Anthropic, Claude Opus 5.5).\\[3pt]
-\textbf{How it contributed:} general coding assistance, writing and debugging the Week 3 routing script, the Week 4 audit, and the plotting and export scripts, and running the reruns; drafting the expected-checks table; and generating these slides.\\[3pt]
-\textbf{My role:} I directed the analysis, checked the three flagged sites in satellite imagery myself, reviewed the results and directed edits to the slides. I remain responsible for understanding, testing and validating all submitted material. Because the same tool wrote the routing code and the audit, I treat the audit as verification, not independent validation.
+\begin{block}{AI-use statement \quad \todo{EDIT IN YOUR OWN WORDS}}
+I used Claude Code (Anthropic, Claude Opus 5.5) to write the Week 3 routing script and the Week 4 audit script, to review both for errors, and to draft these slides. The audit caught a hard-coded connector limit and a wrong claim in the tool's own Week 3 write-up.\\[4pt]
+I reviewed and ran every script, checked the flagged sites in imagery, and edited the slides. Because the same tool wrote the code and the audit, I treat the audit as verification, not independent validation.
 \end{block}
 \end{columns}
-\note{About 10 s. Data from OpenStreetMap contributors under ODbL, with Esri basemaps. Readings are the three from 04\_02 that shaped the audit. AI use: Claude Code wrote and ran the code and generated the slides; I directed it, did the imagery check and reviewed the results.}
+\note{About 10 s. Data from OpenStreetMap contributors under ODbL, with Esri basemaps. Readings are the three from 04\_02 that shaped the audit. \todo{rewrite the AI statement in your own words and make sure every claim in it is true, including the imagery check.}}
 \end{frame}
 
 % ================================================================== supporting
 \appendix
 \begin{frame}[standout]
-\begin{minipage}{\textwidth}\centering
-{\LARGE Thank you}\par\vspace{12pt}
-{\Huge Questions?}\par\vspace{20pt}
-{\normalsize\mdseries Supporting slides follow: full check table, synthetic cases and evidence files}
-\end{minipage}
-\end{frame}
-
-\begin{frame}{Supporting: each candidate route against the baseline}
-\centering
-\includegraphics[width=\textwidth,height=0.64\textheight,keepaspectratio]{../../03_Project/outputs/default/route_side_by_side.png}
-
-\vspace{2pt}\scriptsize\raggedright
-Roads follows the baseline almost exactly (+0.8\,m). Power has no route: its start is 1{,}839\,m from the nearest mapped line. Rail is 3{,}006\,m longer, and imagery shows it is \textbf{not followable} at the Mazeras crossing. Source: \tl{route_side_by_side.png}, 50\,m run.
+Supporting slides\\[4pt]
+{\normalsize Full check table, synthetic cases and evidence files}
 \end{frame}
 
 \begin{frame}[shrink=22]{Supporting: expected checks, written as specifications (04\_02 \S13)}
@@ -422,7 +373,7 @@ E-rail crossing 1 & crossing ($-3.993745$, $39.54626$): overpass, not a junction
 \bottomrule
 \end{tabularx}
 
-\vspace{4pt}\small Source: Google Maps satellite imagery (Maxar, Airbus; \textcopyright 2026, credit year, not exact capture date), independent of OSM. Recorded in \tl{external_evidence.csv}; site maps \tl{site_*.png}.
+\vspace{4pt}\small Source: Google Maps satellite imagery, independent of OSM, imagery year \todo{year from the map credit}. Recorded in \tl{external_evidence.csv}; site maps \tl{site_*.png}.
 \end{frame}
 
 \begin{frame}{Supporting: synthetic cases and known-answer oracle}
