@@ -35,9 +35,7 @@ Write a 200–300 word proposed-study abstract using the approved question and c
 
 # 🌍 Broad research problem
 
-Choose or replace this example.
-
-**Example:** How can GeoAI help us understand and anticipate the effects of drought on inland waterway
+How can GeoAI help us understand and anticipate the effects of drought on inland waterway
 transportation and freight-system resilience?
 
 ## Initial boundary conditions
