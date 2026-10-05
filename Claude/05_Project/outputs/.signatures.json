@@ -1,0 +1,30 @@
+{
+ "research_questions.md": {
+  "A1–A3": "ba51acc8a758",
+  "L1": "35cad0aa0730",
+  "evidence": "0d0a762ba9be",
+  "N1": "f522bef709b4"
+ },
+ "question_review.md": {
+  "A1–A3": "ba51acc8a758",
+  "L1": "35cad0aa0730",
+  "evidence": "0d0a762ba9be",
+  "N2": "da39a3ee5e6b"
+ },
+ "abstract_v1.md": {
+  "A1–A3": "ba51acc8a758",
+  "L1": "35cad0aa0730",
+  "evidence": "0d0a762ba9be",
+  "H3": "3f40bdf03ce5",
+  "H5": "8a4d637f4ba9",
+  "N3": "da39a3ee5e6b"
+ },
+ "methodology_v1.md": {
+  "A1–A3": "ba51acc8a758",
+  "L1": "35cad0aa0730",
+  "evidence": "0d0a762ba9be",
+  "H3": "3f40bdf03ce5",
+  "H7": "da39a3ee5e6b",
+  "N4": "da39a3ee5e6b"
+ }
+}
