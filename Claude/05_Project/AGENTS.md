@@ -20,6 +20,23 @@ hypotheses, methods, data sources, analyses, critiques, and revisions.
    or external validity.
 10. Preserve intermediate artifacts so the research trajectory can be audited.
 
+## Literature sourcing
+
+When searching for or citing papers, use only reliable, peer-reviewed sources from reputable venues.
+
+1. Journal articles must come from a journal with a Journal Impact Factor (JIF) of **at least 4.0**
+   in the most recent Clarivate Journal Citation Reports release.
+2. Record the journal's JIF, the JCR year, and the source of the figure next to each citation in the
+   search report. If sources disagree, use the lower value. If the JIF cannot be confirmed, flag the
+   paper as unverified instead of guessing.
+3. Conference papers have no JIF. Accept them only from major peer-reviewed venues (e.g., CORE A*/A
+   such as CVPR, ICCV, NeurIPS, ICLR, ACL), and label them as conference papers.
+4. Do not cite preprints (arXiv, SSRN, etc.), predatory or unindexed journals, blogs, or workshop
+   papers as evidence. A preprint may be cited only as the source of a dataset, and must be labelled
+   as a preprint.
+5. A paper that fails these rules but seems important should be listed separately for human review,
+   not silently included or dropped.
+
 ## Shared research state
 
 Agents should treat the human's form (`lab_inputs.ipynb`, embedded in each prompt packet) and files in
