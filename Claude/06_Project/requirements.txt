@@ -1,0 +1,10 @@
+# GGS662 individual project: agentic change detection (DINOv3 + Gemma 4 via Ollama)
+torch
+torchvision
+timm>=1.0.20          # DINOv3 support (vit_large_patch16_dinov3.sat493m)
+numpy
+pillow
+rasterio
+pyproj
+matplotlib
+requests

@@ -15,16 +15,46 @@
   "A1–A3": "ba51acc8a758",
   "L1": "35cad0aa0730",
   "evidence": "0d0a762ba9be",
-  "H3": "3f40bdf03ce5",
-  "H5": "8a4d637f4ba9",
+  "H3": "5647f23486bd",
+  "H5": "cf43a59f59bc",
   "N3": "da39a3ee5e6b"
  },
  "methodology_v1.md": {
   "A1–A3": "ba51acc8a758",
   "L1": "35cad0aa0730",
   "evidence": "0d0a762ba9be",
-  "H3": "3f40bdf03ce5",
-  "H7": "da39a3ee5e6b",
+  "H3": "5647f23486bd",
+  "H7": "bc9937bd78ea",
   "N4": "da39a3ee5e6b"
+ },
+ "methodology_review.md": {
+  "A1–A3": "ba51acc8a758",
+  "L1": "35cad0aa0730",
+  "evidence": "0d0a762ba9be",
+  "H3": "5647f23486bd",
+  "N5": "da39a3ee5e6b"
+ },
+ "data_tool_plan.md": {
+  "A1–A3": "ba51acc8a758",
+  "L1": "35cad0aa0730",
+  "evidence": "0d0a762ba9be",
+  "H3": "5647f23486bd",
+  "H7": "bc9937bd78ea",
+  "N6": "da39a3ee5e6b"
+ },
+ "validation_plan.md": {
+  "A1–A3": "ba51acc8a758",
+  "L1": "35cad0aa0730",
+  "evidence": "0d0a762ba9be",
+  "H3": "5647f23486bd",
+  "H7": "bc9937bd78ea",
+  "N7": "da39a3ee5e6b"
+ },
+ "next_question.md": {
+  "A1–A3": "ba51acc8a758",
+  "L1": "35cad0aa0730",
+  "evidence": "0d0a762ba9be",
+  "H3": "5647f23486bd",
+  "N8": "da39a3ee5e6b"
  }
 }

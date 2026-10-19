@@ -1,0 +1,510 @@
+{
+  "prompt": "detect destroyed building, output only ```json",
+  "raw": "```json\n[\n  {\"box_2d\": [11, 153, 100, 245], \"label\": \"destroyed building\"},\n  {\"box_2d\": [100, 153, 181, 245], \"label\": \"destroyed building\"},\n  {\"box_2d\": [181, 153, 250, 245], \"label\": \"destroyed building\"},\n  {\"box_2d\": [250, 153, 319, 245], \"label\": \"destroyed building\"},\n  {\"box_2d\": [319, 153, 388, 245], \"label\": \"destroyed building\"},\n  {\"box_2d\": [388, 153, 456, 245], \"label\": \"destroyed building\"},\n  {\"box_2d\": [456, 153, 525, 245], \"label\": \"destroyed building\"},\n  {\"box_2d\": [11, 270, 100, 361], \"label\": \"destroyed building\"},\n  {\"box_2d\": [100, 270, 181, 361], \"label\": \"destroyed building\"},\n  {\"box_2d\": [181, 270, 250, 361], \"label\": \"destroyed building\"},\n  {\"box_2d\": [250, 270, 319, 361], \"label\": \"destroyed building\"},\n  {\"box_2d\": [319, 270, 388, 361], \"label\": \"destroyed building\"},\n  {\"box_2d\": [388, 270, 456, 361], \"label\": \"destroyed building\"},\n  {\"box_2d\": [456, 270, 525, 361], \"label\": \"destroyed building\"},\n  {\"box_2d\": [11, 381, 100, 472], \"label\": \"destroyed building\"},\n  {\"box_2d\": [100, 381, 181, 472], \"label\": \"destroyed building\"},\n  {\"box_2d\": [181, 381, 250, 472], \"label\": \"destroyed building\"},\n  {\"box_2d\": [250, 381, 319, 472], \"label\": \"destroyed building\"},\n  {\"box_2d\": [319, 381, 388, 472], \"label\": \"destroyed building\"},\n  {\"box_2d\": [388, 381, 456, 472], \"label\": \"destroyed building\"},\n  {\"box_2d\": [456, 381, 525, 472], \"label\": \"destroyed building\"},\n  {\"box_2d\": [11, 490, 100, 581], \"label\": \"destroyed building\"},\n  {\"box_2d\": [100, 490, 181, 581], \"label\": \"destroyed building\"},\n  {\"box_2d\": [181, 490, 250, 581], \"label\": \"destroyed building\"},\n  {\"box_2d\": [250, 490, 319, 581], \"label\": \"destroyed building\"},\n  {\"box_2d\": [319, 490, 388, 581], \"label\": \"destroyed building\"},\n  {\"box_2d\": [388, 490, 456, 581], \"label\": \"destroyed building\"},\n  {\"box_2d\": [456, 490, 525, 581], \"label\": \"destroyed building\"},\n  {\"box_2d\": [11, 600, 100, 691], \"label\": \"destroyed building\"},\n  {\"box_2d\": [100, 600, 181, 691], \"label\": \"destroyed building\"},\n  {\"box_2d\": [181, 600, 250, 691], \"label\": \"destroyed building\"},\n  {\"box_2d\": [250, 600, 319, 691], \"label\": \"destroyed building\"},\n  {\"box_2d\": [319, 600, 388, 691], \"label\": \"destroyed building\"},\n  {\"box_2d\": [388, 600, 456, 691], \"label\": \"destroyed building\"},\n  {\"box_2d\": [456, 600, 525, 691], \"label\": \"destroyed building\"},\n  {\"box_2d\": [11, 710, 100, 801], \"label\": \"destroyed building\"},\n  {\"box_2d\": [100, 710, 181, 801], \"label\": \"destroyed building\"},\n  {\"box_2d\": [181, 710, 250, 801], \"label\": \"destroyed building\"},\n  {\"box_2d\": [250, 710, 319, 801], \"label\": \"destroyed building\"},\n  {\"box_2d\": [319, 710, 388, 801], \"label\": \"destroyed building\"},\n  {\"box_2d\": [388, 710, 456, 801], \"label\": \"destroyed building\"},\n  {\"box_2d\": [456, 710, 525, 801], \"label\": \"destroyed building\"},\n  {\"box_2d\": [11, 810, 100, 901], \"label\": \"destroyed building\"},\n  {\"box_2d\": [100, 810, 181, 901], \"label\": \"destroyed building\"},\n  {\"box_2d\": [181, 810, 250, 901], \"label\": \"destroyed building\"},\n  {\"box_2d\": [250, 810, 319, 901], \"label\": \"destroyed building\"},\n  {\"box_2d\": [319, 810, 388, 901], \"label\": \"destroyed building\"},\n  {\"box_2d\": [388, 810, 456, 901], \"label\": \"destroyed building\"},\n  {\"box_2d\": [456, 810, 525, 901], \"label\": \"destroyed building\"},\n  {\"box_2d\": [11, 910, 100, 1000], \"label\": \"destroyed building\"},\n  {\"box_2d\": [100, 910, 181, 1000], \"label\": \"destroyed building\"},\n  {\"box_2d\": [181, 910, 250, 1000], \"label\": \"destroyed building\"},\n  {\"box_2d\": [250, 910, 319, 1000], \"label\": \"destroyed building\"},\n  {\"box_2d\": [319, 910, 388, 1000], \"label\": \"destroyed building\"},\n  {\"box_2d\": [388, 910, 456, 1000], \"label\": \"destroyed building\"},\n  {\"box_2d\": [456, 910, 525, 1000], \"label\": \"destroyed building\"}\n]\n```",
+  "detections": [
+    {
+      "box_2d": [
+        11,
+        153,
+        100,
+        245
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        100,
+        153,
+        181,
+        245
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        181,
+        153,
+        250,
+        245
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        250,
+        153,
+        319,
+        245
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        319,
+        153,
+        388,
+        245
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        388,
+        153,
+        456,
+        245
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        456,
+        153,
+        525,
+        245
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        11,
+        270,
+        100,
+        361
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        100,
+        270,
+        181,
+        361
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        181,
+        270,
+        250,
+        361
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        250,
+        270,
+        319,
+        361
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        319,
+        270,
+        388,
+        361
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        388,
+        270,
+        456,
+        361
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        456,
+        270,
+        525,
+        361
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        11,
+        381,
+        100,
+        472
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        100,
+        381,
+        181,
+        472
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        181,
+        381,
+        250,
+        472
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        250,
+        381,
+        319,
+        472
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        319,
+        381,
+        388,
+        472
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        388,
+        381,
+        456,
+        472
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        456,
+        381,
+        525,
+        472
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        11,
+        490,
+        100,
+        581
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        100,
+        490,
+        181,
+        581
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        181,
+        490,
+        250,
+        581
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        250,
+        490,
+        319,
+        581
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        319,
+        490,
+        388,
+        581
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        388,
+        490,
+        456,
+        581
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        456,
+        490,
+        525,
+        581
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        11,
+        600,
+        100,
+        691
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        100,
+        600,
+        181,
+        691
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        181,
+        600,
+        250,
+        691
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        250,
+        600,
+        319,
+        691
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        319,
+        600,
+        388,
+        691
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        388,
+        600,
+        456,
+        691
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        456,
+        600,
+        525,
+        691
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        11,
+        710,
+        100,
+        801
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        100,
+        710,
+        181,
+        801
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        181,
+        710,
+        250,
+        801
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        250,
+        710,
+        319,
+        801
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        319,
+        710,
+        388,
+        801
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        388,
+        710,
+        456,
+        801
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        456,
+        710,
+        525,
+        801
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        11,
+        810,
+        100,
+        901
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        100,
+        810,
+        181,
+        901
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        181,
+        810,
+        250,
+        901
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        250,
+        810,
+        319,
+        901
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        319,
+        810,
+        388,
+        901
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        388,
+        810,
+        456,
+        901
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        456,
+        810,
+        525,
+        901
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        11,
+        910,
+        100,
+        1000
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        100,
+        910,
+        181,
+        1000
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        181,
+        910,
+        250,
+        1000
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        250,
+        910,
+        319,
+        1000
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        319,
+        910,
+        388,
+        1000
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        388,
+        910,
+        456,
+        1000
+      ],
+      "label": "destroyed building"
+    },
+    {
+      "box_2d": [
+        456,
+        910,
+        525,
+        1000
+      ],
+      "label": "destroyed building"
+    }
+  ]
+}
