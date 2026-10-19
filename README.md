@@ -64,6 +64,7 @@ Week 7 notebooks:
 
 - [07_01_agentic_scientific_research.ipynb](07_01_agentic_scientific_research.ipynb): scientific research agents and experimental design.
 - [07_02_agentic_land_cover_classification.ipynb](07_02_agentic_land_cover_classification.ipynb): a self-contained case study building on GGS416 pixel classification. Understand the inputs and labels, build and check a baseline, then hand method improvement to a coding agent. The small Landsat dataset and original documentation are in `week7/landcover/data/`; no separate runner or test files are required.
+- [07_03_writing_latex_in_vscode.ipynb](07_03_writing_latex_in_vscode.ipynb): a short introduction to editing the supplied `paper_template` in VS Code and compiling it with `pdflatex`. Covers setup, basic syntax, citations and common errors; no notebook kernel is needed.
 
 Local setup: Windows and macOS
 ==============================
