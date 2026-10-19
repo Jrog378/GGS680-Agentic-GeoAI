@@ -60,6 +60,11 @@ Week 6 notebooks (recommended reading order):
 
 The practical labs use VS Code and a phone; no notebook kernel is required. The foundations notebook includes one optional standard-library Python illustration.
 
+Week 7 notebooks:
+
+- [07_01_agentic_scientific_research.ipynb](07_01_agentic_scientific_research.ipynb): scientific research agents and experimental design.
+- [07_02_agentic_land_cover_classification.ipynb](07_02_agentic_land_cover_classification.ipynb): a self-contained case study building on GGS416 pixel classification. Understand the inputs and labels, build and check a baseline, then hand method improvement to a coding agent. The small Landsat dataset and original documentation are in `week7/landcover/data/`; no separate runner or test files are required.
+
 Local setup: Windows and macOS
 ==============================
 
