@@ -1,0 +1,82 @@
+<!doctype html><html><head><meta charset='utf-8'><style>@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500..800&display=swap');@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+* { box-sizing:border-box; margin:0; }
+html, body { margin:0; padding:0; background:#777; width:1920px; height:1080px; overflow:hidden; font-size:32px; line-height:1.4; }
+section { position:relative; width:1920px; height:1080px; overflow:hidden; }
+section:not([style*="display"]), div:not([style*="display"]) { display:flex; flex-direction:column; }
+h1 { font-size:96px; font-weight:600; line-height:1.1; } h2 { font-size:64px; font-weight:600; line-height:1.15; }
+h3 { font-size:44px; font-weight:600; line-height:1.2; } b { font-weight:600; } aside { display:none; }
+table { border-collapse:collapse; } td, th { padding:0.35em 0.6em; border:1px solid #C9CED5; vertical-align:top; }
+ul, ol { padding-left:1.2em; }
+</style></head><body><section id="masks" data-transition="fade" style="background:#F0F1F2;color:#2E2B3B;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:10px;background:linear-gradient(90deg, #000004 0%, #280B53 14%, #65156E 29%, #9F2A63 43%, #D44842 57%, #F57D15 71%, #FAC228 86%, #FCFFA4 100%)"></div>
+<p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;text-transform:uppercase;color:#5C5A69">10 · Supporting · detect · cloud masks against human cloud labels</p>
+<h2 style="font-family:'Archivo', Arial, sans-serif;font-size:60px;font-weight:700;line-height:1.1;letter-spacing:-1px;color:#16131F">Cloud masks against human cloud labels</h2>
+<div style="display:flex;gap:64px;align-items:start">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px">
+<p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#5C5A69">F1 against expert cloud masks, by land cover</p>
+<div style="display:flex;gap:28px"><div style="display:flex;gap:10px;align-items:center"><div style="width:24px;height:24px;background:#5C5A69"></div><p style="font-size:24px">bright rule (tile-rule baseline)</p></div><div style="display:flex;gap:10px;align-items:center"><div style="width:24px;height:24px;background:#BC3754"></div><p style="font-size:24px">dark-channel mask (He et al. 2011)</p></div></div>
+<div style="height:260px;display:flex;align-items:flex-end;gap:16px;border-bottom:2px solid #C9CED5">
+<div style="flex:1;display:flex;justify-content:center;align-items:flex-end;gap:8px"><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><p style="font-size:24px;color:#16131F">0.54</p><div style="width:64px;height:134px;background:#5C5A69"></div></div><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><p style="font-size:24px;color:#16131F">0.78</p><div style="width:64px;height:194px;background:#BC3754"></div></div></div>
+<div style="flex:1;display:flex;justify-content:center;align-items:flex-end;gap:8px"><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><p style="font-size:24px;color:#16131F">0.45</p><div style="width:64px;height:112px;background:#5C5A69"></div></div><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><p style="font-size:24px;color:#16131F">0.74</p><div style="width:64px;height:184px;background:#BC3754"></div></div></div>
+<div style="flex:1;display:flex;justify-content:center;align-items:flex-end;gap:8px"><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><p style="font-size:24px;color:#16131F">0.25</p><div style="width:64px;height:62px;background:#5C5A69"></div></div><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><p style="font-size:24px;color:#16131F">0.66</p><div style="width:64px;height:165px;background:#BC3754"></div></div></div>
+<div style="flex:1;display:flex;justify-content:center;align-items:flex-end;gap:8px"><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><p style="font-size:24px;color:#16131F">0.20</p><div style="width:64px;height:51px;background:#5C5A69"></div></div><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><p style="font-size:24px;color:#16131F">0.65</p><div style="width:64px;height:161px;background:#BC3754"></div></div></div>
+<div style="flex:1;display:flex;justify-content:center;align-items:flex-end;gap:8px"><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><p style="font-size:24px;color:#16131F">0.57</p><div style="width:64px;height:142px;background:#5C5A69"></div></div><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><p style="font-size:24px;color:#16131F">0.48</p><div style="width:64px;height:120px;background:#BC3754"></div></div></div>
+</div>
+<div style="display:flex;gap:16px">
+<p style="flex:1;font-size:24px;color:#16131F;text-align:center">vegetation</p>
+<p style="flex:1;font-size:24px;color:#16131F;text-align:center">water</p>
+<p style="flex:1;font-size:24px;color:#16131F;text-align:center">urban</p>
+<p style="flex:1;font-size:24px;color:#16131F;text-align:center">snow</p>
+<p style="flex:1;font-size:24px;color:#16131F;text-align:center">barren</p>
+</div>
+<p style="font-size:24px;line-height:1.38;"><b>Bright rule:</b> a pixel is cloud if it is very bright (grey above 200 of 255) and smooth. Usually right when it fires, but misses thin cloud.</p>
+<p style="font-size:24px;line-height:1.38;"><b>Dark channel:</b> the darkest pixel in each 20 m square. Clear ground nearly always has one (shadow, trees, water); under cloud even it turns bright. Finds more cloud, but bright bare ground can fool it.</p>
+</div>
+<div style="width:640px;display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;flex-direction:column;gap:2px"><p style="font-family:'Archivo', Arial, sans-serif;font-size:48px;font-weight:800;line-height:1.0;color:#BC3754">0.65</p><p style="font-size:24px;line-height:1.38;">F1, dark-channel mask (precision 0.62, recall 0.68)</p></div>
+<div style="display:flex;flex-direction:column;gap:2px"><p style="font-family:'Archivo', Arial, sans-serif;font-size:48px;font-weight:800;line-height:1.0;color:#5C5A69">0.41</p><p style="font-size:24px;line-height:1.38;">F1, bright rule (precision 0.81, recall 0.28)</p></div>
+<p style="font-size:24px;line-height:1.38;color:#5C5A69;">120 HRC_WHU development images, one date each (Li et al. 2019; 30 sealed).</p>
+<div style="display:flex;flex-direction:column;gap:8px;background:#E7EAED;padding:24px 28px;border-radius:4px"><p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#0A7570">Trained spotter · research only</p><p style="font-size:24px;line-height:1.38;">Bright rule + texture (Haralick 1979) + DINOv2: F1 0.87, +0.22 (95% CI +0.19 to +0.25), better on 112 of 120 images.</p></div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#E7EAED;padding:24px 28px;border-radius:4px"><p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#5C5A69">Mask-bias check</p><p style="font-size:24px;line-height:1.38;">Synthetic haze on 769 clear roads: under thin haze the mask flags flooded and dry roads alike.</p></div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;letter-spacing:1px;color:#5C5A69">SEEING THROUGH CLOUDS · GGS 662 · 30 OCT 2026</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;color:#5C5A69;text-align:right">11 / 15</p>
+<aside>This is the check on the cloud masks against human cloud labels, HRC_WHU's expert masks on 120 development images. The bright rule calls a pixel cloud when it is very bright and smooth: when it fires it is usually right, precision 0.81, but it finds only about a quarter of the cloud. The dark channel looks at the darkest pixel in each 20 metre square; clear ground nearly always has one, from shadows, trees or water, but under cloud even that pixel turns bright. It finds about two thirds of the cloud, F1 0.65, but bright bare ground can fool it. Combining the two rules adds nothing, because the bright rule's cloud lies almost entirely inside the dark channel's. A trained spotter does much better: the bright rule plus texture plus DINOv2 features reaches F1 0.87 against 0.65, better on 112 of the 120 images, with texture adding the most. HRC_WHU is academic use only, so for now that spotter is research only. The synthetic-haze check shows the mask does not hide flooded roads under thin haze.</aside>
+</section>
+<pre id='__report' style='display:none'></pre>
+<script>
+function run(){
+ const S=document.querySelector('section'); const out={over:[],broken:[],below:[],outside:[],h2:null};
+ const all=[...S.querySelectorAll('*')].filter(e=>e.tagName!=='ASIDE' && !e.closest('aside') && !e.closest('svg'));
+ const footLike=e=>{let x=e; while(x&&x!==S){ if(x.style&&x.style.position==='absolute'&&(parseFloat(x.style.bottom)<=96||parseFloat(x.style.top)>=900)) return true; x=x.parentElement;} return false;};
+ const deco=e=>{let x=e; while(x&&x!==S){ if(x.style&&x.style.position==='absolute'&&!x.textContent.trim()) return true; x=x.parentElement;} return false;};
+ const h2=S.querySelector('h2'); if(h2){const r=h2.getBoundingClientRect(); out.h2=[Math.round(r.top),Math.round(r.bottom)];}
+ const isText=e=>[...e.childNodes].some(n=>n.nodeType===3&&n.textContent.trim());
+ const lab=e=>e.tagName.toLowerCase()+': '+(e.textContent||e.getAttribute('alt')||'').trim().slice(0,50);
+ for(const e of all){
+   const r=e.getBoundingClientRect(); if(r.width===0&&r.height===0) continue;
+   const foot=footLike(e), dec=deco(e);
+   if(isText(e)){
+     if(e.scrollWidth>e.clientWidth+1 && getComputedStyle(e).whiteSpace!=='nowrap') out.over.push(lab(e)+' (w '+e.scrollWidth+'>'+e.clientWidth+')');
+     const fs=parseFloat(getComputedStyle(e).fontSize)||24;
+     if(e.scrollHeight>e.clientHeight+Math.max(3,0.2*fs)) out.over.push(lab(e)+' (h '+e.scrollHeight+'>'+e.clientHeight+')');
+     for(const n of e.childNodes){ if(n.nodeType!==3) continue; const t=n.textContent; const re=/\S+/g; let m;
+       while((m=re.exec(t))){ const rg=document.createRange(); rg.setStart(n,m.index); rg.setEnd(n,m.index+m[0].length);
+         const rs=[...rg.getClientRects()].filter(x=>x.width>0); if(rs.length>1) out.broken.push(m[0]+' in '+lab(e));
+         for(const x of rs){ if(!foot && x.bottom>920+1) out.below.push('text "'+m[0]+'" bottom '+Math.round(x.bottom));
+           if(x.right>1792+1||x.left<128-1) out.outside.push('text "'+m[0]+'" x '+Math.round(x.left)+'-'+Math.round(x.right)); }
+       } }
+   }
+   if(!foot && !dec && r.bottom>920+1 && e.tagName!=='SECTION') out.below.push(lab(e)+' bottom '+Math.round(r.bottom));
+   if(!dec && (r.right>1792+1||r.left<128-1) && e.tagName!=='SECTION') out.outside.push(lab(e)+' x '+Math.round(r.left)+'-'+Math.round(r.right));
+ }
+ for(const e of all){ if(e.tagName!=='DIV') continue; const pr=e.getBoundingClientRect();
+   for(const c of e.children){ if(c.style.position==='absolute') continue; const cr=c.getBoundingClientRect();
+     if(cr.bottom>pr.bottom+2 || cr.right>pr.right+2) out.over.push('child '+lab(c)+' spills out of its div'); } }
+ for(const k of ['below','outside','over','broken']) out[k]=[...new Set(out[k])].slice(0,25);
+ document.getElementById('__report').textContent=JSON.stringify(out);
+}
+document.fonts.ready.then(()=>setTimeout(run,80));
+</script>
+</body></html>

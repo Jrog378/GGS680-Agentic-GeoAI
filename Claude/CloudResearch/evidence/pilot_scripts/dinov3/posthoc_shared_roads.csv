@@ -1,0 +1,229 @@
+tile_id,road_id,flooded,set,shared_id,base + DINOv2 cues (production),base + DINOv3 cues (frozen),base + DINOv2 cues + DINOv3 head cues,base + DINOv2 cues + DINOv3 fine-tuned cues,base + DINOv3 fine-tuned cues
+0_11_16,way/847378664,True,tile rule,True,0,1,0,0,0
+0_14_15,way/847378791,True,tile rule,True,1,1,1,1,1
+0_14_15,way/847390313,True,tile rule,True,1,1,1,1,1
+0_14_15,way/847406270,True,tile rule,True,1,1,1,1,1
+0_14_2,way/847377830,False,tile rule,True,0,0,0,0,0
+0_14_2,way/847406386,False,tile rule,True,0,0,0,0,0
+0_15_3,way/847377830,False,tile rule,True,0,0,0,0,0
+0_16_4,way/847377830,False,tile rule,True,0,0,0,0,0
+0_16_4,way/847378160,False,tile rule,False,0,0,0,0,0
+0_16_4,way/847378161,False,tile rule,True,0,0,0,0,0
+0_16_4,way/847378487,False,tile rule,False,0,0,0,0,0
+0_17_7,way/847378156,False,tile rule,False,0,0,0,0,0
+0_17_7,way/847378157,False,tile rule,False,0,0,0,0,0
+0_17_7,way/847378161,False,tile rule,True,0,0,0,0,0
+0_18_12,way/847378436,False,tile rule,True,0,0,0,0,0
+0_18_12,way/847378722,True,tile rule,True,0,0,0,1,0
+0_18_12,way/847378778,False,tile rule,True,0,0,0,0,0
+0_18_12,way/847378781,False,tile rule,False,0,0,0,0,0
+0_18_12,way/847378782,True,tile rule,True,1,1,1,1,1
+0_18_12,way/847378784,True,tile rule,True,1,1,1,1,1
+0_18_12,way/847378803,False,tile rule,True,0,0,1,1,0
+0_18_12,way/847378804,False,tile rule,True,1,1,1,1,1
+0_18_12,way/847378805,True,tile rule,True,1,0,1,1,1
+0_18_12,way/847390323,False,tile rule,True,0,0,0,0,0
+0_18_12,way/847390324,True,tile rule,True,0,0,0,0,0
+0_18_12,way/847406823,True,tile rule,False,1,1,1,1,1
+0_18_12,way/847406878,False,tile rule,True,0,0,1,0,0
+0_18_12,way/847406879,False,tile rule,False,0,0,0,0,0
+0_18_12,way/847406885,False,tile rule,False,0,0,0,0,0
+0_19_14,way/847378378,False,tile rule,True,0,0,0,0,0
+0_19_14,way/847378379,False,tile rule,True,0,0,0,0,0
+0_19_14,way/847378432,False,tile rule,True,0,0,0,0,0
+0_20_18,way/847377958,True,tile rule,True,1,1,1,1,1
+0_20_18,way/847377959,True,tile rule,True,1,1,1,1,1
+0_20_18,way/847378022,True,tile rule,True,1,1,1,1,1
+0_20_18,way/847378023,False,tile rule,False,1,1,1,1,1
+0_20_18,way/847378025,False,tile rule,True,0,0,0,0,0
+0_20_18,way/847378027,False,tile rule,False,1,1,1,1,1
+0_20_19,way/847377958,True,tile rule,True,1,1,1,1,1
+0_20_19,way/847377959,True,tile rule,True,1,1,1,1,1
+0_24_18,way/847378090,False,tile rule,False,0,0,0,0,0
+0_24_18,way/847378091,False,tile rule,True,0,0,0,0,0
+0_24_18,way/847378096,False,tile rule,True,0,0,0,0,0
+0_24_18,way/847378097,False,tile rule,True,0,0,0,0,0
+0_24_18,way/847378100,False,tile rule,True,0,0,0,0,0
+0_24_18,way/847378101,False,tile rule,True,0,0,0,0,0
+0_24_21,way/847377958,True,tile rule,True,1,1,1,1,1
+0_24_21,way/847378121,True,tile rule,True,1,1,1,1,1
+2_13_47,way/847378431,False,tile rule,False,1,0,0,1,1
+2_13_47,way/847406310,True,tile rule,False,1,1,1,1,1
+2_13_47,way/847406891,True,tile rule,True,1,1,1,1,1
+2_14_49,way/847378272,True,tile rule,True,1,1,1,1,1
+2_14_49,way/847378399,True,tile rule,True,1,1,1,1,1
+2_14_49,way/847390405,True,tile rule,True,1,1,1,1,1
+2_14_51,way/847406424,True,tile rule,True,1,1,1,1,1
+2_15_48,way/847378273,True,tile rule,False,1,1,1,1,1
+2_15_48,way/847378274,True,tile rule,True,0,0,1,0,1
+2_15_48,way/847378282,True,tile rule,False,0,0,1,1,1
+2_15_48,way/847378283,True,tile rule,False,0,1,1,1,1
+2_15_48,way/847378284,True,tile rule,False,1,1,1,1,1
+2_15_48,way/847378285,True,tile rule,True,1,1,1,1,1
+2_15_48,way/847378286,True,tile rule,True,1,1,1,1,1
+2_15_48,way/847378287,True,tile rule,True,1,1,1,1,1
+2_15_48,way/847378288,True,tile rule,True,1,1,1,1,1
+2_15_48,way/847378289,True,tile rule,True,1,1,1,1,1
+2_15_48,way/847378290,True,tile rule,True,1,0,1,1,1
+2_15_48,way/847378291,True,tile rule,True,1,0,1,1,1
+2_15_48,way/847391446,True,tile rule,True,1,1,1,1,1
+2_15_49,way/847378272,True,tile rule,True,1,1,1,1,1
+2_15_49,way/847378274,True,tile rule,True,1,1,1,1,1
+2_15_49,way/847378281,True,tile rule,False,1,1,1,1,1
+2_15_49,way/847378283,True,tile rule,False,1,1,1,1,1
+2_15_49,way/847378294,True,tile rule,True,1,1,1,1,1
+2_15_49,way/847378295,False,tile rule,False,0,0,0,0,0
+2_15_49,way/847378296,True,tile rule,False,1,1,1,1,1
+2_15_49,way/847378297,True,tile rule,False,1,1,1,1,1
+2_15_49,way/847378298,True,tile rule,False,1,1,1,1,1
+2_15_49,way/847378299,True,tile rule,True,1,1,1,1,1
+2_15_49,way/847378383,True,tile rule,False,1,1,1,1,1
+2_15_49,way/847378384,True,tile rule,False,1,1,1,1,1
+2_16_36,way/847378010,False,tile rule,True,0,0,0,0,0
+2_16_37,way/847378010,False,tile rule,True,0,0,0,0,0
+2_16_38,way/847378010,False,tile rule,True,0,0,0,0,0
+2_17_36,way/847378010,False,tile rule,True,0,0,0,0,0
+2_17_49,way/847378278,True,tile rule,True,1,1,1,1,1
+2_17_51,way/847378377,True,tile rule,True,1,1,1,1,1
+2_17_51,way/847406427,False,tile rule,False,1,1,0,1,1
+2_17_52,way/847378370,True,tile rule,True,1,1,1,1,1
+2_17_52,way/847378377,True,tile rule,True,1,1,1,1,1
+2_17_52,way/847406427,False,tile rule,False,1,1,1,1,1
+2_17_52,way/847406428,False,tile rule,True,1,1,1,1,1
+2_19_44,way/847378227,True,tile rule,True,1,1,1,1,1
+2_19_44,way/847378234,False,tile rule,True,0,0,0,0,0
+2_19_44,way/847378257,True,tile rule,False,1,1,1,1,1
+2_19_44,way/847378258,False,tile rule,True,0,0,0,0,0
+2_19_44,way/847378259,False,tile rule,False,0,0,0,0,0
+2_19_44,way/847378260,True,tile rule,False,0,0,0,1,0
+2_19_44,way/847378261,True,tile rule,False,1,1,1,1,1
+2_19_44,way/847406892,True,tile rule,False,0,0,0,1,0
+2_19_44,way/847406893,False,tile rule,True,0,0,0,0,0
+2_20_36,way/847378008,False,tile rule,True,0,0,0,0,0
+2_20_36,way/847378009,False,tile rule,True,0,0,0,0,0
+2_20_37,way/847378008,False,tile rule,True,1,1,0,0,0
+2_20_37,way/847378009,False,tile rule,True,1,1,0,0,0
+2_20_37,way/847406329,False,tile rule,True,1,1,0,0,0
+2_20_54,way/847378377,True,tile rule,True,1,1,1,1,1
+2_20_61,way/847378363,True,tile rule,True,1,1,1,1,1
+2_21_56,way/847378409,True,tile rule,False,1,1,1,1,1
+2_21_56,way/847378832,True,tile rule,False,1,1,1,1,1
+2_21_56,way/847378833,True,tile rule,False,1,1,1,1,1
+2_21_56,way/847378834,True,tile rule,True,1,1,1,1,1
+2_21_56,way/847391470,True,tile rule,False,1,1,1,1,1
+2_21_56,way/847391474,False,tile rule,True,0,0,0,0,1
+2_21_56,way/847391475,False,tile rule,False,1,1,1,1,1
+2_22_41,way/847378226,False,tile rule,True,0,0,0,0,0
+2_22_41,way/847378241,False,tile rule,True,0,1,0,0,0
+2_22_41,way/847378246,False,tile rule,True,0,0,0,0,0
+2_22_41,way/847378809,False,tile rule,True,0,0,0,0,0
+2_22_45,way/847378248,False,tile rule,True,0,0,0,0,0
+2_22_45,way/847378263,False,tile rule,True,0,0,0,0,0
+2_26_34,way/847378254,False,tile rule,True,0,0,0,0,0
+2_27_33,way/847378254,False,tile rule,True,0,0,0,0,0
+2_27_36,way/847378254,False,tile rule,True,0,0,0,0,0
+2_30_33,way/847378254,False,tile rule,True,0,0,0,0,0
+0_11_16,way/847378664,True,production cloud rule,True,0,0,0,0,0
+0_14_15,way/847378791,True,production cloud rule,True,1,1,1,1,1
+0_14_15,way/847390313,True,production cloud rule,True,1,1,1,1,1
+0_14_15,way/847406270,True,production cloud rule,True,1,1,1,1,1
+0_14_2,way/847377830,False,production cloud rule,True,0,0,0,0,0
+0_14_2,way/847406386,False,production cloud rule,True,0,0,0,0,0
+0_15_3,way/847377830,False,production cloud rule,True,0,0,0,0,0
+0_16_4,way/847377830,False,production cloud rule,True,0,0,0,0,0
+0_16_4,way/847378160,False,production cloud rule,False,0,0,0,0,0
+0_16_4,way/847378161,False,production cloud rule,True,0,0,0,0,0
+0_16_4,way/847378487,False,production cloud rule,False,0,0,0,0,0
+0_17_7,way/847378161,False,production cloud rule,True,0,0,0,0,0
+0_18_12,way/847378436,False,production cloud rule,True,0,0,0,0,0
+0_18_12,way/847378722,True,production cloud rule,True,1,1,0,1,1
+0_18_12,way/847378778,False,production cloud rule,True,0,0,0,0,0
+0_18_12,way/847378782,True,production cloud rule,True,1,1,1,1,1
+0_18_12,way/847378784,True,production cloud rule,True,1,0,1,1,1
+0_18_12,way/847378803,False,production cloud rule,True,0,0,1,1,0
+0_18_12,way/847378804,False,production cloud rule,True,1,1,1,1,1
+0_18_12,way/847378805,True,production cloud rule,True,1,1,1,1,1
+0_18_12,way/847390323,False,production cloud rule,True,0,0,0,0,0
+0_18_12,way/847406823,True,production cloud rule,False,1,1,1,1,1
+0_18_12,way/847406878,False,production cloud rule,True,0,0,0,0,0
+0_18_12,way/847406879,False,production cloud rule,False,0,0,0,0,0
+0_19_14,way/847378378,False,production cloud rule,True,0,0,0,0,0
+0_19_14,way/847378379,False,production cloud rule,True,0,0,0,0,0
+0_19_14,way/847378432,False,production cloud rule,True,0,0,0,0,0
+0_20_18,way/847377958,True,production cloud rule,True,1,1,1,1,1
+0_20_18,way/847377959,True,production cloud rule,True,1,1,1,1,1
+0_20_18,way/847378022,True,production cloud rule,True,1,1,1,1,1
+0_20_18,way/847378023,False,production cloud rule,False,1,1,1,1,1
+0_20_18,way/847378025,False,production cloud rule,True,0,0,0,0,0
+0_20_18,way/847378027,False,production cloud rule,False,1,1,1,1,1
+0_20_19,way/847377958,True,production cloud rule,True,1,1,1,1,1
+0_20_19,way/847377959,True,production cloud rule,True,1,1,1,1,1
+0_24_18,way/847378090,False,production cloud rule,False,0,0,0,0,0
+0_24_18,way/847378091,False,production cloud rule,True,0,0,0,0,0
+0_24_18,way/847378096,False,production cloud rule,True,0,0,0,0,0
+0_24_18,way/847378097,False,production cloud rule,True,0,0,0,0,0
+0_24_18,way/847378100,False,production cloud rule,True,0,0,0,0,0
+0_24_18,way/847378101,False,production cloud rule,True,0,0,0,0,0
+0_24_21,way/847377958,True,production cloud rule,True,1,1,1,1,1
+0_24_21,way/847378121,True,production cloud rule,True,0,1,1,1,1
+2_13_47,way/847378431,False,production cloud rule,False,1,1,0,1,1
+2_13_47,way/847406310,True,production cloud rule,False,1,1,1,1,1
+2_13_47,way/847406891,True,production cloud rule,True,1,1,1,1,1
+2_14_49,way/847378399,True,production cloud rule,True,1,1,1,1,1
+2_14_51,way/847406424,True,production cloud rule,True,1,1,1,1,1
+2_15_48,way/847378273,True,production cloud rule,False,1,1,1,1,1
+2_15_48,way/847378274,True,production cloud rule,True,0,0,1,1,1
+2_15_48,way/847378284,True,production cloud rule,False,1,1,1,1,1
+2_15_48,way/847378285,True,production cloud rule,True,1,1,1,1,1
+2_15_48,way/847378286,True,production cloud rule,True,1,0,1,1,1
+2_15_48,way/847378287,True,production cloud rule,True,1,1,1,1,1
+2_15_48,way/847378288,True,production cloud rule,True,1,1,1,1,1
+2_15_48,way/847378289,True,production cloud rule,True,1,1,1,1,1
+2_15_48,way/847378290,True,production cloud rule,True,1,1,1,1,1
+2_15_48,way/847378291,True,production cloud rule,True,0,0,1,1,1
+2_15_48,way/847391446,True,production cloud rule,True,1,1,1,1,1
+2_15_49,way/847378272,True,production cloud rule,True,1,1,1,1,1
+2_15_49,way/847378274,True,production cloud rule,True,1,1,1,1,1
+2_15_49,way/847378281,True,production cloud rule,False,1,1,1,1,1
+2_15_49,way/847378294,True,production cloud rule,True,1,1,1,1,1
+2_15_49,way/847378296,True,production cloud rule,False,1,1,1,1,1
+2_15_49,way/847378297,True,production cloud rule,False,1,1,1,1,1
+2_15_49,way/847378298,True,production cloud rule,False,1,1,1,1,1
+2_15_49,way/847378299,True,production cloud rule,True,1,1,1,1,1
+2_15_49,way/847378383,True,production cloud rule,False,1,1,1,1,1
+2_15_49,way/847378384,True,production cloud rule,False,1,1,1,1,1
+2_16_36,way/847378010,False,production cloud rule,True,1,1,0,0,0
+2_16_37,way/847378010,False,production cloud rule,True,0,0,0,0,0
+2_16_38,way/847378010,False,production cloud rule,True,1,0,0,0,0
+2_17_49,way/847378278,True,production cloud rule,True,1,1,1,1,1
+2_17_51,way/847378377,True,production cloud rule,True,1,1,1,1,1
+2_17_51,way/847406427,False,production cloud rule,False,1,0,1,1,1
+2_17_52,way/847378370,True,production cloud rule,True,1,1,1,1,1
+2_17_52,way/847378377,True,production cloud rule,True,1,1,1,1,1
+2_17_52,way/847406427,False,production cloud rule,False,1,1,1,1,1
+2_17_52,way/847406428,False,production cloud rule,True,1,1,1,1,1
+2_19_44,way/847378227,True,production cloud rule,True,1,1,1,1,1
+2_19_44,way/847378257,True,production cloud rule,False,1,1,1,1,1
+2_19_44,way/847378260,True,production cloud rule,False,1,0,1,1,1
+2_19_44,way/847378261,True,production cloud rule,False,1,1,1,1,1
+2_20_36,way/847378008,False,production cloud rule,True,0,0,0,0,0
+2_20_36,way/847378009,False,production cloud rule,True,0,0,0,0,0
+2_20_37,way/847378008,False,production cloud rule,True,1,1,0,0,0
+2_20_37,way/847378009,False,production cloud rule,True,1,1,0,0,0
+2_20_37,way/847406329,False,production cloud rule,True,1,1,0,0,0
+2_20_54,way/847378377,True,production cloud rule,True,1,1,1,1,1
+2_20_61,way/847378363,True,production cloud rule,True,1,1,1,1,1
+2_21_56,way/847378409,True,production cloud rule,False,1,1,1,1,1
+2_21_56,way/847378832,True,production cloud rule,False,1,1,1,1,1
+2_21_56,way/847378833,True,production cloud rule,False,1,1,1,1,1
+2_21_56,way/847378834,True,production cloud rule,True,1,1,1,1,1
+2_21_56,way/847391470,True,production cloud rule,False,1,1,1,1,1
+2_21_56,way/847391474,False,production cloud rule,True,0,0,0,1,0
+2_21_56,way/847391475,False,production cloud rule,False,1,1,1,1,1
+2_22_41,way/847378226,False,production cloud rule,True,1,1,0,0,0
+2_22_41,way/847378241,False,production cloud rule,True,1,1,0,0,0
+2_22_41,way/847378809,False,production cloud rule,True,0,0,0,0,0
+2_26_34,way/847378254,False,production cloud rule,True,0,0,0,0,0
+2_27_33,way/847378254,False,production cloud rule,True,0,0,0,0,0
+2_27_36,way/847378254,False,production cloud rule,True,0,0,0,0,0
+2_30_33,way/847378254,False,production cloud rule,True,0,0,0,0,0

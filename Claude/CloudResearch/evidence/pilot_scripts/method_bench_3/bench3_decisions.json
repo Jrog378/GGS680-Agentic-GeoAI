@@ -1,0 +1,416 @@
+{
+ "phase_G": [
+  {
+   "arm": "T1 Otsu grey rise",
+   "decision": "DROP",
+   "evidence": "no help: flood -0.08 [-0.87, +0.93] pts (9 seeds better, 11 worse); 91 roads added, 0 removed; accuracy on added roads 0.835 [0.710, 0.917]"
+  },
+  {
+   "arm": "T1b Otsu grey rise + blob",
+   "decision": "DROP",
+   "evidence": "no help: flood -0.03 [-0.87, +1.13] pts (9 seeds better, 11 worse); 93 roads added, 0 removed; accuracy on added roads 0.839 [0.715, 0.920]"
+  },
+  {
+   "arm": "B1 EM-Bayes hysteresis",
+   "decision": "MAYBE",
+   "evidence": "within noise / one metric: flood +0.45 [-0.24, +1.11] pts (14 seeds better, 6 worse); 34 roads added, 28 removed; accuracy on added roads 0.756 [0.546, 0.893]"
+  },
+  {
+   "arm": "B1p EM-Bayes pooled",
+   "decision": "MAYBE",
+   "evidence": "within noise / one metric: flood +0.48 [-0.26, +1.30] pts (17 seeds better, 2 worse); 54 roads added, 0 removed; accuracy on added roads 0.757 [0.566, 0.884]"
+  },
+  {
+   "arm": "B2 ICM-MRF beta 1.3",
+   "decision": "MAYBE",
+   "evidence": "within noise / one metric: flood +0.29 [-0.40, +0.90] pts (13 seeds better, 8 worse); 31 roads added, 39 removed; accuracy on added roads 0.762 [0.509, 0.911]"
+  },
+  {
+   "arm": "B2 ICM-MRF beta 1.6",
+   "decision": "MAYBE",
+   "evidence": "within noise / one metric: flood +0.29 [-0.40, +0.90] pts (13 seeds better, 8 worse); 31 roads added, 39 removed; accuracy on added roads 0.762 [0.509, 0.911]"
+  },
+  {
+   "arm": "B2 ICM-MRF beta 1.8",
+   "decision": "MAYBE",
+   "evidence": "within noise / one metric: flood +0.29 [-0.40, +0.90] pts (13 seeds better, 8 worse); 31 roads added, 39 removed; accuracy on added roads 0.762 [0.509, 0.911]"
+  },
+  {
+   "arm": "U1 DS certain gate",
+   "decision": "MAYBE",
+   "evidence": "within noise / one metric: flood +0.02 [-0.74, +1.04] pts (9 seeds better, 11 worse); 78 roads added, 0 removed; accuracy on added roads 0.835 [0.702, 0.918]"
+  },
+  {
+   "arm": "U1s DS strict",
+   "decision": "MAYBE",
+   "evidence": "within noise / one metric: flood +0.20 [-0.13, +0.45] pts (12 seeds better, 8 worse); 0 roads added, 3 removed"
+  },
+  {
+   "arm": "P1 Pan C tile",
+   "decision": "DROP",
+   "evidence": "no help: Ida primary vs C0 -0.0007 [-0.0063, +0.0043] (73 tiles), guard 0.94 (ok); flood -0.50 [-1.15, +0.08] pts (6 seeds better, 15 worse); vs C0 current two-date +0.07 [-0.33, +0.43]"
+  },
+  {
+   "arm": "P1w Pan C local",
+   "decision": "DROP",
+   "evidence": "harms: Ida primary vs C0 +0.0020 [-0.0025, +0.0066] (73 tiles), guard 1.21 (ok); flood -0.87 [-1.50, -0.30] pts (1 seeds better, 20 worse); vs C0 current two-date -0.30 [-0.67, +0.04]"
+  },
+  {
+   "arm": "S1 sphere DCP",
+   "decision": "DROP",
+   "evidence": "harms: Ida primary vs C0 +0.0309 [+0.0200, +0.0421] (73 tiles), guard 3.64 (fails); flood -0.67 [-1.50, +0.03] pts (3 seeds better, 15 worse); vs C0 current two-date -0.11 [-0.68, +0.49]"
+  },
+  {
+   "arm": "S1p sphere + Pan C",
+   "decision": "DROP",
+   "evidence": "harms: Ida primary vs C0 +0.0098 [+0.0012, +0.0188] (73 tiles), guard 0.91 (ok); flood -0.36 [-1.02, +0.20] pts (5 seeds better, 16 worse); vs C0 current two-date +0.20 [-0.28, +0.66]"
+  },
+  {
+   "arm": "M1 median DCP",
+   "decision": "DROP",
+   "evidence": "harms: Ida primary vs C0 +0.0250 [+0.0114, +0.0376] (73 tiles), guard 3.85 (fails); flood -0.18 [-1.05, +0.59] pts (6 seeds better, 13 worse); vs C0 current two-date +0.39 [-0.33, +1.18]"
+  },
+  {
+   "arm": "L1 Poisson seam",
+   "decision": "DROP",
+   "evidence": "no help: Ida primary vs C0 -0.0065 [-0.0166, +0.0021] (73 tiles), guard 0.22 (ok); flood -0.51 [-1.17, +0.07] pts (1 seeds better, 16 worse); vs C0 current two-date +0.05 [-0.34, +0.46]"
+  },
+  {
+   "arm": "Q1 1/t on C0 current two-date",
+   "decision": "DROP",
+   "evidence": "no help: flood -0.54 [-1.25, +0.15] pts (4 seeds better, 15 worse)"
+  },
+  {
+   "arm": "PUL",
+   "decision": "DROP",
+   "evidence": "no help: flood -2.32 [-6.17, +0.73] pts (0 seeds better, 21 worse)"
+  },
+  {
+   "arm": "PULb binned c",
+   "decision": "DROP",
+   "evidence": "no help: flood -2.27 [-6.12, +0.73] pts (0 seeds better, 21 worse)"
+  },
+  {
+   "arm": "D5a weighted",
+   "decision": "MAYBE",
+   "evidence": "HRC_WHU F1 vs D0 +0.0009 [+0.0001, +0.0016]; boundary band +0.0042 [+0.0027, +0.0057]; images higher 71, lower 49"
+  },
+  {
+   "arm": "D5b edge-sampled",
+   "decision": "MAYBE",
+   "evidence": "HRC_WHU F1 vs D0 +0.0001 [-0.0012, +0.0014]; boundary band +0.0034 [+0.0017, +0.0051]; images higher 68, lower 52"
+  },
+  {
+   "arm": "T1d Otsu on the dark rise",
+   "decision": "NOT RUN",
+   "evidence": "check only: integer Otsu k* = 72 vs 71.36 (within 5 DN) confirms production's cut"
+  },
+  {
+   "arm": "L2 Lin cloning from the before date",
+   "decision": "NOT RUN",
+   "evidence": "diagnostic only (pastes pre-storm ground into the flood)"
+  },
+  {
+   "arm": "Chip-level cloud gate (Shendryk 2019)",
+   "decision": "NOT RUN",
+   "evidence": "needs Justin's ruling on derived labels"
+  },
+  {
+   "arm": "FwDET edge gate",
+   "decision": "NOT RUN",
+   "evidence": "needs a new 3DEP download"
+  },
+  {
+   "arm": "DINOv3",
+   "decision": "NOT RUN",
+   "evidence": "research-only"
+  },
+  {
+   "arm": "D5 flood effect (spotter gate on SN8)",
+   "decision": "MAYBE",
+   "evidence": "within noise: run (condition met): D5a spotter gate vs D0 spotter gate +0.07 [-0.18, +0.33] pts, 21 seeds (9 better, 10 worse); kept D0 790, D5a 788; source d5_sn8_numbers.json"
+  },
+  {
+   "arm": "COMBO L1 Poisson seam + Q1 1/t on C0 current two-date",
+   "decision": "(cell)",
+   "evidence": "gain -0.48 [-1.17, +0.15] pts; interaction +0.57 [-0.08, +1.24]"
+  },
+  {
+   "arm": "COMBO L1 Poisson seam + PULb binned c",
+   "decision": "(cell)",
+   "evidence": "gain -2.85 [-6.68, +0.17] pts; interaction -0.07 [-0.77, +0.69]"
+  },
+  {
+   "arm": "COMBO P1 Pan C tile + Q1 1/t on C0 current two-date",
+   "decision": "(cell)",
+   "evidence": "gain -0.66 [-1.43, +0.00] pts; interaction +0.38 [-0.27, +1.00]"
+  },
+  {
+   "arm": "COMBO P1 Pan C tile + PULb binned c",
+   "decision": "(cell)",
+   "evidence": "gain -2.91 [-6.70, +0.12] pts; interaction -0.14 [-0.97, +0.70]"
+  },
+  {
+   "arm": "COMBO B1p EM-Bayes pooled + Q1 1/t on C0 current two-date",
+   "decision": "(cell)",
+   "evidence": "gain -0.44 [-1.23, +0.35] pts; interaction -0.39 [-0.80, +0.01]"
+  },
+  {
+   "arm": "COMBO B1p EM-Bayes pooled + PULb binned c",
+   "decision": "(cell)",
+   "evidence": "gain -2.27 [-6.12, +0.73] pts; interaction -0.48 [-1.30, +0.26]"
+  },
+  {
+   "arm": "COMBO B1p EM-Bayes pooled + L1 Poisson seam",
+   "decision": "(cell)",
+   "evidence": "gain -0.25 [-0.89, +0.45] pts; interaction -0.22 [-0.75, +0.32]"
+  },
+  {
+   "arm": "COMBO B1p EM-Bayes pooled + L1 Poisson seam + Q1 1/t on C0 current two-date",
+   "decision": "(cell)",
+   "evidence": "gain -0.05 [-0.72, +0.59] pts; interaction +0.52 [-0.42, +1.53]"
+  },
+  {
+   "arm": "COMBO B1p EM-Bayes pooled + L1 Poisson seam + PULb binned c",
+   "decision": "(cell)",
+   "evidence": "gain -2.85 [-6.68, +0.17] pts; interaction -0.55 [-1.59, +0.40]"
+  },
+  {
+   "arm": "COMBO B1p EM-Bayes pooled + P1 Pan C tile",
+   "decision": "(cell)",
+   "evidence": "gain -0.18 [-0.85, +0.48] pts; interaction -0.16 [-0.66, +0.36]"
+  },
+  {
+   "arm": "COMBO B1p EM-Bayes pooled + P1 Pan C tile + Q1 1/t on C0 current two-date",
+   "decision": "(cell)",
+   "evidence": "gain -0.27 [-0.91, +0.37] pts; interaction +0.28 [-0.52, +1.11]"
+  },
+  {
+   "arm": "COMBO B1p EM-Bayes pooled + P1 Pan C tile + PULb binned c",
+   "decision": "(cell)",
+   "evidence": "gain -2.91 [-6.70, +0.12] pts; interaction -0.62 [-1.78, +0.51]"
+  },
+  {
+   "arm": "COMBO B1 EM-Bayes hysteresis + Q1 1/t on C0 current two-date",
+   "decision": "(cell)",
+   "evidence": "gain -0.87 [-1.82, -0.02] pts; interaction -0.84 [-1.58, -0.29]"
+  },
+  {
+   "arm": "COMBO B1 EM-Bayes hysteresis + PULb binned c",
+   "decision": "(cell)",
+   "evidence": "gain -2.10 [-6.00, +1.06] pts; interaction -0.45 [-1.11, +0.24]"
+  },
+  {
+   "arm": "COMBO B1 EM-Bayes hysteresis + L1 Poisson seam",
+   "decision": "(cell)",
+   "evidence": "gain -0.43 [-1.16, +0.25] pts; interaction -0.35 [-0.77, +0.02]"
+  },
+  {
+   "arm": "COMBO B1 EM-Bayes hysteresis + L1 Poisson seam + Q1 1/t on C0 current two-date",
+   "decision": "(cell)",
+   "evidence": "gain -0.36 [-1.12, +0.38] pts; interaction +0.20 [-0.60, +1.02]"
+  },
+  {
+   "arm": "COMBO B1 EM-Bayes hysteresis + L1 Poisson seam + PULb binned c",
+   "decision": "(cell)",
+   "evidence": "gain -2.70 [-6.72, +0.42] pts; interaction -0.53 [-1.51, +0.41]"
+  },
+  {
+   "arm": "COMBO B1 EM-Bayes hysteresis + P1 Pan C tile",
+   "decision": "(cell)",
+   "evidence": "gain -0.72 [-1.74, +0.12] pts; interaction -0.75 [-1.84, +0.04]"
+  },
+  {
+   "arm": "COMBO B1 EM-Bayes hysteresis + P1 Pan C tile + Q1 1/t on C0 current two-date",
+   "decision": "(cell)",
+   "evidence": "gain -0.69 [-1.67, +0.12] pts; interaction -0.24 [-1.39, +0.79]"
+  },
+  {
+   "arm": "COMBO B1 EM-Bayes hysteresis + P1 Pan C tile + PULb binned c",
+   "decision": "(cell)",
+   "evidence": "gain -2.78 [-6.73, +0.36] pts; interaction -0.71 [-1.99, +0.49]"
+  }
+ ],
+ "phase_R": [
+  {
+   "arm": "R0 colour baseline",
+   "decision": "DROP",
+   "evidence": "harms: flood -0.90 [-1.76, -0.28] pts (1 seeds better, 19 worse)"
+  },
+  {
+   "arm": "D1e IHOT-RGB",
+   "decision": "DROP",
+   "evidence": "no help: flood -1.66 [-3.35, +0.07] pts (0 seeds better, 21 worse); 29 roads added, 142 removed; accuracy on added roads 0.680 [0.288, 0.897]; vs R0 -0.94 [-2.34, +0.52] (3 better)"
+  },
+  {
+   "arm": "D1e-BR IHOT blue-red",
+   "decision": "DROP",
+   "evidence": "no help: flood -1.06 [-2.70, +0.62] pts (0 seeds better, 20 worse); 26 roads added, 174 removed; accuracy on added roads 0.674 [0.214, 0.909]; vs R0 -0.27 [-1.62, +1.38] (5 better)"
+  },
+  {
+   "arm": "RGB B1p EM-Bayes pooled",
+   "decision": "MAYBE",
+   "evidence": "helps vs R0 (interval above 0), not vs production: flood -0.17 [-1.06, +0.60] pts (7 seeds better, 14 worse); 56 roads added, 0 removed; accuracy on added roads 0.730 [0.545, 0.857]; vs R0 colour baseline +0.73 [+0.14, +1.50]"
+  },
+  {
+   "arm": "RGB B1 EM-Bayes hysteresis",
+   "decision": "MAYBE",
+   "evidence": "helps vs R0 (interval above 0), not vs production: flood -0.18 [-1.18, +0.61] pts (6 seeds better, 14 worse); 31 roads added, 26 removed; accuracy on added roads 0.693 [0.449, 0.875]; vs R0 colour baseline +0.62 [+0.12, +1.17]"
+  },
+  {
+   "arm": "A2b HOT lower-bound",
+   "decision": "DROP",
+   "evidence": "no help: Ida primary vs C0 +0.0141 [-0.0010, +0.0311] (46 tiles), guard 2.23 (fails); flood -0.72 [-1.83, +0.27] pts (1 seeds better, 20 worse); vs R0 colour baseline +0.18 [-0.47, +0.91]"
+  },
+  {
+   "arm": "A2b-noW no water proxy",
+   "decision": "DROP",
+   "evidence": "no help: Ida primary vs C0 +0.0090 [-0.0057, +0.0222] (47 tiles), guard 2.80 (fails); flood -0.98 [-2.15, +0.08] pts (0 seeds better, 19 worse); vs R0 colour baseline -0.08 [-0.73, +0.71]"
+  },
+  {
+   "arm": "A2b-auto MAD limit",
+   "decision": "DROP",
+   "evidence": "harms: Ida primary vs C0 +0.0142 [+0.0061, +0.0221] (35 tiles), guard 0.37 (ok); flood -0.61 [-1.90, +0.41] pts (4 seeds better, 16 worse); vs R0 colour baseline +0.29 [-0.42, +0.98]"
+  },
+  {
+   "arm": "RGB L1 Poisson seam",
+   "decision": "DROP",
+   "evidence": "harms: Ida primary vs C0 -0.0057 [-0.0151, +0.0025] (73 tiles), guard 0.22 (ok); flood -0.93 [-2.01, -0.05] pts (0 seeds better, 20 worse); vs R0 colour baseline -0.03 [-0.54, +0.57]"
+  },
+  {
+   "arm": "RGB P1 Pan C tile",
+   "decision": "MAYBE",
+   "evidence": "helps vs R0 (interval above 0), not vs production: Ida primary vs C0 -0.0084 [-0.0133, -0.0035] (73 tiles), guard 0.70 (ok); flood -0.19 [-1.24, +0.69] pts (5 seeds better, 14 worse); vs R0 colour baseline +0.71 [+0.10, +1.37]"
+  },
+  {
+   "arm": "Q1 1/t on RGB L1 Poisson seam",
+   "decision": "DROP",
+   "evidence": "harms: flood -0.90 [-1.99, -0.01] pts (1 seeds better, 18 worse); vs R0 +0.01 [-0.56, +0.64] (13 better)"
+  },
+  {
+   "arm": "Q1 1/t on RGB P1 Pan C tile",
+   "decision": "DROP",
+   "evidence": "no help: flood -0.36 [-1.43, +0.58] pts (2 seeds better, 17 worse); vs R0 +0.54 [-0.06, +1.25] (17 better)"
+  },
+  {
+   "arm": "ISFA-RGB IWD + SFA1",
+   "decision": "DROP",
+   "evidence": "harms: flood -0.65 [-1.47, -0.01] pts (4 seeds better, 16 worse); vs R0 +0.25 [-0.03, +0.61] (15 better)"
+  },
+  {
+   "arm": "ISFA-grey control",
+   "decision": "DROP",
+   "evidence": "no help: flood -0.66 [-1.55, +0.01] pts (2 seeds better, 19 worse); vs R0 +0.24 [-0.06, +0.53] (12 better)"
+  },
+  {
+   "arm": "RGB PULb binned c",
+   "decision": "DROP",
+   "evidence": "no help: flood -2.33 [-6.57, +0.85] pts (0 seeds better, 21 worse); vs R0 colour baseline -1.43 [-5.44, +1.78]"
+  },
+  {
+   "arm": "D1e as a spotter feature (Use A)",
+   "decision": "NOT RUN",
+   "evidence": "HRC_WHU has no clear partner date"
+  },
+  {
+   "arm": "COMBO R RGB P1 Pan C tile + Q1 1/t on RGB P1 Pan C tile",
+   "decision": "(cell)",
+   "evidence": "gain -0.40 [-1.55, +0.60] pts; interaction -0.75 [-1.44, -0.18]"
+  },
+  {
+   "arm": "COMBO R RGB P1 Pan C tile + ISFA-RGB IWD + SFA1",
+   "decision": "(cell)",
+   "evidence": "gain -0.49 [-1.57, +0.46] pts; interaction -0.55 [-1.01, -0.16]"
+  },
+  {
+   "arm": "COMBO R RGB L1 Poisson seam + Q1 1/t on RGB P1 Pan C tile",
+   "decision": "(cell)",
+   "evidence": "gain -1.02 [-2.07, -0.12] pts; interaction -0.63 [-1.38, +0.02]"
+  },
+  {
+   "arm": "COMBO R RGB L1 Poisson seam + ISFA-RGB IWD + SFA1",
+   "decision": "(cell)",
+   "evidence": "gain -0.74 [-1.87, +0.17] pts; interaction -0.06 [-0.53, +0.35]"
+  },
+  {
+   "arm": "COMBO R RGB B1p EM-Bayes pooled + Q1 1/t on RGB P1 Pan C tile",
+   "decision": "(cell)",
+   "evidence": "gain -0.33 [-1.34, +0.59] pts; interaction -0.70 [-1.19, -0.28]"
+  },
+  {
+   "arm": "COMBO R RGB B1p EM-Bayes pooled + ISFA-RGB IWD + SFA1",
+   "decision": "(cell)",
+   "evidence": "gain -0.21 [-1.09, +0.60] pts; interaction -0.29 [-0.68, +0.06]"
+  },
+  {
+   "arm": "COMBO R RGB B1p EM-Bayes pooled + RGB P1 Pan C tile",
+   "decision": "(cell)",
+   "evidence": "gain -0.18 [-1.17, +0.78] pts; interaction -0.72 [-1.14, -0.32]"
+  },
+  {
+   "arm": "COMBO R RGB B1p EM-Bayes pooled + RGB P1 Pan C tile + Q1 1/t on RGB P1 Pan C tile",
+   "decision": "(cell)",
+   "evidence": "gain -0.33 [-1.34, +0.59] pts; interaction -1.41 [-2.54, -0.47]"
+  },
+  {
+   "arm": "COMBO R RGB B1p EM-Bayes pooled + RGB P1 Pan C tile + ISFA-RGB IWD + SFA1",
+   "decision": "(cell)",
+   "evidence": "gain -0.14 [-1.08, +0.74] pts; interaction -0.92 [-1.65, -0.25]"
+  },
+  {
+   "arm": "COMBO R RGB B1p EM-Bayes pooled + RGB L1 Poisson seam",
+   "decision": "(cell)",
+   "evidence": "gain -0.61 [-1.65, +0.34] pts; interaction -0.41 [-0.81, +0.03]"
+  },
+  {
+   "arm": "COMBO R RGB B1p EM-Bayes pooled + RGB L1 Poisson seam + Q1 1/t on RGB P1 Pan C tile",
+   "decision": "(cell)",
+   "evidence": "gain -0.76 [-1.81, +0.16] pts; interaction -1.10 [-2.13, -0.22]"
+  },
+  {
+   "arm": "COMBO R RGB B1p EM-Bayes pooled + RGB L1 Poisson seam + ISFA-RGB IWD + SFA1",
+   "decision": "(cell)",
+   "evidence": "gain -0.64 [-1.61, +0.22] pts; interaction -0.69 [-1.35, -0.09]"
+  },
+  {
+   "arm": "COMBO R RGB B1 EM-Bayes hysteresis + Q1 1/t on RGB P1 Pan C tile",
+   "decision": "(cell)",
+   "evidence": "gain -0.16 [-1.47, +1.05] pts; interaction -0.44 [-0.79, -0.09]"
+  },
+  {
+   "arm": "COMBO R RGB B1 EM-Bayes hysteresis + ISFA-RGB IWD + SFA1",
+   "decision": "(cell)",
+   "evidence": "gain -0.40 [-1.42, +0.51] pts; interaction -0.44 [-0.85, -0.08]"
+  },
+  {
+   "arm": "COMBO R RGB B1 EM-Bayes hysteresis + RGB P1 Pan C tile",
+   "decision": "(cell)",
+   "evidence": "gain -0.07 [-1.38, +1.04] pts; interaction -0.54 [-1.00, -0.10]"
+  },
+  {
+   "arm": "COMBO R RGB B1 EM-Bayes hysteresis + RGB P1 Pan C tile + Q1 1/t on RGB P1 Pan C tile",
+   "decision": "(cell)",
+   "evidence": "gain -0.16 [-1.47, +1.05] pts; interaction -1.09 [-1.96, -0.30]"
+  },
+  {
+   "arm": "COMBO R RGB B1 EM-Bayes hysteresis + RGB P1 Pan C tile + ISFA-RGB IWD + SFA1",
+   "decision": "(cell)",
+   "evidence": "gain -0.36 [-1.71, +0.78] pts; interaction -1.04 [-1.85, -0.43]"
+  },
+  {
+   "arm": "COMBO R RGB B1 EM-Bayes hysteresis + RGB L1 Poisson seam",
+   "decision": "(cell)",
+   "evidence": "gain -0.71 [-1.97, +0.37] pts; interaction -0.47 [-1.02, +0.01]"
+  },
+  {
+   "arm": "COMBO R RGB B1 EM-Bayes hysteresis + RGB L1 Poisson seam + Q1 1/t on RGB P1 Pan C tile",
+   "decision": "(cell)",
+   "evidence": "gain -0.71 [-2.04, +0.42] pts; interaction -0.93 [-1.98, -0.04]"
+  },
+  {
+   "arm": "COMBO R RGB B1 EM-Bayes hysteresis + RGB L1 Poisson seam + ISFA-RGB IWD + SFA1",
+   "decision": "(cell)",
+   "evidence": "gain -0.49 [-1.76, +0.59] pts; interaction -0.47 [-1.12, +0.11]"
+  }
+ ]
+}

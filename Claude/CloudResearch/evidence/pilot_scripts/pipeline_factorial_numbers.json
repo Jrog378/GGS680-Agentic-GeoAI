@@ -1,0 +1,6854 @@
+{
+ "code": "GeoAI-Roads 55c8fc2 (clean tree)",
+ "test plan": "outputs/preregistration_pipeline_factorial.md",
+ "production model": "random forest (tuned)",
+ "cloud rule": "tile rule + road rule",
+ "fold seeds": [
+  662,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20
+ ],
+ "arms": {
+  "a\u00b7raw\u00b7prod": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "none (raw)",
+   "features": "production features",
+   "tools": 0,
+   "columns before the PCA": 96,
+   "model columns": 96
+  },
+  "a\u00b7raw\u00b7vec": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "none (raw)",
+   "features": "+ DINOv2 change vector",
+   "tools": 1,
+   "columns before the PCA": 1120,
+   "model columns": 112
+  },
+  "a\u00b7td\u00b7prod": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "two-date",
+   "features": "production features",
+   "tools": 1,
+   "columns before the PCA": 96,
+   "model columns": 96
+  },
+  "a\u00b7td\u00b7vec": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "two-date",
+   "features": "+ DINOv2 change vector",
+   "tools": 2,
+   "columns before the PCA": 1120,
+   "model columns": 112
+  },
+  "a\u00b7he\u00b7prod": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "He 2011",
+   "features": "production features",
+   "tools": 1,
+   "columns before the PCA": 96,
+   "model columns": 96
+  },
+  "a\u00b7he\u00b7vec": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "He 2011",
+   "features": "+ DINOv2 change vector",
+   "tools": 2,
+   "columns before the PCA": 1120,
+   "model columns": 112
+  },
+  "a\u00b7both\u00b7prod": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "both cues + raw",
+   "features": "production features",
+   "tools": 2,
+   "columns before the PCA": 288,
+   "model columns": 288
+  },
+  "a\u00b7both\u00b7vec": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "both cues + raw",
+   "features": "+ DINOv2 change vector",
+   "tools": 3,
+   "columns before the PCA": 1312,
+   "model columns": 304
+  },
+  "b\u00b7raw\u00b7prod": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "none (raw)",
+   "features": "production features",
+   "tools": 1,
+   "columns before the PCA": 96,
+   "model columns": 96
+  },
+  "b\u00b7raw\u00b7vec": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "none (raw)",
+   "features": "+ DINOv2 change vector",
+   "tools": 2,
+   "columns before the PCA": 1120,
+   "model columns": 112
+  },
+  "b\u00b7td\u00b7prod": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "two-date",
+   "features": "production features",
+   "tools": 2,
+   "columns before the PCA": 96,
+   "model columns": 96
+  },
+  "b\u00b7td\u00b7vec": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "two-date",
+   "features": "+ DINOv2 change vector",
+   "tools": 3,
+   "columns before the PCA": 1120,
+   "model columns": 112
+  },
+  "b\u00b7he\u00b7prod": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "He 2011",
+   "features": "production features",
+   "tools": 2,
+   "columns before the PCA": 96,
+   "model columns": 96
+  },
+  "b\u00b7he\u00b7vec": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "He 2011",
+   "features": "+ DINOv2 change vector",
+   "tools": 3,
+   "columns before the PCA": 1120,
+   "model columns": 112
+  },
+  "b\u00b7both\u00b7prod": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "both cues + raw",
+   "features": "production features",
+   "tools": 3,
+   "columns before the PCA": 288,
+   "model columns": 288
+  },
+  "b\u00b7both\u00b7vec": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "both cues + raw",
+   "features": "+ DINOv2 change vector",
+   "tools": 4,
+   "columns before the PCA": 1312,
+   "model columns": 304
+  }
+ },
+ "folds": "StratifiedGroupKFold(5, shuffle=True) by tile over all 1,037 development roads; each fold fitted on the training-fold roads its gate keeps; every held-out road called",
+ "roads": {
+  "development": 1037,
+  "kept a": 798,
+  "kept b": 790,
+  "shared": 757,
+  "flooded shared": 431
+ },
+ "tile-rule tiles": 200,
+ "tiles with a cloud gate": 99,
+ "thin-cloud tiles": 39,
+ "checks": [
+  "a\u00b7raw\u00b7prod = cloudvars_calls.csv production (1,037 roads, call for call); 390/51/91/266 on its 798",
+  "b\u00b7raw\u00b7prod = gate_roads.csv spotter calls on its 790 kept roads; 416/34/88/252",
+  "a\u00b7raw\u00b7vec, a\u00b7both\u00b7prod, a\u00b7both\u00b7vec = everything_together_calls.csv C1037 best so far / without the vector / everything together (call for call)",
+  "a\u00b7td\u00b7prod = twodate_cornerfix_calls.csv; a\u00b7he\u00b7prod = he_dehazed_calls.csv (call for call)",
+  "757 shared roads, 798 / 790 kept; gate_roads.csv dark-rise shares match the road table",
+  "accuracy intervals match sn8_heldout.held_out_report",
+  "production's cloud-group intervals reproduce both_dehazers_numbers.json",
+  "production.json unchanged (sha256)"
+ ],
+ "(i) shared roads, seed 662": {
+  "arms": {
+   "a\u00b7raw\u00b7prod": {
+    "TP": 385,
+    "FN": 46,
+    "FP": 87,
+    "TN": 239,
+    "accuracy": 0.824306,
+    "precision": 0.815678,
+    "recall": 0.893271,
+    "specificity": 0.733129,
+    "F1": 0.852713,
+    "MCC": 0.640186,
+    "accuracy 95% CI": [
+     0.78511,
+     0.861312
+    ],
+    "precision 95% CI": [
+     0.756888,
+     0.864621
+    ],
+    "recall 95% CI": [
+     0.850215,
+     0.931298
+    ],
+    "specificity 95% CI": [
+     0.651049,
+     0.806365
+    ],
+    "F1 95% CI": [
+     0.81103,
+     0.887703
+    ],
+    "MCC 95% CI": [
+     0.560838,
+     0.717336
+    ]
+   },
+   "a\u00b7raw\u00b7vec": {
+    "TP": 395,
+    "FN": 36,
+    "FP": 80,
+    "TN": 246,
+    "accuracy": 0.846764,
+    "precision": 0.831579,
+    "recall": 0.916473,
+    "specificity": 0.754601,
+    "F1": 0.871965,
+    "MCC": 0.687301,
+    "accuracy 95% CI": [
+     0.810883,
+     0.879644
+    ],
+    "precision 95% CI": [
+     0.776046,
+     0.879326
+    ],
+    "recall 95% CI": [
+     0.882038,
+     0.946956
+    ],
+    "specificity 95% CI": [
+     0.67718,
+     0.822226
+    ],
+    "F1 95% CI": [
+     0.834401,
+     0.903226
+    ],
+    "MCC 95% CI": [
+     0.614575,
+     0.754433
+    ]
+   },
+   "a\u00b7td\u00b7prod": {
+    "TP": 390,
+    "FN": 41,
+    "FP": 90,
+    "TN": 236,
+    "accuracy": 0.826948,
+    "precision": 0.8125,
+    "recall": 0.904872,
+    "specificity": 0.723926,
+    "F1": 0.856202,
+    "MCC": 0.646396,
+    "accuracy 95% CI": [
+     0.787202,
+     0.862587
+    ],
+    "precision 95% CI": [
+     0.753747,
+     0.862072
+    ],
+    "recall 95% CI": [
+     0.868154,
+     0.936449
+    ],
+    "specificity 95% CI": [
+     0.642,
+     0.8
+    ],
+    "F1 95% CI": [
+     0.814707,
+     0.889539
+    ],
+    "MCC 95% CI": [
+     0.56719,
+     0.718816
+    ]
+   },
+   "a\u00b7td\u00b7vec": {
+    "TP": 395,
+    "FN": 36,
+    "FP": 86,
+    "TN": 240,
+    "accuracy": 0.838838,
+    "precision": 0.821206,
+    "recall": 0.916473,
+    "specificity": 0.736196,
+    "F1": 0.866228,
+    "MCC": 0.67145,
+    "accuracy 95% CI": [
+     0.802814,
+     0.872384
+    ],
+    "precision 95% CI": [
+     0.764697,
+     0.868005
+    ],
+    "recall 95% CI": [
+     0.882689,
+     0.943663
+    ],
+    "specificity 95% CI": [
+     0.655315,
+     0.810227
+    ],
+    "F1 95% CI": [
+     0.826087,
+     0.896776
+    ],
+    "MCC 95% CI": [
+     0.599377,
+     0.737396
+    ]
+   },
+   "a\u00b7he\u00b7prod": {
+    "TP": 383,
+    "FN": 48,
+    "FP": 89,
+    "TN": 237,
+    "accuracy": 0.819022,
+    "precision": 0.811441,
+    "recall": 0.888631,
+    "specificity": 0.726994,
+    "F1": 0.848283,
+    "MCC": 0.629173,
+    "accuracy 95% CI": [
+     0.779028,
+     0.856457
+    ],
+    "precision 95% CI": [
+     0.751183,
+     0.860514
+    ],
+    "recall 95% CI": [
+     0.842242,
+     0.929901
+    ],
+    "specificity 95% CI": [
+     0.649252,
+     0.793796
+    ],
+    "F1 95% CI": [
+     0.802563,
+     0.885747
+    ],
+    "MCC 95% CI": [
+     0.548705,
+     0.705919
+    ]
+   },
+   "a\u00b7he\u00b7vec": {
+    "TP": 394,
+    "FN": 37,
+    "FP": 85,
+    "TN": 241,
+    "accuracy": 0.838838,
+    "precision": 0.822547,
+    "recall": 0.914153,
+    "specificity": 0.739264,
+    "F1": 0.865934,
+    "MCC": 0.671193,
+    "accuracy 95% CI": [
+     0.803141,
+     0.873864
+    ],
+    "precision 95% CI": [
+     0.768752,
+     0.86783
+    ],
+    "recall 95% CI": [
+     0.876707,
+     0.946012
+    ],
+    "specificity 95% CI": [
+     0.660787,
+     0.805334
+    ],
+    "F1 95% CI": [
+     0.826142,
+     0.897607
+    ],
+    "MCC 95% CI": [
+     0.59418,
+     0.742619
+    ]
+   },
+   "a\u00b7both\u00b7prod": {
+    "TP": 392,
+    "FN": 39,
+    "FP": 90,
+    "TN": 236,
+    "accuracy": 0.82959,
+    "precision": 0.813278,
+    "recall": 0.909513,
+    "specificity": 0.723926,
+    "F1": 0.858708,
+    "MCC": 0.652172,
+    "accuracy 95% CI": [
+     0.788964,
+     0.86693
+    ],
+    "precision 95% CI": [
+     0.752968,
+     0.862922
+    ],
+    "recall 95% CI": [
+     0.873737,
+     0.941559
+    ],
+    "specificity 95% CI": [
+     0.641421,
+     0.79899
+    ],
+    "F1 95% CI": [
+     0.81775,
+     0.892952
+    ],
+    "MCC 95% CI": [
+     0.568441,
+     0.727525
+    ]
+   },
+   "a\u00b7both\u00b7vec": {
+    "TP": 393,
+    "FN": 38,
+    "FP": 85,
+    "TN": 241,
+    "accuracy": 0.837517,
+    "precision": 0.822176,
+    "recall": 0.911833,
+    "specificity": 0.739264,
+    "F1": 0.864686,
+    "MCC": 0.668308,
+    "accuracy 95% CI": [
+     0.800548,
+     0.8722
+    ],
+    "precision 95% CI": [
+     0.764949,
+     0.870813
+    ],
+    "recall 95% CI": [
+     0.877135,
+     0.942969
+    ],
+    "specificity 95% CI": [
+     0.657893,
+     0.809394
+    ],
+    "F1 95% CI": [
+     0.825852,
+     0.897288
+    ],
+    "MCC 95% CI": [
+     0.592699,
+     0.738212
+    ]
+   },
+   "b\u00b7raw\u00b7prod": {
+    "TP": 397,
+    "FN": 34,
+    "FP": 85,
+    "TN": 241,
+    "accuracy": 0.842801,
+    "precision": 0.823651,
+    "recall": 0.921114,
+    "specificity": 0.739264,
+    "F1": 0.86966,
+    "MCC": 0.679908,
+    "accuracy 95% CI": [
+     0.804781,
+     0.879025
+    ],
+    "precision 95% CI": [
+     0.765698,
+     0.872556
+    ],
+    "recall 95% CI": [
+     0.889124,
+     0.950444
+    ],
+    "specificity 95% CI": [
+     0.660512,
+     0.812825
+    ],
+    "F1 95% CI": [
+     0.830811,
+     0.902129
+    ],
+    "MCC 95% CI": [
+     0.603384,
+     0.752002
+    ]
+   },
+   "b\u00b7raw\u00b7vec": {
+    "TP": 402,
+    "FN": 29,
+    "FP": 85,
+    "TN": 241,
+    "accuracy": 0.849406,
+    "precision": 0.825462,
+    "recall": 0.932715,
+    "specificity": 0.739264,
+    "F1": 0.875817,
+    "MCC": 0.694635,
+    "accuracy 95% CI": [
+     0.814042,
+     0.882288
+    ],
+    "precision 95% CI": [
+     0.768888,
+     0.87453
+    ],
+    "recall 95% CI": [
+     0.906389,
+     0.955796
+    ],
+    "specificity 95% CI": [
+     0.656148,
+     0.810506
+    ],
+    "F1 95% CI": [
+     0.839076,
+     0.905631
+    ],
+    "MCC 95% CI": [
+     0.624992,
+     0.758441
+    ]
+   },
+   "b\u00b7td\u00b7prod": {
+    "TP": 396,
+    "FN": 35,
+    "FP": 90,
+    "TN": 236,
+    "accuracy": 0.834875,
+    "precision": 0.814815,
+    "recall": 0.918794,
+    "specificity": 0.723926,
+    "F1": 0.863686,
+    "MCC": 0.663845,
+    "accuracy 95% CI": [
+     0.79614,
+     0.869799
+    ],
+    "precision 95% CI": [
+     0.755269,
+     0.86451
+    ],
+    "recall 95% CI": [
+     0.885854,
+     0.946732
+    ],
+    "specificity 95% CI": [
+     0.641845,
+     0.798277
+    ],
+    "F1 95% CI": [
+     0.823964,
+     0.896493
+    ],
+    "MCC 95% CI": [
+     0.587081,
+     0.73439
+    ]
+   },
+   "b\u00b7td\u00b7vec": {
+    "TP": 403,
+    "FN": 28,
+    "FP": 86,
+    "TN": 240,
+    "accuracy": 0.849406,
+    "precision": 0.824131,
+    "recall": 0.935035,
+    "specificity": 0.736196,
+    "F1": 0.876087,
+    "MCC": 0.695021,
+    "accuracy 95% CI": [
+     0.812737,
+     0.88352
+    ],
+    "precision 95% CI": [
+     0.767119,
+     0.872554
+    ],
+    "recall 95% CI": [
+     0.904896,
+     0.959036
+    ],
+    "specificity 95% CI": [
+     0.651464,
+     0.809384
+    ],
+    "F1 95% CI": [
+     0.838949,
+     0.907194
+    ],
+    "MCC 95% CI": [
+     0.622448,
+     0.762423
+    ]
+   },
+   "b\u00b7he\u00b7prod": {
+    "TP": 391,
+    "FN": 40,
+    "FP": 92,
+    "TN": 234,
+    "accuracy": 0.825627,
+    "precision": 0.809524,
+    "recall": 0.907193,
+    "specificity": 0.717791,
+    "F1": 0.85558,
+    "MCC": 0.643973,
+    "accuracy 95% CI": [
+     0.786236,
+     0.862211
+    ],
+    "precision 95% CI": [
+     0.748826,
+     0.859157
+    ],
+    "recall 95% CI": [
+     0.870044,
+     0.938971
+    ],
+    "specificity 95% CI": [
+     0.63843,
+     0.789125
+    ],
+    "F1 95% CI": [
+     0.812703,
+     0.889634
+    ],
+    "MCC 95% CI": [
+     0.566445,
+     0.716434
+    ]
+   },
+   "b\u00b7he\u00b7vec": {
+    "TP": 399,
+    "FN": 32,
+    "FP": 86,
+    "TN": 240,
+    "accuracy": 0.844122,
+    "precision": 0.82268,
+    "recall": 0.925754,
+    "specificity": 0.736196,
+    "F1": 0.871179,
+    "MCC": 0.683152,
+    "accuracy 95% CI": [
+     0.808088,
+     0.877932
+    ],
+    "precision 95% CI": [
+     0.767528,
+     0.868673
+    ],
+    "recall 95% CI": [
+     0.893396,
+     0.953369
+    ],
+    "specificity 95% CI": [
+     0.659849,
+     0.804734
+    ],
+    "F1 95% CI": [
+     0.832617,
+     0.901102
+    ],
+    "MCC 95% CI": [
+     0.609701,
+     0.75172
+    ]
+   },
+   "b\u00b7both\u00b7prod": {
+    "TP": 398,
+    "FN": 33,
+    "FP": 84,
+    "TN": 242,
+    "accuracy": 0.845443,
+    "precision": 0.825726,
+    "recall": 0.923434,
+    "specificity": 0.742331,
+    "F1": 0.871851,
+    "MCC": 0.685455,
+    "accuracy 95% CI": [
+     0.807801,
+     0.880836
+    ],
+    "precision 95% CI": [
+     0.76735,
+     0.875255
+    ],
+    "recall 95% CI": [
+     0.887522,
+     0.953252
+    ],
+    "specificity 95% CI": [
+     0.663226,
+     0.812866
+    ],
+    "F1 95% CI": [
+     0.831784,
+     0.904007
+    ],
+    "MCC 95% CI": [
+     0.611144,
+     0.755156
+    ]
+   },
+   "b\u00b7both\u00b7vec": {
+    "TP": 406,
+    "FN": 25,
+    "FP": 84,
+    "TN": 242,
+    "accuracy": 0.856011,
+    "precision": 0.828571,
+    "recall": 0.941995,
+    "specificity": 0.742331,
+    "F1": 0.88165,
+    "MCC": 0.709181,
+    "accuracy 95% CI": [
+     0.818296,
+     0.889689
+    ],
+    "precision 95% CI": [
+     0.770658,
+     0.876662
+    ],
+    "recall 95% CI": [
+     0.913702,
+     0.96501
+    ],
+    "specificity 95% CI": [
+     0.662345,
+     0.812698
+    ],
+    "F1 95% CI": [
+     0.842723,
+     0.911935
+    ],
+    "MCC 95% CI": [
+     0.639015,
+     0.772752
+    ]
+   }
+  },
+  "paired against production": [
+   {
+    "features": "a\u00b7raw\u00b7vec",
+    "vs a\u00b7raw\u00b7prod": 0.0225,
+    "95% CI": "+0.009 to +0.037",
+    "roads fixed": 23,
+    "roads broken": 6,
+    "McNemar p": 0.0023,
+    "McNemar p (unrounded)": 0.0023157,
+    "rule": "gain +0.022, 95% CI +0.009 to +0.037, McNemar p = 0.0023: confirmed",
+    "would pass": true
+   },
+   {
+    "features": "a\u00b7td\u00b7prod",
+    "vs a\u00b7raw\u00b7prod": 0.0026,
+    "95% CI": "-0.013 to +0.018",
+    "roads fixed": 18,
+    "roads broken": 16,
+    "McNemar p": 0.8642,
+    "McNemar p (unrounded)": 0.864166,
+    "rule": "gain +0.003, 95% CI -0.013 to +0.018, McNemar p = 0.8642: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+    "would pass": false
+   },
+   {
+    "features": "a\u00b7td\u00b7vec",
+    "vs a\u00b7raw\u00b7prod": 0.0145,
+    "95% CI": "-0.004 to +0.034",
+    "roads fixed": 28,
+    "roads broken": 17,
+    "McNemar p": 0.1352,
+    "McNemar p (unrounded)": 0.135156,
+    "rule": "gain +0.015, 95% CI -0.004 to +0.034, McNemar p = 0.1352: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+    "would pass": false
+   },
+   {
+    "features": "a\u00b7he\u00b7prod",
+    "vs a\u00b7raw\u00b7prod": -0.0053,
+    "95% CI": "-0.023 to +0.013",
+    "roads fixed": 26,
+    "roads broken": 30,
+    "McNemar p": 0.6889,
+    "McNemar p (unrounded)": 0.68888,
+    "rule": "gain -0.005, 95% CI -0.023 to +0.013, McNemar p = 0.6889: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+    "would pass": false
+   },
+   {
+    "features": "a\u00b7he\u00b7vec",
+    "vs a\u00b7raw\u00b7prod": 0.0145,
+    "95% CI": "-0.006 to +0.035",
+    "roads fixed": 36,
+    "roads broken": 25,
+    "McNemar p": 0.2,
+    "McNemar p (unrounded)": 0.200031,
+    "rule": "gain +0.015, 95% CI -0.006 to +0.035, McNemar p = 0.2000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+    "would pass": false
+   },
+   {
+    "features": "a\u00b7both\u00b7prod",
+    "vs a\u00b7raw\u00b7prod": 0.0053,
+    "95% CI": "-0.010 to +0.021",
+    "roads fixed": 15,
+    "roads broken": 11,
+    "McNemar p": 0.5572,
+    "McNemar p (unrounded)": 0.557197,
+    "rule": "gain +0.005, 95% CI -0.010 to +0.021, McNemar p = 0.5572: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+    "would pass": false
+   },
+   {
+    "features": "a\u00b7both\u00b7vec",
+    "vs a\u00b7raw\u00b7prod": 0.0132,
+    "95% CI": "+0.000 to +0.027",
+    "roads fixed": 20,
+    "roads broken": 10,
+    "McNemar p": 0.0987,
+    "McNemar p (unrounded)": 0.0987371,
+    "rule": "gain +0.013, 95% CI +0.000 to +0.027, McNemar p = 0.0987: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+    "would pass": false
+   },
+   {
+    "features": "b\u00b7raw\u00b7prod",
+    "vs a\u00b7raw\u00b7prod": 0.0185,
+    "95% CI": "+0.004 to +0.034",
+    "roads fixed": 25,
+    "roads broken": 11,
+    "McNemar p": 0.0288,
+    "McNemar p (unrounded)": 0.0288167,
+    "rule": "gain +0.018, 95% CI +0.004 to +0.034, McNemar p = 0.0288: confirmed",
+    "would pass": true
+   },
+   {
+    "features": "b\u00b7raw\u00b7vec",
+    "vs a\u00b7raw\u00b7prod": 0.0251,
+    "95% CI": "+0.007 to +0.044",
+    "roads fixed": 32,
+    "roads broken": 13,
+    "McNemar p": 0.0066,
+    "McNemar p (unrounded)": 0.00660882,
+    "rule": "gain +0.025, 95% CI +0.007 to +0.044, McNemar p = 0.0066: confirmed",
+    "would pass": true
+   },
+   {
+    "features": "b\u00b7td\u00b7prod",
+    "vs a\u00b7raw\u00b7prod": 0.0106,
+    "95% CI": "-0.006 to +0.027",
+    "roads fixed": 24,
+    "roads broken": 16,
+    "McNemar p": 0.2682,
+    "McNemar p (unrounded)": 0.268187,
+    "rule": "gain +0.011, 95% CI -0.006 to +0.027, McNemar p = 0.2682: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+    "would pass": false
+   },
+   {
+    "features": "b\u00b7td\u00b7vec",
+    "vs a\u00b7raw\u00b7prod": 0.0251,
+    "95% CI": "+0.005 to +0.045",
+    "roads fixed": 34,
+    "roads broken": 15,
+    "McNemar p": 0.0094,
+    "McNemar p (unrounded)": 0.00939924,
+    "rule": "gain +0.025, 95% CI +0.005 to +0.045, McNemar p = 0.0094: confirmed",
+    "would pass": true
+   },
+   {
+    "features": "b\u00b7he\u00b7prod",
+    "vs a\u00b7raw\u00b7prod": 0.0013,
+    "95% CI": "-0.018 to +0.020",
+    "roads fixed": 31,
+    "roads broken": 30,
+    "McNemar p": 1.0,
+    "McNemar p (unrounded)": 1.0,
+    "rule": "gain +0.001, 95% CI -0.018 to +0.020, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+    "would pass": false
+   },
+   {
+    "features": "b\u00b7he\u00b7vec",
+    "vs a\u00b7raw\u00b7prod": 0.0198,
+    "95% CI": "+0.003 to +0.037",
+    "roads fixed": 34,
+    "roads broken": 19,
+    "McNemar p": 0.0534,
+    "McNemar p (unrounded)": 0.0534388,
+    "rule": "gain +0.020, 95% CI +0.003 to +0.037, McNemar p = 0.0534: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+    "would pass": false
+   },
+   {
+    "features": "b\u00b7both\u00b7prod",
+    "vs a\u00b7raw\u00b7prod": 0.0211,
+    "95% CI": "+0.007 to +0.037",
+    "roads fixed": 26,
+    "roads broken": 10,
+    "McNemar p": 0.0113,
+    "McNemar p (unrounded)": 0.011331,
+    "rule": "gain +0.021, 95% CI +0.007 to +0.037, McNemar p = 0.0113: confirmed",
+    "would pass": true
+   },
+   {
+    "features": "b\u00b7both\u00b7vec",
+    "vs a\u00b7raw\u00b7prod": 0.0317,
+    "95% CI": "+0.014 to +0.051",
+    "roads fixed": 35,
+    "roads broken": 11,
+    "McNemar p": 0.0005,
+    "McNemar p (unrounded)": 0.000535585,
+    "rule": "gain +0.032, 95% CI +0.014 to +0.051, McNemar p = 0.0005: confirmed",
+    "would pass": true
+   }
+  ]
+ },
+ "(ii) own kept roads, seed 662": {
+  "a": {
+   "gate": "production gate (dark-rise road rule)",
+   "kept": 798,
+   "set aside": 239,
+   "flooded set aside": 27,
+   "dry set aside": 212,
+   "kept only by this gate": 41,
+   "flooded among them": 10,
+   "arms": {
+    "a\u00b7raw\u00b7prod": {
+     "TP": 390,
+     "FN": 51,
+     "FP": 91,
+     "TN": 266,
+     "accuracy": 0.822055,
+     "precision": 0.810811,
+     "recall": 0.884354,
+     "specificity": 0.745098,
+     "F1": 0.845987,
+     "MCC": 0.639608,
+     "accuracy 95% CI": [
+      0.786105,
+      0.85744
+     ],
+     "precision 95% CI": [
+      0.755786,
+      0.857984
+     ],
+     "recall 95% CI": [
+      0.843683,
+      0.924105
+     ],
+     "specificity 95% CI": [
+      0.674341,
+      0.813311
+     ],
+     "F1 95% CI": [
+      0.806079,
+      0.880166
+     ],
+     "MCC 95% CI": [
+      0.564582,
+      0.712131
+     ]
+    },
+    "a\u00b7raw\u00b7vec": {
+     "TP": 400,
+     "FN": 41,
+     "FP": 83,
+     "TN": 274,
+     "accuracy": 0.844612,
+     "precision": 0.828157,
+     "recall": 0.907029,
+     "specificity": 0.767507,
+     "F1": 0.865801,
+     "MCC": 0.686167,
+     "accuracy 95% CI": [
+      0.810648,
+      0.877935
+     ],
+     "precision 95% CI": [
+      0.775719,
+      0.874297
+     ],
+     "recall 95% CI": [
+      0.870092,
+      0.940426
+     ],
+     "specificity 95% CI": [
+      0.69419,
+      0.832106
+     ],
+     "F1 95% CI": [
+      0.828636,
+      0.897148
+     ],
+     "MCC 95% CI": [
+      0.616274,
+      0.7536
+     ]
+    },
+    "a\u00b7td\u00b7prod": {
+     "TP": 394,
+     "FN": 47,
+     "FP": 93,
+     "TN": 264,
+     "accuracy": 0.824561,
+     "precision": 0.809035,
+     "recall": 0.893424,
+     "specificity": 0.739496,
+     "F1": 0.849138,
+     "MCC": 0.645294,
+     "accuracy 95% CI": [
+      0.787832,
+      0.858586
+     ],
+     "precision 95% CI": [
+      0.753148,
+      0.857149
+     ],
+     "recall 95% CI": [
+      0.856837,
+      0.92765
+     ],
+     "specificity 95% CI": [
+      0.665604,
+      0.808027
+     ],
+     "F1 95% CI": [
+      0.80874,
+      0.883052
+     ],
+     "MCC 95% CI": [
+      0.571166,
+      0.712381
+     ]
+    },
+    "a\u00b7td\u00b7vec": {
+     "TP": 399,
+     "FN": 42,
+     "FP": 93,
+     "TN": 264,
+     "accuracy": 0.830827,
+     "precision": 0.810976,
+     "recall": 0.904762,
+     "specificity": 0.739496,
+     "F1": 0.855305,
+     "MCC": 0.658825,
+     "accuracy 95% CI": [
+      0.796216,
+      0.863744
+     ],
+     "precision 95% CI": [
+      0.755293,
+      0.858623
+     ],
+     "recall 95% CI": [
+      0.870096,
+      0.935289
+     ],
+     "specificity 95% CI": [
+      0.662786,
+      0.808415
+     ],
+     "F1 95% CI": [
+      0.816013,
+      0.888668
+     ],
+     "MCC 95% CI": [
+      0.588036,
+      0.724307
+     ]
+    },
+    "a\u00b7he\u00b7prod": {
+     "TP": 390,
+     "FN": 51,
+     "FP": 98,
+     "TN": 259,
+     "accuracy": 0.813283,
+     "precision": 0.79918,
+     "recall": 0.884354,
+     "specificity": 0.72549,
+     "F1": 0.839612,
+     "MCC": 0.62213,
+     "accuracy 95% CI": [
+      0.774508,
+      0.849109
+     ],
+     "precision 95% CI": [
+      0.742017,
+      0.84837
+     ],
+     "recall 95% CI": [
+      0.840336,
+      0.92549
+     ],
+     "specificity 95% CI": [
+      0.652567,
+      0.792722
+     ],
+     "F1 95% CI": [
+      0.795451,
+      0.877931
+     ],
+     "MCC 95% CI": [
+      0.542951,
+      0.692246
+     ]
+    },
+    "a\u00b7he\u00b7vec": {
+     "TP": 401,
+     "FN": 40,
+     "FP": 93,
+     "TN": 264,
+     "accuracy": 0.833333,
+     "precision": 0.811741,
+     "recall": 0.909297,
+     "specificity": 0.739496,
+     "F1": 0.857754,
+     "MCC": 0.664292,
+     "accuracy 95% CI": [
+      0.795537,
+      0.867372
+     ],
+     "precision 95% CI": [
+      0.757888,
+      0.85865
+     ],
+     "recall 95% CI": [
+      0.868419,
+      0.943725
+     ],
+     "specificity 95% CI": [
+      0.665585,
+      0.80686
+     ],
+     "F1 95% CI": [
+      0.818482,
+      0.891544
+     ],
+     "MCC 95% CI": [
+      0.586688,
+      0.732489
+     ]
+    },
+    "a\u00b7both\u00b7prod": {
+     "TP": 397,
+     "FN": 44,
+     "FP": 93,
+     "TN": 264,
+     "accuracy": 0.828321,
+     "precision": 0.810204,
+     "recall": 0.900227,
+     "specificity": 0.739496,
+     "F1": 0.852846,
+     "MCC": 0.653389,
+     "accuracy 95% CI": [
+      0.790189,
+      0.86398
+     ],
+     "precision 95% CI": [
+      0.752891,
+      0.859535
+     ],
+     "recall 95% CI": [
+      0.861572,
+      0.934258
+     ],
+     "specificity 95% CI": [
+      0.664687,
+      0.808944
+     ],
+     "F1 95% CI": [
+      0.812289,
+      0.888055
+     ],
+     "MCC 95% CI": [
+      0.574155,
+      0.724922
+     ]
+    },
+    "a\u00b7both\u00b7vec": {
+     "TP": 398,
+     "FN": 43,
+     "FP": 89,
+     "TN": 268,
+     "accuracy": 0.834586,
+     "precision": 0.817248,
+     "recall": 0.902494,
+     "specificity": 0.7507,
+     "F1": 0.857759,
+     "MCC": 0.665965,
+     "accuracy 95% CI": [
+      0.8,
+      0.867514
+     ],
+     "precision 95% CI": [
+      0.75988,
+      0.864227
+     ],
+     "recall 95% CI": [
+      0.866847,
+      0.935557
+     ],
+     "specificity 95% CI": [
+      0.677807,
+      0.81908
+     ],
+     "F1 95% CI": [
+      0.818989,
+      0.890609
+     ],
+     "MCC 95% CI": [
+      0.594515,
+      0.731305
+     ]
+    }
+   },
+   "accuracy on the roads only this gate keeps": {
+    "a\u00b7raw\u00b7prod": 0.780488,
+    "a\u00b7raw\u00b7vec": 0.804878,
+    "a\u00b7td\u00b7prod": 0.780488,
+    "a\u00b7td\u00b7vec": 0.682927,
+    "a\u00b7he\u00b7prod": 0.707317,
+    "a\u00b7he\u00b7vec": 0.731707,
+    "a\u00b7both\u00b7prod": 0.804878,
+    "a\u00b7both\u00b7vec": 0.780488
+   },
+   "paired against production (798)": [
+    {
+     "features": "a\u00b7raw\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0226,
+     "95% CI": "+0.009 to +0.036",
+     "roads fixed": 24,
+     "roads broken": 6,
+     "McNemar p": 0.0014,
+     "McNemar p (unrounded)": 0.00143091,
+     "rule": "gain +0.023, 95% CI +0.009 to +0.036, McNemar p = 0.0014: confirmed",
+     "would pass": true
+    },
+    {
+     "features": "a\u00b7td\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.0025,
+     "95% CI": "-0.014 to +0.018",
+     "roads fixed": 21,
+     "roads broken": 19,
+     "McNemar p": 0.8746,
+     "McNemar p (unrounded)": 0.874629,
+     "rule": "gain +0.003, 95% CI -0.014 to +0.018, McNemar p = 0.8746: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    {
+     "features": "a\u00b7td\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0088,
+     "95% CI": "-0.010 to +0.027",
+     "roads fixed": 30,
+     "roads broken": 23,
+     "McNemar p": 0.4101,
+     "McNemar p (unrounded)": 0.410103,
+     "rule": "gain +0.009, 95% CI -0.010 to +0.027, McNemar p = 0.4101: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    {
+     "features": "a\u00b7he\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.0088,
+     "95% CI": "-0.028 to +0.010",
+     "roads fixed": 29,
+     "roads broken": 36,
+     "McNemar p": 0.457,
+     "McNemar p (unrounded)": 0.457021,
+     "rule": "gain -0.009, 95% CI -0.028 to +0.010, McNemar p = 0.4570: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    {
+     "features": "a\u00b7he\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0113,
+     "95% CI": "-0.010 to +0.033",
+     "roads fixed": 40,
+     "roads broken": 31,
+     "McNemar p": 0.3425,
+     "McNemar p (unrounded)": 0.342471,
+     "rule": "gain +0.011, 95% CI -0.010 to +0.033, McNemar p = 0.3425: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    {
+     "features": "a\u00b7both\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.0063,
+     "95% CI": "-0.009 to +0.021",
+     "roads fixed": 17,
+     "roads broken": 12,
+     "McNemar p": 0.4583,
+     "McNemar p (unrounded)": 0.458258,
+     "rule": "gain +0.006, 95% CI -0.009 to +0.021, McNemar p = 0.4583: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    {
+     "features": "a\u00b7both\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0125,
+     "95% CI": "-0.001 to +0.026",
+     "roads fixed": 21,
+     "roads broken": 11,
+     "McNemar p": 0.1102,
+     "McNemar p (unrounded)": 0.110184,
+     "rule": "gain +0.013, 95% CI -0.001 to +0.026, McNemar p = 0.1102: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    }
+   ]
+  },
+  "b": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "kept": 790,
+   "set aside": 247,
+   "flooded set aside": 18,
+   "dry set aside": 229,
+   "kept only by this gate": 33,
+   "flooded among them": 19,
+   "arms": {
+    "b\u00b7raw\u00b7prod": {
+     "TP": 416,
+     "FN": 34,
+     "FP": 88,
+     "TN": 252,
+     "accuracy": 0.84557,
+     "precision": 0.825397,
+     "recall": 0.924444,
+     "specificity": 0.741176,
+     "F1": 0.872117,
+     "MCC": 0.685764,
+     "accuracy 95% CI": [
+      0.808432,
+      0.881153
+     ],
+     "precision 95% CI": [
+      0.770662,
+      0.870787
+     ],
+     "recall 95% CI": [
+      0.895136,
+      0.951052
+     ],
+     "specificity 95% CI": [
+      0.655731,
+      0.812665
+     ],
+     "F1 95% CI": [
+      0.833889,
+      0.902277
+     ],
+     "MCC 95% CI": [
+      0.60743,
+      0.756413
+     ]
+    },
+    "b\u00b7raw\u00b7vec": {
+     "TP": 421,
+     "FN": 29,
+     "FP": 88,
+     "TN": 252,
+     "accuracy": 0.851899,
+     "precision": 0.827112,
+     "recall": 0.935556,
+     "specificity": 0.741176,
+     "F1": 0.877998,
+     "MCC": 0.699923,
+     "accuracy 95% CI": [
+      0.816935,
+      0.884332
+     ],
+     "precision 95% CI": [
+      0.774002,
+      0.870969
+     ],
+     "recall 95% CI": [
+      0.909314,
+      0.956968
+     ],
+     "specificity 95% CI": [
+      0.656519,
+      0.813092
+     ],
+     "F1 95% CI": [
+      0.843777,
+      0.906017
+     ],
+     "MCC 95% CI": [
+      0.627287,
+      0.763543
+     ]
+    },
+    "b\u00b7td\u00b7prod": {
+     "TP": 415,
+     "FN": 35,
+     "FP": 93,
+     "TN": 247,
+     "accuracy": 0.837975,
+     "precision": 0.816929,
+     "recall": 0.922222,
+     "specificity": 0.726471,
+     "F1": 0.866388,
+     "MCC": 0.670391,
+     "accuracy 95% CI": [
+      0.801619,
+      0.872905
+     ],
+     "precision 95% CI": [
+      0.761535,
+      0.862628
+     ],
+     "recall 95% CI": [
+      0.892175,
+      0.948562
+     ],
+     "specificity 95% CI": [
+      0.644886,
+      0.796441
+     ],
+     "F1 95% CI": [
+      0.827735,
+      0.897219
+     ],
+     "MCC 95% CI": [
+      0.595152,
+      0.741432
+     ]
+    },
+    "b\u00b7td\u00b7vec": {
+     "TP": 421,
+     "FN": 29,
+     "FP": 88,
+     "TN": 252,
+     "accuracy": 0.851899,
+     "precision": 0.827112,
+     "recall": 0.935556,
+     "specificity": 0.741176,
+     "F1": 0.877998,
+     "MCC": 0.699923,
+     "accuracy 95% CI": [
+      0.816752,
+      0.885213
+     ],
+     "precision 95% CI": [
+      0.772819,
+      0.871347
+     ],
+     "recall 95% CI": [
+      0.905763,
+      0.960308
+     ],
+     "specificity 95% CI": [
+      0.655394,
+      0.813017
+     ],
+     "F1 95% CI": [
+      0.842827,
+      0.906855
+     ],
+     "MCC 95% CI": [
+      0.62806,
+      0.765789
+     ]
+    },
+    "b\u00b7he\u00b7prod": {
+     "TP": 410,
+     "FN": 40,
+     "FP": 96,
+     "TN": 244,
+     "accuracy": 0.827848,
+     "precision": 0.810277,
+     "recall": 0.911111,
+     "specificity": 0.717647,
+     "F1": 0.857741,
+     "MCC": 0.648776,
+     "accuracy 95% CI": [
+      0.789321,
+      0.862826
+     ],
+     "precision 95% CI": [
+      0.753379,
+      0.85715
+     ],
+     "recall 95% CI": [
+      0.874072,
+      0.940447
+     ],
+     "specificity 95% CI": [
+      0.638553,
+      0.786886
+     ],
+     "F1 95% CI": [
+      0.814598,
+      0.890349
+     ],
+     "MCC 95% CI": [
+      0.571467,
+      0.720445
+     ]
+    },
+    "b\u00b7he\u00b7vec": {
+     "TP": 418,
+     "FN": 32,
+     "FP": 89,
+     "TN": 251,
+     "accuracy": 0.846835,
+     "precision": 0.824458,
+     "recall": 0.928889,
+     "specificity": 0.738235,
+     "F1": 0.873563,
+     "MCC": 0.688898,
+     "accuracy 95% CI": [
+      0.810071,
+      0.879375
+     ],
+     "precision 95% CI": [
+      0.770334,
+      0.867719
+     ],
+     "recall 95% CI": [
+      0.897504,
+      0.953659
+     ],
+     "specificity 95% CI": [
+      0.654902,
+      0.804816
+     ],
+     "F1 95% CI": [
+      0.834925,
+      0.902256
+     ],
+     "MCC 95% CI": [
+      0.615395,
+      0.752975
+     ]
+    },
+    "b\u00b7both\u00b7prod": {
+     "TP": 417,
+     "FN": 33,
+     "FP": 86,
+     "TN": 254,
+     "accuracy": 0.849367,
+     "precision": 0.829026,
+     "recall": 0.926667,
+     "specificity": 0.747059,
+     "F1": 0.875131,
+     "MCC": 0.693591,
+     "accuracy 95% CI": [
+      0.811251,
+      0.884078
+     ],
+     "precision 95% CI": [
+      0.773502,
+      0.874156
+     ],
+     "recall 95% CI": [
+      0.892855,
+      0.95373
+     ],
+     "specificity 95% CI": [
+      0.667658,
+      0.81421
+     ],
+     "F1 95% CI": [
+      0.835926,
+      0.905664
+     ],
+     "MCC 95% CI": [
+      0.617125,
+      0.762385
+     ]
+    },
+    "b\u00b7both\u00b7vec": {
+     "TP": 425,
+     "FN": 25,
+     "FP": 86,
+     "TN": 254,
+     "accuracy": 0.859494,
+     "precision": 0.831703,
+     "recall": 0.944444,
+     "specificity": 0.747059,
+     "F1": 0.884495,
+     "MCC": 0.716354,
+     "accuracy 95% CI": [
+      0.823031,
+      0.892816
+     ],
+     "precision 95% CI": [
+      0.778463,
+      0.876712
+     ],
+     "recall 95% CI": [
+      0.916482,
+      0.966293
+     ],
+     "specificity 95% CI": [
+      0.665653,
+      0.814823
+     ],
+     "F1 95% CI": [
+      0.848335,
+      0.913778
+     ],
+     "MCC 95% CI": [
+      0.64345,
+      0.780953
+     ]
+    }
+   },
+   "accuracy on the roads only this gate keeps": {
+    "b\u00b7raw\u00b7prod": 0.909091,
+    "b\u00b7raw\u00b7vec": 0.909091,
+    "b\u00b7td\u00b7prod": 0.909091,
+    "b\u00b7td\u00b7vec": 0.909091,
+    "b\u00b7he\u00b7prod": 0.878788,
+    "b\u00b7he\u00b7vec": 0.909091,
+    "b\u00b7both\u00b7prod": 0.939394,
+    "b\u00b7both\u00b7vec": 0.939394
+   }
+  }
+ },
+ "(iii) cloud groups": {
+  "trusted flooded roads under thin cloud": {
+   "roads": 24,
+   "tiles": 13,
+   "measure": "found",
+   "arms": {
+    "a\u00b7raw\u00b7prod": {
+     "share": 0.708333,
+     "count": 17,
+     "lo": 0.421053,
+     "hi": 0.882353,
+     "seed mean share": 0.72619,
+     "seed min share": 0.625,
+     "seed max share": 0.833333,
+     "kept by its gate": 0,
+     "TP": 17,
+     "FN": 7,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7raw\u00b7vec": {
+     "share": 0.708333,
+     "count": 17,
+     "lo": 0.444444,
+     "hi": 0.892857,
+     "seed mean share": 0.803571,
+     "seed min share": 0.708333,
+     "seed max share": 0.875,
+     "kept by its gate": 0,
+     "TP": 17,
+     "FN": 7,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7td\u00b7prod": {
+     "share": 0.833333,
+     "count": 20,
+     "lo": 0.625,
+     "hi": 0.962963,
+     "seed mean share": 0.849206,
+     "seed min share": 0.791667,
+     "seed max share": 0.916667,
+     "kept by its gate": 0,
+     "TP": 20,
+     "FN": 4,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7td\u00b7vec": {
+     "share": 0.833333,
+     "count": 20,
+     "lo": 0.625,
+     "hi": 0.962963,
+     "seed mean share": 0.861111,
+     "seed min share": 0.791667,
+     "seed max share": 0.916667,
+     "kept by its gate": 0,
+     "TP": 20,
+     "FN": 4,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7he\u00b7prod": {
+     "share": 0.916667,
+     "count": 22,
+     "lo": 0.75,
+     "hi": 1.0,
+     "seed mean share": 0.912698,
+     "seed min share": 0.875,
+     "seed max share": 0.916667,
+     "kept by its gate": 0,
+     "TP": 22,
+     "FN": 2,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7he\u00b7vec": {
+     "share": 0.875,
+     "count": 21,
+     "lo": 0.666667,
+     "hi": 1.0,
+     "seed mean share": 0.90873,
+     "seed min share": 0.833333,
+     "seed max share": 0.958333,
+     "kept by its gate": 0,
+     "TP": 21,
+     "FN": 3,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7both\u00b7prod": {
+     "share": 0.833333,
+     "count": 20,
+     "lo": 0.578947,
+     "hi": 0.965517,
+     "seed mean share": 0.84127,
+     "seed min share": 0.75,
+     "seed max share": 0.916667,
+     "kept by its gate": 0,
+     "TP": 20,
+     "FN": 4,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7both\u00b7vec": {
+     "share": 0.875,
+     "count": 21,
+     "lo": 0.666667,
+     "hi": 1.0,
+     "seed mean share": 0.849206,
+     "seed min share": 0.791667,
+     "seed max share": 0.875,
+     "kept by its gate": 0,
+     "TP": 21,
+     "FN": 3,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7raw\u00b7prod": {
+     "share": 0.875,
+     "count": 21,
+     "lo": 0.666667,
+     "hi": 1.0,
+     "seed mean share": 0.894841,
+     "seed min share": 0.791667,
+     "seed max share": 0.958333,
+     "kept by its gate": 19,
+     "TP": 21,
+     "FN": 3,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7raw\u00b7vec": {
+     "share": 0.916667,
+     "count": 22,
+     "lo": 0.75,
+     "hi": 1.0,
+     "seed mean share": 0.90873,
+     "seed min share": 0.833333,
+     "seed max share": 0.958333,
+     "kept by its gate": 19,
+     "TP": 22,
+     "FN": 2,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7td\u00b7prod": {
+     "share": 0.916667,
+     "count": 22,
+     "lo": 0.75,
+     "hi": 1.0,
+     "seed mean share": 0.871032,
+     "seed min share": 0.833333,
+     "seed max share": 0.916667,
+     "kept by its gate": 19,
+     "TP": 22,
+     "FN": 2,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7td\u00b7vec": {
+     "share": 0.833333,
+     "count": 20,
+     "lo": 0.625,
+     "hi": 0.962963,
+     "seed mean share": 0.884921,
+     "seed min share": 0.833333,
+     "seed max share": 0.958333,
+     "kept by its gate": 19,
+     "TP": 20,
+     "FN": 4,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7he\u00b7prod": {
+     "share": 0.916667,
+     "count": 22,
+     "lo": 0.75,
+     "hi": 1.0,
+     "seed mean share": 0.914683,
+     "seed min share": 0.875,
+     "seed max share": 0.958333,
+     "kept by its gate": 19,
+     "TP": 22,
+     "FN": 2,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7he\u00b7vec": {
+     "share": 0.916667,
+     "count": 22,
+     "lo": 0.75,
+     "hi": 1.0,
+     "seed mean share": 0.920635,
+     "seed min share": 0.875,
+     "seed max share": 0.958333,
+     "kept by its gate": 19,
+     "TP": 22,
+     "FN": 2,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7both\u00b7prod": {
+     "share": 0.916667,
+     "count": 22,
+     "lo": 0.75,
+     "hi": 1.0,
+     "seed mean share": 0.900794,
+     "seed min share": 0.833333,
+     "seed max share": 0.958333,
+     "kept by its gate": 19,
+     "TP": 22,
+     "FN": 2,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7both\u00b7vec": {
+     "share": 0.875,
+     "count": 21,
+     "lo": 0.666667,
+     "hi": 1.0,
+     "seed mean share": 0.900794,
+     "seed min share": 0.833333,
+     "seed max share": 0.958333,
+     "kept by its gate": 19,
+     "TP": 21,
+     "FN": 3,
+     "FP": 0,
+     "TN": 0
+    }
+   },
+   "paired against production (right = call matches label)": [
+    {
+     "features": "a\u00b7raw\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0,
+     "95% CI": "-0.154 to +0.200",
+     "roads fixed": 2,
+     "roads broken": 2,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "a\u00b7td\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.125,
+     "95% CI": "+0.000 to +0.316",
+     "roads fixed": 4,
+     "roads broken": 1,
+     "McNemar p": 0.375,
+     "McNemar p (unrounded)": 0.375
+    },
+    {
+     "features": "a\u00b7td\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.125,
+     "95% CI": "+0.000 to +0.316",
+     "roads fixed": 4,
+     "roads broken": 1,
+     "McNemar p": 0.375,
+     "McNemar p (unrounded)": 0.375
+    },
+    {
+     "features": "a\u00b7he\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.2083,
+     "95% CI": "+0.061 to +0.435",
+     "roads fixed": 5,
+     "roads broken": 0,
+     "McNemar p": 0.0625,
+     "McNemar p (unrounded)": 0.0625
+    },
+    {
+     "features": "a\u00b7he\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.1667,
+     "95% CI": "+0.037 to +0.364",
+     "roads fixed": 4,
+     "roads broken": 0,
+     "McNemar p": 0.125,
+     "McNemar p (unrounded)": 0.125
+    },
+    {
+     "features": "a\u00b7both\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.125,
+     "95% CI": "+0.000 to +0.280",
+     "roads fixed": 3,
+     "roads broken": 0,
+     "McNemar p": 0.25,
+     "McNemar p (unrounded)": 0.25
+    },
+    {
+     "features": "a\u00b7both\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.1667,
+     "95% CI": "+0.037 to +0.364",
+     "roads fixed": 4,
+     "roads broken": 0,
+     "McNemar p": 0.125,
+     "McNemar p (unrounded)": 0.125
+    },
+    {
+     "features": "b\u00b7raw\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.1667,
+     "95% CI": "+0.037 to +0.364",
+     "roads fixed": 4,
+     "roads broken": 0,
+     "McNemar p": 0.125,
+     "McNemar p (unrounded)": 0.125
+    },
+    {
+     "features": "b\u00b7raw\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.2083,
+     "95% CI": "+0.067 to +0.444",
+     "roads fixed": 5,
+     "roads broken": 0,
+     "McNemar p": 0.0625,
+     "McNemar p (unrounded)": 0.0625
+    },
+    {
+     "features": "b\u00b7td\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.2083,
+     "95% CI": "+0.061 to +0.435",
+     "roads fixed": 5,
+     "roads broken": 0,
+     "McNemar p": 0.0625,
+     "McNemar p (unrounded)": 0.0625
+    },
+    {
+     "features": "b\u00b7td\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.125,
+     "95% CI": "+0.000 to +0.316",
+     "roads fixed": 4,
+     "roads broken": 1,
+     "McNemar p": 0.375,
+     "McNemar p (unrounded)": 0.375
+    },
+    {
+     "features": "b\u00b7he\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.2083,
+     "95% CI": "+0.061 to +0.435",
+     "roads fixed": 5,
+     "roads broken": 0,
+     "McNemar p": 0.0625,
+     "McNemar p (unrounded)": 0.0625
+    },
+    {
+     "features": "b\u00b7he\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.2083,
+     "95% CI": "+0.061 to +0.435",
+     "roads fixed": 5,
+     "roads broken": 0,
+     "McNemar p": 0.0625,
+     "McNemar p (unrounded)": 0.0625
+    },
+    {
+     "features": "b\u00b7both\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.2083,
+     "95% CI": "+0.061 to +0.435",
+     "roads fixed": 5,
+     "roads broken": 0,
+     "McNemar p": 0.0625,
+     "McNemar p (unrounded)": 0.0625
+    },
+    {
+     "features": "b\u00b7both\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.1667,
+     "95% CI": "+0.037 to +0.364",
+     "roads fixed": 4,
+     "roads broken": 0,
+     "McNemar p": 0.125,
+     "McNemar p (unrounded)": 0.125
+    }
+   ]
+  },
+  "dry-labelled roads under thin cloud (labels untrusted)": {
+   "roads": 69,
+   "tiles": 29,
+   "measure": "called flooded",
+   "arms": {
+    "a\u00b7raw\u00b7prod": {
+     "share": 0.0869565,
+     "count": 6,
+     "lo": 0.0307692,
+     "hi": 0.150685,
+     "seed mean share": 0.10352,
+     "seed min share": 0.057971,
+     "seed max share": 0.144928,
+     "kept by its gate": 0,
+     "TP": 0,
+     "FN": 0,
+     "FP": 6,
+     "TN": 63
+    },
+    "a\u00b7raw\u00b7vec": {
+     "share": 0.0724638,
+     "count": 5,
+     "lo": 0.0175439,
+     "hi": 0.130435,
+     "seed mean share": 0.0759144,
+     "seed min share": 0.0434783,
+     "seed max share": 0.101449,
+     "kept by its gate": 0,
+     "TP": 0,
+     "FN": 0,
+     "FP": 5,
+     "TN": 64
+    },
+    "a\u00b7td\u00b7prod": {
+     "share": 0.42029,
+     "count": 29,
+     "lo": 0.254893,
+     "hi": 0.560011,
+     "seed mean share": 0.398896,
+     "seed min share": 0.333333,
+     "seed max share": 0.478261,
+     "kept by its gate": 0,
+     "TP": 0,
+     "FN": 0,
+     "FP": 29,
+     "TN": 40
+    },
+    "a\u00b7td\u00b7vec": {
+     "share": 0.188406,
+     "count": 13,
+     "lo": 0.0714286,
+     "hi": 0.315789,
+     "seed mean share": 0.196687,
+     "seed min share": 0.130435,
+     "seed max share": 0.289855,
+     "kept by its gate": 0,
+     "TP": 0,
+     "FN": 0,
+     "FP": 13,
+     "TN": 56
+    },
+    "a\u00b7he\u00b7prod": {
+     "share": 0.130435,
+     "count": 9,
+     "lo": 0.0555556,
+     "hi": 0.212775,
+     "seed mean share": 0.172533,
+     "seed min share": 0.0869565,
+     "seed max share": 0.275362,
+     "kept by its gate": 0,
+     "TP": 0,
+     "FN": 0,
+     "FP": 9,
+     "TN": 60
+    },
+    "a\u00b7he\u00b7vec": {
+     "share": 0.0724638,
+     "count": 5,
+     "lo": 0.0185185,
+     "hi": 0.125,
+     "seed mean share": 0.110421,
+     "seed min share": 0.0724638,
+     "seed max share": 0.217391,
+     "kept by its gate": 0,
+     "TP": 0,
+     "FN": 0,
+     "FP": 5,
+     "TN": 64
+    },
+    "a\u00b7both\u00b7prod": {
+     "share": 0.101449,
+     "count": 7,
+     "lo": 0.0333197,
+     "hi": 0.171875,
+     "seed mean share": 0.10283,
+     "seed min share": 0.0724638,
+     "seed max share": 0.144928,
+     "kept by its gate": 0,
+     "TP": 0,
+     "FN": 0,
+     "FP": 7,
+     "TN": 62
+    },
+    "a\u00b7both\u00b7vec": {
+     "share": 0.0869565,
+     "count": 6,
+     "lo": 0.0307692,
+     "hi": 0.150685,
+     "seed mean share": 0.0828157,
+     "seed min share": 0.057971,
+     "seed max share": 0.115942,
+     "kept by its gate": 0,
+     "TP": 0,
+     "FN": 0,
+     "FP": 6,
+     "TN": 63
+    },
+    "b\u00b7raw\u00b7prod": {
+     "share": 0.231884,
+     "count": 16,
+     "lo": 0.12963,
+     "hi": 0.333333,
+     "seed mean share": 0.196687,
+     "seed min share": 0.15942,
+     "seed max share": 0.246377,
+     "kept by its gate": 14,
+     "TP": 0,
+     "FN": 0,
+     "FP": 16,
+     "TN": 53
+    },
+    "b\u00b7raw\u00b7vec": {
+     "share": 0.144928,
+     "count": 10,
+     "lo": 0.0769231,
+     "hi": 0.213333,
+     "seed mean share": 0.133885,
+     "seed min share": 0.0869565,
+     "seed max share": 0.188406,
+     "kept by its gate": 14,
+     "TP": 0,
+     "FN": 0,
+     "FP": 10,
+     "TN": 59
+    },
+    "b\u00b7td\u00b7prod": {
+     "share": 0.507246,
+     "count": 35,
+     "lo": 0.31341,
+     "hi": 0.653475,
+     "seed mean share": 0.543133,
+     "seed min share": 0.478261,
+     "seed max share": 0.623188,
+     "kept by its gate": 14,
+     "TP": 0,
+     "FN": 0,
+     "FP": 35,
+     "TN": 34
+    },
+    "b\u00b7td\u00b7vec": {
+     "share": 0.376812,
+     "count": 26,
+     "lo": 0.220588,
+     "hi": 0.52,
+     "seed mean share": 0.349896,
+     "seed min share": 0.275362,
+     "seed max share": 0.405797,
+     "kept by its gate": 14,
+     "TP": 0,
+     "FN": 0,
+     "FP": 26,
+     "TN": 43
+    },
+    "b\u00b7he\u00b7prod": {
+     "share": 0.507246,
+     "count": 35,
+     "lo": 0.328571,
+     "hi": 0.666667,
+     "seed mean share": 0.509317,
+     "seed min share": 0.347826,
+     "seed max share": 0.608696,
+     "kept by its gate": 14,
+     "TP": 0,
+     "FN": 0,
+     "FP": 35,
+     "TN": 34
+    },
+    "b\u00b7he\u00b7vec": {
+     "share": 0.391304,
+     "count": 27,
+     "lo": 0.236364,
+     "hi": 0.545455,
+     "seed mean share": 0.332643,
+     "seed min share": 0.231884,
+     "seed max share": 0.42029,
+     "kept by its gate": 14,
+     "TP": 0,
+     "FN": 0,
+     "FP": 27,
+     "TN": 42
+    },
+    "b\u00b7both\u00b7prod": {
+     "share": 0.202899,
+     "count": 14,
+     "lo": 0.0933148,
+     "hi": 0.327593,
+     "seed mean share": 0.233954,
+     "seed min share": 0.130435,
+     "seed max share": 0.318841,
+     "kept by its gate": 14,
+     "TP": 0,
+     "FN": 0,
+     "FP": 14,
+     "TN": 55
+    },
+    "b\u00b7both\u00b7vec": {
+     "share": 0.15942,
+     "count": 11,
+     "lo": 0.0985915,
+     "hi": 0.227273,
+     "seed mean share": 0.171153,
+     "seed min share": 0.115942,
+     "seed max share": 0.246377,
+     "kept by its gate": 14,
+     "TP": 0,
+     "FN": 0,
+     "FP": 11,
+     "TN": 58
+    }
+   },
+   "paired against production (right = call matches label)": [
+    {
+     "features": "a\u00b7raw\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0145,
+     "95% CI": "+0.000 to +0.049",
+     "roads fixed": 1,
+     "roads broken": 0,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "a\u00b7td\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.3333,
+     "95% CI": "-0.470 to -0.177",
+     "roads fixed": 0,
+     "roads broken": 23,
+     "McNemar p": 0.0,
+     "McNemar p (unrounded)": 2.38419e-07
+    },
+    {
+     "features": "a\u00b7td\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": -0.1014,
+     "95% CI": "-0.217 to +0.013",
+     "roads fixed": 1,
+     "roads broken": 8,
+     "McNemar p": 0.0391,
+     "McNemar p (unrounded)": 0.0390625
+    },
+    {
+     "features": "a\u00b7he\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.0435,
+     "95% CI": "-0.115 to +0.000",
+     "roads fixed": 0,
+     "roads broken": 3,
+     "McNemar p": 0.25,
+     "McNemar p (unrounded)": 0.25
+    },
+    {
+     "features": "a\u00b7he\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0145,
+     "95% CI": "+0.000 to +0.051",
+     "roads fixed": 1,
+     "roads broken": 0,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "a\u00b7both\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.0145,
+     "95% CI": "-0.044 to +0.000",
+     "roads fixed": 0,
+     "roads broken": 1,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "a\u00b7both\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0,
+     "95% CI": "+0.000 to +0.000",
+     "roads fixed": 0,
+     "roads broken": 0,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "b\u00b7raw\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.1449,
+     "95% CI": "-0.243 to -0.047",
+     "roads fixed": 1,
+     "roads broken": 11,
+     "McNemar p": 0.0063,
+     "McNemar p (unrounded)": 0.00634766
+    },
+    {
+     "features": "b\u00b7raw\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": -0.058,
+     "95% CI": "-0.135 to +0.015",
+     "roads fixed": 2,
+     "roads broken": 6,
+     "McNemar p": 0.2891,
+     "McNemar p (unrounded)": 0.289062
+    },
+    {
+     "features": "b\u00b7td\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.4203,
+     "95% CI": "-0.576 to -0.232",
+     "roads fixed": 0,
+     "roads broken": 29,
+     "McNemar p": 0.0,
+     "McNemar p (unrounded)": 3.72529e-09
+    },
+    {
+     "features": "b\u00b7td\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": -0.2899,
+     "95% CI": "-0.447 to -0.121",
+     "roads fixed": 2,
+     "roads broken": 22,
+     "McNemar p": 0.0,
+     "McNemar p (unrounded)": 3.5882e-05
+    },
+    {
+     "features": "b\u00b7he\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.4203,
+     "95% CI": "-0.600 to -0.234",
+     "roads fixed": 0,
+     "roads broken": 29,
+     "McNemar p": 0.0,
+     "McNemar p (unrounded)": 3.72529e-09
+    },
+    {
+     "features": "b\u00b7he\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": -0.3043,
+     "95% CI": "-0.472 to -0.143",
+     "roads fixed": 0,
+     "roads broken": 21,
+     "McNemar p": 0.0,
+     "McNemar p (unrounded)": 9.53674e-07
+    },
+    {
+     "features": "b\u00b7both\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.1159,
+     "95% CI": "-0.239 to -0.016",
+     "roads fixed": 0,
+     "roads broken": 8,
+     "McNemar p": 0.0078,
+     "McNemar p (unrounded)": 0.0078125
+    },
+    {
+     "features": "b\u00b7both\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": -0.0725,
+     "95% CI": "-0.132 to -0.018",
+     "roads fixed": 0,
+     "roads broken": 5,
+     "McNemar p": 0.0625,
+     "McNemar p (unrounded)": 0.0625
+    }
+   ]
+  },
+  "control: assessable roads on the same tiles": {
+   "roads": 175,
+   "tiles": 32,
+   "measure": "right",
+   "arms": {
+    "a\u00b7raw\u00b7prod": {
+     "share": 0.777143,
+     "count": 136,
+     "lo": 0.703947,
+     "hi": 0.848963,
+     "seed mean share": 0.775782,
+     "seed min share": 0.742857,
+     "seed max share": 0.8,
+     "kept by its gate": 175,
+     "TP": 81,
+     "FN": 14,
+     "FP": 25,
+     "TN": 55
+    },
+    "a\u00b7raw\u00b7vec": {
+     "share": 0.805714,
+     "count": 141,
+     "lo": 0.72941,
+     "hi": 0.874173,
+     "seed mean share": 0.785034,
+     "seed min share": 0.748571,
+     "seed max share": 0.805714,
+     "kept by its gate": 175,
+     "TP": 82,
+     "FN": 13,
+     "FP": 21,
+     "TN": 59
+    },
+    "a\u00b7td\u00b7prod": {
+     "share": 0.765714,
+     "count": 134,
+     "lo": 0.672831,
+     "hi": 0.845715,
+     "seed mean share": 0.749388,
+     "seed min share": 0.714286,
+     "seed max share": 0.782857,
+     "kept by its gate": 175,
+     "TP": 81,
+     "FN": 14,
+     "FP": 27,
+     "TN": 53
+    },
+    "a\u00b7td\u00b7vec": {
+     "share": 0.765714,
+     "count": 134,
+     "lo": 0.686271,
+     "hi": 0.83851,
+     "seed mean share": 0.776054,
+     "seed min share": 0.737143,
+     "seed max share": 0.805714,
+     "kept by its gate": 175,
+     "TP": 80,
+     "FN": 15,
+     "FP": 26,
+     "TN": 54
+    },
+    "a\u00b7he\u00b7prod": {
+     "share": 0.771429,
+     "count": 135,
+     "lo": 0.680982,
+     "hi": 0.851194,
+     "seed mean share": 0.771701,
+     "seed min share": 0.742857,
+     "seed max share": 0.805714,
+     "kept by its gate": 175,
+     "TP": 81,
+     "FN": 14,
+     "FP": 26,
+     "TN": 54
+    },
+    "a\u00b7he\u00b7vec": {
+     "share": 0.788571,
+     "count": 138,
+     "lo": 0.698015,
+     "hi": 0.872619,
+     "seed mean share": 0.788844,
+     "seed min share": 0.76,
+     "seed max share": 0.817143,
+     "kept by its gate": 175,
+     "TP": 82,
+     "FN": 13,
+     "FP": 24,
+     "TN": 56
+    },
+    "a\u00b7both\u00b7prod": {
+     "share": 0.782857,
+     "count": 137,
+     "lo": 0.70122,
+     "hi": 0.856385,
+     "seed mean share": 0.787483,
+     "seed min share": 0.72,
+     "seed max share": 0.817143,
+     "kept by its gate": 175,
+     "TP": 82,
+     "FN": 13,
+     "FP": 25,
+     "TN": 55
+    },
+    "a\u00b7both\u00b7vec": {
+     "share": 0.805714,
+     "count": 141,
+     "lo": 0.727273,
+     "hi": 0.877008,
+     "seed mean share": 0.792381,
+     "seed min share": 0.754286,
+     "seed max share": 0.811429,
+     "kept by its gate": 175,
+     "TP": 84,
+     "FN": 11,
+     "FP": 23,
+     "TN": 57
+    },
+    "b\u00b7raw\u00b7prod": {
+     "share": 0.771429,
+     "count": 135,
+     "lo": 0.675321,
+     "hi": 0.860606,
+     "seed mean share": 0.776599,
+     "seed min share": 0.742857,
+     "seed max share": 0.811429,
+     "kept by its gate": 145,
+     "TP": 87,
+     "FN": 8,
+     "FP": 32,
+     "TN": 48
+    },
+    "b\u00b7raw\u00b7vec": {
+     "share": 0.777143,
+     "count": 136,
+     "lo": 0.69277,
+     "hi": 0.857895,
+     "seed mean share": 0.777959,
+     "seed min share": 0.742857,
+     "seed max share": 0.822857,
+     "kept by its gate": 145,
+     "TP": 87,
+     "FN": 8,
+     "FP": 31,
+     "TN": 49
+    },
+    "b\u00b7td\u00b7prod": {
+     "share": 0.748571,
+     "count": 131,
+     "lo": 0.64557,
+     "hi": 0.838891,
+     "seed mean share": 0.736871,
+     "seed min share": 0.708571,
+     "seed max share": 0.754286,
+     "kept by its gate": 145,
+     "TP": 87,
+     "FN": 8,
+     "FP": 36,
+     "TN": 44
+    },
+    "b\u00b7td\u00b7vec": {
+     "share": 0.76,
+     "count": 133,
+     "lo": 0.659997,
+     "hi": 0.850268,
+     "seed mean share": 0.767347,
+     "seed min share": 0.737143,
+     "seed max share": 0.794286,
+     "kept by its gate": 145,
+     "TP": 86,
+     "FN": 9,
+     "FP": 33,
+     "TN": 47
+    },
+    "b\u00b7he\u00b7prod": {
+     "share": 0.731429,
+     "count": 128,
+     "lo": 0.621754,
+     "hi": 0.829018,
+     "seed mean share": 0.750476,
+     "seed min share": 0.731429,
+     "seed max share": 0.777143,
+     "kept by its gate": 145,
+     "TP": 85,
+     "FN": 10,
+     "FP": 37,
+     "TN": 43
+    },
+    "b\u00b7he\u00b7vec": {
+     "share": 0.76,
+     "count": 133,
+     "lo": 0.662973,
+     "hi": 0.849167,
+     "seed mean share": 0.76898,
+     "seed min share": 0.737143,
+     "seed max share": 0.8,
+     "kept by its gate": 145,
+     "TP": 86,
+     "FN": 9,
+     "FP": 33,
+     "TN": 47
+    },
+    "b\u00b7both\u00b7prod": {
+     "share": 0.771429,
+     "count": 135,
+     "lo": 0.672616,
+     "hi": 0.862436,
+     "seed mean share": 0.767619,
+     "seed min share": 0.737143,
+     "seed max share": 0.811429,
+     "kept by its gate": 145,
+     "TP": 89,
+     "FN": 6,
+     "FP": 34,
+     "TN": 46
+    },
+    "b\u00b7both\u00b7vec": {
+     "share": 0.777143,
+     "count": 136,
+     "lo": 0.683228,
+     "hi": 0.863388,
+     "seed mean share": 0.773878,
+     "seed min share": 0.754286,
+     "seed max share": 0.805714,
+     "kept by its gate": 145,
+     "TP": 89,
+     "FN": 6,
+     "FP": 33,
+     "TN": 47
+    }
+   },
+   "paired against production (right = call matches label)": [
+    {
+     "features": "a\u00b7raw\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0286,
+     "95% CI": "+0.000 to +0.054",
+     "roads fixed": 7,
+     "roads broken": 2,
+     "McNemar p": 0.1797,
+     "McNemar p (unrounded)": 0.179688
+    },
+    {
+     "features": "a\u00b7td\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.0114,
+     "95% CI": "-0.068 to +0.033",
+     "roads fixed": 8,
+     "roads broken": 10,
+     "McNemar p": 0.8145,
+     "McNemar p (unrounded)": 0.814529
+    },
+    {
+     "features": "a\u00b7td\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": -0.0114,
+     "95% CI": "-0.049 to +0.024",
+     "roads fixed": 8,
+     "roads broken": 10,
+     "McNemar p": 0.8145,
+     "McNemar p (unrounded)": 0.814529
+    },
+    {
+     "features": "a\u00b7he\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.0057,
+     "95% CI": "-0.060 to +0.038",
+     "roads fixed": 10,
+     "roads broken": 11,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "a\u00b7he\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0114,
+     "95% CI": "-0.046 to +0.069",
+     "roads fixed": 14,
+     "roads broken": 12,
+     "McNemar p": 0.845,
+     "McNemar p (unrounded)": 0.845019
+    },
+    {
+     "features": "a\u00b7both\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.0057,
+     "95% CI": "-0.024 to +0.035",
+     "roads fixed": 5,
+     "roads broken": 4,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "a\u00b7both\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0286,
+     "95% CI": "+0.000 to +0.061",
+     "roads fixed": 7,
+     "roads broken": 2,
+     "McNemar p": 0.1797,
+     "McNemar p (unrounded)": 0.179688
+    },
+    {
+     "features": "b\u00b7raw\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.0057,
+     "95% CI": "-0.058 to +0.047",
+     "roads fixed": 9,
+     "roads broken": 10,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "b\u00b7raw\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0,
+     "95% CI": "-0.041 to +0.038",
+     "roads fixed": 8,
+     "roads broken": 8,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "b\u00b7td\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.0286,
+     "95% CI": "-0.110 to +0.034",
+     "roads fixed": 8,
+     "roads broken": 13,
+     "McNemar p": 0.3833,
+     "McNemar p (unrounded)": 0.38331
+    },
+    {
+     "features": "b\u00b7td\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": -0.0171,
+     "95% CI": "-0.084 to +0.039",
+     "roads fixed": 10,
+     "roads broken": 13,
+     "McNemar p": 0.6776,
+     "McNemar p (unrounded)": 0.677639
+    },
+    {
+     "features": "b\u00b7he\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.0457,
+     "95% CI": "-0.129 to +0.023",
+     "roads fixed": 11,
+     "roads broken": 19,
+     "McNemar p": 0.2005,
+     "McNemar p (unrounded)": 0.200488
+    },
+    {
+     "features": "b\u00b7he\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": -0.0171,
+     "95% CI": "-0.085 to +0.043",
+     "roads fixed": 11,
+     "roads broken": 14,
+     "McNemar p": 0.69,
+     "McNemar p (unrounded)": 0.690038
+    },
+    {
+     "features": "b\u00b7both\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": -0.0057,
+     "95% CI": "-0.077 to +0.052",
+     "roads fixed": 9,
+     "roads broken": 10,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "b\u00b7both\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0,
+     "95% CI": "-0.062 to +0.054",
+     "roads fixed": 11,
+     "roads broken": 11,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    }
+   ]
+  },
+  "clear-sky benchmark: assessable flooded roads on the same tiles": {
+   "roads": 95,
+   "tiles": 23,
+   "measure": "found",
+   "arms": {
+    "a\u00b7raw\u00b7prod": {
+     "share": 0.852632,
+     "count": 81,
+     "lo": 0.781243,
+     "hi": 0.927083,
+     "seed mean share": 0.85614,
+     "seed min share": 0.831579,
+     "seed max share": 0.894737,
+     "kept by its gate": 95,
+     "TP": 81,
+     "FN": 14,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7raw\u00b7vec": {
+     "share": 0.863158,
+     "count": 82,
+     "lo": 0.78022,
+     "hi": 0.938782,
+     "seed mean share": 0.85213,
+     "seed min share": 0.821053,
+     "seed max share": 0.884211,
+     "kept by its gate": 95,
+     "TP": 82,
+     "FN": 13,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7td\u00b7prod": {
+     "share": 0.852632,
+     "count": 81,
+     "lo": 0.775,
+     "hi": 0.915666,
+     "seed mean share": 0.843609,
+     "seed min share": 0.810526,
+     "seed max share": 0.863158,
+     "kept by its gate": 95,
+     "TP": 81,
+     "FN": 14,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7td\u00b7vec": {
+     "share": 0.842105,
+     "count": 80,
+     "lo": 0.761364,
+     "hi": 0.912093,
+     "seed mean share": 0.850627,
+     "seed min share": 0.821053,
+     "seed max share": 0.884211,
+     "kept by its gate": 95,
+     "TP": 80,
+     "FN": 15,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7he\u00b7prod": {
+     "share": 0.852632,
+     "count": 81,
+     "lo": 0.759615,
+     "hi": 0.936842,
+     "seed mean share": 0.884211,
+     "seed min share": 0.852632,
+     "seed max share": 0.915789,
+     "kept by its gate": 95,
+     "TP": 81,
+     "FN": 14,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7he\u00b7vec": {
+     "share": 0.863158,
+     "count": 82,
+     "lo": 0.75,
+     "hi": 0.955362,
+     "seed mean share": 0.886717,
+     "seed min share": 0.842105,
+     "seed max share": 0.915789,
+     "kept by its gate": 95,
+     "TP": 82,
+     "FN": 13,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7both\u00b7prod": {
+     "share": 0.863158,
+     "count": 82,
+     "lo": 0.788462,
+     "hi": 0.9375,
+     "seed mean share": 0.878195,
+     "seed min share": 0.831579,
+     "seed max share": 0.936842,
+     "kept by its gate": 95,
+     "TP": 82,
+     "FN": 13,
+     "FP": 0,
+     "TN": 0
+    },
+    "a\u00b7both\u00b7vec": {
+     "share": 0.884211,
+     "count": 84,
+     "lo": 0.816092,
+     "hi": 0.946906,
+     "seed mean share": 0.874687,
+     "seed min share": 0.842105,
+     "seed max share": 0.905263,
+     "kept by its gate": 95,
+     "TP": 84,
+     "FN": 11,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7raw\u00b7prod": {
+     "share": 0.915789,
+     "count": 87,
+     "lo": 0.846136,
+     "hi": 0.972973,
+     "seed mean share": 0.897744,
+     "seed min share": 0.852632,
+     "seed max share": 0.936842,
+     "kept by its gate": 87,
+     "TP": 87,
+     "FN": 8,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7raw\u00b7vec": {
+     "share": 0.915789,
+     "count": 87,
+     "lo": 0.85,
+     "hi": 0.971154,
+     "seed mean share": 0.899248,
+     "seed min share": 0.852632,
+     "seed max share": 0.926316,
+     "kept by its gate": 87,
+     "TP": 87,
+     "FN": 8,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7td\u00b7prod": {
+     "share": 0.915789,
+     "count": 87,
+     "lo": 0.857143,
+     "hi": 0.965517,
+     "seed mean share": 0.893233,
+     "seed min share": 0.863158,
+     "seed max share": 0.915789,
+     "kept by its gate": 87,
+     "TP": 87,
+     "FN": 8,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7td\u00b7vec": {
+     "share": 0.905263,
+     "count": 86,
+     "lo": 0.841463,
+     "hi": 0.957627,
+     "seed mean share": 0.906767,
+     "seed min share": 0.873684,
+     "seed max share": 0.936842,
+     "kept by its gate": 87,
+     "TP": 86,
+     "FN": 9,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7he\u00b7prod": {
+     "share": 0.894737,
+     "count": 85,
+     "lo": 0.810123,
+     "hi": 0.961905,
+     "seed mean share": 0.910777,
+     "seed min share": 0.884211,
+     "seed max share": 0.936842,
+     "kept by its gate": 87,
+     "TP": 85,
+     "FN": 10,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7he\u00b7vec": {
+     "share": 0.905263,
+     "count": 86,
+     "lo": 0.833333,
+     "hi": 0.969388,
+     "seed mean share": 0.908271,
+     "seed min share": 0.873684,
+     "seed max share": 0.936842,
+     "kept by its gate": 87,
+     "TP": 86,
+     "FN": 9,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7both\u00b7prod": {
+     "share": 0.936842,
+     "count": 89,
+     "lo": 0.882979,
+     "hi": 0.981982,
+     "seed mean share": 0.914286,
+     "seed min share": 0.894737,
+     "seed max share": 0.936842,
+     "kept by its gate": 87,
+     "TP": 89,
+     "FN": 6,
+     "FP": 0,
+     "TN": 0
+    },
+    "b\u00b7both\u00b7vec": {
+     "share": 0.936842,
+     "count": 89,
+     "lo": 0.884211,
+     "hi": 0.981136,
+     "seed mean share": 0.914787,
+     "seed min share": 0.873684,
+     "seed max share": 0.936842,
+     "kept by its gate": 87,
+     "TP": 89,
+     "FN": 6,
+     "FP": 0,
+     "TN": 0
+    }
+   },
+   "paired against production (right = call matches label)": [
+    {
+     "features": "a\u00b7raw\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0105,
+     "95% CI": "-0.023 to +0.048",
+     "roads fixed": 3,
+     "roads broken": 2,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "a\u00b7td\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.0,
+     "95% CI": "-0.088 to +0.071",
+     "roads fixed": 6,
+     "roads broken": 6,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "a\u00b7td\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": -0.0105,
+     "95% CI": "-0.088 to +0.052",
+     "roads fixed": 5,
+     "roads broken": 6,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "a\u00b7he\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.0,
+     "95% CI": "-0.069 to +0.065",
+     "roads fixed": 5,
+     "roads broken": 5,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "a\u00b7he\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0105,
+     "95% CI": "-0.066 to +0.082",
+     "roads fixed": 6,
+     "roads broken": 5,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "a\u00b7both\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.0105,
+     "95% CI": "-0.025 to +0.048",
+     "roads fixed": 3,
+     "roads broken": 2,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0
+    },
+    {
+     "features": "a\u00b7both\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0316,
+     "95% CI": "-0.014 to +0.085",
+     "roads fixed": 5,
+     "roads broken": 2,
+     "McNemar p": 0.4531,
+     "McNemar p (unrounded)": 0.453125
+    },
+    {
+     "features": "b\u00b7raw\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.0632,
+     "95% CI": "+0.011 to +0.126",
+     "roads fixed": 8,
+     "roads broken": 2,
+     "McNemar p": 0.1094,
+     "McNemar p (unrounded)": 0.109375
+    },
+    {
+     "features": "b\u00b7raw\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0632,
+     "95% CI": "+0.019 to +0.114",
+     "roads fixed": 7,
+     "roads broken": 1,
+     "McNemar p": 0.0703,
+     "McNemar p (unrounded)": 0.0703125
+    },
+    {
+     "features": "b\u00b7td\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.0632,
+     "95% CI": "-0.010 to +0.125",
+     "roads fixed": 8,
+     "roads broken": 2,
+     "McNemar p": 0.1094,
+     "McNemar p (unrounded)": 0.109375
+    },
+    {
+     "features": "b\u00b7td\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0526,
+     "95% CI": "-0.025 to +0.118",
+     "roads fixed": 8,
+     "roads broken": 3,
+     "McNemar p": 0.2266,
+     "McNemar p (unrounded)": 0.226562
+    },
+    {
+     "features": "b\u00b7he\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.0421,
+     "95% CI": "-0.025 to +0.105",
+     "roads fixed": 7,
+     "roads broken": 3,
+     "McNemar p": 0.3438,
+     "McNemar p (unrounded)": 0.34375
+    },
+    {
+     "features": "b\u00b7he\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0526,
+     "95% CI": "+0.000 to +0.110",
+     "roads fixed": 7,
+     "roads broken": 2,
+     "McNemar p": 0.1797,
+     "McNemar p (unrounded)": 0.179688
+    },
+    {
+     "features": "b\u00b7both\u00b7prod",
+     "vs a\u00b7raw\u00b7prod": 0.0842,
+     "95% CI": "+0.033 to +0.137",
+     "roads fixed": 8,
+     "roads broken": 0,
+     "McNemar p": 0.0078,
+     "McNemar p (unrounded)": 0.0078125
+    },
+    {
+     "features": "b\u00b7both\u00b7vec",
+     "vs a\u00b7raw\u00b7prod": 0.0842,
+     "95% CI": "+0.022 to +0.147",
+     "roads fixed": 9,
+     "roads broken": 1,
+     "McNemar p": 0.0215,
+     "McNemar p (unrounded)": 0.0214844
+    }
+   ]
+  }
+ },
+ "across seeds (shared roads)": {
+  "a\u00b7raw\u00b7prod": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "none (raw)",
+   "features": "production features",
+   "tools": 0,
+   "shared accuracy, seed 662": 0.824306,
+   "shared accuracy mean": 0.832358,
+   "shared accuracy SD": 0.00497625,
+   "shared accuracy min": 0.824306,
+   "shared accuracy max": 0.842801,
+   "own kept accuracy, seed 662": 0.822055,
+   "own kept accuracy mean": 0.827485,
+   "own kept accuracy SD": 0.00481003,
+   "seeds above production": 0,
+   "seeds equal": 21,
+   "seeds below production": 0,
+   "mean gain vs production": 0.0,
+   "rule passes (of 21 seeds, shared roads)": null
+  },
+  "a\u00b7raw\u00b7vec": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "none (raw)",
+   "features": "+ DINOv2 change vector",
+   "tools": 1,
+   "shared accuracy, seed 662": 0.846764,
+   "shared accuracy mean": 0.844813,
+   "shared accuracy SD": 0.00521117,
+   "shared accuracy min": 0.833554,
+   "shared accuracy max": 0.859974,
+   "own kept accuracy, seed 662": 0.844612,
+   "own kept accuracy mean": 0.838286,
+   "own kept accuracy SD": 0.00656522,
+   "seeds above production": 20,
+   "seeds equal": 0,
+   "seeds below production": 1,
+   "mean gain vs production": 0.0124552,
+   "rule passes (of 21 seeds, shared roads)": 5
+  },
+  "a\u00b7td\u00b7prod": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "two-date",
+   "features": "production features",
+   "tools": 1,
+   "shared accuracy, seed 662": 0.826948,
+   "shared accuracy mean": 0.827515,
+   "shared accuracy SD": 0.00510891,
+   "shared accuracy min": 0.81638,
+   "shared accuracy max": 0.840159,
+   "own kept accuracy, seed 662": 0.824561,
+   "own kept accuracy mean": 0.818534,
+   "own kept accuracy SD": 0.00539894,
+   "seeds above production": 4,
+   "seeds equal": 2,
+   "seeds below production": 15,
+   "mean gain vs production": -0.00484368,
+   "rule passes (of 21 seeds, shared roads)": 0
+  },
+  "a\u00b7td\u00b7vec": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "two-date",
+   "features": "+ DINOv2 change vector",
+   "tools": 2,
+   "shared accuracy, seed 662": 0.838838,
+   "shared accuracy mean": 0.842046,
+   "shared accuracy SD": 0.00551939,
+   "shared accuracy min": 0.830911,
+   "shared accuracy max": 0.852048,
+   "own kept accuracy, seed 662": 0.830827,
+   "own kept accuracy mean": 0.832916,
+   "own kept accuracy SD": 0.00613054,
+   "seeds above production": 18,
+   "seeds equal": 0,
+   "seeds below production": 3,
+   "mean gain vs production": 0.00968736,
+   "rule passes (of 21 seeds, shared roads)": 1
+  },
+  "a\u00b7he\u00b7prod": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "He 2011",
+   "features": "production features",
+   "tools": 1,
+   "shared accuracy, seed 662": 0.819022,
+   "shared accuracy mean": 0.820973,
+   "shared accuracy SD": 0.00564517,
+   "shared accuracy min": 0.809775,
+   "shared accuracy max": 0.832232,
+   "own kept accuracy, seed 662": 0.813283,
+   "own kept accuracy mean": 0.813343,
+   "own kept accuracy SD": 0.00526429,
+   "seeds above production": 0,
+   "seeds equal": 0,
+   "seeds below production": 21,
+   "mean gain vs production": -0.0113858,
+   "rule passes (of 21 seeds, shared roads)": 0
+  },
+  "a\u00b7he\u00b7vec": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "He 2011",
+   "features": "+ DINOv2 change vector",
+   "tools": 2,
+   "shared accuracy, seed 662": 0.838838,
+   "shared accuracy mean": 0.840473,
+   "shared accuracy SD": 0.0059651,
+   "shared accuracy min": 0.826948,
+   "shared accuracy max": 0.850727,
+   "own kept accuracy, seed 662": 0.833333,
+   "own kept accuracy mean": 0.833512,
+   "own kept accuracy SD": 0.0055519,
+   "seeds above production": 18,
+   "seeds equal": 1,
+   "seeds below production": 2,
+   "mean gain vs production": 0.00811474,
+   "rule passes (of 21 seeds, shared roads)": 2
+  },
+  "a\u00b7both\u00b7prod": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "both cues + raw",
+   "features": "production features",
+   "tools": 2,
+   "shared accuracy, seed 662": 0.82959,
+   "shared accuracy mean": 0.836258,
+   "shared accuracy SD": 0.00491577,
+   "shared accuracy min": 0.828269,
+   "shared accuracy max": 0.845443,
+   "own kept accuracy, seed 662": 0.828321,
+   "own kept accuracy mean": 0.831364,
+   "own kept accuracy SD": 0.00447583,
+   "seeds above production": 13,
+   "seeds equal": 2,
+   "seeds below production": 6,
+   "mean gain vs production": 0.00390011,
+   "rule passes (of 21 seeds, shared roads)": 1
+  },
+  "a\u00b7both\u00b7vec": {
+   "gate": "production gate (dark-rise road rule)",
+   "cues": "both cues + raw",
+   "features": "+ DINOv2 change vector",
+   "tools": 3,
+   "shared accuracy, seed 662": 0.837517,
+   "shared accuracy mean": 0.844184,
+   "shared accuracy SD": 0.00685748,
+   "shared accuracy min": 0.82959,
+   "shared accuracy max": 0.85469,
+   "own kept accuracy, seed 662": 0.834586,
+   "own kept accuracy mean": 0.838585,
+   "own kept accuracy SD": 0.0066027,
+   "seeds above production": 20,
+   "seeds equal": 0,
+   "seeds below production": 1,
+   "mean gain vs production": 0.0118261,
+   "rule passes (of 21 seeds, shared roads)": 7
+  },
+  "b\u00b7raw\u00b7prod": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "none (raw)",
+   "features": "production features",
+   "tools": 1,
+   "shared accuracy, seed 662": 0.842801,
+   "shared accuracy mean": 0.837579,
+   "shared accuracy SD": 0.00631429,
+   "shared accuracy min": 0.824306,
+   "shared accuracy max": 0.849406,
+   "own kept accuracy, seed 662": 0.84557,
+   "own kept accuracy mean": 0.839843,
+   "own kept accuracy SD": 0.00619632,
+   "seeds above production": 15,
+   "seeds equal": 1,
+   "seeds below production": 5,
+   "mean gain vs production": 0.00522111,
+   "rule passes (of 21 seeds, shared roads)": 1
+  },
+  "b\u00b7raw\u00b7vec": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "none (raw)",
+   "features": "+ DINOv2 change vector",
+   "tools": 2,
+   "shared accuracy, seed 662": 0.849406,
+   "shared accuracy mean": 0.845505,
+   "shared accuracy SD": 0.0060026,
+   "shared accuracy min": 0.836196,
+   "shared accuracy max": 0.857332,
+   "own kept accuracy, seed 662": 0.851899,
+   "own kept accuracy mean": 0.848463,
+   "own kept accuracy SD": 0.00577502,
+   "seeds above production": 21,
+   "seeds equal": 0,
+   "seeds below production": 0,
+   "mean gain vs production": 0.0131471,
+   "rule passes (of 21 seeds, shared roads)": 4
+  },
+  "b\u00b7td\u00b7prod": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "two-date",
+   "features": "production features",
+   "tools": 2,
+   "shared accuracy, seed 662": 0.834875,
+   "shared accuracy mean": 0.83217,
+   "shared accuracy SD": 0.00562748,
+   "shared accuracy min": 0.822985,
+   "shared accuracy max": 0.845443,
+   "own kept accuracy, seed 662": 0.837975,
+   "own kept accuracy mean": 0.83478,
+   "own kept accuracy SD": 0.00565554,
+   "seeds above production": 6,
+   "seeds equal": 2,
+   "seeds below production": 13,
+   "mean gain vs production": -0.000188715,
+   "rule passes (of 21 seeds, shared roads)": 0
+  },
+  "b\u00b7td\u00b7vec": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "two-date",
+   "features": "+ DINOv2 change vector",
+   "tools": 3,
+   "shared accuracy, seed 662": 0.849406,
+   "shared accuracy mean": 0.843996,
+   "shared accuracy SD": 0.00546111,
+   "shared accuracy min": 0.837517,
+   "shared accuracy max": 0.857332,
+   "own kept accuracy, seed 662": 0.851899,
+   "own kept accuracy mean": 0.847137,
+   "own kept accuracy SD": 0.00567372,
+   "seeds above production": 21,
+   "seeds equal": 0,
+   "seeds below production": 0,
+   "mean gain vs production": 0.0116374,
+   "rule passes (of 21 seeds, shared roads)": 3
+  },
+  "b\u00b7he\u00b7prod": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "He 2011",
+   "features": "production features",
+   "tools": 2,
+   "shared accuracy, seed 662": 0.825627,
+   "shared accuracy mean": 0.827074,
+   "shared accuracy SD": 0.00378058,
+   "shared accuracy min": 0.819022,
+   "shared accuracy max": 0.833554,
+   "own kept accuracy, seed 662": 0.827848,
+   "own kept accuracy mean": 0.828632,
+   "own kept accuracy SD": 0.00405214,
+   "seeds above production": 3,
+   "seeds equal": 3,
+   "seeds below production": 15,
+   "mean gain vs production": -0.00528402,
+   "rule passes (of 21 seeds, shared roads)": 0
+  },
+  "b\u00b7he\u00b7vec": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "He 2011",
+   "features": "+ DINOv2 change vector",
+   "tools": 3,
+   "shared accuracy, seed 662": 0.844122,
+   "shared accuracy mean": 0.845443,
+   "shared accuracy SD": 0.00618196,
+   "shared accuracy min": 0.830911,
+   "shared accuracy max": 0.856011,
+   "own kept accuracy, seed 662": 0.846835,
+   "own kept accuracy mean": 0.848342,
+   "own kept accuracy SD": 0.00601258,
+   "seeds above production": 21,
+   "seeds equal": 0,
+   "seeds below production": 0,
+   "mean gain vs production": 0.0130842,
+   "rule passes (of 21 seeds, shared roads)": 3
+  },
+  "b\u00b7both\u00b7prod": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "both cues + raw",
+   "features": "production features",
+   "tools": 3,
+   "shared accuracy, seed 662": 0.845443,
+   "shared accuracy mean": 0.838523,
+   "shared accuracy SD": 0.00477949,
+   "shared accuracy min": 0.828269,
+   "shared accuracy max": 0.846764,
+   "own kept accuracy, seed 662": 0.849367,
+   "own kept accuracy mean": 0.842315,
+   "own kept accuracy SD": 0.00484616,
+   "seeds above production": 16,
+   "seeds equal": 3,
+   "seeds below production": 2,
+   "mean gain vs production": 0.00616469,
+   "rule passes (of 21 seeds, shared roads)": 1
+  },
+  "b\u00b7both\u00b7vec": {
+   "gate": "spotter gate (bright + texture + DINOv2 road rule)",
+   "cues": "both cues + raw",
+   "features": "+ DINOv2 change vector",
+   "tools": 4,
+   "shared accuracy, seed 662": 0.856011,
+   "shared accuracy mean": 0.845631,
+   "shared accuracy SD": 0.00597067,
+   "shared accuracy min": 0.82959,
+   "shared accuracy max": 0.856011,
+   "own kept accuracy, seed 662": 0.859494,
+   "own kept accuracy mean": 0.849367,
+   "own kept accuracy SD": 0.00556098,
+   "seeds above production": 20,
+   "seeds equal": 0,
+   "seeds below production": 1,
+   "mean gain vs production": 0.0132729,
+   "rule passes (of 21 seeds, shared roads)": 5
+  }
+ },
+ "contrasts": {
+  "shared roads (accuracy)": {
+   "main: spotter gate (b - a)": {
+    "seed 662": 0.0107332,
+    "seed 662 95% CI": [
+     0.00262106,
+     0.0190444
+    ],
+    "seed mean": 0.00341259,
+    "seed SD": 0.00363101,
+    "seed min": -0.00214663,
+    "seed max": 0.0107332,
+    "seeds > 0": 16,
+    "seeds < 0": 5,
+    "seed-averaged 95% CI": [
+     -0.0019199,
+     0.00964654
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: two-date (- raw)": {
+    "seed 662": -0.00330251,
+    "seed 662 95% CI": [
+     -0.0136497,
+     0.00514379
+    ],
+    "seed mean": -0.00363276,
+    "seed SD": 0.00409964,
+    "seed min": -0.0112285,
+    "seed max": 0.00462351,
+    "seeds > 0": 4,
+    "seeds < 0": 17,
+    "seed-averaged 95% CI": [
+     -0.0106426,
+     0.00272232
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: He 2011 (- raw)": {
+    "seed 662": -0.00891678,
+    "seed 662 95% CI": [
+     -0.0214199,
+     0.0022839
+    ],
+    "seed mean": -0.00657357,
+    "seed SD": 0.00375951,
+    "seed min": -0.0135403,
+    "seed max": 0.000660502,
+    "seeds > 0": 1,
+    "seeds < 0": 20,
+    "seed-averaged 95% CI": [
+     -0.0161688,
+     0.00225605
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: both cues + raw (- raw)": {
+    "seed 662": 0.001321,
+    "seed 662 95% CI": [
+     -0.00713461,
+     0.00891841
+    ],
+    "seed mean": 0.00108511,
+    "seed SD": 0.003373,
+    "seed min": -0.00462351,
+    "seed max": 0.00726552,
+    "seeds > 0": 13,
+    "seeds < 0": 8,
+    "seed-averaged 95% CI": [
+     -0.00381629,
+     0.0058894
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: DINOv2 vector (vec - prod)": {
+    "seed 662": 0.0140357,
+    "seed 662 95% CI": [
+     0.00413052,
+     0.0237349
+    ],
+    "seed mean": 0.0124552,
+    "seed SD": 0.00243165,
+    "seed min": 0.00875165,
+    "seed max": 0.0166777,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.00558376,
+     0.0194861
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within gate a: two-date (- raw)": {
+    "seed 662": -0.00264201,
+    "seed 662 95% CI": [
+     -0.0153139,
+     0.00912953
+    ],
+    "seed mean": -0.00380575,
+    "seed SD": 0.00382809,
+    "seed min": -0.0125495,
+    "seed max": 0.001321,
+    "seeds > 0": 1,
+    "seeds < 0": 17,
+    "seed-averaged 95% CI": [
+     -0.0120526,
+     0.00427204
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: He 2011 (- raw)": {
+    "seed 662": -0.00660502,
+    "seed 662 95% CI": [
+     -0.0206614,
+     0.00685902
+    ],
+    "seed mean": -0.00786312,
+    "seed SD": 0.00434581,
+    "seed min": -0.0178336,
+    "seed max": 0.0,
+    "seeds > 0": 0,
+    "seeds < 0": 20,
+    "seed-averaged 95% CI": [
+     -0.0187625,
+     0.00234957
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: both cues + raw (- raw)": {
+    "seed 662": -0.00198151,
+    "seed 662 95% CI": [
+     -0.0117163,
+     0.00748013
+    ],
+    "seed mean": 0.00163553,
+    "seed SD": 0.00401561,
+    "seed min": -0.00462351,
+    "seed max": 0.00924703,
+    "seeds > 0": 13,
+    "seeds < 0": 8,
+    "seed-averaged 95% CI": [
+     -0.00407936,
+     0.00731365
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: DINOv2 vector": {
+    "seed 662": 0.0155218,
+    "seed 662 95% CI": [
+     0.0047792,
+     0.0263798
+    ],
+    "seed mean": 0.0136032,
+    "seed SD": 0.00380523,
+    "seed min": 0.00726552,
+    "seed max": 0.0194848,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.00640807,
+     0.0211872
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within gate b: two-date (- raw)": {
+    "seed 662": -0.00396301,
+    "seed 662 95% CI": [
+     -0.0155325,
+     0.00638347
+    ],
+    "seed mean": -0.00345977,
+    "seed SD": 0.00559638,
+    "seed min": -0.01321,
+    "seed max": 0.00792602,
+    "seeds > 0": 6,
+    "seeds < 0": 15,
+    "seed-averaged 95% CI": [
+     -0.00988322,
+     0.00227003
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: He 2011 (- raw)": {
+    "seed 662": -0.0112285,
+    "seed 662 95% CI": [
+     -0.0254634,
+     0.00210382
+    ],
+    "seed mean": -0.00528402,
+    "seed SD": 0.00541047,
+    "seed min": -0.0151915,
+    "seed max": 0.00330251,
+    "seeds > 0": 4,
+    "seeds < 0": 17,
+    "seed-averaged 95% CI": [
+     -0.0148223,
+     0.00329593
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: both cues + raw (- raw)": {
+    "seed 662": 0.00462351,
+    "seed 662 95% CI": [
+     -0.00635968,
+     0.0153458
+    ],
+    "seed mean": 0.000534692,
+    "seed SD": 0.00474744,
+    "seed min": -0.00726552,
+    "seed max": 0.00924703,
+    "seeds > 0": 10,
+    "seeds < 0": 11,
+    "seed-averaged 95% CI": [
+     -0.00433761,
+     0.00538948
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: DINOv2 vector": {
+    "seed 662": 0.0125495,
+    "seed 662 95% CI": [
+     0.00170719,
+     0.0230836
+    ],
+    "seed mean": 0.0113072,
+    "seed SD": 0.00216788,
+    "seed min": 0.00627477,
+    "seed max": 0.014531,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.00405744,
+     0.0186855
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within cues raw: spotter gate (b - a)": {
+    "seed 662": 0.010568,
+    "seed 662 95% CI": [
+     -0.00131437,
+     0.0225177
+    ],
+    "seed mean": 0.00295653,
+    "seed SD": 0.00472902,
+    "seed min": -0.00594452,
+    "seed max": 0.010568,
+    "seeds > 0": 14,
+    "seeds < 0": 6,
+    "seed-averaged 95% CI": [
+     -0.00437075,
+     0.0107547
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within cues td: spotter gate (b - a)": {
+    "seed 662": 0.00924703,
+    "seed 662 95% CI": [
+     0.0,
+     0.0198585
+    ],
+    "seed mean": 0.00330251,
+    "seed SD": 0.00440114,
+    "seed min": -0.00330251,
+    "seed max": 0.011889,
+    "seeds > 0": 14,
+    "seeds < 0": 5,
+    "seed-averaged 95% CI": [
+     -0.00265802,
+     0.00967567
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within cues he: spotter gate (b - a)": {
+    "seed 662": 0.00594452,
+    "seed 662 95% CI": [
+     -0.00536985,
+     0.018418
+    ],
+    "seed mean": 0.00553564,
+    "seed SD": 0.00544454,
+    "seed min": -0.00528402,
+    "seed max": 0.0171731,
+    "seeds > 0": 18,
+    "seeds < 0": 3,
+    "seed-averaged 95% CI": [
+     -1.32253e-19,
+     0.0118308
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within cues both: spotter gate (b - a)": {
+    "seed 662": 0.0171731,
+    "seed 662 95% CI": [
+     0.00522159,
+     0.0292169
+    ],
+    "seed mean": 0.0018557,
+    "seed SD": 0.00624382,
+    "seed min": -0.00990753,
+    "seed max": 0.0171731,
+    "seeds > 0": 13,
+    "seeds < 0": 8,
+    "seed-averaged 95% CI": [
+     -0.00445682,
+     0.00931968
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features prod: spotter gate (b - a)": {
+    "seed 662": 0.0122193,
+    "seed 662 95% CI": [
+     0.00303343,
+     0.0214387
+    ],
+    "seed mean": 0.00456061,
+    "seed SD": 0.00375619,
+    "seed min": -0.00330251,
+    "seed max": 0.0122193,
+    "seeds > 0": 19,
+    "seeds < 0": 2,
+    "seed-averaged 95% CI": [
+     -0.00111624,
+     0.0111421
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: spotter gate (b - a)": {
+    "seed 662": 0.00924703,
+    "seed 662 95% CI": [
+     0.000321145,
+     0.0186884
+    ],
+    "seed mean": 0.00226458,
+    "seed SD": 0.00442867,
+    "seed min": -0.00561427,
+    "seed max": 0.00990753,
+    "seeds > 0": 14,
+    "seeds < 0": 6,
+    "seed-averaged 95% CI": [
+     -0.0034844,
+     0.00848179
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features prod: two-date (- raw)": {
+    "seed 662": -0.00264201,
+    "seed 662 95% CI": [
+     -0.0152441,
+     0.00842051
+    ],
+    "seed mean": -0.00512675,
+    "seed SD": 0.00487567,
+    "seed min": -0.014531,
+    "seed max": 0.00396301,
+    "seeds > 0": 3,
+    "seeds < 0": 18,
+    "seed-averaged 95% CI": [
+     -0.0124543,
+     0.00156458
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features prod: He 2011 (- raw)": {
+    "seed 662": -0.0112285,
+    "seed 662 95% CI": [
+     -0.0259923,
+     0.00256098
+    ],
+    "seed mean": -0.0109455,
+    "seed SD": 0.00501099,
+    "seed min": -0.0224571,
+    "seed max": -0.001321,
+    "seeds > 0": 0,
+    "seeds < 0": 21,
+    "seed-averaged 95% CI": [
+     -0.0228812,
+     -0.000173994
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features prod: both cues + raw (- raw)": {
+    "seed 662": 0.00396301,
+    "seed 662 95% CI": [
+     -0.00822602,
+     0.0150404
+    ],
+    "seed mean": 0.00242184,
+    "seed SD": 0.0046953,
+    "seed min": -0.00660502,
+    "seed max": 0.00924703,
+    "seeds > 0": 15,
+    "seeds < 0": 6,
+    "seed-averaged 95% CI": [
+     -0.00335764,
+     0.00785236
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: two-date (- raw)": {
+    "seed 662": -0.00396301,
+    "seed 662 95% CI": [
+     -0.0148924,
+     0.0053454
+    ],
+    "seed mean": -0.00213877,
+    "seed SD": 0.00435583,
+    "seed min": -0.010568,
+    "seed max": 0.00528402,
+    "seeds > 0": 7,
+    "seeds < 0": 12,
+    "seed-averaged 95% CI": [
+     -0.00951756,
+     0.00455237
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: He 2011 (- raw)": {
+    "seed 662": -0.00660502,
+    "seed 662 95% CI": [
+     -0.0202901,
+     0.00644434
+    ],
+    "seed mean": -0.00220167,
+    "seed SD": 0.00533877,
+    "seed min": -0.0112285,
+    "seed max": 0.00990753,
+    "seeds > 0": 7,
+    "seeds < 0": 14,
+    "seed-averaged 95% CI": [
+     -0.0111669,
+     0.00602491
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: both cues + raw (- raw)": {
+    "seed 662": -0.001321,
+    "seed 662 95% CI": [
+     -0.0111403,
+     0.00810282
+    ],
+    "seed mean": -0.00025162,
+    "seed SD": 0.00474218,
+    "seed min": -0.00792602,
+    "seed max": 0.00924703,
+    "seeds > 0": 10,
+    "seeds < 0": 10,
+    "seed-averaged 95% CI": [
+     -0.00569581,
+     0.00502967
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x two-date": {
+    "seed 662": -0.001321,
+    "seed 662 95% CI": [
+     -0.0150473,
+     0.0119705
+    ],
+    "seed mean": 0.000345977,
+    "seed SD": 0.00497187,
+    "seed min": -0.011889,
+    "seed max": 0.010568,
+    "seeds > 0": 10,
+    "seeds < 0": 10,
+    "seed-averaged 95% CI": [
+     -0.00518311,
+     0.00593258
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x He 2011": {
+    "seed 662": -0.00462351,
+    "seed 662 95% CI": [
+     -0.0185463,
+     0.00940513
+    ],
+    "seed mean": 0.0025791,
+    "seed SD": 0.00630738,
+    "seed min": -0.00660502,
+    "seed max": 0.0178336,
+    "seeds > 0": 15,
+    "seeds < 0": 6,
+    "seed-averaged 95% CI": [
+     -0.00352455,
+     0.00937431
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x both cues + raw": {
+    "seed 662": 0.00660502,
+    "seed 662 95% CI": [
+     -0.00607349,
+     0.019044
+    ],
+    "seed mean": -0.00110084,
+    "seed SD": 0.00564075,
+    "seed min": -0.010568,
+    "seed max": 0.00990753,
+    "seeds > 0": 8,
+    "seeds < 0": 13,
+    "seed-averaged 95% CI": [
+     -0.00570299,
+     0.00324043
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x vector": {
+    "seed 662": -0.00297226,
+    "seed 662 95% CI": [
+     -0.011763,
+     0.00641221
+    ],
+    "seed mean": -0.00229603,
+    "seed SD": 0.003835,
+    "seed min": -0.00792602,
+    "seed max": 0.00396301,
+    "seeds > 0": 6,
+    "seeds < 0": 14,
+    "seed-averaged 95% CI": [
+     -0.00580607,
+     0.00102717
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction two-date x vector": {
+    "seed 662": -0.001321,
+    "seed 662 95% CI": [
+     -0.0127661,
+     0.0102459
+    ],
+    "seed mean": 0.00298799,
+    "seed SD": 0.0042735,
+    "seed min": -0.00396301,
+    "seed max": 0.010568,
+    "seeds > 0": 16,
+    "seeds < 0": 5,
+    "seed-averaged 95% CI": [
+     -0.00100494,
+     0.00703577
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction He 2011 x vector": {
+    "seed 662": 0.00462351,
+    "seed 662 95% CI": [
+     -0.00892881,
+     0.0188687
+    ],
+    "seed mean": 0.00874379,
+    "seed SD": 0.00711966,
+    "seed min": -0.00264201,
+    "seed max": 0.0211361,
+    "seeds > 0": 19,
+    "seeds < 0": 2,
+    "seed-averaged 95% CI": [
+     0.00183853,
+     0.0161447
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "interaction both cues + raw x vector": {
+    "seed 662": -0.00528402,
+    "seed 662 95% CI": [
+     -0.0194638,
+     0.00869093
+    ],
+    "seed mean": -0.00267346,
+    "seed SD": 0.00659999,
+    "seed min": -0.0112285,
+    "seed max": 0.0138705,
+    "seeds > 0": 5,
+    "seeds < 0": 16,
+    "seed-averaged 95% CI": [
+     -0.00756901,
+     0.00264559
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x two-date x vector": {
+    "seed 662": 0.0184941,
+    "seed 662 95% CI": [
+     0.0,
+     0.040238
+    ],
+    "seed mean": 0.00182424,
+    "seed SD": 0.0113289,
+    "seed min": -0.0250991,
+    "seed max": 0.0198151,
+    "seeds > 0": 13,
+    "seeds < 0": 8,
+    "seed-averaged 95% CI": [
+     -0.00397949,
+     0.00809828
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x He 2011 x vector": {
+    "seed 662": 0.014531,
+    "seed 662 95% CI": [
+     -0.00793971,
+     0.0373483
+    ],
+    "seed mean": 0.00339687,
+    "seed SD": 0.0127569,
+    "seed min": -0.0264201,
+    "seed max": 0.0198151,
+    "seeds > 0": 14,
+    "seeds < 0": 7,
+    "seed-averaged 95% CI": [
+     -0.00294243,
+     0.0101667
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x both cues + raw x vector": {
+    "seed 662": 0.0184941,
+    "seed 662 95% CI": [
+     -0.00260095,
+     0.0377893
+    ],
+    "seed mean": 0.00371139,
+    "seed SD": 0.00986445,
+    "seed min": -0.015852,
+    "seed max": 0.0198151,
+    "seeds > 0": 13,
+    "seeds < 0": 7,
+    "seed-averaged 95% CI": [
+     -0.00127614,
+     0.00866516
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   }
+  },
+  "trusted flooded roads under thin cloud (found)": {
+   "main: spotter gate (b - a)": {
+    "seed 662": 0.0729167,
+    "seed 662 95% CI": [
+     0.0263158,
+     0.139706
+    ],
+    "seed mean": 0.0555556,
+    "seed SD": 0.0174563,
+    "seed min": 0.03125,
+    "seed max": 0.104167,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0190427,
+     0.12204
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "main: two-date (- raw)": {
+    "seed 662": 0.0520833,
+    "seed 662 95% CI": [
+     0.0,
+     0.131579
+    ],
+    "seed mean": 0.0332341,
+    "seed SD": 0.038077,
+    "seed min": -0.0625,
+    "seed max": 0.09375,
+    "seeds > 0": 17,
+    "seeds < 0": 4,
+    "seed-averaged 95% CI": [
+     -0.0413612,
+     0.126056
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: He 2011 (- raw)": {
+    "seed 662": 0.104167,
+    "seed 662 95% CI": [
+     0.0227273,
+     0.214326
+    ],
+    "seed mean": 0.0808532,
+    "seed SD": 0.0286988,
+    "seed min": 0.03125,
+    "seed max": 0.15625,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0232907,
+     0.166667
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "main: both cues + raw (- raw)": {
+    "seed 662": 0.0729167,
+    "seed 662 95% CI": [
+     0.0,
+     0.15625
+    ],
+    "seed mean": 0.0396825,
+    "seed SD": 0.0215046,
+    "seed min": -1.11022e-16,
+    "seed max": 0.0833333,
+    "seeds > 0": 20,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     -0.00770308,
+     0.0966698
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: DINOv2 vector (vec - prod)": {
+    "seed 662": -0.0104167,
+    "seed 662 95% CI": [
+     -0.059788,
+     0.0367647
+    ],
+    "seed mean": 0.015873,
+    "seed SD": 0.0143088,
+    "seed min": -0.0104167,
+    "seed max": 0.0416667,
+    "seeds > 0": 17,
+    "seeds < 0": 3,
+    "seed-averaged 95% CI": [
+     0.00622265,
+     0.0294127
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within gate a: two-date (- raw)": {
+    "seed 662": 0.125,
+    "seed 662 95% CI": [
+     0.0356835,
+     0.260022
+    ],
+    "seed mean": 0.0902778,
+    "seed SD": 0.0583085,
+    "seed min": 0.0,
+    "seed max": 0.166667,
+    "seeds > 0": 19,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     -0.0184073,
+     0.239387
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: He 2011 (- raw)": {
+    "seed 662": 0.1875,
+    "seed 662 95% CI": [
+     0.0645058,
+     0.352972
+    ],
+    "seed mean": 0.145833,
+    "seed SD": 0.0479619,
+    "seed min": 0.0625,
+    "seed max": 0.229167,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.047619,
+     0.299157
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within gate a: both cues + raw (- raw)": {
+    "seed 662": 0.145833,
+    "seed 662 95% CI": [
+     0.025,
+     0.3
+    ],
+    "seed mean": 0.0803571,
+    "seed SD": 0.0418152,
+    "seed min": 0.0208333,
+    "seed max": 0.145833,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     -0.00357515,
+     0.189548
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: DINOv2 vector": {
+    "seed 662": 0.0,
+    "seed 662 95% CI": [
+     -0.0547092,
+     0.0735294
+    ],
+    "seed mean": 0.0233135,
+    "seed SD": 0.0235022,
+    "seed min": -0.0208333,
+    "seed max": 0.0625,
+    "seeds > 0": 15,
+    "seeds < 0": 1,
+    "seed-averaged 95% CI": [
+     0.00679932,
+     0.0470387
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within gate b: two-date (- raw)": {
+    "seed 662": -0.0208333,
+    "seed 662 95% CI": [
+     -0.1,
+     0.0500431
+    ],
+    "seed mean": -0.0238095,
+    "seed SD": 0.0331281,
+    "seed min": -0.125,
+    "seed max": 0.0208333,
+    "seeds > 0": 3,
+    "seeds < 0": 15,
+    "seed-averaged 95% CI": [
+     -0.080379,
+     0.0202853
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: He 2011 (- raw)": {
+    "seed 662": 0.0208333,
+    "seed 662 95% CI": [
+     -0.0625,
+     0.136364
+    ],
+    "seed mean": 0.015873,
+    "seed SD": 0.0286447,
+    "seed min": -0.0208333,
+    "seed max": 0.0833333,
+    "seeds > 0": 10,
+    "seeds < 0": 3,
+    "seed-averaged 95% CI": [
+     -0.0187662,
+     0.0489437
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: both cues + raw (- raw)": {
+    "seed 662": 0.0,
+    "seed 662 95% CI": [
+     -0.0652174,
+     0.0625
+    ],
+    "seed mean": -0.000992063,
+    "seed SD": 0.0232702,
+    "seed min": -0.0416667,
+    "seed max": 0.0416667,
+    "seeds > 0": 4,
+    "seeds < 0": 6,
+    "seed-averaged 95% CI": [
+     -0.0313943,
+     0.0184013
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: DINOv2 vector": {
+    "seed 662": -0.0208333,
+    "seed 662 95% CI": [
+     -0.0789474,
+     0.025
+    ],
+    "seed mean": 0.00843254,
+    "seed SD": 0.0145904,
+    "seed min": -0.0208333,
+    "seed max": 0.0416667,
+    "seeds > 0": 14,
+    "seeds < 0": 4,
+    "seed-averaged 95% CI": [
+     0.00123153,
+     0.0221125
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within cues raw: spotter gate (b - a)": {
+    "seed 662": 0.1875,
+    "seed 662 95% CI": [
+     0.0645161,
+     0.36
+    ],
+    "seed mean": 0.136905,
+    "seed SD": 0.0499876,
+    "seed min": 0.0625,
+    "seed max": 0.25,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0456278,
+     0.285714
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within cues td: spotter gate (b - a)": {
+    "seed 662": 0.0416667,
+    "seed 662 95% CI": [
+     0.0,
+     0.111111
+    ],
+    "seed mean": 0.0228175,
+    "seed SD": 0.0301218,
+    "seed min": -0.0208333,
+    "seed max": 0.0833333,
+    "seeds > 0": 14,
+    "seeds < 0": 4,
+    "seed-averaged 95% CI": [
+     -0.00501477,
+     0.0619048
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within cues he: spotter gate (b - a)": {
+    "seed 662": 0.0208333,
+    "seed 662 95% CI": [
+     0.0,
+     0.075
+    ],
+    "seed mean": 0.00694444,
+    "seed SD": 0.0152145,
+    "seed min": -0.0208333,
+    "seed max": 0.0416667,
+    "seeds > 0": 6,
+    "seeds < 0": 1,
+    "seed-averaged 95% CI": [
+     0.00108225,
+     0.0178571
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within cues both: spotter gate (b - a)": {
+    "seed 662": 0.0416667,
+    "seed 662 95% CI": [
+     0.0,
+     0.125
+    ],
+    "seed mean": 0.0555556,
+    "seed SD": 0.0221788,
+    "seed min": 0.0208333,
+    "seed max": 0.104167,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.00352419,
+     0.172118
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features prod: spotter gate (b - a)": {
+    "seed 662": 0.0833333,
+    "seed 662 95% CI": [
+     0.0227026,
+     0.178571
+    ],
+    "seed mean": 0.062996,
+    "seed SD": 0.0247549,
+    "seed min": 0.0208333,
+    "seed max": 0.125,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0213304,
+     0.137224
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features vec: spotter gate (b - a)": {
+    "seed 662": 0.0625,
+    "seed 662 95% CI": [
+     0.0192308,
+     0.120009
+    ],
+    "seed mean": 0.0481151,
+    "seed SD": 0.018772,
+    "seed min": 0.0208333,
+    "seed max": 0.0833333,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0153583,
+     0.108846
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features prod: two-date (- raw)": {
+    "seed 662": 0.0833333,
+    "seed 662 95% CI": [
+     0.0166667,
+     0.2
+    ],
+    "seed mean": 0.0496032,
+    "seed SD": 0.0463401,
+    "seed min": -0.0416667,
+    "seed max": 0.104167,
+    "seeds > 0": 17,
+    "seeds < 0": 2,
+    "seed-averaged 95% CI": [
+     -0.0414795,
+     0.162704
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features prod: He 2011 (- raw)": {
+    "seed 662": 0.125,
+    "seed 662 95% CI": [
+     0.0333065,
+     0.275
+    ],
+    "seed mean": 0.103175,
+    "seed SD": 0.035156,
+    "seed min": 0.0416667,
+    "seed max": 0.166667,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0323074,
+     0.208095
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features prod: both cues + raw (- raw)": {
+    "seed 662": 0.0833333,
+    "seed 662 95% CI": [
+     0.0178571,
+     0.175
+    ],
+    "seed mean": 0.0605159,
+    "seed SD": 0.0354196,
+    "seed min": 0.0,
+    "seed max": 0.166667,
+    "seeds > 0": 20,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0062643,
+     0.132055
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features vec: two-date (- raw)": {
+    "seed 662": 0.0208333,
+    "seed 662 95% CI": [
+     -0.0556373,
+     0.09375
+    ],
+    "seed mean": 0.0168651,
+    "seed SD": 0.0393188,
+    "seed min": -0.0833333,
+    "seed max": 0.0833333,
+    "seeds > 0": 15,
+    "seeds < 0": 4,
+    "seed-averaged 95% CI": [
+     -0.0441023,
+     0.0864712
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: He 2011 (- raw)": {
+    "seed 662": 0.0833333,
+    "seed 662 95% CI": [
+     -0.0227273,
+     0.194475
+    ],
+    "seed mean": 0.0585317,
+    "seed SD": 0.0326885,
+    "seed min": 0.0208333,
+    "seed max": 0.145833,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0112641,
+     0.126992
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features vec: both cues + raw (- raw)": {
+    "seed 662": 0.0625,
+    "seed 662 95% CI": [
+     -0.0416667,
+     0.166667
+    ],
+    "seed mean": 0.0188492,
+    "seed SD": 0.0270871,
+    "seed min": -0.0208333,
+    "seed max": 0.0625,
+    "seeds > 0": 12,
+    "seeds < 0": 3,
+    "seed-averaged 95% CI": [
+     -0.0297619,
+     0.0690505
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x two-date": {
+    "seed 662": -0.145833,
+    "seed 662 95% CI": [
+     -0.300109,
+     -0.0270092
+    ],
+    "seed mean": -0.114087,
+    "seed SD": 0.0565267,
+    "seed min": -0.1875,
+    "seed max": -5.55112e-17,
+    "seeds > 0": 0,
+    "seeds < 0": 20,
+    "seed-averaged 95% CI": [
+     -0.24605,
+     -0.0292199
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "interaction gate x He 2011": {
+    "seed 662": -0.166667,
+    "seed 662 95% CI": [
+     -0.350046,
+     -0.0333333
+    ],
+    "seed mean": -0.12996,
+    "seed SD": 0.0542886,
+    "seed min": -0.25,
+    "seed max": -0.0208333,
+    "seeds > 0": 0,
+    "seeds < 0": 21,
+    "seed-averaged 95% CI": [
+     -0.275515,
+     -0.0414044
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "interaction gate x both cues + raw": {
+    "seed 662": -0.145833,
+    "seed 662 95% CI": [
+     -0.315789,
+     0.0
+    ],
+    "seed mean": -0.0813492,
+    "seed SD": 0.0522517,
+    "seed min": -0.1875,
+    "seed max": 0.0208333,
+    "seeds > 0": 1,
+    "seeds < 0": 19,
+    "seed-averaged 95% CI": [
+     -0.190476,
+     -0.00139956
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "interaction gate x vector": {
+    "seed 662": -0.0208333,
+    "seed 662 95% CI": [
+     -0.102941,
+     0.0340909
+    ],
+    "seed mean": -0.014881,
+    "seed SD": 0.0266739,
+    "seed min": -0.0520833,
+    "seed max": 0.0416667,
+    "seeds > 0": 5,
+    "seeds < 0": 14,
+    "seed-averaged 95% CI": [
+     -0.0388273,
+     0.00535714
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction two-date x vector": {
+    "seed 662": -0.0625,
+    "seed 662 95% CI": [
+     -0.1875,
+     0.0192308
+    ],
+    "seed mean": -0.0327381,
+    "seed SD": 0.039841,
+    "seed min": -0.104167,
+    "seed max": 0.0625,
+    "seeds > 0": 4,
+    "seeds < 0": 16,
+    "seed-averaged 95% CI": [
+     -0.0846755,
+     0.00732887
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction He 2011 x vector": {
+    "seed 662": -0.0416667,
+    "seed 662 95% CI": [
+     -0.176471,
+     0.0535714
+    ],
+    "seed mean": -0.0446429,
+    "seed SD": 0.0362558,
+    "seed min": -0.125,
+    "seed max": 0.0208333,
+    "seeds > 0": 2,
+    "seeds < 0": 18,
+    "seed-averaged 95% CI": [
+     -0.0952381,
+     -0.0111097
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "interaction both cues + raw x vector": {
+    "seed 662": -0.0208333,
+    "seed 662 95% CI": [
+     -0.14,
+     0.0681818
+    ],
+    "seed mean": -0.0416667,
+    "seed SD": 0.0461165,
+    "seed min": -0.166667,
+    "seed max": 0.0416667,
+    "seeds > 0": 3,
+    "seeds < 0": 17,
+    "seed-averaged 95% CI": [
+     -0.0892857,
+     -0.00844566
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "three-way gate x two-date x vector": {
+    "seed 662": -0.125,
+    "seed 662 95% CI": [
+     -0.391304,
+     0.130507
+    ],
+    "seed mean": 0.0654762,
+    "seed SD": 0.0918289,
+    "seed min": -0.125,
+    "seed max": 0.208333,
+    "seeds > 0": 15,
+    "seeds < 0": 5,
+    "seed-averaged 95% CI": [
+     -0.00477041,
+     0.153684
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x He 2011 x vector": {
+    "seed 662": 0.0,
+    "seed 662 95% CI": [
+     -0.208333,
+     0.25
+    ],
+    "seed mean": 0.0734127,
+    "seed SD": 0.0670623,
+    "seed min": -0.0416667,
+    "seed max": 0.166667,
+    "seeds > 0": 16,
+    "seeds < 0": 1,
+    "seed-averaged 95% CI": [
+     -3.00722e-18,
+     0.169048
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x both cues + raw x vector": {
+    "seed 662": -0.125,
+    "seed 662 95% CI": [
+     -0.318182,
+     0.0527047
+    ],
+    "seed mean": 0.0555556,
+    "seed SD": 0.0953187,
+    "seed min": -0.125,
+    "seed max": 0.25,
+    "seeds > 0": 15,
+    "seeds < 0": 5,
+    "seed-averaged 95% CI": [
+     -0.0214286,
+     0.145525
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   }
+  },
+  "dry-labelled roads under thin cloud (labels untrusted) (called flooded)": {
+   "main: spotter gate (b - a)": {
+    "seed 662": 0.17029,
+    "seed 662 95% CI": [
+     0.0915136,
+     0.251646
+    ],
+    "seed mean": 0.153382,
+    "seed SD": 0.0207214,
+    "seed min": 0.108696,
+    "seed max": 0.192029,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.107992,
+     0.193302
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "main: two-date (- raw)": {
+    "seed 662": 0.23913,
+    "seed 662 95% CI": [
+     0.125,
+     0.33434
+    ],
+    "seed mean": 0.244651,
+    "seed SD": 0.0192956,
+    "seed min": 0.210145,
+    "seed max": 0.275362,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.136884,
+     0.329726
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "main: He 2011 (- raw)": {
+    "seed 662": 0.141304,
+    "seed 662 95% CI": [
+     0.0675649,
+     0.209576
+    ],
+    "seed mean": 0.153727,
+    "seed SD": 0.0334154,
+    "seed min": 0.0942029,
+    "seed max": 0.228261,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0933775,
+     0.206896
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "main: both cues + raw (- raw)": {
+    "seed 662": 0.00362319,
+    "seed 662 95% CI": [
+     -0.0261194,
+     0.0335821
+    ],
+    "seed mean": 0.0201863,
+    "seed SD": 0.0213298,
+    "seed min": -0.0144928,
+    "seed max": 0.0507246,
+    "seeds > 0": 16,
+    "seeds < 0": 5,
+    "seed-averaged 95% CI": [
+     0.000193452,
+     0.0344128
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "main: DINOv2 vector (vec - prod)": {
+    "seed 662": -0.0869565,
+    "seed 662 95% CI": [
+     -0.137296,
+     -0.0353701
+    ],
+    "seed mean": -0.100932,
+    "seed SD": 0.020545,
+    "seed min": -0.139493,
+    "seed max": -0.057971,
+    "seeds > 0": 0,
+    "seeds < 0": 21,
+    "seed-averaged 95% CI": [
+     -0.138632,
+     -0.0588894
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within gate a: two-date (- raw)": {
+    "seed 662": 0.224638,
+    "seed 662 95% CI": [
+     0.103142,
+     0.336559
+    ],
+    "seed mean": 0.208075,
+    "seed SD": 0.0210198,
+    "seed min": 0.173913,
+    "seed max": 0.23913,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0897321,
+     0.315198
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within gate a: He 2011 (- raw)": {
+    "seed 662": 0.0217391,
+    "seed 662 95% CI": [
+     -0.0144928,
+     0.0616652
+    ],
+    "seed mean": 0.0517598,
+    "seed SD": 0.03161,
+    "seed min": 0.00724638,
+    "seed max": 0.144928,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.012608,
+     0.099375
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within gate a: both cues + raw (- raw)": {
+    "seed 662": 0.0144928,
+    "seed 662 95% CI": [
+     0.0,
+     0.0337915
+    ],
+    "seed mean": 0.00310559,
+    "seed SD": 0.0159702,
+    "seed min": -0.0289855,
+    "seed max": 0.0362319,
+    "seeds > 0": 11,
+    "seeds < 0": 7,
+    "seed-averaged 95% CI": [
+     -0.0084753,
+     0.0132653
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: DINOv2 vector": {
+    "seed 662": -0.0797101,
+    "seed 662 95% CI": [
+     -0.102782,
+     -0.0518868
+    ],
+    "seed mean": -0.0779848,
+    "seed SD": 0.019465,
+    "seed min": -0.126812,
+    "seed max": -0.0543478,
+    "seeds > 0": 0,
+    "seeds < 0": 21,
+    "seed-averaged 95% CI": [
+     -0.102996,
+     -0.0511802
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within gate b: two-date (- raw)": {
+    "seed 662": 0.253623,
+    "seed 662 95% CI": [
+     0.120961,
+     0.362906
+    ],
+    "seed mean": 0.281228,
+    "seed SD": 0.0318032,
+    "seed min": 0.224638,
+    "seed max": 0.347826,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.169358,
+     0.369337
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within gate b: He 2011 (- raw)": {
+    "seed 662": 0.26087,
+    "seed 662 95% CI": [
+     0.126866,
+     0.389542
+    ],
+    "seed mean": 0.255694,
+    "seed SD": 0.0449125,
+    "seed min": 0.152174,
+    "seed max": 0.326087,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.156555,
+     0.337628
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within gate b: both cues + raw (- raw)": {
+    "seed 662": -0.00724638,
+    "seed 662 95% CI": [
+     -0.0632934,
+     0.047173
+    ],
+    "seed mean": 0.0372671,
+    "seed SD": 0.0364692,
+    "seed min": -0.0217391,
+    "seed max": 0.101449,
+    "seeds > 0": 16,
+    "seeds < 0": 4,
+    "seed-averaged 95% CI": [
+     0.00163026,
+     0.0618388
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within gate b: DINOv2 vector": {
+    "seed 662": -0.0942029,
+    "seed 662 95% CI": [
+     -0.190349,
+     0.0
+    ],
+    "seed mean": -0.123879,
+    "seed SD": 0.0273213,
+    "seed min": -0.163043,
+    "seed max": -0.0543478,
+    "seeds > 0": 0,
+    "seeds < 0": 21,
+    "seed-averaged 95% CI": [
+     -0.18039,
+     -0.0621197
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within cues raw: spotter gate (b - a)": {
+    "seed 662": 0.108696,
+    "seed 662 95% CI": [
+     0.0357143,
+     0.184225
+    ],
+    "seed mean": 0.0755694,
+    "seed SD": 0.0204409,
+    "seed min": 0.0362319,
+    "seed max": 0.108696,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0370776,
+     0.113738
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within cues td: spotter gate (b - a)": {
+    "seed 662": 0.137681,
+    "seed 662 95% CI": [
+     0.0373065,
+     0.23438
+    ],
+    "seed mean": 0.148723,
+    "seed SD": 0.0322947,
+    "seed min": 0.101449,
+    "seed max": 0.195652,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0797386,
+     0.217671
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within cues he: spotter gate (b - a)": {
+    "seed 662": 0.347826,
+    "seed 662 95% CI": [
+     0.17682,
+     0.514969
+    ],
+    "seed mean": 0.279503,
+    "seed SD": 0.0384517,
+    "seed min": 0.217391,
+    "seed max": 0.347826,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.17199,
+     0.377381
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within cues both: spotter gate (b - a)": {
+    "seed 662": 0.0869565,
+    "seed 662 95% CI": [
+     0.0227273,
+     0.169358
+    ],
+    "seed mean": 0.109731,
+    "seed SD": 0.0349247,
+    "seed min": 0.0362319,
+    "seed max": 0.166667,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0622685,
+     0.15183
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features prod: spotter gate (b - a)": {
+    "seed 662": 0.177536,
+    "seed 662 95% CI": [
+     0.0791612,
+     0.283585
+    ],
+    "seed mean": 0.176329,
+    "seed SD": 0.0207926,
+    "seed min": 0.130435,
+    "seed max": 0.217391,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.115897,
+     0.228423
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features vec: spotter gate (b - a)": {
+    "seed 662": 0.163043,
+    "seed 662 95% CI": [
+     0.0846115,
+     0.253432
+    ],
+    "seed mean": 0.130435,
+    "seed SD": 0.0266002,
+    "seed min": 0.0688406,
+    "seed max": 0.166667,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0903754,
+     0.167273
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features prod: two-date (- raw)": {
+    "seed 662": 0.304348,
+    "seed 662 95% CI": [
+     0.164059,
+     0.416667
+    ],
+    "seed mean": 0.320911,
+    "seed SD": 0.0340767,
+    "seed min": 0.231884,
+    "seed max": 0.369565,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.179827,
+     0.440732
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features prod: He 2011 (- raw)": {
+    "seed 662": 0.15942,
+    "seed 662 95% CI": [
+     0.0749769,
+     0.25
+    ],
+    "seed mean": 0.190821,
+    "seed SD": 0.034398,
+    "seed min": 0.101449,
+    "seed max": 0.26087,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.111841,
+     0.264734
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features prod: both cues + raw (- raw)": {
+    "seed 662": -0.00724638,
+    "seed 662 95% CI": [
+     -0.0423729,
+     0.0234468
+    ],
+    "seed mean": 0.0182885,
+    "seed SD": 0.028309,
+    "seed min": -0.0434783,
+    "seed max": 0.057971,
+    "seeds > 0": 14,
+    "seeds < 0": 7,
+    "seed-averaged 95% CI": [
+     -0.00807891,
+     0.0380187
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: two-date (- raw)": {
+    "seed 662": 0.173913,
+    "seed 662 95% CI": [
+     0.0701518,
+     0.273438
+    ],
+    "seed mean": 0.168392,
+    "seed SD": 0.0268121,
+    "seed min": 0.115942,
+    "seed max": 0.224638,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0857099,
+     0.240705
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features vec: He 2011 (- raw)": {
+    "seed 662": 0.123188,
+    "seed 662 95% CI": [
+     0.0434506,
+     0.194466
+    ],
+    "seed mean": 0.116632,
+    "seed SD": 0.040664,
+    "seed min": 0.0362319,
+    "seed max": 0.195652,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0732584,
+     0.155105
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features vec: both cues + raw (- raw)": {
+    "seed 662": 0.0144928,
+    "seed 662 95% CI": [
+     -0.0227273,
+     0.0588235
+    ],
+    "seed mean": 0.0220842,
+    "seed SD": 0.0246245,
+    "seed min": -0.0217391,
+    "seed max": 0.0797101,
+    "seeds > 0": 16,
+    "seeds < 0": 2,
+    "seed-averaged 95% CI": [
+     0.0068013,
+     0.0352636
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "interaction gate x two-date": {
+    "seed 662": 0.0289855,
+    "seed 662 95% CI": [
+     -0.0789554,
+     0.135716
+    ],
+    "seed mean": 0.0731539,
+    "seed SD": 0.0376466,
+    "seed min": 0.00724638,
+    "seed max": 0.144928,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     -0.0126757,
+     0.157434
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x He 2011": {
+    "seed 662": 0.23913,
+    "seed 662 95% CI": [
+     0.105634,
+     0.373134
+    ],
+    "seed mean": 0.203934,
+    "seed SD": 0.0395765,
+    "seed min": 0.115942,
+    "seed max": 0.268116,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.115438,
+     0.28912
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "interaction gate x both cues + raw": {
+    "seed 662": -0.0217391,
+    "seed 662 95% CI": [
+     -0.0776128,
+     0.0342525
+    ],
+    "seed mean": 0.0341615,
+    "seed SD": 0.0367458,
+    "seed min": -0.0289855,
+    "seed max": 0.108696,
+    "seeds > 0": 16,
+    "seeds < 0": 4,
+    "seed-averaged 95% CI": [
+     -0.00166137,
+     0.0601533
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x vector": {
+    "seed 662": -0.0144928,
+    "seed 662 95% CI": [
+     -0.113971,
+     0.0754174
+    ],
+    "seed mean": -0.0458937,
+    "seed SD": 0.0237127,
+    "seed min": -0.0942029,
+    "seed max": 0.00724638,
+    "seeds > 0": 1,
+    "seeds < 0": 20,
+    "seed-averaged 95% CI": [
+     -0.0884178,
+     -0.00280054
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "interaction two-date x vector": {
+    "seed 662": -0.130435,
+    "seed 662 95% CI": [
+     -0.216221,
+     -0.0277189
+    ],
+    "seed mean": -0.152519,
+    "seed SD": 0.0476543,
+    "seed min": -0.231884,
+    "seed max": -0.0289855,
+    "seeds > 0": 0,
+    "seeds < 0": 21,
+    "seed-averaged 95% CI": [
+     -0.236853,
+     -0.0660457
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "interaction He 2011 x vector": {
+    "seed 662": -0.0362319,
+    "seed 662 95% CI": [
+     -0.120697,
+     0.0351034
+    ],
+    "seed mean": -0.0741891,
+    "seed SD": 0.0347452,
+    "seed min": -0.137681,
+    "seed max": -0.0144928,
+    "seeds > 0": 0,
+    "seeds < 0": 21,
+    "seed-averaged 95% CI": [
+     -0.118443,
+     -0.0310556
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "interaction both cues + raw x vector": {
+    "seed 662": 0.0217391,
+    "seed 662 95% CI": [
+     -0.0156376,
+     0.0735354
+    ],
+    "seed mean": 0.00379572,
+    "seed SD": 0.0315545,
+    "seed min": -0.0507246,
+    "seed max": 0.0652174,
+    "seeds > 0": 7,
+    "seeds < 0": 9,
+    "seed-averaged 95% CI": [
+     -0.0140266,
+     0.0238095
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x two-date x vector": {
+    "seed 662": 0.173913,
+    "seed 662 95% CI": [
+     0.0447597,
+     0.310399
+    ],
+    "seed mean": 0.0441684,
+    "seed SD": 0.085061,
+    "seed min": -0.057971,
+    "seed max": 0.26087,
+    "seeds > 0": 11,
+    "seeds < 0": 7,
+    "seed-averaged 95% CI": [
+     -0.0271327,
+     0.108846
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x He 2011 x vector": {
+    "seed 662": 0.0144928,
+    "seed 662 95% CI": [
+     -0.11477,
+     0.121651
+    ],
+    "seed mean": -0.0793651,
+    "seed SD": 0.079594,
+    "seed min": -0.217391,
+    "seed max": 0.057971,
+    "seeds > 0": 3,
+    "seeds < 0": 17,
+    "seed-averaged 95% CI": [
+     -0.145745,
+     -0.0119048
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "three-way gate x both cues + raw x vector": {
+    "seed 662": 0.0434783,
+    "seed 662 95% CI": [
+     -0.0353154,
+     0.130453
+    ],
+    "seed mean": -0.00759144,
+    "seed SD": 0.0685339,
+    "seed min": -0.130435,
+    "seed max": 0.130435,
+    "seeds > 0": 6,
+    "seeds < 0": 10,
+    "seed-averaged 95% CI": [
+     -0.0451187,
+     0.0303053
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   }
+  },
+  "control: assessable roads on the same tiles (right)": {
+   "main: spotter gate (b - a)": {
+    "seed 662": -0.0207143,
+    "seed 662 95% CI": [
+     -0.0667079,
+     0.023281
+    ],
+    "seed mean": -0.0133673,
+    "seed SD": 0.00978113,
+    "seed min": -0.03,
+    "seed max": 0.00714286,
+    "seeds > 0": 2,
+    "seeds < 0": 19,
+    "seed-averaged 95% CI": [
+     -0.0519987,
+     0.0175224
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: two-date (- raw)": {
+    "seed 662": -0.0228571,
+    "seed 662 95% CI": [
+     -0.0599332,
+     0.00842867
+    ],
+    "seed mean": -0.0214286,
+    "seed SD": 0.0119779,
+    "seed min": -0.0528571,
+    "seed max": 0.00428571,
+    "seeds > 0": 1,
+    "seeds < 0": 20,
+    "seed-averaged 95% CI": [
+     -0.0574999,
+     0.00743105
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: He 2011 (- raw)": {
+    "seed 662": -0.02,
+    "seed 662 95% CI": [
+     -0.0680655,
+     0.0157895
+    ],
+    "seed mean": -0.00884354,
+    "seed SD": 0.0127745,
+    "seed min": -0.03,
+    "seed max": 0.0171429,
+    "seeds > 0": 5,
+    "seeds < 0": 14,
+    "seed-averaged 95% CI": [
+     -0.0522809,
+     0.0238928
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: both cues + raw (- raw)": {
+    "seed 662": 0.00142857,
+    "seed 662 95% CI": [
+     -0.0197006,
+     0.0216346
+    ],
+    "seed mean": 0.0014966,
+    "seed SD": 0.00921928,
+    "seed min": -0.0171429,
+    "seed max": 0.0171429,
+    "seeds > 0": 12,
+    "seeds < 0": 7,
+    "seed-averaged 95% CI": [
+     -0.0185955,
+     0.0194952
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: DINOv2 vector (vec - prod)": {
+    "seed 662": 0.015,
+    "seed 662 95% CI": [
+     -0.00458381,
+     0.0409523
+    ],
+    "seed mean": 0.0143197,
+    "seed SD": 0.00571641,
+    "seed min": 0.00428571,
+    "seed max": 0.0285714,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     -0.00230246,
+     0.0372273
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: two-date (- raw)": {
+    "seed 662": -0.0257143,
+    "seed 662 95% CI": [
+     -0.072469,
+     0.012659
+    ],
+    "seed mean": -0.0176871,
+    "seed SD": 0.0134504,
+    "seed min": -0.0485714,
+    "seed max": 0.0114286,
+    "seeds > 0": 1,
+    "seeds < 0": 19,
+    "seed-averaged 95% CI": [
+     -0.0511256,
+     0.0118329
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: He 2011 (- raw)": {
+    "seed 662": -0.0114286,
+    "seed 662 95% CI": [
+     -0.0591726,
+     0.0258065
+    ],
+    "seed mean": -0.000136054,
+    "seed SD": 0.0145539,
+    "seed min": -0.0285714,
+    "seed max": 0.0257143,
+    "seeds > 0": 10,
+    "seeds < 0": 8,
+    "seed-averaged 95% CI": [
+     -0.0426157,
+     0.0338004
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: both cues + raw (- raw)": {
+    "seed 662": 0.00285714,
+    "seed 662 95% CI": [
+     -0.0202722,
+     0.0254251
+    ],
+    "seed mean": 0.00952381,
+    "seed SD": 0.0111514,
+    "seed min": -0.0142857,
+    "seed max": 0.0314286,
+    "seeds > 0": 17,
+    "seeds < 0": 3,
+    "seed-averaged 95% CI": [
+     -0.0127119,
+     0.0291541
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: DINOv2 vector": {
+    "seed 662": 0.0171429,
+    "seed 662 95% CI": [
+     -0.00995275,
+     0.0506329
+    ],
+    "seed mean": 0.0144898,
+    "seed SD": 0.00793193,
+    "seed min": -0.00142857,
+    "seed max": 0.0342857,
+    "seeds > 0": 19,
+    "seeds < 0": 1,
+    "seed-averaged 95% CI": [
+     -0.00459655,
+     0.0391522
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: two-date (- raw)": {
+    "seed 662": -0.02,
+    "seed 662 95% CI": [
+     -0.0625,
+     0.0146359
+    ],
+    "seed mean": -0.0251701,
+    "seed SD": 0.0158981,
+    "seed min": -0.0571429,
+    "seed max": -0.00285714,
+    "seeds > 0": 0,
+    "seeds < 0": 21,
+    "seed-averaged 95% CI": [
+     -0.0677796,
+     0.00825174
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: He 2011 (- raw)": {
+    "seed 662": -0.0285714,
+    "seed 662 95% CI": [
+     -0.0833333,
+     0.0164842
+    ],
+    "seed mean": -0.017551,
+    "seed SD": 0.0176886,
+    "seed min": -0.0485714,
+    "seed max": 0.0171429,
+    "seeds > 0": 3,
+    "seeds < 0": 17,
+    "seed-averaged 95% CI": [
+     -0.0648082,
+     0.0180093
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: both cues + raw (- raw)": {
+    "seed 662": 0.0,
+    "seed 662 95% CI": [
+     -0.0335608,
+     0.031472
+    ],
+    "seed mean": -0.00653061,
+    "seed SD": 0.0157569,
+    "seed min": -0.04,
+    "seed max": 0.02,
+    "seeds > 0": 6,
+    "seeds < 0": 12,
+    "seed-averaged 95% CI": [
+     -0.0299582,
+     0.0132134
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: DINOv2 vector": {
+    "seed 662": 0.0128571,
+    "seed 662 95% CI": [
+     -0.00746437,
+     0.0410794
+    ],
+    "seed mean": 0.0141497,
+    "seed SD": 0.00693858,
+    "seed min": -0.00428571,
+    "seed max": 0.0271429,
+    "seeds > 0": 20,
+    "seeds < 0": 1,
+    "seed-averaged 95% CI": [
+     -0.00250287,
+     0.0371563
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within cues raw: spotter gate (b - a)": {
+    "seed 662": -0.0171429,
+    "seed 662 95% CI": [
+     -0.0598832,
+     0.0264711
+    ],
+    "seed mean": -0.00312925,
+    "seed SD": 0.016682,
+    "seed min": -0.0285714,
+    "seed max": 0.0285714,
+    "seeds > 0": 7,
+    "seeds < 0": 12,
+    "seed-averaged 95% CI": [
+     -0.0333933,
+     0.0230482
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within cues td: spotter gate (b - a)": {
+    "seed 662": -0.0114286,
+    "seed 662 95% CI": [
+     -0.0742726,
+     0.0449856
+    ],
+    "seed mean": -0.0106122,
+    "seed SD": 0.0139428,
+    "seed min": -0.0371429,
+    "seed max": 0.02,
+    "seeds > 0": 4,
+    "seeds < 0": 15,
+    "seed-averaged 95% CI": [
+     -0.0619439,
+     0.0297259
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within cues he: spotter gate (b - a)": {
+    "seed 662": -0.0342857,
+    "seed 662 95% CI": [
+     -0.078537,
+     0.00893684
+    ],
+    "seed mean": -0.0205442,
+    "seed SD": 0.0132054,
+    "seed min": -0.0485714,
+    "seed max": 0.00285714,
+    "seeds > 0": 1,
+    "seeds < 0": 18,
+    "seed-averaged 95% CI": [
+     -0.0605468,
+     0.0105522
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within cues both: spotter gate (b - a)": {
+    "seed 662": -0.02,
+    "seed 662 95% CI": [
+     -0.0766866,
+     0.0352621
+    ],
+    "seed mean": -0.0191837,
+    "seed SD": 0.0137957,
+    "seed min": -0.0457143,
+    "seed max": 0.0114286,
+    "seeds > 0": 1,
+    "seeds < 0": 19,
+    "seed-averaged 95% CI": [
+     -0.0585781,
+     0.0144515
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features prod: spotter gate (b - a)": {
+    "seed 662": -0.0185714,
+    "seed 662 95% CI": [
+     -0.0716958,
+     0.0316514
+    ],
+    "seed mean": -0.0131973,
+    "seed SD": 0.00994787,
+    "seed min": -0.0271429,
+    "seed max": 0.01,
+    "seeds > 0": 2,
+    "seeds < 0": 19,
+    "seed-averaged 95% CI": [
+     -0.0537696,
+     0.0172469
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: spotter gate (b - a)": {
+    "seed 662": -0.0228571,
+    "seed 662 95% CI": [
+     -0.0676604,
+     0.0192308
+    ],
+    "seed mean": -0.0135374,
+    "seed SD": 0.011751,
+    "seed min": -0.0328571,
+    "seed max": 0.00714286,
+    "seeds > 0": 4,
+    "seeds < 0": 17,
+    "seed-averaged 95% CI": [
+     -0.0500164,
+     0.0173316
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features prod: two-date (- raw)": {
+    "seed 662": -0.0171429,
+    "seed 662 95% CI": [
+     -0.0601537,
+     0.0192334
+    ],
+    "seed mean": -0.0330612,
+    "seed SD": 0.0158197,
+    "seed min": -0.0742857,
+    "seed max": 0.00285714,
+    "seeds > 0": 1,
+    "seeds < 0": 20,
+    "seed-averaged 95% CI": [
+     -0.0752068,
+     -0.00102693
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features prod: He 2011 (- raw)": {
+    "seed 662": -0.0228571,
+    "seed 662 95% CI": [
+     -0.0731959,
+     0.0143784
+    ],
+    "seed mean": -0.015102,
+    "seed SD": 0.0149049,
+    "seed min": -0.0428571,
+    "seed max": 0.0228571,
+    "seeds > 0": 3,
+    "seeds < 0": 17,
+    "seed-averaged 95% CI": [
+     -0.063829,
+     0.0202626
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features prod: both cues + raw (- raw)": {
+    "seed 662": 0.00285714,
+    "seed 662 95% CI": [
+     -0.0220178,
+     0.0258658
+    ],
+    "seed mean": 0.00136054,
+    "seed SD": 0.015027,
+    "seed min": -0.0257143,
+    "seed max": 0.0314286,
+    "seeds > 0": 12,
+    "seeds < 0": 8,
+    "seed-averaged 95% CI": [
+     -0.0192374,
+     0.0193783
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: two-date (- raw)": {
+    "seed 662": -0.0285714,
+    "seed 662 95% CI": [
+     -0.0672043,
+     0.00256579
+    ],
+    "seed mean": -0.00979592,
+    "seed SD": 0.0111235,
+    "seed min": -0.0314286,
+    "seed max": 0.00857143,
+    "seeds > 0": 2,
+    "seeds < 0": 16,
+    "seed-averaged 95% CI": [
+     -0.0421245,
+     0.0175104
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: He 2011 (- raw)": {
+    "seed 662": -0.0171429,
+    "seed 662 95% CI": [
+     -0.065484,
+     0.0290332
+    ],
+    "seed mean": -0.00258503,
+    "seed SD": 0.0138772,
+    "seed min": -0.0285714,
+    "seed max": 0.02,
+    "seeds > 0": 7,
+    "seeds < 0": 10,
+    "seed-averaged 95% CI": [
+     -0.0397358,
+     0.0283567
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: both cues + raw (- raw)": {
+    "seed 662": 0.0,
+    "seed 662 95% CI": [
+     -0.0228796,
+     0.0231876
+    ],
+    "seed mean": 0.00163265,
+    "seed SD": 0.0100029,
+    "seed min": -0.0257143,
+    "seed max": 0.0171429,
+    "seeds > 0": 11,
+    "seeds < 0": 8,
+    "seed-averaged 95% CI": [
+     -0.0194142,
+     0.0205213
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x two-date": {
+    "seed 662": 0.00571429,
+    "seed 662 95% CI": [
+     -0.0391626,
+     0.0512857
+    ],
+    "seed mean": -0.00748299,
+    "seed SD": 0.0171304,
+    "seed min": -0.0457143,
+    "seed max": 0.0228571,
+    "seeds > 0": 7,
+    "seeds < 0": 13,
+    "seed-averaged 95% CI": [
+     -0.0344936,
+     0.0156698
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x He 2011": {
+    "seed 662": -0.0171429,
+    "seed 662 95% CI": [
+     -0.0542887,
+     0.0222966
+    ],
+    "seed mean": -0.017415,
+    "seed SD": 0.0199162,
+    "seed min": -0.0742857,
+    "seed max": 0.00571429,
+    "seeds > 0": 3,
+    "seeds < 0": 16,
+    "seed-averaged 95% CI": [
+     -0.0418262,
+     0.00575847
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x both cues + raw": {
+    "seed 662": -0.00285714,
+    "seed 662 95% CI": [
+     -0.0418999,
+     0.034375
+    ],
+    "seed mean": -0.0160544,
+    "seed SD": 0.0201317,
+    "seed min": -0.0714286,
+    "seed max": 0.0171429,
+    "seeds > 0": 4,
+    "seeds < 0": 16,
+    "seed-averaged 95% CI": [
+     -0.0347583,
+     0.00263125
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x vector": {
+    "seed 662": -0.00428571,
+    "seed 662 95% CI": [
+     -0.0337305,
+     0.0310825
+    ],
+    "seed mean": -0.000340136,
+    "seed SD": 0.00956081,
+    "seed min": -0.0185714,
+    "seed max": 0.0171429,
+    "seeds > 0": 10,
+    "seeds < 0": 11,
+    "seed-averaged 95% CI": [
+     -0.0111286,
+     0.0128175
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction two-date x vector": {
+    "seed 662": -0.0114286,
+    "seed 662 95% CI": [
+     -0.0419216,
+     0.0184077
+    ],
+    "seed mean": 0.0232653,
+    "seed SD": 0.0131951,
+    "seed min": -0.0114286,
+    "seed max": 0.0428571,
+    "seeds > 0": 20,
+    "seeds < 0": 1,
+    "seed-averaged 95% CI": [
+     0.00834355,
+     0.040574
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "interaction He 2011 x vector": {
+    "seed 662": 0.00571429,
+    "seed 662 95% CI": [
+     -0.0236873,
+     0.0428619
+    ],
+    "seed mean": 0.012517,
+    "seed SD": 0.0132934,
+    "seed min": -0.0114286,
+    "seed max": 0.0428571,
+    "seeds > 0": 17,
+    "seeds < 0": 4,
+    "seed-averaged 95% CI": [
+     -0.00191691,
+     0.0294132
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction both cues + raw x vector": {
+    "seed 662": -0.00285714,
+    "seed 662 95% CI": [
+     -0.024394,
+     0.0194805
+    ],
+    "seed mean": 0.000272109,
+    "seed SD": 0.0176567,
+    "seed min": -0.0285714,
+    "seed max": 0.0314286,
+    "seeds > 0": 10,
+    "seeds < 0": 8,
+    "seed-averaged 95% CI": [
+     -0.0119048,
+     0.0112857
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x two-date x vector": {
+    "seed 662": 0.0342857,
+    "seed 662 95% CI": [
+     -0.0211391,
+     0.0965955
+    ],
+    "seed mean": 0.0117007,
+    "seed SD": 0.0340696,
+    "seed min": -0.0514286,
+    "seed max": 0.08,
+    "seeds > 0": 13,
+    "seeds < 0": 6,
+    "seed-averaged 95% CI": [
+     -0.0107436,
+     0.0345042
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x He 2011 x vector": {
+    "seed 662": 0.0342857,
+    "seed 662 95% CI": [
+     -0.0378829,
+     0.0967783
+    ],
+    "seed mean": 0.0092517,
+    "seed SD": 0.0306914,
+    "seed min": -0.0571429,
+    "seed max": 0.0571429,
+    "seeds > 0": 13,
+    "seeds < 0": 6,
+    "seed-averaged 95% CI": [
+     -0.0083098,
+     0.0328267
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x both cues + raw x vector": {
+    "seed 662": 0.00571429,
+    "seed 662 95% CI": [
+     -0.0559499,
+     0.0594059
+    ],
+    "seed mean": 0.0092517,
+    "seed SD": 0.0241408,
+    "seed min": -0.04,
+    "seed max": 0.0685714,
+    "seeds > 0": 14,
+    "seeds < 0": 4,
+    "seed-averaged 95% CI": [
+     -0.00665456,
+     0.0261754
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   }
+  },
+  "clear-sky benchmark: assessable flooded roads on the same tiles (found)": {
+   "main: spotter gate (b - a)": {
+    "seed 662": 0.0565789,
+    "seed 662 95% CI": [
+     0.0244838,
+     0.0924386
+    ],
+    "seed mean": 0.0398496,
+    "seed SD": 0.00746811,
+    "seed min": 0.0263158,
+    "seed max": 0.0565789,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0166497,
+     0.0639885
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "main: two-date (- raw)": {
+    "seed 662": -0.00789474,
+    "seed 662 95% CI": [
+     -0.0701295,
+     0.0353541
+    ],
+    "seed mean": -0.00275689,
+    "seed SD": 0.0116943,
+    "seed min": -0.0184211,
+    "seed max": 0.0263158,
+    "seeds > 0": 7,
+    "seeds < 0": 14,
+    "seed-averaged 95% CI": [
+     -0.0494419,
+     0.0339255
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: He 2011 (- raw)": {
+    "seed 662": -0.00789474,
+    "seed 662 95% CI": [
+     -0.0555804,
+     0.031651
+    ],
+    "seed mean": 0.0211779,
+    "seed SD": 0.01569,
+    "seed min": -0.00789474,
+    "seed max": 0.0578947,
+    "seeds > 0": 20,
+    "seeds < 0": 1,
+    "seed-averaged 95% CI": [
+     -0.0238212,
+     0.0640615
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: both cues + raw (- raw)": {
+    "seed 662": 0.0184211,
+    "seed 662 95% CI": [
+     0.0,
+     0.0398963
+    ],
+    "seed mean": 0.0191729,
+    "seed SD": 0.0121493,
+    "seed min": -0.0131579,
+    "seed max": 0.0447368,
+    "seeds > 0": 20,
+    "seeds < 0": 1,
+    "seed-averaged 95% CI": [
+     -0.0011523,
+     0.0382733
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "main: DINOv2 vector (vec - prod)": {
+    "seed 662": 0.00394737,
+    "seed 662 95% CI": [
+     -0.0141343,
+     0.0244613
+    ],
+    "seed mean": 0.0018797,
+    "seed SD": 0.00690722,
+    "seed min": -0.00789474,
+    "seed max": 0.0171053,
+    "seeds > 0": 13,
+    "seeds < 0": 7,
+    "seed-averaged 95% CI": [
+     -0.0091728,
+     0.0133762
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: two-date (- raw)": {
+    "seed 662": -0.0105263,
+    "seed 662 95% CI": [
+     -0.0866684,
+     0.0470098
+    ],
+    "seed mean": -0.00701754,
+    "seed SD": 0.0162506,
+    "seed min": -0.0315789,
+    "seed max": 0.0421053,
+    "seeds > 0": 5,
+    "seeds < 0": 15,
+    "seed-averaged 95% CI": [
+     -0.0647857,
+     0.0399023
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: He 2011 (- raw)": {
+    "seed 662": 0.0,
+    "seed 662 95% CI": [
+     -0.0584511,
+     0.0510233
+    ],
+    "seed mean": 0.0313283,
+    "seed SD": 0.0160915,
+    "seed min": 0.0,
+    "seed max": 0.0578947,
+    "seeds > 0": 20,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     -0.0195998,
+     0.0880164
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: both cues + raw (- raw)": {
+    "seed 662": 0.0157895,
+    "seed 662 95% CI": [
+     -0.0145667,
+     0.0459198
+    ],
+    "seed mean": 0.0223058,
+    "seed SD": 0.0160423,
+    "seed min": -0.0157895,
+    "seed max": 0.0578947,
+    "seeds > 0": 19,
+    "seeds < 0": 2,
+    "seed-averaged 95% CI": [
+     -0.00676888,
+     0.0470454
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate a: DINOv2 vector": {
+    "seed 662": 0.00789474,
+    "seed 662 95% CI": [
+     -0.0274732,
+     0.0416667
+    ],
+    "seed mean": 0.000501253,
+    "seed SD": 0.00958339,
+    "seed min": -0.0184211,
+    "seed max": 0.0236842,
+    "seeds > 0": 10,
+    "seeds < 0": 11,
+    "seed-averaged 95% CI": [
+     -0.0160847,
+     0.0135842
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: two-date (- raw)": {
+    "seed 662": -0.00526316,
+    "seed 662 95% CI": [
+     -0.0561239,
+     0.0375034
+    ],
+    "seed mean": 0.00150376,
+    "seed SD": 0.0166555,
+    "seed min": -0.0263158,
+    "seed max": 0.0368421,
+    "seeds > 0": 9,
+    "seeds < 0": 8,
+    "seed-averaged 95% CI": [
+     -0.0371533,
+     0.034417
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: He 2011 (- raw)": {
+    "seed 662": -0.0157895,
+    "seed 662 95% CI": [
+     -0.0642323,
+     0.0271814
+    ],
+    "seed mean": 0.0110276,
+    "seed SD": 0.0220742,
+    "seed min": -0.0315789,
+    "seed max": 0.0578947,
+    "seeds > 0": 13,
+    "seeds < 0": 5,
+    "seed-averaged 95% CI": [
+     -0.0327125,
+     0.0501532
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: both cues + raw (- raw)": {
+    "seed 662": 0.0210526,
+    "seed 662 95% CI": [
+     -0.0108696,
+     0.0562613
+    ],
+    "seed mean": 0.0160401,
+    "seed SD": 0.0169304,
+    "seed min": -0.0210526,
+    "seed max": 0.0578947,
+    "seeds > 0": 18,
+    "seeds < 0": 2,
+    "seed-averaged 95% CI": [
+     -0.00285767,
+     0.0367985
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within gate b: DINOv2 vector": {
+    "seed 662": 0.0,
+    "seed 662 95% CI": [
+     -0.0164881,
+     0.0221537
+    ],
+    "seed mean": 0.00325815,
+    "seed SD": 0.00793432,
+    "seed min": -0.0105263,
+    "seed max": 0.0157895,
+    "seeds > 0": 13,
+    "seeds < 0": 6,
+    "seed-averaged 95% CI": [
+     -0.00729747,
+     0.0151569
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within cues raw: spotter gate (b - a)": {
+    "seed 662": 0.0578947,
+    "seed 662 95% CI": [
+     0.0176419,
+     0.101011
+    ],
+    "seed mean": 0.0443609,
+    "seed SD": 0.0175802,
+    "seed min": 0.0157895,
+    "seed max": 0.0894737,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.016162,
+     0.0775102
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within cues td: spotter gate (b - a)": {
+    "seed 662": 0.0631579,
+    "seed 662 95% CI": [
+     0.019995,
+     0.114757
+    ],
+    "seed mean": 0.0528822,
+    "seed SD": 0.0112238,
+    "seed min": 0.0263158,
+    "seed max": 0.0684211,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0180224,
+     0.0910783
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within cues he: spotter gate (b - a)": {
+    "seed 662": 0.0421053,
+    "seed 662 95% CI": [
+     0.0102015,
+     0.0802628
+    ],
+    "seed mean": 0.0240602,
+    "seed SD": 0.0141785,
+    "seed min": 0.0,
+    "seed max": 0.0578947,
+    "seeds > 0": 19,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     9.91147e-19,
+     0.0493734
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within cues both: spotter gate (b - a)": {
+    "seed 662": 0.0631579,
+    "seed 662 95% CI": [
+     0.0178519,
+     0.117647
+    ],
+    "seed mean": 0.0380952,
+    "seed SD": 0.0168013,
+    "seed min": 0.0105263,
+    "seed max": 0.0684211,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0099365,
+     0.0704802
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features prod: spotter gate (b - a)": {
+    "seed 662": 0.0605263,
+    "seed 662 95% CI": [
+     0.0202703,
+     0.108108
+    ],
+    "seed mean": 0.0384712,
+    "seed SD": 0.010443,
+    "seed min": 0.0236842,
+    "seed max": 0.0605263,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.0173455,
+     0.0613441
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features vec: spotter gate (b - a)": {
+    "seed 662": 0.0526316,
+    "seed 662 95% CI": [
+     0.0192308,
+     0.0883838
+    ],
+    "seed mean": 0.0412281,
+    "seed SD": 0.00786544,
+    "seed min": 0.0236842,
+    "seed max": 0.0526316,
+    "seeds > 0": 21,
+    "seeds < 0": 0,
+    "seed-averaged 95% CI": [
+     0.014483,
+     0.0686601
+    ],
+    "matters (seed-averaged CI excludes 0)": true
+   },
+   "within features prod: two-date (- raw)": {
+    "seed 662": 0.0,
+    "seed 662 95% CI": [
+     -0.0625,
+     0.0485469
+    ],
+    "seed mean": -0.0085213,
+    "seed SD": 0.0146498,
+    "seed min": -0.0315789,
+    "seed max": 0.0157895,
+    "seeds > 0": 4,
+    "seeds < 0": 14,
+    "seed-averaged 95% CI": [
+     -0.0519815,
+     0.0253887
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features prod: He 2011 (- raw)": {
+    "seed 662": -0.0105263,
+    "seed 662 95% CI": [
+     -0.0625,
+     0.0297104
+    ],
+    "seed mean": 0.0205514,
+    "seed SD": 0.0191874,
+    "seed min": -0.0105263,
+    "seed max": 0.0631579,
+    "seeds > 0": 16,
+    "seeds < 0": 3,
+    "seed-averaged 95% CI": [
+     -0.0255937,
+     0.0677443
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features prod: both cues + raw (- raw)": {
+    "seed 662": 0.0157895,
+    "seed 662 95% CI": [
+     0.0,
+     0.0357143
+    ],
+    "seed mean": 0.0192982,
+    "seed SD": 0.0175614,
+    "seed min": -0.0157895,
+    "seed max": 0.0526316,
+    "seeds > 0": 17,
+    "seeds < 0": 3,
+    "seed-averaged 95% CI": [
+     -0.00147163,
+     0.0402246
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: two-date (- raw)": {
+    "seed 662": -0.0157895,
+    "seed 662 95% CI": [
+     -0.0774925,
+     0.0275238
+    ],
+    "seed mean": 0.00300752,
+    "seed SD": 0.0153059,
+    "seed min": -0.0157895,
+    "seed max": 0.0368421,
+    "seeds > 0": 8,
+    "seeds < 0": 11,
+    "seed-averaged 95% CI": [
+     -0.0463512,
+     0.0418636
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: He 2011 (- raw)": {
+    "seed 662": -0.00526316,
+    "seed 662 95% CI": [
+     -0.0573849,
+     0.0463947
+    ],
+    "seed mean": 0.0218045,
+    "seed SD": 0.0157267,
+    "seed min": -0.00526316,
+    "seed max": 0.0526316,
+    "seeds > 0": 19,
+    "seeds < 0": 1,
+    "seed-averaged 95% CI": [
+     -0.0226054,
+     0.0621851
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "within features vec: both cues + raw (- raw)": {
+    "seed 662": 0.0210526,
+    "seed 662 95% CI": [
+     -0.00894121,
+     0.0507277
+    ],
+    "seed mean": 0.0190476,
+    "seed SD": 0.0120567,
+    "seed min": -0.0105263,
+    "seed max": 0.0368421,
+    "seeds > 0": 20,
+    "seeds < 0": 1,
+    "seed-averaged 95% CI": [
+     -0.00302549,
+     0.0398393
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x two-date": {
+    "seed 662": 0.00526316,
+    "seed 662 95% CI": [
+     -0.0478817,
+     0.0588314
+    ],
+    "seed mean": 0.0085213,
+    "seed SD": 0.0231505,
+    "seed min": -0.0631579,
+    "seed max": 0.0421053,
+    "seeds > 0": 15,
+    "seeds < 0": 5,
+    "seed-averaged 95% CI": [
+     -0.0278583,
+     0.0440152
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x He 2011": {
+    "seed 662": -0.0157895,
+    "seed 662 95% CI": [
+     -0.0705163,
+     0.0319272
+    ],
+    "seed mean": -0.0203008,
+    "seed SD": 0.0225326,
+    "seed min": -0.0684211,
+    "seed max": 0.0210526,
+    "seeds > 0": 3,
+    "seeds < 0": 17,
+    "seed-averaged 95% CI": [
+     -0.0608803,
+     0.0156953
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x both cues + raw": {
+    "seed 662": 0.00526316,
+    "seed 662 95% CI": [
+     -0.0454676,
+     0.0555556
+    ],
+    "seed mean": -0.00626566,
+    "seed SD": 0.022306,
+    "seed min": -0.0578947,
+    "seed max": 0.0263158,
+    "seeds > 0": 9,
+    "seeds < 0": 10,
+    "seed-averaged 95% CI": [
+     -0.0322757,
+     0.0189529
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction gate x vector": {
+    "seed 662": -0.00789474,
+    "seed 662 95% CI": [
+     -0.0466719,
+     0.0357272
+    ],
+    "seed mean": 0.00275689,
+    "seed SD": 0.0108973,
+    "seed min": -0.0131579,
+    "seed max": 0.0236842,
+    "seeds > 0": 10,
+    "seeds < 0": 10,
+    "seed-averaged 95% CI": [
+     -0.00941531,
+     0.0185042
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction two-date x vector": {
+    "seed 662": -0.0157895,
+    "seed 662 95% CI": [
+     -0.0490441,
+     0.00807299
+    ],
+    "seed mean": 0.0115288,
+    "seed SD": 0.0187282,
+    "seed min": -0.0157895,
+    "seed max": 0.0578947,
+    "seeds > 0": 15,
+    "seeds < 0": 5,
+    "seed-averaged 95% CI": [
+     -0.00113623,
+     0.0238095
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction He 2011 x vector": {
+    "seed 662": 0.00526316,
+    "seed 662 95% CI": [
+     -0.032415,
+     0.0537201
+    ],
+    "seed mean": 0.00125313,
+    "seed SD": 0.0156931,
+    "seed min": -0.0263158,
+    "seed max": 0.0315789,
+    "seeds > 0": 10,
+    "seeds < 0": 10,
+    "seed-averaged 95% CI": [
+     -0.0206006,
+     0.018052
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "interaction both cues + raw x vector": {
+    "seed 662": 0.00526316,
+    "seed 662 95% CI": [
+     -0.0244055,
+     0.03
+    ],
+    "seed mean": -0.000250627,
+    "seed SD": 0.0178075,
+    "seed min": -0.0263158,
+    "seed max": 0.0421053,
+    "seeds > 0": 9,
+    "seeds < 0": 11,
+    "seed-averaged 95% CI": [
+     -0.014223,
+     0.0157763
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x two-date x vector": {
+    "seed 662": 0.0105263,
+    "seed 662 95% CI": [
+     -0.043956,
+     0.0632998
+    ],
+    "seed mean": 0.00100251,
+    "seed SD": 0.037202,
+    "seed min": -0.0736842,
+    "seed max": 0.0736842,
+    "seeds > 0": 8,
+    "seeds < 0": 11,
+    "seed-averaged 95% CI": [
+     -0.0294499,
+     0.021809
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x He 2011 x vector": {
+    "seed 662": 0.0105263,
+    "seed 662 95% CI": [
+     -0.0860261,
+     0.0900227
+    ],
+    "seed mean": -0.0105263,
+    "seed SD": 0.0455195,
+    "seed min": -0.147368,
+    "seed max": 0.0421053,
+    "seeds > 0": 9,
+    "seeds < 0": 8,
+    "seed-averaged 95% CI": [
+     -0.0378201,
+     0.0127948
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   },
+   "three-way gate x both cues + raw x vector": {
+    "seed 662": -0.0105263,
+    "seed 662 95% CI": [
+     -0.0824957,
+     0.0609756
+    ],
+    "seed mean": -0.00150376,
+    "seed SD": 0.0301952,
+    "seed min": -0.0526316,
+    "seed max": 0.0631579,
+    "seeds > 0": 9,
+    "seeds < 0": 10,
+    "seed-averaged 95% CI": [
+     -0.0250375,
+     0.0162123
+    ],
+    "matters (seed-averaged CI excludes 0)": false
+   }
+  }
+ },
+ "choice": {
+  "top arm": "b\u00b7both\u00b7vec",
+  "top mean accuracy": 0.845631,
+  "ties (simpler, CI includes 0)": [
+   "a\u00b7raw\u00b7vec",
+   "a\u00b7td\u00b7vec",
+   "a\u00b7he\u00b7vec",
+   "a\u00b7both\u00b7vec",
+   "b\u00b7raw\u00b7vec",
+   "b\u00b7td\u00b7vec",
+   "b\u00b7he\u00b7vec"
+  ],
+  "chosen": "a\u00b7raw\u00b7vec",
+  "chosen mean accuracy": 0.844813,
+  "chosen tools": 1,
+  "every arm against the top arm (seed-averaged, tiles resampled)": {
+   "a\u00b7raw\u00b7prod": {
+    "tools": 0,
+    "mean accuracy": 0.832358,
+    "top minus arm": 0.0132729,
+    "95% CI": [
+     0.00259488,
+     0.0250489
+    ],
+    "interval includes 0": false,
+    "simpler than top": true
+   },
+   "a\u00b7raw\u00b7vec": {
+    "tools": 1,
+    "mean accuracy": 0.844813,
+    "top minus arm": 0.000817764,
+    "95% CI": [
+     -0.00837954,
+     0.0103247
+    ],
+    "interval includes 0": true,
+    "simpler than top": true
+   },
+   "a\u00b7td\u00b7prod": {
+    "tools": 1,
+    "mean accuracy": 0.827515,
+    "top minus arm": 0.0181166,
+    "95% CI": [
+     0.00863906,
+     0.0294246
+    ],
+    "interval includes 0": false,
+    "simpler than top": true
+   },
+   "a\u00b7td\u00b7vec": {
+    "tools": 2,
+    "mean accuracy": 0.842046,
+    "top minus arm": 0.00358558,
+    "95% CI": [
+     -0.00373112,
+     0.0118852
+    ],
+    "interval includes 0": true,
+    "simpler than top": true
+   },
+   "a\u00b7he\u00b7prod": {
+    "tools": 1,
+    "mean accuracy": 0.820973,
+    "top minus arm": 0.0246587,
+    "95% CI": [
+     0.0125067,
+     0.0384856
+    ],
+    "interval includes 0": false,
+    "simpler than top": true
+   },
+   "a\u00b7he\u00b7vec": {
+    "tools": 2,
+    "mean accuracy": 0.840473,
+    "top minus arm": 0.00515821,
+    "95% CI": [
+     -0.00334383,
+     0.0151093
+    ],
+    "interval includes 0": true,
+    "simpler than top": true
+   },
+   "a\u00b7both\u00b7prod": {
+    "tools": 2,
+    "mean accuracy": 0.836258,
+    "top minus arm": 0.00937284,
+    "95% CI": [
+     0.000718198,
+     0.0194573
+    ],
+    "interval includes 0": false,
+    "simpler than top": true
+   },
+   "a\u00b7both\u00b7vec": {
+    "tools": 3,
+    "mean accuracy": 0.844184,
+    "top minus arm": 0.00144681,
+    "95% CI": [
+     -0.0050364,
+     0.00891226
+    ],
+    "interval includes 0": true,
+    "simpler than top": true
+   },
+   "b\u00b7raw\u00b7prod": {
+    "tools": 1,
+    "mean accuracy": 0.837579,
+    "top minus arm": 0.00805183,
+    "95% CI": [
+     0.000583702,
+     0.0153342
+    ],
+    "interval includes 0": false,
+    "simpler than top": true
+   },
+   "b\u00b7raw\u00b7vec": {
+    "tools": 2,
+    "mean accuracy": 0.845505,
+    "top minus arm": 0.00012581,
+    "95% CI": [
+     -0.0056403,
+     0.00571264
+    ],
+    "interval includes 0": true,
+    "simpler than top": true
+   },
+   "b\u00b7td\u00b7prod": {
+    "tools": 2,
+    "mean accuracy": 0.83217,
+    "top minus arm": 0.0134617,
+    "95% CI": [
+     0.00675096,
+     0.0203584
+    ],
+    "interval includes 0": false,
+    "simpler than top": true
+   },
+   "b\u00b7td\u00b7vec": {
+    "tools": 3,
+    "mean accuracy": 0.843996,
+    "top minus arm": 0.00163553,
+    "95% CI": [
+     -0.00419418,
+     0.00806116
+    ],
+    "interval includes 0": true,
+    "simpler than top": true
+   },
+   "b\u00b7he\u00b7prod": {
+    "tools": 2,
+    "mean accuracy": 0.827074,
+    "top minus arm": 0.018557,
+    "95% CI": [
+     0.00795894,
+     0.0303502
+    ],
+    "interval includes 0": false,
+    "simpler than top": true
+   },
+   "b\u00b7he\u00b7vec": {
+    "tools": 3,
+    "mean accuracy": 0.845443,
+    "top minus arm": 0.000188715,
+    "95% CI": [
+     -0.00729318,
+     0.00750374
+    ],
+    "interval includes 0": true,
+    "simpler than top": true
+   },
+   "b\u00b7both\u00b7prod": {
+    "tools": 3,
+    "mean accuracy": 0.838523,
+    "top minus arm": 0.00710826,
+    "95% CI": [
+     0.00221118,
+     0.0121337
+    ],
+    "interval includes 0": false,
+    "simpler than top": true
+   }
+  },
+  "chosen against production, seed 662 (promotion rule)": {
+   "features": "a\u00b7raw\u00b7vec",
+   "vs a\u00b7raw\u00b7prod": 0.0225,
+   "95% CI": "+0.009 to +0.037",
+   "roads fixed": 23,
+   "roads broken": 6,
+   "McNemar p": 0.0023,
+   "McNemar p (unrounded)": 0.0023157,
+   "rule": "gain +0.022, 95% CI +0.009 to +0.037, McNemar p = 0.0023: confirmed",
+   "would pass": true
+  }
+ },
+ "promotion rule (not applied to production.json)": {
+  "a\u00b7raw\u00b7vec": {
+   "shared, seed 662": "gain +0.022, 95% CI +0.009 to +0.037, McNemar p = 0.0023: confirmed",
+   "would pass (shared, seed 662)": true,
+   "seeds it would pass (of 21, shared)": 5,
+   "798, seed 662": "gain +0.023, 95% CI +0.009 to +0.036, McNemar p = 0.0014: confirmed",
+   "would pass (798, seed 662)": true
+  },
+  "a\u00b7td\u00b7prod": {
+   "shared, seed 662": "gain +0.003, 95% CI -0.013 to +0.018, McNemar p = 0.8642: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (shared, seed 662)": false,
+   "seeds it would pass (of 21, shared)": 0,
+   "798, seed 662": "gain +0.003, 95% CI -0.014 to +0.018, McNemar p = 0.8746: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (798, seed 662)": false
+  },
+  "a\u00b7td\u00b7vec": {
+   "shared, seed 662": "gain +0.015, 95% CI -0.004 to +0.034, McNemar p = 0.1352: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (shared, seed 662)": false,
+   "seeds it would pass (of 21, shared)": 1,
+   "798, seed 662": "gain +0.009, 95% CI -0.010 to +0.027, McNemar p = 0.4101: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (798, seed 662)": false
+  },
+  "a\u00b7he\u00b7prod": {
+   "shared, seed 662": "gain -0.005, 95% CI -0.023 to +0.013, McNemar p = 0.6889: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (shared, seed 662)": false,
+   "seeds it would pass (of 21, shared)": 0,
+   "798, seed 662": "gain -0.009, 95% CI -0.028 to +0.010, McNemar p = 0.4570: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (798, seed 662)": false
+  },
+  "a\u00b7he\u00b7vec": {
+   "shared, seed 662": "gain +0.015, 95% CI -0.006 to +0.035, McNemar p = 0.2000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (shared, seed 662)": false,
+   "seeds it would pass (of 21, shared)": 2,
+   "798, seed 662": "gain +0.011, 95% CI -0.010 to +0.033, McNemar p = 0.3425: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (798, seed 662)": false
+  },
+  "a\u00b7both\u00b7prod": {
+   "shared, seed 662": "gain +0.005, 95% CI -0.010 to +0.021, McNemar p = 0.5572: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (shared, seed 662)": false,
+   "seeds it would pass (of 21, shared)": 1,
+   "798, seed 662": "gain +0.006, 95% CI -0.009 to +0.021, McNemar p = 0.4583: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (798, seed 662)": false
+  },
+  "a\u00b7both\u00b7vec": {
+   "shared, seed 662": "gain +0.013, 95% CI +0.000 to +0.027, McNemar p = 0.0987: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (shared, seed 662)": false,
+   "seeds it would pass (of 21, shared)": 7,
+   "798, seed 662": "gain +0.013, 95% CI -0.001 to +0.026, McNemar p = 0.1102: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (798, seed 662)": false
+  },
+  "b\u00b7raw\u00b7prod": {
+   "shared, seed 662": "gain +0.018, 95% CI +0.004 to +0.034, McNemar p = 0.0288: confirmed",
+   "would pass (shared, seed 662)": true,
+   "seeds it would pass (of 21, shared)": 1
+  },
+  "b\u00b7raw\u00b7vec": {
+   "shared, seed 662": "gain +0.025, 95% CI +0.007 to +0.044, McNemar p = 0.0066: confirmed",
+   "would pass (shared, seed 662)": true,
+   "seeds it would pass (of 21, shared)": 4
+  },
+  "b\u00b7td\u00b7prod": {
+   "shared, seed 662": "gain +0.011, 95% CI -0.006 to +0.027, McNemar p = 0.2682: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (shared, seed 662)": false,
+   "seeds it would pass (of 21, shared)": 0
+  },
+  "b\u00b7td\u00b7vec": {
+   "shared, seed 662": "gain +0.025, 95% CI +0.005 to +0.045, McNemar p = 0.0094: confirmed",
+   "would pass (shared, seed 662)": true,
+   "seeds it would pass (of 21, shared)": 3
+  },
+  "b\u00b7he\u00b7prod": {
+   "shared, seed 662": "gain +0.001, 95% CI -0.018 to +0.020, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (shared, seed 662)": false,
+   "seeds it would pass (of 21, shared)": 0
+  },
+  "b\u00b7he\u00b7vec": {
+   "shared, seed 662": "gain +0.020, 95% CI +0.003 to +0.037, McNemar p = 0.0534: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass (shared, seed 662)": false,
+   "seeds it would pass (of 21, shared)": 3
+  },
+  "b\u00b7both\u00b7prod": {
+   "shared, seed 662": "gain +0.021, 95% CI +0.007 to +0.037, McNemar p = 0.0113: confirmed",
+   "would pass (shared, seed 662)": true,
+   "seeds it would pass (of 21, shared)": 1
+  },
+  "b\u00b7both\u00b7vec": {
+   "shared, seed 662": "gain +0.032, 95% CI +0.014 to +0.051, McNemar p = 0.0005: confirmed",
+   "would pass (shared, seed 662)": true,
+   "seeds it would pass (of 21, shared)": 5
+  }
+ },
+ "run time s": 1806
+}

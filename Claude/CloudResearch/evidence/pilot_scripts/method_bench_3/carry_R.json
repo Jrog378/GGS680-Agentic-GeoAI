@@ -1,0 +1,15 @@
+{
+ "gates": [
+  "B1p EM-Bayes pooled",
+  "B1 EM-Bayes hysteresis"
+ ],
+ "corr": [
+  "L1 Poisson seam",
+  "P1 Pan C tile"
+ ],
+ "thr": [
+  "Q1 1/t on C0 current two-date",
+  "PULb binned c"
+ ],
+ "from": "bench3_numbers.json carry (Phase G)"
+}

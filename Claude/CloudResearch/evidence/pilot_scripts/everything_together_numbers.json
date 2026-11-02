@@ -1,0 +1,2423 @@
+{
+ "code": "GeoAI-Roads 1532e9a (clean tree)",
+ "test plan": "outputs/preregistration_everything_together.md",
+ "production model": "random forest (tuned)",
+ "cloud rule": "tile rule + road rule",
+ "arms (columns before the PCA)": {
+  "production": 96,
+  "production + DINOv2 vector (best so far)": 1120,
+  "both cues": 192,
+  "everything together": 1312,
+  "without the DINOv2 vector": 288,
+  "without classical (raw)": 1219,
+  "without any classical cue (secondary)": 1033
+ },
+ "model columns per arm": {
+  "production": 96,
+  "production + DINOv2 vector (best so far)": 112,
+  "both cues": 192,
+  "everything together": 304,
+  "without the DINOv2 vector": 288,
+  "without classical (raw)": 211,
+  "without any classical cue (secondary)": 25
+ },
+ "schemes": {
+  "A798": "folds over the 798 assessable roads, fitted on them (production now)",
+  "B891": "folds over the 891 tile-rule roads, fitted on all of them (the logged runs)",
+  "C1037": "folds over all 1,037 development roads, fitted on the assessable ones (tonight's cloud tests)"
+ },
+ "tile-rule tiles": 200,
+ "tiles with a cloud gate": 99,
+ "thin-cloud tiles": 39,
+ "checks": [
+  "A798 production 394/47/89/268 (logged 83.0%)",
+  "B891 classical 93 401/64/87/339 (logged)",
+  "B891 production 408/57/83/343 (logged production + DINOv2 change cues)",
+  "B891 best so far 409/56/80/346 (logged dino_test)",
+  "C1037 production and both cues reproduce cloudvars_calls.csv / both_dehazers_calls.csv call for call",
+  "C1037 group intervals of production and both cues reproduce both_dehazers_numbers.json",
+  "accuracy intervals match sn8_heldout.held_out_report",
+  "production.json unchanged (sha256)"
+ ],
+ "promotion rule (not applied to production.json)": {
+  "primary, 798": {
+   "features": "everything together",
+   "vs production": 0.0063,
+   "95% CI": "-0.007 to +0.019",
+   "roads fixed": 20,
+   "roads broken": 15,
+   "McNemar p": 0.4996,
+   "McNemar p (unrounded)": 0.49956,
+   "rule": "gain +0.006, 95% CI -0.007 to +0.019, McNemar p = 0.4996: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass": false
+  },
+  "secondary, 891": {
+   "features": "everything together",
+   "vs production": -0.0101,
+   "95% CI": "-0.028 to +0.006",
+   "roads fixed": 14,
+   "roads broken": 23,
+   "McNemar p": 0.1877,
+   "McNemar p (unrounded)": 0.187742,
+   "rule": "gain -0.010, 95% CI -0.028 to +0.006, McNemar p = 0.1877: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+   "would pass": false
+  }
+ },
+ "scoring sets": {
+  "(i) 798 assessable roads (primary)": {
+   "scheme": "folds over the 798 assessable roads, fitted on them (production now)",
+   "roads": 798,
+   "tiles": 193,
+   "flooded": 441,
+   "arms": {
+    "production": {
+     "TP": 394,
+     "FN": 47,
+     "FP": 89,
+     "TN": 268,
+     "accuracy": 0.829574,
+     "precision": 0.815735,
+     "recall": 0.893424,
+     "specificity": 0.7507,
+     "F1": 0.852814,
+     "MCC": 0.655231,
+     "accuracy 95% CI": [
+      0.793888,
+      0.863825
+     ],
+     "precision 95% CI": [
+      0.760253,
+      0.862635
+     ],
+     "recall 95% CI": [
+      0.852292,
+      0.931204
+     ],
+     "specificity 95% CI": [
+      0.679277,
+      0.816094
+     ],
+     "F1 95% CI": [
+      0.812333,
+      0.887565
+     ],
+     "MCC 95% CI": [
+      0.582062,
+      0.724537
+     ]
+    },
+    "production + DINOv2 vector (best so far)": {
+     "TP": 394,
+     "FN": 47,
+     "FP": 88,
+     "TN": 269,
+     "accuracy": 0.830827,
+     "precision": 0.817427,
+     "recall": 0.893424,
+     "specificity": 0.753501,
+     "F1": 0.853738,
+     "MCC": 0.657719,
+     "accuracy 95% CI": [
+      0.795061,
+      0.865552
+     ],
+     "precision 95% CI": [
+      0.762293,
+      0.864568
+     ],
+     "recall 95% CI": [
+      0.853595,
+      0.929891
+     ],
+     "specificity 95% CI": [
+      0.678886,
+      0.820062
+     ],
+     "F1 95% CI": [
+      0.813634,
+      0.886035
+     ],
+     "MCC 95% CI": [
+      0.582637,
+      0.727301
+     ]
+    },
+    "both cues": {
+     "TP": 399,
+     "FN": 42,
+     "FP": 95,
+     "TN": 262,
+     "accuracy": 0.828321,
+     "precision": 0.807692,
+     "recall": 0.904762,
+     "specificity": 0.733894,
+     "F1": 0.853476,
+     "MCC": 0.653913,
+     "accuracy 95% CI": [
+      0.790726,
+      0.862636
+     ],
+     "precision 95% CI": [
+      0.75069,
+      0.855919
+     ],
+     "recall 95% CI": [
+      0.865881,
+      0.939394
+     ],
+     "specificity 95% CI": [
+      0.657219,
+      0.803817
+     ],
+     "F1 95% CI": [
+      0.812182,
+      0.888119
+     ],
+     "MCC 95% CI": [
+      0.576689,
+      0.722136
+     ]
+    },
+    "everything together": {
+     "TP": 399,
+     "FN": 42,
+     "FP": 89,
+     "TN": 268,
+     "accuracy": 0.83584,
+     "precision": 0.817623,
+     "recall": 0.904762,
+     "specificity": 0.7507,
+     "F1": 0.858988,
+     "MCC": 0.668668,
+     "accuracy 95% CI": [
+      0.799242,
+      0.870703
+     ],
+     "precision 95% CI": [
+      0.76373,
+      0.86422
+     ],
+     "recall 95% CI": [
+      0.862317,
+      0.941302
+     ],
+     "specificity 95% CI": [
+      0.678362,
+      0.815551
+     ],
+     "F1 95% CI": [
+      0.818422,
+      0.892862
+     ],
+     "MCC 95% CI": [
+      0.594767,
+      0.736994
+     ]
+    },
+    "without the DINOv2 vector": {
+     "TP": 398,
+     "FN": 43,
+     "FP": 92,
+     "TN": 265,
+     "accuracy": 0.830827,
+     "precision": 0.812245,
+     "recall": 0.902494,
+     "specificity": 0.742297,
+     "F1": 0.854995,
+     "MCC": 0.658566,
+     "accuracy 95% CI": [
+      0.791205,
+      0.866815
+     ],
+     "precision 95% CI": [
+      0.755472,
+      0.861116
+     ],
+     "recall 95% CI": [
+      0.861175,
+      0.939457
+     ],
+     "specificity 95% CI": [
+      0.668586,
+      0.811062
+     ],
+     "F1 95% CI": [
+      0.811557,
+      0.89111
+     ],
+     "MCC 95% CI": [
+      0.578168,
+      0.730169
+     ]
+    },
+    "without classical (raw)": {
+     "TP": 401,
+     "FN": 40,
+     "FP": 93,
+     "TN": 264,
+     "accuracy": 0.833333,
+     "precision": 0.811741,
+     "recall": 0.909297,
+     "specificity": 0.739496,
+     "F1": 0.857754,
+     "MCC": 0.664292,
+     "accuracy 95% CI": [
+      0.794933,
+      0.869008
+     ],
+     "precision 95% CI": [
+      0.754915,
+      0.85962
+     ],
+     "recall 95% CI": [
+      0.868347,
+      0.946309
+     ],
+     "specificity 95% CI": [
+      0.663886,
+      0.807505
+     ],
+     "F1 95% CI": [
+      0.815201,
+      0.89192
+     ],
+     "MCC 95% CI": [
+      0.587078,
+      0.736026
+     ]
+    },
+    "without any classical cue (secondary)": {
+     "TP": 388,
+     "FN": 53,
+     "FP": 101,
+     "TN": 256,
+     "accuracy": 0.807018,
+     "precision": 0.793456,
+     "recall": 0.879819,
+     "specificity": 0.717087,
+     "F1": 0.834409,
+     "MCC": 0.609292,
+     "accuracy 95% CI": [
+      0.765601,
+      0.844505
+     ],
+     "precision 95% CI": [
+      0.73015,
+      0.84599
+     ],
+     "recall 95% CI": [
+      0.832923,
+      0.918582
+     ],
+     "specificity 95% CI": [
+      0.639769,
+      0.791045
+     ],
+     "F1 95% CI": [
+      0.788921,
+      0.872444
+     ],
+     "MCC 95% CI": [
+      0.525706,
+      0.686613
+     ]
+    }
+   },
+   "paired": {
+    "against production": [
+     {
+      "features": "production + DINOv2 vector (best so far)",
+      "vs production": 0.0013,
+      "95% CI": "-0.014 to +0.017",
+      "roads fixed": 20,
+      "roads broken": 19,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain +0.001, 95% CI -0.014 to +0.017, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "both cues",
+      "vs production": -0.0013,
+      "95% CI": "-0.016 to +0.012",
+      "roads fixed": 18,
+      "roads broken": 19,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain -0.001, 95% CI -0.016 to +0.012, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "everything together",
+      "vs production": 0.0063,
+      "95% CI": "-0.007 to +0.019",
+      "roads fixed": 20,
+      "roads broken": 15,
+      "McNemar p": 0.4996,
+      "McNemar p (unrounded)": 0.49956,
+      "rule": "gain +0.006, 95% CI -0.007 to +0.019, McNemar p = 0.4996: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without the DINOv2 vector",
+      "vs production": 0.0013,
+      "95% CI": "-0.012 to +0.014",
+      "roads fixed": 18,
+      "roads broken": 17,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain +0.001, 95% CI -0.012 to +0.014, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without classical (raw)",
+      "vs production": 0.0038,
+      "95% CI": "-0.012 to +0.019",
+      "roads fixed": 24,
+      "roads broken": 21,
+      "McNemar p": 0.766,
+      "McNemar p (unrounded)": 0.765992,
+      "rule": "gain +0.004, 95% CI -0.012 to +0.019, McNemar p = 0.7660: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs production": -0.0226,
+      "95% CI": "-0.053 to +0.008",
+      "roads fixed": 52,
+      "roads broken": 70,
+      "McNemar p": 0.1234,
+      "McNemar p (unrounded)": 0.123427,
+      "rule": "gain -0.023, 95% CI -0.053 to +0.008, McNemar p = 0.1234: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     }
+    ],
+    "everything together against production + DINOv2 vector (best so far)": {
+     "features": "everything together",
+     "vs production + DINOv2 vector (best so far)": 0.005,
+     "95% CI": "-0.011 to +0.021",
+     "roads fixed": 21,
+     "roads broken": 17,
+     "McNemar p": 0.6271,
+     "McNemar p (unrounded)": 0.627103,
+     "rule": "gain +0.005, 95% CI -0.011 to +0.021, McNemar p = 0.6271: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "everything together against both cues": {
+     "features": "everything together",
+     "vs both cues": 0.0075,
+     "95% CI": "-0.004 to +0.019",
+     "roads fixed": 18,
+     "roads broken": 12,
+     "McNemar p": 0.3616,
+     "McNemar p (unrounded)": 0.361595,
+     "rule": "gain +0.007, 95% CI -0.004 to +0.019, McNemar p = 0.3616: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "ablations against everything together": [
+     {
+      "features": "without the DINOv2 vector",
+      "vs everything together": -0.005,
+      "95% CI": "-0.018 to +0.008",
+      "roads fixed": 12,
+      "roads broken": 16,
+      "McNemar p": 0.5716,
+      "McNemar p (unrounded)": 0.571588
+     },
+     {
+      "features": "without classical (raw)",
+      "vs everything together": -0.0025,
+      "95% CI": "-0.013 to +0.008",
+      "roads fixed": 10,
+      "roads broken": 12,
+      "McNemar p": 0.8318,
+      "McNemar p (unrounded)": 0.831812
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs everything together": -0.0288,
+      "95% CI": "-0.056 to -0.002",
+      "roads fixed": 36,
+      "roads broken": 59,
+      "McNemar p": 0.0235,
+      "McNemar p (unrounded)": 0.023488
+     }
+    ]
+   }
+  },
+  "(ii) 891 tile-rule roads (logged construction)": {
+   "scheme": "folds over the 891 tile-rule roads, fitted on all of them (the logged runs)",
+   "roads": 891,
+   "tiles": 200,
+   "flooded": 465,
+   "arms": {
+    "production": {
+     "TP": 408,
+     "FN": 57,
+     "FP": 83,
+     "TN": 343,
+     "accuracy": 0.842873,
+     "precision": 0.830957,
+     "recall": 0.877419,
+     "specificity": 0.805164,
+     "F1": 0.853556,
+     "MCC": 0.685514,
+     "accuracy 95% CI": [
+      0.807646,
+      0.875907
+     ],
+     "precision 95% CI": [
+      0.776618,
+      0.880865
+     ],
+     "recall 95% CI": [
+      0.826384,
+      0.918241
+     ],
+     "specificity 95% CI": [
+      0.745949,
+      0.859599
+     ],
+     "F1 95% CI": [
+      0.81179,
+      0.889336
+     ],
+     "MCC 95% CI": [
+      0.614355,
+      0.749461
+     ]
+    },
+    "production + DINOv2 vector (best so far)": {
+     "TP": 409,
+     "FN": 56,
+     "FP": 80,
+     "TN": 346,
+     "accuracy": 0.847363,
+     "precision": 0.836401,
+     "recall": 0.87957,
+     "specificity": 0.812207,
+     "F1": 0.857442,
+     "MCC": 0.694432,
+     "accuracy 95% CI": [
+      0.812869,
+      0.880956
+     ],
+     "precision 95% CI": [
+      0.783898,
+      0.884405
+     ],
+     "recall 95% CI": [
+      0.832243,
+      0.920148
+     ],
+     "specificity 95% CI": [
+      0.752774,
+      0.866944
+     ],
+     "F1 95% CI": [
+      0.817245,
+      0.89143
+     ],
+     "MCC 95% CI": [
+      0.626042,
+      0.759433
+     ]
+    },
+    "both cues": {
+     "TP": 403,
+     "FN": 62,
+     "FP": 92,
+     "TN": 334,
+     "accuracy": 0.82716,
+     "precision": 0.814141,
+     "recall": 0.866667,
+     "specificity": 0.784038,
+     "F1": 0.839583,
+     "MCC": 0.654131,
+     "accuracy 95% CI": [
+      0.790882,
+      0.862582
+     ],
+     "precision 95% CI": [
+      0.758807,
+      0.865641
+     ],
+     "recall 95% CI": [
+      0.814193,
+      0.910375
+     ],
+     "specificity 95% CI": [
+      0.721384,
+      0.839796
+     ],
+     "F1 95% CI": [
+      0.795501,
+      0.878647
+     ],
+     "MCC 95% CI": [
+      0.580807,
+      0.724125
+     ]
+    },
+    "everything together": {
+     "TP": 405,
+     "FN": 60,
+     "FP": 89,
+     "TN": 337,
+     "accuracy": 0.832772,
+     "precision": 0.819838,
+     "recall": 0.870968,
+     "specificity": 0.79108,
+     "F1": 0.84463,
+     "MCC": 0.665368,
+     "accuracy 95% CI": [
+      0.79853,
+      0.868393
+     ],
+     "precision 95% CI": [
+      0.76252,
+      0.869417
+     ],
+     "recall 95% CI": [
+      0.818176,
+      0.914598
+     ],
+     "specificity 95% CI": [
+      0.729015,
+      0.84875
+     ],
+     "F1 95% CI": [
+      0.802581,
+      0.881796
+     ],
+     "MCC 95% CI": [
+      0.594807,
+      0.735546
+     ]
+    },
+    "without the DINOv2 vector": {
+     "TP": 407,
+     "FN": 58,
+     "FP": 89,
+     "TN": 337,
+     "accuracy": 0.835017,
+     "precision": 0.820565,
+     "recall": 0.875269,
+     "specificity": 0.79108,
+     "F1": 0.847034,
+     "MCC": 0.670029,
+     "accuracy 95% CI": [
+      0.798336,
+      0.869903
+     ],
+     "precision 95% CI": [
+      0.762712,
+      0.871375
+     ],
+     "recall 95% CI": [
+      0.823357,
+      0.918326
+     ],
+     "specificity 95% CI": [
+      0.729238,
+      0.845991
+     ],
+     "F1 95% CI": [
+      0.802642,
+      0.883822
+     ],
+     "MCC 95% CI": [
+      0.595708,
+      0.738679
+     ]
+    },
+    "without classical (raw)": {
+     "TP": 411,
+     "FN": 54,
+     "FP": 83,
+     "TN": 343,
+     "accuracy": 0.84624,
+     "precision": 0.831984,
+     "recall": 0.883871,
+     "specificity": 0.805164,
+     "F1": 0.857143,
+     "MCC": 0.692491,
+     "accuracy 95% CI": [
+      0.812276,
+      0.879957
+     ],
+     "precision 95% CI": [
+      0.779342,
+      0.879755
+     ],
+     "recall 95% CI": [
+      0.832399,
+      0.923086
+     ],
+     "specificity 95% CI": [
+      0.743717,
+      0.86027
+     ],
+     "F1 95% CI": [
+      0.815958,
+      0.891643
+     ],
+     "MCC 95% CI": [
+      0.623575,
+      0.757663
+     ]
+    },
+    "without any classical cue (secondary)": {
+     "TP": 406,
+     "FN": 59,
+     "FP": 97,
+     "TN": 329,
+     "accuracy": 0.824916,
+     "precision": 0.807157,
+     "recall": 0.873118,
+     "specificity": 0.7723,
+     "F1": 0.838843,
+     "MCC": 0.650239,
+     "accuracy 95% CI": [
+      0.786304,
+      0.860819
+     ],
+     "precision 95% CI": [
+      0.744571,
+      0.862012
+     ],
+     "recall 95% CI": [
+      0.828438,
+      0.909551
+     ],
+     "specificity 95% CI": [
+      0.707169,
+      0.835079
+     ],
+     "F1 95% CI": [
+      0.792759,
+      0.876477
+     ],
+     "MCC 95% CI": [
+      0.571818,
+      0.720159
+     ]
+    },
+    "classical 93 (production before DINOv2; check only)": {
+     "TP": 401,
+     "FN": 64,
+     "FP": 87,
+     "TN": 339,
+     "accuracy": 0.830527,
+     "precision": 0.821721,
+     "recall": 0.862366,
+     "specificity": 0.795775,
+     "F1": 0.841553,
+     "MCC": 0.660522,
+     "accuracy 95% CI": [
+      0.794334,
+      0.864814
+     ],
+     "precision 95% CI": [
+      0.764176,
+      0.873724
+     ],
+     "recall 95% CI": [
+      0.808982,
+      0.905694
+     ],
+     "specificity 95% CI": [
+      0.735652,
+      0.850344
+     ],
+     "F1 95% CI": [
+      0.796853,
+      0.878763
+     ],
+     "MCC 95% CI": [
+      0.587589,
+      0.726895
+     ]
+    }
+   },
+   "paired": {
+    "against production": [
+     {
+      "features": "production + DINOv2 vector (best so far)",
+      "vs production": 0.0045,
+      "95% CI": "-0.007 to +0.016",
+      "roads fixed": 20,
+      "roads broken": 16,
+      "McNemar p": 0.6177,
+      "McNemar p (unrounded)": 0.617719,
+      "rule": "gain +0.004, 95% CI -0.007 to +0.016, McNemar p = 0.6177: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "both cues",
+      "vs production": -0.0157,
+      "95% CI": "-0.034 to +0.001",
+      "roads fixed": 21,
+      "roads broken": 35,
+      "McNemar p": 0.0814,
+      "McNemar p (unrounded)": 0.0814268,
+      "rule": "gain -0.016, 95% CI -0.034 to +0.001, McNemar p = 0.0814: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "everything together",
+      "vs production": -0.0101,
+      "95% CI": "-0.028 to +0.006",
+      "roads fixed": 14,
+      "roads broken": 23,
+      "McNemar p": 0.1877,
+      "McNemar p (unrounded)": 0.187742,
+      "rule": "gain -0.010, 95% CI -0.028 to +0.006, McNemar p = 0.1877: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without the DINOv2 vector",
+      "vs production": -0.0079,
+      "95% CI": "-0.024 to +0.009",
+      "roads fixed": 14,
+      "roads broken": 21,
+      "McNemar p": 0.3105,
+      "McNemar p (unrounded)": 0.310505,
+      "rule": "gain -0.008, 95% CI -0.024 to +0.009, McNemar p = 0.3105: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without classical (raw)",
+      "vs production": 0.0034,
+      "95% CI": "-0.014 to +0.021",
+      "roads fixed": 26,
+      "roads broken": 23,
+      "McNemar p": 0.7754,
+      "McNemar p (unrounded)": 0.77545,
+      "rule": "gain +0.003, 95% CI -0.014 to +0.021, McNemar p = 0.7754: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs production": -0.018,
+      "95% CI": "-0.047 to +0.011",
+      "roads fixed": 60,
+      "roads broken": 76,
+      "McNemar p": 0.1982,
+      "McNemar p (unrounded)": 0.198181,
+      "rule": "gain -0.018, 95% CI -0.047 to +0.011, McNemar p = 0.1982: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     }
+    ],
+    "everything together against production + DINOv2 vector (best so far)": {
+     "features": "everything together",
+     "vs production + DINOv2 vector (best so far)": -0.0146,
+     "95% CI": "-0.030 to +0.000",
+     "roads fixed": 11,
+     "roads broken": 24,
+     "McNemar p": 0.041,
+     "McNemar p (unrounded)": 0.0409596,
+     "rule": "gain -0.015, 95% CI -0.030 to +0.000, McNemar p = 0.0410: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "everything together against both cues": {
+     "features": "everything together",
+     "vs both cues": 0.0056,
+     "95% CI": "-0.007 to +0.019",
+     "roads fixed": 19,
+     "roads broken": 14,
+     "McNemar p": 0.4869,
+     "McNemar p (unrounded)": 0.48685,
+     "rule": "gain +0.006, 95% CI -0.007 to +0.019, McNemar p = 0.4869: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "ablations against everything together": [
+     {
+      "features": "without the DINOv2 vector",
+      "vs everything together": 0.0022,
+      "95% CI": "-0.010 to +0.015",
+      "roads fixed": 15,
+      "roads broken": 13,
+      "McNemar p": 0.8506,
+      "McNemar p (unrounded)": 0.850554
+     },
+     {
+      "features": "without classical (raw)",
+      "vs everything together": 0.0135,
+      "95% CI": "+0.001 to +0.026",
+      "roads fixed": 20,
+      "roads broken": 8,
+      "McNemar p": 0.0357,
+      "McNemar p (unrounded)": 0.0356981
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs everything together": -0.0079,
+      "95% CI": "-0.037 to +0.021",
+      "roads fixed": 55,
+      "roads broken": 62,
+      "McNemar p": 0.5793,
+      "McNemar p (unrounded)": 0.57929
+     }
+    ]
+   }
+  },
+  "sensitivity: tonight's folds, 798 assessable": {
+   "scheme": "folds over all 1,037 development roads, fitted on the assessable ones (tonight's cloud tests)",
+   "roads": 798,
+   "tiles": 193,
+   "flooded": 441,
+   "arms": {
+    "production": {
+     "TP": 390,
+     "FN": 51,
+     "FP": 91,
+     "TN": 266,
+     "accuracy": 0.822055,
+     "precision": 0.810811,
+     "recall": 0.884354,
+     "specificity": 0.745098,
+     "F1": 0.845987,
+     "MCC": 0.639608,
+     "accuracy 95% CI": [
+      0.786105,
+      0.85744
+     ],
+     "precision 95% CI": [
+      0.755786,
+      0.857984
+     ],
+     "recall 95% CI": [
+      0.843683,
+      0.924105
+     ],
+     "specificity 95% CI": [
+      0.674341,
+      0.813311
+     ],
+     "F1 95% CI": [
+      0.806079,
+      0.880166
+     ],
+     "MCC 95% CI": [
+      0.564582,
+      0.712131
+     ]
+    },
+    "production + DINOv2 vector (best so far)": {
+     "TP": 400,
+     "FN": 41,
+     "FP": 83,
+     "TN": 274,
+     "accuracy": 0.844612,
+     "precision": 0.828157,
+     "recall": 0.907029,
+     "specificity": 0.767507,
+     "F1": 0.865801,
+     "MCC": 0.686167,
+     "accuracy 95% CI": [
+      0.810648,
+      0.877935
+     ],
+     "precision 95% CI": [
+      0.775719,
+      0.874297
+     ],
+     "recall 95% CI": [
+      0.870092,
+      0.940426
+     ],
+     "specificity 95% CI": [
+      0.69419,
+      0.832106
+     ],
+     "F1 95% CI": [
+      0.828636,
+      0.897148
+     ],
+     "MCC 95% CI": [
+      0.616274,
+      0.7536
+     ]
+    },
+    "both cues": {
+     "TP": 397,
+     "FN": 44,
+     "FP": 91,
+     "TN": 266,
+     "accuracy": 0.830827,
+     "precision": 0.813525,
+     "recall": 0.900227,
+     "specificity": 0.745098,
+     "F1": 0.854682,
+     "MCC": 0.658326,
+     "accuracy 95% CI": [
+      0.794534,
+      0.865347
+     ],
+     "precision 95% CI": [
+      0.758276,
+      0.862476
+     ],
+     "recall 95% CI": [
+      0.86274,
+      0.935282
+     ],
+     "specificity 95% CI": [
+      0.668493,
+      0.813895
+     ],
+     "F1 95% CI": [
+      0.814218,
+      0.888435
+     ],
+     "MCC 95% CI": [
+      0.582976,
+      0.727578
+     ]
+    },
+    "everything together": {
+     "TP": 398,
+     "FN": 43,
+     "FP": 89,
+     "TN": 268,
+     "accuracy": 0.834586,
+     "precision": 0.817248,
+     "recall": 0.902494,
+     "specificity": 0.7507,
+     "F1": 0.857759,
+     "MCC": 0.665965,
+     "accuracy 95% CI": [
+      0.8,
+      0.867514
+     ],
+     "precision 95% CI": [
+      0.75988,
+      0.864227
+     ],
+     "recall 95% CI": [
+      0.866847,
+      0.935557
+     ],
+     "specificity 95% CI": [
+      0.677807,
+      0.81908
+     ],
+     "F1 95% CI": [
+      0.818989,
+      0.890609
+     ],
+     "MCC 95% CI": [
+      0.594515,
+      0.731305
+     ]
+    },
+    "without the DINOv2 vector": {
+     "TP": 397,
+     "FN": 44,
+     "FP": 93,
+     "TN": 264,
+     "accuracy": 0.828321,
+     "precision": 0.810204,
+     "recall": 0.900227,
+     "specificity": 0.739496,
+     "F1": 0.852846,
+     "MCC": 0.653389,
+     "accuracy 95% CI": [
+      0.790189,
+      0.86398
+     ],
+     "precision 95% CI": [
+      0.752891,
+      0.859535
+     ],
+     "recall 95% CI": [
+      0.861572,
+      0.934258
+     ],
+     "specificity 95% CI": [
+      0.664687,
+      0.808944
+     ],
+     "F1 95% CI": [
+      0.812289,
+      0.888055
+     ],
+     "MCC 95% CI": [
+      0.574155,
+      0.724922
+     ]
+    },
+    "without classical (raw)": {
+     "TP": 402,
+     "FN": 39,
+     "FP": 91,
+     "TN": 266,
+     "accuracy": 0.837093,
+     "precision": 0.815416,
+     "recall": 0.911565,
+     "specificity": 0.745098,
+     "F1": 0.860814,
+     "MCC": 0.671927,
+     "accuracy 95% CI": [
+      0.801053,
+      0.871348
+     ],
+     "precision 95% CI": [
+      0.760449,
+      0.863473
+     ],
+     "recall 95% CI": [
+      0.874677,
+      0.943476
+     ],
+     "specificity 95% CI": [
+      0.672127,
+      0.814021
+     ],
+     "F1 95% CI": [
+      0.820276,
+      0.89523
+     ],
+     "MCC 95% CI": [
+      0.599503,
+      0.739444
+     ]
+    },
+    "without any classical cue (secondary)": {
+     "TP": 389,
+     "FN": 52,
+     "FP": 102,
+     "TN": 255,
+     "accuracy": 0.807018,
+     "precision": 0.792261,
+     "recall": 0.882086,
+     "specificity": 0.714286,
+     "F1": 0.834764,
+     "MCC": 0.609482,
+     "accuracy 95% CI": [
+      0.766441,
+      0.842928
+     ],
+     "precision 95% CI": [
+      0.729822,
+      0.844647
+     ],
+     "recall 95% CI": [
+      0.839334,
+      0.9173
+     ],
+     "specificity 95% CI": [
+      0.636646,
+      0.786114
+     ],
+     "F1 95% CI": [
+      0.789159,
+      0.871949
+     ],
+     "MCC 95% CI": [
+      0.529473,
+      0.680878
+     ]
+    }
+   },
+   "paired": {
+    "against production": [
+     {
+      "features": "production + DINOv2 vector (best so far)",
+      "vs production": 0.0226,
+      "95% CI": "+0.009 to +0.036",
+      "roads fixed": 24,
+      "roads broken": 6,
+      "McNemar p": 0.0014,
+      "McNemar p (unrounded)": 0.00143091,
+      "rule": "gain +0.023, 95% CI +0.009 to +0.036, McNemar p = 0.0014: confirmed",
+      "would pass": true
+     },
+     {
+      "features": "both cues",
+      "vs production": 0.0088,
+      "95% CI": "-0.006 to +0.024",
+      "roads fixed": 27,
+      "roads broken": 20,
+      "McNemar p": 0.3817,
+      "McNemar p (unrounded)": 0.381693,
+      "rule": "gain +0.009, 95% CI -0.006 to +0.024, McNemar p = 0.3817: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "everything together",
+      "vs production": 0.0125,
+      "95% CI": "-0.001 to +0.026",
+      "roads fixed": 21,
+      "roads broken": 11,
+      "McNemar p": 0.1102,
+      "McNemar p (unrounded)": 0.110184,
+      "rule": "gain +0.013, 95% CI -0.001 to +0.026, McNemar p = 0.1102: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without the DINOv2 vector",
+      "vs production": 0.0063,
+      "95% CI": "-0.009 to +0.021",
+      "roads fixed": 17,
+      "roads broken": 12,
+      "McNemar p": 0.4583,
+      "McNemar p (unrounded)": 0.458258,
+      "rule": "gain +0.006, 95% CI -0.009 to +0.021, McNemar p = 0.4583: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without classical (raw)",
+      "vs production": 0.015,
+      "95% CI": "-0.001 to +0.032",
+      "roads fixed": 26,
+      "roads broken": 14,
+      "McNemar p": 0.0807,
+      "McNemar p (unrounded)": 0.0806905,
+      "rule": "gain +0.015, 95% CI -0.001 to +0.032, McNemar p = 0.0807: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs production": -0.015,
+      "95% CI": "-0.046 to +0.016",
+      "roads fixed": 58,
+      "roads broken": 70,
+      "McNemar p": 0.3309,
+      "McNemar p (unrounded)": 0.330936,
+      "rule": "gain -0.015, 95% CI -0.046 to +0.016, McNemar p = 0.3309: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     }
+    ],
+    "everything together against production + DINOv2 vector (best so far)": {
+     "features": "everything together",
+     "vs production + DINOv2 vector (best so far)": -0.01,
+     "95% CI": "-0.022 to +0.001",
+     "roads fixed": 9,
+     "roads broken": 17,
+     "McNemar p": 0.1686,
+     "McNemar p (unrounded)": 0.168638,
+     "rule": "gain -0.010, 95% CI -0.022 to +0.001, McNemar p = 0.1686: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "everything together against both cues": {
+     "features": "everything together",
+     "vs both cues": 0.0038,
+     "95% CI": "-0.009 to +0.017",
+     "roads fixed": 19,
+     "roads broken": 16,
+     "McNemar p": 0.7359,
+     "McNemar p (unrounded)": 0.735879,
+     "rule": "gain +0.004, 95% CI -0.009 to +0.017, McNemar p = 0.7359: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "ablations against everything together": [
+     {
+      "features": "without the DINOv2 vector",
+      "vs everything together": -0.0063,
+      "95% CI": "-0.022 to +0.008",
+      "roads fixed": 11,
+      "roads broken": 16,
+      "McNemar p": 0.4421,
+      "McNemar p (unrounded)": 0.442068
+     },
+     {
+      "features": "without classical (raw)",
+      "vs everything together": 0.0025,
+      "95% CI": "-0.012 to +0.016",
+      "roads fixed": 14,
+      "roads broken": 12,
+      "McNemar p": 0.845,
+      "McNemar p (unrounded)": 0.845019
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs everything together": -0.0276,
+      "95% CI": "-0.056 to +0.000",
+      "roads fixed": 43,
+      "roads broken": 65,
+      "McNemar p": 0.0428,
+      "McNemar p (unrounded)": 0.0428072
+     }
+    ]
+   }
+  },
+  "sensitivity: tonight's folds, 891 tile-rule": {
+   "scheme": "folds over all 1,037 development roads, fitted on the assessable ones (tonight's cloud tests)",
+   "roads": 891,
+   "tiles": 200,
+   "flooded": 465,
+   "arms": {
+    "production": {
+     "TP": 407,
+     "FN": 58,
+     "FP": 97,
+     "TN": 329,
+     "accuracy": 0.826038,
+     "precision": 0.80754,
+     "recall": 0.875269,
+     "specificity": 0.7723,
+     "F1": 0.840041,
+     "MCC": 0.6526,
+     "accuracy 95% CI": [
+      0.792223,
+      0.860697
+     ],
+     "precision 95% CI": [
+      0.7533,
+      0.859358
+     ],
+     "recall 95% CI": [
+      0.831726,
+      0.913766
+     ],
+     "specificity 95% CI": [
+      0.708219,
+      0.831635
+     ],
+     "F1 95% CI": [
+      0.799525,
+      0.875884
+     ],
+     "MCC 95% CI": [
+      0.584568,
+      0.720653
+     ]
+    },
+    "production + DINOv2 vector (best so far)": {
+     "TP": 417,
+     "FN": 48,
+     "FP": 88,
+     "TN": 338,
+     "accuracy": 0.847363,
+     "precision": 0.825743,
+     "recall": 0.896774,
+     "specificity": 0.793427,
+     "F1": 0.859794,
+     "MCC": 0.695773,
+     "accuracy 95% CI": [
+      0.81509,
+      0.878557
+     ],
+     "precision 95% CI": [
+      0.773982,
+      0.874332
+     ],
+     "recall 95% CI": [
+      0.854957,
+      0.932332
+     ],
+     "specificity 95% CI": [
+      0.73165,
+      0.850752
+     ],
+     "F1 95% CI": [
+      0.823155,
+      0.89391
+     ],
+     "MCC 95% CI": [
+      0.630296,
+      0.75695
+     ]
+    },
+    "both cues": {
+     "TP": 418,
+     "FN": 47,
+     "FP": 100,
+     "TN": 326,
+     "accuracy": 0.835017,
+     "precision": 0.80695,
+     "recall": 0.898925,
+     "specificity": 0.765258,
+     "F1": 0.850458,
+     "MCC": 0.672511,
+     "accuracy 95% CI": [
+      0.800489,
+      0.86879
+     ],
+     "precision 95% CI": [
+      0.748414,
+      0.859102
+     ],
+     "recall 95% CI": [
+      0.858121,
+      0.93273
+     ],
+     "specificity 95% CI": [
+      0.699004,
+      0.822327
+     ],
+     "F1 95% CI": [
+      0.808216,
+      0.886829
+     ],
+     "MCC 95% CI": [
+      0.60701,
+      0.735664
+     ]
+    },
+    "everything together": {
+     "TP": 419,
+     "FN": 46,
+     "FP": 95,
+     "TN": 331,
+     "accuracy": 0.841751,
+     "precision": 0.815175,
+     "recall": 0.901075,
+     "specificity": 0.776995,
+     "F1": 0.855975,
+     "MCC": 0.685573,
+     "accuracy 95% CI": [
+      0.809225,
+      0.873443
+     ],
+     "precision 95% CI": [
+      0.759756,
+      0.865387
+     ],
+     "recall 95% CI": [
+      0.86425,
+      0.932396
+     ],
+     "specificity 95% CI": [
+      0.713882,
+      0.83446
+     ],
+     "F1 95% CI": [
+      0.816367,
+      0.889316
+     ],
+     "MCC 95% CI": [
+      0.620914,
+      0.745842
+     ]
+    },
+    "without the DINOv2 vector": {
+     "TP": 417,
+     "FN": 48,
+     "FP": 100,
+     "TN": 326,
+     "accuracy": 0.833895,
+     "precision": 0.806576,
+     "recall": 0.896774,
+     "specificity": 0.765258,
+     "F1": 0.849287,
+     "MCC": 0.670084,
+     "accuracy 95% CI": [
+      0.798136,
+      0.868751
+     ],
+     "precision 95% CI": [
+      0.747754,
+      0.85786
+     ],
+     "recall 95% CI": [
+      0.854457,
+      0.929825
+     ],
+     "specificity 95% CI": [
+      0.699757,
+      0.824301
+     ],
+     "F1 95% CI": [
+      0.808377,
+      0.885716
+     ],
+     "MCC 95% CI": [
+      0.599927,
+      0.736399
+     ]
+    },
+    "without classical (raw)": {
+     "TP": 423,
+     "FN": 42,
+     "FP": 97,
+     "TN": 329,
+     "accuracy": 0.843996,
+     "precision": 0.813462,
+     "recall": 0.909677,
+     "specificity": 0.7723,
+     "F1": 0.858883,
+     "MCC": 0.691056,
+     "accuracy 95% CI": [
+      0.811382,
+      0.877742
+     ],
+     "precision 95% CI": [
+      0.755786,
+      0.86464
+     ],
+     "recall 95% CI": [
+      0.871847,
+      0.939682
+     ],
+     "specificity 95% CI": [
+      0.705617,
+      0.832627
+     ],
+     "F1 95% CI": [
+      0.818757,
+      0.894165
+     ],
+     "MCC 95% CI": [
+      0.626923,
+      0.753442
+     ]
+    },
+    "without any classical cue (secondary)": {
+     "TP": 410,
+     "FN": 55,
+     "FP": 107,
+     "TN": 319,
+     "accuracy": 0.818182,
+     "precision": 0.793037,
+     "recall": 0.88172,
+     "specificity": 0.748826,
+     "F1": 0.835031,
+     "MCC": 0.638216,
+     "accuracy 95% CI": [
+      0.781244,
+      0.854591
+     ],
+     "precision 95% CI": [
+      0.728146,
+      0.849627
+     ],
+     "recall 95% CI": [
+      0.837377,
+      0.915888
+     ],
+     "specificity 95% CI": [
+      0.679154,
+      0.815043
+     ],
+     "F1 95% CI": [
+      0.790512,
+      0.873445
+     ],
+     "MCC 95% CI": [
+      0.565525,
+      0.706892
+     ]
+    }
+   },
+   "paired": {
+    "against production": [
+     {
+      "features": "production + DINOv2 vector (best so far)",
+      "vs production": 0.0213,
+      "95% CI": "+0.008 to +0.035",
+      "roads fixed": 27,
+      "roads broken": 8,
+      "McNemar p": 0.0019,
+      "McNemar p (unrounded)": 0.00187823,
+      "rule": "gain +0.021, 95% CI +0.008 to +0.035, McNemar p = 0.0019: confirmed",
+      "would pass": true
+     },
+     {
+      "features": "both cues",
+      "vs production": 0.009,
+      "95% CI": "-0.007 to +0.024",
+      "roads fixed": 31,
+      "roads broken": 23,
+      "McNemar p": 0.3409,
+      "McNemar p (unrounded)": 0.340891,
+      "rule": "gain +0.009, 95% CI -0.007 to +0.024, McNemar p = 0.3409: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "everything together",
+      "vs production": 0.0157,
+      "95% CI": "+0.003 to +0.029",
+      "roads fixed": 25,
+      "roads broken": 11,
+      "McNemar p": 0.0288,
+      "McNemar p (unrounded)": 0.0288167,
+      "rule": "gain +0.016, 95% CI +0.003 to +0.029, McNemar p = 0.0288: confirmed",
+      "would pass": true
+     },
+     {
+      "features": "without the DINOv2 vector",
+      "vs production": 0.0079,
+      "95% CI": "-0.006 to +0.022",
+      "roads fixed": 20,
+      "roads broken": 13,
+      "McNemar p": 0.2962,
+      "McNemar p (unrounded)": 0.296206,
+      "rule": "gain +0.008, 95% CI -0.006 to +0.022, McNemar p = 0.2962: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without classical (raw)",
+      "vs production": 0.018,
+      "95% CI": "+0.002 to +0.035",
+      "roads fixed": 31,
+      "roads broken": 15,
+      "McNemar p": 0.0259,
+      "McNemar p (unrounded)": 0.0258961,
+      "rule": "gain +0.018, 95% CI +0.002 to +0.035, McNemar p = 0.0259: confirmed",
+      "would pass": true
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs production": -0.0079,
+      "95% CI": "-0.036 to +0.020",
+      "roads fixed": 66,
+      "roads broken": 73,
+      "McNemar p": 0.611,
+      "McNemar p (unrounded)": 0.610974,
+      "rule": "gain -0.008, 95% CI -0.036 to +0.020, McNemar p = 0.6110: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     }
+    ],
+    "everything together against production + DINOv2 vector (best so far)": {
+     "features": "everything together",
+     "vs production + DINOv2 vector (best so far)": -0.0056,
+     "95% CI": "-0.017 to +0.006",
+     "roads fixed": 13,
+     "roads broken": 18,
+     "McNemar p": 0.4731,
+     "McNemar p (unrounded)": 0.47313,
+     "rule": "gain -0.006, 95% CI -0.017 to +0.006, McNemar p = 0.4731: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "everything together against both cues": {
+     "features": "everything together",
+     "vs both cues": 0.0067,
+     "95% CI": "-0.006 to +0.021",
+     "roads fixed": 22,
+     "roads broken": 16,
+     "McNemar p": 0.4177,
+     "McNemar p (unrounded)": 0.417692,
+     "rule": "gain +0.007, 95% CI -0.006 to +0.021, McNemar p = 0.4177: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "ablations against everything together": [
+     {
+      "features": "without the DINOv2 vector",
+      "vs everything together": -0.0079,
+      "95% CI": "-0.022 to +0.005",
+      "roads fixed": 11,
+      "roads broken": 18,
+      "McNemar p": 0.2649,
+      "McNemar p (unrounded)": 0.264931
+     },
+     {
+      "features": "without classical (raw)",
+      "vs everything together": 0.0022,
+      "95% CI": "-0.011 to +0.015",
+      "roads fixed": 15,
+      "roads broken": 13,
+      "McNemar p": 0.8506,
+      "McNemar p (unrounded)": 0.850554
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs everything together": -0.0236,
+      "95% CI": "-0.049 to +0.001",
+      "roads fixed": 48,
+      "roads broken": 69,
+      "McNemar p": 0.064,
+      "McNemar p (unrounded)": 0.0639959
+     }
+    ]
+   }
+  }
+ },
+ "cloud groups (tonight's construction)": {
+  "trusted flooded roads under thin cloud": {
+   "roads": 24,
+   "tiles": 13,
+   "measure": "found",
+   "arms": {
+    "production": {
+     "share": 0.708333,
+     "count": 17,
+     "lo": 0.421053,
+     "hi": 0.882353,
+     "TP": 17,
+     "FN": 7,
+     "FP": 0,
+     "TN": 0
+    },
+    "production + DINOv2 vector (best so far)": {
+     "share": 0.708333,
+     "count": 17,
+     "lo": 0.444444,
+     "hi": 0.892857,
+     "TP": 17,
+     "FN": 7,
+     "FP": 0,
+     "TN": 0
+    },
+    "both cues": {
+     "share": 0.875,
+     "count": 21,
+     "lo": 0.666667,
+     "hi": 1.0,
+     "TP": 21,
+     "FN": 3,
+     "FP": 0,
+     "TN": 0
+    },
+    "everything together": {
+     "share": 0.875,
+     "count": 21,
+     "lo": 0.666667,
+     "hi": 1.0,
+     "TP": 21,
+     "FN": 3,
+     "FP": 0,
+     "TN": 0
+    },
+    "without the DINOv2 vector": {
+     "share": 0.833333,
+     "count": 20,
+     "lo": 0.578947,
+     "hi": 0.965517,
+     "TP": 20,
+     "FN": 4,
+     "FP": 0,
+     "TN": 0
+    },
+    "without classical (raw)": {
+     "share": 0.875,
+     "count": 21,
+     "lo": 0.666667,
+     "hi": 1.0,
+     "TP": 21,
+     "FN": 3,
+     "FP": 0,
+     "TN": 0
+    },
+    "without any classical cue (secondary)": {
+     "share": 0.875,
+     "count": 21,
+     "lo": 0.7,
+     "hi": 1.0,
+     "TP": 21,
+     "FN": 3,
+     "FP": 0,
+     "TN": 0
+    }
+   },
+   "paired": {
+    "against production": [
+     {
+      "features": "production + DINOv2 vector (best so far)",
+      "vs production": 0.0,
+      "95% CI": "-0.154 to +0.200",
+      "roads fixed": 2,
+      "roads broken": 2,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain +0.000, 95% CI -0.154 to +0.200, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "both cues",
+      "vs production": 0.1667,
+      "95% CI": "+0.037 to +0.364",
+      "roads fixed": 4,
+      "roads broken": 0,
+      "McNemar p": 0.125,
+      "McNemar p (unrounded)": 0.125,
+      "rule": "gain +0.167, 95% CI +0.037 to +0.364, McNemar p = 0.1250: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "everything together",
+      "vs production": 0.1667,
+      "95% CI": "+0.037 to +0.364",
+      "roads fixed": 4,
+      "roads broken": 0,
+      "McNemar p": 0.125,
+      "McNemar p (unrounded)": 0.125,
+      "rule": "gain +0.167, 95% CI +0.037 to +0.364, McNemar p = 0.1250: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without the DINOv2 vector",
+      "vs production": 0.125,
+      "95% CI": "+0.000 to +0.280",
+      "roads fixed": 3,
+      "roads broken": 0,
+      "McNemar p": 0.25,
+      "McNemar p (unrounded)": 0.25,
+      "rule": "gain +0.125, 95% CI +0.000 to +0.280, McNemar p = 0.2500: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without classical (raw)",
+      "vs production": 0.1667,
+      "95% CI": "+0.037 to +0.364",
+      "roads fixed": 4,
+      "roads broken": 0,
+      "McNemar p": 0.125,
+      "McNemar p (unrounded)": 0.125,
+      "rule": "gain +0.167, 95% CI +0.037 to +0.364, McNemar p = 0.1250: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs production": 0.1667,
+      "95% CI": "+0.033 to +0.400",
+      "roads fixed": 4,
+      "roads broken": 0,
+      "McNemar p": 0.125,
+      "McNemar p (unrounded)": 0.125,
+      "rule": "gain +0.167, 95% CI +0.033 to +0.400, McNemar p = 0.1250: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     }
+    ],
+    "everything together against production + DINOv2 vector (best so far)": {
+     "features": "everything together",
+     "vs production + DINOv2 vector (best so far)": 0.1667,
+     "95% CI": "+0.000 to +0.364",
+     "roads fixed": 4,
+     "roads broken": 0,
+     "McNemar p": 0.125,
+     "McNemar p (unrounded)": 0.125,
+     "rule": "gain +0.167, 95% CI +0.000 to +0.364, McNemar p = 0.1250: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "everything together against both cues": {
+     "features": "everything together",
+     "vs both cues": 0.0,
+     "95% CI": "+0.000 to +0.000",
+     "roads fixed": 0,
+     "roads broken": 0,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0,
+     "rule": "gain +0.000, 95% CI +0.000 to +0.000, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "ablations against everything together": [
+     {
+      "features": "without the DINOv2 vector",
+      "vs everything together": -0.0417,
+      "95% CI": "-0.167 to +0.000",
+      "roads fixed": 0,
+      "roads broken": 1,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0
+     },
+     {
+      "features": "without classical (raw)",
+      "vs everything together": 0.0,
+      "95% CI": "+0.000 to +0.000",
+      "roads fixed": 0,
+      "roads broken": 0,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs everything together": 0.0,
+      "95% CI": "-0.111 to +0.143",
+      "roads fixed": 1,
+      "roads broken": 1,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0
+     }
+    ]
+   }
+  },
+  "dry-labelled roads under thin cloud (labels untrusted)": {
+   "roads": 69,
+   "tiles": 29,
+   "measure": "called flooded",
+   "arms": {
+    "production": {
+     "share": 0.0869565,
+     "count": 6,
+     "lo": 0.0307692,
+     "hi": 0.150685,
+     "TP": 0,
+     "FN": 0,
+     "FP": 6,
+     "TN": 63
+    },
+    "production + DINOv2 vector (best so far)": {
+     "share": 0.0724638,
+     "count": 5,
+     "lo": 0.0175439,
+     "hi": 0.130435,
+     "TP": 0,
+     "FN": 0,
+     "FP": 5,
+     "TN": 64
+    },
+    "both cues": {
+     "share": 0.130435,
+     "count": 9,
+     "lo": 0.0599925,
+     "hi": 0.2,
+     "TP": 0,
+     "FN": 0,
+     "FP": 9,
+     "TN": 60
+    },
+    "everything together": {
+     "share": 0.0869565,
+     "count": 6,
+     "lo": 0.0307692,
+     "hi": 0.150685,
+     "TP": 0,
+     "FN": 0,
+     "FP": 6,
+     "TN": 63
+    },
+    "without the DINOv2 vector": {
+     "share": 0.101449,
+     "count": 7,
+     "lo": 0.0333197,
+     "hi": 0.171875,
+     "TP": 0,
+     "FN": 0,
+     "FP": 7,
+     "TN": 62
+    },
+    "without classical (raw)": {
+     "share": 0.0869565,
+     "count": 6,
+     "lo": 0.0185185,
+     "hi": 0.157318,
+     "TP": 0,
+     "FN": 0,
+     "FP": 6,
+     "TN": 63
+    },
+    "without any classical cue (secondary)": {
+     "share": 0.0724638,
+     "count": 5,
+     "lo": 0.0,
+     "hi": 0.162791,
+     "TP": 0,
+     "FN": 0,
+     "FP": 5,
+     "TN": 64
+    }
+   },
+   "paired": {
+    "against production": [
+     {
+      "features": "production + DINOv2 vector (best so far)",
+      "vs production": 0.0145,
+      "95% CI": "+0.000 to +0.049",
+      "roads fixed": 1,
+      "roads broken": 0,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain +0.015, 95% CI +0.000 to +0.049, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "both cues",
+      "vs production": -0.0435,
+      "95% CI": "-0.091 to +0.000",
+      "roads fixed": 0,
+      "roads broken": 3,
+      "McNemar p": 0.25,
+      "McNemar p (unrounded)": 0.25,
+      "rule": "gain -0.043, 95% CI -0.091 to +0.000, McNemar p = 0.2500: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "everything together",
+      "vs production": 0.0,
+      "95% CI": "+0.000 to +0.000",
+      "roads fixed": 0,
+      "roads broken": 0,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain +0.000, 95% CI +0.000 to +0.000, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without the DINOv2 vector",
+      "vs production": -0.0145,
+      "95% CI": "-0.044 to +0.000",
+      "roads fixed": 0,
+      "roads broken": 1,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain -0.015, 95% CI -0.044 to +0.000, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without classical (raw)",
+      "vs production": 0.0,
+      "95% CI": "-0.037 to +0.044",
+      "roads fixed": 1,
+      "roads broken": 1,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain +0.000, 95% CI -0.037 to +0.044, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs production": 0.0145,
+      "95% CI": "-0.074 to +0.098",
+      "roads fixed": 4,
+      "roads broken": 3,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain +0.015, 95% CI -0.074 to +0.098, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     }
+    ],
+    "everything together against production + DINOv2 vector (best so far)": {
+     "features": "everything together",
+     "vs production + DINOv2 vector (best so far)": -0.0145,
+     "95% CI": "-0.049 to +0.000",
+     "roads fixed": 0,
+     "roads broken": 1,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0,
+     "rule": "gain -0.015, 95% CI -0.049 to +0.000, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "everything together against both cues": {
+     "features": "everything together",
+     "vs both cues": 0.0435,
+     "95% CI": "+0.000 to +0.091",
+     "roads fixed": 3,
+     "roads broken": 0,
+     "McNemar p": 0.25,
+     "McNemar p (unrounded)": 0.25,
+     "rule": "gain +0.043, 95% CI +0.000 to +0.091, McNemar p = 0.2500: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "ablations against everything together": [
+     {
+      "features": "without the DINOv2 vector",
+      "vs everything together": -0.0145,
+      "95% CI": "-0.044 to +0.000",
+      "roads fixed": 0,
+      "roads broken": 1,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0
+     },
+     {
+      "features": "without classical (raw)",
+      "vs everything together": 0.0,
+      "95% CI": "-0.037 to +0.044",
+      "roads fixed": 1,
+      "roads broken": 1,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs everything together": 0.0145,
+      "95% CI": "-0.074 to +0.098",
+      "roads fixed": 4,
+      "roads broken": 3,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0
+     }
+    ]
+   }
+  },
+  "control: assessable roads on the same tiles": {
+   "roads": 175,
+   "tiles": 32,
+   "measure": "right",
+   "arms": {
+    "production": {
+     "share": 0.777143,
+     "count": 136,
+     "lo": 0.703947,
+     "hi": 0.848963,
+     "TP": 81,
+     "FN": 14,
+     "FP": 25,
+     "TN": 55
+    },
+    "production + DINOv2 vector (best so far)": {
+     "share": 0.805714,
+     "count": 141,
+     "lo": 0.72941,
+     "hi": 0.874173,
+     "TP": 82,
+     "FN": 13,
+     "FP": 21,
+     "TN": 59
+    },
+    "both cues": {
+     "share": 0.805714,
+     "count": 141,
+     "lo": 0.725485,
+     "hi": 0.878956,
+     "TP": 86,
+     "FN": 9,
+     "FP": 25,
+     "TN": 55
+    },
+    "everything together": {
+     "share": 0.805714,
+     "count": 141,
+     "lo": 0.727273,
+     "hi": 0.877008,
+     "TP": 84,
+     "FN": 11,
+     "FP": 23,
+     "TN": 57
+    },
+    "without the DINOv2 vector": {
+     "share": 0.782857,
+     "count": 137,
+     "lo": 0.70122,
+     "hi": 0.856385,
+     "TP": 82,
+     "FN": 13,
+     "FP": 25,
+     "TN": 55
+    },
+    "without classical (raw)": {
+     "share": 0.817143,
+     "count": 143,
+     "lo": 0.734998,
+     "hi": 0.890003,
+     "TP": 87,
+     "FN": 8,
+     "FP": 24,
+     "TN": 56
+    },
+    "without any classical cue (secondary)": {
+     "share": 0.748571,
+     "count": 131,
+     "lo": 0.655841,
+     "hi": 0.840007,
+     "TP": 80,
+     "FN": 15,
+     "FP": 29,
+     "TN": 51
+    }
+   },
+   "paired": {
+    "against production": [
+     {
+      "features": "production + DINOv2 vector (best so far)",
+      "vs production": 0.0286,
+      "95% CI": "+0.000 to +0.054",
+      "roads fixed": 7,
+      "roads broken": 2,
+      "McNemar p": 0.1797,
+      "McNemar p (unrounded)": 0.179688,
+      "rule": "gain +0.029, 95% CI +0.000 to +0.054, McNemar p = 0.1797: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "both cues",
+      "vs production": 0.0286,
+      "95% CI": "-0.006 to +0.062",
+      "roads fixed": 10,
+      "roads broken": 5,
+      "McNemar p": 0.3018,
+      "McNemar p (unrounded)": 0.301758,
+      "rule": "gain +0.029, 95% CI -0.006 to +0.062, McNemar p = 0.3018: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "everything together",
+      "vs production": 0.0286,
+      "95% CI": "+0.000 to +0.061",
+      "roads fixed": 7,
+      "roads broken": 2,
+      "McNemar p": 0.1797,
+      "McNemar p (unrounded)": 0.179688,
+      "rule": "gain +0.029, 95% CI +0.000 to +0.061, McNemar p = 0.1797: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without the DINOv2 vector",
+      "vs production": 0.0057,
+      "95% CI": "-0.024 to +0.035",
+      "roads fixed": 5,
+      "roads broken": 4,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain +0.006, 95% CI -0.024 to +0.035, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without classical (raw)",
+      "vs production": 0.04,
+      "95% CI": "+0.007 to +0.072",
+      "roads fixed": 9,
+      "roads broken": 2,
+      "McNemar p": 0.0654,
+      "McNemar p (unrounded)": 0.0654297,
+      "rule": "gain +0.040, 95% CI +0.007 to +0.072, McNemar p = 0.0654: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs production": -0.0286,
+      "95% CI": "-0.098 to +0.045",
+      "roads fixed": 17,
+      "roads broken": 22,
+      "McNemar p": 0.5224,
+      "McNemar p (unrounded)": 0.522397,
+      "rule": "gain -0.029, 95% CI -0.098 to +0.045, McNemar p = 0.5224: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     }
+    ],
+    "everything together against production + DINOv2 vector (best so far)": {
+     "features": "everything together",
+     "vs production + DINOv2 vector (best so far)": 0.0,
+     "95% CI": "-0.027 to +0.027",
+     "roads fixed": 4,
+     "roads broken": 4,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0,
+     "rule": "gain +0.000, 95% CI -0.027 to +0.027, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "everything together against both cues": {
+     "features": "everything together",
+     "vs both cues": 0.0,
+     "95% CI": "-0.034 to +0.037",
+     "roads fixed": 6,
+     "roads broken": 6,
+     "McNemar p": 1.0,
+     "McNemar p (unrounded)": 1.0,
+     "rule": "gain +0.000, 95% CI -0.034 to +0.037, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "ablations against everything together": [
+     {
+      "features": "without the DINOv2 vector",
+      "vs everything together": -0.0229,
+      "95% CI": "-0.065 to +0.019",
+      "roads fixed": 4,
+      "roads broken": 8,
+      "McNemar p": 0.3877,
+      "McNemar p (unrounded)": 0.387695
+     },
+     {
+      "features": "without classical (raw)",
+      "vs everything together": 0.0114,
+      "95% CI": "-0.020 to +0.043",
+      "roads fixed": 5,
+      "roads broken": 3,
+      "McNemar p": 0.7266,
+      "McNemar p (unrounded)": 0.726562
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs everything together": -0.0571,
+      "95% CI": "-0.123 to +0.016",
+      "roads fixed": 11,
+      "roads broken": 21,
+      "McNemar p": 0.1102,
+      "McNemar p (unrounded)": 0.110184
+     }
+    ]
+   }
+  },
+  "clear-sky benchmark: assessable flooded roads on the same tiles": {
+   "roads": 95,
+   "tiles": 23,
+   "measure": "found",
+   "arms": {
+    "production": {
+     "share": 0.852632,
+     "count": 81,
+     "lo": 0.781243,
+     "hi": 0.927083,
+     "TP": 81,
+     "FN": 14,
+     "FP": 0,
+     "TN": 0
+    },
+    "production + DINOv2 vector (best so far)": {
+     "share": 0.863158,
+     "count": 82,
+     "lo": 0.78022,
+     "hi": 0.938782,
+     "TP": 82,
+     "FN": 13,
+     "FP": 0,
+     "TN": 0
+    },
+    "both cues": {
+     "share": 0.905263,
+     "count": 86,
+     "lo": 0.83838,
+     "hi": 0.962025,
+     "TP": 86,
+     "FN": 9,
+     "FP": 0,
+     "TN": 0
+    },
+    "everything together": {
+     "share": 0.884211,
+     "count": 84,
+     "lo": 0.816092,
+     "hi": 0.946906,
+     "TP": 84,
+     "FN": 11,
+     "FP": 0,
+     "TN": 0
+    },
+    "without the DINOv2 vector": {
+     "share": 0.863158,
+     "count": 82,
+     "lo": 0.788462,
+     "hi": 0.9375,
+     "TP": 82,
+     "FN": 13,
+     "FP": 0,
+     "TN": 0
+    },
+    "without classical (raw)": {
+     "share": 0.915789,
+     "count": 87,
+     "lo": 0.85,
+     "hi": 0.971154,
+     "TP": 87,
+     "FN": 8,
+     "FP": 0,
+     "TN": 0
+    },
+    "without any classical cue (secondary)": {
+     "share": 0.842105,
+     "count": 80,
+     "lo": 0.727273,
+     "hi": 0.934783,
+     "TP": 80,
+     "FN": 15,
+     "FP": 0,
+     "TN": 0
+    }
+   },
+   "paired": {
+    "against production": [
+     {
+      "features": "production + DINOv2 vector (best so far)",
+      "vs production": 0.0105,
+      "95% CI": "-0.023 to +0.048",
+      "roads fixed": 3,
+      "roads broken": 2,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain +0.011, 95% CI -0.023 to +0.048, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "both cues",
+      "vs production": 0.0526,
+      "95% CI": "+0.000 to +0.110",
+      "roads fixed": 6,
+      "roads broken": 1,
+      "McNemar p": 0.125,
+      "McNemar p (unrounded)": 0.125,
+      "rule": "gain +0.053, 95% CI +0.000 to +0.110, McNemar p = 0.1250: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "everything together",
+      "vs production": 0.0316,
+      "95% CI": "-0.014 to +0.085",
+      "roads fixed": 5,
+      "roads broken": 2,
+      "McNemar p": 0.4531,
+      "McNemar p (unrounded)": 0.453125,
+      "rule": "gain +0.032, 95% CI -0.014 to +0.085, McNemar p = 0.4531: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without the DINOv2 vector",
+      "vs production": 0.0105,
+      "95% CI": "-0.025 to +0.048",
+      "roads fixed": 3,
+      "roads broken": 2,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain +0.011, 95% CI -0.025 to +0.048, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     },
+     {
+      "features": "without classical (raw)",
+      "vs production": 0.0632,
+      "95% CI": "+0.019 to +0.114",
+      "roads fixed": 6,
+      "roads broken": 0,
+      "McNemar p": 0.0312,
+      "McNemar p (unrounded)": 0.03125,
+      "rule": "gain +0.063, 95% CI +0.019 to +0.114, McNemar p = 0.0312: confirmed",
+      "would pass": true
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs production": -0.0105,
+      "95% CI": "-0.111 to +0.081",
+      "roads fixed": 8,
+      "roads broken": 9,
+      "McNemar p": 1.0,
+      "McNemar p (unrounded)": 1.0,
+      "rule": "gain -0.011, 95% CI -0.111 to +0.081, McNemar p = 1.0000: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+      "would pass": false
+     }
+    ],
+    "everything together against production + DINOv2 vector (best so far)": {
+     "features": "everything together",
+     "vs production + DINOv2 vector (best so far)": 0.0211,
+     "95% CI": "-0.019 to +0.059",
+     "roads fixed": 4,
+     "roads broken": 2,
+     "McNemar p": 0.6875,
+     "McNemar p (unrounded)": 0.6875,
+     "rule": "gain +0.021, 95% CI -0.019 to +0.059, McNemar p = 0.6875: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "everything together against both cues": {
+     "features": "everything together",
+     "vs both cues": -0.0211,
+     "95% CI": "-0.064 to +0.020",
+     "roads fixed": 1,
+     "roads broken": 3,
+     "McNemar p": 0.625,
+     "McNemar p (unrounded)": 0.625,
+     "rule": "gain -0.021, 95% CI -0.064 to +0.020, McNemar p = 0.6250: not confirmed (needs gain > 0, CI above 0 and p < 0.05)",
+     "would pass": false
+    },
+    "ablations against everything together": [
+     {
+      "features": "without the DINOv2 vector",
+      "vs everything together": -0.0211,
+      "95% CI": "-0.069 to +0.032",
+      "roads fixed": 2,
+      "roads broken": 4,
+      "McNemar p": 0.6875,
+      "McNemar p (unrounded)": 0.6875
+     },
+     {
+      "features": "without classical (raw)",
+      "vs everything together": 0.0316,
+      "95% CI": "+0.000 to +0.068",
+      "roads fixed": 3,
+      "roads broken": 0,
+      "McNemar p": 0.25,
+      "McNemar p (unrounded)": 0.25
+     },
+     {
+      "features": "without any classical cue (secondary)",
+      "vs everything together": -0.0421,
+      "95% CI": "-0.132 to +0.043",
+      "roads fixed": 4,
+      "roads broken": 8,
+      "McNemar p": 0.3877,
+      "McNemar p (unrounded)": 0.387695
+     }
+    ]
+   }
+  }
+ },
+ "run time s": 172
+}

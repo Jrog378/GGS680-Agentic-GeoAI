@@ -1,0 +1,21 @@
+{
+ "trunk reproduction cosine (min)": 0.9999998807907104,
+ "Track B strip layouts (s)": 139.0,
+ "B-head strip tokens (s)": 226.1,
+ "B-head outer 0 (s)": 7.1,
+ "B-head outer 1 (s)": 6.0,
+ "B-head outer 2 (s)": 6.3,
+ "B-head outer 3 (s)": 7.9,
+ "B-head outer 4 (s)": 7.1,
+ "stage B-head finished at (s since start)": 415.2,
+ "B-ft outer 0 (s)": 5776.4,
+ "projection after B-ft outer fold 1 (s)": {
+  "elapsed": 6192,
+  "B-ft remaining": 23105.6,
+  "A-head (est.)": 2920.2567567567567,
+  "A-ft (est.)": 8607.093243243242,
+  "total": 40825
+ },
+ "B-ft outer 1 (s)": 4096.3,
+ "B-ft outer 2 (s)": 2715.0
+}

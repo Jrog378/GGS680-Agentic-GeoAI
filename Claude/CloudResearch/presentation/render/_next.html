@@ -1,0 +1,63 @@
+<!doctype html><html><head><meta charset='utf-8'><style>@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500..800&display=swap');@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+* { box-sizing:border-box; margin:0; }
+html, body { margin:0; padding:0; background:#777; width:1920px; height:1080px; overflow:hidden; font-size:32px; line-height:1.4; }
+section { position:relative; width:1920px; height:1080px; overflow:hidden; }
+section:not([style*="display"]), div:not([style*="display"]) { display:flex; flex-direction:column; }
+h1 { font-size:96px; font-weight:600; line-height:1.1; } h2 { font-size:64px; font-weight:600; line-height:1.15; }
+h3 { font-size:44px; font-weight:600; line-height:1.2; } b { font-weight:600; } aside { display:none; }
+table { border-collapse:collapse; } td, th { padding:0.35em 0.6em; border:1px solid #C9CED5; vertical-align:top; }
+ul, ol { padding-left:1.2em; }
+</style></head><body><section id="next" data-transition="fade" style="background:#F0F1F2;color:#2E2B3B;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:10px;background:linear-gradient(90deg, #000004 0%, #280B53 14%, #65156E 29%, #9F2A63 43%, #D44842 57%, #F57D15 71%, #FAC228 86%, #FCFFA4 100%)"></div>
+<p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;text-transform:uppercase;color:#5C5A69">07 · Feasibility, limits and next steps</p>
+<h2 style="font-family:'Archivo', Arial, sans-serif;font-size:60px;font-weight:700;line-height:1.1;letter-spacing:-1px;color:#16131F">Feasibility, limits and next steps</h2>
+<div style="display:flex;gap:28px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:26px;border:2px solid #C9CED5;border-top:10px solid #0A7570;border-radius:4px;flex:1"><h3 style="font-family:'Archivo', Arial, sans-serif;font-size:30px;font-weight:700;color:#16131F">Feasible</h3><ul style="font-size:24px;line-height:1.35"><li>Data, masks, de-hazer and the held-out harness all run</li><li>Cloud spotter (bright rule + texture + DINOv2): F1 0.87 against 0.65 for the dark channel (HRC_WHU)</li><li>Label gap measured: 55%, 26%, 2% labelled flooded (partly geography)</li><li>Each test runs in under an hour</li><li>By semester end: a frozen see-through step for thin cloud, and report tiers</li></ul></div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:26px;border:2px solid #C9CED5;border-top:10px solid #BC3754;border-radius:4px;flex:1"><h3 style="font-family:'Archivo', Arial, sans-serif;font-size:30px;font-weight:700;color:#16131F">Limits</h3><ul style="font-size:24px;line-height:1.35"><li>One event, one sensor, roads only; all real cloud in one after image; cloud shadows untested</li><li>Tile-split scores run about 4 points high; area-blocked folds from now on</li><li>Two-date not yet better than He 2011 on flood calls</li><li>De-hazing: only 24 trusted flooded roads, seen before; cloudy dry-labelled roads flagged</li></ul></div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:26px;border:2px solid #C9CED5;border-top:10px solid #420A68;border-radius:4px;flex:1"><h3 style="font-family:'Archivo', Arial, sans-serif;font-size:30px;font-weight:700;color:#16131F">Next steps</h3><ul style="font-size:24px;line-height:1.35"><li>See through cloud on either date, as a preprocessing step</li><li>Smooth the ring at the cloud edge</li><li>Test the best de-hazing on a second event</li><li>Tie it back into road detection and the flood model</li><li>Report tiers and maps</li><li>Later: synthetic clouds, once real cloud can be seen through</li></ul></div>
+</div>
+<div style="flex:1"></div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#420A68;padding:26px 36px;border-radius:4px">
+<p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#FCA50A">Question for discussion</p>
+<p style="font-size:30px;line-height:1.35;color:#F6F4EF">When a map cannot see the ground, should it say “cannot assess”, show a range, or fill it in from another date?</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;letter-spacing:1px;color:#5C5A69">SEEING THROUGH CLOUDS · GGS 662 · 30 OCT 2026</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;color:#5C5A69;text-align:right">08 / 15</p>
+<aside>Everything runs, and each test takes under an hour. The limits: one event and one sensor, only 24 trusted flooded roads under cloud, and two-date is not yet better than the He baseline on flood calls. Next: see through cloud on either date as a preprocessing step, smooth the ring at the cloud edge, then use two-date and He together in the flood model and test it on a second event. My question for you: when a map cannot see the ground, should it say cannot assess, show a range, or fill it in from another date?</aside>
+</section>
+<pre id='__report' style='display:none'></pre>
+<script>
+function run(){
+ const S=document.querySelector('section'); const out={over:[],broken:[],below:[],outside:[],h2:null};
+ const all=[...S.querySelectorAll('*')].filter(e=>e.tagName!=='ASIDE' && !e.closest('aside') && !e.closest('svg'));
+ const footLike=e=>{let x=e; while(x&&x!==S){ if(x.style&&x.style.position==='absolute'&&(parseFloat(x.style.bottom)<=96||parseFloat(x.style.top)>=900)) return true; x=x.parentElement;} return false;};
+ const deco=e=>{let x=e; while(x&&x!==S){ if(x.style&&x.style.position==='absolute'&&!x.textContent.trim()) return true; x=x.parentElement;} return false;};
+ const h2=S.querySelector('h2'); if(h2){const r=h2.getBoundingClientRect(); out.h2=[Math.round(r.top),Math.round(r.bottom)];}
+ const isText=e=>[...e.childNodes].some(n=>n.nodeType===3&&n.textContent.trim());
+ const lab=e=>e.tagName.toLowerCase()+': '+(e.textContent||e.getAttribute('alt')||'').trim().slice(0,50);
+ for(const e of all){
+   const r=e.getBoundingClientRect(); if(r.width===0&&r.height===0) continue;
+   const foot=footLike(e), dec=deco(e);
+   if(isText(e)){
+     if(e.scrollWidth>e.clientWidth+1 && getComputedStyle(e).whiteSpace!=='nowrap') out.over.push(lab(e)+' (w '+e.scrollWidth+'>'+e.clientWidth+')');
+     const fs=parseFloat(getComputedStyle(e).fontSize)||24;
+     if(e.scrollHeight>e.clientHeight+Math.max(3,0.2*fs)) out.over.push(lab(e)+' (h '+e.scrollHeight+'>'+e.clientHeight+')');
+     for(const n of e.childNodes){ if(n.nodeType!==3) continue; const t=n.textContent; const re=/\S+/g; let m;
+       while((m=re.exec(t))){ const rg=document.createRange(); rg.setStart(n,m.index); rg.setEnd(n,m.index+m[0].length);
+         const rs=[...rg.getClientRects()].filter(x=>x.width>0); if(rs.length>1) out.broken.push(m[0]+' in '+lab(e));
+         for(const x of rs){ if(!foot && x.bottom>920+1) out.below.push('text "'+m[0]+'" bottom '+Math.round(x.bottom));
+           if(x.right>1792+1||x.left<128-1) out.outside.push('text "'+m[0]+'" x '+Math.round(x.left)+'-'+Math.round(x.right)); }
+       } }
+   }
+   if(!foot && !dec && r.bottom>920+1 && e.tagName!=='SECTION') out.below.push(lab(e)+' bottom '+Math.round(r.bottom));
+   if(!dec && (r.right>1792+1||r.left<128-1) && e.tagName!=='SECTION') out.outside.push(lab(e)+' x '+Math.round(r.left)+'-'+Math.round(r.right));
+ }
+ for(const e of all){ if(e.tagName!=='DIV') continue; const pr=e.getBoundingClientRect();
+   for(const c of e.children){ if(c.style.position==='absolute') continue; const cr=c.getBoundingClientRect();
+     if(cr.bottom>pr.bottom+2 || cr.right>pr.right+2) out.over.push('child '+lab(c)+' spills out of its div'); } }
+ for(const k of ['below','outside','over','broken']) out[k]=[...new Set(out[k])].slice(0,25);
+ document.getElementById('__report').textContent=JSON.stringify(out);
+}
+document.fonts.ready.then(()=>setTimeout(run,80));
+</script>
+</body></html>

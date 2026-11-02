@@ -1,0 +1,50 @@
+{
+ "rise": {
+  "share above null p90": 0.03258145363408521,
+  "share above null p95": 0.020050125313283207,
+  "share above null p99": 0.0012531328320802004,
+  "median after / null": [
+   -3.52736496925354,
+   4.6845622062683105
+  ]
+ },
+ "hot": {
+  "share above null p90": 0.005012531328320802,
+  "share above null p95": 0.0012531328320802004,
+  "share above null p99": 0.0,
+  "median after / null": [
+   -0.1394511982798576,
+   1.3756427764892578
+  ]
+ },
+ "atten": {
+  "share above null p90": 0.12531328320802004,
+  "share above null p95": 0.06015037593984962,
+  "share above null p99": 0.021303258145363407,
+  "median after / null": [
+   0.1470325589179992,
+   -0.1470325589179992
+  ]
+ },
+ "spot": {
+  "share above null p90": 0.011278195488721804,
+  "share above null p95": 0.002506265664160401,
+  "share above null p99": 0.0012531328320802004,
+  "median after / null": [
+   0.11418258407918061,
+   0.34546260390451994
+  ]
+ },
+ "tile raw rise vs error (log-odds per SD, label covariate)": {
+  "coef": 0.15966591901182547,
+  "95% CI": [
+   -0.11619402866968723,
+   0.4820761364144197
+  ]
+ },
+ "tile raw rise vs change features on unchanged roads (spearman), median |rho|": 0.0917814344742106,
+ "tile raw rise: kept-road tiles, median / p90": [
+  15.886972427368164,
+  50.66864776611328
+ ]
+}

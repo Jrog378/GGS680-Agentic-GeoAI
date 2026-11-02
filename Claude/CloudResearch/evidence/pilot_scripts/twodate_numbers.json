@@ -1,0 +1,142 @@
+{
+ "roads under thin cloud": 93,
+ "tiles": 39,
+ "code": "GeoAI-Roads 2ec5346",
+ "trusted flooded roads under thin cloud": {
+  "roads": 24,
+  "share right": {
+   "as it is": 0.7083,
+   "single image (He)": 0.875,
+   "two-date": 0.8333
+  },
+  "called flooded": {
+   "as it is": 17,
+   "single image (He)": 21,
+   "two-date": 20
+  },
+  "vs as it is": [
+   {
+    "features": "single image (He)",
+    "vs as it is": 0.1667,
+    "95% CI": "+0.037 to +0.364",
+    "roads fixed": 4,
+    "roads broken": 0,
+    "McNemar p": 0.125
+   },
+   {
+    "features": "two-date",
+    "vs as it is": 0.125,
+    "95% CI": "+0.000 to +0.316",
+    "roads fixed": 4,
+    "roads broken": 1,
+    "McNemar p": 0.375
+   }
+  ],
+  "two-date vs single image": [
+   {
+    "features": "two-date",
+    "vs single image (He)": -0.0417,
+    "95% CI": "-0.130 to +0.000",
+    "roads fixed": 0,
+    "roads broken": 1,
+    "McNemar p": 1.0
+   }
+  ]
+ },
+ "dry-labelled roads under thin cloud (labels untrusted)": {
+  "roads": 69,
+  "share right": {
+   "as it is": 0.913,
+   "single image (He)": 0.6812,
+   "two-date": 0.4348
+  },
+  "called flooded": {
+   "as it is": 6,
+   "single image (He)": 22,
+   "two-date": 39
+  },
+  "vs as it is": [
+   {
+    "features": "single image (He)",
+    "vs as it is": -0.2319,
+    "95% CI": "-0.355 to -0.126",
+    "roads fixed": 0,
+    "roads broken": 16,
+    "McNemar p": 0.0
+   },
+   {
+    "features": "two-date",
+    "vs as it is": -0.4783,
+    "95% CI": "-0.628 to -0.302",
+    "roads fixed": 3,
+    "roads broken": 36,
+    "McNemar p": 0.0
+   }
+  ],
+  "two-date vs single image": [
+   {
+    "features": "two-date",
+    "vs single image (He)": -0.2464,
+    "95% CI": "-0.443 to -0.020",
+    "roads fixed": 9,
+    "roads broken": 26,
+    "McNemar p": 0.006
+   }
+  ]
+ },
+ "control: assessable roads on the same tiles": {
+  "roads": 175,
+  "share right": {
+   "as it is": 0.7771,
+   "single image (He)": 0.7371,
+   "two-date": 0.72
+  },
+  "called flooded": {
+   "as it is": 106,
+   "single image (He)": 129,
+   "two-date": 112
+  },
+  "vs as it is": [
+   {
+    "features": "single image (He)",
+    "vs as it is": -0.04,
+    "95% CI": "-0.118 to +0.035",
+    "roads fixed": 10,
+    "roads broken": 17,
+    "McNemar p": 0.2478
+   },
+   {
+    "features": "two-date",
+    "vs as it is": -0.0571,
+    "95% CI": "-0.133 to -0.004",
+    "roads fixed": 5,
+    "roads broken": 15,
+    "McNemar p": 0.0414
+   }
+  ],
+  "two-date vs single image": [
+   {
+    "features": "two-date",
+    "vs single image (He)": -0.0171,
+    "95% CI": "-0.093 to +0.051",
+    "roads fixed": 11,
+    "roads broken": 14,
+    "McNemar p": 0.69
+   }
+  ]
+ },
+ "trusted flooded by handling": {
+  "ASSESS": {
+   "roads": 1,
+   "as it is": 1,
+   "single image (He)": 1,
+   "two-date": 0
+  },
+  "CORRECT": {
+   "roads": 23,
+   "as it is": 16,
+   "single image (He)": 20,
+   "two-date": 20
+  }
+ }
+}

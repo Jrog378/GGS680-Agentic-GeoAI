@@ -1,0 +1,1779 @@
+{
+ "S1 after haze": [
+  {
+   "arm": "as it is",
+   "tiles": 94,
+   "grey error": 56.9305,
+   "detail kept": 0.8165,
+   "t error": NaN,
+   "clear ground changed": NaN,
+   "cannot under haze": NaN,
+   "cannot on clear ground": NaN,
+   "detected on clear ground": NaN,
+   "flooded strip error (pooled)": 55.4275,
+   "dry strip error (pooled)": 54.6059,
+   "pooled F1": NaN,
+   "precision": NaN,
+   "recall": NaN,
+   "median tile F1": NaN
+  },
+  {
+   "arm": "existing two-date",
+   "tiles": 94,
+   "grey error": 37.2379,
+   "detail kept": 1.0244,
+   "t error": 0.1528,
+   "clear ground changed": 0.0002,
+   "cannot under haze": 0.0267,
+   "cannot on clear ground": 0.0,
+   "detected on clear ground": 0.0,
+   "flooded strip error (pooled)": 38.0826,
+   "dry strip error (pooled)": 37.7479,
+   "pooled F1": 0.4747,
+   "precision": 0.9969,
+   "recall": 0.3115,
+   "median tile F1": 0.4651
+  },
+  {
+   "arm": "single image (He)",
+   "tiles": 94,
+   "grey error": 27.2849,
+   "detail kept": 0.8439,
+   "t error": 0.1396,
+   "clear ground changed": 0.852,
+   "cannot under haze": NaN,
+   "cannot on clear ground": NaN,
+   "detected on clear ground": NaN,
+   "flooded strip error (pooled)": 22.3277,
+   "dry strip error (pooled)": 26.2434,
+   "pooled F1": NaN,
+   "precision": NaN,
+   "recall": NaN,
+   "median tile F1": NaN
+  },
+  {
+   "arm": "either-date",
+   "tiles": 94,
+   "grey error": 37.2754,
+   "detail kept": 1.0235,
+   "t error": 0.1528,
+   "clear ground changed": 0.0002,
+   "cannot under haze": 0.0486,
+   "cannot on clear ground": 0.0109,
+   "detected on clear ground": 0.0,
+   "flooded strip error (pooled)": 38.1008,
+   "dry strip error (pooled)": 37.7499,
+   "pooled F1": 0.4739,
+   "precision": 0.9969,
+   "recall": 0.3108,
+   "median tile F1": 0.4651
+  },
+  {
+   "arm": "either-date, both smooth",
+   "tiles": 94,
+   "grey error": 37.2618,
+   "detail kept": 1.0238,
+   "t error": 0.1528,
+   "clear ground changed": 0.0002,
+   "cannot under haze": 0.0311,
+   "cannot on clear ground": 0.0006,
+   "detected on clear ground": 0.0,
+   "flooded strip error (pooled)": 38.09,
+   "dry strip error (pooled)": 37.7496,
+   "pooled F1": 0.4741,
+   "precision": 0.9969,
+   "recall": 0.311,
+   "median tile F1": 0.4651
+  },
+  {
+   "arm": "hysteresis 50, seed",
+   "tiles": 94,
+   "grey error": 33.8206,
+   "detail kept": 1.0636,
+   "t error": 0.1344,
+   "clear ground changed": 0.0365,
+   "cannot under haze": 0.0494,
+   "cannot on clear ground": 0.0109,
+   "detected on clear ground": 0.0247,
+   "flooded strip error (pooled)": 35.493,
+   "dry strip error (pooled)": 33.4664,
+   "pooled F1": 0.6157,
+   "precision": 0.9049,
+   "recall": 0.4666,
+   "median tile F1": 0.6165
+  },
+  {
+   "arm": "hysteresis 35, seed",
+   "tiles": 94,
+   "grey error": 31.9004,
+   "detail kept": 1.0894,
+   "t error": 0.1269,
+   "clear ground changed": 0.1317,
+   "cannot under haze": 0.0501,
+   "cannot on clear ground": 0.0109,
+   "detected on clear ground": 0.1099,
+   "flooded strip error (pooled)": 34.0791,
+   "dry strip error (pooled)": 31.3699,
+   "pooled F1": 0.6631,
+   "precision": 0.7601,
+   "recall": 0.5881,
+   "median tile F1": 0.6815
+  },
+  {
+   "arm": "hysteresis 20, seed",
+   "tiles": 94,
+   "grey error": 31.1781,
+   "detail kept": 1.1121,
+   "t error": 0.1264,
+   "clear ground changed": 0.2572,
+   "cannot under haze": 0.0614,
+   "cannot on clear ground": 0.0215,
+   "detected on clear ground": 0.2531,
+   "flooded strip error (pooled)": 32.1634,
+   "dry strip error (pooled)": 30.8661,
+   "pooled F1": 0.6634,
+   "precision": 0.6308,
+   "recall": 0.6995,
+   "median tile F1": 0.6512
+  },
+  {
+   "arm": "hysteresis 50, grown",
+   "tiles": 94,
+   "grey error": 32.6637,
+   "detail kept": 1.08,
+   "t error": 0.1287,
+   "clear ground changed": 0.0448,
+   "cannot under haze": 0.0496,
+   "cannot on clear ground": 0.011,
+   "detected on clear ground": 0.0304,
+   "flooded strip error (pooled)": 34.7041,
+   "dry strip error (pooled)": 32.3952,
+   "pooled F1": 0.635,
+   "precision": 0.8974,
+   "recall": 0.4913,
+   "median tile F1": 0.6357
+  },
+  {
+   "arm": "hysteresis 35, grown",
+   "tiles": 94,
+   "grey error": 30.6409,
+   "detail kept": 1.1058,
+   "t error": 0.1208,
+   "clear ground changed": 0.1469,
+   "cannot under haze": 0.0503,
+   "cannot on clear ground": 0.011,
+   "detected on clear ground": 0.1198,
+   "flooded strip error (pooled)": 33.0722,
+   "dry strip error (pooled)": 29.8461,
+   "pooled F1": 0.6807,
+   "precision": 0.756,
+   "recall": 0.6191,
+   "median tile F1": 0.6971
+  },
+  {
+   "arm": "hysteresis 20, grown",
+   "tiles": 94,
+   "grey error": 30.0475,
+   "detail kept": 1.1314,
+   "t error": 0.1209,
+   "clear ground changed": 0.2709,
+   "cannot under haze": 0.0615,
+   "cannot on clear ground": 0.0216,
+   "detected on clear ground": 0.2614,
+   "flooded strip error (pooled)": 31.0083,
+   "dry strip error (pooled)": 29.1094,
+   "pooled F1": 0.6798,
+   "precision": 0.6323,
+   "recall": 0.7349,
+   "median tile F1": 0.6881
+  }
+ ],
+ "S2 before haze": [
+  {
+   "arm": "as it is",
+   "tiles": 94,
+   "grey error": 54.278,
+   "detail kept": 0.7784,
+   "t error": NaN,
+   "clear ground changed": NaN,
+   "cannot under haze": NaN,
+   "cannot on clear ground": NaN,
+   "detected on clear ground": NaN,
+   "flooded strip error (pooled)": 39.9147,
+   "dry strip error (pooled)": 37.293,
+   "pooled F1": NaN,
+   "precision": NaN,
+   "recall": NaN,
+   "median tile F1": NaN
+  },
+  {
+   "arm": "existing two-date",
+   "tiles": 94,
+   "grey error": 54.278,
+   "detail kept": 0.7784,
+   "t error": 0.2824,
+   "clear ground changed": 0.0,
+   "cannot under haze": 0.0,
+   "cannot on clear ground": 0.0,
+   "detected on clear ground": 0.0,
+   "flooded strip error (pooled)": 39.9147,
+   "dry strip error (pooled)": 37.293,
+   "pooled F1": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "median tile F1": 0.0
+  },
+  {
+   "arm": "single image (He)",
+   "tiles": 94,
+   "grey error": 27.7937,
+   "detail kept": 0.8646,
+   "t error": 0.1336,
+   "clear ground changed": 0.9124,
+   "cannot under haze": NaN,
+   "cannot on clear ground": NaN,
+   "detected on clear ground": NaN,
+   "flooded strip error (pooled)": 22.1544,
+   "dry strip error (pooled)": 25.0607,
+   "pooled F1": NaN,
+   "precision": NaN,
+   "recall": NaN,
+   "median tile F1": NaN
+  },
+  {
+   "arm": "either-date",
+   "tiles": 94,
+   "grey error": 37.4027,
+   "detail kept": 0.9668,
+   "t error": 0.157,
+   "clear ground changed": 0.014,
+   "cannot under haze": 0.0682,
+   "cannot on clear ground": 0.0109,
+   "detected on clear ground": 0.0108,
+   "flooded strip error (pooled)": 26.2831,
+   "dry strip error (pooled)": 24.8454,
+   "pooled F1": 0.4529,
+   "precision": 0.9465,
+   "recall": 0.2977,
+   "median tile F1": 0.4392
+  },
+  {
+   "arm": "either-date, both smooth",
+   "tiles": 94,
+   "grey error": 37.3081,
+   "detail kept": 0.9673,
+   "t error": 0.1569,
+   "clear ground changed": 0.014,
+   "cannot under haze": 0.032,
+   "cannot on clear ground": 0.0006,
+   "detected on clear ground": 0.0108,
+   "flooded strip error (pooled)": 26.2833,
+   "dry strip error (pooled)": 24.8436,
+   "pooled F1": 0.4545,
+   "precision": 0.9468,
+   "recall": 0.299,
+   "median tile F1": 0.4431
+  },
+  {
+   "arm": "hysteresis 50, seed",
+   "tiles": 94,
+   "grey error": 34.3898,
+   "detail kept": 1.0022,
+   "t error": 0.1361,
+   "clear ground changed": 0.0397,
+   "cannot under haze": 0.0689,
+   "cannot on clear ground": 0.0109,
+   "detected on clear ground": 0.0377,
+   "flooded strip error (pooled)": 25.0193,
+   "dry strip error (pooled)": 23.2597,
+   "pooled F1": 0.5715,
+   "precision": 0.8629,
+   "recall": 0.4272,
+   "median tile F1": 0.5629
+  },
+  {
+   "arm": "hysteresis 35, seed",
+   "tiles": 94,
+   "grey error": 32.8322,
+   "detail kept": 1.0228,
+   "t error": 0.1244,
+   "clear ground changed": 0.0604,
+   "cannot under haze": 0.0695,
+   "cannot on clear ground": 0.0109,
+   "detected on clear ground": 0.0713,
+   "flooded strip error (pooled)": 24.1858,
+   "dry strip error (pooled)": 21.8206,
+   "pooled F1": 0.6423,
+   "precision": 0.8092,
+   "recall": 0.5326,
+   "median tile F1": 0.6679
+  },
+  {
+   "arm": "hysteresis 20, seed",
+   "tiles": 94,
+   "grey error": 31.7813,
+   "detail kept": 1.0525,
+   "t error": 0.1193,
+   "clear ground changed": 0.1192,
+   "cannot under haze": 0.0814,
+   "cannot on clear ground": 0.0213,
+   "detected on clear ground": 0.1577,
+   "flooded strip error (pooled)": 23.3242,
+   "dry strip error (pooled)": 21.7079,
+   "pooled F1": 0.6727,
+   "precision": 0.7025,
+   "recall": 0.6453,
+   "median tile F1": 0.68
+  },
+  {
+   "arm": "hysteresis 50, grown",
+   "tiles": 94,
+   "grey error": 33.3864,
+   "detail kept": 1.0157,
+   "t error": 0.1273,
+   "clear ground changed": 0.0504,
+   "cannot under haze": 0.0691,
+   "cannot on clear ground": 0.0109,
+   "detected on clear ground": 0.0469,
+   "flooded strip error (pooled)": 24.4003,
+   "dry strip error (pooled)": 22.9528,
+   "pooled F1": 0.5868,
+   "precision": 0.8498,
+   "recall": 0.4481,
+   "median tile F1": 0.5876
+  },
+  {
+   "arm": "hysteresis 35, grown",
+   "tiles": 94,
+   "grey error": 31.5791,
+   "detail kept": 1.0413,
+   "t error": 0.1131,
+   "clear ground changed": 0.082,
+   "cannot under haze": 0.0703,
+   "cannot on clear ground": 0.0109,
+   "detected on clear ground": 0.0927,
+   "flooded strip error (pooled)": 23.0069,
+   "dry strip error (pooled)": 21.5209,
+   "pooled F1": 0.6593,
+   "precision": 0.7914,
+   "recall": 0.565,
+   "median tile F1": 0.6824
+  },
+  {
+   "arm": "hysteresis 20, grown",
+   "tiles": 94,
+   "grey error": 30.9395,
+   "detail kept": 1.0669,
+   "t error": 0.11,
+   "clear ground changed": 0.1368,
+   "cannot under haze": 0.082,
+   "cannot on clear ground": 0.0213,
+   "detected on clear ground": 0.178,
+   "flooded strip error (pooled)": 22.7787,
+   "dry strip error (pooled)": 21.6708,
+   "pooled F1": 0.6867,
+   "precision": 0.6963,
+   "recall": 0.6773,
+   "median tile F1": 0.6899
+  }
+ ],
+ "S2 side effects": [
+  {
+   "arm": "as it is",
+   "after altered": NaN,
+   "rise share": NaN,
+   "both share": NaN,
+   "gate share": NaN
+  },
+  {
+   "arm": "existing two-date",
+   "after altered": 1e-05,
+   "rise share": NaN,
+   "both share": NaN,
+   "gate share": 0.0
+  },
+  {
+   "arm": "single image (He)",
+   "after altered": NaN,
+   "rise share": NaN,
+   "both share": NaN,
+   "gate share": NaN
+  },
+  {
+   "arm": "either-date",
+   "after altered": 0.0,
+   "rise share": 0.0,
+   "both share": 0.02594,
+   "gate share": NaN
+  },
+  {
+   "arm": "either-date, both smooth",
+   "after altered": 0.0,
+   "rise share": 0.0,
+   "both share": 0.006,
+   "gate share": NaN
+  },
+  {
+   "arm": "hysteresis 50, seed",
+   "after altered": 0.0,
+   "rise share": 0.0,
+   "both share": 0.02594,
+   "gate share": NaN
+  },
+  {
+   "arm": "hysteresis 35, seed",
+   "after altered": 0.0,
+   "rise share": 0.0,
+   "both share": 0.02594,
+   "gate share": NaN
+  },
+  {
+   "arm": "hysteresis 20, seed",
+   "after altered": 0.0,
+   "rise share": 0.0,
+   "both share": 0.02594,
+   "gate share": NaN
+  },
+  {
+   "arm": "hysteresis 50, grown",
+   "after altered": 0.01654,
+   "rise share": 0.00986,
+   "both share": 0.02594,
+   "gate share": NaN
+  },
+  {
+   "arm": "hysteresis 35, grown",
+   "after altered": 0.03273,
+   "rise share": 0.0222,
+   "both share": 0.02594,
+   "gate share": NaN
+  },
+  {
+   "arm": "hysteresis 20, grown",
+   "after altered": 0.07216,
+   "rise share": 0.05833,
+   "both share": 0.02594,
+   "gate share": NaN
+  }
+ ],
+ "S1 side effects": [
+  {
+   "arm": "as it is",
+   "before altered": NaN,
+   "fall share": NaN,
+   "both share": NaN
+  },
+  {
+   "arm": "existing two-date",
+   "before altered": NaN,
+   "fall share": NaN,
+   "both share": NaN
+  },
+  {
+   "arm": "single image (He)",
+   "before altered": NaN,
+   "fall share": NaN,
+   "both share": NaN
+  },
+  {
+   "arm": "either-date",
+   "before altered": 0.00969,
+   "fall share": 0.00568,
+   "both share": 0.01365
+  },
+  {
+   "arm": "either-date, both smooth",
+   "before altered": 0.00971,
+   "fall share": 0.00568,
+   "both share": 0.00199
+  },
+  {
+   "arm": "hysteresis 50, seed",
+   "before altered": 0.01817,
+   "fall share": 0.01402,
+   "both share": 0.01365
+  },
+  {
+   "arm": "hysteresis 35, seed",
+   "before altered": 0.02681,
+   "fall share": 0.02557,
+   "both share": 0.01365
+  },
+  {
+   "arm": "hysteresis 20, seed",
+   "before altered": 0.04941,
+   "fall share": 0.0519,
+   "both share": 0.01365
+  },
+  {
+   "arm": "hysteresis 50, grown",
+   "before altered": 0.03706,
+   "fall share": 0.02535,
+   "both share": 0.01365
+  },
+  {
+   "arm": "hysteresis 35, grown",
+   "before altered": 0.0562,
+   "fall share": 0.04916,
+   "both share": 0.01365
+  },
+  {
+   "arm": "hysteresis 20, grown",
+   "before altered": 0.07753,
+   "fall share": 0.08206,
+   "both share": 0.01365
+  }
+ ],
+ "A-1": {
+  "better": 92,
+  "worse": 0,
+  "ties": 2,
+  "p": 4.0389678347315804e-28,
+  "mean difference": -16.87529434041774,
+  "95% CI": [
+   -18.730624488566786,
+   -15.02591470657511
+  ]
+ },
+ "A-1 secondary vs He": {
+  "better": 24,
+  "worse": 70,
+  "ties": 0,
+  "p": 2.2027598315502487e-06,
+  "mean difference": 9.609046875162328,
+  "95% CI": [
+   6.8047731206772175,
+   12.355600309118312
+  ]
+ },
+ "A-2": {
+  "existing two-date": {
+   "F1 after cloudy (S1)": 0.47466932964179637,
+   "F1 before cloudy (S2)": 0.0,
+   "difference": -0.47466932964179637
+  },
+  "either-date": {
+   "F1 after cloudy (S1)": 0.4739064682568565,
+   "F1 before cloudy (S2)": 0.4528934824724983,
+   "difference": -0.02101298578435823
+  },
+  "either-date, both smooth": {
+   "F1 after cloudy (S1)": 0.4741143052629898,
+   "F1 before cloudy (S2)": 0.4545225168124908,
+   "difference": -0.019591788450499026
+  },
+  "hysteresis 50, seed": {
+   "F1 after cloudy (S1)": 0.6156906113907006,
+   "F1 before cloudy (S2)": 0.5714849373513052,
+   "difference": -0.04420567403939535
+  },
+  "hysteresis 35, seed": {
+   "F1 after cloudy (S1)": 0.6631344503803798,
+   "F1 before cloudy (S2)": 0.642349546723866,
+   "difference": -0.020784903656513753
+  },
+  "hysteresis 20, seed": {
+   "F1 after cloudy (S1)": 0.6633935505422371,
+   "F1 before cloudy (S2)": 0.6726889909282974,
+   "difference": 0.009295440386060227
+  },
+  "hysteresis 50, grown": {
+   "F1 after cloudy (S1)": 0.6350042890545071,
+   "F1 before cloudy (S2)": 0.5867594452833219,
+   "difference": -0.04824484377118521
+  },
+  "hysteresis 35, grown": {
+   "F1 after cloudy (S1)": 0.6807405005213695,
+   "F1 before cloudy (S2)": 0.6593118828215593,
+   "difference": -0.021428617699810193
+  },
+  "hysteresis 20, grown": {
+   "F1 after cloudy (S1)": 0.6797553721001874,
+   "F1 before cloudy (S2)": 0.6866725637134433,
+   "difference": 0.00691719161325588
+  }
+ },
+ "A-3 (i) max difference": {
+  "haze share": 0.0,
+  "grey error under haze: as it is": 0.0,
+  "detail kept under haze: as it is": 0.0,
+  "t error under haze: pilot fit": 0.0,
+  "grey error under haze: pilot fit": 0.0,
+  "detail kept under haze: pilot fit": 0.0,
+  "clear ground read as haze: pilot fit": 0.0,
+  "t error under haze: single image (He)": 0.0,
+  "grey error under haze: single image (He)": 0.0,
+  "detail kept under haze: single image (He)": 0.0,
+  "clear ground read as haze: single image (He)": 0.0,
+  "t error under haze: revised fit": 0.0,
+  "grey error under haze: revised fit": 0.0,
+  "detail kept under haze: revised fit": 0.0,
+  "clear ground read as haze: revised fit": 0.0
+ },
+ "A-3": {
+  "eligible tiles": 71,
+  "identical tiles": 71,
+  "max diff on eligible": 0.0,
+  "tiles with fall or both pixels": 23,
+  "grey error existing / either-date": [
+   37.237934153130716,
+   37.275401683563885
+  ],
+  "detail kept existing / either-date": [
+   1.0243663090340636,
+   1.0234568112708153
+  ],
+  "clear ground changed existing / either-date": [
+   0.0001759785350125681,
+   0.0001759785350125681
+  ],
+  "archived haze_recovery means (revised fit)": {
+   "grey error under haze": 37.23793414893617,
+   "detail kept under haze": 1.024366309148936,
+   "clear ground read as haze": 0.0001759785350125681
+  },
+  "within tolerances": true
+ },
+ "changed ground": {
+  "S2 before haze": {
+   "tiles with both": 12,
+   "either-date": {
+    "error removed, flooded strips (median tile)": 0.22611522786664473,
+    "error removed, dry strips (median tile)": 0.2105295350094944,
+    "flooded worse than dry (sign test on removed share)": {
+     "better": 6,
+     "worse": 6,
+     "ties": 0,
+     "p": 1.0,
+     "mean difference": -0.047708870538357186,
+     "95% CI": [
+      -0.24803158247033036,
+      0.16219304081202807
+     ]
+    }
+   },
+   "single image (He)": {
+    "error removed, flooded strips (median tile)": 0.21394827939032446,
+    "error removed, dry strips (median tile)": 0.3475178930971631,
+    "flooded worse than dry (sign test on removed share)": {
+     "better": 4,
+     "worse": 8,
+     "ties": 0,
+     "p": 0.3876953125,
+     "mean difference": 0.23514992971126214,
+     "95% CI": [
+      -0.6168353492133477,
+      1.0945711448836124
+     ]
+    }
+   },
+   "existing two-date": {
+    "error removed, flooded strips (median tile)": 0.0,
+    "error removed, dry strips (median tile)": 0.0,
+    "flooded worse than dry (sign test on removed share)": {
+     "better": 0,
+     "worse": 0,
+     "ties": 12,
+     "p": 1.0,
+     "mean difference": 0.0,
+     "95% CI": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "either-date minus He, (flooded - dry) removed share": {
+    "median": 0.15673902418338947,
+    "better": 7,
+    "worse": 5,
+    "ties": 0,
+    "p": 0.7744140625,
+    "mean difference": -0.28285880024961924,
+    "95% CI": [
+     -0.9699082169048363,
+     0.4098748426447095
+    ]
+   }
+  },
+  "S1 after haze": {
+   "tiles with both": 12,
+   "either-date": {
+    "error removed, flooded strips (median tile)": 0.08113368619187472,
+    "error removed, dry strips (median tile)": 0.07476137578469083,
+    "flooded worse than dry (sign test on removed share)": {
+     "better": 7,
+     "worse": 5,
+     "ties": 0,
+     "p": 0.7744140625,
+     "mean difference": -0.0420603813127668,
+     "95% CI": [
+      -0.18122000403181704,
+      0.09340920297231434
+     ]
+    }
+   },
+   "single image (He)": {
+    "error removed, flooded strips (median tile)": 0.5717150301345165,
+    "error removed, dry strips (median tile)": 0.5103293474637411,
+    "flooded worse than dry (sign test on removed share)": {
+     "better": 7,
+     "worse": 5,
+     "ties": 0,
+     "p": 0.7744140625,
+     "mean difference": -0.24584043690944693,
+     "95% CI": [
+      -0.768376075519564,
+      0.2147773709879478
+     ]
+    }
+   },
+   "existing two-date": {
+    "error removed, flooded strips (median tile)": 0.08113368619187472,
+    "error removed, dry strips (median tile)": 0.0780613205202465,
+    "flooded worse than dry (sign test on removed share)": {
+     "better": 7,
+     "worse": 5,
+     "ties": 0,
+     "p": 0.7744140625,
+     "mean difference": -0.042077200906029684,
+     "95% CI": [
+      -0.18140091023192398,
+      0.09305343186556911
+     ]
+    }
+   },
+   "either-date minus He, (flooded - dry) removed share": {
+    "median": -0.04998162622552316,
+    "better": 5,
+    "worse": 7,
+    "ties": 0,
+    "p": 0.7744140625,
+    "mean difference": 0.2037800555966801,
+    "95% CI": [
+     -0.21387128555688606,
+     0.6509872605199518
+    ]
+   }
+  }
+ },
+ "S3": {
+  "either-date": {
+   "counts": [
+    [
+     49387273,
+     9099,
+     562031,
+     352865
+    ],
+    [
+     21220903,
+     8517558,
+     30996,
+     977630
+    ],
+    [
+     20313040,
+     5,
+     8976213,
+     1838251
+    ],
+    [
+     12485723,
+     1565753,
+     1818732,
+     3735785
+    ]
+   ],
+   "row shares": [
+    [
+     0.9816,
+     0.0002,
+     0.0112,
+     0.007
+    ],
+    [
+     0.6902,
+     0.277,
+     0.001,
+     0.0318
+    ],
+    [
+     0.6526,
+     0.0,
+     0.2884,
+     0.0591
+    ],
+    [
+     0.6368,
+     0.0799,
+     0.0928,
+     0.1905
+    ]
+   ]
+  },
+  "either-date, both smooth": {
+   "counts": [
+    [
+     49721339,
+     9099,
+     562031,
+     18799
+    ],
+    [
+     21701230,
+     8534600,
+     30996,
+     480261
+    ],
+    [
+     21563443,
+     5,
+     8990553,
+     573508
+    ],
+    [
+     14789982,
+     1574885,
+     1839481,
+     1401645
+    ]
+   ],
+   "row shares": [
+    [
+     0.9883,
+     0.0002,
+     0.0112,
+     0.0004
+    ],
+    [
+     0.7058,
+     0.2776,
+     0.001,
+     0.0156
+    ],
+    [
+     0.6927,
+     0.0,
+     0.2888,
+     0.0184
+    ],
+    [
+     0.7544,
+     0.0803,
+     0.0938,
+     0.0715
+    ]
+   ]
+  },
+  "means": [
+   {
+    "arm": "either-date",
+    "after-only error as it is": 52.7012,
+    "after-only error": 36.5275,
+    "before-only error as it is": 52.8651,
+    "before-only error": 36.7406,
+    "cannot in both": 0.1921,
+    "cannot in one-date haze": 0.0626
+   },
+   {
+    "arm": "either-date, both smooth",
+    "after-only error as it is": 52.7012,
+    "after-only error": 36.4908,
+    "before-only error as it is": 52.8651,
+    "before-only error": 36.6849,
+    "cannot in both": 0.0834,
+    "cannot in one-date haze": 0.0374
+   }
+  ]
+ },
+ "B primary": {
+  "hysteresis 50, seed": {
+   "better": 87,
+   "worse": 6,
+   "ties": 1,
+   "p": 1.6504649136152465e-19,
+   "mean difference": -3.4547702708142864,
+   "95% CI": [
+    -4.118904001662071,
+    -2.8147809535899055
+   ],
+   "Holm p": 3.300929827230493e-19
+  },
+  "hysteresis 35, seed": {
+   "better": 88,
+   "worse": 5,
+   "ties": 1,
+   "p": 1.1112241759254372e-20,
+   "mean difference": -5.37503607729648,
+   "95% CI": [
+    -6.461442151221823,
+    -4.37696362505568
+   ],
+   "Holm p": 3.3336725277763115e-20
+  },
+  "hysteresis 20, seed": {
+   "better": 85,
+   "worse": 8,
+   "ties": 1,
+   "p": 2.2644944585064495e-17,
+   "mean difference": -6.097289541934399,
+   "95% CI": [
+    -7.4947712335180725,
+    -4.6984447258584074
+   ],
+   "Holm p": 2.2644944585064495e-17
+  }
+ },
+ "B grown": {
+  "hysteresis 50, grown": {
+   "better": 88,
+   "worse": 5,
+   "ties": 1,
+   "p": 1.1112241759254372e-20,
+   "mean difference": -4.611666922873639,
+   "95% CI": [
+    -5.437499399641727,
+    -3.8031228374927606
+   ]
+  },
+  "hysteresis 35, grown": {
+   "better": 88,
+   "worse": 5,
+   "ties": 1,
+   "p": 1.1112241759254372e-20,
+   "mean difference": -6.634465978500691,
+   "95% CI": [
+    -7.86471519140487,
+    -5.49259160427337
+   ]
+  },
+  "hysteresis 20, grown": {
+   "better": 85,
+   "worse": 8,
+   "ties": 1,
+   "p": 2.2644944585064495e-17,
+   "mean difference": -7.227947407580436,
+   "95% CI": [
+    -8.780616668691026,
+    -5.695893232365872
+   ]
+  }
+ },
+ "B gap to He": {
+  "as it is": 29.645601130546403,
+  "existing two-date": 9.953079872942986,
+  "single image (He)": 0.0,
+  "either-date": 9.990547403376155,
+  "either-date, both smooth": 9.976898233941256,
+  "hysteresis 50, seed": 6.535777132561861,
+  "hysteresis 35, seed": 4.615511326079673,
+  "hysteresis 20, seed": 3.8932578614417537,
+  "hysteresis 50, grown": 5.378880480502509,
+  "hysteresis 35, grown": 3.3560814248754625,
+  "hysteresis 20, grown": 2.762599995795714
+ },
+ "real tiles": {
+  "94 clear tiles": [
+   {
+    "arm": "existing two-date",
+    "tiles": 94,
+    "gated share (mean)": 0.0,
+    "gated share (max)": 0.0,
+    "fall share (mean)": 0.0,
+    "tiles with fall px": 0,
+    "both share (mean)": 0.0,
+    "tiles with both px": 0,
+    "cannot share (mean)": 0.0,
+    "building px gated (pooled)": 0.0,
+    "building px cannot (pooled)": 0.0,
+    "cannot: both cloudy (mean)": NaN,
+    "cannot: opaque after (mean)": NaN,
+    "cannot: opaque before (mean)": NaN
+   },
+   {
+    "arm": "either-date",
+    "tiles": 94,
+    "gated share (mean)": 0.02158,
+    "gated share (max)": 0.35106,
+    "fall share (mean)": 0.01175,
+    "tiles with fall px": 20,
+    "both share (mean)": 0.00983,
+    "tiles with both px": 9,
+    "cannot share (mean)": 0.00983,
+    "building px gated (pooled)": 2e-05,
+    "building px cannot (pooled)": 0.0,
+    "cannot: both cloudy (mean)": 0.00983,
+    "cannot: opaque after (mean)": 0.0,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "either-date, both smooth",
+    "tiles": 94,
+    "gated share (mean)": 0.01199,
+    "gated share (max)": 0.17483,
+    "fall share (mean)": 0.01175,
+    "tiles with fall px": 20,
+    "both share (mean)": 0.00024,
+    "tiles with both px": 1,
+    "cannot share (mean)": 0.00024,
+    "building px gated (pooled)": 2e-05,
+    "building px cannot (pooled)": 0.0,
+    "cannot: both cloudy (mean)": 0.00024,
+    "cannot: opaque after (mean)": 0.0,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "hysteresis 50, seed",
+    "tiles": 94,
+    "gated share (mean)": 0.03778,
+    "gated share (max)": 0.38521,
+    "fall share (mean)": 0.02796,
+    "tiles with fall px": 20,
+    "both share (mean)": 0.00983,
+    "tiles with both px": 9,
+    "cannot share (mean)": 0.00983,
+    "building px gated (pooled)": 0.00062,
+    "building px cannot (pooled)": 0.0,
+    "cannot: both cloudy (mean)": 0.00983,
+    "cannot: opaque after (mean)": 0.0,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "hysteresis 35, seed",
+    "tiles": 94,
+    "gated share (mean)": 0.05843,
+    "gated share (max)": 0.58834,
+    "fall share (mean)": 0.04876,
+    "tiles with fall px": 20,
+    "both share (mean)": 0.00983,
+    "tiles with both px": 9,
+    "cannot share (mean)": 0.00984,
+    "building px gated (pooled)": 0.01612,
+    "building px cannot (pooled)": 0.0,
+    "cannot: both cloudy (mean)": 0.00983,
+    "cannot: opaque after (mean)": 0.0,
+    "cannot: opaque before (mean)": 1e-05
+   },
+   {
+    "arm": "hysteresis 20, seed",
+    "tiles": 94,
+    "gated share (mean)": 0.09967,
+    "gated share (max)": 0.99518,
+    "fall share (mean)": 0.09006,
+    "tiles with fall px": 20,
+    "both share (mean)": 0.00983,
+    "tiles with both px": 9,
+    "cannot share (mean)": 0.0204,
+    "building px gated (pooled)": 0.06508,
+    "building px cannot (pooled)": 0.0,
+    "cannot: both cloudy (mean)": 0.00983,
+    "cannot: opaque after (mean)": 0.0,
+    "cannot: opaque before (mean)": 0.01057
+   },
+   {
+    "arm": "hysteresis 50, grown",
+    "tiles": 94,
+    "gated share (mean)": 0.06808,
+    "gated share (max)": 0.46517,
+    "fall share (mean)": 0.04245,
+    "tiles with fall px": 44,
+    "both share (mean)": 0.00983,
+    "tiles with both px": 9,
+    "cannot share (mean)": 0.0099,
+    "building px gated (pooled)": 0.00528,
+    "building px cannot (pooled)": 0.0,
+    "cannot: both cloudy (mean)": 0.00983,
+    "cannot: opaque after (mean)": 6e-05,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "hysteresis 35, grown",
+    "tiles": 94,
+    "gated share (mean)": 0.13455,
+    "gated share (max)": 0.79857,
+    "fall share (mean)": 0.07854,
+    "tiles with fall px": 48,
+    "both share (mean)": 0.00983,
+    "tiles with both px": 9,
+    "cannot share (mean)": 0.00992,
+    "building px gated (pooled)": 0.048,
+    "building px cannot (pooled)": 0.0,
+    "cannot: both cloudy (mean)": 0.00983,
+    "cannot: opaque after (mean)": 6e-05,
+    "cannot: opaque before (mean)": 2e-05
+   },
+   {
+    "arm": "hysteresis 20, grown",
+    "tiles": 94,
+    "gated share (mean)": 0.26624,
+    "gated share (max)": 0.99518,
+    "fall share (mean)": 0.13451,
+    "tiles with fall px": 49,
+    "both share (mean)": 0.00983,
+    "tiles with both px": 9,
+    "cannot share (mean)": 0.02047,
+    "building px gated (pooled)": 0.24088,
+    "building px cannot (pooled)": 0.0,
+    "cannot: both cloudy (mean)": 0.00983,
+    "cannot: opaque after (mean)": 7e-05,
+    "cannot: opaque before (mean)": 0.01056
+   }
+  ],
+  "all 226 development tiles": [
+   {
+    "arm": "existing two-date",
+    "tiles": 226,
+    "gated share (mean)": 0.17055,
+    "gated share (max)": 1.0,
+    "fall share (mean)": 0.0,
+    "tiles with fall px": 0,
+    "both share (mean)": 0.0,
+    "tiles with both px": 0,
+    "cannot share (mean)": 0.04267,
+    "building px gated (pooled)": 0.1932,
+    "building px cannot (pooled)": 0.04441,
+    "cannot: both cloudy (mean)": NaN,
+    "cannot: opaque after (mean)": NaN,
+    "cannot: opaque before (mean)": NaN
+   },
+   {
+    "arm": "either-date",
+    "tiles": 226,
+    "gated share (mean)": 0.18064,
+    "gated share (max)": 1.0,
+    "fall share (mean)": 0.00547,
+    "tiles with fall px": 29,
+    "both share (mean)": 0.00477,
+    "tiles with both px": 17,
+    "cannot share (mean)": 0.04731,
+    "building px gated (pooled)": 0.19431,
+    "building px cannot (pooled)": 0.04441,
+    "cannot: both cloudy (mean)": 0.00477,
+    "cannot: opaque after (mean)": 0.04254,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "either-date, both smooth",
+    "tiles": 226,
+    "gated share (mean)": 0.17622,
+    "gated share (max)": 1.0,
+    "fall share (mean)": 0.00547,
+    "tiles with fall px": 29,
+    "both share (mean)": 0.0002,
+    "tiles with both px": 3,
+    "cannot share (mean)": 0.04287,
+    "building px gated (pooled)": 0.19431,
+    "building px cannot (pooled)": 0.04441,
+    "cannot: both cloudy (mean)": 0.0002,
+    "cannot: opaque after (mean)": 0.04267,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "hysteresis 50, seed",
+    "tiles": 226,
+    "gated share (mean)": 0.26294,
+    "gated share (max)": 1.0,
+    "fall share (mean)": 0.01326,
+    "tiles with fall px": 29,
+    "both share (mean)": 0.00477,
+    "tiles with both px": 17,
+    "cannot share (mean)": 0.05365,
+    "building px gated (pooled)": 0.31946,
+    "building px cannot (pooled)": 0.04702,
+    "cannot: both cloudy (mean)": 0.00477,
+    "cannot: opaque after (mean)": 0.04888,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "hysteresis 35, seed",
+    "tiles": 226,
+    "gated share (mean)": 0.34075,
+    "gated share (max)": 1.0,
+    "fall share (mean)": 0.02355,
+    "tiles with fall px": 29,
+    "both share (mean)": 0.00477,
+    "tiles with both px": 17,
+    "cannot share (mean)": 0.06241,
+    "building px gated (pooled)": 0.42515,
+    "building px cannot (pooled)": 0.05845,
+    "cannot: both cloudy (mean)": 0.00477,
+    "cannot: opaque after (mean)": 0.05764,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "hysteresis 20, seed",
+    "tiles": 226,
+    "gated share (mean)": 0.42698,
+    "gated share (max)": 1.0,
+    "fall share (mean)": 0.04705,
+    "tiles with fall px": 29,
+    "both share (mean)": 0.00477,
+    "tiles with both px": 17,
+    "cannot share (mean)": 0.08081,
+    "building px gated (pooled)": 0.54983,
+    "building px cannot (pooled)": 0.07718,
+    "cannot: both cloudy (mean)": 0.00477,
+    "cannot: opaque after (mean)": 0.07164,
+    "cannot: opaque before (mean)": 0.00439
+   },
+   {
+    "arm": "hysteresis 50, grown",
+    "tiles": 226,
+    "gated share (mean)": 0.28592,
+    "gated share (max)": 1.0,
+    "fall share (mean)": 0.02132,
+    "tiles with fall px": 66,
+    "both share (mean)": 0.00477,
+    "tiles with both px": 17,
+    "cannot share (mean)": 0.05368,
+    "building px gated (pooled)": 0.33642,
+    "building px cannot (pooled)": 0.04702,
+    "cannot: both cloudy (mean)": 0.00477,
+    "cannot: opaque after (mean)": 0.0489,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "hysteresis 35, grown",
+    "tiles": 226,
+    "gated share (mean)": 0.38856,
+    "gated share (max)": 1.0,
+    "fall share (mean)": 0.04112,
+    "tiles with fall px": 74,
+    "both share (mean)": 0.00477,
+    "tiles with both px": 17,
+    "cannot share (mean)": 0.06242,
+    "building px gated (pooled)": 0.46329,
+    "building px cannot (pooled)": 0.05844,
+    "cannot: both cloudy (mean)": 0.00477,
+    "cannot: opaque after (mean)": 0.05764,
+    "cannot: opaque before (mean)": 1e-05
+   },
+   {
+    "arm": "hysteresis 20, grown",
+    "tiles": 226,
+    "gated share (mean)": 0.52523,
+    "gated share (max)": 1.0,
+    "fall share (mean)": 0.07761,
+    "tiles with fall px": 75,
+    "both share (mean)": 0.00477,
+    "tiles with both px": 17,
+    "cannot share (mean)": 0.08088,
+    "building px gated (pooled)": 0.6463,
+    "building px cannot (pooled)": 0.07727,
+    "cannot: both cloudy (mean)": 0.00477,
+    "cannot: opaque after (mean)": 0.07171,
+    "cannot: opaque before (mean)": 0.00439
+   }
+  ],
+  "tiles the tile rule scores": [
+   {
+    "arm": "existing two-date",
+    "tiles": 209,
+    "gated share (mean)": 0.11415,
+    "gated share (max)": 0.7296,
+    "fall share (mean)": 0.0,
+    "tiles with fall px": 0,
+    "both share (mean)": 0.0,
+    "tiles with both px": 0,
+    "cannot share (mean)": 0.00561,
+    "building px gated (pooled)": 0.12094,
+    "building px cannot (pooled)": 0.00418,
+    "cannot: both cloudy (mean)": NaN,
+    "cannot: opaque after (mean)": NaN,
+    "cannot: opaque before (mean)": NaN
+   },
+   {
+    "arm": "either-date",
+    "tiles": 209,
+    "gated share (mean)": 0.12501,
+    "gated share (max)": 0.7296,
+    "fall share (mean)": 0.00591,
+    "tiles with fall px": 29,
+    "both share (mean)": 0.00494,
+    "tiles with both px": 14,
+    "cannot share (mean)": 0.01055,
+    "building px gated (pooled)": 0.12216,
+    "building px cannot (pooled)": 0.00418,
+    "cannot: both cloudy (mean)": 0.00494,
+    "cannot: opaque after (mean)": 0.00561,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "either-date, both smooth",
+    "tiles": 209,
+    "gated share (mean)": 0.12028,
+    "gated share (max)": 0.7296,
+    "fall share (mean)": 0.00591,
+    "tiles with fall px": 29,
+    "both share (mean)": 0.00022,
+    "tiles with both px": 3,
+    "cannot share (mean)": 0.00582,
+    "building px gated (pooled)": 0.12216,
+    "building px cannot (pooled)": 0.00418,
+    "cannot: both cloudy (mean)": 0.00022,
+    "cannot: opaque after (mean)": 0.00561,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "hysteresis 50, seed",
+    "tiles": 209,
+    "gated share (mean)": 0.21118,
+    "gated share (max)": 0.99557,
+    "fall share (mean)": 0.01434,
+    "tiles with fall px": 29,
+    "both share (mean)": 0.00494,
+    "tiles with both px": 14,
+    "cannot share (mean)": 0.01068,
+    "building px gated (pooled)": 0.25719,
+    "building px cannot (pooled)": 0.00425,
+    "cannot: both cloudy (mean)": 0.00494,
+    "cannot: opaque after (mean)": 0.00574,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "hysteresis 35, seed",
+    "tiles": 209,
+    "gated share (mean)": 0.29309,
+    "gated share (max)": 0.99994,
+    "fall share (mean)": 0.02547,
+    "tiles with fall px": 29,
+    "both share (mean)": 0.00494,
+    "tiles with both px": 14,
+    "cannot share (mean)": 0.01552,
+    "building px gated (pooled)": 0.37227,
+    "building px cannot (pooled)": 0.00435,
+    "cannot: both cloudy (mean)": 0.00494,
+    "cannot: opaque after (mean)": 0.01057,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "hysteresis 20, seed",
+    "tiles": 209,
+    "gated share (mean)": 0.3848,
+    "gated share (max)": 1.0,
+    "fall share (mean)": 0.05088,
+    "tiles with fall px": 29,
+    "both share (mean)": 0.00494,
+    "tiles with both px": 14,
+    "cannot share (mean)": 0.02961,
+    "building px gated (pooled)": 0.5086,
+    "building px cannot (pooled)": 0.00715,
+    "cannot: both cloudy (mean)": 0.00494,
+    "cannot: opaque after (mean)": 0.01992,
+    "cannot: opaque before (mean)": 0.00475
+   },
+   {
+    "arm": "hysteresis 50, grown",
+    "tiles": 209,
+    "gated share (mean)": 0.23568,
+    "gated share (max)": 0.99557,
+    "fall share (mean)": 0.02276,
+    "tiles with fall px": 65,
+    "both share (mean)": 0.00494,
+    "tiles with both px": 14,
+    "cannot share (mean)": 0.01072,
+    "building px gated (pooled)": 0.27591,
+    "building px cannot (pooled)": 0.00425,
+    "cannot: both cloudy (mean)": 0.00494,
+    "cannot: opaque after (mean)": 0.00578,
+    "cannot: opaque before (mean)": 0.0
+   },
+   {
+    "arm": "hysteresis 35, grown",
+    "tiles": 209,
+    "gated share (mean)": 0.34422,
+    "gated share (max)": 0.99994,
+    "fall share (mean)": 0.04394,
+    "tiles with fall px": 73,
+    "both share (mean)": 0.00494,
+    "tiles with both px": 14,
+    "cannot share (mean)": 0.01554,
+    "building px gated (pooled)": 0.41438,
+    "building px cannot (pooled)": 0.00435,
+    "cannot: both cloudy (mean)": 0.00494,
+    "cannot: opaque after (mean)": 0.01059,
+    "cannot: opaque before (mean)": 1e-05
+   },
+   {
+    "arm": "hysteresis 20, grown",
+    "tiles": 209,
+    "gated share (mean)": 0.49027,
+    "gated share (max)": 1.0,
+    "fall share (mean)": 0.08325,
+    "tiles with fall px": 74,
+    "both share (mean)": 0.00494,
+    "tiles with both px": 14,
+    "cannot share (mean)": 0.02958,
+    "building px gated (pooled)": 0.61512,
+    "building px cannot (pooled)": 0.00715,
+    "cannot: both cloudy (mean)": 0.00494,
+    "cannot: opaque after (mean)": 0.01988,
+    "cannot: opaque before (mean)": 0.00475
+   }
+  ]
+ },
+ "B constraints": {
+  "hysteresis 50, seed": {
+   "S1 clear ground changed": 0.036502090938623416,
+   "real clear tiles gated share (mean)": 0.03778275105742862,
+   "real clear tiles building px gated": 0.0006194648831840495,
+   "constraints hold": false,
+   "primary holds": true,
+   "meets the plan": false
+  },
+  "hysteresis 35, seed": {
+   "S1 clear ground changed": 0.13174399526054037,
+   "real clear tiles gated share (mean)": 0.058432454523945875,
+   "real clear tiles building px gated": 0.016116891582840822,
+   "constraints hold": false,
+   "primary holds": true,
+   "meets the plan": false
+  },
+  "hysteresis 20, seed": {
+   "S1 clear ground changed": 0.25716819942472,
+   "real clear tiles gated share (mean)": 0.09967111977035431,
+   "real clear tiles building px gated": 0.06508102864784981,
+   "constraints hold": false,
+   "primary holds": true,
+   "meets the plan": false
+  },
+  "hysteresis 50, grown": {
+   "S1 clear ground changed": 0.04483572151729363,
+   "real clear tiles gated share (mean)": 0.06808457613735817,
+   "real clear tiles building px gated": 0.0052774566404594605,
+   "constraints hold": false
+  },
+  "hysteresis 35, grown": {
+   "S1 clear ground changed": 0.14687291482461678,
+   "real clear tiles gated share (mean)": 0.13455182819585607,
+   "real clear tiles building px gated": 0.04799532280002929,
+   "constraints hold": false
+  },
+  "hysteresis 20, grown": {
+   "S1 clear ground changed": 0.2708929254505207,
+   "real clear tiles gated share (mean)": 0.266242945118412,
+   "real clear tiles building px gated": 0.24087579849143495,
+   "constraints hold": false
+  }
+ },
+ "road decisions": {
+  "existing two-date": {
+   "ASSESS": 813,
+   "CANNOT ASSESS": 88,
+   "CORRECT": 136
+  },
+  "either-date": {
+   "ASSESS": 793,
+   "CANNOT ASSESS": 89,
+   "CORRECT": 155
+  },
+  "either-date, both smooth": {
+   "ASSESS": 793,
+   "CANNOT ASSESS": 88,
+   "CORRECT": 156
+  },
+  "hysteresis 50, seed": {
+   "ASSESS": 689,
+   "CANNOT ASSESS": 95,
+   "CORRECT": 253
+  },
+  "hysteresis 35, seed": {
+   "ASSESS": 607,
+   "CANNOT ASSESS": 95,
+   "CORRECT": 335
+  },
+  "hysteresis 20, seed": {
+   "ASSESS": 510,
+   "CANNOT ASSESS": 130,
+   "CORRECT": 397
+  },
+  "hysteresis 50, grown": {
+   "ASSESS": 651,
+   "CANNOT ASSESS": 94,
+   "CORRECT": 292
+  },
+  "hysteresis 35, grown": {
+   "ASSESS": 520,
+   "CANNOT ASSESS": 95,
+   "CORRECT": 422
+  },
+  "hysteresis 20, grown": {
+   "ASSESS": 369,
+   "CANNOT ASSESS": 131,
+   "CORRECT": 537
+  }
+ },
+ "road transitions": {
+  "either-date": {
+   "ASSESS": {
+    "ASSESS": 793,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 0
+   },
+   "CANNOT ASSESS": {
+    "ASSESS": 0,
+    "CANNOT ASSESS": 88,
+    "CORRECT": 1
+   },
+   "CORRECT": {
+    "ASSESS": 20,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 135
+   }
+  },
+  "either-date, both smooth": {
+   "ASSESS": {
+    "ASSESS": 793,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 0
+   },
+   "CANNOT ASSESS": {
+    "ASSESS": 0,
+    "CANNOT ASSESS": 88,
+    "CORRECT": 0
+   },
+   "CORRECT": {
+    "ASSESS": 20,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 136
+   }
+  },
+  "hysteresis 50, seed": {
+   "ASSESS": {
+    "ASSESS": 689,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 0
+   },
+   "CANNOT ASSESS": {
+    "ASSESS": 0,
+    "CANNOT ASSESS": 88,
+    "CORRECT": 7
+   },
+   "CORRECT": {
+    "ASSESS": 124,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 129
+   }
+  },
+  "hysteresis 35, seed": {
+   "ASSESS": {
+    "ASSESS": 607,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 0
+   },
+   "CANNOT ASSESS": {
+    "ASSESS": 1,
+    "CANNOT ASSESS": 85,
+    "CORRECT": 9
+   },
+   "CORRECT": {
+    "ASSESS": 205,
+    "CANNOT ASSESS": 3,
+    "CORRECT": 127
+   }
+  },
+  "hysteresis 20, seed": {
+   "ASSESS": {
+    "ASSESS": 510,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 0
+   },
+   "CANNOT ASSESS": {
+    "ASSESS": 9,
+    "CANNOT ASSESS": 88,
+    "CORRECT": 33
+   },
+   "CORRECT": {
+    "ASSESS": 294,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 103
+   }
+  },
+  "hysteresis 50, grown": {
+   "ASSESS": {
+    "ASSESS": 651,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 0
+   },
+   "CANNOT ASSESS": {
+    "ASSESS": 0,
+    "CANNOT ASSESS": 87,
+    "CORRECT": 7
+   },
+   "CORRECT": {
+    "ASSESS": 162,
+    "CANNOT ASSESS": 1,
+    "CORRECT": 129
+   }
+  },
+  "hysteresis 35, grown": {
+   "ASSESS": {
+    "ASSESS": 520,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 0
+   },
+   "CANNOT ASSESS": {
+    "ASSESS": 1,
+    "CANNOT ASSESS": 85,
+    "CORRECT": 9
+   },
+   "CORRECT": {
+    "ASSESS": 292,
+    "CANNOT ASSESS": 3,
+    "CORRECT": 127
+   }
+  },
+  "hysteresis 20, grown": {
+   "ASSESS": {
+    "ASSESS": 369,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 0
+   },
+   "CANNOT ASSESS": {
+    "ASSESS": 9,
+    "CANNOT ASSESS": 88,
+    "CORRECT": 34
+   },
+   "CORRECT": {
+    "ASSESS": 435,
+    "CANNOT ASSESS": 0,
+    "CORRECT": 102
+   }
+  }
+ },
+ "set-aside roads": {
+  "existing two-date": {
+   "set aside": 239,
+   "come back (ASSESS or CORRECT)": 151,
+   "ASSESS": 15,
+   "CORRECT": 136,
+   "CANNOT ASSESS": 88,
+   "tile rule (cloudy tile): set aside": 146,
+   "tile rule (cloudy tile): come back": 66,
+   "road rule only: set aside": 93,
+   "road rule only: come back": 85,
+   "assessable roads that would become CANNOT ASSESS": 0,
+   "assessable roads that would become CORRECT": 0
+  },
+  "either-date": {
+   "set aside": 239,
+   "come back (ASSESS or CORRECT)": 150,
+   "ASSESS": 15,
+   "CORRECT": 135,
+   "CANNOT ASSESS": 89,
+   "tile rule (cloudy tile): set aside": 146,
+   "tile rule (cloudy tile): come back": 66,
+   "road rule only: set aside": 93,
+   "road rule only: come back": 84,
+   "assessable roads that would become CANNOT ASSESS": 0,
+   "assessable roads that would become CORRECT": 20
+  },
+  "either-date, both smooth": {
+   "set aside": 239,
+   "come back (ASSESS or CORRECT)": 151,
+   "ASSESS": 15,
+   "CORRECT": 136,
+   "CANNOT ASSESS": 88,
+   "tile rule (cloudy tile): set aside": 146,
+   "tile rule (cloudy tile): come back": 66,
+   "road rule only: set aside": 93,
+   "road rule only: come back": 85,
+   "assessable roads that would become CANNOT ASSESS": 0,
+   "assessable roads that would become CORRECT": 20
+  },
+  "hysteresis 50, seed": {
+   "set aside": 239,
+   "come back (ASSESS or CORRECT)": 144,
+   "ASSESS": 8,
+   "CORRECT": 136,
+   "CANNOT ASSESS": 95,
+   "tile rule (cloudy tile): set aside": 146,
+   "tile rule (cloudy tile): come back": 60,
+   "road rule only: set aside": 93,
+   "road rule only: come back": 84,
+   "assessable roads that would become CANNOT ASSESS": 0,
+   "assessable roads that would become CORRECT": 117
+  },
+  "hysteresis 35, seed": {
+   "set aside": 239,
+   "come back (ASSESS or CORRECT)": 145,
+   "ASSESS": 6,
+   "CORRECT": 139,
+   "CANNOT ASSESS": 94,
+   "tile rule (cloudy tile): set aside": 146,
+   "tile rule (cloudy tile): come back": 61,
+   "road rule only: set aside": 93,
+   "road rule only: come back": 84,
+   "assessable roads that would become CANNOT ASSESS": 1,
+   "assessable roads that would become CORRECT": 196
+  },
+  "hysteresis 20, seed": {
+   "set aside": 239,
+   "come back (ASSESS or CORRECT)": 117,
+   "ASSESS": 4,
+   "CORRECT": 113,
+   "CANNOT ASSESS": 122,
+   "tile rule (cloudy tile): set aside": 146,
+   "tile rule (cloudy tile): come back": 35,
+   "road rule only: set aside": 93,
+   "road rule only: come back": 82,
+   "assessable roads that would become CANNOT ASSESS": 8,
+   "assessable roads that would become CORRECT": 284
+  },
+  "hysteresis 50, grown": {
+   "set aside": 239,
+   "come back (ASSESS or CORRECT)": 145,
+   "ASSESS": 7,
+   "CORRECT": 138,
+   "CANNOT ASSESS": 94,
+   "tile rule (cloudy tile): set aside": 146,
+   "tile rule (cloudy tile): come back": 61,
+   "road rule only: set aside": 93,
+   "road rule only: come back": 84,
+   "assessable roads that would become CANNOT ASSESS": 0,
+   "assessable roads that would become CORRECT": 154
+  },
+  "hysteresis 35, grown": {
+   "set aside": 239,
+   "come back (ASSESS or CORRECT)": 145,
+   "ASSESS": 6,
+   "CORRECT": 139,
+   "CANNOT ASSESS": 94,
+   "tile rule (cloudy tile): set aside": 146,
+   "tile rule (cloudy tile): come back": 61,
+   "road rule only: set aside": 93,
+   "road rule only: come back": 84,
+   "assessable roads that would become CANNOT ASSESS": 1,
+   "assessable roads that would become CORRECT": 283
+  },
+  "hysteresis 20, grown": {
+   "set aside": 239,
+   "come back (ASSESS or CORRECT)": 116,
+   "ASSESS": 4,
+   "CORRECT": 112,
+   "CANNOT ASSESS": 123,
+   "tile rule (cloudy tile): set aside": 146,
+   "tile rule (cloudy tile): come back": 34,
+   "road rule only: set aside": 93,
+   "road rule only: come back": 82,
+   "assessable roads that would become CANNOT ASSESS": 8,
+   "assessable roads that would become CORRECT": 425
+  }
+ },
+ "edge loss": {
+  "top-quartile roads": 260,
+  "caught by the cloud rule (set aside)": 0.3153846153846154,
+  "caught by the road rule (dark-rise share >= 0.2)": 0.3153846153846154,
+  "dark channel up by more than 20 (strip mean)": 0.5346153846153846,
+  "median edge loss": 0.06872577727168219,
+  "gated >= 20% of the strip: existing two-date": 0.31153846153846154,
+  "gated >= 20% of the strip: either-date": 0.3269230769230769,
+  "gated >= 20% of the strip: either-date, both smooth": 0.3269230769230769,
+  "gated >= 20% of the strip: hysteresis 50, seed": 0.4346153846153846,
+  "gated >= 20% of the strip: hysteresis 35, seed": 0.5153846153846153,
+  "gated >= 20% of the strip: hysteresis 20, seed": 0.5692307692307692,
+  "gated >= 20% of the strip: hysteresis 50, grown": 0.46923076923076923,
+  "gated >= 20% of the strip: hysteresis 35, grown": 0.5884615384615385,
+  "gated >= 20% of the strip: hysteresis 20, grown": 0.6807692307692308
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "alpha": 1.0,
+ "sigma_px": 8.0,
+ "band_px": 16,
+ "pooled_all": [
+  {
+   "arm": "D0",
+   "learner": "random forest",
+   "precision": 0.883701,
+   "precision 95% CI": "0.852-0.911",
+   "recall": 0.8526,
+   "recall 95% CI": "0.823-0.878",
+   "F1": 0.867872,
+   "F1 95% CI": "0.848-0.885",
+   "IoU": 0.766585,
+   "IoU 95% CI": "0.736-0.794"
+  },
+  {
+   "arm": "D5a weighted",
+   "learner": "random forest",
+   "precision": 0.881652,
+   "precision 95% CI": "0.850-0.909",
+   "recall": 0.856232,
+   "recall 95% CI": "0.827-0.881",
+   "F1": 0.868756,
+   "F1 95% CI": "0.849-0.886",
+   "IoU": 0.767965,
+   "IoU 95% CI": "0.737-0.795"
+  },
+  {
+   "arm": "D5b edge-sampled",
+   "learner": "random forest",
+   "precision": 0.881396,
+   "precision 95% CI": "0.849-0.910",
+   "recall": 0.855047,
+   "recall 95% CI": "0.825-0.880",
+   "F1": 0.868021,
+   "F1 95% CI": "0.848-0.885",
+   "IoU": 0.766818,
+   "IoU 95% CI": "0.736-0.794"
+  }
+ ],
+ "paired_all": [
+  {
+   "a": "D5a weighted",
+   "b": "D0",
+   "F1 a - b": 0.000883816,
+   "95% CI": "+0.000 to +0.002",
+   "ci_low": 0.000130246,
+   "ci_high": 0.00161747,
+   "images a higher": 71,
+   "images b higher": 49,
+   "sign test p": 0.0547798
+  },
+  {
+   "a": "D5b edge-sampled",
+   "b": "D0",
+   "F1 a - b": 0.000149243,
+   "95% CI": "-0.001 to +0.001",
+   "ci_low": -0.00116025,
+   "ci_high": 0.00136174,
+   "images a higher": 68,
+   "images b higher": 52,
+   "sign test p": 0.170645
+  }
+ ],
+ "pooled_band": [
+  {
+   "arm": "D0",
+   "learner": "random forest",
+   "precision": 0.769015,
+   "precision 95% CI": "0.742-0.796",
+   "recall": 0.68056,
+   "recall 95% CI": "0.638-0.720",
+   "F1": 0.722088,
+   "F1 95% CI": "0.701-0.741",
+   "IoU": 0.565053,
+   "IoU 95% CI": "0.540-0.589"
+  },
+  {
+   "arm": "D5a weighted",
+   "learner": "random forest",
+   "precision": 0.767753,
+   "precision 95% CI": "0.741-0.794",
+   "recall": 0.68904,
+   "recall 95% CI": "0.647-0.729",
+   "F1": 0.72627,
+   "F1 95% CI": "0.706-0.745",
+   "IoU": 0.570192,
+   "IoU 95% CI": "0.545-0.594"
+  },
+  {
+   "arm": "D5b edge-sampled",
+   "learner": "random forest",
+   "precision": 0.768669,
+   "precision 95% CI": "0.742-0.795",
+   "recall": 0.686824,
+   "recall 95% CI": "0.645-0.726",
+   "F1": 0.725446,
+   "F1 95% CI": "0.705-0.744",
+   "IoU": 0.569176,
+   "IoU 95% CI": "0.545-0.592"
+  }
+ ],
+ "paired_band": [
+  {
+   "a": "D5a weighted",
+   "b": "D0",
+   "F1 a - b": 0.00418171,
+   "95% CI": "+0.003 to +0.006",
+   "ci_low": 0.00274874,
+   "ci_high": 0.00569832,
+   "images a higher": 84,
+   "images b higher": 36,
+   "sign test p": 1.3897e-05
+  },
+  {
+   "a": "D5b edge-sampled",
+   "b": "D0",
+   "F1 a - b": 0.0033573,
+   "95% CI": "+0.002 to +0.005",
+   "ci_low": 0.00169826,
+   "ci_high": 0.00514797,
+   "images a higher": 82,
+   "images b higher": 38,
+   "sign test p": 7.2915e-05
+  }
+ ],
+ "pooled_interior": [
+  {
+   "arm": "D0",
+   "learner": "random forest",
+   "precision": 0.923613,
+   "precision 95% CI": "0.889-0.952",
+   "recall": 0.919989,
+   "recall 95% CI": "0.893-0.943",
+   "F1": 0.921797,
+   "F1 95% CI": "0.900-0.939",
+   "IoU": 0.854939,
+   "IoU 95% CI": "0.819-0.885"
+  },
+  {
+   "arm": "D5a weighted",
+   "learner": "random forest",
+   "precision": 0.921691,
+   "precision 95% CI": "0.887-0.950",
+   "recall": 0.92172,
+   "recall 95% CI": "0.895-0.944",
+   "F1": 0.921706,
+   "F1 95% CI": "0.900-0.939",
+   "IoU": 0.854781,
+   "IoU 95% CI": "0.818-0.885"
+  },
+  {
+   "arm": "D5b edge-sampled",
+   "learner": "random forest",
+   "precision": 0.920845,
+   "precision 95% CI": "0.884-0.950",
+   "recall": 0.920939,
+   "recall 95% CI": "0.894-0.943",
+   "F1": 0.920892,
+   "F1 95% CI": "0.899-0.938",
+   "IoU": 0.853383,
+   "IoU 95% CI": "0.816-0.884"
+  }
+ ],
+ "paired_interior": [
+  {
+   "a": "D5a weighted",
+   "b": "D0",
+   "F1 a - b": -9.14487e-05,
+   "95% CI": "-0.001 to +0.001",
+   "ci_low": -0.000833767,
+   "ci_high": 0.00064012,
+   "images a higher": 58,
+   "images b higher": 61,
+   "sign test p": 0.85463
+  },
+  {
+   "a": "D5b edge-sampled",
+   "b": "D0",
+   "F1 a - b": -0.00090489,
+   "95% CI": "-0.003 to +0.001",
+   "ci_low": -0.00251533,
+   "ci_high": 0.000550513,
+   "images a higher": 55,
+   "images b higher": 64,
+   "sign test p": 0.463488
+  }
+ ]
+}

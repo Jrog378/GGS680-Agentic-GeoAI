@@ -1,0 +1,126 @@
+{
+ "chosen": "classical + DINOv2 - dark",
+ "columns": [
+  "grey",
+  "std21",
+  "bright_flag",
+  "range21",
+  "grad21",
+  "std41",
+  "v2_pc0",
+  "v2_pc1",
+  "v2_pc2",
+  "v2_pc3",
+  "v2_pc4",
+  "v2_pc5",
+  "v2_pc6",
+  "v2_pc7",
+  "v2_pc8",
+  "v2_pc9",
+  "v2_pc10",
+  "v2_pc11",
+  "v2_pc12",
+  "v2_pc13",
+  "v2_pc14",
+  "v2_pc15",
+  "v2_pc16",
+  "v2_pc17",
+  "v2_pc18",
+  "v2_pc19",
+  "v2_pc20",
+  "v2_pc21",
+  "v2_pc22",
+  "v2_pc23",
+  "v2_pc24",
+  "v2_pc25",
+  "v2_pc26",
+  "v2_pc27",
+  "v2_pc28",
+  "v2_pc29",
+  "v2_pc30",
+  "v2_pc31"
+ ],
+ "table": [
+  {
+   "arm": "bright",
+   "F1": 0.59255,
+   "best - arm 95% CI": "+0.247 to +0.304",
+   "candidate": false,
+   "uses DINOv2": false,
+   "classical tools": 1,
+   "columns": 3
+  },
+  {
+   "arm": "dark",
+   "F1": 0.57918,
+   "best - arm 95% CI": "+0.262 to +0.315",
+   "candidate": false,
+   "uses DINOv2": false,
+   "classical tools": 1,
+   "columns": 2
+  },
+  {
+   "arm": "bright + dark",
+   "F1": 0.61332,
+   "best - arm 95% CI": "+0.225 to +0.282",
+   "candidate": false,
+   "uses DINOv2": false,
+   "classical tools": 2,
+   "columns": 5
+  },
+  {
+   "arm": "classical",
+   "F1": 0.75956,
+   "best - arm 95% CI": "+0.086 to +0.132",
+   "candidate": false,
+   "uses DINOv2": false,
+   "classical tools": 3,
+   "columns": 8
+  },
+  {
+   "arm": "DINOv2",
+   "F1": 0.85924,
+   "best - arm 95% CI": "+0.002 to +0.014",
+   "candidate": false,
+   "uses DINOv2": true,
+   "classical tools": 0,
+   "columns": 32
+  },
+  {
+   "arm": "classical + DINOv2",
+   "F1": 0.86542,
+   "best - arm 95% CI": "+0.001 to +0.005",
+   "candidate": false,
+   "uses DINOv2": true,
+   "classical tools": 3,
+   "columns": 40
+  },
+  {
+   "arm": "classical + DINOv2 - bright",
+   "F1": 0.86289,
+   "best - arm 95% CI": "+0.003 to +0.007",
+   "candidate": false,
+   "uses DINOv2": true,
+   "classical tools": 2,
+   "columns": 37
+  },
+  {
+   "arm": "classical + DINOv2 - dark",
+   "F1": 0.86787,
+   "best - arm 95% CI": "-",
+   "candidate": true,
+   "uses DINOv2": true,
+   "classical tools": 2,
+   "columns": 38
+  },
+  {
+   "arm": "classical + DINOv2 - texture",
+   "F1": 0.86335,
+   "best - arm 95% CI": "+0.002 to +0.007",
+   "candidate": false,
+   "uses DINOv2": true,
+   "classical tools": 2,
+   "columns": 37
+  }
+ ]
+}

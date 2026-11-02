@@ -1,0 +1,48 @@
+{
+  "v": 4,
+  "title": "Seeing Through Clouds",
+  "lists": "css",
+  "order": [
+    "cover",
+    "question",
+    "workflow",
+    "data",
+    "result1",
+    "result2",
+    "flood",
+    "next",
+    "spatialcv",
+    "review",
+    "masks",
+    "layering",
+    "refs",
+    "fullrefs",
+    "bgrefs"
+  ],
+  "sections": {
+    "s1": {
+      "description": "Main talk: the problem, the questions, the method, the data, three preliminary results and the plan.",
+      "start": "cover"
+    },
+    "s2": {
+      "description": "Supporting slides: checks in new areas, the human review and AI use, the mask check, how the two images are layered, references and code, and full references.",
+      "start": "spatialcv"
+    }
+  },
+  "faces": {
+    "archivo": {
+      "family": "Archivo",
+      "href": "https://fonts.googleapis.com/css2?family=Archivo:wght@500..800&display=swap"
+    },
+    "ibm-plex-sans": {
+      "family": "IBM Plex Sans",
+      "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap"
+    },
+    "ibm-plex-mono": {
+      "family": "IBM Plex Mono",
+      "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+    }
+  },
+  "designSystems": [],
+  "cover": "cover"
+}

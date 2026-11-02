@@ -1,0 +1,117 @@
+{
+ "epochs (chosen on inner fold 1)": 2,
+ "es history": [
+  {
+   "epoch": 1,
+   "train loss": 0.566219985267663,
+   "seconds": 129.7,
+   "eval loss": 0.6353627413731299
+  },
+  {
+   "epoch": 2,
+   "train loss": 0.42348450193459564,
+   "seconds": 134.0,
+   "eval loss": 0.27683306628393256
+  },
+  {
+   "epoch": 3,
+   "train loss": 0.38180413542512703,
+   "seconds": 146.4,
+   "eval loss": 0.3146119252191495
+  },
+  {
+   "epoch": 4,
+   "train loss": 0.343121876163423,
+   "seconds": 142.4,
+   "eval loss": 0.31011587061408474
+  },
+  {
+   "epoch": 5,
+   "train loss": 0.31777290854362483,
+   "seconds": 127.3,
+   "eval loss": 0.3792936707002886
+  }
+ ],
+ "cross-fit histories": [
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.566219985267663,
+    "seconds": 127.0
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.42348450193459564,
+    "seconds": 127.2
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.6289934778924509,
+    "seconds": 107.3
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.42485378975698584,
+    "seconds": 110.0
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.5634021535696542,
+    "seconds": 83.8
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.5502204417540725,
+    "seconds": 82.7
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.684118692890453,
+    "seconds": 94.4
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.4989632613406516,
+    "seconds": 94.4
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.7461584349713576,
+    "seconds": 112.1
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.4105725031274404,
+    "seconds": 111.4
+   }
+  ]
+ ],
+ "seconds": 2715.0,
+ "es fit tiles": 147,
+ "es eval tiles": 31,
+ "es target roads": 422,
+ "es eval roads": 100,
+ "cross-fit target roads": [
+  422,
+  401,
+  353,
+  383,
+  364
+ ],
+ "cross-fit fit tiles": [
+  147,
+  149,
+  139,
+  124,
+  153
+ ],
+ "held-out road tiles": 47
+}

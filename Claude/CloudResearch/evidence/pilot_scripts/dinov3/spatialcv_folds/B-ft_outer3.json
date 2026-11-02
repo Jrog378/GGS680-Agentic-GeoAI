@@ -1,0 +1,241 @@
+{
+ "epochs (chosen on inner fold 1)": 6,
+ "es history": [
+  {
+   "epoch": 1,
+   "train loss": 0.6001418358692006,
+   "seconds": 56.2,
+   "eval loss": 0.22859288176703885
+  },
+  {
+   "epoch": 2,
+   "train loss": 0.3952925484758457,
+   "seconds": 55.2,
+   "eval loss": 0.2993343659922144
+  },
+  {
+   "epoch": 3,
+   "train loss": 0.405438522789193,
+   "seconds": 55.3,
+   "eval loss": 0.2049651910543048
+  },
+  {
+   "epoch": 4,
+   "train loss": 0.3659768703342027,
+   "seconds": 63.8,
+   "eval loss": 0.200007958709677
+  },
+  {
+   "epoch": 5,
+   "train loss": 0.319097062228148,
+   "seconds": 63.3,
+   "eval loss": 0.2092716249095242
+  },
+  {
+   "epoch": 6,
+   "train loss": 0.3916197514237762,
+   "seconds": 58.8,
+   "eval loss": 0.18320666246850537
+  },
+  {
+   "epoch": 7,
+   "train loss": 0.31556476447640286,
+   "seconds": 59.5,
+   "eval loss": 0.40020912605492276
+  },
+  {
+   "epoch": 8,
+   "train loss": 0.3338820248120895,
+   "seconds": 61.2,
+   "eval loss": 0.22659531566521146
+  },
+  {
+   "epoch": 9,
+   "train loss": 0.20454558681634055,
+   "seconds": 60.1,
+   "eval loss": 0.27908980872206196
+  }
+ ],
+ "cross-fit histories": [
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.6001418358692006,
+    "seconds": 60.4
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.3952925484758457,
+    "seconds": 61.6
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.405438522789193,
+    "seconds": 61.1
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.3659768703342027,
+    "seconds": 62.0
+   },
+   {
+    "epoch": 5,
+    "train loss": 0.319097062228148,
+    "seconds": 62.6
+   },
+   {
+    "epoch": 6,
+    "train loss": 0.3916197514237762,
+    "seconds": 67.2
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.5439732484846075,
+    "seconds": 71.6
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.2790216061071554,
+    "seconds": 70.6
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.1949908969137829,
+    "seconds": 69.9
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.26862520971584797,
+    "seconds": 69.1
+   },
+   {
+    "epoch": 5,
+    "train loss": 0.1421298779310146,
+    "seconds": 69.2
+   },
+   {
+    "epoch": 6,
+    "train loss": 0.07310049937643236,
+    "seconds": 71.4
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.49187400796889563,
+    "seconds": 72.4
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.3455524526922902,
+    "seconds": 74.8
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.31846420562559263,
+    "seconds": 74.6
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.27503861400712754,
+    "seconds": 74.0
+   },
+   {
+    "epoch": 5,
+    "train loss": 0.3294917088208828,
+    "seconds": 74.2
+   },
+   {
+    "epoch": 6,
+    "train loss": 0.2250566673003728,
+    "seconds": 74.2
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.48356255883638444,
+    "seconds": 67.8
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.5178333262907775,
+    "seconds": 69.9
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.2605705760860957,
+    "seconds": 65.6
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.31175978795381026,
+    "seconds": 68.8
+   },
+   {
+    "epoch": 5,
+    "train loss": 0.20512173100643788,
+    "seconds": 69.1
+   },
+   {
+    "epoch": 6,
+    "train loss": 0.2945948420159014,
+    "seconds": 67.8
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.47172629813309125,
+    "seconds": 88.7
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.3531958170403162,
+    "seconds": 87.0
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.29024389563544056,
+    "seconds": 81.9
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.3440494435520344,
+    "seconds": 75.9
+   },
+   {
+    "epoch": 5,
+    "train loss": 0.26927722561438283,
+    "seconds": 75.8
+   },
+   {
+    "epoch": 6,
+    "train loss": 0.12701063639582436,
+    "seconds": 76.5
+   }
+  ]
+ ],
+ "seconds": 3263.9,
+ "es fit tiles": 153,
+ "es eval tiles": 38,
+ "es target roads": 319,
+ "es eval roads": 136,
+ "cross-fit target roads": [
+  319,
+  354,
+  374,
+  349,
+  410
+ ],
+ "cross-fit fit tiles": [
+  153,
+  155,
+  149,
+  153,
+  154
+ ],
+ "held-out road tiles": 33
+}

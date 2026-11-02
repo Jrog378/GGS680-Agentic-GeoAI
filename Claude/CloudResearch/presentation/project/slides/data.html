@@ -1,0 +1,26 @@
+<section id="data" data-transition="fade" style="background:#F0F1F2;color:#2E2B3B;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:10px;background:linear-gradient(90deg, #000004 0%, #280B53 14%, #65156E 29%, #9F2A63 43%, #D44842 57%, #F57D15 71%, #FAC228 86%, #FCFFA4 100%)"></div>
+<p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;text-transform:uppercase;color:#5C5A69">03 · Data · SpaceNet 8 Louisiana-East · development tiles only</p>
+<h2 style="font-family:'Archivo', Arial, sans-serif;font-size:60px;font-weight:700;line-height:1.1;letter-spacing:-1px;color:#16131F">Study area and data</h2>
+<div style="display:flex;gap:40px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:12px;width:540px">
+<div style="display:flex;gap:24px;background:#FFFFFF;padding:16px;border:2px solid #C9CED5;border-radius:4px">
+<img src="/_blob/72ce1c69bd06e9baf100222f396f304a" alt="Mosaic of the south scene's 102 development tiles after the storm, each outlined by cloud class" style="width:277px;height:412px;object-fit:contain">
+<img src="/_blob/bf69ad41ce0c5727a3f8a6c7395beb15" alt="Mosaic of the west scene's 115 development tiles after the storm, each outlined by cloud class" style="width:203px;height:412px;object-fit:contain">
+</div>
+<div style="display:flex;gap:20px;flex-wrap:wrap"><div style="display:flex;gap:10px;align-items:center"><div style="width:28px;height:28px;border:4px solid #0A7570"></div><p style="font-size:24px">clear</p></div><div style="display:flex;gap:10px;align-items:center"><div style="width:28px;height:28px;border:4px solid #FCA50A"></div><p style="font-size:24px">thin cloud or haze</p></div><div style="display:flex;gap:10px;align-items:center"><div style="width:28px;height:28px;border:4px solid #BC3754"></div><p style="font-size:24px">opaque</p></div></div>
+<p style="font-size:24px;line-height:1.38;color:#5C5A69;">South (102 tiles) and west (115 tiles) after images, north up, bar 2 km; 29.7°N 90.0°W and 29.8°N 90.1°W · Imagery: Maxar via SpaceNet 8</p>
+</div>
+<table style="width:1084px;font-size:26px;color:#2E2B3B;background:#FFFFFF;border:2px solid #C9CED5">
+<tr><td style="width:24%;color:#16131F"><b>Imagery</b></td><td style="width:76%">Maxar Open Data before and after Hurricane Ida (landfall 29 Aug 2021), 0.5 m; image dates unconfirmed; greyscale</td></tr>
+<tr><td style="width:24%;color:#16131F"><b>Roads</b></td><td style="width:76%">1,037 OpenStreetMap roads with SpaceNet 8 flood labels (Hänsch et al. 2022), on 217 of the 226 development tiles</td></tr>
+<tr><td style="width:24%;color:#16131F"><b>Split</b></td><td style="width:76%">186 train · 40 validation · 40 test tiles, plus a 333-tile north negative set; the test tiles, the negative set, Germany and Louisiana-West have never been scored</td></tr>
+<tr><td style="width:24%;color:#16131F"><b>Cloud labels</b></td><td style="width:76%">HRC_WHU (Li et al. 2019): 150 Google Earth images, 0.5–15 m, expert cloud masks; 120 development, 30 sealed; academic use only</td></tr>
+<tr><td style="width:24%;color:#16131F"><b>Unit</b></td><td style="width:76%">One road = its OSM line plus a ~5 m band each side; tiles are the fold unit; dates aligned to ~0.6 m</td></tr>
+<tr><td style="width:24%;color:#BC3754"><b>Quality issues</b></td><td style="width:76%">Flood labels are “yes” or missing, never “no” · 17 tiles under opaque cloud · one after image for all development tiles</td></tr>
+</table>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;letter-spacing:1px;color:#5C5A69">SEEING THROUGH CLOUDS · GGS 662 · 30 OCT 2026</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;color:#5C5A69;text-align:right">04 / 15</p>
+<aside>The test case is Hurricane Ida in Louisiana: Maxar before and after images at half a metre, and 1,037 OpenStreetMap roads with SpaceNet 8 flood labels, on development tiles only. The test tiles and the other areas have never been scored. Two quality issues matter: flood labels are yes or missing, never no, and all the real cloud sits in one after image.</aside>
+</section>

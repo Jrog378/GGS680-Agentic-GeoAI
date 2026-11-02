@@ -1,0 +1,2874 @@
+{
+ "stages_done": [
+  "combo",
+  "gates",
+  "ida",
+  "primary",
+  "score",
+  "screen",
+  "seeds",
+  "thresholds",
+  "tiles"
+ ],
+ "gates_clear_tiles": {
+  "clear_tiles_scored": 94,
+  "clear_share_rise": {
+   "mean": 0.001287,
+   "median": 0.0,
+   "tiles_over_1pct": 0
+  },
+  "clear_share_G1": {
+   "mean": 0.00552448,
+   "median": 0.0,
+   "tiles_over_1pct": 12
+  },
+  "clear_share_G1b": {
+   "mean": 0.00473137,
+   "median": 0.0,
+   "tiles_over_1pct": 10
+  },
+  "clear_share_G1c": {
+   "mean": 0.00541994,
+   "median": 0.0,
+   "tiles_over_1pct": 12
+  },
+  "clear_share_G2": {
+   "mean": 0.0297876,
+   "median": 0.0,
+   "tiles_over_1pct": 15
+  }
+ },
+ "ida_secondary_tiles": 73,
+ "ida_grey_err_thin_vs_C0": {
+  "as is": {
+   "tiles": 73,
+   "mean_diff": 46.468,
+   "ci": [
+    35.7376,
+    56.5061
+   ],
+   "tiles_lower": 6,
+   "tiles_higher": 67,
+   "wilcoxon_p": 7.71845e-13,
+   "mean_arm": 75.1822,
+   "mean_base": 28.7142
+  },
+  "N1 Du PIF": {
+   "tiles": 73,
+   "mean_diff": 8.58393,
+   "ci": [
+    5.15758,
+    12.8744
+   ],
+   "tiles_lower": 22,
+   "tiles_higher": 51,
+   "wilcoxon_p": 4.06198e-05,
+   "mean_arm": 37.2981,
+   "mean_base": 28.7142
+  },
+  "N1b Du PIF no water removal": {
+   "tiles": 73,
+   "mean_diff": 4.99584,
+   "ci": [
+    2.15807,
+    8.67518
+   ],
+   "tiles_lower": 32,
+   "tiles_higher": 41,
+   "wilcoxon_p": 0.0369494,
+   "mean_arm": 33.71,
+   "mean_base": 28.7142
+  },
+  "N2 Schott roofs+roads": {
+   "tiles": 73,
+   "mean_diff": 44.0945,
+   "ci": [
+    33.3498,
+    54.2517
+   ],
+   "tiles_lower": 9,
+   "tiles_higher": 64,
+   "wilcoxon_p": 2.53892e-12,
+   "mean_arm": 72.8086,
+   "mean_base": 28.7142
+  },
+  "N2b Schott roofs": {
+   "tiles": 73,
+   "mean_diff": 44.4828,
+   "ci": [
+    33.6723,
+    54.5744
+   ],
+   "tiles_lower": 6,
+   "tiles_higher": 67,
+   "wilcoxon_p": 1.46141e-12,
+   "mean_arm": 73.197,
+   "mean_base": 28.7142
+  },
+  "N2c Schott roofs+roads no eps check": {
+   "tiles": 73,
+   "mean_diff": 10.4997,
+   "ci": [
+    5.98458,
+    16.5967
+   ],
+   "tiles_lower": 20,
+   "tiles_higher": 53,
+   "wilcoxon_p": 2.22165e-05,
+   "mean_arm": 39.2139,
+   "mean_base": 28.7142
+  },
+  "N3 Lin wPCA": {
+   "tiles": 73,
+   "mean_diff": 27.5339,
+   "ci": [
+    18.1916,
+    36.9998
+   ],
+   "tiles_lower": 20,
+   "tiles_higher": 53,
+   "wilcoxon_p": 7.68697e-09,
+   "mean_arm": 56.248,
+   "mean_base": 28.7142
+  },
+  "N3 Lin wPCA bounded": {
+   "tiles": 73,
+   "mean_diff": 27.8234,
+   "ci": [
+    18.4218,
+    37.411
+   ],
+   "tiles_lower": 20,
+   "tiles_higher": 53,
+   "wilcoxon_p": 7.68697e-09,
+   "mean_arm": 56.5376,
+   "mean_base": 28.7142
+  },
+  "N4 Song ridge all": {
+   "tiles": 73,
+   "mean_diff": 18.1502,
+   "ci": [
+    11.4993,
+    25.8156
+   ],
+   "tiles_lower": 15,
+   "tiles_higher": 58,
+   "wilcoxon_p": 1.8958e-08,
+   "mean_arm": 46.8644,
+   "mean_base": 28.7142
+  },
+  "N4 Song ridge all bounded": {
+   "tiles": 73,
+   "mean_diff": 25.8109,
+   "ci": [
+    17.6049,
+    34.9158
+   ],
+   "tiles_lower": 14,
+   "tiles_higher": 59,
+   "wilcoxon_p": 3.48132e-09,
+   "mean_arm": 54.5251,
+   "mean_base": 28.7142
+  },
+  "N4b Song ridge clear": {
+   "tiles": 73,
+   "mean_diff": 11.0026,
+   "ci": [
+    6.09469,
+    16.1405
+   ],
+   "tiles_lower": 19,
+   "tiles_higher": 54,
+   "wilcoxon_p": 6.46004e-06,
+   "mean_arm": 39.7168,
+   "mean_base": 28.7142
+  },
+  "A1 Chavez k=0.0": {
+   "tiles": 73,
+   "mean_diff": 6.21034,
+   "ci": [
+    3.97495,
+    8.57061
+   ],
+   "tiles_lower": 14,
+   "tiles_higher": 59,
+   "wilcoxon_p": 9.97213e-09,
+   "mean_arm": 34.9245,
+   "mean_base": 28.7142
+  },
+  "A1 Chavez k=0.5": {
+   "tiles": 73,
+   "mean_diff": 21.4921,
+   "ci": [
+    16.4482,
+    26.0408
+   ],
+   "tiles_lower": 9,
+   "tiles_higher": 64,
+   "wilcoxon_p": 2.64051e-12,
+   "mean_arm": 50.2063,
+   "mean_base": 28.7142
+  },
+  "A1 Chavez k=0.7": {
+   "tiles": 73,
+   "mean_diff": 27.7023,
+   "ci": [
+    21.5622,
+    33.2578
+   ],
+   "tiles_lower": 9,
+   "tiles_higher": 64,
+   "wilcoxon_p": 1.34988e-12,
+   "mean_arm": 56.4165,
+   "mean_base": 28.7142
+  },
+  "A1 Chavez k=1.0": {
+   "tiles": 73,
+   "mean_diff": 36.3048,
+   "ci": [
+    28.7719,
+    43.2293
+   ],
+   "tiles_lower": 6,
+   "tiles_higher": 67,
+   "wilcoxon_p": 7.71845e-13,
+   "mean_arm": 65.0189,
+   "mean_base": 28.7142
+  },
+  "A1 Chavez k=2.0": {
+   "tiles": 73,
+   "mean_diff": 58.0196,
+   "ci": [
+    47.7905,
+    67.49
+   ],
+   "tiles_lower": 1,
+   "tiles_higher": 72,
+   "wilcoxon_p": 1.45221e-13,
+   "mean_arm": 86.7338,
+   "mean_base": 28.7142
+  },
+  "G1 hysteresis corr-gate": {
+   "tiles": 35,
+   "mean_diff": 25.8633,
+   "ci": [
+    17.9178,
+    35.2929
+   ],
+   "tiles_lower": 6,
+   "tiles_higher": 28,
+   "wilcoxon_p": 5.20821e-06,
+   "mean_arm": 59.3536,
+   "mean_base": 33.4904
+  },
+  "G1b hysteresis+blob corr-gate": {
+   "tiles": 35,
+   "mean_diff": 26.0826,
+   "ci": [
+    18.0762,
+    35.7079
+   ],
+   "tiles_lower": 6,
+   "tiles_higher": 28,
+   "wilcoxon_p": 5.20821e-06,
+   "mean_arm": 59.5729,
+   "mean_base": 33.4904
+  },
+  "G1c hysteresis centred corr-gate": {
+   "tiles": 41,
+   "mean_diff": 28.0324,
+   "ci": [
+    20.6231,
+    36.1902
+   ],
+   "tiles_lower": 7,
+   "tiles_higher": 34,
+   "wilcoxon_p": 9.05584e-09,
+   "mean_arm": 60.0195,
+   "mean_base": 31.9871
+  },
+  "G2 Lin blue rise corr-gate": {
+   "tiles": 27,
+   "mean_diff": 55.9086,
+   "ci": [
+    40.2544,
+    70.2887
+   ],
+   "tiles_lower": 1,
+   "tiles_higher": 26,
+   "wilcoxon_p": 4.47035e-08,
+   "mean_arm": 90.2528,
+   "mean_base": 34.3442
+  }
+ },
+ "ida_grey_err_ring_vs_C0": {
+  "as is": {
+   "tiles": 73,
+   "mean_diff": 6.32288,
+   "ci": [
+    4.75556,
+    7.73514
+   ],
+   "tiles_lower": 7,
+   "tiles_higher": 66,
+   "wilcoxon_p": 1.85304e-12,
+   "mean_arm": 39.683,
+   "mean_base": 33.3601
+  },
+  "N1 Du PIF": {
+   "tiles": 73,
+   "mean_diff": 0.328205,
+   "ci": [
+    -0.297779,
+    0.944236
+   ],
+   "tiles_lower": 31,
+   "tiles_higher": 42,
+   "wilcoxon_p": 0.479917,
+   "mean_arm": 33.6883,
+   "mean_base": 33.3601
+  },
+  "N1b Du PIF no water removal": {
+   "tiles": 73,
+   "mean_diff": 0.289276,
+   "ci": [
+    -0.317383,
+    0.94185
+   ],
+   "tiles_lower": 35,
+   "tiles_higher": 38,
+   "wilcoxon_p": 0.858196,
+   "mean_arm": 33.6494,
+   "mean_base": 33.3601
+  },
+  "N2 Schott roofs+roads": {
+   "tiles": 73,
+   "mean_diff": 5.97867,
+   "ci": [
+    4.33065,
+    7.39587
+   ],
+   "tiles_lower": 10,
+   "tiles_higher": 63,
+   "wilcoxon_p": 7.82542e-12,
+   "mean_arm": 39.3388,
+   "mean_base": 33.3601
+  },
+  "N2b Schott roofs": {
+   "tiles": 73,
+   "mean_diff": 6.08428,
+   "ci": [
+    4.52665,
+    7.55809
+   ],
+   "tiles_lower": 7,
+   "tiles_higher": 66,
+   "wilcoxon_p": 3.3392e-12,
+   "mean_arm": 39.4444,
+   "mean_base": 33.3601
+  },
+  "N2c Schott roofs+roads no eps check": {
+   "tiles": 73,
+   "mean_diff": -0.328307,
+   "ci": [
+    -1.25602,
+    0.730355
+   ],
+   "tiles_lower": 38,
+   "tiles_higher": 35,
+   "wilcoxon_p": 0.166777,
+   "mean_arm": 33.0318,
+   "mean_base": 33.3601
+  },
+  "N3 Lin wPCA": {
+   "tiles": 73,
+   "mean_diff": 3.11515,
+   "ci": [
+    1.77732,
+    4.31554
+   ],
+   "tiles_lower": 18,
+   "tiles_higher": 55,
+   "wilcoxon_p": 2.63157e-06,
+   "mean_arm": 36.4753,
+   "mean_base": 33.3601
+  },
+  "N3 Lin wPCA bounded": {
+   "tiles": 73,
+   "mean_diff": 3.22179,
+   "ci": [
+    1.89232,
+    4.42009
+   ],
+   "tiles_lower": 18,
+   "tiles_higher": 55,
+   "wilcoxon_p": 2.17822e-06,
+   "mean_arm": 36.5819,
+   "mean_base": 33.3601
+  },
+  "N4 Song ridge all": {
+   "tiles": 73,
+   "mean_diff": 3.00553,
+   "ci": [
+    1.95111,
+    4.06006
+   ],
+   "tiles_lower": 14,
+   "tiles_higher": 59,
+   "wilcoxon_p": 7.68697e-09,
+   "mean_arm": 36.3656,
+   "mean_base": 33.3601
+  },
+  "N4 Song ridge all bounded": {
+   "tiles": 73,
+   "mean_diff": 3.73446,
+   "ci": [
+    2.56484,
+    4.86667
+   ],
+   "tiles_lower": 14,
+   "tiles_higher": 59,
+   "wilcoxon_p": 3.59936e-09,
+   "mean_arm": 37.0946,
+   "mean_base": 33.3601
+  },
+  "N4b Song ridge clear": {
+   "tiles": 73,
+   "mean_diff": 1.91721,
+   "ci": [
+    1.13714,
+    2.67591
+   ],
+   "tiles_lower": 14,
+   "tiles_higher": 59,
+   "wilcoxon_p": 7.83014e-07,
+   "mean_arm": 35.2773,
+   "mean_base": 33.3601
+  },
+  "A1 Chavez k=0.0": {
+   "tiles": 73,
+   "mean_diff": 0.786827,
+   "ci": [
+    0.516443,
+    1.07321
+   ],
+   "tiles_lower": 8,
+   "tiles_higher": 65,
+   "wilcoxon_p": 2.11945e-10,
+   "mean_arm": 34.1469,
+   "mean_base": 33.3601
+  },
+  "A1 Chavez k=0.5": {
+   "tiles": 73,
+   "mean_diff": 2.08742,
+   "ci": [
+    1.53495,
+    2.62043
+   ],
+   "tiles_lower": 6,
+   "tiles_higher": 67,
+   "wilcoxon_p": 1.06282e-11,
+   "mean_arm": 35.4475,
+   "mean_base": 33.3601
+  },
+  "A1 Chavez k=0.7": {
+   "tiles": 73,
+   "mean_diff": 2.6043,
+   "ci": [
+    1.9566,
+    3.23679
+   ],
+   "tiles_lower": 6,
+   "tiles_higher": 67,
+   "wilcoxon_p": 6.21231e-12,
+   "mean_arm": 35.9644,
+   "mean_base": 33.3601
+  },
+  "A1 Chavez k=1.0": {
+   "tiles": 73,
+   "mean_diff": 3.36378,
+   "ci": [
+    2.54598,
+    4.1488
+   ],
+   "tiles_lower": 6,
+   "tiles_higher": 67,
+   "wilcoxon_p": 2.74607e-12,
+   "mean_arm": 36.7239,
+   "mean_base": 33.3601
+  },
+  "A1 Chavez k=2.0": {
+   "tiles": 73,
+   "mean_diff": 5.67934,
+   "ci": [
+    4.43058,
+    6.88456
+   ],
+   "tiles_lower": 5,
+   "tiles_higher": 68,
+   "wilcoxon_p": 8.70491e-13,
+   "mean_arm": 39.0395,
+   "mean_base": 33.3601
+  },
+  "G1 hysteresis corr-gate": {
+   "tiles": 35,
+   "mean_diff": 4.92162,
+   "ci": [
+    2.55312,
+    7.19206
+   ],
+   "tiles_lower": 7,
+   "tiles_higher": 28,
+   "wilcoxon_p": 4.986e-05,
+   "mean_arm": 44.5902,
+   "mean_base": 39.6686
+  },
+  "G1b hysteresis+blob corr-gate": {
+   "tiles": 35,
+   "mean_diff": 4.92286,
+   "ci": [
+    2.55302,
+    7.19455
+   ],
+   "tiles_lower": 7,
+   "tiles_higher": 28,
+   "wilcoxon_p": 4.986e-05,
+   "mean_arm": 44.5914,
+   "mean_base": 39.6686
+  },
+  "G1c hysteresis centred corr-gate": {
+   "tiles": 41,
+   "mean_diff": 5.28609,
+   "ci": [
+    3.19023,
+    7.30136
+   ],
+   "tiles_lower": 6,
+   "tiles_higher": 35,
+   "wilcoxon_p": 1.93247e-06,
+   "mean_arm": 43.6284,
+   "mean_base": 38.3423
+  },
+  "G2 Lin blue rise corr-gate": {
+   "tiles": 27,
+   "mean_diff": 5.31639,
+   "ci": [
+    1.47087,
+    8.73286
+   ],
+   "tiles_lower": 5,
+   "tiles_higher": 22,
+   "wilcoxon_p": 0.00758581,
+   "mean_arm": 50.3632,
+   "mean_base": 45.0468
+  }
+ },
+ "ida_edge_r_thin_vs_C0": {
+  "as is": {
+   "tiles": 73,
+   "mean_diff": 0.0323497,
+   "ci": [
+    0.0211616,
+    0.0440398
+   ],
+   "tiles_lower": 16,
+   "tiles_higher": 57,
+   "wilcoxon_p": 1.54246e-07,
+   "mean_arm": 0.129547,
+   "mean_base": 0.0971974
+  },
+  "N1 Du PIF": {
+   "tiles": 73,
+   "mean_diff": -0.00655992,
+   "ci": [
+    -0.017997,
+    0.00343792
+   ],
+   "tiles_lower": 47,
+   "tiles_higher": 26,
+   "wilcoxon_p": 0.0996572,
+   "mean_arm": 0.0906375,
+   "mean_base": 0.0971974
+  },
+  "N1b Du PIF no water removal": {
+   "tiles": 73,
+   "mean_diff": -0.000702833,
+   "ci": [
+    -0.0089512,
+    0.00823834
+   ],
+   "tiles_lower": 43,
+   "tiles_higher": 30,
+   "wilcoxon_p": 0.426964,
+   "mean_arm": 0.0964946,
+   "mean_base": 0.0971974
+  },
+  "N2 Schott roofs+roads": {
+   "tiles": 73,
+   "mean_diff": 0.0307543,
+   "ci": [
+    0.0195797,
+    0.0422217
+   ],
+   "tiles_lower": 18,
+   "tiles_higher": 55,
+   "wilcoxon_p": 4.6917e-07,
+   "mean_arm": 0.127952,
+   "mean_base": 0.0971974
+  },
+  "N2b Schott roofs": {
+   "tiles": 73,
+   "mean_diff": 0.0305953,
+   "ci": [
+    0.0195413,
+    0.0424615
+   ],
+   "tiles_lower": 19,
+   "tiles_higher": 54,
+   "wilcoxon_p": 6.99349e-07,
+   "mean_arm": 0.127793,
+   "mean_base": 0.0971974
+  },
+  "N2c Schott roofs+roads no eps check": {
+   "tiles": 73,
+   "mean_diff": -0.00128093,
+   "ci": [
+    -0.0109081,
+    0.00984956
+   ],
+   "tiles_lower": 45,
+   "tiles_higher": 28,
+   "wilcoxon_p": 0.061218,
+   "mean_arm": 0.0959165,
+   "mean_base": 0.0971974
+  },
+  "N3 Lin wPCA": {
+   "tiles": 73,
+   "mean_diff": 0.0118448,
+   "ci": [
+    0.0019859,
+    0.0225905
+   ],
+   "tiles_lower": 28,
+   "tiles_higher": 45,
+   "wilcoxon_p": 0.0136763,
+   "mean_arm": 0.109042,
+   "mean_base": 0.0971974
+  },
+  "N3 Lin wPCA bounded": {
+   "tiles": 73,
+   "mean_diff": 0.0149097,
+   "ci": [
+    0.0059766,
+    0.0251142
+   ],
+   "tiles_lower": 26,
+   "tiles_higher": 47,
+   "wilcoxon_p": 0.00167882,
+   "mean_arm": 0.112107,
+   "mean_base": 0.0971974
+  },
+  "N4 Song ridge all": {
+   "tiles": 73,
+   "mean_diff": 0.0177936,
+   "ci": [
+    0.00850472,
+    0.027874
+   ],
+   "tiles_lower": 25,
+   "tiles_higher": 48,
+   "wilcoxon_p": 0.000248189,
+   "mean_arm": 0.114991,
+   "mean_base": 0.0971974
+  },
+  "N4 Song ridge all bounded": {
+   "tiles": 73,
+   "mean_diff": 0.0188684,
+   "ci": [
+    0.00928602,
+    0.0298025
+   ],
+   "tiles_lower": 25,
+   "tiles_higher": 48,
+   "wilcoxon_p": 0.00019141,
+   "mean_arm": 0.116066,
+   "mean_base": 0.0971974
+  },
+  "N4b Song ridge clear": {
+   "tiles": 73,
+   "mean_diff": 0.0073022,
+   "ci": [
+    0.000574233,
+    0.0169209
+   ],
+   "tiles_lower": 36,
+   "tiles_higher": 37,
+   "wilcoxon_p": 0.539891,
+   "mean_arm": 0.1045,
+   "mean_base": 0.0971974
+  },
+  "A1 Chavez k=0.0": {
+   "tiles": 73,
+   "mean_diff": 0.00300903,
+   "ci": [
+    7.84432e-05,
+    0.00620767
+   ],
+   "tiles_lower": 34,
+   "tiles_higher": 39,
+   "wilcoxon_p": 0.0878237,
+   "mean_arm": 0.100206,
+   "mean_base": 0.0971974
+  },
+  "A1 Chavez k=0.5": {
+   "tiles": 73,
+   "mean_diff": 0.00891899,
+   "ci": [
+    0.0031244,
+    0.0160365
+   ],
+   "tiles_lower": 32,
+   "tiles_higher": 41,
+   "wilcoxon_p": 0.0184877,
+   "mean_arm": 0.106116,
+   "mean_base": 0.0971974
+  },
+  "A1 Chavez k=0.7": {
+   "tiles": 73,
+   "mean_diff": 0.0114576,
+   "ci": [
+    0.0046955,
+    0.0197646
+   ],
+   "tiles_lower": 33,
+   "tiles_higher": 40,
+   "wilcoxon_p": 0.0126618,
+   "mean_arm": 0.108655,
+   "mean_base": 0.0971974
+  },
+  "A1 Chavez k=1.0": {
+   "tiles": 73,
+   "mean_diff": 0.0149483,
+   "ci": [
+    0.00712685,
+    0.0246253
+   ],
+   "tiles_lower": 27,
+   "tiles_higher": 46,
+   "wilcoxon_p": 0.00243018,
+   "mean_arm": 0.112146,
+   "mean_base": 0.0971974
+  },
+  "A1 Chavez k=2.0": {
+   "tiles": 73,
+   "mean_diff": 0.0224323,
+   "ci": [
+    0.0109569,
+    0.035817
+   ],
+   "tiles_lower": 27,
+   "tiles_higher": 46,
+   "wilcoxon_p": 0.000686936,
+   "mean_arm": 0.11963,
+   "mean_base": 0.0971974
+  },
+  "G1 hysteresis corr-gate": {
+   "tiles": 35,
+   "mean_diff": 0.0087978,
+   "ci": [
+    -0.00209085,
+    0.0227688
+   ],
+   "tiles_lower": 13,
+   "tiles_higher": 21,
+   "wilcoxon_p": 0.277643,
+   "mean_arm": 0.0518518,
+   "mean_base": 0.043054
+  },
+  "G1b hysteresis+blob corr-gate": {
+   "tiles": 35,
+   "mean_diff": 0.00798974,
+   "ci": [
+    -0.00314452,
+    0.0221086
+   ],
+   "tiles_lower": 13,
+   "tiles_higher": 21,
+   "wilcoxon_p": 0.334068,
+   "mean_arm": 0.0510437,
+   "mean_base": 0.043054
+  },
+  "G1c hysteresis centred corr-gate": {
+   "tiles": 41,
+   "mean_diff": 0.00930356,
+   "ci": [
+    -0.00255873,
+    0.0227237
+   ],
+   "tiles_lower": 14,
+   "tiles_higher": 27,
+   "wilcoxon_p": 0.179687,
+   "mean_arm": 0.0628198,
+   "mean_base": 0.0535162
+  },
+  "G2 Lin blue rise corr-gate": {
+   "tiles": 27,
+   "mean_diff": 0.028239,
+   "ci": [
+    0.00646945,
+    0.0573969
+   ],
+   "tiles_lower": 6,
+   "tiles_higher": 21,
+   "wilcoxon_p": 0.00699849,
+   "mean_arm": 0.0790053,
+   "mean_base": 0.0507663
+  }
+ },
+ "ida_edge_r_ring_vs_C0": {
+  "as is": {
+   "tiles": 73,
+   "mean_diff": 0.0111831,
+   "ci": [
+    0.00217367,
+    0.0196785
+   ],
+   "tiles_lower": 25,
+   "tiles_higher": 48,
+   "wilcoxon_p": 0.00748272,
+   "mean_arm": 0.176024,
+   "mean_base": 0.164841
+  },
+  "N1 Du PIF": {
+   "tiles": 73,
+   "mean_diff": 0.00217758,
+   "ci": [
+    -0.00273104,
+    0.00676271
+   ],
+   "tiles_lower": 33,
+   "tiles_higher": 40,
+   "wilcoxon_p": 0.323735,
+   "mean_arm": 0.167019,
+   "mean_base": 0.164841
+  },
+  "N1b Du PIF no water removal": {
+   "tiles": 73,
+   "mean_diff": 0.00220405,
+   "ci": [
+    -0.00270001,
+    0.00698211
+   ],
+   "tiles_lower": 35,
+   "tiles_higher": 38,
+   "wilcoxon_p": 0.398739,
+   "mean_arm": 0.167045,
+   "mean_base": 0.164841
+  },
+  "N2 Schott roofs+roads": {
+   "tiles": 73,
+   "mean_diff": 0.0112783,
+   "ci": [
+    0.00312749,
+    0.0187822
+   ],
+   "tiles_lower": 26,
+   "tiles_higher": 47,
+   "wilcoxon_p": 0.00593182,
+   "mean_arm": 0.176119,
+   "mean_base": 0.164841
+  },
+  "N2b Schott roofs": {
+   "tiles": 73,
+   "mean_diff": 0.00829836,
+   "ci": [
+    -0.000246565,
+    0.016429
+   ],
+   "tiles_lower": 27,
+   "tiles_higher": 46,
+   "wilcoxon_p": 0.0243698,
+   "mean_arm": 0.17314,
+   "mean_base": 0.164841
+  },
+  "N2c Schott roofs+roads no eps check": {
+   "tiles": 73,
+   "mean_diff": -0.00575906,
+   "ci": [
+    -0.0126471,
+    0.000302593
+   ],
+   "tiles_lower": 46,
+   "tiles_higher": 27,
+   "wilcoxon_p": 0.0468818,
+   "mean_arm": 0.159082,
+   "mean_base": 0.164841
+  },
+  "N3 Lin wPCA": {
+   "tiles": 73,
+   "mean_diff": 0.00171705,
+   "ci": [
+    -0.00720004,
+    0.0102183
+   ],
+   "tiles_lower": 31,
+   "tiles_higher": 42,
+   "wilcoxon_p": 0.195433,
+   "mean_arm": 0.166558,
+   "mean_base": 0.164841
+  },
+  "N3 Lin wPCA bounded": {
+   "tiles": 73,
+   "mean_diff": 0.0038636,
+   "ci": [
+    -0.00453979,
+    0.0118732
+   ],
+   "tiles_lower": 30,
+   "tiles_higher": 43,
+   "wilcoxon_p": 0.0790083,
+   "mean_arm": 0.168705,
+   "mean_base": 0.164841
+  },
+  "N4 Song ridge all": {
+   "tiles": 73,
+   "mean_diff": 0.00853978,
+   "ci": [
+    0.00063742,
+    0.0154659
+   ],
+   "tiles_lower": 26,
+   "tiles_higher": 47,
+   "wilcoxon_p": 0.00748272,
+   "mean_arm": 0.173381,
+   "mean_base": 0.164841
+  },
+  "N4 Song ridge all bounded": {
+   "tiles": 73,
+   "mean_diff": 0.00917211,
+   "ci": [
+    0.00148306,
+    0.0159556
+   ],
+   "tiles_lower": 27,
+   "tiles_higher": 46,
+   "wilcoxon_p": 0.0108306,
+   "mean_arm": 0.174013,
+   "mean_base": 0.164841
+  },
+  "N4b Song ridge clear": {
+   "tiles": 73,
+   "mean_diff": 0.00143924,
+   "ci": [
+    -0.00736113,
+    0.00896287
+   ],
+   "tiles_lower": 32,
+   "tiles_higher": 41,
+   "wilcoxon_p": 0.253977,
+   "mean_arm": 0.16628,
+   "mean_base": 0.164841
+  },
+  "A1 Chavez k=0.0": {
+   "tiles": 73,
+   "mean_diff": 0.00277277,
+   "ci": [
+    0.000866888,
+    0.00472557
+   ],
+   "tiles_lower": 25,
+   "tiles_higher": 48,
+   "wilcoxon_p": 0.000790048,
+   "mean_arm": 0.167614,
+   "mean_base": 0.164841
+  },
+  "A1 Chavez k=0.5": {
+   "tiles": 73,
+   "mean_diff": 0.00328463,
+   "ci": [
+    -0.00231257,
+    0.00897559
+   ],
+   "tiles_lower": 31,
+   "tiles_higher": 42,
+   "wilcoxon_p": 0.0174213,
+   "mean_arm": 0.168126,
+   "mean_base": 0.164841
+  },
+  "A1 Chavez k=0.7": {
+   "tiles": 73,
+   "mean_diff": 0.00260068,
+   "ci": [
+    -0.00427776,
+    0.00955965
+   ],
+   "tiles_lower": 33,
+   "tiles_higher": 40,
+   "wilcoxon_p": 0.0506562,
+   "mean_arm": 0.167442,
+   "mean_base": 0.164841
+  },
+  "A1 Chavez k=1.0": {
+   "tiles": 73,
+   "mean_diff": 0.00126077,
+   "ci": [
+    -0.00730611,
+    0.00983221
+   ],
+   "tiles_lower": 34,
+   "tiles_higher": 39,
+   "wilcoxon_p": 0.136991,
+   "mean_arm": 0.166102,
+   "mean_base": 0.164841
+  },
+  "A1 Chavez k=2.0": {
+   "tiles": 73,
+   "mean_diff": -0.00323939,
+   "ci": [
+    -0.0145354,
+    0.00809994
+   ],
+   "tiles_lower": 34,
+   "tiles_higher": 39,
+   "wilcoxon_p": 0.634403,
+   "mean_arm": 0.161602,
+   "mean_base": 0.164841
+  },
+  "G1 hysteresis corr-gate": {
+   "tiles": 35,
+   "mean_diff": -0.00847248,
+   "ci": [
+    -0.0330816,
+    0.0113119
+   ],
+   "tiles_lower": 19,
+   "tiles_higher": 16,
+   "wilcoxon_p": 0.814578,
+   "mean_arm": 0.110361,
+   "mean_base": 0.118834
+  },
+  "G1b hysteresis+blob corr-gate": {
+   "tiles": 35,
+   "mean_diff": -0.00845982,
+   "ci": [
+    -0.0330659,
+    0.0113259
+   ],
+   "tiles_lower": 19,
+   "tiles_higher": 16,
+   "wilcoxon_p": 0.814578,
+   "mean_arm": 0.110374,
+   "mean_base": 0.118834
+  },
+  "G1c hysteresis centred corr-gate": {
+   "tiles": 41,
+   "mean_diff": -0.00227266,
+   "ci": [
+    -0.0252398,
+    0.0146994
+   ],
+   "tiles_lower": 20,
+   "tiles_higher": 21,
+   "wilcoxon_p": 0.389209,
+   "mean_arm": 0.118655,
+   "mean_base": 0.120928
+  },
+  "G2 Lin blue rise corr-gate": {
+   "tiles": 27,
+   "mean_diff": 0.0109202,
+   "ci": [
+    -0.00730923,
+    0.02931
+   ],
+   "tiles_lower": 13,
+   "tiles_higher": 14,
+   "wilcoxon_p": 0.399743,
+   "mean_arm": 0.116042,
+   "mean_base": 0.105122
+  }
+ },
+ "ida_guard_grey_change_mean": {
+  "A1 Chavez k=0.0": 0.965794,
+  "A1 Chavez k=0.5": 0.784853,
+  "A1 Chavez k=0.7": 0.722518,
+  "A1 Chavez k=1.0": 0.640016,
+  "A1 Chavez k=2.0": 0.450564,
+  "C0": 1.10969,
+  "G1 hysteresis corr-gate": 0.149806,
+  "G1b hysteresis+blob corr-gate": 0.123459,
+  "G1c hysteresis centred corr-gate": 0.124987,
+  "G2 Lin blue rise corr-gate": 2.61467,
+  "N1 Du PIF": 1.89544,
+  "N1b Du PIF no water removal": 1.54947,
+  "N2 Schott roofs+roads": 0.13816,
+  "N2b Schott roofs": 0.0366456,
+  "N2c Schott roofs+roads no eps check": 1.62991,
+  "N3 Lin wPCA": 0.663187,
+  "N3 Lin wPCA bounded": 0.428882,
+  "N4 Song ridge all": 0.255684,
+  "N4 Song ridge all bounded": 0.179574,
+  "N4b Song ridge clear": 0.658721,
+  "as is": 0.0
+ },
+ "ida_gates": {
+  "G1": {
+   "tiles": 132,
+   "precision_pooled": 0.744253,
+   "recall_pooled": 0.118246
+  },
+  "G1b": {
+   "tiles": 132,
+   "precision_pooled": 0.765897,
+   "recall_pooled": 0.116974
+  },
+  "G1c": {
+   "tiles": 132,
+   "precision_pooled": 0.757109,
+   "recall_pooled": 0.131393
+  },
+  "G2": {
+   "tiles": 132,
+   "precision_pooled": 0.175053,
+   "recall_pooled": 0.0370936
+  },
+  "rise": {
+   "tiles": 132,
+   "precision_pooled": 0.633676,
+   "recall_pooled": 0.795946
+  }
+ },
+ "ida_primary_tiles": [
+  "0_11_2",
+  "0_11_4",
+  "0_12_2",
+  "0_12_5",
+  "0_13_5",
+  "0_13_7",
+  "0_14_5",
+  "0_14_6",
+  "0_16_6",
+  "0_17_13",
+  "0_17_5",
+  "0_17_7",
+  "0_18_12",
+  "0_18_13",
+  "0_18_8",
+  "0_19_13",
+  "0_19_16",
+  "0_21_13",
+  "2_13_47",
+  "2_14_47",
+  "2_14_48",
+  "2_14_49",
+  "2_15_44",
+  "2_15_48",
+  "2_15_49",
+  "2_16_44",
+  "2_16_50",
+  "2_17_45",
+  "2_17_52",
+  "2_18_44",
+  "2_18_45",
+  "2_18_53",
+  "2_19_44",
+  "2_19_55",
+  "2_20_37",
+  "2_20_38",
+  "2_20_39",
+  "2_20_43",
+  "2_20_55",
+  "2_20_56",
+  "2_21_42",
+  "2_21_43",
+  "2_21_44",
+  "2_22_41",
+  "2_22_42",
+  "2_22_45",
+  "2_23_44",
+  "2_26_34",
+  "2_26_35",
+  "2_26_36",
+  "2_27_34",
+  "2_27_36",
+  "2_28_37",
+  "2_29_38"
+ ],
+ "ida_primary_vs_C0": {
+  "as is": {
+   "tiles": 54,
+   "mean_diff": -0.000280259,
+   "ci": [
+    -0.0115058,
+    0.0118956
+   ],
+   "tiles_lower": 27,
+   "tiles_higher": 27,
+   "wilcoxon_p": 0.914291,
+   "mean_arm": 0.683198,
+   "mean_base": 0.683478,
+   "guard_ok": false
+  },
+  "N1 Du PIF": {
+   "tiles": 54,
+   "mean_diff": 0.00641638,
+   "ci": [
+    0.0019826,
+    0.0117699
+   ],
+   "tiles_lower": 17,
+   "tiles_higher": 37,
+   "wilcoxon_p": 0.00269394,
+   "mean_arm": 0.689895,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "N1b Du PIF no water removal": {
+   "tiles": 54,
+   "mean_diff": 0.00430791,
+   "ci": [
+    -0.000229004,
+    0.00921153
+   ],
+   "tiles_lower": 19,
+   "tiles_higher": 35,
+   "wilcoxon_p": 0.0153601,
+   "mean_arm": 0.687786,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "N2 Schott roofs+roads": {
+   "tiles": 54,
+   "mean_diff": -0.000519813,
+   "ci": [
+    -0.0117742,
+    0.0114798
+   ],
+   "tiles_lower": 26,
+   "tiles_higher": 28,
+   "wilcoxon_p": 0.873441,
+   "mean_arm": 0.682958,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "N2b Schott roofs": {
+   "tiles": 54,
+   "mean_diff": 4.14319e-05,
+   "ci": [
+    -0.0112462,
+    0.0122516
+   ],
+   "tiles_lower": 26,
+   "tiles_higher": 28,
+   "wilcoxon_p": 0.812827,
+   "mean_arm": 0.68352,
+   "mean_base": 0.683478,
+   "guard_ok": false
+  },
+  "N2c Schott roofs+roads no eps check": {
+   "tiles": 54,
+   "mean_diff": 0.0140866,
+   "ci": [
+    0.00833299,
+    0.0218307
+   ],
+   "tiles_lower": 10,
+   "tiles_higher": 44,
+   "wilcoxon_p": 8.02942e-06,
+   "mean_arm": 0.697565,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "N3 Lin wPCA": {
+   "tiles": 54,
+   "mean_diff": 0.00558122,
+   "ci": [
+    -0.00365943,
+    0.014422
+   ],
+   "tiles_lower": 25,
+   "tiles_higher": 29,
+   "wilcoxon_p": 0.192081,
+   "mean_arm": 0.68906,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "N3 Lin wPCA bounded": {
+   "tiles": 54,
+   "mean_diff": 0.00490248,
+   "ci": [
+    -0.00416064,
+    0.013207
+   ],
+   "tiles_lower": 25,
+   "tiles_higher": 29,
+   "wilcoxon_p": 0.175064,
+   "mean_arm": 0.688381,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "N4 Song ridge all": {
+   "tiles": 54,
+   "mean_diff": -0.010279,
+   "ci": [
+    -0.0196033,
+    -4.1525e-05
+   ],
+   "tiles_lower": 34,
+   "tiles_higher": 20,
+   "wilcoxon_p": 0.0104209,
+   "mean_arm": 0.673199,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "N4 Song ridge all bounded": {
+   "tiles": 54,
+   "mean_diff": -0.00676753,
+   "ci": [
+    -0.0170759,
+    0.00425281
+   ],
+   "tiles_lower": 31,
+   "tiles_higher": 23,
+   "wilcoxon_p": 0.104584,
+   "mean_arm": 0.676711,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "N4b Song ridge clear": {
+   "tiles": 54,
+   "mean_diff": -0.00431153,
+   "ci": [
+    -0.0118702,
+    0.00410047
+   ],
+   "tiles_lower": 32,
+   "tiles_higher": 22,
+   "wilcoxon_p": 0.0672991,
+   "mean_arm": 0.679167,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "A1 Chavez k=0.0": {
+   "tiles": 54,
+   "mean_diff": -0.00298194,
+   "ci": [
+    -0.00544106,
+    -9.21049e-05
+   ],
+   "tiles_lower": 38,
+   "tiles_higher": 16,
+   "wilcoxon_p": 0.00185451,
+   "mean_arm": 0.680496,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "A1 Chavez k=0.5": {
+   "tiles": 54,
+   "mean_diff": -0.00219567,
+   "ci": [
+    -0.00715794,
+    0.0030673
+   ],
+   "tiles_lower": 31,
+   "tiles_higher": 23,
+   "wilcoxon_p": 0.482846,
+   "mean_arm": 0.681283,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "A1 Chavez k=0.7": {
+   "tiles": 54,
+   "mean_diff": -0.00265678,
+   "ci": [
+    -0.0080514,
+    0.00324191
+   ],
+   "tiles_lower": 31,
+   "tiles_higher": 23,
+   "wilcoxon_p": 0.446057,
+   "mean_arm": 0.680822,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "A1 Chavez k=1.0": {
+   "tiles": 54,
+   "mean_diff": -0.00235689,
+   "ci": [
+    -0.00834202,
+    0.00389468
+   ],
+   "tiles_lower": 30,
+   "tiles_higher": 24,
+   "wilcoxon_p": 0.499103,
+   "mean_arm": 0.681121,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "A1 Chavez k=2.0": {
+   "tiles": 54,
+   "mean_diff": 0.00113037,
+   "ci": [
+    -0.00718097,
+    0.00972951
+   ],
+   "tiles_lower": 25,
+   "tiles_higher": 29,
+   "wilcoxon_p": 0.727304,
+   "mean_arm": 0.684609,
+   "mean_base": 0.683478,
+   "guard_ok": true
+  },
+  "G2 Lin blue rise corr-gate": {
+   "tiles": 21,
+   "mean_diff": 0.00552299,
+   "ci": [
+    -0.00439315,
+    0.0138302
+   ],
+   "tiles_lower": 10,
+   "tiles_higher": 11,
+   "wilcoxon_p": 0.452368,
+   "mean_arm": 0.726668,
+   "mean_base": 0.721145,
+   "guard_ok": false
+  },
+  "G1 hysteresis corr-gate": {
+   "tiles": 21,
+   "mean_diff": 0.0119697,
+   "ci": [
+    0.00234766,
+    0.0205072
+   ],
+   "tiles_lower": 7,
+   "tiles_higher": 14,
+   "wilcoxon_p": 0.0175467,
+   "mean_arm": 0.707831,
+   "mean_base": 0.695861,
+   "guard_ok": true
+  },
+  "G1b hysteresis+blob corr-gate": {
+   "tiles": 21,
+   "mean_diff": 0.0118064,
+   "ci": [
+    0.00213894,
+    0.0203545
+   ],
+   "tiles_lower": 7,
+   "tiles_higher": 14,
+   "wilcoxon_p": 0.0238543,
+   "mean_arm": 0.707667,
+   "mean_base": 0.695861,
+   "guard_ok": true
+  },
+  "G1c hysteresis centred corr-gate": {
+   "tiles": 25,
+   "mean_diff": 0.0100858,
+   "ci": [
+    -0.000141894,
+    0.0212073
+   ],
+   "tiles_lower": 6,
+   "tiles_higher": 19,
+   "wilcoxon_p": 0.0202749,
+   "mean_arm": 0.716034,
+   "mean_base": 0.705948,
+   "guard_ok": true
+  }
+ },
+ "screen": {
+  "G1 hysteresis road-gate": {
+   "kept": 869,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 795,
+    "acc": 0.801258,
+    "acc_base": 0.791195,
+    "gain": 0.0100629,
+    "ci": [
+     -0.00357519,
+     0.0272139
+    ],
+    "fixed": 20,
+    "broken": 12,
+    "mcnemar_p": 0.215327
+   },
+   "added": 74,
+   "removed": 3
+  },
+  "G1b hysteresis+blob road-gate": {
+   "kept": 870,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 796,
+    "acc": 0.795226,
+    "acc_base": 0.791457,
+    "gain": 0.00376884,
+    "ci": [
+     -0.0114387,
+     0.0241698
+    ],
+    "fixed": 18,
+    "broken": 15,
+    "mcnemar_p": 0.728332
+   },
+   "added": 74,
+   "removed": 2
+  },
+  "G1c hysteresis centred road-gate": {
+   "kept": 867,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 795,
+    "acc": 0.798742,
+    "acc_base": 0.791195,
+    "gain": 0.00754717,
+    "ci": [
+     -0.00594548,
+     0.0254875
+    ],
+    "fixed": 19,
+    "broken": 13,
+    "mcnemar_p": 0.377086
+   },
+   "added": 72,
+   "removed": 3
+  },
+  "G2 Lin blue rise road-gate": {
+   "kept": 886,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 794,
+    "acc": 0.79471,
+    "acc_base": 0.790932,
+    "gain": 0.00377834,
+    "ci": [
+     -0.0114426,
+     0.0249114
+    ],
+    "fixed": 20,
+    "broken": 17,
+    "mcnemar_p": 0.742829
+   },
+   "added": 92,
+   "removed": 4
+  },
+  "C0 current two-date": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.788221,
+    "acc_base": 0.79198,
+    "gain": -0.0037594,
+    "ci": [
+     -0.0251171,
+     0.0180456
+    ],
+    "fixed": 17,
+    "broken": 20,
+    "mcnemar_p": 0.742829
+   }
+  },
+  "N1 Du PIF": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.785714,
+    "acc_base": 0.79198,
+    "gain": -0.00626566,
+    "ci": [
+     -0.024761,
+     0.0131803
+    ],
+    "fixed": 16,
+    "broken": 21,
+    "mcnemar_p": 0.511376
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.785714,
+    "acc_base": 0.788221,
+    "gain": -0.00250627,
+    "ci": [
+     -0.0169704,
+     0.0100682
+    ],
+    "fixed": 12,
+    "broken": 14,
+    "mcnemar_p": 0.845019
+   }
+  },
+  "N1b Du PIF no water removal": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.781955,
+    "acc_base": 0.79198,
+    "gain": -0.0100251,
+    "ci": [
+     -0.0251969,
+     0.0056696
+    ],
+    "fixed": 13,
+    "broken": 21,
+    "mcnemar_p": 0.229481
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.781955,
+    "acc_base": 0.788221,
+    "gain": -0.00626566,
+    "ci": [
+     -0.0251865,
+     0.0124323
+    ],
+    "fixed": 11,
+    "broken": 16,
+    "mcnemar_p": 0.442068
+   }
+  },
+  "N2 Schott roofs+roads": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.783208,
+    "acc_base": 0.79198,
+    "gain": -0.00877193,
+    "ci": [
+     -0.0235149,
+     0.00673549
+    ],
+    "fixed": 13,
+    "broken": 20,
+    "mcnemar_p": 0.296206
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.783208,
+    "acc_base": 0.788221,
+    "gain": -0.00501253,
+    "ci": [
+     -0.0219533,
+     0.00846499
+    ],
+    "fixed": 15,
+    "broken": 19,
+    "mcnemar_p": 0.607591
+   }
+  },
+  "N2b Schott roofs": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.793233,
+    "acc_base": 0.79198,
+    "gain": 0.00125313,
+    "ci": [
+     -0.0127872,
+     0.0163407
+    ],
+    "fixed": 15,
+    "broken": 14,
+    "mcnemar_p": 1.0
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.793233,
+    "acc_base": 0.788221,
+    "gain": 0.00501253,
+    "ci": [
+     -0.0110742,
+     0.0209119
+    ],
+    "fixed": 16,
+    "broken": 12,
+    "mcnemar_p": 0.571588
+   }
+  },
+  "N2c Schott roofs+roads no eps check": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.789474,
+    "acc_base": 0.79198,
+    "gain": -0.00250627,
+    "ci": [
+     -0.016749,
+     0.0128209
+    ],
+    "fixed": 18,
+    "broken": 20,
+    "mcnemar_p": 0.871415
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.789474,
+    "acc_base": 0.788221,
+    "gain": 0.00125313,
+    "ci": [
+     -0.018667,
+     0.0207812
+    ],
+    "fixed": 17,
+    "broken": 16,
+    "mcnemar_p": 1.0
+   }
+  },
+  "N3 Lin wPCA": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.799499,
+    "acc_base": 0.79198,
+    "gain": 0.0075188,
+    "ci": [
+     -0.00586376,
+     0.0234019
+    ],
+    "fixed": 17,
+    "broken": 11,
+    "mcnemar_p": 0.344928
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.799499,
+    "acc_base": 0.788221,
+    "gain": 0.0112782,
+    "ci": [
+     -0.00283688,
+     0.0257319
+    ],
+    "fixed": 19,
+    "broken": 10,
+    "mcnemar_p": 0.136046
+   }
+  },
+  "N3 Lin wPCA bounded": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.794486,
+    "acc_base": 0.79198,
+    "gain": 0.00250627,
+    "ci": [
+     -0.00913506,
+     0.0171627
+    ],
+    "fixed": 16,
+    "broken": 14,
+    "mcnemar_p": 0.855536
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.794486,
+    "acc_base": 0.788221,
+    "gain": 0.00626566,
+    "ci": [
+     -0.00919202,
+     0.0237923
+    ],
+    "fixed": 18,
+    "broken": 13,
+    "mcnemar_p": 0.47313
+   }
+  },
+  "N4 Song ridge all": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.783208,
+    "acc_base": 0.79198,
+    "gain": -0.00877193,
+    "ci": [
+     -0.0237743,
+     0.00846267
+    ],
+    "fixed": 19,
+    "broken": 26,
+    "mcnemar_p": 0.371298
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.783208,
+    "acc_base": 0.788221,
+    "gain": -0.00501253,
+    "ci": [
+     -0.0192838,
+     0.00989179
+    ],
+    "fixed": 13,
+    "broken": 17,
+    "mcnemar_p": 0.584665
+   }
+  },
+  "N4 Song ridge all bounded": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.781955,
+    "acc_base": 0.79198,
+    "gain": -0.0100251,
+    "ci": [
+     -0.0222557,
+     0.00418588
+    ],
+    "fixed": 15,
+    "broken": 23,
+    "mcnemar_p": 0.255875
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.781955,
+    "acc_base": 0.788221,
+    "gain": -0.00626566,
+    "ci": [
+     -0.0231723,
+     0.0103402
+    ],
+    "fixed": 12,
+    "broken": 17,
+    "mcnemar_p": 0.458258
+   }
+  },
+  "N4b Song ridge clear": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.783208,
+    "acc_base": 0.79198,
+    "gain": -0.00877193,
+    "ci": [
+     -0.0200549,
+     0.00441193
+    ],
+    "fixed": 13,
+    "broken": 20,
+    "mcnemar_p": 0.296206
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.783208,
+    "acc_base": 0.788221,
+    "gain": -0.00501253,
+    "ci": [
+     -0.0240308,
+     0.0138134
+    ],
+    "fixed": 14,
+    "broken": 18,
+    "mcnemar_p": 0.596615
+   }
+  },
+  "A1 Chavez k=0.0": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.779449,
+    "acc_base": 0.79198,
+    "gain": -0.0125313,
+    "ci": [
+     -0.0271822,
+     0.00550983
+    ],
+    "fixed": 14,
+    "broken": 24,
+    "mcnemar_p": 0.143307
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.779449,
+    "acc_base": 0.788221,
+    "gain": -0.00877193,
+    "ci": [
+     -0.0236251,
+     0.00691569
+    ],
+    "fixed": 7,
+    "broken": 14,
+    "mcnemar_p": 0.189247
+   }
+  },
+  "A1 Chavez k=0.5": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.794486,
+    "acc_base": 0.79198,
+    "gain": 0.00250627,
+    "ci": [
+     -0.0117651,
+     0.017736
+    ],
+    "fixed": 17,
+    "broken": 15,
+    "mcnemar_p": 0.86005
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.794486,
+    "acc_base": 0.788221,
+    "gain": 0.00626566,
+    "ci": [
+     -0.0116976,
+     0.0227861
+    ],
+    "fixed": 16,
+    "broken": 11,
+    "mcnemar_p": 0.442068
+   }
+  },
+  "A1 Chavez k=0.7": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.789474,
+    "acc_base": 0.79198,
+    "gain": -0.00250627,
+    "ci": [
+     -0.0182585,
+     0.013644
+    ],
+    "fixed": 19,
+    "broken": 21,
+    "mcnemar_p": 0.874629
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.789474,
+    "acc_base": 0.788221,
+    "gain": 0.00125313,
+    "ci": [
+     -0.0156509,
+     0.0153506
+    ],
+    "fixed": 13,
+    "broken": 12,
+    "mcnemar_p": 1.0
+   }
+  },
+  "A1 Chavez k=1.0": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.785714,
+    "acc_base": 0.79198,
+    "gain": -0.00626566,
+    "ci": [
+     -0.0183285,
+     0.00505066
+    ],
+    "fixed": 11,
+    "broken": 16,
+    "mcnemar_p": 0.442068
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.785714,
+    "acc_base": 0.788221,
+    "gain": -0.00250627,
+    "ci": [
+     -0.0218753,
+     0.0148369
+    ],
+    "fixed": 13,
+    "broken": 15,
+    "mcnemar_p": 0.850554
+   }
+  },
+  "A1 Chavez k=2.0": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.780702,
+    "acc_base": 0.79198,
+    "gain": -0.0112782,
+    "ci": [
+     -0.0290296,
+     0.0082382
+    ],
+    "fixed": 15,
+    "broken": 24,
+    "mcnemar_p": 0.199591
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.780702,
+    "acc_base": 0.788221,
+    "gain": -0.0075188,
+    "ci": [
+     -0.023692,
+     0.00692539
+    ],
+    "fixed": 10,
+    "broken": 16,
+    "mcnemar_p": 0.32694
+   }
+  },
+  "G1 hysteresis corr-gate": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.784461,
+    "acc_base": 0.79198,
+    "gain": -0.0075188,
+    "ci": [
+     -0.0245579,
+     0.0114452
+    ],
+    "fixed": 17,
+    "broken": 23,
+    "mcnemar_p": 0.429591
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.784461,
+    "acc_base": 0.788221,
+    "gain": -0.0037594,
+    "ci": [
+     -0.0172414,
+     0.0076943
+    ],
+    "fixed": 15,
+    "broken": 18,
+    "mcnemar_p": 0.728332
+   }
+  },
+  "G1b hysteresis+blob corr-gate": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.781955,
+    "acc_base": 0.79198,
+    "gain": -0.0100251,
+    "ci": [
+     -0.0233174,
+     0.00454667
+    ],
+    "fixed": 13,
+    "broken": 21,
+    "mcnemar_p": 0.229481
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.781955,
+    "acc_base": 0.788221,
+    "gain": -0.00626566,
+    "ci": [
+     -0.0203131,
+     0.00747235
+    ],
+    "fixed": 12,
+    "broken": 17,
+    "mcnemar_p": 0.458258
+   }
+  },
+  "G1c hysteresis centred corr-gate": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.786967,
+    "acc_base": 0.79198,
+    "gain": -0.00501253,
+    "ci": [
+     -0.022474,
+     0.0139803
+    ],
+    "fixed": 17,
+    "broken": 21,
+    "mcnemar_p": 0.627103
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.786967,
+    "acc_base": 0.788221,
+    "gain": -0.00125313,
+    "ci": [
+     -0.0115447,
+     0.00765306
+    ],
+    "fixed": 12,
+    "broken": 13,
+    "mcnemar_p": 1.0
+   }
+  },
+  "G2 Lin blue rise corr-gate": {
+   "kept": 798,
+   "kept_prod": 798,
+   "paired_shared": {
+    "roads": 798,
+    "acc": 0.79198,
+    "acc_base": 0.79198,
+    "gain": 0.0,
+    "ci": [
+     -0.012572,
+     0.0131266
+    ],
+    "fixed": 14,
+    "broken": 14,
+    "mcnemar_p": 1.0
+   },
+   "vs_C0": {
+    "roads": 798,
+    "acc": 0.79198,
+    "acc_base": 0.788221,
+    "gain": 0.0037594,
+    "ci": [
+     -0.0158279,
+     0.0219073
+    ],
+    "fixed": 16,
+    "broken": 13,
+    "mcnemar_p": 0.711071
+   }
+  }
+ },
+ "seeds": {
+  "G1 hysteresis road-gate": {
+   "roads": 795,
+   "mean_gain": -0.000838574,
+   "ci": [
+    -0.00827176,
+    0.00838035
+   ],
+   "acc_mean": 0.784127,
+   "acc_base_mean": 0.784966,
+   "seeds_better": 9,
+   "seeds_worse": 11,
+   "per_seed_gain": [
+    0.0100629,
+    -0.0176101,
+    -0.00377358,
+    -0.00754717,
+    -0.00503145,
+    0.00880503,
+    0.00880503,
+    -0.00628931,
+    0.00125786,
+    0.00125786,
+    0.0,
+    -0.00377358,
+    -0.00503145,
+    0.00251572,
+    0.00754717,
+    0.00125786,
+    -0.00503145,
+    0.00880503,
+    -0.00377358,
+    -0.00628931,
+    -0.00377358
+   ]
+  },
+  "G1b hysteresis+blob road-gate": {
+   "roads": 796,
+   "mean_gain": 0.0015554,
+   "ci": [
+    -0.00614829,
+    0.0112122
+   ],
+   "acc_mean": 0.786791,
+   "acc_base_mean": 0.785236,
+   "seeds_better": 11,
+   "seeds_worse": 8,
+   "per_seed_gain": [
+    0.00376884,
+    -0.0100503,
+    -0.00753769,
+    -0.0150754,
+    0.00125628,
+    0.0150754,
+    0.0188442,
+    -0.00376884,
+    0.00879397,
+    0.00376884,
+    0.00628141,
+    -0.00125628,
+    -0.00251256,
+    0.00753769,
+    0.00502513,
+    0.0,
+    -0.00502513,
+    0.00628141,
+    -0.00628141,
+    0.0,
+    0.00753769
+   ]
+  },
+  "G1c hysteresis centred road-gate": {
+   "roads": 795,
+   "mean_gain": -0.00191674,
+   "ci": [
+    -0.00953539,
+    0.00714088
+   ],
+   "acc_mean": 0.783049,
+   "acc_base_mean": 0.784966,
+   "seeds_better": 9,
+   "seeds_worse": 11,
+   "per_seed_gain": [
+    0.00754717,
+    -0.0125786,
+    -0.0113208,
+    -0.0251572,
+    -0.0113208,
+    0.00628931,
+    0.00628931,
+    -0.00251572,
+    0.00377358,
+    0.00503145,
+    -0.00377358,
+    -0.0100629,
+    -0.00377358,
+    0.0113208,
+    0.0,
+    0.00377358,
+    -0.00503145,
+    0.00754717,
+    -0.00754717,
+    -0.00754717,
+    0.00880503
+   ]
+  },
+  "G2 Lin blue rise road-gate": {
+   "roads": 794,
+   "mean_gain": 0.00143937,
+   "ci": [
+    -0.0073607,
+    0.0126948
+   ],
+   "acc_mean": 0.786134,
+   "acc_base_mean": 0.784695,
+   "seeds_better": 11,
+   "seeds_worse": 9,
+   "per_seed_gain": [
+    0.00377834,
+    -0.00251889,
+    -0.00125945,
+    -0.00881612,
+    0.00629723,
+    0.00503778,
+    0.0,
+    0.00125945,
+    0.00503778,
+    -0.00503778,
+    -0.00125945,
+    -0.00377834,
+    0.00503778,
+    0.00251889,
+    -0.00377834,
+    0.00755668,
+    -0.00629723,
+    0.0163728,
+    0.00503778,
+    -0.00125945,
+    0.00629723
+   ]
+  },
+  "C0 current two-date": {
+   "roads": 798,
+   "mean_gain": -0.00566893,
+   "ci": [
+    -0.0131172,
+    0.0015457
+   ],
+   "acc_mean": 0.780105,
+   "acc_base_mean": 0.785774,
+   "seeds_better": 1,
+   "seeds_worse": 17,
+   "per_seed_gain": [
+    -0.0037594,
+    -0.00125313,
+    -0.0150376,
+    -0.0162907,
+    -0.0075188,
+    -0.00125313,
+    0.0,
+    -0.00250627,
+    -0.0075188,
+    -0.0125313,
+    -0.0162907,
+    -0.0037594,
+    0.0,
+    0.0,
+    -0.00250627,
+    -0.00501253,
+    -0.0075188,
+    0.00626566,
+    -0.0137845,
+    -0.0075188,
+    -0.00125313
+   ]
+  },
+  "N2b Schott roofs": {
+   "roads": 798,
+   "mean_gain": -0.00566893,
+   "ci": [
+    -0.0108558,
+    -0.00240485
+   ],
+   "acc_mean": 0.780105,
+   "acc_base_mean": 0.785774,
+   "seeds_better": 2,
+   "seeds_worse": 15,
+   "per_seed_gain": [
+    0.00125313,
+    -0.0162907,
+    -0.00877193,
+    -0.00626566,
+    0.00250627,
+    -0.0075188,
+    -0.00626566,
+    -0.0100251,
+    0.0,
+    -0.0075188,
+    0.0,
+    -0.0100251,
+    -0.00626566,
+    -0.0075188,
+    -0.00125313,
+    0.0,
+    0.0,
+    -0.00501253,
+    -0.0137845,
+    -0.0125313,
+    -0.0037594
+   ],
+   "vs_C0": {
+    "roads": 798,
+    "mean_gain": -8.34754e-19,
+    "ci": [
+     -0.00673482,
+     0.00635383
+    ],
+    "acc_mean": 0.780105,
+    "acc_base_mean": 0.780105,
+    "seeds_better": 10,
+    "seeds_worse": 10,
+    "per_seed_gain": [
+     0.00501253,
+     -0.0150376,
+     0.00626566,
+     0.0100251,
+     0.0100251,
+     -0.00626566,
+     -0.00626566,
+     -0.0075188,
+     0.0075188,
+     0.00501253,
+     0.0162907,
+     -0.00626566,
+     -0.00626566,
+     -0.0075188,
+     0.00125313,
+     0.00501253,
+     0.0075188,
+     -0.0112782,
+     0.0,
+     -0.00501253,
+     -0.00250627
+    ]
+   }
+  },
+  "N2c Schott roofs+roads no eps check": {
+   "roads": 798,
+   "mean_gain": -0.00274496,
+   "ci": [
+    -0.00918772,
+    0.00295222
+   ],
+   "acc_mean": 0.783029,
+   "acc_base_mean": 0.785774,
+   "seeds_better": 6,
+   "seeds_worse": 13,
+   "per_seed_gain": [
+    -0.00250627,
+    -0.00501253,
+    -0.0150376,
+    -0.0112782,
+    -0.0112782,
+    -0.00250627,
+    0.0075188,
+    -0.0037594,
+    0.00501253,
+    -0.0037594,
+    -0.00877193,
+    0.0,
+    0.00250627,
+    -0.00250627,
+    0.00626566,
+    0.0,
+    -0.0125313,
+    0.00877193,
+    -0.0100251,
+    -0.0075188,
+    0.00877193
+   ],
+   "vs_C0": {
+    "roads": 798,
+    "mean_gain": 0.00292398,
+    "ci": [
+     -0.0023363,
+     0.00853834
+    ],
+    "acc_mean": 0.783029,
+    "acc_base_mean": 0.780105,
+    "seeds_better": 13,
+    "seeds_worse": 6,
+    "per_seed_gain": [
+     0.00125313,
+     -0.0037594,
+     0.0,
+     0.00501253,
+     -0.0037594,
+     -0.00125313,
+     0.0075188,
+     -0.00125313,
+     0.0125313,
+     0.00877193,
+     0.0075188,
+     0.0037594,
+     0.00250627,
+     -0.00250627,
+     0.00877193,
+     0.00501253,
+     -0.00501253,
+     0.00250627,
+     0.0037594,
+     0.0,
+     0.0100251
+    ]
+   }
+  },
+  "N3 Lin wPCA": {
+   "roads": 798,
+   "mean_gain": -0.00584795,
+   "ci": [
+    -0.0120836,
+    0.000134783
+   ],
+   "acc_mean": 0.779926,
+   "acc_base_mean": 0.785774,
+   "seeds_better": 4,
+   "seeds_worse": 17,
+   "per_seed_gain": [
+    0.0075188,
+    -0.00877193,
+    -0.0150376,
+    -0.0112782,
+    -0.0150376,
+    -0.00501253,
+    0.00250627,
+    -0.00250627,
+    -0.00626566,
+    -0.00125313,
+    -0.00877193,
+    -0.00501253,
+    -0.0125313,
+    -0.00501253,
+    -0.0162907,
+    -0.00125313,
+    -0.0162907,
+    0.00501253,
+    -0.0100251,
+    -0.00250627,
+    0.00501253
+   ],
+   "vs_C0": {
+    "roads": 798,
+    "mean_gain": -0.000179019,
+    "ci": [
+     -0.00442138,
+     0.00389034
+    ],
+    "acc_mean": 0.779926,
+    "acc_base_mean": 0.780105,
+    "seeds_better": 10,
+    "seeds_worse": 9,
+    "per_seed_gain": [
+     0.0112782,
+     -0.0075188,
+     0.0,
+     0.00501253,
+     -0.0075188,
+     -0.0037594,
+     0.00250627,
+     0.0,
+     0.00125313,
+     0.0112782,
+     0.0075188,
+     -0.00125313,
+     -0.0125313,
+     -0.00501253,
+     -0.0137845,
+     0.0037594,
+     -0.00877193,
+     -0.00125313,
+     0.0037594,
+     0.00501253,
+     0.00626566
+    ]
+   }
+  },
+  "N3 Lin wPCA bounded": {
+   "roads": 798,
+   "mean_gain": -0.00590763,
+   "ci": [
+    -0.0129413,
+    0.000640469
+   ],
+   "acc_mean": 0.779866,
+   "acc_base_mean": 0.785774,
+   "seeds_better": 4,
+   "seeds_worse": 16,
+   "per_seed_gain": [
+    0.00250627,
+    -0.00877193,
+    -0.0175439,
+    -0.0125313,
+    -0.00626566,
+    -0.00250627,
+    0.0037594,
+    -0.00626566,
+    -0.0037594,
+    -0.0037594,
+    -0.0100251,
+    -0.00877193,
+    -0.0037594,
+    -0.00877193,
+    -0.0125313,
+    0.0,
+    -0.0112782,
+    -0.00125313,
+    -0.0150376,
+    0.00125313,
+    0.00125313
+   ],
+   "vs_C0": {
+    "roads": 798,
+    "mean_gain": -0.000238692,
+    "ci": [
+     -0.00451743,
+     0.0040881
+    ],
+    "acc_mean": 0.779866,
+    "acc_base_mean": 0.780105,
+    "seeds_better": 10,
+    "seeds_worse": 11,
+    "per_seed_gain": [
+     0.00626566,
+     -0.0075188,
+     -0.00250627,
+     0.0037594,
+     0.00125313,
+     -0.00125313,
+     0.0037594,
+     -0.0037594,
+     0.0037594,
+     0.00877193,
+     0.00626566,
+     -0.00501253,
+     -0.0037594,
+     -0.00877193,
+     -0.0100251,
+     0.00501253,
+     -0.0037594,
+     -0.0075188,
+     -0.00125313,
+     0.00877193,
+     0.00250627
+    ]
+   }
+  },
+  "A1 Chavez k=0.5": {
+   "roads": 798,
+   "mean_gain": -0.00560926,
+   "ci": [
+    -0.012694,
+    0.000809449
+   ],
+   "acc_mean": 0.780165,
+   "acc_base_mean": 0.785774,
+   "seeds_better": 3,
+   "seeds_worse": 16,
+   "per_seed_gain": [
+    0.00250627,
+    -0.0213033,
+    -0.0137845,
+    -0.0100251,
+    -0.0112782,
+    -0.00125313,
+    -0.00125313,
+    -0.00626566,
+    0.0,
+    -0.00501253,
+    -0.00877193,
+    0.0,
+    -0.00626566,
+    -0.00877193,
+    -0.00125313,
+    -0.00501253,
+    -0.0075188,
+    0.00125313,
+    -0.00626566,
+    -0.0125313,
+    0.00501253
+   ],
+   "vs_C0": {
+    "roads": 798,
+    "mean_gain": 5.9673e-05,
+    "ci": [
+     -0.00415297,
+     0.00374923
+    ],
+    "acc_mean": 0.780165,
+    "acc_base_mean": 0.780105,
+    "seeds_better": 10,
+    "seeds_worse": 8,
+    "per_seed_gain": [
+     0.00626566,
+     -0.0200501,
+     0.00125313,
+     0.00626566,
+     -0.0037594,
+     0.0,
+     -0.00125313,
+     -0.0037594,
+     0.0075188,
+     0.0075188,
+     0.0075188,
+     0.0037594,
+     -0.00626566,
+     -0.00877193,
+     0.00125313,
+     0.0,
+     0.0,
+     -0.00501253,
+     0.0075188,
+     -0.00501253,
+     0.00626566
+    ]
+   }
+  },
+  "A1 Chavez k=0.7": {
+   "roads": 798,
+   "mean_gain": -0.00560926,
+   "ci": [
+    -0.0112652,
+    -6.98657e-05
+   ],
+   "acc_mean": 0.780165,
+   "acc_base_mean": 0.785774,
+   "seeds_better": 3,
+   "seeds_worse": 16,
+   "per_seed_gain": [
+    -0.00250627,
+    -0.0162907,
+    -0.0125313,
+    -0.00501253,
+    -0.00626566,
+    0.00125313,
+    -0.00877193,
+    -0.0112782,
+    0.00250627,
+    -0.00877193,
+    -0.0075188,
+    -0.0112782,
+    -0.00125313,
+    -0.00501253,
+    0.00125313,
+    -0.00125313,
+    -0.00626566,
+    0.0,
+    -0.0112782,
+    -0.0075188,
+    0.0
+   ],
+   "vs_C0": {
+    "roads": 798,
+    "mean_gain": 5.9673e-05,
+    "ci": [
+     -0.00434959,
+     0.00430376
+    ],
+    "acc_mean": 0.780165,
+    "acc_base_mean": 0.780105,
+    "seeds_better": 13,
+    "seeds_worse": 7,
+    "per_seed_gain": [
+     0.00125313,
+     -0.0150376,
+     0.00250627,
+     0.0112782,
+     0.00125313,
+     0.00250627,
+     -0.00877193,
+     -0.00877193,
+     0.0100251,
+     0.0037594,
+     0.00877193,
+     -0.0075188,
+     -0.00125313,
+     -0.00501253,
+     0.0037594,
+     0.0037594,
+     0.00125313,
+     -0.00626566,
+     0.00250627,
+     0.0,
+     0.00125313
+    ]
+   }
+  },
+  "G2 Lin blue rise corr-gate": {
+   "roads": 798,
+   "mean_gain": -0.00417711,
+   "ci": [
+    -0.00872918,
+    -0.000109969
+   ],
+   "acc_mean": 0.781597,
+   "acc_base_mean": 0.785774,
+   "seeds_better": 4,
+   "seeds_worse": 15,
+   "per_seed_gain": [
+    0.0,
+    -0.0100251,
+    -0.0075188,
+    -0.0175439,
+    -0.0075188,
+    -0.00250627,
+    0.00250627,
+    -0.00626566,
+    -0.00125313,
+    -0.0100251,
+    -0.0112782,
+    -0.00125313,
+    0.00250627,
+    -0.00501253,
+    -0.00125313,
+    -0.00877193,
+    0.00125313,
+    0.00501253,
+    -0.0075188,
+    -0.00125313,
+    0.0
+   ],
+   "vs_C0": {
+    "roads": 798,
+    "mean_gain": 0.00149182,
+    "ci": [
+     -0.00432409,
+     0.00719586
+    ],
+    "acc_mean": 0.781597,
+    "acc_base_mean": 0.780105,
+    "seeds_better": 13,
+    "seeds_worse": 7,
+    "per_seed_gain": [
+     0.0037594,
+     -0.00877193,
+     0.0075188,
+     -0.00125313,
+     0.0,
+     -0.00125313,
+     0.00250627,
+     -0.0037594,
+     0.00626566,
+     0.00250627,
+     0.00501253,
+     0.00250627,
+     0.00250627,
+     -0.00501253,
+     0.00125313,
+     -0.0037594,
+     0.00877193,
+     -0.00125313,
+     0.00626566,
+     0.00626566,
+     0.00125313
+    ]
+   }
+  }
+ },
+ "winners": {
+  "helped": {
+   "G1 hysteresis road-gate": {
+    "flood_not_worse": false,
+    "own_metric": false,
+    "helped": false
+   },
+   "G1b hysteresis+blob road-gate": {
+    "flood_not_worse": true,
+    "own_metric": false,
+    "helped": true
+   },
+   "G1c hysteresis centred road-gate": {
+    "flood_not_worse": false,
+    "own_metric": false,
+    "helped": false
+   },
+   "G2 Lin blue rise road-gate": {
+    "flood_not_worse": true,
+    "own_metric": false,
+    "helped": true
+   },
+   "N2b Schott roofs": {
+    "flood_not_worse": false,
+    "own_metric": false,
+    "helped": false
+   },
+   "N2c Schott roofs+roads no eps check": {
+    "flood_not_worse": false,
+    "own_metric": false,
+    "helped": false
+   },
+   "N3 Lin wPCA": {
+    "flood_not_worse": false,
+    "own_metric": false,
+    "helped": false
+   },
+   "N3 Lin wPCA bounded": {
+    "flood_not_worse": false,
+    "own_metric": false,
+    "helped": false
+   },
+   "A1 Chavez k=0.5": {
+    "flood_not_worse": false,
+    "own_metric": false,
+    "helped": false
+   },
+   "A1 Chavez k=0.7": {
+    "flood_not_worse": false,
+    "own_metric": false,
+    "helped": false
+   },
+   "G2 Lin blue rise corr-gate": {
+    "flood_not_worse": false,
+    "own_metric": false,
+    "helped": false
+   }
+  },
+  "winner": {
+   "G": "G1b hysteresis+blob road-gate",
+   "N": null,
+   "A": null
+  }
+ }
+}

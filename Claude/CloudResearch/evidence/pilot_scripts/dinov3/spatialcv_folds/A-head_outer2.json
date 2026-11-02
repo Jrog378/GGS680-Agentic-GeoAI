@@ -1,0 +1,86 @@
+{
+ "cut-off (inner fold 1)": 0.31,
+ "inner fold 1 F1": 0.7106503818477572,
+ "best epoch": 12,
+ "epochs run": 12,
+ "history": [
+  {
+   "epoch": 1,
+   "train loss": 0.3221839237895347,
+   "seconds": 17.7,
+   "eval loss": 0.14038694805267102
+  },
+  {
+   "epoch": 2,
+   "train loss": 0.12003800320250384,
+   "seconds": 18.2,
+   "eval loss": 0.08593070950416047
+  },
+  {
+   "epoch": 3,
+   "train loss": 0.08857693336113734,
+   "seconds": 17.8,
+   "eval loss": 0.06823753007564208
+  },
+  {
+   "epoch": 4,
+   "train loss": 0.06618276248044791,
+   "seconds": 16.9,
+   "eval loss": 0.05987007929746746
+  },
+  {
+   "epoch": 5,
+   "train loss": 0.06291453546292974,
+   "seconds": 16.3,
+   "eval loss": 0.054001075616549696
+  },
+  {
+   "epoch": 6,
+   "train loss": 0.05262190014592092,
+   "seconds": 12.5,
+   "eval loss": 0.050202070422930005
+  },
+  {
+   "epoch": 7,
+   "train loss": 0.05193183245184557,
+   "seconds": 16.7,
+   "eval loss": 0.047376840508245505
+  },
+  {
+   "epoch": 8,
+   "train loss": 0.04835908161739217,
+   "seconds": 16.9,
+   "eval loss": 0.044936704527100996
+  },
+  {
+   "epoch": 9,
+   "train loss": 0.05364965893267572,
+   "seconds": 18.2,
+   "eval loss": 0.042791326568680545
+  },
+  {
+   "epoch": 10,
+   "train loss": 0.04705136645747365,
+   "seconds": 18.5,
+   "eval loss": 0.04081112452337081
+  },
+  {
+   "epoch": 11,
+   "train loss": 0.039970770906381,
+   "seconds": 17.5,
+   "eval loss": 0.03970216252052807
+  },
+  {
+   "epoch": 12,
+   "train loss": 0.04429165188669261,
+   "seconds": 17.1,
+   "eval loss": 0.03880646884768377
+  }
+ ],
+ "fit tiles": 147,
+ "inner fold 1 tiles": 31,
+ "held-out tiles": 48,
+ "seconds": 269.3,
+ "mean epoch, cached tokens (s)": 17.025,
+ "implementation": "spatialcv_ahead_cached.py: train_epochs('A', n_frozen=4) on cached frozen Top(4) tokens"
+}

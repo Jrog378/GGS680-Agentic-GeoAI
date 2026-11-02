@@ -1,0 +1,8 @@
+{
+ "Track B road tokens, train": 2990.0,
+ "Track B road tokens, val": 589.2,
+ "Track A cell basis (training tiles)": 1778.8,
+ "Track A cell features, train": 329.3,
+ "Track A cell features, val": 244.1,
+ "note": "Track B times from the first features run (features_trackB.log), stopped after Track B; the cell basis also built the float32 before-image trunk cache; the GPU was shared with another agent's job and ran about 3.5x slower than benchmarked"
+}

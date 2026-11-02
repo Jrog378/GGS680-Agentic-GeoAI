@@ -1,0 +1,179 @@
+{
+ "epochs (chosen on inner fold 1)": 4,
+ "es history": [
+  {
+   "epoch": 1,
+   "train loss": 0.6557884136538951,
+   "seconds": 182.8,
+   "eval loss": 0.866492655482789
+  },
+  {
+   "epoch": 2,
+   "train loss": 0.6143187224771853,
+   "seconds": 146.7,
+   "eval loss": 0.6338854818168435
+  },
+  {
+   "epoch": 3,
+   "train loss": 0.4773270285470482,
+   "seconds": 99.8,
+   "eval loss": 0.6312918317142487
+  },
+  {
+   "epoch": 4,
+   "train loss": 0.3945821851808202,
+   "seconds": 98.3,
+   "eval loss": 0.5989592517009027
+  },
+  {
+   "epoch": 5,
+   "train loss": 0.5061388818738723,
+   "seconds": 99.2,
+   "eval loss": 0.6261841451033375
+  },
+  {
+   "epoch": 6,
+   "train loss": 0.32443626733920794,
+   "seconds": 98.6,
+   "eval loss": 0.6855615725165874
+  },
+  {
+   "epoch": 7,
+   "train loss": 0.2607005975911126,
+   "seconds": 99.2,
+   "eval loss": 0.7785840812093292
+  }
+ ],
+ "cross-fit histories": [
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.6557884136538951,
+    "seconds": 99.0
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.6143187224771853,
+    "seconds": 98.7
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.4773270285470482,
+    "seconds": 97.9
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.3945821851808202,
+    "seconds": 106.2
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.6620270144329298,
+    "seconds": 120.5
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.4674930455839569,
+    "seconds": 119.5
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.46454997225564154,
+    "seconds": 114.3
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.37700395884691007,
+    "seconds": 114.2
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.6310807477877007,
+    "seconds": 109.0
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.3665716780558834,
+    "seconds": 109.6
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.3669843964795217,
+    "seconds": 115.1
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.31983337623608027,
+    "seconds": 108.5
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.5654122381594922,
+    "seconds": 107.7
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.3818733113681472,
+    "seconds": 107.7
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.4299009290785177,
+    "seconds": 108.5
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.3293067834612812,
+    "seconds": 108.6
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.5782173001712029,
+    "seconds": 86.5
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.6151883640893924,
+    "seconds": 90.1
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.37824987968759527,
+    "seconds": 93.8
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.5235364882012443,
+    "seconds": 93.3
+   }
+  ]
+ ],
+ "seconds": 4096.3,
+ "es fit tiles": 135,
+ "es eval tiles": 33,
+ "es target roads": 349,
+ "es eval roads": 128,
+ "cross-fit target roads": [
+  349,
+  434,
+  374,
+  334,
+  366
+ ],
+ "cross-fit fit tiles": [
+  135,
+  134,
+  133,
+  145,
+  125
+ ],
+ "held-out road tiles": 56
+}

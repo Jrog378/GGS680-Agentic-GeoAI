@@ -1,0 +1,168 @@
+{
+ "chosen": "classical + DINOv2 - dark",
+ "columns": [
+  "grey",
+  "std21",
+  "bright_flag",
+  "range21",
+  "grad21",
+  "std41",
+  "v2_pc0",
+  "v2_pc1",
+  "v2_pc2",
+  "v2_pc3",
+  "v2_pc4",
+  "v2_pc5",
+  "v2_pc6",
+  "v2_pc7",
+  "v2_pc8",
+  "v2_pc9",
+  "v2_pc10",
+  "v2_pc11",
+  "v2_pc12",
+  "v2_pc13",
+  "v2_pc14",
+  "v2_pc15",
+  "v2_pc16",
+  "v2_pc17",
+  "v2_pc18",
+  "v2_pc19",
+  "v2_pc20",
+  "v2_pc21",
+  "v2_pc22",
+  "v2_pc23",
+  "v2_pc24",
+  "v2_pc25",
+  "v2_pc26",
+  "v2_pc27",
+  "v2_pc28",
+  "v2_pc29",
+  "v2_pc30",
+  "v2_pc31"
+ ],
+ "roads": 1037,
+ "tiles": 217,
+ "flooded": 468,
+ "agreement": [
+  {
+   "scope": "all roads",
+   "roads": 1037,
+   "road rule flags": 229,
+   "spotter flags": 239,
+   "both": 195,
+   "road rule only": 34,
+   "spotter only": 44,
+   "either": 273,
+   "Jaccard": 0.7143,
+   "flooded among road rule only": 19,
+   "flooded among spotter only": 11
+  },
+  {
+   "scope": "roads the tile rule keeps",
+   "roads": 891,
+   "road rule flags": 93,
+   "spotter flags": 101,
+   "both": 60,
+   "road rule only": 33,
+   "spotter only": 41,
+   "either": 134,
+   "Jaccard": 0.4478,
+   "flooded among road rule only": 19,
+   "flooded among spotter only": 10
+  }
+ ],
+ "tile share: spotter vs mean road dark-rise share, Spearman": 0.6811360095245234,
+ "tiles with spotter share > 5%": 87,
+ "gated report": [
+  {
+   "rule": "production (tile rule + road rule)",
+   "roads assessed": 798,
+   "cannot assess": 239,
+   "flooded left out": 27,
+   "flooded share assessed": 0.553,
+   "accuracy": 0.822,
+   "accuracy 95% CI": "0.79-0.86",
+   "flooded found": 0.884,
+   "dry kept dry": 0.745,
+   "MCC": 0.64
+  },
+  {
+   "rule": "spotter (tile rule + classical + DINOv2 - dark road rule)",
+   "roads assessed": 790,
+   "cannot assess": 247,
+   "flooded left out": 18,
+   "flooded share assessed": 0.57,
+   "accuracy": 0.846,
+   "accuracy 95% CI": "0.81-0.88",
+   "flooded found": 0.924,
+   "dry kept dry": 0.741,
+   "MCC": 0.686
+  }
+ ],
+ "confusion": [
+  {
+   "gate": "production (tile rule + road rule)",
+   "kept": 798,
+   "set aside": 239,
+   "flooded set aside": 27,
+   "dry set aside": 212,
+   "TP": 390,
+   "FN": 51,
+   "FP": 91,
+   "TN": 266
+  },
+  {
+   "gate": "spotter (tile rule + classical + DINOv2 - dark road rule)",
+   "kept": 790,
+   "set aside": 247,
+   "flooded set aside": 18,
+   "dry set aside": 229,
+   "TP": 416,
+   "FN": 34,
+   "FP": 88,
+   "TN": 252
+  }
+ ],
+ "shared": {
+  "roads": 757,
+  "flooded": 431,
+  "accuracy": {
+   "production": 0.8243064729194187,
+   "spotter": 0.8428005284015853
+  },
+  "paired": [
+   {
+    "features": "spotter",
+    "vs production": 0.0185,
+    "95% CI": "+0.004 to +0.034",
+    "roads fixed": 25,
+    "roads broken": 11,
+    "McNemar p": 0.0288
+   }
+  ]
+ },
+ "only one gate": [
+  {
+   "roads": "kept by production only",
+   "n": 41,
+   "flooded": 10,
+   "dry": 31,
+   "called flooded": 9,
+   "right": 32,
+   "accuracy": 0.7805,
+   "median dark-rise share": 0.0,
+   "median spotter share": 0.3919
+  },
+  {
+   "roads": "kept by spotter only",
+   "n": 33,
+   "flooded": 19,
+   "dry": 14,
+   "called flooded": 22,
+   "right": 30,
+   "accuracy": 0.9091,
+   "median dark-rise share": 0.5467,
+   "median spotter share": 0.0027
+  }
+ ]
+}

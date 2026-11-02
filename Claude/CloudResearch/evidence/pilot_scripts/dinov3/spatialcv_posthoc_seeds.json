@@ -1,0 +1,238 @@
+{
+ "what": "POST HOC: frozen Track B arms over the 21 fold seeds (spatial folds, purged); model seed 662",
+ "seeds": [
+  662,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20
+ ],
+ "891 roads": [
+  {
+   "arm": "base + DINOv2 cues (production)",
+   "accuracy at seed 662": 0.7934904601571269,
+   "mean over 21 seeds": 0.7910854577521244,
+   "SD": 0.0061399564338196775,
+   "min": 0.7800224466891134,
+   "max": 0.8058361391694725
+  },
+  {
+   "arm": "base + DINOv2 cues + vector",
+   "accuracy at seed 662": 0.8159371492704826,
+   "mean over 21 seeds": 0.8066378066378066,
+   "SD": 0.007161363294573429,
+   "min": 0.7878787878787878,
+   "max": 0.8170594837261503,
+   "seeds above / equal / below production": [
+    21,
+    0,
+    0
+   ],
+   "seed-averaged difference vs production": 0.015552348885682219,
+   "seed-averaged 95% CI (blocks)": "+0.004 to +0.028",
+   "seed-averaged CI excludes 0": true
+  },
+  {
+   "arm": "base + DINOv3 cues",
+   "accuracy at seed 662": 0.797979797979798,
+   "mean over 21 seeds": 0.7998503554059111,
+   "SD": 0.006642981249731291,
+   "min": 0.7912457912457912,
+   "max": 0.8114478114478114,
+   "seeds above / equal / below production": [
+    18,
+    0,
+    3
+   ],
+   "seed-averaged difference vs production": 0.008764897653786543,
+   "seed-averaged 95% CI (blocks)": "+0.000 to +0.019",
+   "seed-averaged CI excludes 0": true
+  },
+  {
+   "arm": "base + DINOv3 cues + vector",
+   "accuracy at seed 662": 0.8249158249158249,
+   "mean over 21 seeds": 0.8149751483084818,
+   "SD": 0.006604494512980189,
+   "min": 0.8047138047138047,
+   "max": 0.8305274971941639,
+   "seeds above / equal / below production": [
+    21,
+    0,
+    0
+   ],
+   "seed-averaged difference vs production": 0.023889690556357222,
+   "seed-averaged 95% CI (blocks)": "+0.010 to +0.040",
+   "seed-averaged CI excludes 0": true
+  },
+  {
+   "arm": "base + DINOv2 + DINOv3 cues",
+   "accuracy at seed 662": 0.8013468013468014,
+   "mean over 21 seeds": 0.805194805194805,
+   "SD": 0.006049907718530096,
+   "min": 0.7946127946127947,
+   "max": 0.819304152637486,
+   "seeds above / equal / below production": [
+    21,
+    0,
+    0
+   ],
+   "seed-averaged difference vs production": 0.014109347442680775,
+   "seed-averaged 95% CI (blocks)": "+0.006 to +0.023",
+   "seed-averaged CI excludes 0": true
+  },
+  {
+   "arm": "base + DINOv2 + DINOv3 cues + vectors",
+   "accuracy at seed 662": 0.8316498316498316,
+   "mean over 21 seeds": 0.8235262679707124,
+   "SD": 0.006881152925343638,
+   "min": 0.8125701459034792,
+   "max": 0.8338945005611672,
+   "seeds above / equal / below production": [
+    21,
+    0,
+    0
+   ],
+   "seed-averaged difference vs production": 0.032440810218587995,
+   "seed-averaged 95% CI (blocks)": "+0.015 to +0.052",
+   "seed-averaged CI excludes 0": true
+  },
+  {
+   "arm": "DINOv3 cues + vector",
+   "accuracy at seed 662": 0.8305274971941639,
+   "mean over 21 seeds": 0.8328790551012772,
+   "SD": 0.006826015294718997,
+   "min": 0.8215488215488216,
+   "max": 0.8473625140291807,
+   "seeds above / equal / below production": [
+    21,
+    0,
+    0
+   ],
+   "seed-averaged difference vs production": 0.0417935973491529,
+   "seed-averaged 95% CI (blocks)": "+0.014 to +0.074",
+   "seed-averaged CI excludes 0": true
+  },
+  {
+   "arm": "DINOv2 + DINOv3 cues + vectors",
+   "accuracy at seed 662": 0.8507295173961841,
+   "mean over 21 seeds": 0.8426593982149536,
+   "SD": 0.007525660920205145,
+   "min": 0.8271604938271605,
+   "max": 0.8507295173961841,
+   "seeds above / equal / below production": [
+    21,
+    0,
+    0
+   ],
+   "seed-averaged difference vs production": 0.05157394046282935,
+   "seed-averaged 95% CI (blocks)": "+0.023 to +0.087",
+   "seed-averaged CI excludes 0": true
+  }
+ ],
+ "798 roads": [
+  {
+   "arm": "base + DINOv2 cues (production)",
+   "accuracy at seed 662": 0.7919799498746867,
+   "mean over 21 seeds": 0.7857739587062896,
+   "SD": 0.007950001406158966,
+   "min": 0.7644110275689223,
+   "max": 0.8007518796992481
+  },
+  {
+   "arm": "base + DINOv2 cues + vector",
+   "accuracy at seed 662": 0.8007518796992481,
+   "mean over 21 seeds": 0.7964554242749733,
+   "SD": 0.007161206573913333,
+   "min": 0.7807017543859649,
+   "max": 0.8107769423558897,
+   "seeds above / equal / below production": [
+    20,
+    1,
+    0
+   ],
+   "seed-averaged difference vs production": 0.010681465568683612,
+   "seed-averaged 95% CI (blocks)": "+0.001 to +0.020",
+   "seed-averaged CI excludes 0": true
+  },
+  {
+   "arm": "base + DINOv3 cues",
+   "accuracy at seed 662": 0.7982456140350878,
+   "mean over 21 seeds": 0.7918009308986753,
+   "SD": 0.007987537032257028,
+   "min": 0.7769423558897243,
+   "max": 0.8095238095238095,
+   "seeds above / equal / below production": [
+    18,
+    0,
+    3
+   ],
+   "seed-averaged difference vs production": 0.006026972192385725,
+   "seed-averaged 95% CI (blocks)": "-0.003 to +0.017",
+   "seed-averaged CI excludes 0": false
+  },
+  {
+   "arm": "base + DINOv3 cues + vector",
+   "accuracy at seed 662": 0.8145363408521303,
+   "mean over 21 seeds": 0.8046306241794964,
+   "SD": 0.0065942031247073945,
+   "min": 0.7944862155388471,
+   "max": 0.8208020050125313,
+   "seeds above / equal / below production": [
+    20,
+    0,
+    1
+   ],
+   "seed-averaged difference vs production": 0.01885666547320683,
+   "seed-averaged 95% CI (blocks)": "+0.003 to +0.037",
+   "seed-averaged CI excludes 0": true
+  },
+  {
+   "arm": "base + DINOv2 + DINOv3 cues",
+   "accuracy at seed 662": 0.8045112781954887,
+   "mean over 21 seeds": 0.7937701396348013,
+   "SD": 0.007398488478257016,
+   "min": 0.7756892230576441,
+   "max": 0.8045112781954887,
+   "seeds above / equal / below production": [
+    18,
+    1,
+    2
+   ],
+   "seed-averaged difference vs production": 0.007996180928511756,
+   "seed-averaged 95% CI (blocks)": "-0.003 to +0.021",
+   "seed-averaged CI excludes 0": false
+  },
+  {
+   "arm": "base + DINOv2 + DINOv3 cues + vectors",
+   "accuracy at seed 662": 0.8295739348370927,
+   "mean over 21 seeds": 0.810060866451844,
+   "SD": 0.0079410606222053,
+   "min": 0.7994987468671679,
+   "max": 0.8295739348370927,
+   "seeds above / equal / below production": [
+    21,
+    0,
+    0
+   ],
+   "seed-averaged difference vs production": 0.02428690774555436,
+   "seed-averaged 95% CI (blocks)": "+0.004 to +0.048",
+   "seed-averaged CI excludes 0": true
+  }
+ ]
+}

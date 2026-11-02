@@ -1,0 +1,1681 @@
+arm,learner,image,type,fold,TP,FP,FN,TN
+DINOv3,random forest,barren_3,barren,0,5987,240,420,50953
+DINOv3,random forest,barren_4,barren,0,3824,730,603,52443
+DINOv3,random forest,barren_8,barren,0,1123,298,117,56062
+DINOv3,random forest,barren_16,barren,0,4810,233,470,52087
+DINOv3,random forest,barren_27,barren,0,20830,2768,5820,28182
+DINOv3,random forest,snow_1,snow,0,20283,2700,1898,32719
+DINOv3,random forest,snow_3,snow,0,32726,530,7220,17124
+DINOv3,random forest,snow_7,snow,0,10201,109,3073,44217
+DINOv3,random forest,snow_18,snow,0,18571,218,11988,26823
+DINOv3,random forest,snow_22,snow,0,7800,98,2379,47323
+DINOv3,random forest,urban_6,urban,0,9951,234,1982,45433
+DINOv3,random forest,urban_17,urban,0,5574,575,2018,49433
+DINOv3,random forest,urban_20,urban,0,16713,673,2263,37951
+DINOv3,random forest,urban_22,urban,0,26684,305,2723,27888
+DINOv3,random forest,urban_23,urban,0,28327,768,10176,18329
+DINOv3,random forest,vegetation_14,vegetation,0,25366,249,365,31620
+DINOv3,random forest,vegetation_18,vegetation,0,12249,1000,38,44313
+DINOv3,random forest,vegetation_19,vegetation,0,15320,494,1000,40786
+DINOv3,random forest,vegetation_27,vegetation,0,38885,433,1542,16740
+DINOv3,random forest,water_4,water,0,14482,528,845,41745
+DINOv3,random forest,water_7,water,0,26997,4396,759,25448
+DINOv3,random forest,water_9,water,0,6706,1362,1401,48131
+DINOv3,random forest,water_11,water,0,6278,2285,10,49027
+DINOv3,random forest,water_26,water,0,7268,478,14811,35043
+DINOv3,linear probe,barren_3,barren,0,5916,215,491,50978
+DINOv3,linear probe,barren_4,barren,0,3171,270,1256,52903
+DINOv3,linear probe,barren_8,barren,0,1015,168,225,56192
+DINOv3,linear probe,barren_16,barren,0,4778,267,502,52053
+DINOv3,linear probe,barren_27,barren,0,23505,5070,3145,25880
+DINOv3,linear probe,snow_1,snow,0,20928,4647,1253,30772
+DINOv3,linear probe,snow_3,snow,0,34974,1011,4972,16643
+DINOv3,linear probe,snow_7,snow,0,9620,117,3654,44209
+DINOv3,linear probe,snow_18,snow,0,13882,259,16677,26782
+DINOv3,linear probe,snow_22,snow,0,8030,239,2149,47182
+DINOv3,linear probe,urban_6,urban,0,9732,135,2201,45532
+DINOv3,linear probe,urban_17,urban,0,4881,153,2711,49855
+DINOv3,linear probe,urban_20,urban,0,16839,534,2137,38090
+DINOv3,linear probe,urban_22,urban,0,27007,304,2400,27889
+DINOv3,linear probe,urban_23,urban,0,28860,712,9643,18385
+DINOv3,linear probe,vegetation_14,vegetation,0,25384,292,347,31577
+DINOv3,linear probe,vegetation_18,vegetation,0,12199,910,88,44403
+DINOv3,linear probe,vegetation_19,vegetation,0,15368,420,952,40860
+DINOv3,linear probe,vegetation_27,vegetation,0,38685,263,1742,16910
+DINOv3,linear probe,water_4,water,0,14267,343,1060,41930
+DINOv3,linear probe,water_7,water,0,26833,2870,923,26974
+DINOv3,linear probe,water_9,water,0,6996,1775,1111,47718
+DINOv3,linear probe,water_11,water,0,6255,2532,33,48780
+DINOv3,linear probe,water_26,water,0,13871,1818,8208,33703
+DINOv2 + DINOv3,random forest,barren_3,barren,0,5990,350,417,50843
+DINOv2 + DINOv3,random forest,barren_4,barren,0,3975,899,452,52274
+DINOv2 + DINOv3,random forest,barren_8,barren,0,1158,324,82,56036
+DINOv2 + DINOv3,random forest,barren_16,barren,0,4799,209,481,52111
+DINOv2 + DINOv3,random forest,barren_27,barren,0,19612,2188,7038,28762
+DINOv2 + DINOv3,random forest,snow_1,snow,0,20599,2579,1582,32840
+DINOv2 + DINOv3,random forest,snow_3,snow,0,34506,553,5440,17101
+DINOv2 + DINOv3,random forest,snow_7,snow,0,10968,264,2306,44062
+DINOv2 + DINOv3,random forest,snow_18,snow,0,20170,346,10389,26695
+DINOv2 + DINOv3,random forest,snow_22,snow,0,7813,242,2366,47179
+DINOv2 + DINOv3,random forest,urban_6,urban,0,9515,144,2418,45523
+DINOv2 + DINOv3,random forest,urban_17,urban,0,5387,579,2205,49429
+DINOv2 + DINOv3,random forest,urban_20,urban,0,16399,571,2577,38053
+DINOv2 + DINOv3,random forest,urban_22,urban,0,26586,231,2821,27962
+DINOv2 + DINOv3,random forest,urban_23,urban,0,27959,794,10544,18303
+DINOv2 + DINOv3,random forest,vegetation_14,vegetation,0,25326,219,405,31650
+DINOv2 + DINOv3,random forest,vegetation_18,vegetation,0,12248,1010,39,44303
+DINOv2 + DINOv3,random forest,vegetation_19,vegetation,0,15323,442,997,40838
+DINOv2 + DINOv3,random forest,vegetation_27,vegetation,0,38901,431,1526,16742
+DINOv2 + DINOv3,random forest,water_4,water,0,14516,554,811,41719
+DINOv2 + DINOv3,random forest,water_7,water,0,26822,4029,934,25815
+DINOv2 + DINOv3,random forest,water_9,water,0,6901,1574,1206,47919
+DINOv2 + DINOv3,random forest,water_11,water,0,6281,2621,7,48691
+DINOv2 + DINOv3,random forest,water_26,water,0,6650,458,15429,35063
+DINOv2 + DINOv3,linear probe,barren_3,barren,0,5895,195,512,50998
+DINOv2 + DINOv3,linear probe,barren_4,barren,0,3394,360,1033,52813
+DINOv2 + DINOv3,linear probe,barren_8,barren,0,872,148,368,56212
+DINOv2 + DINOv3,linear probe,barren_16,barren,0,4789,260,491,52060
+DINOv2 + DINOv3,linear probe,barren_27,barren,0,22492,3397,4158,27553
+DINOv2 + DINOv3,linear probe,snow_1,snow,0,21029,3711,1152,31708
+DINOv2 + DINOv3,linear probe,snow_3,snow,0,37784,1059,2162,16595
+DINOv2 + DINOv3,linear probe,snow_7,snow,0,10909,217,2365,44109
+DINOv2 + DINOv3,linear probe,snow_18,snow,0,16647,523,13912,26518
+DINOv2 + DINOv3,linear probe,snow_22,snow,0,8183,228,1996,47193
+DINOv2 + DINOv3,linear probe,urban_6,urban,0,9853,119,2080,45548
+DINOv2 + DINOv3,linear probe,urban_17,urban,0,5252,217,2340,49791
+DINOv2 + DINOv3,linear probe,urban_20,urban,0,16867,458,2109,38166
+DINOv2 + DINOv3,linear probe,urban_22,urban,0,27289,352,2118,27841
+DINOv2 + DINOv3,linear probe,urban_23,urban,0,28639,718,9864,18379
+DINOv2 + DINOv3,linear probe,vegetation_14,vegetation,0,25346,213,385,31656
+DINOv2 + DINOv3,linear probe,vegetation_18,vegetation,0,12226,922,61,44391
+DINOv2 + DINOv3,linear probe,vegetation_19,vegetation,0,15313,347,1007,40933
+DINOv2 + DINOv3,linear probe,vegetation_27,vegetation,0,38628,211,1799,16962
+DINOv2 + DINOv3,linear probe,water_4,water,0,14297,362,1030,41911
+DINOv2 + DINOv3,linear probe,water_7,water,0,26495,2528,1261,27316
+DINOv2 + DINOv3,linear probe,water_9,water,0,6740,1710,1367,47783
+DINOv2 + DINOv3,linear probe,water_11,water,0,6265,2571,23,48741
+DINOv2 + DINOv3,linear probe,water_26,water,0,12239,1673,9840,33848
+classical + DINOv3,random forest,barren_3,barren,0,6022,283,385,50910
+classical + DINOv3,random forest,barren_4,barren,0,3919,797,508,52376
+classical + DINOv3,random forest,barren_8,barren,0,1065,384,175,55976
+classical + DINOv3,random forest,barren_16,barren,0,4825,242,455,52078
+classical + DINOv3,random forest,barren_27,barren,0,19284,1880,7366,29070
+classical + DINOv3,random forest,snow_1,snow,0,21075,3266,1106,32153
+classical + DINOv3,random forest,snow_3,snow,0,33312,651,6634,17003
+classical + DINOv3,random forest,snow_7,snow,0,10282,46,2992,44280
+classical + DINOv3,random forest,snow_18,snow,0,21395,337,9164,26704
+classical + DINOv3,random forest,snow_22,snow,0,8352,202,1827,47219
+classical + DINOv3,random forest,urban_6,urban,0,9521,80,2412,45587
+classical + DINOv3,random forest,urban_17,urban,0,4702,71,2890,49937
+classical + DINOv3,random forest,urban_20,urban,0,16383,385,2593,38239
+classical + DINOv3,random forest,urban_22,urban,0,26866,323,2541,27870
+classical + DINOv3,random forest,urban_23,urban,0,27470,503,11033,18594
+classical + DINOv3,random forest,vegetation_14,vegetation,0,25367,192,364,31677
+classical + DINOv3,random forest,vegetation_18,vegetation,0,12243,764,44,44549
+classical + DINOv3,random forest,vegetation_19,vegetation,0,14967,322,1353,40958
+classical + DINOv3,random forest,vegetation_27,vegetation,0,38430,82,1997,17091
+classical + DINOv3,random forest,water_4,water,0,14679,501,648,41772
+classical + DINOv3,random forest,water_7,water,0,27134,3671,622,26173
+classical + DINOv3,random forest,water_9,water,0,6933,1496,1174,47997
+classical + DINOv3,random forest,water_11,water,0,6282,2351,6,48961
+classical + DINOv3,random forest,water_26,water,0,8491,422,13588,35099
+classical + DINOv3,linear probe,barren_3,barren,0,5920,194,487,50999
+classical + DINOv3,linear probe,barren_4,barren,0,3360,317,1067,52856
+classical + DINOv3,linear probe,barren_8,barren,0,1035,207,205,56153
+classical + DINOv3,linear probe,barren_16,barren,0,4842,253,438,52067
+classical + DINOv3,linear probe,barren_27,barren,0,24145,5811,2505,25139
+classical + DINOv3,linear probe,snow_1,snow,0,21216,4838,965,30581
+classical + DINOv3,linear probe,snow_3,snow,0,34724,945,5222,16709
+classical + DINOv3,linear probe,snow_7,snow,0,9862,98,3412,44228
+classical + DINOv3,linear probe,snow_18,snow,0,14186,240,16373,26801
+classical + DINOv3,linear probe,snow_22,snow,0,7957,157,2222,47264
+classical + DINOv3,linear probe,urban_6,urban,0,9847,236,2086,45431
+classical + DINOv3,linear probe,urban_17,urban,0,5255,198,2337,49810
+classical + DINOv3,linear probe,urban_20,urban,0,16904,449,2072,38175
+classical + DINOv3,linear probe,urban_22,urban,0,27253,324,2154,27869
+classical + DINOv3,linear probe,urban_23,urban,0,30210,800,8293,18297
+classical + DINOv3,linear probe,vegetation_14,vegetation,0,25334,189,397,31680
+classical + DINOv3,linear probe,vegetation_18,vegetation,0,12188,737,99,44576
+classical + DINOv3,linear probe,vegetation_19,vegetation,0,15238,318,1082,40962
+classical + DINOv3,linear probe,vegetation_27,vegetation,0,38621,193,1806,16980
+classical + DINOv3,linear probe,water_4,water,0,14120,227,1207,42046
+classical + DINOv3,linear probe,water_7,water,0,27110,2476,646,27368
+classical + DINOv3,linear probe,water_9,water,0,7057,1671,1050,47822
+classical + DINOv3,linear probe,water_11,water,0,6259,2517,29,48795
+classical + DINOv3,linear probe,water_26,water,0,13929,1680,8150,33841
+everything,random forest,barren_3,barren,0,5999,398,408,50795
+everything,random forest,barren_4,barren,0,4038,930,389,52243
+everything,random forest,barren_8,barren,0,1208,426,32,55934
+everything,random forest,barren_16,barren,0,4905,271,375,52049
+everything,random forest,barren_27,barren,0,19490,1945,7160,29005
+everything,random forest,snow_1,snow,0,21077,2971,1104,32448
+everything,random forest,snow_3,snow,0,34494,618,5452,17036
+everything,random forest,snow_7,snow,0,10990,116,2284,44210
+everything,random forest,snow_18,snow,0,21231,377,9328,26664
+everything,random forest,snow_22,snow,0,8155,247,2024,47174
+everything,random forest,urban_6,urban,0,9263,55,2670,45612
+everything,random forest,urban_17,urban,0,4646,108,2946,49900
+everything,random forest,urban_20,urban,0,16089,303,2887,38321
+everything,random forest,urban_22,urban,0,26778,244,2629,27949
+everything,random forest,urban_23,urban,0,27521,534,10982,18563
+everything,random forest,vegetation_14,vegetation,0,25350,188,381,31681
+everything,random forest,vegetation_18,vegetation,0,12243,869,44,44444
+everything,random forest,vegetation_19,vegetation,0,15102,300,1218,40980
+everything,random forest,vegetation_27,vegetation,0,38607,216,1820,16957
+everything,random forest,water_4,water,0,14585,538,742,41735
+everything,random forest,water_7,water,0,26957,3614,799,26230
+everything,random forest,water_9,water,0,6928,1576,1179,47917
+everything,random forest,water_11,water,0,6284,2614,4,48698
+everything,random forest,water_26,water,0,7472,386,14607,35135
+everything,linear probe,barren_3,barren,0,5872,186,535,51007
+everything,linear probe,barren_4,barren,0,3563,418,864,52755
+everything,linear probe,barren_8,barren,0,785,132,455,56228
+everything,linear probe,barren_16,barren,0,4849,279,431,52041
+everything,linear probe,barren_27,barren,0,23249,4082,3401,26868
+everything,linear probe,snow_1,snow,0,21164,3347,1017,32072
+everything,linear probe,snow_3,snow,0,37770,1057,2176,16597
+everything,linear probe,snow_7,snow,0,11004,191,2270,44135
+everything,linear probe,snow_18,snow,0,16846,598,13713,26443
+everything,linear probe,snow_22,snow,0,8228,204,1951,47217
+everything,linear probe,urban_6,urban,0,9858,235,2075,45432
+everything,linear probe,urban_17,urban,0,5534,319,2058,49689
+everything,linear probe,urban_20,urban,0,16955,400,2021,38224
+everything,linear probe,urban_22,urban,0,27433,344,1974,27849
+everything,linear probe,urban_23,urban,0,29676,734,8827,18363
+everything,linear probe,vegetation_14,vegetation,0,25329,182,402,31687
+everything,linear probe,vegetation_18,vegetation,0,12220,797,67,44516
+everything,linear probe,vegetation_19,vegetation,0,15206,246,1114,41034
+everything,linear probe,vegetation_27,vegetation,0,38654,150,1773,17023
+everything,linear probe,water_4,water,0,14119,257,1208,42016
+everything,linear probe,water_7,water,0,26966,2244,790,27600
+everything,linear probe,water_9,water,0,6849,1699,1258,47794
+everything,linear probe,water_11,water,0,6267,2554,21,48758
+everything,linear probe,water_26,water,0,12412,1515,9667,34006
+everything - bright,random forest,barren_3,barren,0,5975,351,432,50842
+everything - bright,random forest,barren_4,barren,0,3970,858,457,52315
+everything - bright,random forest,barren_8,barren,0,1204,368,36,55992
+everything - bright,random forest,barren_16,barren,0,4909,264,371,52056
+everything - bright,random forest,barren_27,barren,0,19865,2263,6785,28687
+everything - bright,random forest,snow_1,snow,0,21059,3103,1122,32316
+everything - bright,random forest,snow_3,snow,0,34515,562,5431,17092
+everything - bright,random forest,snow_7,snow,0,10711,86,2563,44240
+everything - bright,random forest,snow_18,snow,0,20872,348,9687,26693
+everything - bright,random forest,snow_22,snow,0,8079,245,2100,47176
+everything - bright,random forest,urban_6,urban,0,9248,61,2685,45606
+everything - bright,random forest,urban_17,urban,0,4706,150,2886,49858
+everything - bright,random forest,urban_20,urban,0,15987,339,2989,38285
+everything - bright,random forest,urban_22,urban,0,26727,271,2680,27922
+everything - bright,random forest,urban_23,urban,0,27858,689,10645,18408
+everything - bright,random forest,vegetation_14,vegetation,0,25388,230,343,31639
+everything - bright,random forest,vegetation_18,vegetation,0,12250,1062,37,44251
+everything - bright,random forest,vegetation_19,vegetation,0,15280,421,1040,40859
+everything - bright,random forest,vegetation_27,vegetation,0,38870,432,1557,16741
+everything - bright,random forest,water_4,water,0,14532,592,795,41681
+everything - bright,random forest,water_7,water,0,26761,3964,995,25880
+everything - bright,random forest,water_9,water,0,6967,1631,1140,47862
+everything - bright,random forest,water_11,water,0,6282,2589,6,48723
+everything - bright,random forest,water_26,water,0,6497,313,15582,35208
+everything - bright,linear probe,barren_3,barren,0,5903,210,504,50983
+everything - bright,linear probe,barren_4,barren,0,3410,364,1017,52809
+everything - bright,linear probe,barren_8,barren,0,849,144,391,56216
+everything - bright,linear probe,barren_16,barren,0,4816,272,464,52048
+everything - bright,linear probe,barren_27,barren,0,22781,3615,3869,27335
+everything - bright,linear probe,snow_1,snow,0,21079,3671,1102,31748
+everything - bright,linear probe,snow_3,snow,0,37719,1055,2227,16599
+everything - bright,linear probe,snow_7,snow,0,10935,217,2339,44109
+everything - bright,linear probe,snow_18,snow,0,16552,505,14007,26536
+everything - bright,linear probe,snow_22,snow,0,8187,222,1992,47199
+everything - bright,linear probe,urban_6,urban,0,9931,167,2002,45500
+everything - bright,linear probe,urban_17,urban,0,5270,220,2322,49788
+everything - bright,linear probe,urban_20,urban,0,16954,488,2022,38136
+everything - bright,linear probe,urban_22,urban,0,27306,352,2101,27841
+everything - bright,linear probe,urban_23,urban,0,28701,700,9802,18397
+everything - bright,linear probe,vegetation_14,vegetation,0,25357,215,374,31654
+everything - bright,linear probe,vegetation_18,vegetation,0,12222,935,65,44378
+everything - bright,linear probe,vegetation_19,vegetation,0,15348,382,972,40898
+everything - bright,linear probe,vegetation_27,vegetation,0,38706,206,1721,16967
+everything - bright,linear probe,water_4,water,0,14185,329,1142,41944
+everything - bright,linear probe,water_7,water,0,26641,2485,1115,27359
+everything - bright,linear probe,water_9,water,0,6725,1636,1382,47857
+everything - bright,linear probe,water_11,water,0,6262,2461,26,48851
+everything - bright,linear probe,water_26,water,0,12268,1467,9811,34054
+everything - dark,random forest,barren_3,barren,0,5999,361,408,50832
+everything - dark,random forest,barren_4,barren,0,4021,878,406,52295
+everything - dark,random forest,barren_8,barren,0,1183,392,57,55968
+everything - dark,random forest,barren_16,barren,0,4895,263,385,52057
+everything - dark,random forest,barren_27,barren,0,19738,2028,6912,28922
+everything - dark,random forest,snow_1,snow,0,20972,2907,1209,32512
+everything - dark,random forest,snow_3,snow,0,34574,601,5372,17053
+everything - dark,random forest,snow_7,snow,0,11103,134,2171,44192
+everything - dark,random forest,snow_18,snow,0,21785,359,8774,26682
+everything - dark,random forest,snow_22,snow,0,8104,270,2075,47151
+everything - dark,random forest,urban_6,urban,0,9071,57,2862,45610
+everything - dark,random forest,urban_17,urban,0,4704,111,2888,49897
+everything - dark,random forest,urban_20,urban,0,16146,320,2830,38304
+everything - dark,random forest,urban_22,urban,0,26694,221,2713,27972
+everything - dark,random forest,urban_23,urban,0,27813,554,10690,18543
+everything - dark,random forest,vegetation_14,vegetation,0,25355,192,376,31677
+everything - dark,random forest,vegetation_18,vegetation,0,12247,867,40,44446
+everything - dark,random forest,vegetation_19,vegetation,0,15120,300,1200,40980
+everything - dark,random forest,vegetation_27,vegetation,0,38657,250,1770,16923
+everything - dark,random forest,water_4,water,0,14597,527,730,41746
+everything - dark,random forest,water_7,water,0,26975,3630,781,26214
+everything - dark,random forest,water_9,water,0,6983,1576,1124,47917
+everything - dark,random forest,water_11,water,0,6283,2502,5,48810
+everything - dark,random forest,water_26,water,0,6830,315,15249,35206
+everything - dark,linear probe,barren_3,barren,0,5900,191,507,51002
+everything - dark,linear probe,barren_4,barren,0,3515,382,912,52791
+everything - dark,linear probe,barren_8,barren,0,856,148,384,56212
+everything - dark,linear probe,barren_16,barren,0,4846,285,434,52035
+everything - dark,linear probe,barren_27,barren,0,23392,4258,3258,26692
+everything - dark,linear probe,snow_1,snow,0,21294,3781,887,31638
+everything - dark,linear probe,snow_3,snow,0,37720,1107,2226,16547
+everything - dark,linear probe,snow_7,snow,0,10917,157,2357,44169
+everything - dark,linear probe,snow_18,snow,0,16729,516,13830,26525
+everything - dark,linear probe,snow_22,snow,0,8319,231,1860,47190
+everything - dark,linear probe,urban_6,urban,0,9911,230,2022,45437
+everything - dark,linear probe,urban_17,urban,0,5422,241,2170,49767
+everything - dark,linear probe,urban_20,urban,0,16854,377,2122,38247
+everything - dark,linear probe,urban_22,urban,0,27473,351,1934,27842
+everything - dark,linear probe,urban_23,urban,0,29622,736,8881,18361
+everything - dark,linear probe,vegetation_14,vegetation,0,25261,154,470,31715
+everything - dark,linear probe,vegetation_18,vegetation,0,12224,817,63,44496
+everything - dark,linear probe,vegetation_19,vegetation,0,15222,312,1098,40968
+everything - dark,linear probe,vegetation_27,vegetation,0,38638,155,1789,17018
+everything - dark,linear probe,water_4,water,0,14104,266,1223,42007
+everything - dark,linear probe,water_7,water,0,26874,2201,882,27643
+everything - dark,linear probe,water_9,water,0,6773,1642,1334,47851
+everything - dark,linear probe,water_11,water,0,6266,2552,22,48760
+everything - dark,linear probe,water_26,water,0,12017,1358,10062,34163
+everything - texture,random forest,barren_3,barren,0,5993,381,414,50812
+everything - texture,random forest,barren_4,barren,0,4032,944,395,52229
+everything - texture,random forest,barren_8,barren,0,1205,400,35,55960
+everything - texture,random forest,barren_16,barren,0,4942,342,338,51978
+everything - texture,random forest,barren_27,barren,0,19389,1909,7261,29041
+everything - texture,random forest,snow_1,snow,0,21142,3153,1039,32266
+everything - texture,random forest,snow_3,snow,0,34766,681,5180,16973
+everything - texture,random forest,snow_7,snow,0,10881,147,2393,44179
+everything - texture,random forest,snow_18,snow,0,21421,415,9138,26626
+everything - texture,random forest,snow_22,snow,0,8198,269,1981,47152
+everything - texture,random forest,urban_6,urban,0,9469,91,2464,45576
+everything - texture,random forest,urban_17,urban,0,5066,293,2526,49715
+everything - texture,random forest,urban_20,urban,0,16165,381,2811,38243
+everything - texture,random forest,urban_22,urban,0,26702,203,2705,27990
+everything - texture,random forest,urban_23,urban,0,27487,557,11016,18540
+everything - texture,random forest,vegetation_14,vegetation,0,25288,163,443,31706
+everything - texture,random forest,vegetation_18,vegetation,0,12244,899,43,44414
+everything - texture,random forest,vegetation_19,vegetation,0,15055,318,1265,40962
+everything - texture,random forest,vegetation_27,vegetation,0,38510,162,1917,17011
+everything - texture,random forest,water_4,water,0,14575,488,752,41785
+everything - texture,random forest,water_7,water,0,26938,3579,818,26265
+everything - texture,random forest,water_9,water,0,6864,1453,1243,48040
+everything - texture,random forest,water_11,water,0,6285,2750,3,48562
+everything - texture,random forest,water_26,water,0,7081,439,14998,35082
+everything - texture,linear probe,barren_3,barren,0,5873,170,534,51023
+everything - texture,linear probe,barren_4,barren,0,3553,394,874,52779
+everything - texture,linear probe,barren_8,barren,0,818,130,422,56230
+everything - texture,linear probe,barren_16,barren,0,4841,285,439,52035
+everything - texture,linear probe,barren_27,barren,0,23201,4166,3449,26784
+everything - texture,linear probe,snow_1,snow,0,21163,3494,1018,31925
+everything - texture,linear probe,snow_3,snow,0,37859,1015,2087,16639
+everything - texture,linear probe,snow_7,snow,0,10955,241,2319,44085
+everything - texture,linear probe,snow_18,snow,0,16802,582,13757,26459
+everything - texture,linear probe,snow_22,snow,0,8106,198,2073,47223
+everything - texture,linear probe,urban_6,urban,0,9930,246,2003,45421
+everything - texture,linear probe,urban_17,urban,0,5679,387,1913,49621
+everything - texture,linear probe,urban_20,urban,0,16928,427,2048,38197
+everything - texture,linear probe,urban_22,urban,0,27340,339,2067,27854
+everything - texture,linear probe,urban_23,urban,0,29628,753,8875,18344
+everything - texture,linear probe,vegetation_14,vegetation,0,25261,169,470,31700
+everything - texture,linear probe,vegetation_18,vegetation,0,12217,794,70,44519
+everything - texture,linear probe,vegetation_19,vegetation,0,15219,280,1101,41000
+everything - texture,linear probe,vegetation_27,vegetation,0,38618,168,1809,17005
+everything - texture,linear probe,water_4,water,0,14111,251,1216,42022
+everything - texture,linear probe,water_7,water,0,26941,2325,815,27519
+everything - texture,linear probe,water_9,water,0,6831,1702,1276,47791
+everything - texture,linear probe,water_11,water,0,6262,2448,26,48864
+everything - texture,linear probe,water_26,water,0,11859,1658,10220,33863
+DINOv3,random forest,barren_10,barren,1,17281,7874,630,31815
+DINOv3,random forest,barren_13,barren,1,8957,471,989,47183
+DINOv3,random forest,barren_17,barren,1,22626,544,3372,31058
+DINOv3,random forest,barren_18,barren,1,901,517,2172,54010
+DINOv3,random forest,barren_29,barren,1,2914,1136,1048,52502
+DINOv3,random forest,snow_5,snow,1,4299,500,484,52317
+DINOv3,random forest,snow_9,snow,1,26552,1243,2800,27005
+DINOv3,random forest,snow_19,snow,1,8628,948,2715,45309
+DINOv3,random forest,snow_20,snow,1,28969,234,3719,24678
+DINOv3,random forest,snow_27,snow,1,3679,669,373,52879
+DINOv3,random forest,urban_3,urban,1,9935,665,1569,45431
+DINOv3,random forest,urban_5,urban,1,34109,93,15005,8393
+DINOv3,random forest,urban_9,urban,1,19793,531,2987,34289
+DINOv3,random forest,urban_11,urban,1,9615,977,669,46339
+DINOv3,random forest,urban_26,urban,1,13207,1067,3047,40279
+DINOv3,random forest,vegetation_5,vegetation,1,36564,940,1196,18900
+DINOv3,random forest,vegetation_10,vegetation,1,27312,87,4487,25714
+DINOv3,random forest,vegetation_12,vegetation,1,13252,471,750,43127
+DINOv3,random forest,vegetation_23,vegetation,1,18705,1507,80,37308
+DINOv3,random forest,vegetation_30,vegetation,1,36724,741,1478,18657
+DINOv3,random forest,water_13,water,1,23615,1849,2296,29840
+DINOv3,random forest,water_16,water,1,35006,1111,1300,20183
+DINOv3,random forest,water_17,water,1,23421,1499,2126,30554
+DINOv3,random forest,water_29,water,1,8020,1271,318,47991
+DINOv3,linear probe,barren_10,barren,1,17440,8897,471,30792
+DINOv3,linear probe,barren_13,barren,1,8826,647,1120,47007
+DINOv3,linear probe,barren_17,barren,1,21478,562,4520,31040
+DINOv3,linear probe,barren_18,barren,1,698,393,2375,54134
+DINOv3,linear probe,barren_29,barren,1,1608,826,2354,52812
+DINOv3,linear probe,snow_5,snow,1,4087,161,696,52656
+DINOv3,linear probe,snow_9,snow,1,26798,1193,2554,27055
+DINOv3,linear probe,snow_19,snow,1,10222,1694,1121,44563
+DINOv3,linear probe,snow_20,snow,1,28811,106,3877,24806
+DINOv3,linear probe,snow_27,snow,1,3698,610,354,52938
+DINOv3,linear probe,urban_3,urban,1,10146,931,1358,45165
+DINOv3,linear probe,urban_5,urban,1,38843,384,10271,8102
+DINOv3,linear probe,urban_9,urban,1,20211,337,2569,34483
+DINOv3,linear probe,urban_11,urban,1,9894,1316,390,46000
+DINOv3,linear probe,urban_26,urban,1,14025,1159,2229,40187
+DINOv3,linear probe,vegetation_5,vegetation,1,35302,484,2458,19356
+DINOv3,linear probe,vegetation_10,vegetation,1,29824,581,1975,25220
+DINOv3,linear probe,vegetation_12,vegetation,1,13661,619,341,42979
+DINOv3,linear probe,vegetation_23,vegetation,1,18484,858,301,37957
+DINOv3,linear probe,vegetation_30,vegetation,1,36726,756,1476,18642
+DINOv3,linear probe,water_13,water,1,23882,2268,2029,29421
+DINOv3,linear probe,water_16,water,1,35222,1558,1084,19736
+DINOv3,linear probe,water_17,water,1,23880,1696,1667,30357
+DINOv3,linear probe,water_29,water,1,8123,1320,215,47942
+DINOv2 + DINOv3,random forest,barren_10,barren,1,17128,8215,783,31474
+DINOv2 + DINOv3,random forest,barren_13,barren,1,9226,715,720,46939
+DINOv2 + DINOv3,random forest,barren_17,barren,1,23909,684,2089,30918
+DINOv2 + DINOv3,random forest,barren_18,barren,1,770,514,2303,54013
+DINOv2 + DINOv3,random forest,barren_29,barren,1,3730,1567,232,52071
+DINOv2 + DINOv3,random forest,snow_5,snow,1,4330,562,453,52255
+DINOv2 + DINOv3,random forest,snow_9,snow,1,26116,1226,3236,27022
+DINOv2 + DINOv3,random forest,snow_19,snow,1,8962,1230,2381,45027
+DINOv2 + DINOv3,random forest,snow_20,snow,1,28700,260,3988,24652
+DINOv2 + DINOv3,random forest,snow_27,snow,1,3726,899,326,52649
+DINOv2 + DINOv3,random forest,urban_3,urban,1,10199,871,1305,45225
+DINOv2 + DINOv3,random forest,urban_5,urban,1,33706,91,15408,8395
+DINOv2 + DINOv3,random forest,urban_9,urban,1,20002,531,2778,34289
+DINOv2 + DINOv3,random forest,urban_11,urban,1,9586,962,698,46354
+DINOv2 + DINOv3,random forest,urban_26,urban,1,12606,840,3648,40506
+DINOv2 + DINOv3,random forest,vegetation_5,vegetation,1,36447,893,1313,18947
+DINOv2 + DINOv3,random forest,vegetation_10,vegetation,1,28016,251,3783,25550
+DINOv2 + DINOv3,random forest,vegetation_12,vegetation,1,13337,555,665,43043
+DINOv2 + DINOv3,random forest,vegetation_23,vegetation,1,18677,1522,108,37293
+DINOv2 + DINOv3,random forest,vegetation_30,vegetation,1,36686,599,1516,18799
+DINOv2 + DINOv3,random forest,water_13,water,1,23605,1766,2306,29923
+DINOv2 + DINOv3,random forest,water_16,water,1,34852,938,1454,20356
+DINOv2 + DINOv3,random forest,water_17,water,1,23738,1822,1809,30231
+DINOv2 + DINOv3,random forest,water_29,water,1,8063,1210,275,48052
+DINOv2 + DINOv3,linear probe,barren_10,barren,1,17442,10535,469,29154
+DINOv2 + DINOv3,linear probe,barren_13,barren,1,8590,577,1356,47077
+DINOv2 + DINOv3,linear probe,barren_17,barren,1,23979,837,2019,30765
+DINOv2 + DINOv3,linear probe,barren_18,barren,1,1252,408,1821,54119
+DINOv2 + DINOv3,linear probe,barren_29,barren,1,3015,1440,947,52198
+DINOv2 + DINOv3,linear probe,snow_5,snow,1,4203,244,580,52573
+DINOv2 + DINOv3,linear probe,snow_9,snow,1,26649,1042,2703,27206
+DINOv2 + DINOv3,linear probe,snow_19,snow,1,9983,1503,1360,44754
+DINOv2 + DINOv3,linear probe,snow_20,snow,1,28951,102,3737,24810
+DINOv2 + DINOv3,linear probe,snow_27,snow,1,3804,861,248,52687
+DINOv2 + DINOv3,linear probe,urban_3,urban,1,10289,1099,1215,44997
+DINOv2 + DINOv3,linear probe,urban_5,urban,1,40547,493,8567,7993
+DINOv2 + DINOv3,linear probe,urban_9,urban,1,20649,364,2131,34456
+DINOv2 + DINOv3,linear probe,urban_11,urban,1,9845,1381,439,45935
+DINOv2 + DINOv3,linear probe,urban_26,urban,1,13253,903,3001,40443
+DINOv2 + DINOv3,linear probe,vegetation_5,vegetation,1,35732,555,2028,19285
+DINOv2 + DINOv3,linear probe,vegetation_10,vegetation,1,30065,708,1734,25093
+DINOv2 + DINOv3,linear probe,vegetation_12,vegetation,1,13483,498,519,43100
+DINOv2 + DINOv3,linear probe,vegetation_23,vegetation,1,18596,985,189,37830
+DINOv2 + DINOv3,linear probe,vegetation_30,vegetation,1,36789,636,1413,18762
+DINOv2 + DINOv3,linear probe,water_13,water,1,23860,2042,2051,29647
+DINOv2 + DINOv3,linear probe,water_16,water,1,35165,1120,1141,20174
+DINOv2 + DINOv3,linear probe,water_17,water,1,23865,1744,1682,30309
+DINOv2 + DINOv3,linear probe,water_29,water,1,7944,1105,394,48157
+classical + DINOv3,random forest,barren_10,barren,1,17365,8341,546,31348
+classical + DINOv3,random forest,barren_13,barren,1,9249,670,697,46984
+classical + DINOv3,random forest,barren_17,barren,1,23343,569,2655,31033
+classical + DINOv3,random forest,barren_18,barren,1,945,779,2128,53748
+classical + DINOv3,random forest,barren_29,barren,1,3134,1561,828,52077
+classical + DINOv3,random forest,snow_5,snow,1,4316,552,467,52265
+classical + DINOv3,random forest,snow_9,snow,1,27025,1561,2327,26687
+classical + DINOv3,random forest,snow_19,snow,1,9006,897,2337,45360
+classical + DINOv3,random forest,snow_20,snow,1,29644,326,3044,24586
+classical + DINOv3,random forest,snow_27,snow,1,3648,276,404,53272
+classical + DINOv3,random forest,urban_3,urban,1,9564,271,1940,45825
+classical + DINOv3,random forest,urban_5,urban,1,34267,38,14847,8448
+classical + DINOv3,random forest,urban_9,urban,1,19945,447,2835,34373
+classical + DINOv3,random forest,urban_11,urban,1,9555,855,729,46461
+classical + DINOv3,random forest,urban_26,urban,1,13569,1217,2685,40129
+classical + DINOv3,random forest,vegetation_5,vegetation,1,36986,1172,774,18668
+classical + DINOv3,random forest,vegetation_10,vegetation,1,28691,118,3108,25683
+classical + DINOv3,random forest,vegetation_12,vegetation,1,13229,307,773,43291
+classical + DINOv3,random forest,vegetation_23,vegetation,1,18729,1722,56,37093
+classical + DINOv3,random forest,vegetation_30,vegetation,1,36798,808,1404,18590
+classical + DINOv3,random forest,water_13,water,1,22327,652,3584,31037
+classical + DINOv3,random forest,water_16,water,1,34486,814,1820,20480
+classical + DINOv3,random forest,water_17,water,1,24130,2035,1417,30018
+classical + DINOv3,random forest,water_29,water,1,7992,810,346,48452
+classical + DINOv3,linear probe,barren_10,barren,1,17499,9772,412,29917
+classical + DINOv3,linear probe,barren_13,barren,1,8878,630,1068,47024
+classical + DINOv3,linear probe,barren_17,barren,1,21035,769,4963,30833
+classical + DINOv3,linear probe,barren_18,barren,1,1126,522,1947,54005
+classical + DINOv3,linear probe,barren_29,barren,1,2004,930,1958,52708
+classical + DINOv3,linear probe,snow_5,snow,1,4061,135,722,52682
+classical + DINOv3,linear probe,snow_9,snow,1,26625,1020,2727,27228
+classical + DINOv3,linear probe,snow_19,snow,1,10187,1589,1156,44668
+classical + DINOv3,linear probe,snow_20,snow,1,28722,99,3966,24813
+classical + DINOv3,linear probe,snow_27,snow,1,3744,567,308,52981
+classical + DINOv3,linear probe,urban_3,urban,1,9855,671,1649,45425
+classical + DINOv3,linear probe,urban_5,urban,1,38858,326,10256,8160
+classical + DINOv3,linear probe,urban_9,urban,1,20123,266,2657,34554
+classical + DINOv3,linear probe,urban_11,urban,1,9966,1281,318,46035
+classical + DINOv3,linear probe,urban_26,urban,1,14366,1351,1888,39995
+classical + DINOv3,linear probe,vegetation_5,vegetation,1,35513,467,2247,19373
+classical + DINOv3,linear probe,vegetation_10,vegetation,1,30012,544,1787,25257
+classical + DINOv3,linear probe,vegetation_12,vegetation,1,13534,417,468,43181
+classical + DINOv3,linear probe,vegetation_23,vegetation,1,18486,734,299,38081
+classical + DINOv3,linear probe,vegetation_30,vegetation,1,36855,760,1347,18638
+classical + DINOv3,linear probe,water_13,water,1,23689,1823,2222,29866
+classical + DINOv3,linear probe,water_16,water,1,35199,1466,1107,19828
+classical + DINOv3,linear probe,water_17,water,1,24245,1804,1302,30249
+classical + DINOv3,linear probe,water_29,water,1,8091,1198,247,48064
+everything,random forest,barren_10,barren,1,17267,8971,644,30718
+everything,random forest,barren_13,barren,1,9379,776,567,46878
+everything,random forest,barren_17,barren,1,24186,685,1812,30917
+everything,random forest,barren_18,barren,1,810,559,2263,53968
+everything,random forest,barren_29,barren,1,3898,2081,64,51557
+everything,random forest,snow_5,snow,1,4366,564,417,52253
+everything,random forest,snow_9,snow,1,26565,1410,2787,26838
+everything,random forest,snow_19,snow,1,9232,1116,2111,45141
+everything,random forest,snow_20,snow,1,29232,256,3456,24656
+everything,random forest,snow_27,snow,1,3702,431,350,53117
+everything,random forest,urban_3,urban,1,9792,402,1712,45694
+everything,random forest,urban_5,urban,1,33914,32,15200,8454
+everything,random forest,urban_9,urban,1,19998,416,2782,34404
+everything,random forest,urban_11,urban,1,9509,820,775,46496
+everything,random forest,urban_26,urban,1,12916,953,3338,40393
+everything,random forest,vegetation_5,vegetation,1,36703,1021,1057,18819
+everything,random forest,vegetation_10,vegetation,1,28178,128,3621,25673
+everything,random forest,vegetation_12,vegetation,1,13202,339,800,43259
+everything,random forest,vegetation_23,vegetation,1,18710,1476,75,37339
+everything,random forest,vegetation_30,vegetation,1,36693,609,1509,18789
+everything,random forest,water_13,water,1,22651,910,3260,30779
+everything,random forest,water_16,water,1,34621,808,1685,20486
+everything,random forest,water_17,water,1,24156,2032,1391,30021
+everything,random forest,water_29,water,1,8077,866,261,48396
+everything,linear probe,barren_10,barren,1,17502,11698,409,27991
+everything,linear probe,barren_13,barren,1,8681,530,1265,47124
+everything,linear probe,barren_17,barren,1,24016,1124,1982,30478
+everything,linear probe,barren_18,barren,1,2039,596,1034,53931
+everything,linear probe,barren_29,barren,1,3389,1502,573,52136
+everything,linear probe,snow_5,snow,1,4175,222,608,52595
+everything,linear probe,snow_9,snow,1,26560,952,2792,27296
+everything,linear probe,snow_19,snow,1,9955,1462,1388,44795
+everything,linear probe,snow_20,snow,1,29163,148,3525,24764
+everything,linear probe,snow_27,snow,1,3836,825,216,52723
+everything,linear probe,urban_3,urban,1,10055,786,1449,45310
+everything,linear probe,urban_5,urban,1,41026,505,8088,7981
+everything,linear probe,urban_9,urban,1,20582,256,2198,34564
+everything,linear probe,urban_11,urban,1,9917,1277,367,46039
+everything,linear probe,urban_26,urban,1,13708,1156,2546,40190
+everything,linear probe,vegetation_5,vegetation,1,35895,530,1865,19310
+everything,linear probe,vegetation_10,vegetation,1,30157,637,1642,25164
+everything,linear probe,vegetation_12,vegetation,1,13375,349,627,43249
+everything,linear probe,vegetation_23,vegetation,1,18600,853,185,37962
+everything,linear probe,vegetation_30,vegetation,1,36896,640,1306,18758
+everything,linear probe,water_13,water,1,23757,1701,2154,29988
+everything,linear probe,water_16,water,1,35138,1072,1168,20222
+everything,linear probe,water_17,water,1,24295,1919,1252,30134
+everything,linear probe,water_29,water,1,7837,989,501,48273
+everything - bright,random forest,barren_10,barren,1,17274,8938,637,30751
+everything - bright,random forest,barren_13,barren,1,9316,783,630,46871
+everything - bright,random forest,barren_17,barren,1,24023,662,1975,30940
+everything - bright,random forest,barren_18,barren,1,825,488,2248,54039
+everything - bright,random forest,barren_29,barren,1,3718,1668,244,51970
+everything - bright,random forest,snow_5,snow,1,4332,529,451,52288
+everything - bright,random forest,snow_9,snow,1,26419,1251,2933,26997
+everything - bright,random forest,snow_19,snow,1,9037,1057,2306,45200
+everything - bright,random forest,snow_20,snow,1,28838,166,3850,24746
+everything - bright,random forest,snow_27,snow,1,3648,522,404,53026
+everything - bright,random forest,urban_3,urban,1,10077,712,1427,45384
+everything - bright,random forest,urban_5,urban,1,33490,42,15624,8444
+everything - bright,random forest,urban_9,urban,1,19999,527,2781,34293
+everything - bright,random forest,urban_11,urban,1,9461,808,823,46508
+everything - bright,random forest,urban_26,urban,1,12832,916,3422,40430
+everything - bright,random forest,vegetation_5,vegetation,1,36600,920,1160,18920
+everything - bright,random forest,vegetation_10,vegetation,1,28239,114,3560,25687
+everything - bright,random forest,vegetation_12,vegetation,1,13281,423,721,43175
+everything - bright,random forest,vegetation_23,vegetation,1,18698,1483,87,37332
+everything - bright,random forest,vegetation_30,vegetation,1,36724,634,1478,18764
+everything - bright,random forest,water_13,water,1,23558,1737,2353,29952
+everything - bright,random forest,water_16,water,1,34757,929,1549,20365
+everything - bright,random forest,water_17,water,1,24119,1981,1428,30072
+everything - bright,random forest,water_29,water,1,8076,1079,262,48183
+everything - bright,linear probe,barren_10,barren,1,17456,10877,455,28812
+everything - bright,linear probe,barren_13,barren,1,8560,572,1386,47082
+everything - bright,linear probe,barren_17,barren,1,23997,939,2001,30663
+everything - bright,linear probe,barren_18,barren,1,1603,640,1470,53887
+everything - bright,linear probe,barren_29,barren,1,2953,1465,1009,52173
+everything - bright,linear probe,snow_5,snow,1,4159,213,624,52604
+everything - bright,linear probe,snow_9,snow,1,26545,1000,2807,27248
+everything - bright,linear probe,snow_19,snow,1,9923,1479,1420,44778
+everything - bright,linear probe,snow_20,snow,1,29054,142,3634,24770
+everything - bright,linear probe,snow_27,snow,1,3828,925,224,52623
+everything - bright,linear probe,urban_3,urban,1,10201,985,1303,45111
+everything - bright,linear probe,urban_5,urban,1,40498,516,8616,7970
+everything - bright,linear probe,urban_9,urban,1,20539,334,2241,34486
+everything - bright,linear probe,urban_11,urban,1,9867,1440,417,45876
+everything - bright,linear probe,urban_26,urban,1,13400,983,2854,40363
+everything - bright,linear probe,vegetation_5,vegetation,1,35803,558,1957,19282
+everything - bright,linear probe,vegetation_10,vegetation,1,30017,669,1782,25132
+everything - bright,linear probe,vegetation_12,vegetation,1,13516,565,486,43033
+everything - bright,linear probe,vegetation_23,vegetation,1,18603,935,182,37880
+everything - bright,linear probe,vegetation_30,vegetation,1,36797,621,1405,18777
+everything - bright,linear probe,water_13,water,1,23877,2108,2034,29581
+everything - bright,linear probe,water_16,water,1,35077,1057,1229,20237
+everything - bright,linear probe,water_17,water,1,23996,1809,1551,30244
+everything - bright,linear probe,water_29,water,1,7882,1016,456,48246
+everything - dark,random forest,barren_10,barren,1,17245,8881,666,30808
+everything - dark,random forest,barren_13,barren,1,9308,702,638,46952
+everything - dark,random forest,barren_17,barren,1,24073,695,1925,30907
+everything - dark,random forest,barren_18,barren,1,780,536,2293,53991
+everything - dark,random forest,barren_29,barren,1,3873,1939,89,51699
+everything - dark,random forest,snow_5,snow,1,4339,518,444,52299
+everything - dark,random forest,snow_9,snow,1,26528,1356,2824,26892
+everything - dark,random forest,snow_19,snow,1,9257,1150,2086,45107
+everything - dark,random forest,snow_20,snow,1,29230,271,3458,24641
+everything - dark,random forest,snow_27,snow,1,3742,510,310,53038
+everything - dark,random forest,urban_3,urban,1,9774,408,1730,45688
+everything - dark,random forest,urban_5,urban,1,34292,37,14822,8449
+everything - dark,random forest,urban_9,urban,1,20039,430,2741,34390
+everything - dark,random forest,urban_11,urban,1,9461,771,823,46545
+everything - dark,random forest,urban_26,urban,1,12910,955,3344,40391
+everything - dark,random forest,vegetation_5,vegetation,1,36680,963,1080,18877
+everything - dark,random forest,vegetation_10,vegetation,1,28423,133,3376,25668
+everything - dark,random forest,vegetation_12,vegetation,1,13289,364,713,43234
+everything - dark,random forest,vegetation_23,vegetation,1,18712,1460,73,37355
+everything - dark,random forest,vegetation_30,vegetation,1,36737,599,1465,18799
+everything - dark,random forest,water_13,water,1,22853,1059,3058,30630
+everything - dark,random forest,water_16,water,1,34686,791,1620,20503
+everything - dark,random forest,water_17,water,1,23997,1946,1550,30107
+everything - dark,random forest,water_29,water,1,8045,927,293,48335
+everything - dark,linear probe,barren_10,barren,1,17514,11821,397,27868
+everything - dark,linear probe,barren_13,barren,1,8621,484,1325,47170
+everything - dark,linear probe,barren_17,barren,1,24035,1055,1963,30547
+everything - dark,linear probe,barren_18,barren,1,1829,587,1244,53940
+everything - dark,linear probe,barren_29,barren,1,3199,1714,763,51924
+everything - dark,linear probe,snow_5,snow,1,4182,235,601,52582
+everything - dark,linear probe,snow_9,snow,1,26652,982,2700,27266
+everything - dark,linear probe,snow_19,snow,1,9955,1416,1388,44841
+everything - dark,linear probe,snow_20,snow,1,29065,112,3623,24800
+everything - dark,linear probe,snow_27,snow,1,3807,743,245,52805
+everything - dark,linear probe,urban_3,urban,1,9932,740,1572,45356
+everything - dark,linear probe,urban_5,urban,1,40690,428,8424,8058
+everything - dark,linear probe,urban_9,urban,1,20585,241,2195,34579
+everything - dark,linear probe,urban_11,urban,1,9921,1372,363,45944
+everything - dark,linear probe,urban_26,urban,1,13702,1133,2552,40213
+everything - dark,linear probe,vegetation_5,vegetation,1,35943,563,1817,19277
+everything - dark,linear probe,vegetation_10,vegetation,1,30164,620,1635,25181
+everything - dark,linear probe,vegetation_12,vegetation,1,13178,289,824,43309
+everything - dark,linear probe,vegetation_23,vegetation,1,18579,807,206,38008
+everything - dark,linear probe,vegetation_30,vegetation,1,36852,630,1350,18768
+everything - dark,linear probe,water_13,water,1,23524,1595,2387,30094
+everything - dark,linear probe,water_16,water,1,35027,981,1279,20313
+everything - dark,linear probe,water_17,water,1,24291,1930,1256,30123
+everything - dark,linear probe,water_29,water,1,7781,876,557,48386
+everything - texture,random forest,barren_10,barren,1,17327,9126,584,30563
+everything - texture,random forest,barren_13,barren,1,9392,761,554,46893
+everything - texture,random forest,barren_17,barren,1,24103,739,1895,30863
+everything - texture,random forest,barren_18,barren,1,827,584,2246,53943
+everything - texture,random forest,barren_29,barren,1,3905,2089,57,51549
+everything - texture,random forest,snow_5,snow,1,4359,552,424,52265
+everything - texture,random forest,snow_9,snow,1,26460,1301,2892,26947
+everything - texture,random forest,snow_19,snow,1,9233,1115,2110,45142
+everything - texture,random forest,snow_20,snow,1,28972,205,3716,24707
+everything - texture,random forest,snow_27,snow,1,3671,417,381,53131
+everything - texture,random forest,urban_3,urban,1,9780,357,1724,45739
+everything - texture,random forest,urban_5,urban,1,33746,36,15368,8450
+everything - texture,random forest,urban_9,urban,1,19912,367,2868,34453
+everything - texture,random forest,urban_11,urban,1,9623,937,661,46379
+everything - texture,random forest,urban_26,urban,1,12852,952,3402,40394
+everything - texture,random forest,vegetation_5,vegetation,1,36694,972,1066,18868
+everything - texture,random forest,vegetation_10,vegetation,1,28456,169,3343,25632
+everything - texture,random forest,vegetation_12,vegetation,1,13173,350,829,43248
+everything - texture,random forest,vegetation_23,vegetation,1,18697,1472,88,37343
+everything - texture,random forest,vegetation_30,vegetation,1,36663,599,1539,18799
+everything - texture,random forest,water_13,water,1,22398,711,3513,30978
+everything - texture,random forest,water_16,water,1,34692,804,1614,20490
+everything - texture,random forest,water_17,water,1,24373,2446,1174,29607
+everything - texture,random forest,water_29,water,1,8068,795,270,48467
+everything - texture,linear probe,barren_10,barren,1,17502,11728,409,27961
+everything - texture,linear probe,barren_13,barren,1,8652,533,1294,47121
+everything - texture,linear probe,barren_17,barren,1,24165,1142,1833,30460
+everything - texture,linear probe,barren_18,barren,1,1866,519,1207,54008
+everything - texture,linear probe,barren_29,barren,1,3304,1656,658,51982
+everything - texture,linear probe,snow_5,snow,1,4181,221,602,52596
+everything - texture,linear probe,snow_9,snow,1,26484,975,2868,27273
+everything - texture,linear probe,snow_19,snow,1,9904,1371,1439,44886
+everything - texture,linear probe,snow_20,snow,1,29126,126,3562,24786
+everything - texture,linear probe,snow_27,snow,1,3832,782,220,52766
+everything - texture,linear probe,urban_3,urban,1,10000,789,1504,45307
+everything - texture,linear probe,urban_5,urban,1,40465,493,8649,7993
+everything - texture,linear probe,urban_9,urban,1,20460,212,2320,34608
+everything - texture,linear probe,urban_11,urban,1,9926,1448,358,45868
+everything - texture,linear probe,urban_26,urban,1,13637,1080,2617,40266
+everything - texture,linear probe,vegetation_5,vegetation,1,35923,538,1837,19302
+everything - texture,linear probe,vegetation_10,vegetation,1,30100,702,1699,25099
+everything - texture,linear probe,vegetation_12,vegetation,1,13321,341,681,43257
+everything - texture,linear probe,vegetation_23,vegetation,1,18590,867,195,37948
+everything - texture,linear probe,vegetation_30,vegetation,1,36854,628,1348,18770
+everything - texture,linear probe,water_13,water,1,23659,1594,2252,30095
+everything - texture,linear probe,water_16,water,1,35095,1051,1211,20243
+everything - texture,linear probe,water_17,water,1,24261,1999,1286,30054
+everything - texture,linear probe,water_29,water,1,7760,895,578,48367
+DINOv3,random forest,barren_5,barren,2,16727,4035,73,36765
+DINOv3,random forest,barren_9,barren,2,14159,10089,27,33325
+DINOv3,random forest,barren_12,barren,2,8967,3114,1243,44276
+DINOv3,random forest,barren_15,barren,2,5211,4,19581,32804
+DINOv3,random forest,barren_26,barren,2,17730,129,2549,37192
+DINOv3,random forest,snow_2,snow,2,14182,418,3183,39817
+DINOv3,random forest,snow_4,snow,2,16205,2170,563,38662
+DINOv3,random forest,snow_8,snow,2,4271,418,1058,51853
+DINOv3,random forest,snow_21,snow,2,7889,1301,2778,45632
+DINOv3,random forest,snow_30,snow,2,16517,4982,3831,32270
+DINOv3,random forest,urban_1,urban,2,11599,1444,579,46138
+DINOv3,random forest,urban_12,urban,2,14731,1310,9690,31869
+DINOv3,random forest,urban_13,urban,2,27854,281,3231,26234
+DINOv3,random forest,urban_27,urban,2,37695,1830,866,17209
+DINOv3,random forest,vegetation_8,vegetation,2,0,0,4548,53052
+DINOv3,random forest,vegetation_11,vegetation,2,22598,37,2125,32840
+DINOv3,random forest,vegetation_15,vegetation,2,30290,1213,1102,24995
+DINOv3,random forest,vegetation_20,vegetation,2,23547,3120,878,30055
+DINOv3,random forest,vegetation_24,vegetation,2,36904,461,1776,18459
+DINOv3,random forest,water_1,water,2,35947,1384,4481,15788
+DINOv3,random forest,water_3,water,2,21045,4321,17,32217
+DINOv3,random forest,water_15,water,2,34761,1140,1672,20027
+DINOv3,random forest,water_20,water,2,23509,1390,2452,30249
+DINOv3,random forest,water_21,water,2,25079,346,1380,30795
+DINOv3,linear probe,barren_5,barren,2,16629,4208,171,36592
+DINOv3,linear probe,barren_9,barren,2,14118,7118,68,36296
+DINOv3,linear probe,barren_12,barren,2,9627,3709,583,43681
+DINOv3,linear probe,barren_15,barren,2,5677,0,19115,32808
+DINOv3,linear probe,barren_26,barren,2,17753,113,2526,37208
+DINOv3,linear probe,snow_2,snow,2,15547,1597,1818,38638
+DINOv3,linear probe,snow_4,snow,2,16560,2559,208,38273
+DINOv3,linear probe,snow_8,snow,2,4334,643,995,51628
+DINOv3,linear probe,snow_21,snow,2,8916,2516,1751,44417
+DINOv3,linear probe,snow_30,snow,2,18021,4562,2327,32690
+DINOv3,linear probe,urban_1,urban,2,11804,1940,374,45642
+DINOv3,linear probe,urban_12,urban,2,16733,1618,7688,31561
+DINOv3,linear probe,urban_13,urban,2,29235,191,1850,26324
+DINOv3,linear probe,urban_27,urban,2,37561,1962,1000,17077
+DINOv3,linear probe,vegetation_8,vegetation,2,0,0,4548,53052
+DINOv3,linear probe,vegetation_11,vegetation,2,22141,11,2582,32866
+DINOv3,linear probe,vegetation_15,vegetation,2,30388,1303,1004,24905
+DINOv3,linear probe,vegetation_20,vegetation,2,23452,2250,973,30925
+DINOv3,linear probe,vegetation_24,vegetation,2,37070,454,1610,18466
+DINOv3,linear probe,water_1,water,2,37481,2465,2947,14707
+DINOv3,linear probe,water_3,water,2,21012,3381,50,33157
+DINOv3,linear probe,water_15,water,2,34333,622,2100,20545
+DINOv3,linear probe,water_20,water,2,23409,236,2552,31403
+DINOv3,linear probe,water_21,water,2,25526,333,933,30808
+DINOv2 + DINOv3,random forest,barren_5,barren,2,16738,4028,62,36772
+DINOv2 + DINOv3,random forest,barren_9,barren,2,14144,9870,42,33544
+DINOv2 + DINOv3,random forest,barren_12,barren,2,9229,3417,981,43973
+DINOv2 + DINOv3,random forest,barren_15,barren,2,3513,1,21279,32807
+DINOv2 + DINOv3,random forest,barren_26,barren,2,17731,125,2548,37196
+DINOv2 + DINOv3,random forest,snow_2,snow,2,14293,574,3072,39661
+DINOv2 + DINOv3,random forest,snow_4,snow,2,16123,2407,645,38425
+DINOv2 + DINOv3,random forest,snow_8,snow,2,3845,175,1484,52096
+DINOv2 + DINOv3,random forest,snow_21,snow,2,7778,1299,2889,45634
+DINOv2 + DINOv3,random forest,snow_30,snow,2,16516,2343,3832,34909
+DINOv2 + DINOv3,random forest,urban_1,urban,2,11617,1612,561,45970
+DINOv2 + DINOv3,random forest,urban_12,urban,2,14255,1140,10166,32039
+DINOv2 + DINOv3,random forest,urban_13,urban,2,27819,104,3266,26411
+DINOv2 + DINOv3,random forest,urban_27,urban,2,37213,1053,1348,17986
+DINOv2 + DINOv3,random forest,vegetation_8,vegetation,2,4,0,4544,53052
+DINOv2 + DINOv3,random forest,vegetation_11,vegetation,2,22542,69,2181,32808
+DINOv2 + DINOv3,random forest,vegetation_15,vegetation,2,30243,1249,1149,24959
+DINOv2 + DINOv3,random forest,vegetation_20,vegetation,2,23500,2772,925,30403
+DINOv2 + DINOv3,random forest,vegetation_24,vegetation,2,36736,537,1944,18383
+DINOv2 + DINOv3,random forest,water_1,water,2,34205,792,6223,16380
+DINOv2 + DINOv3,random forest,water_3,water,2,21032,3697,30,32841
+DINOv2 + DINOv3,random forest,water_15,water,2,34801,1197,1632,19970
+DINOv2 + DINOv3,random forest,water_20,water,2,24113,1276,1848,30363
+DINOv2 + DINOv3,random forest,water_21,water,2,24707,231,1752,30910
+DINOv2 + DINOv3,linear probe,barren_5,barren,2,16435,3430,365,37370
+DINOv2 + DINOv3,linear probe,barren_9,barren,2,14096,7029,90,36385
+DINOv2 + DINOv3,linear probe,barren_12,barren,2,9596,3974,614,43416
+DINOv2 + DINOv3,linear probe,barren_15,barren,2,5117,0,19675,32808
+DINOv2 + DINOv3,linear probe,barren_26,barren,2,17551,73,2728,37248
+DINOv2 + DINOv3,linear probe,snow_2,snow,2,15322,1287,2043,38948
+DINOv2 + DINOv3,linear probe,snow_4,snow,2,16523,2498,245,38334
+DINOv2 + DINOv3,linear probe,snow_8,snow,2,4319,514,1010,51757
+DINOv2 + DINOv3,linear probe,snow_21,snow,2,8750,1707,1917,45226
+DINOv2 + DINOv3,linear probe,snow_30,snow,2,18010,2689,2338,34563
+DINOv2 + DINOv3,linear probe,urban_1,urban,2,11761,1694,417,45888
+DINOv2 + DINOv3,linear probe,urban_12,urban,2,16033,1127,8388,32052
+DINOv2 + DINOv3,linear probe,urban_13,urban,2,29235,159,1850,26356
+DINOv2 + DINOv3,linear probe,urban_27,urban,2,36460,1436,2101,17603
+DINOv2 + DINOv3,linear probe,vegetation_8,vegetation,2,0,0,4548,53052
+DINOv2 + DINOv3,linear probe,vegetation_11,vegetation,2,22230,12,2493,32865
+DINOv2 + DINOv3,linear probe,vegetation_15,vegetation,2,30168,867,1224,25341
+DINOv2 + DINOv3,linear probe,vegetation_20,vegetation,2,23453,2012,972,31163
+DINOv2 + DINOv3,linear probe,vegetation_24,vegetation,2,37136,471,1544,18449
+DINOv2 + DINOv3,linear probe,water_1,water,2,36446,1172,3982,16000
+DINOv2 + DINOv3,linear probe,water_3,water,2,20993,2453,69,34085
+DINOv2 + DINOv3,linear probe,water_15,water,2,34298,654,2135,20513
+DINOv2 + DINOv3,linear probe,water_20,water,2,24033,216,1928,31423
+DINOv2 + DINOv3,linear probe,water_21,water,2,25406,296,1053,30845
+classical + DINOv3,random forest,barren_5,barren,2,16761,4694,39,36106
+classical + DINOv3,random forest,barren_9,barren,2,14183,11786,3,31628
+classical + DINOv3,random forest,barren_12,barren,2,9063,3247,1147,44143
+classical + DINOv3,random forest,barren_15,barren,2,4836,0,19956,32808
+classical + DINOv3,random forest,barren_26,barren,2,17949,160,2330,37161
+classical + DINOv3,random forest,snow_2,snow,2,14520,396,2845,39839
+classical + DINOv3,random forest,snow_4,snow,2,16153,1705,615,39127
+classical + DINOv3,random forest,snow_8,snow,2,4290,483,1039,51788
+classical + DINOv3,random forest,snow_21,snow,2,7611,776,3056,46157
+classical + DINOv3,random forest,snow_30,snow,2,17036,5321,3312,31931
+classical + DINOv3,random forest,urban_1,urban,2,11826,1527,352,46055
+classical + DINOv3,random forest,urban_12,urban,2,13282,648,11139,32531
+classical + DINOv3,random forest,urban_13,urban,2,26495,82,4590,26433
+classical + DINOv3,random forest,urban_27,urban,2,37852,1958,709,17081
+classical + DINOv3,random forest,vegetation_8,vegetation,2,0,0,4548,53052
+classical + DINOv3,random forest,vegetation_11,vegetation,2,22820,43,1903,32834
+classical + DINOv3,random forest,vegetation_15,vegetation,2,29252,318,2140,25890
+classical + DINOv3,random forest,vegetation_20,vegetation,2,23832,3885,593,29290
+classical + DINOv3,random forest,vegetation_24,vegetation,2,36314,212,2366,18708
+classical + DINOv3,random forest,water_1,water,2,36410,1098,4018,16074
+classical + DINOv3,random forest,water_3,water,2,21055,3477,7,33061
+classical + DINOv3,random forest,water_15,water,2,34709,791,1724,20376
+classical + DINOv3,random forest,water_20,water,2,21956,1044,4005,30595
+classical + DINOv3,random forest,water_21,water,2,25185,222,1274,30919
+classical + DINOv3,linear probe,barren_5,barren,2,16648,4221,152,36579
+classical + DINOv3,linear probe,barren_9,barren,2,14140,7554,46,35860
+classical + DINOv3,linear probe,barren_12,barren,2,9759,4460,451,42930
+classical + DINOv3,linear probe,barren_15,barren,2,6167,0,18625,32808
+classical + DINOv3,linear probe,barren_26,barren,2,17781,99,2498,37222
+classical + DINOv3,linear probe,snow_2,snow,2,15469,1749,1896,38486
+classical + DINOv3,linear probe,snow_4,snow,2,16493,1953,275,38879
+classical + DINOv3,linear probe,snow_8,snow,2,4173,383,1156,51888
+classical + DINOv3,linear probe,snow_21,snow,2,8470,1625,2197,45308
+classical + DINOv3,linear probe,snow_30,snow,2,17880,3775,2468,33477
+classical + DINOv3,linear probe,urban_1,urban,2,11817,1709,361,45873
+classical + DINOv3,linear probe,urban_12,urban,2,17333,1618,7088,31561
+classical + DINOv3,linear probe,urban_13,urban,2,29061,135,2024,26380
+classical + DINOv3,linear probe,urban_27,urban,2,38163,1911,398,17128
+classical + DINOv3,linear probe,vegetation_8,vegetation,2,0,0,4548,53052
+classical + DINOv3,linear probe,vegetation_11,vegetation,2,22262,9,2461,32868
+classical + DINOv3,linear probe,vegetation_15,vegetation,2,30308,964,1084,25244
+classical + DINOv3,linear probe,vegetation_20,vegetation,2,23716,2426,709,30749
+classical + DINOv3,linear probe,vegetation_24,vegetation,2,36975,397,1705,18523
+classical + DINOv3,linear probe,water_1,water,2,37692,2373,2736,14799
+classical + DINOv3,linear probe,water_3,water,2,21024,3528,38,33010
+classical + DINOv3,linear probe,water_15,water,2,34514,584,1919,20583
+classical + DINOv3,linear probe,water_20,water,2,22803,210,3158,31429
+classical + DINOv3,linear probe,water_21,water,2,25599,339,860,30802
+everything,random forest,barren_5,barren,2,16747,4221,53,36579
+everything,random forest,barren_9,barren,2,14162,10795,24,32619
+everything,random forest,barren_12,barren,2,9272,3707,938,43683
+everything,random forest,barren_15,barren,2,3322,0,21470,32808
+everything,random forest,barren_26,barren,2,17903,133,2376,37188
+everything,random forest,snow_2,snow,2,14513,498,2852,39737
+everything,random forest,snow_4,snow,2,16139,1963,629,38869
+everything,random forest,snow_8,snow,2,3985,223,1344,52048
+everything,random forest,snow_21,snow,2,7533,767,3134,46166
+everything,random forest,snow_30,snow,2,16853,2757,3495,34495
+everything,random forest,urban_1,urban,2,11745,1547,433,46035
+everything,random forest,urban_12,urban,2,13283,601,11138,32578
+everything,random forest,urban_13,urban,2,26084,11,5001,26504
+everything,random forest,urban_27,urban,2,37496,1448,1065,17591
+everything,random forest,vegetation_8,vegetation,2,0,0,4548,53052
+everything,random forest,vegetation_11,vegetation,2,22697,44,2026,32833
+everything,random forest,vegetation_15,vegetation,2,29229,341,2163,25867
+everything,random forest,vegetation_20,vegetation,2,23717,3585,708,29590
+everything,random forest,vegetation_24,vegetation,2,36233,259,2447,18661
+everything,random forest,water_1,water,2,34406,633,6022,16539
+everything,random forest,water_3,water,2,21044,3299,18,33239
+everything,random forest,water_15,water,2,34774,818,1659,20349
+everything,random forest,water_20,water,2,23148,995,2813,30644
+everything,random forest,water_21,water,2,24879,164,1580,30977
+everything,linear probe,barren_5,barren,2,16461,3272,339,37528
+everything,linear probe,barren_9,barren,2,14096,7449,90,35965
+everything,linear probe,barren_12,barren,2,9698,4445,512,42945
+everything,linear probe,barren_15,barren,2,4242,0,20550,32808
+everything,linear probe,barren_26,barren,2,17670,66,2609,37255
+everything,linear probe,snow_2,snow,2,15347,1451,2018,38784
+everything,linear probe,snow_4,snow,2,16475,2199,293,38633
+everything,linear probe,snow_8,snow,2,4194,327,1135,51944
+everything,linear probe,snow_21,snow,2,8423,1087,2244,45846
+everything,linear probe,snow_30,snow,2,18029,2679,2319,34573
+everything,linear probe,urban_1,urban,2,11779,1538,399,46044
+everything,linear probe,urban_12,urban,2,16429,1092,7992,32087
+everything,linear probe,urban_13,urban,2,29017,135,2068,26380
+everything,linear probe,urban_27,urban,2,37375,1471,1186,17568
+everything,linear probe,vegetation_8,vegetation,2,3,0,4545,53052
+everything,linear probe,vegetation_11,vegetation,2,22419,14,2304,32863
+everything,linear probe,vegetation_15,vegetation,2,29976,601,1416,25607
+everything,linear probe,vegetation_20,vegetation,2,23673,2260,752,30915
+everything,linear probe,vegetation_24,vegetation,2,37056,412,1624,18508
+everything,linear probe,water_1,water,2,36594,1136,3834,16036
+everything,linear probe,water_3,water,2,21007,2468,55,34070
+everything,linear probe,water_15,water,2,34431,573,2002,20594
+everything,linear probe,water_20,water,2,23938,192,2023,31447
+everything,linear probe,water_21,water,2,25533,294,926,30847
+everything - bright,random forest,barren_5,barren,2,16738,4220,62,36580
+everything - bright,random forest,barren_9,barren,2,14152,10616,34,32798
+everything - bright,random forest,barren_12,barren,2,9266,4035,944,43355
+everything - bright,random forest,barren_15,barren,2,3476,0,21316,32808
+everything - bright,random forest,barren_26,barren,2,17831,109,2448,37212
+everything - bright,random forest,snow_2,snow,2,14424,507,2941,39728
+everything - bright,random forest,snow_4,snow,2,16162,2063,606,38769
+everything - bright,random forest,snow_8,snow,2,3862,208,1467,52063
+everything - bright,random forest,snow_21,snow,2,7535,887,3132,46046
+everything - bright,random forest,snow_30,snow,2,16586,2111,3762,35141
+everything - bright,random forest,urban_1,urban,2,11747,1782,431,45800
+everything - bright,random forest,urban_12,urban,2,13999,786,10422,32393
+everything - bright,random forest,urban_13,urban,2,27004,54,4081,26461
+everything - bright,random forest,urban_27,urban,2,37334,1429,1227,17610
+everything - bright,random forest,vegetation_8,vegetation,2,0,0,4548,53052
+everything - bright,random forest,vegetation_11,vegetation,2,22717,60,2006,32817
+everything - bright,random forest,vegetation_15,vegetation,2,29500,702,1892,25506
+everything - bright,random forest,vegetation_20,vegetation,2,23670,3402,755,29773
+everything - bright,random forest,vegetation_24,vegetation,2,36626,400,2054,18520
+everything - bright,random forest,water_1,water,2,34326,731,6102,16441
+everything - bright,random forest,water_3,water,2,21038,3291,24,33247
+everything - bright,random forest,water_15,water,2,34734,1015,1699,20152
+everything - bright,random forest,water_20,water,2,23498,877,2463,30762
+everything - bright,random forest,water_21,water,2,24967,250,1492,30891
+everything - bright,linear probe,barren_5,barren,2,16466,3293,334,37507
+everything - bright,linear probe,barren_9,barren,2,14106,7471,80,35943
+everything - bright,linear probe,barren_12,barren,2,9703,4383,507,43007
+everything - bright,linear probe,barren_15,barren,2,4428,0,20364,32808
+everything - bright,linear probe,barren_26,barren,2,17555,52,2724,37269
+everything - bright,linear probe,snow_2,snow,2,15389,1374,1976,38861
+everything - bright,linear probe,snow_4,snow,2,16506,2421,262,38411
+everything - bright,linear probe,snow_8,snow,2,4296,447,1033,51824
+everything - bright,linear probe,snow_21,snow,2,8602,1388,2065,45545
+everything - bright,linear probe,snow_30,snow,2,17991,2607,2357,34645
+everything - bright,linear probe,urban_1,urban,2,11767,1691,411,45891
+everything - bright,linear probe,urban_12,urban,2,16478,1197,7943,31982
+everything - bright,linear probe,urban_13,urban,2,29146,166,1939,26349
+everything - bright,linear probe,urban_27,urban,2,36872,1470,1689,17569
+everything - bright,linear probe,vegetation_8,vegetation,2,0,0,4548,53052
+everything - bright,linear probe,vegetation_11,vegetation,2,22356,17,2367,32860
+everything - bright,linear probe,vegetation_15,vegetation,2,30108,919,1284,25289
+everything - bright,linear probe,vegetation_20,vegetation,2,23559,2128,866,31047
+everything - bright,linear probe,vegetation_24,vegetation,2,37159,490,1521,18430
+everything - bright,linear probe,water_1,water,2,36329,1104,4099,16068
+everything - bright,linear probe,water_3,water,2,21001,2470,61,34068
+everything - bright,linear probe,water_15,water,2,34397,725,2036,20442
+everything - bright,linear probe,water_20,water,2,23952,220,2009,31419
+everything - bright,linear probe,water_21,water,2,25460,296,999,30845
+everything - dark,random forest,barren_5,barren,2,16745,4338,55,36462
+everything - dark,random forest,barren_9,barren,2,14156,10468,30,32946
+everything - dark,random forest,barren_12,barren,2,9334,3705,876,43685
+everything - dark,random forest,barren_15,barren,2,4024,0,20768,32808
+everything - dark,random forest,barren_26,barren,2,18004,158,2275,37163
+everything - dark,random forest,snow_2,snow,2,14504,513,2861,39722
+everything - dark,random forest,snow_4,snow,2,16206,2016,562,38816
+everything - dark,random forest,snow_8,snow,2,3974,256,1355,52015
+everything - dark,random forest,snow_21,snow,2,7705,830,2962,46103
+everything - dark,random forest,snow_30,snow,2,16840,2383,3508,34869
+everything - dark,random forest,urban_1,urban,2,11754,1492,424,46090
+everything - dark,random forest,urban_12,urban,2,13397,688,11024,32491
+everything - dark,random forest,urban_13,urban,2,26465,34,4620,26481
+everything - dark,random forest,urban_27,urban,2,37420,1431,1141,17608
+everything - dark,random forest,vegetation_8,vegetation,2,0,4,4548,53048
+everything - dark,random forest,vegetation_11,vegetation,2,22677,43,2046,32834
+everything - dark,random forest,vegetation_15,vegetation,2,29429,427,1963,25781
+everything - dark,random forest,vegetation_20,vegetation,2,23661,3274,764,29901
+everything - dark,random forest,vegetation_24,vegetation,2,36326,305,2354,18615
+everything - dark,random forest,water_1,water,2,34619,666,5809,16506
+everything - dark,random forest,water_3,water,2,21044,3471,18,33067
+everything - dark,random forest,water_15,water,2,34748,811,1685,20356
+everything - dark,random forest,water_20,water,2,23281,900,2680,30739
+everything - dark,random forest,water_21,water,2,25012,177,1447,30964
+everything - dark,linear probe,barren_5,barren,2,16498,3310,302,37490
+everything - dark,linear probe,barren_9,barren,2,14116,7746,70,35668
+everything - dark,linear probe,barren_12,barren,2,9720,4748,490,42642
+everything - dark,linear probe,barren_15,barren,2,3914,0,20878,32808
+everything - dark,linear probe,barren_26,barren,2,17631,42,2648,37279
+everything - dark,linear probe,snow_2,snow,2,15374,1396,1991,38839
+everything - dark,linear probe,snow_4,snow,2,16463,2062,305,38770
+everything - dark,linear probe,snow_8,snow,2,4232,319,1097,51952
+everything - dark,linear probe,snow_21,snow,2,8288,982,2379,45951
+everything - dark,linear probe,snow_30,snow,2,18032,2504,2316,34748
+everything - dark,linear probe,urban_1,urban,2,11784,1605,394,45977
+everything - dark,linear probe,urban_12,urban,2,16493,1096,7928,32083
+everything - dark,linear probe,urban_13,urban,2,28906,133,2179,26382
+everything - dark,linear probe,urban_27,urban,2,37431,1421,1130,17618
+everything - dark,linear probe,vegetation_8,vegetation,2,0,0,4548,53052
+everything - dark,linear probe,vegetation_11,vegetation,2,22444,14,2279,32863
+everything - dark,linear probe,vegetation_15,vegetation,2,29901,624,1491,25584
+everything - dark,linear probe,vegetation_20,vegetation,2,23747,2354,678,30821
+everything - dark,linear probe,vegetation_24,vegetation,2,37047,415,1633,18505
+everything - dark,linear probe,water_1,water,2,36495,1083,3933,16089
+everything - dark,linear probe,water_3,water,2,21006,2459,56,34079
+everything - dark,linear probe,water_15,water,2,34475,640,1958,20527
+everything - dark,linear probe,water_20,water,2,23851,175,2110,31464
+everything - dark,linear probe,water_21,water,2,25494,278,965,30863
+everything - texture,random forest,barren_5,barren,2,16737,4340,63,36460
+everything - texture,random forest,barren_9,barren,2,14161,10515,25,32899
+everything - texture,random forest,barren_12,barren,2,9276,3530,934,43860
+everything - texture,random forest,barren_15,barren,2,3089,0,21703,32808
+everything - texture,random forest,barren_26,barren,2,17846,134,2433,37187
+everything - texture,random forest,snow_2,snow,2,14474,555,2891,39680
+everything - texture,random forest,snow_4,snow,2,16056,1935,712,38897
+everything - texture,random forest,snow_8,snow,2,3991,222,1338,52049
+everything - texture,random forest,snow_21,snow,2,7494,749,3173,46184
+everything - texture,random forest,snow_30,snow,2,16886,2112,3462,35140
+everything - texture,random forest,urban_1,urban,2,11740,1428,438,46154
+everything - texture,random forest,urban_12,urban,2,12356,544,12065,32635
+everything - texture,random forest,urban_13,urban,2,26181,9,4904,26506
+everything - texture,random forest,urban_27,urban,2,37505,1271,1056,17768
+everything - texture,random forest,vegetation_8,vegetation,2,0,0,4548,53052
+everything - texture,random forest,vegetation_11,vegetation,2,22508,29,2215,32848
+everything - texture,random forest,vegetation_15,vegetation,2,29218,326,2174,25882
+everything - texture,random forest,vegetation_20,vegetation,2,23674,3539,751,29636
+everything - texture,random forest,vegetation_24,vegetation,2,36143,228,2537,18692
+everything - texture,random forest,water_1,water,2,34650,684,5778,16488
+everything - texture,random forest,water_3,water,2,21045,3551,17,32987
+everything - texture,random forest,water_15,water,2,34705,830,1728,20337
+everything - texture,random forest,water_20,water,2,23021,669,2940,30970
+everything - texture,random forest,water_21,water,2,24791,171,1668,30970
+everything - texture,linear probe,barren_5,barren,2,16459,3496,341,37304
+everything - texture,linear probe,barren_9,barren,2,14104,7325,82,36089
+everything - texture,linear probe,barren_12,barren,2,9651,4365,559,43025
+everything - texture,linear probe,barren_15,barren,2,4496,0,20296,32808
+everything - texture,linear probe,barren_26,barren,2,17573,59,2706,37262
+everything - texture,linear probe,snow_2,snow,2,15256,1194,2109,39041
+everything - texture,linear probe,snow_4,snow,2,16461,1999,307,38833
+everything - texture,linear probe,snow_8,snow,2,4221,358,1108,51913
+everything - texture,linear probe,snow_21,snow,2,8394,1163,2273,45770
+everything - texture,linear probe,snow_30,snow,2,18055,2574,2293,34678
+everything - texture,linear probe,urban_1,urban,2,11738,1493,440,46089
+everything - texture,linear probe,urban_12,urban,2,15643,933,8778,32246
+everything - texture,linear probe,urban_13,urban,2,28869,104,2216,26411
+everything - texture,linear probe,urban_27,urban,2,37246,1324,1315,17715
+everything - texture,linear probe,vegetation_8,vegetation,2,0,0,4548,53052
+everything - texture,linear probe,vegetation_11,vegetation,2,22244,9,2479,32868
+everything - texture,linear probe,vegetation_15,vegetation,2,29905,529,1487,25679
+everything - texture,linear probe,vegetation_20,vegetation,2,23704,2313,721,30862
+everything - texture,linear probe,vegetation_24,vegetation,2,37017,390,1663,18530
+everything - texture,linear probe,water_1,water,2,36522,1177,3906,15995
+everything - texture,linear probe,water_3,water,2,20995,2367,67,34171
+everything - texture,linear probe,water_15,water,2,34366,551,2067,20616
+everything - texture,linear probe,water_20,water,2,23752,148,2209,31491
+everything - texture,linear probe,water_21,water,2,25464,268,995,30873
+DINOv3,random forest,barren_2,barren,3,15385,2799,382,39034
+DINOv3,random forest,barren_6,barren,3,16075,4513,11,37001
+DINOv3,random forest,barren_14,barren,3,5716,2468,1413,48003
+DINOv3,random forest,barren_19,barren,3,10757,6007,48,40788
+DINOv3,random forest,barren_28,barren,3,23405,539,1499,32157
+DINOv3,random forest,snow_13,snow,3,8709,2060,430,46401
+DINOv3,random forest,snow_14,snow,3,13443,803,3081,40273
+DINOv3,random forest,snow_17,snow,3,6551,3788,512,46749
+DINOv3,random forest,snow_23,snow,3,8861,1920,2163,44656
+DINOv3,random forest,urban_2,urban,3,8637,1501,364,49258
+DINOv3,random forest,urban_7,urban,3,17842,1203,4669,33886
+DINOv3,random forest,urban_16,urban,3,9610,2010,894,45086
+DINOv3,random forest,urban_18,urban,3,4111,224,980,52285
+DINOv3,random forest,urban_25,urban,3,25248,566,2368,29418
+DINOv3,random forest,vegetation_7,vegetation,3,14475,2754,190,40181
+DINOv3,random forest,vegetation_9,vegetation,3,36802,278,3073,17447
+DINOv3,random forest,vegetation_13,vegetation,3,15370,2844,1065,38321
+DINOv3,random forest,vegetation_16,vegetation,3,6086,1907,8,49599
+DINOv3,random forest,vegetation_17,vegetation,3,15779,3648,45,38128
+DINOv3,random forest,water_5,water,3,19984,3986,401,33229
+DINOv3,random forest,water_10,water,3,14008,3414,306,39872
+DINOv3,random forest,water_18,water,3,23007,2230,1408,30955
+DINOv3,random forest,water_19,water,3,6616,1401,344,49239
+DINOv3,random forest,water_27,water,3,15579,3756,530,37735
+DINOv3,linear probe,barren_2,barren,3,15463,2511,304,39322
+DINOv3,linear probe,barren_6,barren,3,16024,3399,62,38115
+DINOv3,linear probe,barren_14,barren,3,6987,5549,142,44922
+DINOv3,linear probe,barren_19,barren,3,10786,6631,19,40164
+DINOv3,linear probe,barren_28,barren,3,23275,398,1629,32298
+DINOv3,linear probe,snow_13,snow,3,8699,2110,440,46351
+DINOv3,linear probe,snow_14,snow,3,13804,980,2720,40096
+DINOv3,linear probe,snow_17,snow,3,6674,6131,389,44406
+DINOv3,linear probe,snow_23,snow,3,9167,2210,1857,44366
+DINOv3,linear probe,urban_2,urban,3,8410,1395,591,49364
+DINOv3,linear probe,urban_7,urban,3,18971,1523,3540,33566
+DINOv3,linear probe,urban_16,urban,3,9631,1633,873,45463
+DINOv3,linear probe,urban_18,urban,3,4022,180,1069,52329
+DINOv3,linear probe,urban_25,urban,3,24852,367,2764,29617
+DINOv3,linear probe,vegetation_7,vegetation,3,14104,1798,561,41137
+DINOv3,linear probe,vegetation_9,vegetation,3,36462,157,3413,17568
+DINOv3,linear probe,vegetation_13,vegetation,3,14560,1960,1875,39205
+DINOv3,linear probe,vegetation_16,vegetation,3,6078,1473,16,50033
+DINOv3,linear probe,vegetation_17,vegetation,3,15803,4736,21,37040
+DINOv3,linear probe,water_5,water,3,18997,2867,1388,34348
+DINOv3,linear probe,water_10,water,3,14010,3630,304,39656
+DINOv3,linear probe,water_18,water,3,23263,2671,1152,30514
+DINOv3,linear probe,water_19,water,3,5789,409,1171,50231
+DINOv3,linear probe,water_27,water,3,15636,3463,473,38028
+DINOv2 + DINOv3,random forest,barren_2,barren,3,15212,2357,555,39476
+DINOv2 + DINOv3,random forest,barren_6,barren,3,16075,4408,11,37106
+DINOv2 + DINOv3,random forest,barren_14,barren,3,6239,2702,890,47769
+DINOv2 + DINOv3,random forest,barren_19,barren,3,10659,6163,146,40632
+DINOv2 + DINOv3,random forest,barren_28,barren,3,23565,766,1339,31930
+DINOv2 + DINOv3,random forest,snow_13,snow,3,8594,2031,545,46430
+DINOv2 + DINOv3,random forest,snow_14,snow,3,13772,925,2752,40151
+DINOv2 + DINOv3,random forest,snow_17,snow,3,6593,3609,470,46928
+DINOv2 + DINOv3,random forest,snow_23,snow,3,8977,2170,2047,44406
+DINOv2 + DINOv3,random forest,urban_2,urban,3,8776,1846,225,48913
+DINOv2 + DINOv3,random forest,urban_7,urban,3,17458,1151,5053,33938
+DINOv2 + DINOv3,random forest,urban_16,urban,3,9567,1764,937,45332
+DINOv2 + DINOv3,random forest,urban_18,urban,3,4026,208,1065,52301
+DINOv2 + DINOv3,random forest,urban_25,urban,3,24851,565,2765,29419
+DINOv2 + DINOv3,random forest,vegetation_7,vegetation,3,14532,3343,133,39592
+DINOv2 + DINOv3,random forest,vegetation_9,vegetation,3,36740,290,3135,17435
+DINOv2 + DINOv3,random forest,vegetation_13,vegetation,3,15501,2906,934,38259
+DINOv2 + DINOv3,random forest,vegetation_16,vegetation,3,6070,1963,24,49543
+DINOv2 + DINOv3,random forest,vegetation_17,vegetation,3,15806,5060,18,36716
+DINOv2 + DINOv3,random forest,water_5,water,3,20001,4134,384,33081
+DINOv2 + DINOv3,random forest,water_10,water,3,14078,3777,236,39509
+DINOv2 + DINOv3,random forest,water_18,water,3,23060,2278,1355,30907
+DINOv2 + DINOv3,random forest,water_19,water,3,6729,1885,231,48755
+DINOv2 + DINOv3,random forest,water_27,water,3,15551,3485,558,38006
+DINOv2 + DINOv3,linear probe,barren_2,barren,3,15503,2631,264,39202
+DINOv2 + DINOv3,linear probe,barren_6,barren,3,16011,2815,75,38699
+DINOv2 + DINOv3,linear probe,barren_14,barren,3,7077,9495,52,40976
+DINOv2 + DINOv3,linear probe,barren_19,barren,3,10757,5202,48,41593
+DINOv2 + DINOv3,linear probe,barren_28,barren,3,23336,464,1568,32232
+DINOv2 + DINOv3,linear probe,snow_13,snow,3,8753,2331,386,46130
+DINOv2 + DINOv3,linear probe,snow_14,snow,3,14028,1039,2496,40037
+DINOv2 + DINOv3,linear probe,snow_17,snow,3,6782,5505,281,45032
+DINOv2 + DINOv3,linear probe,snow_23,snow,3,9214,1521,1810,45055
+DINOv2 + DINOv3,linear probe,urban_2,urban,3,8513,1346,488,49413
+DINOv2 + DINOv3,linear probe,urban_7,urban,3,19378,1984,3133,33105
+DINOv2 + DINOv3,linear probe,urban_16,urban,3,9877,2218,627,44878
+DINOv2 + DINOv3,linear probe,urban_18,urban,3,4213,186,878,52323
+DINOv2 + DINOv3,linear probe,urban_25,urban,3,24395,335,3221,29649
+DINOv2 + DINOv3,linear probe,vegetation_7,vegetation,3,14487,3331,178,39604
+DINOv2 + DINOv3,linear probe,vegetation_9,vegetation,3,37254,280,2621,17445
+DINOv2 + DINOv3,linear probe,vegetation_13,vegetation,3,14875,2080,1560,39085
+DINOv2 + DINOv3,linear probe,vegetation_16,vegetation,3,6075,1544,19,49962
+DINOv2 + DINOv3,linear probe,vegetation_17,vegetation,3,15810,5164,14,36612
+DINOv2 + DINOv3,linear probe,water_5,water,3,18286,1628,2099,35587
+DINOv2 + DINOv3,linear probe,water_10,water,3,14057,3782,257,39504
+DINOv2 + DINOv3,linear probe,water_18,water,3,22761,2421,1654,30764
+DINOv2 + DINOv3,linear probe,water_19,water,3,6076,713,884,49927
+DINOv2 + DINOv3,linear probe,water_27,water,3,15420,2332,689,39159
+classical + DINOv3,random forest,barren_2,barren,3,15416,2881,351,38952
+classical + DINOv3,random forest,barren_6,barren,3,16085,5218,1,36296
+classical + DINOv3,random forest,barren_14,barren,3,6260,3760,869,46711
+classical + DINOv3,random forest,barren_19,barren,3,10788,6532,17,40263
+classical + DINOv3,random forest,barren_28,barren,3,23600,766,1304,31930
+classical + DINOv3,random forest,snow_13,snow,3,8373,1039,766,47422
+classical + DINOv3,random forest,snow_14,snow,3,14279,1094,2245,39982
+classical + DINOv3,random forest,snow_17,snow,3,6552,3621,511,46916
+classical + DINOv3,random forest,snow_23,snow,3,8822,1481,2202,45095
+classical + DINOv3,random forest,urban_2,urban,3,8696,1696,305,49063
+classical + DINOv3,random forest,urban_7,urban,3,18148,848,4363,34241
+classical + DINOv3,random forest,urban_16,urban,3,9452,1523,1052,45573
+classical + DINOv3,random forest,urban_18,urban,3,4152,218,939,52291
+classical + DINOv3,random forest,urban_25,urban,3,25515,726,2101,29258
+classical + DINOv3,random forest,vegetation_7,vegetation,3,14474,2722,191,40213
+classical + DINOv3,random forest,vegetation_9,vegetation,3,36900,173,2975,17552
+classical + DINOv3,random forest,vegetation_13,vegetation,3,15083,1892,1352,39273
+classical + DINOv3,random forest,vegetation_16,vegetation,3,6092,1895,2,49611
+classical + DINOv3,random forest,vegetation_17,vegetation,3,15808,4866,16,36910
+classical + DINOv3,random forest,water_5,water,3,20167,4271,218,32944
+classical + DINOv3,random forest,water_10,water,3,14075,8325,239,34961
+classical + DINOv3,random forest,water_18,water,3,23063,2569,1352,30616
+classical + DINOv3,random forest,water_19,water,3,6610,862,350,49778
+classical + DINOv3,random forest,water_27,water,3,15831,4626,278,36865
+classical + DINOv3,linear probe,barren_2,barren,3,15464,2510,303,39323
+classical + DINOv3,linear probe,barren_6,barren,3,16047,3451,39,38063
+classical + DINOv3,linear probe,barren_14,barren,3,6977,5735,152,44736
+classical + DINOv3,linear probe,barren_19,barren,3,10789,7006,16,39789
+classical + DINOv3,linear probe,barren_28,barren,3,23593,450,1311,32246
+classical + DINOv3,linear probe,snow_13,snow,3,8604,1656,535,46805
+classical + DINOv3,linear probe,snow_14,snow,3,14070,1050,2454,40026
+classical + DINOv3,linear probe,snow_17,snow,3,6669,5269,394,45268
+classical + DINOv3,linear probe,snow_23,snow,3,9031,2214,1993,44362
+classical + DINOv3,linear probe,urban_2,urban,3,8533,1184,468,49575
+classical + DINOv3,linear probe,urban_7,urban,3,19086,1349,3425,33740
+classical + DINOv3,linear probe,urban_16,urban,3,9819,1859,685,45237
+classical + DINOv3,linear probe,urban_18,urban,3,4144,211,947,52298
+classical + DINOv3,linear probe,urban_25,urban,3,24884,366,2732,29618
+classical + DINOv3,linear probe,vegetation_7,vegetation,3,14164,1446,501,41489
+classical + DINOv3,linear probe,vegetation_9,vegetation,3,36478,198,3397,17527
+classical + DINOv3,linear probe,vegetation_13,vegetation,3,14416,1503,2019,39662
+classical + DINOv3,linear probe,vegetation_16,vegetation,3,6076,1314,18,50192
+classical + DINOv3,linear probe,vegetation_17,vegetation,3,15818,4973,6,36803
+classical + DINOv3,linear probe,water_5,water,3,19180,2698,1205,34517
+classical + DINOv3,linear probe,water_10,water,3,14077,3836,237,39450
+classical + DINOv3,linear probe,water_18,water,3,23373,2914,1042,30271
+classical + DINOv3,linear probe,water_19,water,3,5716,306,1244,50334
+classical + DINOv3,linear probe,water_27,water,3,15629,3296,480,38195
+everything,random forest,barren_2,barren,3,15297,2487,470,39346
+everything,random forest,barren_6,barren,3,16084,5180,2,36334
+everything,random forest,barren_14,barren,3,6359,3464,770,47007
+everything,random forest,barren_19,barren,3,10712,6856,93,39939
+everything,random forest,barren_28,barren,3,23615,848,1289,31848
+everything,random forest,snow_13,snow,3,8254,1155,885,47306
+everything,random forest,snow_14,snow,3,14297,1070,2227,40006
+everything,random forest,snow_17,snow,3,6623,3657,440,46880
+everything,random forest,snow_23,snow,3,8745,1775,2279,44801
+everything,random forest,urban_2,urban,3,8813,1901,188,48858
+everything,random forest,urban_7,urban,3,17690,864,4821,34225
+everything,random forest,urban_16,urban,3,9333,1432,1171,45664
+everything,random forest,urban_18,urban,3,4124,191,967,52318
+everything,random forest,urban_25,urban,3,25169,636,2447,29348
+everything,random forest,vegetation_7,vegetation,3,14491,2885,174,40050
+everything,random forest,vegetation_9,vegetation,3,36801,175,3074,17550
+everything,random forest,vegetation_13,vegetation,3,14967,1634,1468,39531
+everything,random forest,vegetation_16,vegetation,3,6072,1838,22,49668
+everything,random forest,vegetation_17,vegetation,3,15809,5432,15,36344
+everything,random forest,water_5,water,3,20181,4873,204,32342
+everything,random forest,water_10,water,3,14094,5238,220,38048
+everything,random forest,water_18,water,3,23113,2532,1302,30653
+everything,random forest,water_19,water,3,6675,1071,285,49569
+everything,random forest,water_27,water,3,15759,3966,350,37525
+everything,linear probe,barren_2,barren,3,15523,2631,244,39202
+everything,linear probe,barren_6,barren,3,16017,2869,69,38645
+everything,linear probe,barren_14,barren,3,7069,9862,60,40609
+everything,linear probe,barren_19,barren,3,10779,5816,26,40979
+everything,linear probe,barren_28,barren,3,23630,552,1274,32144
+everything,linear probe,snow_13,snow,3,8683,1999,456,46462
+everything,linear probe,snow_14,snow,3,14149,1086,2375,39990
+everything,linear probe,snow_17,snow,3,6748,5242,315,45295
+everything,linear probe,snow_23,snow,3,9123,1442,1901,45134
+everything,linear probe,urban_2,urban,3,8534,1125,467,49634
+everything,linear probe,urban_7,urban,3,19461,1736,3050,33353
+everything,linear probe,urban_16,urban,3,10004,2340,500,44756
+everything,linear probe,urban_18,urban,3,4370,246,721,52263
+everything,linear probe,urban_25,urban,3,24483,380,3133,29604
+everything,linear probe,vegetation_7,vegetation,3,14510,2996,155,39939
+everything,linear probe,vegetation_9,vegetation,3,37297,283,2578,17442
+everything,linear probe,vegetation_13,vegetation,3,14666,1479,1769,39686
+everything,linear probe,vegetation_16,vegetation,3,6077,1497,17,50009
+everything,linear probe,vegetation_17,vegetation,3,15819,5179,5,36597
+everything,linear probe,water_5,water,3,18579,1453,1806,35762
+everything,linear probe,water_10,water,3,14113,3972,201,39314
+everything,linear probe,water_18,water,3,22880,2586,1535,30599
+everything,linear probe,water_19,water,3,5988,472,972,50168
+everything,linear probe,water_27,water,3,15500,2361,609,39130
+everything - bright,random forest,barren_2,barren,3,15295,2448,472,39385
+everything - bright,random forest,barren_6,barren,3,16084,4856,2,36658
+everything - bright,random forest,barren_14,barren,3,6216,3182,913,47289
+everything - bright,random forest,barren_19,barren,3,10686,6621,119,40174
+everything - bright,random forest,barren_28,barren,3,23592,836,1312,31860
+everything - bright,random forest,snow_13,snow,3,8390,1519,749,46942
+everything - bright,random forest,snow_14,snow,3,14151,1018,2373,40058
+everything - bright,random forest,snow_17,snow,3,6596,3084,467,47453
+everything - bright,random forest,snow_23,snow,3,8610,1886,2414,44690
+everything - bright,random forest,urban_2,urban,3,8774,1914,227,48845
+everything - bright,random forest,urban_7,urban,3,17740,959,4771,34130
+everything - bright,random forest,urban_16,urban,3,9323,1404,1181,45692
+everything - bright,random forest,urban_18,urban,3,4115,179,976,52330
+everything - bright,random forest,urban_25,urban,3,25193,551,2423,29433
+everything - bright,random forest,vegetation_7,vegetation,3,14497,2998,168,39937
+everything - bright,random forest,vegetation_9,vegetation,3,36750,228,3125,17497
+everything - bright,random forest,vegetation_13,vegetation,3,15271,2501,1164,38664
+everything - bright,random forest,vegetation_16,vegetation,3,6059,1892,35,49614
+everything - bright,random forest,vegetation_17,vegetation,3,15806,5064,18,36712
+everything - bright,random forest,water_5,water,3,20096,4664,289,32551
+everything - bright,random forest,water_10,water,3,14063,4606,251,38680
+everything - bright,random forest,water_18,water,3,23174,2360,1241,30825
+everything - bright,random forest,water_19,water,3,6695,1588,265,49052
+everything - bright,random forest,water_27,water,3,15696,3905,413,37586
+everything - bright,linear probe,barren_2,barren,3,15517,2632,250,39201
+everything - bright,linear probe,barren_6,barren,3,16010,2755,76,38759
+everything - bright,linear probe,barren_14,barren,3,7082,9958,47,40513
+everything - bright,linear probe,barren_19,barren,3,10766,5364,39,41431
+everything - bright,linear probe,barren_28,barren,3,23516,501,1388,32195
+everything - bright,linear probe,snow_13,snow,3,8729,2244,410,46217
+everything - bright,linear probe,snow_14,snow,3,14073,1037,2451,40039
+everything - bright,linear probe,snow_17,snow,3,6756,5438,307,45099
+everything - bright,linear probe,snow_23,snow,3,9302,1609,1722,44967
+everything - bright,linear probe,urban_2,urban,3,8513,1390,488,49369
+everything - bright,linear probe,urban_7,urban,3,19414,1909,3097,33180
+everything - bright,linear probe,urban_16,urban,3,9903,2165,601,44931
+everything - bright,linear probe,urban_18,urban,3,4248,208,843,52301
+everything - bright,linear probe,urban_25,urban,3,24404,356,3212,29628
+everything - bright,linear probe,vegetation_7,vegetation,3,14500,3193,165,39742
+everything - bright,linear probe,vegetation_9,vegetation,3,37281,293,2594,17432
+everything - bright,linear probe,vegetation_13,vegetation,3,14883,2143,1552,39022
+everything - bright,linear probe,vegetation_16,vegetation,3,6075,1502,19,50004
+everything - bright,linear probe,vegetation_17,vegetation,3,15815,5047,9,36729
+everything - bright,linear probe,water_5,water,3,18422,1709,1963,35506
+everything - bright,linear probe,water_10,water,3,14031,3643,283,39643
+everything - bright,linear probe,water_18,water,3,22720,2367,1695,30818
+everything - bright,linear probe,water_19,water,3,6099,801,861,49839
+everything - bright,linear probe,water_27,water,3,15420,2337,689,39154
+everything - dark,random forest,barren_2,barren,3,15306,2498,461,39335
+everything - dark,random forest,barren_6,barren,3,16077,4767,9,36747
+everything - dark,random forest,barren_14,barren,3,6445,3491,684,46980
+everything - dark,random forest,barren_19,barren,3,10739,6603,66,40192
+everything - dark,random forest,barren_28,barren,3,23640,886,1264,31810
+everything - dark,random forest,snow_13,snow,3,8404,1477,735,46984
+everything - dark,random forest,snow_14,snow,3,14197,1104,2327,39972
+everything - dark,random forest,snow_17,snow,3,6608,3850,455,46687
+everything - dark,random forest,snow_23,snow,3,8730,1829,2294,44747
+everything - dark,random forest,urban_2,urban,3,8797,1872,204,48887
+everything - dark,random forest,urban_7,urban,3,17684,866,4827,34223
+everything - dark,random forest,urban_16,urban,3,9237,1329,1267,45767
+everything - dark,random forest,urban_18,urban,3,4073,194,1018,52315
+everything - dark,random forest,urban_25,urban,3,25093,615,2523,29369
+everything - dark,random forest,vegetation_7,vegetation,3,14520,2715,145,40220
+everything - dark,random forest,vegetation_9,vegetation,3,36876,190,2999,17535
+everything - dark,random forest,vegetation_13,vegetation,3,15131,1921,1304,39244
+everything - dark,random forest,vegetation_16,vegetation,3,6078,1949,16,49557
+everything - dark,random forest,vegetation_17,vegetation,3,15808,5148,16,36628
+everything - dark,random forest,water_5,water,3,20179,4686,206,32529
+everything - dark,random forest,water_10,water,3,14089,4851,225,38435
+everything - dark,random forest,water_18,water,3,23058,2502,1357,30683
+everything - dark,random forest,water_19,water,3,6655,1218,305,49422
+everything - dark,random forest,water_27,water,3,15737,3944,372,37547
+everything - dark,linear probe,barren_2,barren,3,15564,2886,203,38947
+everything - dark,linear probe,barren_6,barren,3,16038,3029,48,38485
+everything - dark,linear probe,barren_14,barren,3,7072,10260,57,40211
+everything - dark,linear probe,barren_19,barren,3,10792,6397,13,40398
+everything - dark,linear probe,barren_28,barren,3,23788,641,1116,32055
+everything - dark,linear probe,snow_13,snow,3,8590,1819,549,46642
+everything - dark,linear probe,snow_14,snow,3,14243,1093,2281,39983
+everything - dark,linear probe,snow_17,snow,3,6740,5301,323,45236
+everything - dark,linear probe,snow_23,snow,3,9235,1417,1789,45159
+everything - dark,linear probe,urban_2,urban,3,8591,1332,410,49427
+everything - dark,linear probe,urban_7,urban,3,19482,1711,3029,33378
+everything - dark,linear probe,urban_16,urban,3,10047,2420,457,44676
+everything - dark,linear probe,urban_18,urban,3,4336,221,755,52288
+everything - dark,linear probe,urban_25,urban,3,24419,365,3197,29619
+everything - dark,linear probe,vegetation_7,vegetation,3,14519,3063,146,39872
+everything - dark,linear probe,vegetation_9,vegetation,3,37280,259,2595,17466
+everything - dark,linear probe,vegetation_13,vegetation,3,14618,1577,1817,39588
+everything - dark,linear probe,vegetation_16,vegetation,3,6075,1411,19,50095
+everything - dark,linear probe,vegetation_17,vegetation,3,15819,5346,5,36430
+everything - dark,linear probe,water_5,water,3,18669,1629,1716,35586
+everything - dark,linear probe,water_10,water,3,14109,4082,205,39204
+everything - dark,linear probe,water_18,water,3,22810,2572,1605,30613
+everything - dark,linear probe,water_19,water,3,6005,539,955,50101
+everything - dark,linear probe,water_27,water,3,15472,2339,637,39152
+everything - texture,random forest,barren_2,barren,3,15306,2503,461,39330
+everything - texture,random forest,barren_6,barren,3,16083,5180,3,36334
+everything - texture,random forest,barren_14,barren,3,6498,3746,631,46725
+everything - texture,random forest,barren_19,barren,3,10725,6793,80,40002
+everything - texture,random forest,barren_28,barren,3,23583,895,1321,31801
+everything - texture,random forest,snow_13,snow,3,8230,1050,909,47411
+everything - texture,random forest,snow_14,snow,3,14065,1015,2459,40061
+everything - texture,random forest,snow_17,snow,3,6630,3197,433,47340
+everything - texture,random forest,snow_23,snow,3,8776,1808,2248,44768
+everything - texture,random forest,urban_2,urban,3,8869,2076,132,48683
+everything - texture,random forest,urban_7,urban,3,17538,871,4973,34218
+everything - texture,random forest,urban_16,urban,3,9690,1994,814,45102
+everything - texture,random forest,urban_18,urban,3,4119,188,972,52321
+everything - texture,random forest,urban_25,urban,3,25202,626,2414,29358
+everything - texture,random forest,vegetation_7,vegetation,3,14520,2977,145,39958
+everything - texture,random forest,vegetation_9,vegetation,3,36737,198,3138,17527
+everything - texture,random forest,vegetation_13,vegetation,3,15152,1866,1283,39299
+everything - texture,random forest,vegetation_16,vegetation,3,6068,1780,26,49726
+everything - texture,random forest,vegetation_17,vegetation,3,15814,5783,10,35993
+everything - texture,random forest,water_5,water,3,20158,4632,227,32583
+everything - texture,random forest,water_10,water,3,14106,5195,208,38091
+everything - texture,random forest,water_18,water,3,23180,2576,1235,30609
+everything - texture,random forest,water_19,water,3,6677,1122,283,49518
+everything - texture,random forest,water_27,water,3,15693,3718,416,37773
+everything - texture,linear probe,barren_2,barren,3,15491,2582,276,39251
+everything - texture,linear probe,barren_6,barren,3,16021,2909,65,38605
+everything - texture,linear probe,barren_14,barren,3,7062,9202,67,41269
+everything - texture,linear probe,barren_19,barren,3,10774,5795,31,41000
+everything - texture,linear probe,barren_28,barren,3,23592,567,1312,32129
+everything - texture,linear probe,snow_13,snow,3,8634,1943,505,46518
+everything - texture,linear probe,snow_14,snow,3,14110,1073,2414,40003
+everything - texture,linear probe,snow_17,snow,3,6769,5341,294,45196
+everything - texture,linear probe,snow_23,snow,3,9140,1402,1884,45174
+everything - texture,linear probe,urban_2,urban,3,8577,1276,424,49483
+everything - texture,linear probe,urban_7,urban,3,19277,1739,3234,33350
+everything - texture,linear probe,urban_16,urban,3,10090,2655,414,44441
+everything - texture,linear probe,urban_18,urban,3,4303,193,788,52316
+everything - texture,linear probe,urban_25,urban,3,24440,349,3176,29635
+everything - texture,linear probe,vegetation_7,vegetation,3,14513,3032,152,39903
+everything - texture,linear probe,vegetation_9,vegetation,3,37223,256,2652,17469
+everything - texture,linear probe,vegetation_13,vegetation,3,14697,1617,1738,39548
+everything - texture,linear probe,vegetation_16,vegetation,3,6074,1428,20,50078
+everything - texture,linear probe,vegetation_17,vegetation,3,15817,5399,7,36377
+everything - texture,linear probe,water_5,water,3,18613,1582,1772,35633
+everything - texture,linear probe,water_10,water,3,14120,4131,194,39155
+everything - texture,linear probe,water_18,water,3,22919,2689,1496,30496
+everything - texture,linear probe,water_19,water,3,5861,446,1099,50194
+everything - texture,linear probe,water_27,water,3,15395,2195,714,39296
+DINOv3,random forest,barren_1,barren,4,19883,662,1518,35537
+DINOv3,random forest,barren_20,barren,4,12677,559,13147,31217
+DINOv3,random forest,barren_23,barren,4,8627,72,9167,39734
+DINOv3,random forest,barren_24,barren,4,6227,1284,598,49491
+DINOv3,random forest,snow_6,snow,4,4977,395,12396,39832
+DINOv3,random forest,snow_11,snow,4,6793,2099,2479,46229
+DINOv3,random forest,snow_15,snow,4,9406,218,2509,45467
+DINOv3,random forest,snow_24,snow,4,5156,14332,1009,37103
+DINOv3,random forest,snow_28,snow,4,8441,914,2503,45742
+DINOv3,random forest,urban_4,urban,4,32895,127,2582,21996
+DINOv3,random forest,urban_14,urban,4,9866,327,907,46500
+DINOv3,random forest,urban_19,urban,4,8685,2185,638,46092
+DINOv3,random forest,urban_24,urban,4,27413,1312,3380,25495
+DINOv3,random forest,urban_28,urban,4,15403,1256,1137,39804
+DINOv3,random forest,vegetation_1,vegetation,4,19367,843,981,36409
+DINOv3,random forest,vegetation_2,vegetation,4,20556,963,673,35408
+DINOv3,random forest,vegetation_4,vegetation,4,8893,1303,961,46443
+DINOv3,random forest,vegetation_6,vegetation,4,4639,2976,5,49980
+DINOv3,random forest,vegetation_26,vegetation,4,14185,1140,957,41318
+DINOv3,random forest,water_2,water,4,17593,2098,1283,36626
+DINOv3,random forest,water_8,water,4,7637,1721,28,48214
+DINOv3,random forest,water_14,water,4,41999,975,4293,10333
+DINOv3,random forest,water_23,water,4,34242,1297,552,21509
+DINOv3,random forest,water_24,water,4,24715,3382,329,29174
+DINOv3,linear probe,barren_1,barren,4,19830,405,1571,35794
+DINOv3,linear probe,barren_20,barren,4,12436,271,13388,31505
+DINOv3,linear probe,barren_23,barren,4,8334,38,9460,39768
+DINOv3,linear probe,barren_24,barren,4,5762,543,1063,50232
+DINOv3,linear probe,snow_6,snow,4,1558,33,15815,40194
+DINOv3,linear probe,snow_11,snow,4,6865,2427,2407,45901
+DINOv3,linear probe,snow_15,snow,4,10200,321,1715,45364
+DINOv3,linear probe,snow_24,snow,4,5198,14220,967,37215
+DINOv3,linear probe,snow_28,snow,4,8558,1212,2386,45444
+DINOv3,linear probe,urban_4,urban,4,33075,211,2402,21912
+DINOv3,linear probe,urban_14,urban,4,9829,537,944,46290
+DINOv3,linear probe,urban_19,urban,4,8733,2493,590,45784
+DINOv3,linear probe,urban_24,urban,4,27931,1664,2862,25143
+DINOv3,linear probe,urban_28,urban,4,15820,2173,720,38887
+DINOv3,linear probe,vegetation_1,vegetation,4,19219,611,1129,36641
+DINOv3,linear probe,vegetation_2,vegetation,4,19966,255,1263,36116
+DINOv3,linear probe,vegetation_4,vegetation,4,8362,300,1492,47446
+DINOv3,linear probe,vegetation_6,vegetation,4,4643,2741,1,50215
+DINOv3,linear probe,vegetation_26,vegetation,4,13386,396,1756,42062
+DINOv3,linear probe,water_2,water,4,17181,2265,1695,36459
+DINOv3,linear probe,water_8,water,4,7554,1085,111,48850
+DINOv3,linear probe,water_14,water,4,40853,602,5439,10706
+DINOv3,linear probe,water_23,water,4,32377,934,2417,21872
+DINOv3,linear probe,water_24,water,4,23886,1994,1158,30562
+DINOv2 + DINOv3,random forest,barren_1,barren,4,20226,689,1175,35510
+DINOv2 + DINOv3,random forest,barren_20,barren,4,13283,486,12541,31290
+DINOv2 + DINOv3,random forest,barren_23,barren,4,9023,42,8771,39764
+DINOv2 + DINOv3,random forest,barren_24,barren,4,6161,1227,664,49548
+DINOv2 + DINOv3,random forest,snow_6,snow,4,7057,692,10316,39535
+DINOv2 + DINOv3,random forest,snow_11,snow,4,7397,3020,1875,45308
+DINOv2 + DINOv3,random forest,snow_15,snow,4,9478,243,2437,45442
+DINOv2 + DINOv3,random forest,snow_24,snow,4,5493,14048,672,37387
+DINOv2 + DINOv3,random forest,snow_28,snow,4,8544,614,2400,46042
+DINOv2 + DINOv3,random forest,urban_4,urban,4,32779,106,2698,22017
+DINOv2 + DINOv3,random forest,urban_14,urban,4,9797,248,976,46579
+DINOv2 + DINOv3,random forest,urban_19,urban,4,8596,2059,727,46218
+DINOv2 + DINOv3,random forest,urban_24,urban,4,26457,952,4336,25855
+DINOv2 + DINOv3,random forest,urban_28,urban,4,15192,1065,1348,39995
+DINOv2 + DINOv3,random forest,vegetation_1,vegetation,4,19339,772,1009,36480
+DINOv2 + DINOv3,random forest,vegetation_2,vegetation,4,20508,913,721,35458
+DINOv2 + DINOv3,random forest,vegetation_4,vegetation,4,8849,1133,1005,46613
+DINOv2 + DINOv3,random forest,vegetation_6,vegetation,4,4634,2498,10,50458
+DINOv2 + DINOv3,random forest,vegetation_26,vegetation,4,14168,1048,974,41410
+DINOv2 + DINOv3,random forest,water_2,water,4,17629,2160,1247,36564
+DINOv2 + DINOv3,random forest,water_8,water,4,7633,1873,32,48062
+DINOv2 + DINOv3,random forest,water_14,water,4,41879,910,4413,10398
+DINOv2 + DINOv3,random forest,water_23,water,4,34126,1245,668,21561
+DINOv2 + DINOv3,random forest,water_24,water,4,24786,3766,258,28790
+DINOv2 + DINOv3,linear probe,barren_1,barren,4,20550,899,851,35300
+DINOv2 + DINOv3,linear probe,barren_20,barren,4,13191,199,12633,31577
+DINOv2 + DINOv3,linear probe,barren_23,barren,4,8348,5,9446,39801
+DINOv2 + DINOv3,linear probe,barren_24,barren,4,4752,83,2073,50692
+DINOv2 + DINOv3,linear probe,snow_6,snow,4,3200,307,14173,39920
+DINOv2 + DINOv3,linear probe,snow_11,snow,4,7388,3756,1884,44572
+DINOv2 + DINOv3,linear probe,snow_15,snow,4,10376,405,1539,45280
+DINOv2 + DINOv3,linear probe,snow_24,snow,4,5055,14079,1110,37356
+DINOv2 + DINOv3,linear probe,snow_28,snow,4,8760,954,2184,45702
+DINOv2 + DINOv3,linear probe,urban_4,urban,4,33247,113,2230,22010
+DINOv2 + DINOv3,linear probe,urban_14,urban,4,10026,613,747,46214
+DINOv2 + DINOv3,linear probe,urban_19,urban,4,8616,2309,707,45968
+DINOv2 + DINOv3,linear probe,urban_24,urban,4,27604,1500,3189,25307
+DINOv2 + DINOv3,linear probe,urban_28,urban,4,15465,1513,1075,39547
+DINOv2 + DINOv3,linear probe,vegetation_1,vegetation,4,19375,693,973,36559
+DINOv2 + DINOv3,linear probe,vegetation_2,vegetation,4,20233,458,996,35913
+DINOv2 + DINOv3,linear probe,vegetation_4,vegetation,4,8564,422,1290,47324
+DINOv2 + DINOv3,linear probe,vegetation_6,vegetation,4,4637,2539,7,50417
+DINOv2 + DINOv3,linear probe,vegetation_26,vegetation,4,13654,507,1488,41951
+DINOv2 + DINOv3,linear probe,water_2,water,4,17136,1837,1740,36887
+DINOv2 + DINOv3,linear probe,water_8,water,4,7573,1127,92,48808
+DINOv2 + DINOv3,linear probe,water_14,water,4,40396,431,5896,10877
+DINOv2 + DINOv3,linear probe,water_23,water,4,32990,413,1804,22393
+DINOv2 + DINOv3,linear probe,water_24,water,4,24040,1861,1004,30695
+classical + DINOv3,random forest,barren_1,barren,4,19484,267,1917,35932
+classical + DINOv3,random forest,barren_20,barren,4,12240,500,13584,31276
+classical + DINOv3,random forest,barren_23,barren,4,8606,81,9188,39725
+classical + DINOv3,random forest,barren_24,barren,4,6338,1639,487,49136
+classical + DINOv3,random forest,snow_6,snow,4,6274,1152,11099,39075
+classical + DINOv3,random forest,snow_11,snow,4,6961,2007,2311,46321
+classical + DINOv3,random forest,snow_15,snow,4,7585,37,4330,45648
+classical + DINOv3,random forest,snow_24,snow,4,5247,14522,918,36913
+classical + DINOv3,random forest,snow_28,snow,4,8541,1079,2403,45577
+classical + DINOv3,random forest,urban_4,urban,4,33008,97,2469,22026
+classical + DINOv3,random forest,urban_14,urban,4,9837,268,936,46559
+classical + DINOv3,random forest,urban_19,urban,4,8342,1380,981,46897
+classical + DINOv3,random forest,urban_24,urban,4,28630,1851,2163,24956
+classical + DINOv3,random forest,urban_28,urban,4,16163,6027,377,35033
+classical + DINOv3,random forest,vegetation_1,vegetation,4,18790,275,1558,36977
+classical + DINOv3,random forest,vegetation_2,vegetation,4,20645,672,584,35699
+classical + DINOv3,random forest,vegetation_4,vegetation,4,8796,781,1058,46965
+classical + DINOv3,random forest,vegetation_6,vegetation,4,4637,2823,7,50133
+classical + DINOv3,random forest,vegetation_26,vegetation,4,14180,950,962,41508
+classical + DINOv3,random forest,water_2,water,4,17402,1646,1474,37078
+classical + DINOv3,random forest,water_8,water,4,7644,1732,21,48203
+classical + DINOv3,random forest,water_14,water,4,42920,1141,3372,10167
+classical + DINOv3,random forest,water_23,water,4,34327,818,467,21988
+classical + DINOv3,random forest,water_24,water,4,24966,4564,78,27992
+classical + DINOv3,linear probe,barren_1,barren,4,19854,355,1547,35844
+classical + DINOv3,linear probe,barren_20,barren,4,12399,374,13425,31402
+classical + DINOv3,linear probe,barren_23,barren,4,8642,56,9152,39750
+classical + DINOv3,linear probe,barren_24,barren,4,5826,530,999,50245
+classical + DINOv3,linear probe,snow_6,snow,4,1482,39,15891,40188
+classical + DINOv3,linear probe,snow_11,snow,4,7033,2670,2239,45658
+classical + DINOv3,linear probe,snow_15,snow,4,9995,224,1920,45461
+classical + DINOv3,linear probe,snow_24,snow,4,5144,13938,1021,37497
+classical + DINOv3,linear probe,snow_28,snow,4,8562,1025,2382,45631
+classical + DINOv3,linear probe,urban_4,urban,4,33173,171,2304,21952
+classical + DINOv3,linear probe,urban_14,urban,4,9835,491,938,46336
+classical + DINOv3,linear probe,urban_19,urban,4,8682,2200,641,46077
+classical + DINOv3,linear probe,urban_24,urban,4,28243,1856,2550,24951
+classical + DINOv3,linear probe,urban_28,urban,4,15960,2602,580,38458
+classical + DINOv3,linear probe,vegetation_1,vegetation,4,19252,497,1096,36755
+classical + DINOv3,linear probe,vegetation_2,vegetation,4,19962,245,1267,36126
+classical + DINOv3,linear probe,vegetation_4,vegetation,4,8683,357,1171,47389
+classical + DINOv3,linear probe,vegetation_6,vegetation,4,4644,2925,0,50031
+classical + DINOv3,linear probe,vegetation_26,vegetation,4,13547,380,1595,42078
+classical + DINOv3,linear probe,water_2,water,4,17059,1926,1817,36798
+classical + DINOv3,linear probe,water_8,water,4,7542,895,123,49040
+classical + DINOv3,linear probe,water_14,water,4,41234,587,5058,10721
+classical + DINOv3,linear probe,water_23,water,4,32131,770,2663,22036
+classical + DINOv3,linear probe,water_24,water,4,23819,1473,1225,31083
+everything,random forest,barren_1,barren,4,19739,300,1662,35899
+everything,random forest,barren_20,barren,4,15102,641,10722,31135
+everything,random forest,barren_23,barren,4,9458,107,8336,39699
+everything,random forest,barren_24,barren,4,6232,1437,593,49338
+everything,random forest,snow_6,snow,4,7087,1198,10286,39029
+everything,random forest,snow_11,snow,4,7489,2782,1783,45546
+everything,random forest,snow_15,snow,4,8275,80,3640,45605
+everything,random forest,snow_24,snow,4,5588,16183,577,35252
+everything,random forest,snow_28,snow,4,8686,863,2258,45793
+everything,random forest,urban_4,urban,4,32805,41,2672,22082
+everything,random forest,urban_14,urban,4,9821,236,952,46591
+everything,random forest,urban_19,urban,4,8281,1263,1042,47014
+everything,random forest,urban_24,urban,4,27612,1227,3181,25580
+everything,random forest,urban_28,urban,4,15977,2426,563,38634
+everything,random forest,vegetation_1,vegetation,4,18789,331,1559,36921
+everything,random forest,vegetation_2,vegetation,4,20626,682,603,35689
+everything,random forest,vegetation_4,vegetation,4,8807,909,1047,46837
+everything,random forest,vegetation_6,vegetation,4,4633,2321,11,50635
+everything,random forest,vegetation_26,vegetation,4,14211,926,931,41532
+everything,random forest,water_2,water,4,17518,1791,1358,36933
+everything,random forest,water_8,water,4,7657,2009,8,47926
+everything,random forest,water_14,water,4,42773,1084,3519,10224
+everything,random forest,water_23,water,4,34175,792,619,22014
+everything,random forest,water_24,water,4,24958,4670,86,27886
+everything,linear probe,barren_1,barren,4,20557,802,844,35397
+everything,linear probe,barren_20,barren,4,12283,233,13541,31543
+everything,linear probe,barren_23,barren,4,8487,21,9307,39785
+everything,linear probe,barren_24,barren,4,4802,73,2023,50702
+everything,linear probe,snow_6,snow,4,2813,583,14560,39644
+everything,linear probe,snow_11,snow,4,7440,4203,1832,44125
+everything,linear probe,snow_15,snow,4,10227,337,1688,45348
+everything,linear probe,snow_24,snow,4,4925,12934,1240,38501
+everything,linear probe,snow_28,snow,4,8719,799,2225,45857
+everything,linear probe,urban_4,urban,4,33361,103,2116,22020
+everything,linear probe,urban_14,urban,4,10077,645,696,46182
+everything,linear probe,urban_19,urban,4,8584,2219,739,46058
+everything,linear probe,urban_24,urban,4,27939,1704,2854,25103
+everything,linear probe,urban_28,urban,4,15640,1760,900,39300
+everything,linear probe,vegetation_1,vegetation,4,19428,631,920,36621
+everything,linear probe,vegetation_2,vegetation,4,20287,440,942,35931
+everything,linear probe,vegetation_4,vegetation,4,8773,394,1081,47352
+everything,linear probe,vegetation_6,vegetation,4,4637,2399,7,50557
+everything,linear probe,vegetation_26,vegetation,4,13603,370,1539,42088
+everything,linear probe,water_2,water,4,17070,1509,1806,37215
+everything,linear probe,water_8,water,4,7566,917,99,49018
+everything,linear probe,water_14,water,4,40551,403,5741,10905
+everything,linear probe,water_23,water,4,33018,342,1776,22464
+everything,linear probe,water_24,water,4,23778,1227,1266,31329
+everything - bright,random forest,barren_1,barren,4,20012,508,1389,35691
+everything - bright,random forest,barren_20,barren,4,14167,538,11657,31238
+everything - bright,random forest,barren_23,barren,4,9428,73,8366,39733
+everything - bright,random forest,barren_24,barren,4,6189,1324,636,49451
+everything - bright,random forest,snow_6,snow,4,7455,972,9918,39255
+everything - bright,random forest,snow_11,snow,4,7506,2908,1766,45420
+everything - bright,random forest,snow_15,snow,4,9067,161,2848,45524
+everything - bright,random forest,snow_24,snow,4,5628,15843,537,35592
+everything - bright,random forest,snow_28,snow,4,8585,720,2359,45936
+everything - bright,random forest,urban_4,urban,4,32909,116,2568,22007
+everything - bright,random forest,urban_14,urban,4,9754,201,1019,46626
+everything - bright,random forest,urban_19,urban,4,8588,1939,735,46338
+everything - bright,random forest,urban_24,urban,4,27390,1172,3403,25635
+everything - bright,random forest,urban_28,urban,4,15785,2018,755,39042
+everything - bright,random forest,vegetation_1,vegetation,4,19199,622,1149,36630
+everything - bright,random forest,vegetation_2,vegetation,4,20586,825,643,35546
+everything - bright,random forest,vegetation_4,vegetation,4,8622,663,1232,47083
+everything - bright,random forest,vegetation_6,vegetation,4,4618,1644,26,51312
+everything - bright,random forest,vegetation_26,vegetation,4,14138,982,1004,41476
+everything - bright,random forest,water_2,water,4,17648,2280,1228,36444
+everything - bright,random forest,water_8,water,4,7652,2029,13,47906
+everything - bright,random forest,water_14,water,4,42282,1046,4010,10262
+everything - bright,random forest,water_23,water,4,34170,1187,624,21619
+everything - bright,random forest,water_24,water,4,24851,4220,193,28336
+everything - bright,linear probe,barren_1,barren,4,20547,914,854,35285
+everything - bright,linear probe,barren_20,barren,4,12670,169,13154,31607
+everything - bright,linear probe,barren_23,barren,4,8321,4,9473,39802
+everything - bright,linear probe,barren_24,barren,4,4753,81,2072,50694
+everything - bright,linear probe,snow_6,snow,4,2921,376,14452,39851
+everything - bright,linear probe,snow_11,snow,4,7395,3885,1877,44443
+everything - bright,linear probe,snow_15,snow,4,10341,388,1574,45297
+everything - bright,linear probe,snow_24,snow,4,4944,13706,1221,37729
+everything - bright,linear probe,snow_28,snow,4,8637,897,2307,45759
+everything - bright,linear probe,urban_4,urban,4,33293,131,2184,21992
+everything - bright,linear probe,urban_14,urban,4,10071,640,702,46187
+everything - bright,linear probe,urban_19,urban,4,8656,2434,667,45843
+everything - bright,linear probe,urban_24,urban,4,27751,1590,3042,25217
+everything - bright,linear probe,urban_28,urban,4,15458,1517,1082,39543
+everything - bright,linear probe,vegetation_1,vegetation,4,19409,714,939,36538
+everything - bright,linear probe,vegetation_2,vegetation,4,20299,512,930,35859
+everything - bright,linear probe,vegetation_4,vegetation,4,8533,346,1321,47400
+everything - bright,linear probe,vegetation_6,vegetation,4,4636,2078,8,50878
+everything - bright,linear probe,vegetation_26,vegetation,4,13552,502,1590,41956
+everything - bright,linear probe,water_2,water,4,17127,1870,1749,36854
+everything - bright,linear probe,water_8,water,4,7566,1112,99,48823
+everything - bright,linear probe,water_14,water,4,40256,405,6036,10903
+everything - bright,linear probe,water_23,water,4,33009,458,1785,22348
+everything - bright,linear probe,water_24,water,4,23920,1754,1124,30802
+everything - dark,random forest,barren_1,barren,4,19878,315,1523,35884
+everything - dark,random forest,barren_20,barren,4,14535,655,11289,31121
+everything - dark,random forest,barren_23,barren,4,9670,81,8124,39725
+everything - dark,random forest,barren_24,barren,4,6216,1381,609,49394
+everything - dark,random forest,snow_6,snow,4,7237,1133,10136,39094
+everything - dark,random forest,snow_11,snow,4,7388,2790,1884,45538
+everything - dark,random forest,snow_15,snow,4,8671,91,3244,45594
+everything - dark,random forest,snow_24,snow,4,5489,14943,676,36492
+everything - dark,random forest,snow_28,snow,4,8715,690,2229,45966
+everything - dark,random forest,urban_4,urban,4,32697,57,2780,22066
+everything - dark,random forest,urban_14,urban,4,9805,201,968,46626
+everything - dark,random forest,urban_19,urban,4,8303,1345,1020,46932
+everything - dark,random forest,urban_24,urban,4,27093,1095,3700,25712
+everything - dark,random forest,urban_28,urban,4,15606,1665,934,39395
+everything - dark,random forest,vegetation_1,vegetation,4,18951,437,1397,36815
+everything - dark,random forest,vegetation_2,vegetation,4,20657,750,572,35621
+everything - dark,random forest,vegetation_4,vegetation,4,8775,740,1079,47006
+everything - dark,random forest,vegetation_6,vegetation,4,4629,2328,15,50628
+everything - dark,random forest,vegetation_26,vegetation,4,14179,905,963,41553
+everything - dark,random forest,water_2,water,4,17597,1915,1279,36809
+everything - dark,random forest,water_8,water,4,7656,1902,9,48033
+everything - dark,random forest,water_14,water,4,42791,1083,3501,10225
+everything - dark,random forest,water_23,water,4,34236,917,558,21889
+everything - dark,random forest,water_24,water,4,24939,4398,105,28158
+everything - dark,linear probe,barren_1,barren,4,20486,788,915,35411
+everything - dark,linear probe,barren_20,barren,4,13098,271,12726,31505
+everything - dark,linear probe,barren_23,barren,4,8547,15,9247,39791
+everything - dark,linear probe,barren_24,barren,4,4918,93,1907,50682
+everything - dark,linear probe,snow_6,snow,4,3463,522,13910,39705
+everything - dark,linear probe,snow_11,snow,4,7484,4104,1788,44224
+everything - dark,linear probe,snow_15,snow,4,9876,253,2039,45432
+everything - dark,linear probe,snow_24,snow,4,5015,13695,1150,37740
+everything - dark,linear probe,snow_28,snow,4,8723,990,2221,45666
+everything - dark,linear probe,urban_4,urban,4,33341,112,2136,22011
+everything - dark,linear probe,urban_14,urban,4,10022,540,751,46287
+everything - dark,linear probe,urban_19,urban,4,8523,2093,800,46184
+everything - dark,linear probe,urban_24,urban,4,28046,1706,2747,25101
+everything - dark,linear probe,urban_28,urban,4,15815,2421,725,38639
+everything - dark,linear probe,vegetation_1,vegetation,4,19376,650,972,36602
+everything - dark,linear probe,vegetation_2,vegetation,4,20157,411,1072,35960
+everything - dark,linear probe,vegetation_4,vegetation,4,8726,403,1128,47343
+everything - dark,linear probe,vegetation_6,vegetation,4,4638,2265,6,50691
+everything - dark,linear probe,vegetation_26,vegetation,4,13643,464,1499,41994
+everything - dark,linear probe,water_2,water,4,17101,1580,1775,37144
+everything - dark,linear probe,water_8,water,4,7580,1075,85,48860
+everything - dark,linear probe,water_14,water,4,40661,441,5631,10867
+everything - dark,linear probe,water_23,water,4,33016,361,1778,22445
+everything - dark,linear probe,water_24,water,4,23984,1557,1060,30999
+everything - texture,random forest,barren_1,barren,4,19674,276,1727,35923
+everything - texture,random forest,barren_20,barren,4,15252,626,10572,31150
+everything - texture,random forest,barren_23,barren,4,9446,85,8348,39721
+everything - texture,random forest,barren_24,barren,4,6208,1366,617,49409
+everything - texture,random forest,snow_6,snow,4,7343,1155,10030,39072
+everything - texture,random forest,snow_11,snow,4,7459,2998,1813,45330
+everything - texture,random forest,snow_15,snow,4,7948,56,3967,45629
+everything - texture,random forest,snow_24,snow,4,5643,16065,522,35370
+everything - texture,random forest,snow_28,snow,4,8727,880,2217,45776
+everything - texture,random forest,urban_4,urban,4,32692,42,2785,22081
+everything - texture,random forest,urban_14,urban,4,9797,214,976,46613
+everything - texture,random forest,urban_19,urban,4,8278,1221,1045,47056
+everything - texture,random forest,urban_24,urban,4,27250,1044,3543,25763
+everything - texture,random forest,urban_28,urban,4,16042,2769,498,38291
+everything - texture,random forest,vegetation_1,vegetation,4,18750,282,1598,36970
+everything - texture,random forest,vegetation_2,vegetation,4,20588,678,641,35693
+everything - texture,random forest,vegetation_4,vegetation,4,9057,1368,797,46378
+everything - texture,random forest,vegetation_6,vegetation,4,4643,3123,1,49833
+everything - texture,random forest,vegetation_26,vegetation,4,14362,1139,780,41319
+everything - texture,random forest,water_2,water,4,17511,1824,1365,36900
+everything - texture,random forest,water_8,water,4,7655,1961,10,47974
+everything - texture,random forest,water_14,water,4,42692,1100,3600,10208
+everything - texture,random forest,water_23,water,4,34164,849,630,21957
+everything - texture,random forest,water_24,water,4,24885,4129,159,28427
+everything - texture,linear probe,barren_1,barren,4,20527,807,874,35392
+everything - texture,linear probe,barren_20,barren,4,12196,248,13628,31528
+everything - texture,linear probe,barren_23,barren,4,8546,20,9248,39786
+everything - texture,linear probe,barren_24,barren,4,4817,85,2008,50690
+everything - texture,linear probe,snow_6,snow,4,3241,367,14132,39860
+everything - texture,linear probe,snow_11,snow,4,7398,3810,1874,44518
+everything - texture,linear probe,snow_15,snow,4,10315,352,1600,45333
+everything - texture,linear probe,snow_24,snow,4,4982,12647,1183,38788
+everything - texture,linear probe,snow_28,snow,4,8834,785,2110,45871
+everything - texture,linear probe,urban_4,urban,4,33236,68,2241,22055
+everything - texture,linear probe,urban_14,urban,4,10015,674,758,46153
+everything - texture,linear probe,urban_19,urban,4,8447,1956,876,46321
+everything - texture,linear probe,urban_24,urban,4,27504,1435,3289,25372
+everything - texture,linear probe,urban_28,urban,4,15516,1546,1024,39514
+everything - texture,linear probe,vegetation_1,vegetation,4,19305,593,1043,36659
+everything - texture,linear probe,vegetation_2,vegetation,4,20227,410,1002,35961
+everything - texture,linear probe,vegetation_4,vegetation,4,8883,544,971,47202
+everything - texture,linear probe,vegetation_6,vegetation,4,4641,3344,3,49612
+everything - texture,linear probe,vegetation_26,vegetation,4,13829,537,1313,41921
+everything - texture,linear probe,water_2,water,4,17131,1531,1745,37193
+everything - texture,linear probe,water_8,water,4,7573,978,92,48957
+everything - texture,linear probe,water_14,water,4,40574,443,5718,10865
+everything - texture,linear probe,water_23,water,4,32929,317,1865,22489
+everything - texture,linear probe,water_24,water,4,24043,1533,1001,31023

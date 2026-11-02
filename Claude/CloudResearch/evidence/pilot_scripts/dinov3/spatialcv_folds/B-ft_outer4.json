@@ -1,0 +1,347 @@
+{
+ "epochs (chosen on inner fold 1)": 10,
+ "es history": [
+  {
+   "epoch": 1,
+   "train loss": 0.5040546597171298,
+   "seconds": 80.5,
+   "eval loss": 0.20289329731178907
+  },
+  {
+   "epoch": 2,
+   "train loss": 0.32786401883624594,
+   "seconds": 80.1,
+   "eval loss": 0.4198486155313843
+  },
+  {
+   "epoch": 3,
+   "train loss": 0.3076412382760404,
+   "seconds": 82.0,
+   "eval loss": 0.15611031882811857
+  },
+  {
+   "epoch": 4,
+   "train loss": 0.26290039961656647,
+   "seconds": 84.0,
+   "eval loss": 0.19133211588514737
+  },
+  {
+   "epoch": 5,
+   "train loss": 0.35819813298252423,
+   "seconds": 85.6,
+   "eval loss": 0.156850511857296
+  },
+  {
+   "epoch": 6,
+   "train loss": 0.2272715459244364,
+   "seconds": 84.8,
+   "eval loss": 0.1398305488129969
+  },
+  {
+   "epoch": 7,
+   "train loss": 0.22128658029652684,
+   "seconds": 87.2,
+   "eval loss": 0.13958630705375574
+  },
+  {
+   "epoch": 8,
+   "train loss": 0.2122609227507453,
+   "seconds": 86.4,
+   "eval loss": 0.13795928914837222
+  },
+  {
+   "epoch": 9,
+   "train loss": 0.22238474313729856,
+   "seconds": 96.2,
+   "eval loss": 0.1282214223750368
+  },
+  {
+   "epoch": 10,
+   "train loss": 0.2156486635095851,
+   "seconds": 107.6,
+   "eval loss": 0.1101954008073388
+  }
+ ],
+ "cross-fit histories": [
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.5040546597171298,
+    "seconds": 111.8
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.32786401883624594,
+    "seconds": 108.1
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.3076412382760404,
+    "seconds": 108.4
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.26290039961656647,
+    "seconds": 109.9
+   },
+   {
+    "epoch": 5,
+    "train loss": 0.35819813298252423,
+    "seconds": 120.1
+   },
+   {
+    "epoch": 6,
+    "train loss": 0.2272715459244364,
+    "seconds": 121.5
+   },
+   {
+    "epoch": 7,
+    "train loss": 0.22128658029652684,
+    "seconds": 113.8
+   },
+   {
+    "epoch": 8,
+    "train loss": 0.2122609227507453,
+    "seconds": 112.5
+   },
+   {
+    "epoch": 9,
+    "train loss": 0.22238474313729856,
+    "seconds": 122.7
+   },
+   {
+    "epoch": 10,
+    "train loss": 0.2156486635095851,
+    "seconds": 117.9
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.6250871362675671,
+    "seconds": 90.7
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.36452250985935825,
+    "seconds": 91.4
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.35752908999515165,
+    "seconds": 95.6
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.2937674321060741,
+    "seconds": 91.1
+   },
+   {
+    "epoch": 5,
+    "train loss": 0.2729508980548445,
+    "seconds": 92.5
+   },
+   {
+    "epoch": 6,
+    "train loss": 0.2285807263856448,
+    "seconds": 90.8
+   },
+   {
+    "epoch": 7,
+    "train loss": 0.22397279271270545,
+    "seconds": 88.5
+   },
+   {
+    "epoch": 8,
+    "train loss": 0.2586393203237734,
+    "seconds": 90.7
+   },
+   {
+    "epoch": 9,
+    "train loss": 0.2559968655849305,
+    "seconds": 89.4
+   },
+   {
+    "epoch": 10,
+    "train loss": 0.19346792374942565,
+    "seconds": 91.2
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.4692392343488712,
+    "seconds": 132.3
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.284138163094407,
+    "seconds": 113.0
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.3231083753045074,
+    "seconds": 116.8
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.2698526467966433,
+    "seconds": 115.7
+   },
+   {
+    "epoch": 5,
+    "train loss": 0.16974218170622044,
+    "seconds": 116.7
+   },
+   {
+    "epoch": 6,
+    "train loss": 0.21786318355428483,
+    "seconds": 117.1
+   },
+   {
+    "epoch": 7,
+    "train loss": 0.20497816870921376,
+    "seconds": 119.5
+   },
+   {
+    "epoch": 8,
+    "train loss": 0.2205389321607637,
+    "seconds": 121.8
+   },
+   {
+    "epoch": 9,
+    "train loss": 0.14391795673641636,
+    "seconds": 5351.8
+   },
+   {
+    "epoch": 10,
+    "train loss": 0.22650658267970192,
+    "seconds": 1871.3
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.41485511506126227,
+    "seconds": 108.0
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.33418659510810506,
+    "seconds": 133.6
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.21013326661797602,
+    "seconds": 129.8
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.19743547942652415,
+    "seconds": 136.0
+   },
+   {
+    "epoch": 5,
+    "train loss": 0.12091910954527459,
+    "seconds": 146.4
+   },
+   {
+    "epoch": 6,
+    "train loss": 0.1939634881888337,
+    "seconds": 151.5
+   },
+   {
+    "epoch": 7,
+    "train loss": 0.20944026023620813,
+    "seconds": 164.2
+   },
+   {
+    "epoch": 8,
+    "train loss": 0.1930910365590796,
+    "seconds": 176.6
+   },
+   {
+    "epoch": 9,
+    "train loss": 0.13686025488134806,
+    "seconds": 184.2
+   },
+   {
+    "epoch": 10,
+    "train loss": 0.14558512507405277,
+    "seconds": 186.5
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.6231471955876126,
+    "seconds": 141.3
+   },
+   {
+    "epoch": 2,
+    "train loss": 0.40546614807229675,
+    "seconds": 144.0
+   },
+   {
+    "epoch": 3,
+    "train loss": 0.2943976042719636,
+    "seconds": 149.0
+   },
+   {
+    "epoch": 4,
+    "train loss": 0.35731440050767826,
+    "seconds": 161.8
+   },
+   {
+    "epoch": 5,
+    "train loss": 0.24424679301137647,
+    "seconds": 146.1
+   },
+   {
+    "epoch": 6,
+    "train loss": 0.22694537583005445,
+    "seconds": 146.9
+   },
+   {
+    "epoch": 7,
+    "train loss": 0.17014714884222001,
+    "seconds": 140.7
+   },
+   {
+    "epoch": 8,
+    "train loss": 0.21108872889861507,
+    "seconds": 143.9
+   },
+   {
+    "epoch": 9,
+    "train loss": 0.1448702680501108,
+    "seconds": 136.6
+   },
+   {
+    "epoch": 10,
+    "train loss": 0.09845947390561434,
+    "seconds": 128.6
+   }
+  ]
+ ],
+ "seconds": 14968.7,
+ "es fit tiles": 146,
+ "es eval tiles": 40,
+ "es target roads": 448,
+ "es eval roads": 111,
+ "cross-fit target roads": [
+  448,
+  401,
+  448,
+  455,
+  395
+ ],
+ "cross-fit fit tiles": [
+  146,
+  140,
+  154,
+  149,
+  155
+ ],
+ "held-out road tiles": 40
+}

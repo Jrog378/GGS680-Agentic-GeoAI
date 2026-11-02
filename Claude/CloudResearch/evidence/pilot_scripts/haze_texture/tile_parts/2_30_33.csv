@@ -1,0 +1,2 @@
+tile_id,valid_px,raw_rise_med,rise_p90,atten_med,hot_post_p90,hot_pre_p90,spot_post_mean,spot_pre_mean,hot_slope_post,hot_slope_pre,mask_bright,mask_dark,mask_dark_rise
+2_30_33,1334784,-10.81974983215332,8.625197410583496,0.0,2.8249731063842773,4.678413391113281,0.0025045832264893775,0.053550948557805476,0.9951388750805267,1.0845013951847486,0.0,0.0,0.0

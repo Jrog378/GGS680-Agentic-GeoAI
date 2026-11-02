@@ -1,0 +1,1093 @@
+section,arm,scheme,road set,seed,accuracy,production accuracy,gain vs production,95% CI,fixed,broken,McNemar p,would pass,own kept accuracy
+(a),production on its 798 kept roads,T,798,662,0.8295739348370927,,,,,,,,
+(a),production on its 798 kept roads,T,798,1,0.8270676691729323,,,,,,,,
+(a),production on its 798 kept roads,T,798,2,0.8245614035087719,,,,,,,,
+(a),production on its 798 kept roads,T,798,3,0.8170426065162907,,,,,,,,
+(a),production on its 798 kept roads,T,798,4,0.8170426065162907,,,,,,,,
+(a),production on its 798 kept roads,T,798,5,0.8283208020050126,,,,,,,,
+(a),production on its 798 kept roads,T,798,6,0.818295739348371,,,,,,,,
+(a),production on its 798 kept roads,T,798,7,0.8421052631578947,,,,,,,,
+(a),production on its 798 kept roads,T,798,8,0.8245614035087719,,,,,,,,
+(a),production on its 798 kept roads,T,798,9,0.8308270676691729,,,,,,,,
+(a),production on its 798 kept roads,T,798,10,0.8220551378446115,,,,,,,,
+(a),production on its 798 kept roads,T,798,11,0.8258145363408521,,,,,,,,
+(a),production on its 798 kept roads,T,798,12,0.8157894736842105,,,,,,,,
+(a),production on its 798 kept roads,T,798,13,0.8258145363408521,,,,,,,,
+(a),production on its 798 kept roads,T,798,14,0.8295739348370927,,,,,,,,
+(a),production on its 798 kept roads,T,798,15,0.8233082706766918,,,,,,,,
+(a),production on its 798 kept roads,T,798,16,0.8295739348370927,,,,,,,,
+(a),production on its 798 kept roads,T,798,17,0.8308270676691729,,,,,,,,
+(a),production on its 798 kept roads,T,798,18,0.8208020050125313,,,,,,,,
+(a),production on its 798 kept roads,T,798,19,0.8220551378446115,,,,,,,,
+(a),production on its 798 kept roads,T,798,20,0.8220551378446115,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,662,0.8220551378446115,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,1,0.8283208020050126,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,2,0.8233082706766918,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,3,0.8295739348370927,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,4,0.8258145363408521,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,5,0.8233082706766918,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,6,0.8370927318295739,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,7,0.8258145363408521,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,8,0.8295739348370927,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,9,0.8208020050125313,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,10,0.8358395989974937,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,11,0.8358395989974937,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,12,0.8308270676691729,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,13,0.8208020050125313,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,14,0.8283208020050126,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,15,0.8320802005012531,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,16,0.8233082706766918,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,17,0.8270676691729323,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,18,0.8270676691729323,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,19,0.8258145363408521,,,,,,,,
+(a),production on its 798 kept roads,Tdev,798,20,0.8245614035087719,,,,,,,,
+(a),production on its 798 kept roads,TM,798,662,0.8295739348370927,,,,,,,,
+(a),production on its 798 kept roads,TM,798,1,0.8358395989974937,,,,,,,,
+(a),production on its 798 kept roads,TM,798,2,0.8220551378446115,,,,,,,,
+(a),production on its 798 kept roads,TM,798,3,0.8320802005012531,,,,,,,,
+(a),production on its 798 kept roads,TM,798,4,0.8258145363408521,,,,,,,,
+(a),production on its 798 kept roads,TM,798,5,0.8145363408521303,,,,,,,,
+(a),production on its 798 kept roads,TM,798,6,0.8358395989974937,,,,,,,,
+(a),production on its 798 kept roads,TM,798,7,0.8245614035087719,,,,,,,,
+(a),production on its 798 kept roads,TM,798,8,0.8220551378446115,,,,,,,,
+(a),production on its 798 kept roads,TM,798,9,0.8220551378446115,,,,,,,,
+(a),production on its 798 kept roads,TM,798,10,0.8245614035087719,,,,,,,,
+(a),production on its 798 kept roads,TM,798,11,0.8308270676691729,,,,,,,,
+(a),production on its 798 kept roads,TM,798,12,0.8195488721804511,,,,,,,,
+(a),production on its 798 kept roads,TM,798,13,0.8195488721804511,,,,,,,,
+(a),production on its 798 kept roads,TM,798,14,0.8283208020050126,,,,,,,,
+(a),production on its 798 kept roads,TM,798,15,0.8283208020050126,,,,,,,,
+(a),production on its 798 kept roads,TM,798,16,0.8170426065162907,,,,,,,,
+(a),production on its 798 kept roads,TM,798,17,0.8258145363408521,,,,,,,,
+(a),production on its 798 kept roads,TM,798,18,0.8170426065162907,,,,,,,,
+(a),production on its 798 kept roads,TM,798,19,0.8270676691729323,,,,,,,,
+(a),production on its 798 kept roads,TM,798,20,0.8220551378446115,,,,,,,,
+(a),production on its 798 kept roads,S,798,662,0.7919799498746867,,,,,,,,
+(a),production on its 798 kept roads,S,798,1,0.7869674185463659,,,,,,,,
+(a),production on its 798 kept roads,S,798,2,0.7857142857142857,,,,,,,,
+(a),production on its 798 kept roads,S,798,3,0.7994987468671679,,,,,,,,
+(a),production on its 798 kept roads,S,798,4,0.7894736842105263,,,,,,,,
+(a),production on its 798 kept roads,S,798,5,0.7781954887218046,,,,,,,,
+(a),production on its 798 kept roads,S,798,6,0.7781954887218046,,,,,,,,
+(a),production on its 798 kept roads,S,798,7,0.7832080200501254,,,,,,,,
+(a),production on its 798 kept roads,S,798,8,0.7832080200501254,,,,,,,,
+(a),production on its 798 kept roads,S,798,9,0.7882205513784462,,,,,,,,
+(a),production on its 798 kept roads,S,798,10,0.7807017543859649,,,,,,,,
+(a),production on its 798 kept roads,S,798,11,0.7844611528822055,,,,,,,,
+(a),production on its 798 kept roads,S,798,12,0.7869674185463659,,,,,,,,
+(a),production on its 798 kept roads,S,798,13,0.7882205513784462,,,,,,,,
+(a),production on its 798 kept roads,S,798,14,0.7907268170426065,,,,,,,,
+(a),production on its 798 kept roads,S,798,15,0.7944862155388471,,,,,,,,
+(a),production on its 798 kept roads,S,798,16,0.8007518796992481,,,,,,,,
+(a),production on its 798 kept roads,S,798,17,0.7644110275689223,,,,,,,,
+(a),production on its 798 kept roads,S,798,18,0.7857142857142857,,,,,,,,
+(a),production on its 798 kept roads,S,798,19,0.7819548872180451,,,,,,,,
+(a),production on its 798 kept roads,S,798,20,0.7781954887218046,,,,,,,,
+(a),production on its 798 kept roads,SB,798,662,0.7869674185463659,,,,,,,,
+(a),production on its 798 kept roads,SB,798,1,0.7706766917293233,,,,,,,,
+(a),production on its 798 kept roads,SB,798,2,0.7756892230576441,,,,,,,,
+(a),production on its 798 kept roads,SB,798,3,0.7744360902255639,,,,,,,,
+(a),production on its 798 kept roads,SB,798,4,0.7769423558897243,,,,,,,,
+(a),production on its 798 kept roads,SB,798,5,0.7619047619047619,,,,,,,,
+(a),production on its 798 kept roads,SB,798,6,0.7631578947368421,,,,,,,,
+(a),production on its 798 kept roads,SB,798,7,0.7719298245614035,,,,,,,,
+(a),production on its 798 kept roads,SB,798,8,0.7907268170426065,,,,,,,,
+(a),production on its 798 kept roads,SB,798,9,0.7706766917293233,,,,,,,,
+(a),production on its 798 kept roads,SB,798,10,0.7719298245614035,,,,,,,,
+(a),production on its 798 kept roads,SB,798,11,0.7631578947368421,,,,,,,,
+(a),production on its 798 kept roads,SB,798,12,0.7781954887218046,,,,,,,,
+(a),production on its 798 kept roads,SB,798,13,0.7706766917293233,,,,,,,,
+(a),production on its 798 kept roads,SB,798,14,0.7857142857142857,,,,,,,,
+(a),production on its 798 kept roads,SB,798,15,0.7807017543859649,,,,,,,,
+(a),production on its 798 kept roads,SB,798,16,0.7919799498746867,,,,,,,,
+(a),production on its 798 kept roads,SB,798,17,0.7568922305764411,,,,,,,,
+(a),production on its 798 kept roads,SB,798,18,0.7644110275689223,,,,,,,,
+(a),production on its 798 kept roads,SB,798,19,0.7581453634085213,,,,,,,,
+(a),production on its 798 kept roads,SB,798,20,0.7731829573934837,,,,,,,,
+(a),production on its 798 kept roads,L,798,662,0.7694235588972431,,,,,,,,
+(a),production on its 798 kept roads,L,798,1,0.7694235588972431,,,,,,,,
+(a),production on its 798 kept roads,L,798,2,0.7694235588972431,,,,,,,,
+(a),production on its 798 kept roads,L,798,3,0.7756892230576441,,,,,,,,
+(a),production on its 798 kept roads,L,798,4,0.7694235588972431,,,,,,,,
+(a),production on its 798 kept roads,L,798,5,0.7769423558897243,,,,,,,,
+(a),production on its 798 kept roads,L,798,6,0.7756892230576441,,,,,,,,
+(a),production on its 798 kept roads,L,798,7,0.7769423558897243,,,,,,,,
+(a),production on its 798 kept roads,L,798,8,0.7756892230576441,,,,,,,,
+(a),production on its 798 kept roads,L,798,9,0.7694235588972431,,,,,,,,
+(a),production on its 798 kept roads,L,798,10,0.7694235588972431,,,,,,,,
+(a),production on its 798 kept roads,L,798,11,0.7694235588972431,,,,,,,,
+(a),production on its 798 kept roads,L,798,12,0.7769423558897243,,,,,,,,
+(a),production on its 798 kept roads,L,798,13,0.7694235588972431,,,,,,,,
+(a),production on its 798 kept roads,L,798,14,0.7756892230576441,,,,,,,,
+(a),production on its 798 kept roads,L,798,15,0.7694235588972431,,,,,,,,
+(a),production on its 798 kept roads,L,798,16,0.7694235588972431,,,,,,,,
+(a),production on its 798 kept roads,L,798,17,0.7694235588972431,,,,,,,,
+(a),production on its 798 kept roads,L,798,18,0.7694235588972431,,,,,,,,
+(a),production on its 798 kept roads,L,798,19,0.7769423558897243,,,,,,,,
+(a),production on its 798 kept roads,L,798,20,0.7756892230576441,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,662,0.8473625140291807,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,1,0.8428731762065096,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,2,0.8383838383838383,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,3,0.8372615039281706,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,4,0.8417508417508418,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,5,0.8383838383838383,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,6,0.8574635241301908,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,7,0.8383838383838383,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,8,0.8507295173961841,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,9,0.8496071829405163,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,10,0.8540965207631874,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,11,0.8473625140291807,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,12,0.8608305274971941,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,13,0.8518518518518519,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,14,0.8574635241301908,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,15,0.8496071829405163,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,16,0.8484848484848485,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,17,0.8428731762065096,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,18,0.8496071829405163,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,19,0.8473625140291807,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,T,891,20,0.8428731762065096,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,662,0.8507295173961841,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,1,0.8462401795735129,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,2,0.8395061728395061,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,3,0.8417508417508418,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,4,0.8496071829405163,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,5,0.8496071829405163,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,6,0.8518518518518519,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,7,0.8529741863075196,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,8,0.8496071829405163,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,9,0.8484848484848485,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,10,0.8518518518518519,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,11,0.8496071829405163,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,12,0.8417508417508418,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,13,0.8484848484848485,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,14,0.8417508417508418,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,15,0.8507295173961841,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,16,0.8507295173961841,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,17,0.8462401795735129,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,18,0.8507295173961841,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,19,0.8518518518518519,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,Tdev,891,20,0.8484848484848485,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,662,0.8484848484848485,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,1,0.8451178451178452,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,2,0.835016835016835,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,3,0.8451178451178452,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,4,0.8496071829405163,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,5,0.8428731762065096,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,6,0.8552188552188552,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,7,0.8518518518518519,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,8,0.8406285072951739,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,9,0.8406285072951739,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,10,0.8473625140291807,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,11,0.8428731762065096,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,12,0.8417508417508418,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,13,0.8428731762065096,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,14,0.8451178451178452,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,15,0.8473625140291807,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,16,0.8439955106621774,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,17,0.8529741863075196,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,18,0.8484848484848485,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,19,0.8496071829405163,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,TM,891,20,0.8496071829405163,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,662,0.8159371492704826,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,1,0.8069584736251403,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,2,0.8024691358024691,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,3,0.8114478114478114,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,4,0.8058361391694725,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,5,0.8024691358024691,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,6,0.8013468013468014,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,7,0.8013468013468014,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,8,0.8170594837261503,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,9,0.8092031425364759,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,10,0.8024691358024691,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,11,0.8114478114478114,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,12,0.8080808080808081,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,13,0.8024691358024691,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,14,0.8125701459034792,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,15,0.813692480359147,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,16,0.8159371492704826,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,17,0.797979797979798,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,18,0.8013468013468014,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,19,0.7878787878787878,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,S,891,20,0.8114478114478114,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,662,0.8024691358024691,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,1,0.7912457912457912,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,2,0.7811447811447811,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,3,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,4,0.8035914702581369,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,5,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,6,0.7833894500561167,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,7,0.797979797979798,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,8,0.8035914702581369,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,9,0.7934904601571269,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,10,0.8002244668911336,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,11,0.7934904601571269,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,12,0.7957351290684624,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,13,0.797979797979798,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,14,0.7946127946127947,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,15,0.8024691358024691,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,16,0.8080808080808081,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,17,0.7856341189674523,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,18,0.7822671156004489,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,19,0.7878787878787878,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,SB,891,20,0.7946127946127947,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,662,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,1,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,2,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,3,0.8047138047138047,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,4,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,5,0.8013468013468014,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,6,0.8047138047138047,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,7,0.8013468013468014,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,8,0.8047138047138047,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,9,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,10,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,11,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,12,0.8013468013468014,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,13,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,14,0.8047138047138047,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,15,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,16,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,17,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,18,0.7991021324354658,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,19,0.8013468013468014,,,,,,,,
+(b),best combo so far (production + DINOv2 vector) on the 891 tile-rule roads,L,891,20,0.8047138047138047,,,,,,,,
+(b),best combo vs production,T,798,662,0.8421052631578947,0.8295739348370927,0.012531328320801949,"[-0.0028430928058032425, 0.02970297029702973]",25.0,15.0,0.1538599441628321,False,
+(b),best combo vs production,T,798,1,0.8358395989974937,0.8270676691729323,0.00877192982456143,"[-0.005903318515779921, 0.023346587520236328]",21.0,14.0,0.31050465907901537,False,
+(b),best combo vs production,T,798,2,0.8320802005012531,0.8245614035087719,0.007518796992481147,"[-0.01012380572681582, 0.025568277407316722]",28.0,22.0,0.47988766169832786,False,
+(b),best combo vs production,T,798,3,0.8295739348370927,0.8170426065162907,0.01253132832080206,"[-0.007299492340656302, 0.031952932911836984]",30.0,20.0,0.20263875106454066,False,
+(b),best combo vs production,T,798,4,0.8333333333333334,0.8170426065162907,0.01629072681704269,"[-0.0021146896632641427, 0.0350442874771585]",31.0,18.0,0.08543313315739454,False,
+(b),best combo vs production,T,798,5,0.8320802005012531,0.8283208020050126,0.003759398496240518,"[-0.014706966857539425, 0.021917808219177996]",23.0,20.0,0.7607916425613439,False,
+(b),best combo vs production,T,798,6,0.8521303258145363,0.818295739348371,0.03383458646616533,"[0.01775073028237583, 0.05116311235485215]",39.0,12.0,0.0001980394513374506,True,
+(b),best combo vs production,T,798,7,0.8308270676691729,0.8421052631578947,-0.011278195488721776,"[-0.02788448579351687, 0.0044649540205303415]",17.0,26.0,0.2220528201560228,False,
+(b),best combo vs production,T,798,8,0.8458646616541353,0.8245614035087719,0.02130325814536338,"[0.004956323148960754, 0.038008915617212875]",29.0,12.0,0.011507789735333063,True,
+(b),best combo vs production,T,798,9,0.843358395989975,0.8308270676691729,0.01253132832080206,"[-0.003937396906414361, 0.029137953882851796]",26.0,16.0,0.16414940178310644,False,
+(b),best combo vs production,T,798,10,0.8471177944862155,0.8220551378446115,0.02506265664160401,"[0.006847957616469303, 0.04398856304985344]",33.0,13.0,0.004533861582189047,True,
+(b),best combo vs production,T,798,11,0.8408521303258145,0.8258145363408521,0.015037593984962405,"[-0.002361344866180418, 0.03195952348359726]",27.0,15.0,0.08842954698775429,False,
+(b),best combo vs production,T,798,12,0.8558897243107769,0.8157894736842105,0.040100250626566414,"[0.02214010128382526, 0.058689653702748396]",45.0,13.0,3.011590962911926e-05,True,
+(b),best combo vs production,T,798,13,0.8446115288220551,0.8258145363408521,0.018796992481203034,"[0.0, 0.03877049910873444]",32.0,17.0,0.04438416098714981,False,
+(b),best combo vs production,T,798,14,0.8508771929824561,0.8295739348370927,0.02130325814536338,"[0.004656306998792606, 0.03841233159914774]",30.0,13.0,0.0137181850586785,True,
+(b),best combo vs production,T,798,15,0.843358395989975,0.8233082706766918,0.020050125313283207,"[0.002284437350359187, 0.0395409964833391]",33.0,17.0,0.032839137564268484,True,
+(b),best combo vs production,T,798,16,0.8421052631578947,0.8295739348370927,0.012531328320801949,"[-0.0048661800486617945, 0.029955721865938333]",26.0,16.0,0.16414940178310644,False,
+(b),best combo vs production,T,798,17,0.8370927318295739,0.8308270676691729,0.006265664160400974,"[-0.011407061131656149, 0.023779692482134976]",23.0,18.0,0.5327092552361137,False,
+(b),best combo vs production,T,798,18,0.8408521303258145,0.8208020050125313,0.020050125313283207,"[-0.0012973998386388433, 0.04284009442210177]",35.0,19.0,0.04022356409571669,False,
+(b),best combo vs production,T,798,19,0.8408521303258145,0.8220551378446115,0.018796992481203034,"[0.002587155197596219, 0.03623282270781711]",30.0,15.0,0.035697803555194696,True,
+(b),best combo vs production,T,798,20,0.8383458646616542,0.8220551378446115,0.01629072681704269,"[-0.0012722646310432406, 0.034723228080339875]",32.0,19.0,0.09191454981585423,False,
+(b),best combo vs production,Tdev,798,662,0.8458646616541353,0.8220551378446115,0.023809523809523836,"[0.008423301332057811, 0.040207696560645066]",31.0,12.0,0.005401572654591291,True,
+(b),best combo vs production,Tdev,798,1,0.8395989974937343,0.8283208020050126,0.011278195488721776,"[-0.01065271189936068, 0.03209936892199451]",31.0,22.0,0.27167916606550335,False,
+(b),best combo vs production,Tdev,798,2,0.8320802005012531,0.8233082706766918,0.00877192982456132,"[-0.005682222869722919, 0.023055048310973363]",20.0,13.0,0.296206368599087,False,
+(b),best combo vs production,Tdev,798,3,0.8345864661654135,0.8295739348370927,0.005012531328320802,"[-0.012672947994186657, 0.02267010033485032]",26.0,22.0,0.6654658120766188,False,
+(b),best combo vs production,Tdev,798,4,0.8421052631578947,0.8258145363408521,0.016290726817042578,"[0.0026415745257734272, 0.030820293376637393]",25.0,12.0,0.04703102743951604,True,
+(b),best combo vs production,Tdev,798,5,0.843358395989975,0.8233082706766918,0.020050125313283207,"[0.002716932905004946, 0.037356692143618996]",26.0,10.0,0.011330984183587134,True,
+(b),best combo vs production,Tdev,798,6,0.8446115288220551,0.8370927318295739,0.007518796992481258,"[-0.007092450435203107, 0.022556390977443552]",20.0,14.0,0.39152830513194203,False,
+(b),best combo vs production,Tdev,798,7,0.8471177944862155,0.8258145363408521,0.02130325814536338,"[0.003875968992248069, 0.04000125156445559]",31.0,14.0,0.016094360031274842,True,
+(b),best combo vs production,Tdev,798,8,0.843358395989975,0.8295739348370927,0.013784461152882233,"[-0.0022309906690490705, 0.029225440689037117]",25.0,14.0,0.10812902140605732,False,
+(b),best combo vs production,Tdev,798,9,0.843358395989975,0.8208020050125313,0.022556390977443663,"[0.0060525394556433494, 0.040000000000000036]",28.0,10.0,0.0050976432976312935,True,
+(b),best combo vs production,Tdev,798,10,0.8458646616541353,0.8358395989974937,0.010025062656641603,"[-0.004459308807134854, 0.02469220594220593]",23.0,15.0,0.2558750795433298,False,
+(b),best combo vs production,Tdev,798,11,0.8458646616541353,0.8358395989974937,0.010025062656641603,"[-0.0037784566467929464, 0.024391900848356306]",21.0,13.0,0.22948101302608848,False,
+(b),best combo vs production,Tdev,798,12,0.8345864661654135,0.8308270676691729,0.003759398496240629,"[-0.010116037565468618, 0.01763907734056991]",19.0,16.0,0.735878800856881,False,
+(b),best combo vs production,Tdev,798,13,0.8408521303258145,0.8208020050125313,0.020050125313283207,"[0.0037542257834747047, 0.03758463252639732]",25.0,9.0,0.00904118549078703,True,
+(b),best combo vs production,Tdev,798,14,0.8333333333333334,0.8283208020050126,0.005012531328320802,"[-0.011035033466067991, 0.020807833537331732]",21.0,17.0,0.6271025701571489,False,
+(b),best combo vs production,Tdev,798,15,0.843358395989975,0.8320802005012531,0.011278195488721887,"[0.0, 0.02292354979240985]",20.0,11.0,0.14961278438568115,False,
+(b),best combo vs production,Tdev,798,16,0.8421052631578947,0.8233082706766918,0.018796992481202923,"[0.003596799979371321, 0.03566714907151093]",29.0,14.0,0.03153949735315109,True,
+(b),best combo vs production,Tdev,798,17,0.8395989974937343,0.8270676691729323,0.01253132832080206,"[0.001210653753026647, 0.025334057971014467]",22.0,12.0,0.12144948495551944,False,
+(b),best combo vs production,Tdev,798,18,0.8421052631578947,0.8270676691729323,0.015037593984962405,"[-0.001358788206373576, 0.03156945977220065]",26.0,14.0,0.0806904677519924,False,
+(b),best combo vs production,Tdev,798,19,0.8458646616541353,0.8258145363408521,0.020050125313283207,"[0.005025125628140725, 0.03513566300675683]",28.0,12.0,0.01658900337497471,True,
+(b),best combo vs production,Tdev,798,20,0.8421052631578947,0.8245614035087719,0.01754385964912275,"[0.002183346587743462, 0.03452138884445478]",27.0,13.0,0.03847730828420026,True,
+(b),best combo vs production,TM,798,662,0.843358395989975,0.8295739348370927,0.013784461152882233,"[-0.0013571305269449217, 0.029868617046036494]",26.0,15.0,0.11727520595741225,False,
+(b),best combo vs production,TM,798,1,0.8370927318295739,0.8358395989974937,0.0012531328320801727,"[-0.014687917072934664, 0.01756591440876262]",21.0,20.0,1.0,False,
+(b),best combo vs production,TM,798,2,0.8270676691729323,0.8220551378446115,0.005012531328320802,"[-0.010677429069515978, 0.020334928229665095]",19.0,15.0,0.6075913612730801,False,
+(b),best combo vs production,TM,798,3,0.8395989974937343,0.8320802005012531,0.007518796992481258,"[-0.00705339631617172, 0.0228903728468471]",24.0,18.0,0.44079906734259566,False,
+(b),best combo vs production,TM,798,4,0.8421052631578947,0.8258145363408521,0.016290726817042578,"[0.0, 0.032541270210558214]",28.0,15.0,0.0659940344557981,False,
+(b),best combo vs production,TM,798,5,0.8345864661654135,0.8145363408521303,0.020050125313283207,"[0.004998274161735706, 0.03558824523883989]",29.0,13.0,0.019520472782460274,True,
+(b),best combo vs production,TM,798,6,0.8483709273182958,0.8358395989974937,0.01253132832080206,"[-0.0011850106479728616, 0.02631578947368418]",22.0,12.0,0.12144948495551944,False,
+(b),best combo vs production,TM,798,7,0.8471177944862155,0.8245614035087719,0.022556390977443552,"[0.006879948473042511, 0.03959131545338446]",30.0,12.0,0.007915897334896727,True,
+(b),best combo vs production,TM,798,8,0.8358395989974937,0.8220551378446115,0.013784461152882233,"[-0.0025808958716362876, 0.030303030303030276]",24.0,13.0,0.09887174959294498,False,
+(b),best combo vs production,TM,798,9,0.8395989974937343,0.8220551378446115,0.01754385964912286,"[0.002459648679616347, 0.03312172291234119]",25.0,11.0,0.028816719655878845,True,
+(b),best combo vs production,TM,798,10,0.8408521303258145,0.8245614035087719,0.016290726817042578,"[-0.001098565040594787, 0.0342470099436757]",28.0,15.0,0.0659940344557981,False,
+(b),best combo vs production,TM,798,11,0.8421052631578947,0.8308270676691729,0.011278195488721776,"[-0.00277440937865627, 0.02552588261114936]",22.0,13.0,0.175465248990804,False,
+(b),best combo vs production,TM,798,12,0.8370927318295739,0.8195488721804511,0.01754385964912275,"[0.003895475492249742, 0.03188445998914547]",24.0,10.0,0.024306510109454393,True,
+(b),best combo vs production,TM,798,13,0.8358395989974937,0.8195488721804511,0.016290726817042578,"[0.0, 0.033751022967265086]",26.0,13.0,0.05325191409792752,False,
+(b),best combo vs production,TM,798,14,0.8370927318295739,0.8283208020050126,0.00877192982456132,"[-0.00981525000637137, 0.02755905511811019]",31.0,24.0,0.4187541882690154,False,
+(b),best combo vs production,TM,798,15,0.8395989974937343,0.8283208020050126,0.011278195488721776,"[-0.0023927768490228426, 0.024896401516181506]",21.0,12.0,0.16275565745308995,False,
+(b),best combo vs production,TM,798,16,0.8370927318295739,0.8170426065162907,0.020050125313283207,"[0.0026914296936511677, 0.03767507527183662]",29.0,13.0,0.019520472782460274,True,
+(b),best combo vs production,TM,798,17,0.8483709273182958,0.8258145363408521,0.022556390977443663,"[0.009707954901346691, 0.0358859058420462]",27.0,9.0,0.00393317302223295,True,
+(b),best combo vs production,TM,798,18,0.8395989974937343,0.8170426065162907,0.022556390977443663,"[0.004166522191400818, 0.042384444831726084]",34.0,16.0,0.015346677832630107,True,
+(b),best combo vs production,TM,798,19,0.843358395989975,0.8270676691729323,0.01629072681704269,"[0.002666577896138411, 0.031166412932009672]",24.0,11.0,0.040959591511636986,True,
+(b),best combo vs production,TM,798,20,0.8421052631578947,0.8220551378446115,0.020050125313283207,"[0.004889975550122272, 0.036129420909444224]",27.0,11.0,0.013852965261321515,True,
+(b),best combo vs production,S,798,662,0.8107769423558897,0.7919799498746867,0.018796992481203034,"[-0.0014601765154853507, 0.04422002932909681]",35.0,20.0,0.05806414679240905,False,
+(b),best combo vs production,S,798,1,0.7994987468671679,0.7869674185463659,0.01253132832080206,"[-0.00873403384279478, 0.03265010443003191]",32.0,22.0,0.22032849417661093,False,
+(b),best combo vs production,S,798,2,0.7944862155388471,0.7857142857142857,0.00877192982456143,"[-0.012911443434214619, 0.03190050756927433]",25.0,18.0,0.3603776529357674,False,
+(b),best combo vs production,S,798,3,0.8057644110275689,0.7994987468671679,0.006265664160400974,"[-0.014310600258155892, 0.028647509282178123]",27.0,22.0,0.5681724128491652,False,
+(b),best combo vs production,S,798,4,0.7982456140350878,0.7894736842105263,0.00877192982456143,"[-0.010012282165368924, 0.03143150067598017]",28.0,21.0,0.3916029105474905,False,
+(b),best combo vs production,S,798,5,0.7944862155388471,0.7781954887218046,0.016290726817042578,"[-0.0026152447734060415, 0.03400715575778442]",30.0,17.0,0.07894069368148846,False,
+(b),best combo vs production,S,798,6,0.7944862155388471,0.7781954887218046,0.016290726817042578,"[0.001127863747970362, 0.03550354251012141]",30.0,17.0,0.07894069368148846,False,
+(b),best combo vs production,S,798,7,0.7944862155388471,0.7832080200501254,0.011278195488721776,"[-0.01598849444052935, 0.04131319768833199]",30.0,21.0,0.2624375357110438,False,
+(b),best combo vs production,S,798,8,0.8107769423558897,0.7832080200501254,0.027568922305764354,"[0.004398826979472137, 0.05137085690270107]",37.0,15.0,0.003185253447776759,True,
+(b),best combo vs production,S,798,9,0.8032581453634086,0.7882205513784462,0.015037593984962405,"[-0.005872071370530906, 0.03542688957358585]",30.0,18.0,0.11140289106101878,False,
+(b),best combo vs production,S,798,10,0.7944862155388471,0.7807017543859649,0.013784461152882233,"[-0.0011404143085791435, 0.03395244356782819]",26.0,15.0,0.11727520595741225,False,
+(b),best combo vs production,S,798,11,0.8045112781954887,0.7844611528822055,0.020050125313283207,"[0.002634105025409395, 0.03901297342327697]",32.0,16.0,0.029304946720529308,True,
+(b),best combo vs production,S,798,12,0.8020050125313283,0.7869674185463659,0.015037593984962405,"[-0.005981264750399976, 0.03613264655904834]",34.0,22.0,0.1408954235984807,False,
+(b),best combo vs production,S,798,13,0.7957393483709273,0.7882205513784462,0.007518796992481147,"[-0.014313200602308831, 0.03277057390076988]",31.0,25.0,0.5044037600228255,False,
+(b),best combo vs production,S,798,14,0.8095238095238095,0.7907268170426065,0.018796992481203034,"[-0.0024450625910884703, 0.043414800833116336]",32.0,17.0,0.04438416098714981,False,
+(b),best combo vs production,S,798,15,0.8082706766917294,0.7944862155388471,0.013784461152882233,"[-0.006702825671217008, 0.03548083352900064]",31.0,20.0,0.16077960181198847,False,
+(b),best combo vs production,S,798,16,0.8120300751879699,0.8007518796992481,0.011278195488721776,"[-0.011507562649535157, 0.0385808715003921]",30.0,21.0,0.2624375357110438,False,
+(b),best combo vs production,S,798,17,0.793233082706767,0.7644110275689223,0.028822055137844638,"[0.013465637054047207, 0.045906794866794005]",37.0,14.0,0.0017691971837869858,True,
+(b),best combo vs production,S,798,18,0.7957393483709273,0.7857142857142857,0.010025062656641603,"[-0.010602592960527107, 0.030838280067354847]",27.0,19.0,0.3019956131896606,False,
+(b),best combo vs production,S,798,19,0.7819548872180451,0.7819548872180451,0.0,"[-0.01695178031796091, 0.019609220092531413]",24.0,24.0,1.0,False,
+(b),best combo vs production,S,798,20,0.8020050125313283,0.7781954887218046,0.023809523809523725,"[0.0, 0.0487829042755421]",40.0,21.0,0.0204147137996349,False,
+(b),best combo vs production,SB,798,662,0.7957393483709273,0.7869674185463659,0.00877192982456143,"[-0.015106443591754717, 0.034005071243679415]",32.0,25.0,0.42704285650325524,False,
+(b),best combo vs production,SB,798,1,0.7857142857142857,0.7706766917293233,0.015037593984962405,"[-0.0077524400530184475, 0.03851110160224418]",32.0,20.0,0.12634707581392135,False,
+(b),best combo vs production,SB,798,2,0.7794486215538847,0.7756892230576441,0.003759398496240629,"[-0.014742662685700668, 0.026764496805868877]",29.0,26.0,0.7877061896700431,False,
+(b),best combo vs production,SB,798,3,0.7944862155388471,0.7744360902255639,0.020050125313283207,"[0.0, 0.042353847897540514]",33.0,17.0,0.032839137564268484,False,
+(b),best combo vs production,SB,798,4,0.7957393483709273,0.7769423558897243,0.018796992481203034,"[-0.010990698490698558, 0.047976976381827026]",38.0,23.0,0.07217743850092258,False,
+(b),best combo vs production,SB,798,5,0.793233082706767,0.7619047619047619,0.031328320802005094,"[0.01172321493991795, 0.055323453449760085]",48.0,23.0,0.004065116124638666,True,
+(b),best combo vs production,SB,798,6,0.7769423558897243,0.7631578947368421,0.013784461152882121,"[-0.010768446303710688, 0.04011074914694036]",35.0,24.0,0.19252645776146274,False,
+(b),best combo vs production,SB,798,7,0.7907268170426065,0.7719298245614035,0.018796992481203034,"[-0.0024191947032743046, 0.04068975834860236]",35.0,20.0,0.05806414679240905,False,
+(b),best combo vs production,SB,798,8,0.793233082706767,0.7907268170426065,0.0025062656641604564,"[-0.021219046211657367, 0.029240836351493597]",31.0,29.0,0.8974218269914307,False,
+(b),best combo vs production,SB,798,9,0.7857142857142857,0.7706766917293233,0.015037593984962405,"[-0.005051956345059823, 0.03521948194458327]",36.0,24.0,0.1550019040032606,False,
+(b),best combo vs production,SB,798,10,0.7907268170426065,0.7719298245614035,0.018796992481203034,"[-0.005856816104042509, 0.04418302834034457]",41.0,26.0,0.08643723427347082,False,
+(b),best combo vs production,SB,798,11,0.7807017543859649,0.7631578947368421,0.01754385964912275,"[-0.0026217223063148914, 0.04273563218390811]",38.0,24.0,0.09795444051950736,False,
+(b),best combo vs production,SB,798,12,0.7844611528822055,0.7781954887218046,0.006265664160400974,"[-0.018093797788964004, 0.030377253948967186]",35.0,30.0,0.6201447650813029,False,
+(b),best combo vs production,SB,798,13,0.7882205513784462,0.7706766917293233,0.01754385964912286,"[-0.004923151375271569, 0.041297935103244865]",35.0,21.0,0.08142681460950618,False,
+(b),best combo vs production,SB,798,14,0.7869674185463659,0.7857142857142857,0.0012531328320801727,"[-0.02041138730373668, 0.020583114882036263]",30.0,29.0,1.0,False,
+(b),best combo vs production,SB,798,15,0.7944862155388471,0.7807017543859649,0.013784461152882233,"[-0.007502800227880612, 0.03687345858116921]",33.0,22.0,0.1770013647703581,False,
+(b),best combo vs production,SB,798,16,0.8007518796992481,0.7919799498746867,0.00877192982456143,"[-0.014900816502817674, 0.034309408256663634]",32.0,25.0,0.42704285650325524,False,
+(b),best combo vs production,SB,798,17,0.7744360902255639,0.7568922305764411,0.01754385964912286,"[0.0, 0.037760515011329265]",33.0,19.0,0.07039422106706228,False,
+(b),best combo vs production,SB,798,18,0.7756892230576441,0.7644110275689223,0.011278195488721776,"[-0.010912098930481352, 0.03833992952100602]",30.0,21.0,0.2624375357110438,False,
+(b),best combo vs production,SB,798,19,0.7794486215538847,0.7581453634085213,0.02130325814536338,"[0.0, 0.04457735159111126]",38.0,21.0,0.036343179957053884,False,
+(b),best combo vs production,SB,798,20,0.7844611528822055,0.7731829573934837,0.011278195488721776,"[-0.006608020533731329, 0.032352941176470584]",32.0,23.0,0.2806097176983541,False,
+(b),best combo vs production,L,798,662,0.7944862155388471,0.7694235588972431,0.02506265664160401,"[0.005384148623936286, 0.05037625982869039]",35.0,15.0,0.006600447966810918,True,
+(b),best combo vs production,L,798,1,0.7944862155388471,0.7694235588972431,0.02506265664160401,"[0.005384148623936286, 0.05037625982869039]",35.0,15.0,0.006600447966810918,True,
+(b),best combo vs production,L,798,2,0.7944862155388471,0.7694235588972431,0.02506265664160401,"[0.005384148623936286, 0.05037625982869039]",35.0,15.0,0.006600447966810918,True,
+(b),best combo vs production,L,798,3,0.7994987468671679,0.7756892230576441,0.023809523809523836,"[-0.004399231580923524, 0.05095757032908711]",37.0,18.0,0.014453833533827728,False,
+(b),best combo vs production,L,798,4,0.7944862155388471,0.7694235588972431,0.02506265664160401,"[0.005384148623936286, 0.05037625982869039]",35.0,15.0,0.006600447966810918,True,
+(b),best combo vs production,L,798,5,0.7957393483709273,0.7769423558897243,0.018796992481203034,"[-0.010191787696525333, 0.046512138350654354]",34.0,19.0,0.053438810537711046,False,
+(b),best combo vs production,L,798,6,0.7994987468671679,0.7756892230576441,0.023809523809523836,"[-0.004399231580923524, 0.05095757032908711]",37.0,18.0,0.014453833533827728,False,
+(b),best combo vs production,L,798,7,0.7957393483709273,0.7769423558897243,0.018796992481203034,"[-0.010191787696525333, 0.046512138350654354]",34.0,19.0,0.053438810537711046,False,
+(b),best combo vs production,L,798,8,0.7994987468671679,0.7756892230576441,0.023809523809523836,"[-0.004399231580923524, 0.05095757032908711]",37.0,18.0,0.014453833533827728,False,
+(b),best combo vs production,L,798,9,0.7944862155388471,0.7694235588972431,0.02506265664160401,"[0.005384148623936286, 0.05037625982869039]",35.0,15.0,0.006600447966810918,True,
+(b),best combo vs production,L,798,10,0.7944862155388471,0.7694235588972431,0.02506265664160401,"[0.005384148623936286, 0.05037625982869039]",35.0,15.0,0.006600447966810918,True,
+(b),best combo vs production,L,798,11,0.7944862155388471,0.7694235588972431,0.02506265664160401,"[0.005384148623936286, 0.05037625982869039]",35.0,15.0,0.006600447966810918,True,
+(b),best combo vs production,L,798,12,0.7957393483709273,0.7769423558897243,0.018796992481203034,"[-0.010191787696525333, 0.046512138350654354]",34.0,19.0,0.053438810537711046,False,
+(b),best combo vs production,L,798,13,0.7944862155388471,0.7694235588972431,0.02506265664160401,"[0.005384148623936286, 0.05037625982869039]",35.0,15.0,0.006600447966810918,True,
+(b),best combo vs production,L,798,14,0.7994987468671679,0.7756892230576441,0.023809523809523836,"[-0.004399231580923524, 0.05095757032908711]",37.0,18.0,0.014453833533827728,False,
+(b),best combo vs production,L,798,15,0.7944862155388471,0.7694235588972431,0.02506265664160401,"[0.005384148623936286, 0.05037625982869039]",35.0,15.0,0.006600447966810918,True,
+(b),best combo vs production,L,798,16,0.7944862155388471,0.7694235588972431,0.02506265664160401,"[0.005384148623936286, 0.05037625982869039]",35.0,15.0,0.006600447966810918,True,
+(b),best combo vs production,L,798,17,0.7944862155388471,0.7694235588972431,0.02506265664160401,"[0.005384148623936286, 0.05037625982869039]",35.0,15.0,0.006600447966810918,True,
+(b),best combo vs production,L,798,18,0.7944862155388471,0.7694235588972431,0.02506265664160401,"[0.005384148623936286, 0.05037625982869039]",35.0,15.0,0.006600447966810918,True,
+(b),best combo vs production,L,798,19,0.7957393483709273,0.7769423558897243,0.018796992481203034,"[-0.010191787696525333, 0.046512138350654354]",34.0,19.0,0.053438810537711046,False,
+(b),best combo vs production,L,798,20,0.7994987468671679,0.7756892230576441,0.023809523809523836,"[-0.004399231580923524, 0.05095757032908711]",37.0,18.0,0.014453833533827728,False,
+(c),a·raw·prod,S,757 shared,662,0.7952443857331571,,,,,,,,0.7919799498746867
+(c),a·raw·vec,S,757 shared,662,0.8031704095112285,0.7952443857331571,0.00792602377807139,"[-0.006465766451880362, 0.026357222157298178]",20.0,14.0,0.39152830513194203,False,0.8007518796992481
+(c),a·td·prod,S,757 shared,662,0.7926023778071334,0.7952443857331571,-0.0026420079260237594,"[-0.019354838709677358, 0.014519980873732245]",19.0,21.0,0.8746293123804207,False,0.7844611528822055
+(c),a·td·vec,S,757 shared,662,0.797886393659181,0.7952443857331571,0.0026420079260238705,"[-0.019525185674261335, 0.02504569495216607]",30.0,28.0,0.8956832138895906,False,0.7882205513784462
+(c),a·he·prod,S,757 shared,662,0.7886393659180978,0.7952443857331571,-0.006605019815059343,"[-0.029164019819590905, 0.01762738040472567]",36.0,41.0,0.6487911623106449,False,0.7794486215538847
+(c),a·he·vec,S,757 shared,662,0.808454425363276,0.7952443857331571,0.013210039630118908,"[-0.010310613749265493, 0.04026980948257191]",44.0,34.0,0.3081682319436807,False,0.8020050125313283
+(c),a·both·prod,S,757 shared,662,0.7886393659180978,0.7952443857331571,-0.006605019815059343,"[-0.021226415094339646, 0.010793321864247748]",13.0,18.0,0.47312965989112854,False,0.7857142857142857
+(c),a·both·vec,S,757 shared,662,0.8044914134742405,0.7952443857331571,0.009247027741083325,"[-0.0030304179886881137, 0.024781642290918674]",22.0,15.0,0.3240086000878364,False,0.8020050125313283
+(c),b·raw·prod,S,757 shared,662,0.7952443857331571,0.7952443857331571,0.0,"[-0.012374951798875902, 0.0147063745176785]",17.0,17.0,1.0,False,0.7962025316455696
+(c),b·raw·vec,S,757 shared,662,0.8018494055482166,0.7952443857331571,0.006605019815059454,"[-0.010062998607065974, 0.02320877405930295]",28.0,23.0,0.5758493477318467,False,0.8012658227848102
+(c),b·td·prod,S,757 shared,662,0.7899603698811096,0.7952443857331571,-0.005284015852047519,"[-0.020202658698233938, 0.011571689409955758]",22.0,26.0,0.6654658120766188,False,0.789873417721519
+(c),b·td·vec,S,757 shared,662,0.7965653896961691,0.7952443857331571,0.0013210039630119352,"[-0.016898862522676566, 0.019784617850274216]",31.0,30.0,1.0,False,0.7974683544303798
+(c),b·he·prod,S,757 shared,662,0.7846763540290621,0.7952443857331571,-0.010568031704095038,"[-0.03211839781456901, 0.013289650867915703]",33.0,41.0,0.4159851975073046,False,0.7822784810126582
+(c),b·he·vec,S,757 shared,662,0.8150594451783355,0.7952443857331571,0.019815059445178362,"[0.0, 0.04095218950253122]",41.0,26.0,0.08643723427347082,False,0.8126582278481013
+(c),b·both·prod,S,757 shared,662,0.7965653896961691,0.7952443857331571,0.0013210039630119352,"[-0.014957326428845471, 0.02034494001043292]",26.0,25.0,1.0,False,0.7974683544303798
+(c),b·both·vec,S,757 shared,662,0.8058124174372523,0.7952443857331571,0.010568031704095149,"[-0.008373568049157903, 0.034257748776509]",30.0,22.0,0.3317497633694906,False,0.8063291139240506
+(c),a·raw·prod,S,757 shared,1,0.7899603698811096,,,,,,,,0.7869674185463659
+(c),a·raw·vec,S,757 shared,1,0.7952443857331571,0.7899603698811096,0.005284015852047519,"[-0.011125189697585322, 0.020873236854752]",22.0,18.0,0.6358280026288412,False,0.7894736842105263
+(c),a·td·prod,S,757 shared,1,0.7873183619550859,0.7899603698811096,-0.0026420079260237594,"[-0.02265412927049968, 0.016542184189756132]",26.0,28.0,0.8919231511047488,False,0.7769423558897243
+(c),a·td·vec,S,757 shared,1,0.7992073976221928,0.7899603698811096,0.009247027741083214,"[-0.011851851851851891, 0.028302153892177172]",31.0,24.0,0.4187541882690154,False,0.7869674185463659
+(c),a·he·prod,S,757 shared,1,0.760898282694848,0.7899603698811096,-0.029062087186261576,"[-0.06002426699667854, -0.0032947574351859348]",28.0,50.0,0.016853089894602595,False,0.7518796992481203
+(c),a·he·vec,S,757 shared,1,0.797886393659181,0.7899603698811096,0.00792602377807139,"[-0.014157339815234597, 0.030127700439689428]",34.0,28.0,0.52577336017565,False,0.7894736842105263
+(c),a·both·prod,S,757 shared,1,0.7793923381770145,0.7899603698811096,-0.010568031704095149,"[-0.03359594362613961, 0.01077233860683334]",18.0,26.0,0.2912152365458951,False,0.7731829573934837
+(c),a·both·vec,S,757 shared,1,0.7926023778071334,0.7899603698811096,0.0026420079260237594,"[-0.014946823463268403, 0.01901151317188528]",22.0,20.0,0.8776143287523154,False,0.7857142857142857
+(c),b·raw·prod,S,757 shared,1,0.7926023778071334,0.7899603698811096,0.0026420079260237594,"[-0.01325611640916799, 0.016296941119574367]",20.0,18.0,0.8714146793645341,False,0.7911392405063291
+(c),b·raw·vec,S,757 shared,1,0.808454425363276,0.7899603698811096,0.018494055482166427,"[-0.00862218630268206, 0.04223667517264245]",38.0,24.0,0.09795444051950736,False,0.8075949367088607
+(c),b·td·prod,S,757 shared,1,0.7926023778071334,0.7899603698811096,0.0026420079260237594,"[-0.018047032738353275, 0.022354833334876114]",31.0,29.0,0.8974218269914307,False,0.7886075949367088
+(c),b·td·vec,S,757 shared,1,0.8005284015852048,0.7899603698811096,0.010568031704095149,"[-0.01313916634652329, 0.0312894206720509]",36.0,28.0,0.3817327947933377,False,0.7974683544303798
+(c),b·he·prod,S,757 shared,1,0.7807133421400264,0.7899603698811096,-0.009247027741083214,"[-0.036085584784927106, 0.015608598511868504]",34.0,41.0,0.48868297090314317,False,0.7772151898734178
+(c),b·he·vec,S,757 shared,1,0.8005284015852048,0.7899603698811096,0.010568031704095149,"[-0.017910569303320602, 0.03855445719046395]",43.0,35.0,0.4282070357175807,False,0.8
+(c),b·both·prod,S,757 shared,1,0.7912813738441216,0.7899603698811096,0.0013210039630119352,"[-0.01669820862367442, 0.01783644046203504]",31.0,30.0,1.0,False,0.789873417721519
+(c),b·both·vec,S,757 shared,1,0.8005284015852048,0.7899603698811096,0.010568031704095149,"[-0.013831631024577035, 0.033184058197747154]",36.0,28.0,0.3817327947933377,False,0.8
+(c),a·raw·prod,S,757 shared,2,0.7886393659180978,,,,,,,,0.7857142857142857
+(c),a·raw·vec,S,757 shared,2,0.7939233817701453,0.7886393659180978,0.005284015852047519,"[-0.015553367967086947, 0.025559225539888052]",17.0,13.0,0.5846647117286922,False,0.7894736842105263
+(c),a·td·prod,S,757 shared,2,0.7807133421400264,0.7886393659180978,-0.00792602377807139,"[-0.021506398462733643, 0.004126832044775507]",13.0,19.0,0.37708558747544885,False,0.768170426065163
+(c),a·td·vec,S,757 shared,2,0.7952443857331571,0.7886393659180978,0.006605019815059343,"[-0.011888530800399574, 0.024531245850264238]",25.0,20.0,0.5514843298025198,False,0.7832080200501254
+(c),a·he·prod,S,757 shared,2,0.7675033025099075,0.7886393659180978,-0.021136063408190298,"[-0.043652419984387264, -0.0013226206160988371]",25.0,41.0,0.06401750413722565,False,0.7581453634085213
+(c),a·he·vec,S,757 shared,2,0.7833553500660502,0.7886393659180978,-0.00528401585204763,"[-0.026919489149998078, 0.013534994894644011]",28.0,32.0,0.6988834276200058,False,0.7756892230576441
+(c),a·both·prod,S,757 shared,2,0.7767503302509907,0.7886393659180978,-0.011889035667107084,"[-0.03169432227109158, 0.0038513389604532145]",12.0,21.0,0.16275565745308995,False,0.7694235588972431
+(c),a·both·vec,S,757 shared,2,0.7886393659180978,0.7886393659180978,0.0,"[-0.015528856611160765, 0.014733273591752659]",13.0,13.0,1.0,False,0.7844611528822055
+(c),b·raw·prod,S,757 shared,2,0.7873183619550859,0.7886393659180978,-0.0013210039630119352,"[-0.014625451464752262, 0.012951043789246046]",16.0,17.0,1.0,False,0.7860759493670886
+(c),b·raw·vec,S,757 shared,2,0.7939233817701453,0.7886393659180978,0.005284015852047519,"[-0.013119629179005684, 0.0214168590892952]",21.0,17.0,0.6271025701571489,False,0.7936708860759494
+(c),b·td·prod,S,757 shared,2,0.7754293262879789,0.7886393659180978,-0.013210039630118908,"[-0.03384480748669989, 0.006740612922561007]",17.0,27.0,0.17417114727072658,False,0.7734177215189874
+(c),b·td·vec,S,757 shared,2,0.7965653896961691,0.7886393659180978,0.007926023778071278,"[-0.015001506024096289, 0.02964234350624013]",28.0,22.0,0.47988766169832786,False,0.7949367088607595
+(c),b·he·prod,S,757 shared,2,0.7648612945838837,0.7886393659180978,-0.023778071334214057,"[-0.04573220548381958, -0.00352748256955249]",24.0,42.0,0.03558272445223169,False,0.7620253164556962
+(c),b·he·vec,S,757 shared,2,0.7886393659180978,0.7886393659180978,0.0,"[-0.027064975573954656, 0.025032983887371057]",34.0,34.0,1.0,False,0.7873417721518987
+(c),b·both·prod,S,757 shared,2,0.7846763540290621,0.7886393659180978,-0.003963011889035695,"[-0.02401086750489669, 0.012036555022234788]",20.0,23.0,0.7607916425613439,False,0.7835443037974683
+(c),b·both·vec,S,757 shared,2,0.7859973579920739,0.7886393659180978,-0.0026420079260238705,"[-0.021439273752864387, 0.013667161591741238]",21.0,23.0,0.880395821280672,False,0.7835443037974683
+(c),a·raw·prod,S,757 shared,3,0.8071334214002642,,,,,,,,0.7994987468671679
+(c),a·raw·vec,S,757 shared,3,0.8177014531043593,0.8071334214002642,0.010568031704095038,"[-0.0026146364057433925, 0.023468372506788942]",17.0,9.0,0.16863754391670227,False,0.8107769423558897
+(c),a·td·prod,S,757 shared,3,0.7846763540290621,0.8071334214002642,-0.022457067371202122,"[-0.04455480018753957, -0.0029409608418147245]",15.0,32.0,0.018623836615006432,False,0.7769423558897243
+(c),a·td·vec,S,757 shared,3,0.7939233817701453,0.8071334214002642,-0.013210039630118908,"[-0.028257734189081958, 0.0035972302590100546]",17.0,27.0,0.17417114727072658,False,0.7832080200501254
+(c),a·he·prod,S,757 shared,3,0.7714663143989432,0.8071334214002642,-0.03566710700132103,"[-0.05990389585158518, -0.013157174939536966]",21.0,48.0,0.0015503169494868645,False,0.768170426065163
+(c),a·he·vec,S,757 shared,3,0.8005284015852048,0.8071334214002642,-0.006605019815059454,"[-0.022379489478403083, 0.007887425042401246]",30.0,35.0,0.6201447650813029,False,0.7957393483709273
+(c),a·both·prod,S,757 shared,3,0.7992073976221928,0.8071334214002642,-0.00792602377807139,"[-0.025641773628938175, 0.008423670547195146]",13.0,19.0,0.37708558747544885,False,0.7944862155388471
+(c),a·both·vec,S,757 shared,3,0.8058124174372523,0.8071334214002642,-0.0013210039630119352,"[-0.01525960410955722, 0.012641294982982344]",17.0,18.0,1.0,False,0.8020050125313283
+(c),b·raw·prod,S,757 shared,3,0.8005284015852048,0.8071334214002642,-0.006605019815059454,"[-0.024971060935167617, 0.010929960739652946]",16.0,21.0,0.5113757815852296,False,0.7974683544303798
+(c),b·raw·vec,S,757 shared,3,0.8124174372523117,0.8071334214002642,0.005284015852047519,"[-0.013314102564102575, 0.024355467062006853]",23.0,19.0,0.6439689563703723,False,0.8088607594936709
+(c),b·td·prod,S,757 shared,3,0.7926023778071334,0.8071334214002642,-0.014531043593130843,"[-0.03207036061177715, 0.001808814146536623]",20.0,31.0,0.16077960181198847,False,0.7873417721518987
+(c),b·td·vec,S,757 shared,3,0.8031704095112285,0.8071334214002642,-0.003963011889035695,"[-0.025116865168082515, 0.017193212133188477]",25.0,28.0,0.7838463022094988,False,0.7974683544303798
+(c),b·he·prod,S,757 shared,3,0.7833553500660502,0.8071334214002642,-0.023778071334214057,"[-0.046704328642976446, -0.001609857226376211]",26.0,44.0,0.04139142867391546,False,0.7784810126582279
+(c),b·he·vec,S,757 shared,3,0.8018494055482166,0.8071334214002642,-0.00528401585204763,"[-0.028056463804802614, 0.016723342239494753]",33.0,37.0,0.7202027723528612,False,0.7974683544303798
+(c),b·both·prod,S,757 shared,3,0.8018494055482166,0.8071334214002642,-0.00528401585204763,"[-0.02489215530367424, 0.012069356182935687]",23.0,27.0,0.6718110337653656,False,0.7974683544303798
+(c),b·both·vec,S,757 shared,3,0.7965653896961691,0.8071334214002642,-0.010568031704095149,"[-0.030225381276629607, 0.005488624986429664]",20.0,28.0,0.31232680747326935,False,0.7936708860759494
+(c),a·raw·prod,S,757 shared,4,0.7912813738441216,,,,,,,,0.7894736842105263
+(c),a·raw·vec,S,757 shared,4,0.8071334214002642,0.7912813738441216,0.015852047556142668,"[-0.0041117444199635245, 0.034759939548942125]",28.0,16.0,0.09614175442061423,False,0.8032581453634086
+(c),a·td·prod,S,757 shared,4,0.7780713342140027,0.7912813738441216,-0.013210039630118908,"[-0.026738242996413034, 0.0]",14.0,24.0,0.14330665429588407,False,0.7694235588972431
+(c),a·td·vec,S,757 shared,4,0.7965653896961691,0.7912813738441216,0.005284015852047519,"[-0.0138717220914105, 0.02292789184991025]",28.0,24.0,0.6778086391424605,False,0.7882205513784462
+(c),a·he·prod,S,757 shared,4,0.76221928665786,0.7912813738441216,-0.029062087186261576,"[-0.055741407168037604, -0.005819712395782199]",17.0,39.0,0.004561532746408219,False,0.7581453634085213
+(c),a·he·vec,S,757 shared,4,0.8044914134742405,0.7912813738441216,0.013210039630118908,"[-0.010923287966001378, 0.036443834676727835]",36.0,26.0,0.25285439418811073,False,0.7957393483709273
+(c),a·both·prod,S,757 shared,4,0.7926023778071334,0.7912813738441216,0.0013210039630118242,"[-0.011817435243499643, 0.014749383432467704]",16.0,15.0,1.0,False,0.7907268170426065
+(c),a·both·vec,S,757 shared,4,0.7912813738441216,0.7912813738441216,0.0,"[-0.014881053063986138, 0.016447860857232918]",17.0,17.0,1.0,False,0.7869674185463659
+(c),b·raw·prod,S,757 shared,4,0.8005284015852048,0.7912813738441216,0.009247027741083214,"[-0.0018921197968790708, 0.020497977008096642]",20.0,13.0,0.296206368599087,False,0.7974683544303798
+(c),b·raw·vec,S,757 shared,4,0.8110964332892999,0.7912813738441216,0.019815059445178362,"[-0.004415418627172776, 0.04539168278529985]",36.0,21.0,0.06273668035582848,False,0.8088607594936709
+(c),b·td·prod,S,757 shared,4,0.7926023778071334,0.7912813738441216,0.0013210039630118242,"[-0.01542736289964702, 0.018315391329647986]",24.0,23.0,1.0,False,0.7886075949367088
+(c),b·td·vec,S,757 shared,4,0.7965653896961691,0.7912813738441216,0.005284015852047519,"[-0.016086222602133556, 0.024747281589801197]",32.0,28.0,0.6988834276200058,False,0.7949367088607595
+(c),b·he·prod,S,757 shared,4,0.7648612945838837,0.7912813738441216,-0.026420079260237816,"[-0.049724285432404994, -0.006648458622310953]",26.0,46.0,0.02446090732832437,False,0.760759493670886
+(c),b·he·vec,S,757 shared,4,0.7965653896961691,0.7912813738441216,0.005284015852047519,"[-0.018900906376146144, 0.028986524995929006]",38.0,34.0,0.7239481457469141,False,0.7924050632911392
+(c),b·both·prod,S,757 shared,4,0.7939233817701453,0.7912813738441216,0.0026420079260237594,"[-0.010230397248675355, 0.01754540400296519]",24.0,22.0,0.8829959121223965,False,0.7911392405063291
+(c),b·both·vec,S,757 shared,4,0.8044914134742405,0.7912813738441216,0.013210039630118908,"[-0.00685972820682801, 0.03339641724734893]",29.0,19.0,0.19341265286193737,False,0.8025316455696202
+(c),a·raw·prod,S,757 shared,5,0.7846763540290621,,,,,,,,0.7781954887218046
+(c),a·raw·vec,S,757 shared,5,0.7992073976221928,0.7846763540290621,0.014531043593130732,"[0.0, 0.02739766845723055]",23.0,12.0,0.08953107893466952,False,0.7869674185463659
+(c),a·td·prod,S,757 shared,5,0.7807133421400264,0.7846763540290621,-0.003963011889035695,"[-0.02536243977477216, 0.012612633930261602]",22.0,25.0,0.7708669945730263,False,0.7656641604010025
+(c),a·td·vec,S,757 shared,5,0.7992073976221928,0.7846763540290621,0.014531043593130732,"[-0.009506480455030535, 0.03668509423613872]",32.0,21.0,0.16897782228771874,False,0.7882205513784462
+(c),a·he·prod,S,757 shared,5,0.7688243064729194,0.7846763540290621,-0.015852047556142668,"[-0.04199098279721717, 0.004033284606793227]",25.0,37.0,0.16188140552559763,False,0.7619047619047619
+(c),a·he·vec,S,757 shared,5,0.8071334214002642,0.7846763540290621,0.022457067371202122,"[-0.004498089301214006, 0.04762062440870391]",41.0,24.0,0.0463534743329112,False,0.7982456140350878
+(c),a·both·prod,S,757 shared,5,0.7833553500660502,0.7846763540290621,-0.0013210039630119352,"[-0.016274969510913027, 0.013143871062437513]",19.0,20.0,1.0,False,0.7781954887218046
+(c),a·both·vec,S,757 shared,5,0.7899603698811096,0.7846763540290621,0.005284015852047519,"[-0.008362552594670402, 0.019374212964567587]",20.0,16.0,0.617719317029696,False,0.7857142857142857
+(c),b·raw·prod,S,757 shared,5,0.7912813738441216,0.7846763540290621,0.006605019815059454,"[-0.0127235594190195, 0.02464412047096873]",22.0,17.0,0.5223973804968411,False,0.7886075949367088
+(c),b·raw·vec,S,757 shared,5,0.7952443857331571,0.7846763540290621,0.010568031704095038,"[-0.01449275362318836, 0.03237410071942448]",32.0,24.0,0.34968195298368476,False,0.7949367088607595
+(c),b·td·prod,S,757 shared,5,0.7793923381770145,0.7846763540290621,-0.00528401585204763,"[-0.024625215345878537, 0.0119211050470623]",23.0,27.0,0.6718110337653656,False,0.7746835443037975
+(c),b·td·vec,S,757 shared,5,0.7939233817701453,0.7846763540290621,0.009247027741083214,"[-0.015040001050355807, 0.03361580587291092]",34.0,27.0,0.4426260049464714,False,0.7911392405063291
+(c),b·he·prod,S,757 shared,5,0.7754293262879789,0.7846763540290621,-0.009247027741083214,"[-0.03259299516908215, 0.01127539434896892]",31.0,38.0,0.47036853185814453,False,0.7708860759493671
+(c),b·he·vec,S,757 shared,5,0.7926023778071334,0.7846763540290621,0.007926023778071278,"[-0.024348886532343576, 0.036380469241305544]",38.0,32.0,0.5504125118224712,False,0.7911392405063291
+(c),b·both·prod,S,757 shared,5,0.7820343461030383,0.7846763540290621,-0.0026420079260237594,"[-0.0229136177717738, 0.015605625821824811]",19.0,21.0,0.8746293123804207,False,0.779746835443038
+(c),b·both·vec,S,757 shared,5,0.7965653896961691,0.7846763540290621,0.011889035667106973,"[-0.009652742804916806, 0.030612514277094185]",28.0,19.0,0.24296021728332556,False,0.7949367088607595
+(c),a·raw·prod,S,757 shared,6,0.7820343461030383,,,,,,,,0.7781954887218046
+(c),a·raw·vec,S,757 shared,6,0.8071334214002642,0.7820343461030383,0.02509907529722588,"[0.008521011747913835, 0.044036816085943814]",28.0,9.0,0.0025632079923525453,True,0.8007518796992481
+(c),a·td·prod,S,757 shared,6,0.7727873183619551,0.7820343461030383,-0.009247027741083214,"[-0.029154597661341597, 0.011056997014275498]",21.0,28.0,0.3916029105474905,False,0.7656641604010025
+(c),a·td·vec,S,757 shared,6,0.808454425363276,0.7820343461030383,0.026420079260237705,"[0.007820706124334404, 0.046468550424173194]",38.0,18.0,0.01045481832189218,True,0.8020050125313283
+(c),a·he·prod,S,757 shared,6,0.7793923381770145,0.7820343461030383,-0.0026420079260238705,"[-0.02709076746331526, 0.023173053086376044]",35.0,37.0,0.906294324703081,False,0.768170426065163
+(c),a·he·vec,S,757 shared,6,0.8005284015852048,0.7820343461030383,0.018494055482166427,"[-0.0031550748585448705, 0.0391910545514839]",43.0,29.0,0.12491820036864004,False,0.7919799498746867
+(c),a·both·prod,S,757 shared,6,0.7926023778071334,0.7820343461030383,0.010568031704095038,"[-0.0010765426352078722, 0.023256490781601136]",20.0,12.0,0.21532714972272515,False,0.7894736842105263
+(c),a·both·vec,S,757 shared,6,0.7992073976221928,0.7820343461030383,0.017173051519154492,"[0.0011295345589067446, 0.03424861991412799]",27.0,14.0,0.05958388801809633,False,0.7994987468671679
+(c),b·raw·prod,S,757 shared,6,0.8031704095112285,0.7820343461030383,0.021136063408190187,"[0.0037730539134128633, 0.03791559124796526]",29.0,13.0,0.019520472782460274,True,0.7962025316455696
+(c),b·raw·vec,S,757 shared,6,0.8018494055482166,0.7820343461030383,0.01981505944517825,"[-0.0015923566878980361, 0.03986333873432257]",38.0,23.0,0.07217743850092258,False,0.8012658227848102
+(c),b·td·prod,S,757 shared,6,0.7873183619550859,0.7820343461030383,0.005284015852047519,"[-0.011345679239723017, 0.022624973708196053]",32.0,28.0,0.6988834276200058,False,0.7822784810126582
+(c),b·td·vec,S,757 shared,6,0.7939233817701453,0.7820343461030383,0.011889035667106973,"[-0.00793809523809521, 0.03185621839520135]",38.0,29.0,0.3284320626971897,False,0.789873417721519
+(c),b·he·prod,S,757 shared,6,0.7846763540290621,0.7820343461030383,0.0026420079260237594,"[-0.020675735996970118, 0.027595536442160503]",41.0,39.0,0.9110721212260926,False,0.7810126582278482
+(c),b·he·vec,S,757 shared,6,0.8044914134742405,0.7820343461030383,0.022457067371202122,"[0.001126623103700611, 0.04595777894491122]",47.0,30.0,0.06754925145902677,False,0.8
+(c),b·both·prod,S,757 shared,6,0.7926023778071334,0.7820343461030383,0.010568031704095038,"[-0.00998461315867088, 0.031432263638427]",34.0,26.0,0.36629400670329104,False,0.7911392405063291
+(c),b·both·vec,S,757 shared,6,0.8018494055482166,0.7820343461030383,0.01981505944517825,"[-0.0012212643678160883, 0.040304131592597145]",37.0,22.0,0.06744461190078899,False,0.7987341772151899
+(c),a·raw·prod,S,757 shared,7,0.7886393659180978,,,,,,,,0.7832080200501254
+(c),a·raw·vec,S,757 shared,7,0.7965653896961691,0.7886393659180978,0.007926023778071278,"[-0.005083078339340752, 0.022922762440432034]",19.0,13.0,0.37708558747544885,False,0.793233082706767
+(c),a·td·prod,S,757 shared,7,0.7859973579920739,0.7886393659180978,-0.0026420079260238705,"[-0.018466155128070517, 0.01461751395434987]",18.0,20.0,0.8714146793645341,False,0.7781954887218046
+(c),a·td·vec,S,757 shared,7,0.7873183619550859,0.7886393659180978,-0.0013210039630119352,"[-0.020741147741147728, 0.01929291487169292]",23.0,24.0,1.0,False,0.7819548872180451
+(c),a·he·prod,S,757 shared,7,0.7701453104359313,0.7886393659180978,-0.018494055482166538,"[-0.038787691460825335, 0.0]",24.0,38.0,0.09795444051950736,False,0.7644110275689223
+(c),a·he·vec,S,757 shared,7,0.7965653896961691,0.7886393659180978,0.007926023778071278,"[-0.017341268394084765, 0.03443140441207842]",35.0,29.0,0.5323087760278422,False,0.793233082706767
+(c),a·both·prod,S,757 shared,7,0.8044914134742405,0.7886393659180978,0.015852047556142668,"[0.003256540926762636, 0.02973977695167285]",21.0,9.0,0.042773945257067694,True,0.8007518796992481
+(c),a·both·vec,S,757 shared,7,0.8018494055482166,0.7886393659180978,0.013210039630118797,"[0.0, 0.0277464675658317]",23.0,13.0,0.13249816396273675,False,0.7982456140350878
+(c),b·raw·prod,S,757 shared,7,0.7965653896961691,0.7886393659180978,0.007926023778071278,"[-0.007708464170821491, 0.025139915699327598]",21.0,15.0,0.4050322461407632,False,0.7936708860759494
+(c),b·raw·vec,S,757 shared,7,0.809775429326288,0.7886393659180978,0.021136063408190187,"[-0.0009839545901492578, 0.04565416224814426]",32.0,16.0,0.029304946720529308,False,0.8088607594936709
+(c),b·td·prod,S,757 shared,7,0.7859973579920739,0.7886393659180978,-0.0026420079260238705,"[-0.022825928350769825, 0.015894777913696423]",20.0,22.0,0.8776143287523154,False,0.7810126582278482
+(c),b·td·vec,S,757 shared,7,0.8031704095112285,0.7886393659180978,0.014531043593130732,"[-0.005594405594405605, 0.03629032258064513]",33.0,22.0,0.1770013647703581,False,0.7987341772151899
+(c),b·he·prod,S,757 shared,7,0.7727873183619551,0.7886393659180978,-0.015852047556142668,"[-0.03719177618208924, 0.003191658293027009]",29.0,41.0,0.18821620302302766,False,0.7683544303797468
+(c),b·he·vec,S,757 shared,7,0.7926023778071334,0.7886393659180978,0.003963011889035584,"[-0.021053001182732064, 0.027202954577528762]",38.0,35.0,0.8151212352249976,False,0.7886075949367088
+(c),b·both·prod,S,757 shared,7,0.7939233817701453,0.7886393659180978,0.005284015852047519,"[-0.01007224472522831, 0.021664092702072542]",26.0,22.0,0.6654658120766188,False,0.7911392405063291
+(c),b·both·vec,S,757 shared,7,0.8005284015852048,0.7886393659180978,0.011889035667106973,"[-0.008266401813183472, 0.03217908450508918]",28.0,19.0,0.24296021728332556,False,0.7987341772151899
+(c),a·raw·prod,S,757 shared,8,0.7833553500660502,,,,,,,,0.7832080200501254
+(c),a·raw·vec,S,757 shared,8,0.8044914134742405,0.7833553500660502,0.021136063408190298,"[-0.0047475913085544075, 0.04632178889672079]",31.0,15.0,0.02589608179323477,False,0.7994987468671679
+(c),a·td·prod,S,757 shared,8,0.7859973579920739,0.7833553500660502,0.0026420079260237594,"[-0.01525902356032212, 0.019065228670147632]",22.0,20.0,0.8776143287523154,False,0.7769423558897243
+(c),a·td·vec,S,757 shared,8,0.8018494055482166,0.7833553500660502,0.018494055482166427,"[-0.008648968212930987, 0.043291125541125505]",35.0,21.0,0.08142681460950618,False,0.7919799498746867
+(c),a·he·prod,S,757 shared,8,0.7780713342140027,0.7833553500660502,-0.005284015852047519,"[-0.024161136199196638, 0.010836333309333535]",31.0,35.0,0.7122308826373509,False,0.768170426065163
+(c),a·he·vec,S,757 shared,8,0.8018494055482166,0.7833553500660502,0.018494055482166427,"[-0.006369833483824258, 0.041195098304473224]",40.0,26.0,0.10885696440971612,False,0.7944862155388471
+(c),a·both·prod,S,757 shared,8,0.8058124174372523,0.7833553500660502,0.022457067371202122,"[0.010432142184017727, 0.03478311308382933]",25.0,8.0,0.004551384132355452,True,0.8007518796992481
+(c),a·both·vec,S,757 shared,8,0.7965653896961691,0.7833553500660502,0.013210039630118908,"[0.0, 0.026773503144321628]",26.0,16.0,0.16414940178310644,False,0.7907268170426065
+(c),b·raw·prod,S,757 shared,8,0.7886393659180978,0.7833553500660502,0.00528401585204763,"[-0.011741826656436517, 0.019403347340965105]",20.0,16.0,0.617719317029696,False,0.7873417721518987
+(c),b·raw·vec,S,757 shared,8,0.809775429326288,0.7833553500660502,0.026420079260237816,"[0.0042637147193812985, 0.05091024898668209]",34.0,14.0,0.00551520148550111,True,0.8075949367088607
+(c),b·td·prod,S,757 shared,8,0.8018494055482166,0.7833553500660502,0.018494055482166427,"[-0.004321152118049559, 0.03991585760517797]",27.0,13.0,0.03847730828420026,False,0.7974683544303798
+(c),b·td·vec,S,757 shared,8,0.8177014531043593,0.7833553500660502,0.034346103038309095,"[0.0091427452443118, 0.05992509363295884]",40.0,14.0,0.0005354355028570622,True,0.8151898734177215
+(c),b·he·prod,S,757 shared,8,0.7807133421400264,0.7833553500660502,-0.0026420079260237594,"[-0.0262727483324136, 0.017202081589793018]",36.0,38.0,0.9075606176124984,False,0.7784810126582279
+(c),b·he·vec,S,757 shared,8,0.8058124174372523,0.7833553500660502,0.022457067371202122,"[-0.001637135409327961, 0.04692646033363733]",42.0,25.0,0.04980011429472864,False,0.8012658227848102
+(c),b·both·prod,S,757 shared,8,0.797886393659181,0.7833553500660502,0.014531043593130843,"[-0.004026980948257236, 0.03190135727357722]",28.0,17.0,0.1351564508456704,False,0.7974683544303798
+(c),b·both·vec,S,757 shared,8,0.8044914134742405,0.7833553500660502,0.021136063408190298,"[0.00364952417273455, 0.03924263973830176]",33.0,17.0,0.032839137564268484,True,0.8037974683544303
+(c),a·raw·prod,S,757 shared,9,0.7952443857331571,,,,,,,,0.7882205513784462
+(c),a·raw·vec,S,757 shared,9,0.8005284015852048,0.7952443857331571,0.00528401585204763,"[-0.008505899287528984, 0.021068327739676065]",21.0,17.0,0.6271025701571489,False,0.7957393483709273
+(c),a·td·prod,S,757 shared,9,0.7899603698811096,0.7952443857331571,-0.005284015852047519,"[-0.023042804993561167, 0.010369562611544626]",21.0,25.0,0.6587380770236564,False,0.7794486215538847
+(c),a·td·vec,S,757 shared,9,0.8044914134742405,0.7952443857331571,0.009247027741083325,"[-0.015151994023675425, 0.028302190330492208]",28.0,21.0,0.3916029105474905,False,0.7957393483709273
+(c),a·he·prod,S,757 shared,9,0.7727873183619551,0.7952443857331571,-0.02245706737120201,"[-0.04948816288699083, 0.002805644219000186]",30.0,47.0,0.06754925145902677,False,0.768170426065163
+(c),a·he·vec,S,757 shared,9,0.7965653896961691,0.7952443857331571,0.0013210039630119352,"[-0.02127810901607097, 0.025140104001967603]",33.0,32.0,1.0,False,0.7894736842105263
+(c),a·both·prod,S,757 shared,9,0.7965653896961691,0.7952443857331571,0.0013210039630119352,"[-0.009211744639376193, 0.012784181730992713]",17.0,16.0,1.0,False,0.7919799498746867
+(c),a·both·vec,S,757 shared,9,0.797886393659181,0.7952443857331571,0.0026420079260238705,"[-0.01213975905094824, 0.01838256423258952]",20.0,18.0,0.8714146793645341,False,0.7944862155388471
+(c),b·raw·prod,S,757 shared,9,0.8031704095112285,0.7952443857331571,0.00792602377807139,"[-0.009303048934861993, 0.02443196333908154]",24.0,18.0,0.44079906734259566,False,0.8050632911392405
+(c),b·raw·vec,S,757 shared,9,0.8031704095112285,0.7952443857331571,0.00792602377807139,"[-0.01610320923800808, 0.03048010689520127]",30.0,24.0,0.49661743531793345,False,0.8050632911392405
+(c),b·td·prod,S,757 shared,9,0.7886393659180978,0.7952443857331571,-0.006605019815059343,"[-0.02537383270811726, 0.010063421595053107]",24.0,29.0,0.5831321542611763,False,0.7886075949367088
+(c),b·td·vec,S,757 shared,9,0.8044914134742405,0.7952443857331571,0.009247027741083325,"[-0.014845305832147968, 0.032863849765258135]",35.0,28.0,0.44996253629022254,False,0.8075949367088607
+(c),b·he·prod,S,757 shared,9,0.7859973579920739,0.7952443857331571,-0.009247027741083214,"[-0.02978781064406393, 0.014102609308885813]",32.0,39.0,0.47668779343427553,False,0.7860759493670886
+(c),b·he·vec,S,757 shared,9,0.7965653896961691,0.7952443857331571,0.0013210039630119352,"[-0.022556560625390135, 0.026856384794773435]",37.0,36.0,1.0,False,0.7974683544303798
+(c),b·both·prod,S,757 shared,9,0.7952443857331571,0.7952443857331571,0.0,"[-0.018950437317784233, 0.019367051071863293]",31.0,31.0,1.0,False,0.7974683544303798
+(c),b·both·vec,S,757 shared,9,0.7992073976221928,0.7952443857331571,0.003963011889035695,"[-0.01940314879339275, 0.022947167997633824]",30.0,27.0,0.7913664277791806,False,0.8012658227848102
+(c),a·raw·prod,S,757 shared,10,0.7873183619550859,,,,,,,,0.7807017543859649
+(c),a·raw·vec,S,757 shared,10,0.7833553500660502,0.7873183619550859,-0.003963011889035695,"[-0.015847917627662047, 0.009052887209929765]",14.0,17.0,0.720100131817162,False,0.7807017543859649
+(c),a·td·prod,S,757 shared,10,0.7859973579920739,0.7873183619550859,-0.0013210039630119352,"[-0.019011900219716545, 0.016077468880328603]",20.0,21.0,1.0,False,0.7756892230576441
+(c),a·td·vec,S,757 shared,10,0.8058124174372523,0.7873183619550859,0.018494055482166427,"[0.0, 0.03767157856892645]",30.0,16.0,0.054076031858869555,False,0.7969924812030075
+(c),a·he·prod,S,757 shared,10,0.7714663143989432,0.7873183619550859,-0.015852047556142668,"[-0.03949879837738335, 0.0030608488418277556]",34.0,46.0,0.21851803947870374,False,0.7669172932330827
+(c),a·he·vec,S,757 shared,10,0.7833553500660502,0.7873183619550859,-0.003963011889035695,"[-0.026360542103136465, 0.014708057779324773]",37.0,40.0,0.8198929037490488,False,0.7744360902255639
+(c),a·both·prod,S,757 shared,10,0.7886393659180978,0.7873183619550859,0.0013210039630119352,"[-0.016042995339095863, 0.018158825610187515]",23.0,22.0,1.0,False,0.7819548872180451
+(c),a·both·vec,S,757 shared,10,0.7952443857331571,0.7873183619550859,0.007926023778071278,"[-0.00612299758613119, 0.02177120928320164]",20.0,14.0,0.39152830513194203,False,0.7907268170426065
+(c),b·raw·prod,S,757 shared,10,0.7952443857331571,0.7873183619550859,0.007926023778071278,"[-0.0095390265658564, 0.02143927375286436]",24.0,18.0,0.44079906734259566,False,0.7962025316455696
+(c),b·raw·vec,S,757 shared,10,0.7992073976221928,0.7873183619550859,0.011889035667106973,"[-0.0020717685031782364, 0.026099270353302624]",26.0,17.0,0.2220528201560228,False,0.8
+(c),b·td·prod,S,757 shared,10,0.7820343461030383,0.7873183619550859,-0.005284015852047519,"[-0.02689991851739562, 0.013560012896094324]",22.0,26.0,0.6654658120766188,False,0.7835443037974683
+(c),b·td·vec,S,757 shared,10,0.809775429326288,0.7873183619550859,0.022457067371202122,"[0.0015172787662346588, 0.04446874114970584]",38.0,21.0,0.036343179957053884,True,0.8126582278481013
+(c),b·he·prod,S,757 shared,10,0.7688243064729194,0.7873183619550859,-0.018494055482166427,"[-0.04095669605105467, 0.001435562943346365]",31.0,45.0,0.13538510529943087,False,0.7683544303797468
+(c),b·he·vec,S,757 shared,10,0.7807133421400264,0.7873183619550859,-0.006605019815059454,"[-0.02722131352326221, 0.013177642623753257]",33.0,38.0,0.6353076420876663,False,0.779746835443038
+(c),b·both·prod,S,757 shared,10,0.7939233817701453,0.7873183619550859,0.006605019815059454,"[-0.012346771550311428, 0.024550609536882657]",29.0,24.0,0.5831321542611763,False,0.7949367088607595
+(c),b·both·vec,S,757 shared,10,0.7873183619550859,0.7873183619550859,0.0,"[-0.018303273170669734, 0.015205410152148597]",26.0,26.0,1.0,False,0.7886075949367088
+(c),a·raw·prod,S,757 shared,11,0.7859973579920739,,,,,,,,0.7844611528822055
+(c),a·raw·vec,S,757 shared,11,0.8005284015852048,0.7859973579920739,0.014531043593130843,"[-0.003852090128519561, 0.03452889650379491]",27.0,16.0,0.12628947438543037,False,0.7957393483709273
+(c),a·td·prod,S,757 shared,11,0.7912813738441216,0.7859973579920739,0.00528401585204763,"[-0.008743888409548536, 0.01984169199594735]",21.0,17.0,0.6271025701571489,False,0.7819548872180451
+(c),a·td·vec,S,757 shared,11,0.8018494055482166,0.7859973579920739,0.015852047556142668,"[0.0, 0.03235347016504442]",33.0,21.0,0.13367423536410522,False,0.7944862155388471
+(c),a·he·prod,S,757 shared,11,0.7780713342140027,0.7859973579920739,-0.007926023778071278,"[-0.025538171184169824, 0.01012412659444177]",30.0,36.0,0.5385827752459466,False,0.7731829573934837
+(c),a·he·vec,S,757 shared,11,0.7859973579920739,0.7859973579920739,0.0,"[-0.022876752992522734, 0.024022131509603438]",37.0,37.0,1.0,False,0.7832080200501254
+(c),a·both·prod,S,757 shared,11,0.7846763540290621,0.7859973579920739,-0.0013210039630118242,"[-0.01749303034749372, 0.014193739263218139]",15.0,16.0,1.0,False,0.7807017543859649
+(c),a·both·vec,S,757 shared,11,0.8018494055482166,0.7859973579920739,0.015852047556142668,"[0.0016659165302782694, 0.030965450378988183]",20.0,8.0,0.03569813817739487,True,0.8007518796992481
+(c),b·raw·prod,S,757 shared,11,0.7846763540290621,0.7859973579920739,-0.0013210039630118242,"[-0.0211496383777351, 0.01766797462491599]",17.0,18.0,1.0,False,0.7822784810126582
+(c),b·raw·vec,S,757 shared,11,0.8031704095112285,0.7859973579920739,0.017173051519154603,"[-0.004323550817080226, 0.038461538461538436]",37.0,24.0,0.12373144253809215,False,0.8012658227848102
+(c),b·td·prod,S,757 shared,11,0.7873183619550859,0.7859973579920739,0.0013210039630119352,"[-0.01851984126984135, 0.0179654205103307]",22.0,21.0,1.0,False,0.7822784810126582
+(c),b·td·vec,S,757 shared,11,0.7912813738441216,0.7859973579920739,0.00528401585204763,"[-0.02416950660312087, 0.03448371860840187]",34.0,30.0,0.7079807541347641,False,0.7873417721518987
+(c),b·he·prod,S,757 shared,11,0.7793923381770145,0.7859973579920739,-0.006605019815059454,"[-0.028108468476281307, 0.012471930519780773]",33.0,38.0,0.6353076420876663,False,0.7759493670886076
+(c),b·he·vec,S,757 shared,11,0.7873183619550859,0.7859973579920739,0.0013210039630119352,"[-0.02611544426940386, 0.026806526806526842]",38.0,37.0,1.0,False,0.7835443037974683
+(c),b·both·prod,S,757 shared,11,0.7780713342140027,0.7859973579920739,-0.007926023778071278,"[-0.026987519753636734, 0.008838663180477364]",22.0,28.0,0.47988766169832786,False,0.7759493670886076
+(c),b·both·vec,S,757 shared,11,0.7952443857331571,0.7859973579920739,0.009247027741083214,"[-0.009464096162183924, 0.026717905076382237]",29.0,22.0,0.4010619910279374,False,0.7924050632911392
+(c),a·raw·prod,S,757 shared,12,0.7926023778071334,,,,,,,,0.7869674185463659
+(c),a·raw·vec,S,757 shared,12,0.8058124174372523,0.7926023778071334,0.013210039630118908,"[-0.0016287309169939063, 0.02894776957637995]",21.0,11.0,0.11018416518345475,False,0.8007518796992481
+(c),a·td·prod,S,757 shared,12,0.7939233817701453,0.7926023778071334,0.0013210039630119352,"[-0.01666793313069903, 0.01699776987523352]",21.0,20.0,1.0,False,0.7844611528822055
+(c),a·td·vec,S,757 shared,12,0.8018494055482166,0.7926023778071334,0.009247027741083214,"[-0.015873015873015817, 0.03225914991533882]",31.0,24.0,0.4187541882690154,False,0.7894736842105263
+(c),a·he·prod,S,757 shared,12,0.7873183619550859,0.7926023778071334,-0.005284015852047519,"[-0.02085898103193767, 0.010601293295604455]",26.0,30.0,0.6888797607233395,False,0.7781954887218046
+(c),a·he·vec,S,757 shared,12,0.8071334214002642,0.7926023778071334,0.014531043593130843,"[-0.0081777134925127, 0.038071670292482415]",34.0,23.0,0.18485048241641844,False,0.7944862155388471
+(c),a·both·prod,S,757 shared,12,0.7899603698811096,0.7926023778071334,-0.0026420079260237594,"[-0.015437392795883409, 0.010974313752091513]",15.0,17.0,0.860050065908581,False,0.7857142857142857
+(c),a·both·vec,S,757 shared,12,0.7952443857331571,0.7926023778071334,0.0026420079260237594,"[-0.010321337857305352, 0.015695202660254263]",21.0,19.0,0.8746293123804207,False,0.7919799498746867
+(c),b·raw·prod,S,757 shared,12,0.7926023778071334,0.7926023778071334,0.0,"[-0.013333333333333312, 0.012403196953084424]",20.0,20.0,1.0,False,0.7924050632911392
+(c),b·raw·vec,S,757 shared,12,0.809775429326288,0.7926023778071334,0.017173051519154603,"[-0.0016134971754395014, 0.03703830891330884]",32.0,19.0,0.09191454981585423,False,0.810126582278481
+(c),b·td·prod,S,757 shared,12,0.7952443857331571,0.7926023778071334,0.0026420079260237594,"[-0.013124222958972245, 0.020299661492909588]",25.0,23.0,0.8854334972865135,False,0.7962025316455696
+(c),b·td·vec,S,757 shared,12,0.8044914134742405,0.7926023778071334,0.011889035667107084,"[-0.007975386639921813, 0.03150714369823766]",32.0,23.0,0.2806097176983541,False,0.8050632911392405
+(c),b·he·prod,S,757 shared,12,0.7754293262879789,0.7926023778071334,-0.017173051519154492,"[-0.03739830049653841, 0.0014515906899876748]",26.0,39.0,0.1360323948778921,False,0.7734177215189874
+(c),b·he·vec,S,757 shared,12,0.808454425363276,0.7926023778071334,0.015852047556142668,"[-0.007736444264400435, 0.03976594466312926]",39.0,27.0,0.17528579444303533,False,0.8063291139240506
+(c),b·both·prod,S,757 shared,12,0.7939233817701453,0.7926023778071334,0.0013210039630119352,"[-0.01695035290728388, 0.017810056339620465]",22.0,21.0,1.0,False,0.7936708860759494
+(c),b·both·vec,S,757 shared,12,0.7939233817701453,0.7926023778071334,0.0013210039630119352,"[-0.019841421301345006, 0.023155952425127562]",28.0,27.0,1.0,False,0.7949367088607595
+(c),a·raw·prod,S,757 shared,13,0.7912813738441216,,,,,,,,0.7882205513784462
+(c),a·raw·vec,S,757 shared,13,0.7965653896961691,0.7912813738441216,0.005284015852047519,"[-0.010128148434765038, 0.02139252772493983]",17.0,13.0,0.5846647117286922,False,0.793233082706767
+(c),a·td·prod,S,757 shared,13,0.7807133421400264,0.7912813738441216,-0.010568031704095149,"[-0.026775558610280043, 0.0036857021967825307]",17.0,25.0,0.27995623852893914,False,0.7731829573934837
+(c),a·td·vec,S,757 shared,13,0.7965653896961691,0.7912813738441216,0.005284015852047519,"[-0.016288096955147605, 0.02483818064741154]",26.0,22.0,0.6654658120766188,False,0.7882205513784462
+(c),a·he·prod,S,757 shared,13,0.7873183619550859,0.7912813738441216,-0.003963011889035695,"[-0.023962902294182447, 0.01334890867221478]",31.0,34.0,0.8043170001933984,False,0.7819548872180451
+(c),a·he·vec,S,757 shared,13,0.7833553500660502,0.7912813738441216,-0.00792602377807139,"[-0.03164579728622171, 0.01426935751121705]",31.0,37.0,0.5446122234192592,False,0.7769423558897243
+(c),a·both·prod,S,757 shared,13,0.7912813738441216,0.7912813738441216,0.0,"[-0.012590836421771594, 0.01269855673666932]",16.0,16.0,1.0,False,0.7869674185463659
+(c),a·both·vec,S,757 shared,13,0.7939233817701453,0.7912813738441216,0.0026420079260237594,"[-0.01330238895726213, 0.017405983220488638]",20.0,18.0,0.8714146793645341,False,0.7894736842105263
+(c),b·raw·prod,S,757 shared,13,0.7965653896961691,0.7912813738441216,0.005284015852047519,"[-0.015665796344647487, 0.02439199859624495]",23.0,19.0,0.6439689563703723,False,0.7949367088607595
+(c),b·raw·vec,S,757 shared,13,0.8058124174372523,0.7912813738441216,0.014531043593130732,"[-0.005018978203438815, 0.03417450970730263]",27.0,16.0,0.12628947438543037,False,0.8050632911392405
+(c),b·td·prod,S,757 shared,13,0.7820343461030383,0.7912813738441216,-0.009247027741083214,"[-0.03230213312758155, 0.011080417695782]",26.0,33.0,0.43499280512215344,False,0.779746835443038
+(c),b·td·vec,S,757 shared,13,0.7965653896961691,0.7912813738441216,0.005284015852047519,"[-0.016151845679947468, 0.024060629619374142]",25.0,21.0,0.6587380770236564,False,0.7949367088607595
+(c),b·he·prod,S,757 shared,13,0.7727873183619551,0.7912813738441216,-0.018494055482166427,"[-0.04341253791708802, 0.003312369438641716]",31.0,45.0,0.13538510529943087,False,0.7670886075949367
+(c),b·he·vec,S,757 shared,13,0.7952443857331571,0.7912813738441216,0.003963011889035584,"[-0.017515981682086616, 0.02454827037684273]",39.0,36.0,0.8175538505509841,False,0.7924050632911392
+(c),b·both·prod,S,757 shared,13,0.7912813738441216,0.7912813738441216,0.0,"[-0.021630975790709547, 0.019578586016878344]",24.0,24.0,1.0,False,0.7886075949367088
+(c),b·both·vec,S,757 shared,13,0.8058124174372523,0.7912813738441216,0.014531043593130732,"[-0.0041558490478564416, 0.03201069893967486]",29.0,18.0,0.14386508844054896,False,0.8050632911392405
+(c),a·raw·prod,S,757 shared,14,0.7939233817701453,,,,,,,,0.7907268170426065
+(c),a·raw·vec,S,757 shared,14,0.8058124174372523,0.7939233817701453,0.011889035667106973,"[-0.004380367110347804, 0.031195911700005474]",25.0,16.0,0.21102359760880063,False,0.8020050125313283
+(c),a·td·prod,S,757 shared,14,0.7912813738441216,0.7939233817701453,-0.0026420079260237594,"[-0.020607704956542187, 0.013216389149530564]",19.0,21.0,0.8746293123804207,False,0.7819548872180451
+(c),a·td·vec,S,757 shared,14,0.797886393659181,0.7939233817701453,0.003963011889035695,"[-0.011098637759469695, 0.01941865683981761]",24.0,21.0,0.765991824244793,False,0.7882205513784462
+(c),a·he·prod,S,757 shared,14,0.7754293262879789,0.7939233817701453,-0.018494055482166427,"[-0.04705974697571331, 0.006319867599488435]",33.0,47.0,0.1456354544029827,False,0.7706766917293233
+(c),a·he·vec,S,757 shared,14,0.8018494055482166,0.7939233817701453,0.007926023778071278,"[-0.021148036253776373, 0.03427700164605575]",42.0,36.0,0.5715867180030723,False,0.7982456140350878
+(c),a·both·prod,S,757 shared,14,0.7912813738441216,0.7939233817701453,-0.0026420079260237594,"[-0.0184502909042931, 0.012909703809346092]",16.0,18.0,0.8641662404406816,False,0.7857142857142857
+(c),a·both·vec,S,757 shared,14,0.8071334214002642,0.7939233817701453,0.013210039630118908,"[-0.0031306321340363818, 0.03108829490430196]",25.0,15.0,0.1538599441628321,False,0.8020050125313283
+(c),b·raw·prod,S,757 shared,14,0.7926023778071334,0.7939233817701453,-0.0013210039630119352,"[-0.016339869281045805, 0.013648849248618877]",19.0,20.0,1.0,False,0.7911392405063291
+(c),b·raw·vec,S,757 shared,14,0.8137384412153237,0.7939233817701453,0.019815059445178362,"[-0.0012160971931345517, 0.039138286893704854]",32.0,17.0,0.04438416098714981,False,0.8139240506329114
+(c),b·td·prod,S,757 shared,14,0.797886393659181,0.7939233817701453,0.003963011889035695,"[-0.014641556588848007, 0.020588993329290504]",23.0,20.0,0.7607916425613439,False,0.7962025316455696
+(c),b·td·vec,S,757 shared,14,0.8124174372523117,0.7939233817701453,0.018494055482166427,"[-0.005067781931677848, 0.04096434920007904]",38.0,24.0,0.09795444051950736,False,0.8113924050632911
+(c),b·he·prod,S,757 shared,14,0.7807133421400264,0.7939233817701453,-0.013210039630118908,"[-0.039335512191177695, 0.0110977531168653]",33.0,43.0,0.3018724904870079,False,0.7784810126582279
+(c),b·he·vec,S,757 shared,14,0.8044914134742405,0.7939233817701453,0.010568031704095149,"[-0.016275158890505376, 0.034254417647674264]",44.0,36.0,0.43404225534547874,False,0.8012658227848102
+(c),b·both·prod,S,757 shared,14,0.808454425363276,0.7939233817701453,0.014531043593130732,"[-0.005715106732348069, 0.033333333333333326]",30.0,19.0,0.15240777196147803,False,0.8063291139240506
+(c),b·both·vec,S,757 shared,14,0.808454425363276,0.7939233817701453,0.014531043593130732,"[-0.0013395144363462256, 0.031058319304966924]",31.0,20.0,0.16077960181198847,False,0.8075949367088607
+(c),a·raw·prod,S,757 shared,15,0.7939233817701453,,,,,,,,0.7944862155388471
+(c),a·raw·vec,S,757 shared,15,0.8044914134742405,0.7939233817701453,0.010568031704095149,"[-0.005939263054369109, 0.02663204616067471]",23.0,15.0,0.2558750795433298,False,0.7994987468671679
+(c),a·td·prod,S,757 shared,15,0.7873183619550859,0.7939233817701453,-0.006605019815059454,"[-0.022389255644852724, 0.009435240578820862]",15.0,20.0,0.4995598332025112,False,0.7769423558897243
+(c),a·td·vec,S,757 shared,15,0.8058124174372523,0.7939233817701453,0.011889035667106973,"[-0.007834704176513725, 0.030626203131201117]",25.0,16.0,0.21102359760880063,False,0.7969924812030075
+(c),a·he·prod,S,757 shared,15,0.7820343461030383,0.7939233817701453,-0.011889035667106973,"[-0.035949920508744126, 0.00767820861268922]",26.0,35.0,0.30567741986311836,False,0.7756892230576441
+(c),a·he·vec,S,757 shared,15,0.8071334214002642,0.7939233817701453,0.013210039630118908,"[-0.010034286548001158, 0.03508921112304569]",39.0,29.0,0.2749903961710005,False,0.8032581453634086
+(c),a·both·prod,S,757 shared,15,0.8005284015852048,0.7939233817701453,0.006605019815059454,"[-0.005128700128700109, 0.019356404635139286]",16.0,11.0,0.44206833839416504,False,0.7982456140350878
+(c),a·both·vec,S,757 shared,15,0.8031704095112285,0.7939233817701453,0.009247027741083214,"[-0.003610930276906426, 0.023098892831476828]",23.0,16.0,0.3367836351899315,False,0.7969924812030075
+(c),b·raw·prod,S,757 shared,15,0.797886393659181,0.7939233817701453,0.003963011889035695,"[-0.014234875444839812, 0.019802268688407315]",19.0,16.0,0.735878800856881,False,0.7936708860759494
+(c),b·raw·vec,S,757 shared,15,0.808454425363276,0.7939233817701453,0.014531043593130732,"[-0.006422369765066349, 0.038095843165728886]",32.0,21.0,0.16897782228771874,False,0.8063291139240506
+(c),b·td·prod,S,757 shared,15,0.8031704095112285,0.7939233817701453,0.009247027741083214,"[-0.008454618029967994, 0.02764340192261862]",23.0,16.0,0.3367836351899315,False,0.7974683544303798
+(c),b·td·vec,S,757 shared,15,0.8044914134742405,0.7939233817701453,0.010568031704095149,"[-0.008889030072003442, 0.02857142857142858]",28.0,20.0,0.31232680747326935,False,0.8
+(c),b·he·prod,S,757 shared,15,0.7727873183619551,0.7939233817701453,-0.021136063408190187,"[-0.047620940267999144, 0.0016951182437100224]",27.0,43.0,0.07223792719176257,False,0.769620253164557
+(c),b·he·vec,S,757 shared,15,0.7952443857331571,0.7939233817701453,0.0013210039630118242,"[-0.027510043521928308, 0.02644688867282447]",40.0,39.0,1.0,False,0.7924050632911392
+(c),b·both·prod,S,757 shared,15,0.7965653896961691,0.7939233817701453,0.0026420079260237594,"[-0.01236269043939055, 0.019481451384436504]",25.0,23.0,0.8854334972865135,False,0.7924050632911392
+(c),b·both·vec,S,757 shared,15,0.8071334214002642,0.7939233817701453,0.013210039630118908,"[-0.007257953449938073, 0.03262536360476394]",28.0,18.0,0.18392482137699062,False,0.8063291139240506
+(c),a·raw·prod,S,757 shared,16,0.8018494055482166,,,,,,,,0.8007518796992481
+(c),a·raw·vec,S,757 shared,16,0.8071334214002642,0.8018494055482166,0.00528401585204763,"[-0.01334992007691485, 0.026207588335461895]",24.0,20.0,0.651587827208914,False,0.8045112781954887
+(c),a·td·prod,S,757 shared,16,0.7912813738441216,0.8018494055482166,-0.010568031704095038,"[-0.026343693035176072, 0.0066410484938376506]",15.0,23.0,0.2558750795433298,False,0.7832080200501254
+(c),a·td·vec,S,757 shared,16,0.7992073976221928,0.8018494055482166,-0.0026420079260237594,"[-0.02029599889561238, 0.01803309503266362]",24.0,26.0,0.887724827340783,False,0.7907268170426065
+(c),a·he·prod,S,757 shared,16,0.7873183619550859,0.8018494055482166,-0.014531043593130732,"[-0.034417061091433325, 0.0021867648935975452]",25.0,36.0,0.20003136851310313,False,0.7832080200501254
+(c),a·he·vec,S,757 shared,16,0.7912813738441216,0.8018494055482166,-0.010568031704095038,"[-0.031687186915323774, 0.011308733573565067]",31.0,39.0,0.40296307504607976,False,0.7857142857142857
+(c),a·both·prod,S,757 shared,16,0.8031704095112285,0.8018494055482166,0.0013210039630119352,"[-0.016648355018516033, 0.019961077844311337]",17.0,16.0,1.0,False,0.7994987468671679
+(c),a·both·vec,S,757 shared,16,0.8071334214002642,0.8018494055482166,0.00528401585204763,"[-0.012432275608528063, 0.02548803349521405]",21.0,17.0,0.6271025701571489,False,0.8032581453634086
+(c),b·raw·prod,S,757 shared,16,0.8005284015852048,0.8018494055482166,-0.0013210039630118242,"[-0.018274006719491743, 0.014563460613094046]",16.0,17.0,1.0,False,0.7974683544303798
+(c),b·raw·vec,S,757 shared,16,0.8163804491413474,0.8018494055482166,0.014531043593130843,"[-0.005277920858343196, 0.035374751670579636]",31.0,20.0,0.16077960181198847,False,0.8164556962025317
+(c),b·td·prod,S,757 shared,16,0.7886393659180978,0.8018494055482166,-0.013210039630118797,"[-0.027237912342501787, 0.0016507169111559558]",16.0,26.0,0.16414940178310644,False,0.7860759493670886
+(c),b·td·vec,S,757 shared,16,0.8124174372523117,0.8018494055482166,0.010568031704095149,"[-0.01282188841201712, 0.03309295715672407]",30.0,22.0,0.3317497633694906,False,0.8088607594936709
+(c),b·he·prod,S,757 shared,16,0.7793923381770145,0.8018494055482166,-0.022457067371202122,"[-0.04560871374960359, 0.0]",27.0,44.0,0.05681467793283902,False,0.7784810126582279
+(c),b·he·vec,S,757 shared,16,0.797886393659181,0.8018494055482166,-0.003963011889035584,"[-0.026549291416548097, 0.017392387243489082]",34.0,37.0,0.8125886494061619,False,0.7962025316455696
+(c),b·both·prod,S,757 shared,16,0.7926023778071334,0.8018494055482166,-0.009247027741083214,"[-0.030801257782035428, 0.011936735815359294]",22.0,29.0,0.4010619910279374,False,0.7936708860759494
+(c),b·both·vec,S,757 shared,16,0.8071334214002642,0.8018494055482166,0.00528401585204763,"[-0.017073360096955023, 0.029716362640846095]",31.0,27.0,0.6940040940761318,False,0.8075949367088607
+(c),a·raw·prod,S,757 shared,17,0.7714663143989432,,,,,,,,0.7644110275689223
+(c),a·raw·vec,S,757 shared,17,0.7965653896961691,0.7714663143989432,0.02509907529722588,"[0.010955494960050497, 0.041732681439939495]",32.0,13.0,0.006608822842281368,True,0.7907268170426065
+(c),a·td·prod,S,757 shared,17,0.7793923381770145,0.7714663143989432,0.007926023778071278,"[-0.009852520454586858, 0.026981629905718195]",25.0,19.0,0.4513808323961257,False,0.768170426065163
+(c),a·td·vec,S,757 shared,17,0.7912813738441216,0.7714663143989432,0.019815059445178362,"[-0.001347754364139636, 0.039707553475935776]",35.0,20.0,0.05806414679240905,False,0.7807017543859649
+(c),a·he·prod,S,757 shared,17,0.7675033025099075,0.7714663143989432,-0.003963011889035695,"[-0.025975360256182183, 0.015576863894782873]",34.0,37.0,0.8125886494061619,False,0.7568922305764411
+(c),a·he·vec,S,757 shared,17,0.7793923381770145,0.7714663143989432,0.007926023778071278,"[-0.01188461315297543, 0.026320146392471152]",39.0,33.0,0.555997717760971,False,0.768170426065163
+(c),a·both·prod,S,757 shared,17,0.7688243064729194,0.7714663143989432,-0.0026420079260237594,"[-0.023009075888916562, 0.018183199778944448]",19.0,21.0,0.8746293123804207,False,0.7644110275689223
+(c),a·both·vec,S,757 shared,17,0.7807133421400264,0.7714663143989432,0.009247027741083214,"[-0.004681479057269552, 0.02455069535243072]",27.0,20.0,0.38169339766321275,False,0.7744360902255639
+(c),b·raw·prod,S,757 shared,17,0.7727873183619551,0.7714663143989432,0.0013210039630119352,"[-0.019722609429307682, 0.01947195734538848]",19.0,18.0,1.0,False,0.7708860759493671
+(c),b·raw·vec,S,757 shared,17,0.7833553500660502,0.7714663143989432,0.011889035667106973,"[-0.0057818661876721375, 0.03084437681193584]",28.0,19.0,0.24296021728332556,False,0.7822784810126582
+(c),b·td·prod,S,757 shared,17,0.7701453104359313,0.7714663143989432,-0.0013210039630119352,"[-0.02219217136692864, 0.016352274731087985]",25.0,26.0,1.0,False,0.7658227848101266
+(c),b·td·vec,S,757 shared,17,0.7899603698811096,0.7714663143989432,0.018494055482166427,"[-0.004711749812192128, 0.04209328782707622]",35.0,21.0,0.08142681460950618,False,0.7873417721518987
+(c),b·he·prod,S,757 shared,17,0.7556142668428005,0.7714663143989432,-0.015852047556142668,"[-0.04201863619177722, 0.007543715051258195]",31.0,43.0,0.20067820312938567,False,0.7518987341772152
+(c),b·he·vec,S,757 shared,17,0.7780713342140027,0.7714663143989432,0.006605019815059454,"[-0.013177545903722934, 0.02432847279037599]",35.0,30.0,0.6201447650813029,False,0.7772151898734178
+(c),b·both·prod,S,757 shared,17,0.7807133421400264,0.7714663143989432,0.009247027741083214,"[-0.010495541702832789, 0.029333418367346927]",28.0,21.0,0.3916029105474905,False,0.7784810126582279
+(c),b·both·vec,S,757 shared,17,0.7873183619550859,0.7714663143989432,0.015852047556142668,"[0.001138442565725384, 0.03103481732613636]",31.0,19.0,0.11892045255943628,False,0.7860759493670886
+(c),a·raw·prod,S,757 shared,18,0.7873183619550859,,,,,,,,0.7857142857142857
+(c),a·raw·vec,S,757 shared,18,0.8018494055482166,0.7873183619550859,0.014531043593130732,"[-0.0011136790633437255, 0.029948282420412052]",27.0,16.0,0.12628947438543037,False,0.7969924812030075
+(c),a·td·prod,S,757 shared,18,0.7859973579920739,0.7873183619550859,-0.0013210039630119352,"[-0.01949172030526091, 0.016541612652320438]",22.0,23.0,1.0,False,0.7756892230576441
+(c),a·td·vec,S,757 shared,18,0.8005284015852048,0.7873183619550859,0.013210039630118908,"[-0.012882967118591188, 0.0381316004790004]",28.0,18.0,0.18392482137699062,False,0.7894736842105263
+(c),a·he·prod,S,757 shared,18,0.7675033025099075,0.7873183619550859,-0.019815059445178362,"[-0.045454545454545414, 0.0031973430875034685]",28.0,43.0,0.09592363141082376,False,0.7568922305764411
+(c),a·he·vec,S,757 shared,18,0.7899603698811096,0.7873183619550859,0.0026420079260237594,"[-0.023339626038234675, 0.026490066225165587]",36.0,34.0,0.9049745264594622,False,0.7794486215538847
+(c),a·both·prod,S,757 shared,18,0.7912813738441216,0.7873183619550859,0.003963011889035695,"[-0.014449444259343164, 0.02201868550189213]",20.0,17.0,0.7428293587290682,False,0.7882205513784462
+(c),a·both·vec,S,757 shared,18,0.7926023778071334,0.7873183619550859,0.005284015852047519,"[-0.017084476057402573, 0.02834151809544136]",25.0,21.0,0.6587380770236564,False,0.7907268170426065
+(c),b·raw·prod,S,757 shared,18,0.7807133421400264,0.7873183619550859,-0.006605019815059454,"[-0.026797172871136497, 0.011112975391498815]",23.0,28.0,0.5758493477318467,False,0.7772151898734178
+(c),b·raw·vec,S,757 shared,18,0.7992073976221928,0.7873183619550859,0.011889035667106973,"[-0.011609858737401026, 0.033050113656233546]",32.0,23.0,0.2806097176983541,False,0.7962025316455696
+(c),b·td·prod,S,757 shared,18,0.7873183619550859,0.7873183619550859,0.0,"[-0.018721773261174374, 0.01644363984006514]",25.0,25.0,1.0,False,0.7835443037974683
+(c),b·td·vec,S,757 shared,18,0.7965653896961691,0.7873183619550859,0.009247027741083214,"[-0.018242530325898624, 0.03542330956383952]",31.0,24.0,0.4187541882690154,False,0.7949367088607595
+(c),b·he·prod,S,757 shared,18,0.7701453104359313,0.7873183619550859,-0.017173051519154603,"[-0.04317869250943517, 0.0044912284542277135]",32.0,45.0,0.17106097355391153,False,0.7670886075949367
+(c),b·he·vec,S,757 shared,18,0.7807133421400264,0.7873183619550859,-0.006605019815059454,"[-0.03242369668863824, 0.016000000000000014]",40.0,45.0,0.664645490413214,False,0.7784810126582279
+(c),b·both·prod,S,757 shared,18,0.7833553500660502,0.7873183619550859,-0.003963011889035695,"[-0.02342902462038986, 0.014441086035474348]",26.0,29.0,0.7877061896700431,False,0.7810126582278482
+(c),b·both·vec,S,757 shared,18,0.7873183619550859,0.7873183619550859,0.0,"[-0.020000000000000018, 0.020112390218383312]",30.0,30.0,1.0,False,0.7860759493670886
+(c),a·raw·prod,S,757 shared,19,0.7886393659180978,,,,,,,,0.7819548872180451
+(c),a·raw·vec,S,757 shared,19,0.7939233817701453,0.7886393659180978,0.005284015852047519,"[-0.007975386639921813, 0.018005852112500356]",20.0,16.0,0.617719317029696,False,0.7882205513784462
+(c),a·td·prod,S,757 shared,19,0.7701453104359313,0.7886393659180978,-0.018494055482166538,"[-0.0340526968154123, -0.003966323883639072]",13.0,27.0,0.03847730828420026,False,0.7568922305764411
+(c),a·td·vec,S,757 shared,19,0.7965653896961691,0.7886393659180978,0.007926023778071278,"[-0.007874237426402766, 0.02275457117892733]",27.0,21.0,0.470879013621712,False,0.7844611528822055
+(c),a·he·prod,S,757 shared,19,0.7675033025099075,0.7886393659180978,-0.021136063408190298,"[-0.04078303425774876, -0.0039411560656107385]",25.0,41.0,0.06401750413722565,False,0.7568922305764411
+(c),a·he·vec,S,757 shared,19,0.8031704095112285,0.7886393659180978,0.014531043593130732,"[-0.007278551620820431, 0.03477081695591703]",40.0,29.0,0.22840022535329702,False,0.7894736842105263
+(c),a·both·prod,S,757 shared,19,0.7767503302509907,0.7886393659180978,-0.011889035667107084,"[-0.030418376687388133, 0.0046047395760515164]",14.0,23.0,0.18774155899882317,False,0.768170426065163
+(c),a·both·vec,S,757 shared,19,0.7886393659180978,0.7886393659180978,0.0,"[-0.012837589621453942, 0.012755713307687268]",20.0,20.0,1.0,False,0.7794486215538847
+(c),b·raw·prod,S,757 shared,19,0.7873183619550859,0.7886393659180978,-0.0013210039630119352,"[-0.014925373134328401, 0.010727056019070313]",13.0,14.0,1.0,False,0.7848101265822784
+(c),b·raw·vec,S,757 shared,19,0.8071334214002642,0.7886393659180978,0.018494055482166427,"[0.0, 0.037082945639033395]",30.0,16.0,0.054076031858869555,False,0.8050632911392405
+(c),b·td·prod,S,757 shared,19,0.7780713342140027,0.7886393659180978,-0.010568031704095149,"[-0.024969569288389573, 0.002770372054138061]",16.0,24.0,0.26818725105476915,False,0.7746835443037975
+(c),b·td·vec,S,757 shared,19,0.8018494055482166,0.7886393659180978,0.013210039630118797,"[-0.006605771096934154, 0.0336443207591438]",32.0,22.0,0.22032849417661093,False,0.8
+(c),b·he·prod,S,757 shared,19,0.774108322324967,0.7886393659180978,-0.014531043593130843,"[-0.035671843668917486, 0.004098888251084679]",29.0,40.0,0.22840022535329702,False,0.769620253164557
+(c),b·he·vec,S,757 shared,19,0.7939233817701453,0.7886393659180978,0.005284015852047519,"[-0.012970589721562547, 0.022556390977443552]",36.0,32.0,0.716300760154337,False,0.7911392405063291
+(c),b·both·prod,S,757 shared,19,0.7846763540290621,0.7886393659180978,-0.003963011889035695,"[-0.017442055564226656, 0.009409236153378058]",18.0,21.0,0.7492586247608418,False,0.7822784810126582
+(c),b·both·vec,S,757 shared,19,0.7833553500660502,0.7886393659180978,-0.00528401585204763,"[-0.020809850674373787, 0.008451660728377029]",20.0,24.0,0.651587827208914,False,0.7822784810126582
+(c),a·raw·prod,S,757 shared,20,0.7846763540290621,,,,,,,,0.7781954887218046
+(c),a·raw·vec,S,757 shared,20,0.8071334214002642,0.7846763540290621,0.022457067371202122,"[0.006451197741520337, 0.03994974226804118]",27.0,10.0,0.007632078602910042,True,0.8032581453634086
+(c),a·td·prod,S,757 shared,20,0.7912813738441216,0.7846763540290621,0.006605019815059454,"[-0.01271321673278035, 0.025210084033613467]",23.0,18.0,0.5327092552361137,False,0.7807017543859649
+(c),a·td·vec,S,757 shared,20,0.8044914134742405,0.7846763540290621,0.019815059445178362,"[-0.00400821723768823, 0.0436177557308513]",40.0,25.0,0.08168153394154003,False,0.793233082706767
+(c),a·he·prod,S,757 shared,20,0.7833553500660502,0.7846763540290621,-0.0013210039630119352,"[-0.019825706270410106, 0.01721726116855488]",33.0,34.0,1.0,False,0.7794486215538847
+(c),a·he·vec,S,757 shared,20,0.8031704095112285,0.7846763540290621,0.018494055482166427,"[-0.007449136996581332, 0.046768268204819365]",45.0,31.0,0.13538510529943087,False,0.7969924812030075
+(c),a·both·prod,S,757 shared,20,0.7939233817701453,0.7846763540290621,0.009247027741083214,"[-0.0028575533661739814, 0.022727272727272707]",24.0,17.0,0.34888887944907765,False,0.7882205513784462
+(c),a·both·vec,S,757 shared,20,0.809775429326288,0.7846763540290621,0.02509907529722588,"[0.009676738394490028, 0.044265935073339036]",33.0,14.0,0.007942726509483574,True,0.8032581453634086
+(c),b·raw·prod,S,757 shared,20,0.7965653896961691,0.7846763540290621,0.011889035667106973,"[-0.0051415867351125525, 0.0287358495487506]",28.0,19.0,0.24296021728332556,False,0.7936708860759494
+(c),b·raw·vec,S,757 shared,20,0.808454425363276,0.7846763540290621,0.023778071334213946,"[0.0, 0.04992451440573589]",37.0,19.0,0.022241389472860106,False,0.8063291139240506
+(c),b·td·prod,S,757 shared,20,0.7859973579920739,0.7846763540290621,0.0013210039630118242,"[-0.017610062893081757, 0.02138381596206235]",30.0,29.0,1.0,False,0.7810126582278482
+(c),b·td·vec,S,757 shared,20,0.8031704095112285,0.7846763540290621,0.018494055482166427,"[-0.00240725000876236, 0.03977975331667666]",39.0,25.0,0.10342187831608088,False,0.8012658227848102
+(c),b·he·prod,S,757 shared,20,0.7833553500660502,0.7846763540290621,-0.0013210039630119352,"[-0.023843859245148754, 0.020070426893419004]",35.0,36.0,1.0,False,0.7784810126582279
+(c),b·he·vec,S,757 shared,20,0.797886393659181,0.7846763540290621,0.013210039630118908,"[-0.01652892561983466, 0.045526843831057554]",48.0,38.0,0.3318343545999156,False,0.7962025316455696
+(c),b·both·prod,S,757 shared,20,0.7912813738441216,0.7846763540290621,0.006605019815059454,"[-0.012469933092191314, 0.024671560266406784]",30.0,25.0,0.5900533317766354,False,0.789873417721519
+(c),b·both·vec,S,757 shared,20,0.797886393659181,0.7846763540290621,0.013210039630118908,"[-0.008433134732604746, 0.03580094894883468]",36.0,26.0,0.25285439418811073,False,0.7949367088607595
+(c),a·raw·prod,T,757 shared,662,0.8243064729194187,,,,,,,,0.8220551378446115
+(c),a·raw·vec,T,757 shared,662,0.8467635402906208,0.8243064729194187,0.022457067371202122,"[0.008629756723579931, 0.03680415388124511]",23.0,6.0,0.002315700054168701,True,0.8446115288220551
+(c),a·td·prod,T,757 shared,662,0.8269484808454426,0.8243064729194187,0.0026420079260238705,"[-0.012589182968929802, 0.017522451309751323]",18.0,16.0,0.8641662404406816,False,0.8245614035087719
+(c),a·td·vec,T,757 shared,662,0.8388375165125496,0.8243064729194187,0.014531043593130843,"[-0.004261363636363538, 0.0340045125479577]",28.0,17.0,0.1351564508456704,False,0.8308270676691729
+(c),a·he·prod,T,757 shared,662,0.8190224570673712,0.8243064729194187,-0.005284015852047519,"[-0.023077812018490015, 0.012693935119887145]",26.0,30.0,0.6888797607233395,False,0.8132832080200502
+(c),a·he·vec,T,757 shared,662,0.8388375165125496,0.8243064729194187,0.014531043593130843,"[-0.006029160227460349, 0.034849365750528584]",36.0,25.0,0.20003136851310313,False,0.8333333333333334
+(c),a·both·prod,T,757 shared,662,0.8295904887714664,0.8243064729194187,0.00528401585204763,"[-0.009669219822534743, 0.02063344777018649]",15.0,11.0,0.557197093963623,False,0.8283208020050126
+(c),a·both·vec,T,757 shared,662,0.8375165125495376,0.8243064729194187,0.013210039630118908,"[0.0, 0.02671840812952786]",20.0,10.0,0.09873714670538905,False,0.8345864661654135
+(c),b·raw·prod,T,757 shared,662,0.8428005284015853,0.8243064729194187,0.018494055482166538,"[0.004069734528142336, 0.03416188379589591]",25.0,11.0,0.028816719655878845,True,0.8455696202531645
+(c),b·raw·vec,T,757 shared,662,0.8494055482166446,0.8243064729194187,0.02509907529722588,"[0.006674460731018872, 0.044053960057901624]",32.0,13.0,0.006608822842281368,True,0.8518987341772152
+(c),b·td·prod,T,757 shared,662,0.8348745046235139,0.8243064729194187,0.010568031704095149,"[-0.006046315635191054, 0.02688204905749662]",24.0,16.0,0.26818725105476915,False,0.8379746835443038
+(c),b·td·vec,T,757 shared,662,0.8494055482166446,0.8243064729194187,0.02509907529722588,"[0.004766337544975328, 0.04499322866455496]",34.0,15.0,0.009399241523873059,True,0.8518987341772152
+(c),b·he·prod,T,757 shared,662,0.8256274768824307,0.8243064729194187,0.0013210039630119352,"[-0.018031013884646768, 0.020000000000000018]",31.0,30.0,1.0,False,0.8278481012658228
+(c),b·he·vec,T,757 shared,662,0.8441215323645971,0.8243064729194187,0.019815059445178362,"[0.0028765769254284123, 0.03680245097672752]",34.0,19.0,0.053438810537711046,False,0.8468354430379746
+(c),b·both·prod,T,757 shared,662,0.845442536327609,0.8243064729194187,0.021136063408190298,"[0.006600551216071446, 0.03683734729629166]",26.0,10.0,0.011330984183587134,True,0.8493670886075949
+(c),b·both·vec,T,757 shared,662,0.8560105680317041,0.8243064729194187,0.031704095112285335,"[0.013718990143668628, 0.051059206455994446]",35.0,11.0,0.0005355850721002753,True,0.859493670886076
+(c),a·raw·prod,T,757 shared,1,0.8348745046235139,,,,,,,,0.8283208020050126
+(c),a·raw·vec,T,757 shared,1,0.8467635402906208,0.8348745046235139,0.011889035667106973,"[-0.005931727673275697, 0.02941176470588236]",21.0,12.0,0.16275565745308995,False,0.8421052631578947
+(c),a·td·prod,T,757 shared,1,0.8401585204755614,0.8348745046235139,0.005284015852047519,"[-0.009790209790209836, 0.01997004608294925]",18.0,14.0,0.5966148958541453,False,0.8270676691729323
+(c),a·td·vec,T,757 shared,1,0.8414795244385733,0.8348745046235139,0.006605019815059454,"[-0.01189096030802329, 0.025991792065663488]",25.0,20.0,0.5514843298025198,False,0.8320802005012531
+(c),a·he·prod,T,757 shared,1,0.8269484808454426,0.8348745046235139,-0.007926023778071278,"[-0.024837941032928457, 0.008538687973086606]",21.0,27.0,0.470879013621712,False,0.8145363408521303
+(c),a·he·vec,T,757 shared,1,0.8401585204755614,0.8348745046235139,0.005284015852047519,"[-0.012431369065358477, 0.022444590770265383]",25.0,21.0,0.6587380770236564,False,0.8258145363408521
+(c),a·both·prod,T,757 shared,1,0.845442536327609,0.8348745046235139,0.010568031704095149,"[-0.0014452967468745386, 0.023496819011597968]",16.0,8.0,0.15158963203430176,False,0.8383458646616542
+(c),a·both·vec,T,757 shared,1,0.8507265521796565,0.8348745046235139,0.015852047556142668,"[0.0028853835720787924, 0.029070871357079704]",20.0,8.0,0.03569813817739487,True,0.8408521303258145
+(c),b·raw·prod,T,757 shared,1,0.8348745046235139,0.8348745046235139,0.0,"[-0.012587588733684449, 0.012610649989653526]",13.0,13.0,1.0,False,0.8367088607594937
+(c),b·raw·vec,T,757 shared,1,0.8414795244385733,0.8348745046235139,0.006605019815059454,"[-0.009887049297102449, 0.024112100406907838]",20.0,15.0,0.4995598332025112,False,0.8430379746835444
+(c),b·td·prod,T,757 shared,1,0.8335535006605019,0.8348745046235139,-0.0013210039630119352,"[-0.016667246175243337, 0.013530176912053323]",15.0,16.0,1.0,False,0.8354430379746836
+(c),b·td·vec,T,757 shared,1,0.8494055482166446,0.8348745046235139,0.014531043593130732,"[-0.004143789688452826, 0.03324574136099396]",29.0,18.0,0.14386508844054896,False,0.8531645569620253
+(c),b·he·prod,T,757 shared,1,0.8269484808454426,0.8348745046235139,-0.007926023778071278,"[-0.02716776203339391, 0.011457202561875806]",24.0,30.0,0.49661743531793345,False,0.8278481012658228
+(c),b·he·vec,T,757 shared,1,0.8375165125495376,0.8348745046235139,0.0026420079260237594,"[-0.0158525717640645, 0.021004359772912137]",27.0,25.0,0.8898839652765371,False,0.8405063291139241
+(c),b·both·prod,T,757 shared,1,0.8388375165125496,0.8348745046235139,0.003963011889035695,"[-0.011347562448015899, 0.020173638401304116]",18.0,15.0,0.7283324808813632,False,0.8430379746835444
+(c),b·both·vec,T,757 shared,1,0.8467635402906208,0.8348745046235139,0.011889035667106973,"[-0.003788238852402348, 0.02857142857142858]",23.0,14.0,0.18774155899882317,False,0.850632911392405
+(c),a·raw·prod,T,757 shared,2,0.8269484808454426,,,,,,,,0.8233082706766918
+(c),a·raw·vec,T,757 shared,2,0.8335535006605019,0.8269484808454426,0.006605019815059343,"[-0.006765899864681904, 0.019640509203920575]",16.0,11.0,0.44206833839416504,False,0.8245614035087719
+(c),a·td·prod,T,757 shared,2,0.8163804491413474,0.8269484808454426,-0.010568031704095149,"[-0.027866483361839386, 0.004449636224071556]",15.0,23.0,0.2558750795433298,False,0.8045112781954887
+(c),a·td·vec,T,757 shared,2,0.8388375165125496,0.8269484808454426,0.011889035667106973,"[-0.007003787430465119, 0.030230661014021373]",29.0,20.0,0.2528697301676033,False,0.8258145363408521
+(c),a·he·prod,T,757 shared,2,0.8110964332892999,0.8269484808454426,-0.015852047556142668,"[-0.035567715458276306, 0.003366662567827086]",24.0,36.0,0.1550019040032606,False,0.8032581453634086
+(c),a·he·vec,T,757 shared,2,0.8494055482166446,0.8269484808454426,0.02245706737120201,"[0.0038502337112563652, 0.04061847941347496]",36.0,19.0,0.030028945411892487,True,0.8383458646616542
+(c),a·both·prod,T,757 shared,2,0.8375165125495376,0.8269484808454426,0.010568031704095038,"[-0.0014245522269773659, 0.02340702210663193]",18.0,10.0,0.1849333420395851,False,0.8283208020050126
+(c),a·both·vec,T,757 shared,2,0.8295904887714664,0.8269484808454426,0.0026420079260237594,"[-0.011396417815818596, 0.016149110120963452]",15.0,13.0,0.8505540192127228,False,0.8233082706766918
+(c),b·raw·prod,T,757 shared,2,0.8243064729194187,0.8269484808454426,-0.0026420079260238705,"[-0.016416533241725043, 0.009408918725307157]",11.0,13.0,0.8388197422027588,False,0.8265822784810126
+(c),b·raw·vec,T,757 shared,2,0.8361955085865258,0.8269484808454426,0.009247027741083214,"[-0.008695652173912997, 0.027167058046009253]",27.0,20.0,0.38169339766321275,False,0.8405063291139241
+(c),b·td·prod,T,757 shared,2,0.8229854689564069,0.8269484808454426,-0.003963011889035695,"[-0.02136272043180735, 0.013006028771982352]",20.0,23.0,0.7607916425613439,False,0.8240506329113924
+(c),b·td·vec,T,757 shared,2,0.8388375165125496,0.8269484808454426,0.011889035667106973,"[-0.00685941910689386, 0.031055900621117963]",30.0,21.0,0.2624375357110438,False,0.8405063291139241
+(c),b·he·prod,T,757 shared,2,0.8229854689564069,0.8269484808454426,-0.003963011889035695,"[-0.022471910112359498, 0.014747295549308783]",27.0,30.0,0.7913664277791806,False,0.8253164556962025
+(c),b·he·vec,T,757 shared,2,0.8401585204755614,0.8269484808454426,0.013210039630118797,"[-0.003942181340341633, 0.031056257996268946]",31.0,21.0,0.21160856876151612,False,0.8430379746835444
+(c),b·both·prod,T,757 shared,2,0.8322324966974901,0.8269484808454426,0.005284015852047519,"[-0.009231481481481405, 0.0187502254689754]",19.0,15.0,0.6075913612730801,False,0.8354430379746836
+(c),b·both·vec,T,757 shared,2,0.845442536327609,0.8269484808454426,0.018494055482166427,"[0.001322751322751281, 0.03585173738354896]",29.0,15.0,0.048766765904474596,True,0.8493670886075949
+(c),a·raw·prod,T,757 shared,3,0.8335535006605019,,,,,,,,0.8295739348370927
+(c),a·raw·vec,T,757 shared,3,0.845442536327609,0.8335535006605019,0.011889035667107084,"[-0.0013736736097466145, 0.02658227848101269]",20.0,11.0,0.14961278438568115,False,0.8345864661654135
+(c),a·td·prod,T,757 shared,3,0.8269484808454426,0.8335535006605019,-0.006605019815059343,"[-0.022970955258474403, 0.010000278086763074]",13.0,18.0,0.47312965989112854,False,0.8195488721804511
+(c),a·td·vec,T,757 shared,3,0.8520475561426685,0.8335535006605019,0.018494055482166538,"[0.0012817258883248697, 0.03602337928706801]",29.0,15.0,0.048766765904474596,True,0.8421052631578947
+(c),a·he·prod,T,757 shared,3,0.8282694848084544,0.8335535006605019,-0.005284015852047519,"[-0.023937201782552587, 0.013890828677839884]",25.0,29.0,0.6834892282353371,False,0.8208020050125313
+(c),a·he·vec,T,757 shared,3,0.8428005284015853,0.8335535006605019,0.009247027741083325,"[-0.012316031137870147, 0.029962801947157294]",33.0,26.0,0.43499280512215344,False,0.8358395989974937
+(c),a·both·prod,T,757 shared,3,0.8428005284015853,0.8335535006605019,0.009247027741083325,"[-0.0034333871245089765, 0.022518259699036907]",15.0,8.0,0.21003961563110352,False,0.8358395989974937
+(c),a·both·vec,T,757 shared,3,0.8546895640686922,0.8335535006605019,0.021136063408190298,"[0.006544075430946092, 0.03768851619700397]",23.0,7.0,0.005222879350185395,True,0.8458646616541353
+(c),b·raw·prod,T,757 shared,3,0.8309114927344782,0.8335535006605019,-0.0026420079260237594,"[-0.016783216783216814, 0.011696096548262721]",15.0,17.0,0.860050065908581,False,0.8341772151898734
+(c),b·raw·vec,T,757 shared,3,0.8494055482166446,0.8335535006605019,0.015852047556142668,"[-0.0013986013986013734, 0.034700416825476636]",30.0,18.0,0.11140289106101878,False,0.8518987341772152
+(c),b·td·prod,T,757 shared,3,0.8361955085865258,0.8335535006605019,0.0026420079260238705,"[-0.013978913409312548, 0.019498682689667073]",19.0,17.0,0.8679394004284404,False,0.839240506329114
+(c),b·td·vec,T,757 shared,3,0.8428005284015853,0.8335535006605019,0.009247027741083325,"[-0.01040467081985065, 0.028328779127130967]",28.0,21.0,0.3916029105474905,False,0.8443037974683544
+(c),b·he·prod,T,757 shared,3,0.8335535006605019,0.8335535006605019,0.0,"[-0.020125156653223456, 0.02075226977950717]",27.0,27.0,1.0,False,0.8367088607594937
+(c),b·he·vec,T,757 shared,3,0.8441215323645971,0.8335535006605019,0.010568031704095149,"[-0.01017876616295382, 0.0316624298188386]",33.0,25.0,0.358143301806138,False,0.8468354430379746
+(c),b·both·prod,T,757 shared,3,0.8375165125495376,0.8335535006605019,0.003963011889035695,"[-0.013354245202889975, 0.022416227734386524]",20.0,17.0,0.7428293587290682,False,0.8405063291139241
+(c),b·both·vec,T,757 shared,3,0.8401585204755614,0.8335535006605019,0.006605019815059454,"[-0.009589699683877781, 0.02400060060060061]",22.0,17.0,0.5223973804968411,False,0.8443037974683544
+(c),a·raw·prod,T,757 shared,4,0.8295904887714664,,,,,,,,0.8258145363408521
+(c),a·raw·vec,T,757 shared,4,0.8520475561426685,0.8295904887714664,0.022457067371202122,"[0.010218931491269848, 0.035503168706293775]",22.0,5.0,0.0015137195587158203,True,0.8421052631578947
+(c),a·td·prod,T,757 shared,4,0.8282694848084544,0.8295904887714664,-0.0013210039630119352,"[-0.01681759379042691, 0.014360782607211738]",12.0,13.0,1.0,False,0.8208020050125313
+(c),a·td·vec,T,757 shared,4,0.8414795244385733,0.8295904887714664,0.011889035667106973,"[-0.00431159783480351, 0.028449778163810984]",22.0,13.0,0.175465248990804,False,0.8320802005012531
+(c),a·he·prod,T,757 shared,4,0.8256274768824307,0.8295904887714664,-0.003963011889035695,"[-0.02007591281375504, 0.01158301158301156]",22.0,25.0,0.7708669945730263,False,0.8170426065162907
+(c),a·he·vec,T,757 shared,4,0.8428005284015853,0.8295904887714664,0.013210039630118908,"[-0.0040000000000000036, 0.03084872576089368]",29.0,19.0,0.19341265286193737,False,0.8358395989974937
+(c),a·both·prod,T,757 shared,4,0.8335535006605019,0.8295904887714664,0.003963011889035584,"[-0.012032488241736939, 0.019179399367755437]",14.0,11.0,0.6900379657745361,False,0.8270676691729323
+(c),a·both·vec,T,757 shared,4,0.8494055482166446,0.8295904887714664,0.01981505944517825,"[0.004290932334946557, 0.03608293944694627]",22.0,7.0,0.008130058646202087,True,0.8458646616541353
+(c),b·raw·prod,T,757 shared,4,0.8401585204755614,0.8295904887714664,0.010568031704095038,"[-0.004685981614621928, 0.02670000259591919]",17.0,9.0,0.16863754391670227,False,0.8430379746835444
+(c),b·raw·vec,T,757 shared,4,0.8494055482166446,0.8295904887714664,0.01981505944517825,"[0.002958036823675603, 0.038047045242295324]",26.0,11.0,0.020073851919732988,True,0.8531645569620253
+(c),b·td·prod,T,757 shared,4,0.8282694848084544,0.8295904887714664,-0.0013210039630119352,"[-0.01794889502762425, 0.014667107195300962]",17.0,18.0,1.0,False,0.830379746835443
+(c),b·td·vec,T,757 shared,4,0.8388375165125496,0.8295904887714664,0.009247027741083214,"[-0.011347920696324967, 0.029704251149565156]",28.0,21.0,0.3916029105474905,False,0.8405063291139241
+(c),b·he·prod,T,757 shared,4,0.8282694848084544,0.8295904887714664,-0.0013210039630119352,"[-0.020689878217424205, 0.01726743280700118]",29.0,30.0,1.0,False,0.8278481012658228
+(c),b·he·vec,T,757 shared,4,0.8520475561426685,0.8295904887714664,0.022457067371202122,"[0.0042791446472571415, 0.040446524446043026]",38.0,21.0,0.036343179957053884,True,0.8531645569620253
+(c),b·both·prod,T,757 shared,4,0.8414795244385733,0.8295904887714664,0.011889035667106973,"[-0.005813953488372103, 0.03051652154200003]",23.0,14.0,0.18774155899882317,False,0.8455696202531645
+(c),b·both·vec,T,757 shared,4,0.845442536327609,0.8295904887714664,0.015852047556142668,"[-0.002873874210081023, 0.03508890469416794]",26.0,14.0,0.0806904677519924,False,0.8493670886075949
+(c),a·raw·prod,T,757 shared,5,0.8309114927344782,,,,,,,,0.8233082706766918
+(c),a·raw·vec,T,757 shared,5,0.8441215323645971,0.8309114927344782,0.013210039630118908,"[-0.0028294596323296364, 0.030575091998814283]",21.0,11.0,0.11018416518345475,False,0.8395989974937343
+(c),a·td·prod,T,757 shared,5,0.8282694848084544,0.8309114927344782,-0.0026420079260237594,"[-0.0183877853713662, 0.01331799936528834]",13.0,15.0,0.8505540192127228,False,0.8233082706766918
+(c),a·td·vec,T,757 shared,5,0.845442536327609,0.8309114927344782,0.014531043593130843,"[-0.0029772004955828375, 0.032302883600277436]",24.0,13.0,0.09887174959294498,False,0.8370927318295739
+(c),a·he·prod,T,757 shared,5,0.8190224570673712,0.8309114927344782,-0.011889035667106973,"[-0.03242542153047989, 0.00728911801365754]",24.0,33.0,0.2892437471090205,False,0.8170426065162907
+(c),a·he·vec,T,757 shared,5,0.8348745046235139,0.8309114927344782,0.003963011889035695,"[-0.015569830239187146, 0.024003136308805767]",30.0,27.0,0.7913664277791806,False,0.8308270676691729
+(c),a·both·prod,T,757 shared,5,0.8282694848084544,0.8309114927344782,-0.0026420079260237594,"[-0.01894516137312923, 0.013464222205359819]",15.0,17.0,0.860050065908581,False,0.8270676691729323
+(c),a·both·vec,T,757 shared,5,0.8441215323645971,0.8309114927344782,0.013210039630118908,"[-0.0023668639053253697, 0.028968307249662203]",20.0,10.0,0.09873714670538905,False,0.8395989974937343
+(c),b·raw·prod,T,757 shared,5,0.8375165125495376,0.8309114927344782,0.006605019815059454,"[-0.009175824840841368, 0.02289157615836037]",16.0,11.0,0.44206833839416504,False,0.8379746835443038
+(c),b·raw·vec,T,757 shared,5,0.8388375165125496,0.8309114927344782,0.00792602377807139,"[-0.009985779188282811, 0.026385531555744968]",23.0,17.0,0.42959050784338615,False,0.8417721518987342
+(c),b·td·prod,T,757 shared,5,0.8309114927344782,0.8309114927344782,0.0,"[-0.020408163265306145, 0.020204870374170576]",22.0,22.0,1.0,False,0.8329113924050633
+(c),b·td·vec,T,757 shared,5,0.8414795244385733,0.8309114927344782,0.010568031704095149,"[-0.012115852274036052, 0.03301289597713259]",30.0,22.0,0.3317497633694906,False,0.8443037974683544
+(c),b·he·prod,T,757 shared,5,0.8282694848084544,0.8309114927344782,-0.0026420079260237594,"[-0.022909835662028998, 0.016912340499808057]",29.0,31.0,0.8974218269914307,False,0.830379746835443
+(c),b·he·vec,T,757 shared,5,0.8507265521796565,0.8309114927344782,0.019815059445178362,"[-0.0014184397163120588, 0.041565791242366236]",41.0,26.0,0.08643723427347082,False,0.8531645569620253
+(c),b·both·prod,T,757 shared,5,0.8467635402906208,0.8309114927344782,0.015852047556142668,"[-0.0038370586916971093, 0.035935762654437306]",26.0,14.0,0.0806904677519924,False,0.850632911392405
+(c),b·both·vec,T,757 shared,5,0.8467635402906208,0.8309114927344782,0.015852047556142668,"[-0.0028615386512752415, 0.03493026299412761]",28.0,16.0,0.09614175442061423,False,0.850632911392405
+(c),a·raw·prod,T,757 shared,6,0.8401585204755614,,,,,,,,0.8370927318295739
+(c),a·raw·vec,T,757 shared,6,0.8599735799207398,0.8401585204755614,0.019815059445178362,"[0.006097328952741588, 0.03493526124530498]",24.0,9.0,0.013530986849218607,True,0.8558897243107769
+(c),a·td·prod,T,757 shared,6,0.8256274768824307,0.8401585204755614,-0.014531043593130732,"[-0.030463960630148265, 0.0]",10.0,21.0,0.07075554598122835,False,0.8208020050125313
+(c),a·td·vec,T,757 shared,6,0.8494055482166446,0.8401585204755614,0.009247027741083214,"[-0.00905573730622555, 0.027779535864978888]",22.0,15.0,0.3240086000878364,False,0.8408521303258145
+(c),a·he·prod,T,757 shared,6,0.8322324966974901,0.8401585204755614,-0.007926023778071278,"[-0.026636178788771506, 0.010526662506067567]",22.0,28.0,0.47988766169832786,False,0.8258145363408521
+(c),a·he·vec,T,757 shared,6,0.8507265521796565,0.8401585204755614,0.010568031704095149,"[-0.008245504495504572, 0.029487265415549604]",29.0,21.0,0.3222363203575469,False,0.8458646616541353
+(c),a·both·prod,T,757 shared,6,0.8441215323645971,0.8401585204755614,0.003963011889035695,"[-0.010767765330131546, 0.01923138639281133]",17.0,14.0,0.720100131817162,False,0.8408521303258145
+(c),a·both·vec,T,757 shared,6,0.8533685601056803,0.8401585204755614,0.013210039630118908,"[-0.0017760023278793312, 0.028460663417570777]",22.0,12.0,0.12144948495551944,False,0.8483709273182958
+(c),b·raw·prod,T,757 shared,6,0.8388375165125496,0.8401585204755614,-0.0013210039630118242,"[-0.015152037617554955, 0.012658729362675232]",12.0,13.0,1.0,False,0.8430379746835444
+(c),b·raw·vec,T,757 shared,6,0.857331571994716,0.8401585204755614,0.017173051519154603,"[0.0, 0.03466666666666662]",27.0,14.0,0.05958388801809633,False,0.8607594936708861
+(c),b·td·prod,T,757 shared,6,0.8375165125495376,0.8401585204755614,-0.0026420079260237594,"[-0.018543046357615944, 0.013870107104330395]",17.0,19.0,0.8679394004284404,False,0.8405063291139241
+(c),b·td·vec,T,757 shared,6,0.8546895640686922,0.8401585204755614,0.014531043593130843,"[-0.00303123257110989, 0.03271755815555625]",26.0,15.0,0.11727520595741225,False,0.8582278481012658
+(c),b·he·prod,T,757 shared,6,0.8282694848084544,0.8401585204755614,-0.011889035667106973,"[-0.029650195557759485, 0.006435421596711865]",22.0,31.0,0.27167916606550335,False,0.830379746835443
+(c),b·he·vec,T,757 shared,6,0.8441215323645971,0.8401585204755614,0.003963011889035695,"[-0.016927635063559356, 0.025675723869375864]",32.0,29.0,0.7981526273057179,False,0.8468354430379746
+(c),b·both·prod,T,757 shared,6,0.8428005284015853,0.8401585204755614,0.0026420079260238705,"[-0.011153805200757308, 0.017284032702915775]",17.0,15.0,0.860050065908581,False,0.8468354430379746
+(c),b·both·vec,T,757 shared,6,0.8494055482166446,0.8401585204755614,0.009247027741083214,"[-0.0071275995830413184, 0.026786029115454375]",23.0,16.0,0.3367836351899315,False,0.8531645569620253
+(c),a·raw·prod,T,757 shared,7,0.8295904887714664,,,,,,,,0.8258145363408521
+(c),a·raw·vec,T,757 shared,7,0.8467635402906208,0.8295904887714664,0.017173051519154492,"[-0.0012515644555694011, 0.036432815117252944]",26.0,13.0,0.05325191409792752,False,0.8446115288220551
+(c),a·td·prod,T,757 shared,7,0.8309114927344782,0.8295904887714664,0.0013210039630118242,"[-0.01375515818431916, 0.016241470661818417]",18.0,17.0,1.0,False,0.8233082706766918
+(c),a·td·vec,T,757 shared,7,0.8480845442536328,0.8295904887714664,0.018494055482166427,"[-0.0013175230566534496, 0.03916639124830623]",31.0,17.0,0.05946337525377034,False,0.8395989974937343
+(c),a·he·prod,T,757 shared,7,0.8163804491413474,0.8295904887714664,-0.013210039630118908,"[-0.0343483320050512, 0.007529419033496867]",24.0,34.0,0.23704711476271959,False,0.8057644110275689
+(c),a·he·vec,T,757 shared,7,0.8441215323645971,0.8295904887714664,0.014531043593130732,"[-0.003996295422071482, 0.03443342027108033]",34.0,23.0,0.18485048241641844,False,0.8395989974937343
+(c),a·both·prod,T,757 shared,7,0.8309114927344782,0.8295904887714664,0.0013210039630118242,"[-0.013017922742958942, 0.016367282874084413]",15.0,14.0,1.0,False,0.8270676691729323
+(c),a·both·vec,T,757 shared,7,0.8467635402906208,0.8295904887714664,0.017173051519154492,"[0.0, 0.0348841111284532]",25.0,12.0,0.04703102743951604,False,0.8458646616541353
+(c),b·raw·prod,T,757 shared,7,0.8388375165125496,0.8295904887714664,0.009247027741083214,"[-0.005772005772005764, 0.025673322834332966]",18.0,11.0,0.26493089646101,False,0.8417721518987342
+(c),b·raw·vec,T,757 shared,7,0.8480845442536328,0.8295904887714664,0.018494055482166427,"[0.0014024754361773029, 0.03779551565200691]",30.0,16.0,0.054076031858869555,False,0.850632911392405
+(c),b·td·prod,T,757 shared,7,0.845442536327609,0.8295904887714664,0.015852047556142668,"[-0.0014348234468379655, 0.03504394183857971]",28.0,16.0,0.09614175442061423,False,0.8481012658227848
+(c),b·td·vec,T,757 shared,7,0.857331571994716,0.8295904887714664,0.02774108322324964,"[0.008810157616275276, 0.04874915646389666]",36.0,15.0,0.0046013097117665325,True,0.8607594936708861
+(c),b·he·prod,T,757 shared,7,0.8229854689564069,0.8295904887714664,-0.006605019815059454,"[-0.030262550352667672, 0.017700020524212545]",31.0,36.0,0.6254068289416483,False,0.8253164556962025
+(c),b·he·vec,T,757 shared,7,0.8494055482166446,0.8295904887714664,0.01981505944517825,"[0.0, 0.04144418617149914]",38.0,23.0,0.07217743850092258,False,0.8518987341772152
+(c),b·both·prod,T,757 shared,7,0.8414795244385733,0.8295904887714664,0.011889035667106973,"[-0.004644142846857169, 0.02956315476684082]",26.0,17.0,0.2220528201560228,False,0.8443037974683544
+(c),b·both·vec,T,757 shared,7,0.8494055482166446,0.8295904887714664,0.01981505944517825,"[0.0025062656641603454, 0.03851948590381424]",29.0,14.0,0.03153949735315109,True,0.8518987341772152
+(c),a·raw·prod,T,757 shared,8,0.8322324966974901,,,,,,,,0.8295739348370927
+(c),a·raw·vec,T,757 shared,8,0.845442536327609,0.8322324966974901,0.013210039630118908,"[0.0013174797170792147, 0.025401636001087628]",21.0,11.0,0.11018416518345475,False,0.8395989974937343
+(c),a·td·prod,T,757 shared,8,0.8269484808454426,0.8322324966974901,-0.005284015852047519,"[-0.02049855519250498, 0.008639910292325062]",13.0,17.0,0.5846647117286922,False,0.8208020050125313
+(c),a·td·vec,T,757 shared,8,0.8348745046235139,0.8322324966974901,0.0026420079260237594,"[-0.013681808640768942, 0.017751854744240507]",22.0,20.0,0.8776143287523154,False,0.8283208020050126
+(c),a·he·prod,T,757 shared,8,0.809775429326288,0.8322324966974901,-0.022457067371202122,"[-0.04089709762532978, -0.005187398016819371]",19.0,36.0,0.030028945411892487,False,0.8057644110275689
+(c),a·he·vec,T,757 shared,8,0.8388375165125496,0.8322324966974901,0.006605019815059454,"[-0.01007230526817737, 0.022900763358778557]",28.0,23.0,0.5758493477318467,False,0.8358395989974937
+(c),a·both·prod,T,757 shared,8,0.8322324966974901,0.8322324966974901,0.0,"[-0.016455826431213294, 0.015257117814763433]",15.0,15.0,1.0,False,0.8308270676691729
+(c),a·both·vec,T,757 shared,8,0.8361955085865258,0.8322324966974901,0.003963011889035695,"[-0.009408602150537626, 0.01655229567536663]",13.0,10.0,0.6776394844055176,False,0.8320802005012531
+(c),b·raw·prod,T,757 shared,8,0.8309114927344782,0.8322324966974901,-0.0013210039630119352,"[-0.015119087584410006, 0.012016825647047487]",12.0,13.0,1.0,False,0.8329113924050633
+(c),b·raw·vec,T,757 shared,8,0.845442536327609,0.8322324966974901,0.013210039630118908,"[0.0010949058357915488, 0.02597447012631691]",21.0,11.0,0.11018416518345475,False,0.8481012658227848
+(c),b·td·prod,T,757 shared,8,0.8243064729194187,0.8322324966974901,-0.00792602377807139,"[-0.02260713552143243, 0.00536193029490617]",14.0,20.0,0.39152830513194203,False,0.8278481012658228
+(c),b·td·vec,T,757 shared,8,0.8401585204755614,0.8322324966974901,0.007926023778071278,"[-0.008722205222358236, 0.024205195117345073]",23.0,17.0,0.42959050784338615,False,0.8430379746835444
+(c),b·he·prod,T,757 shared,8,0.8335535006605019,0.8322324966974901,0.0013210039630118242,"[-0.015345661406217506, 0.01794889502762435]",25.0,24.0,1.0,False,0.8354430379746836
+(c),b·he·vec,T,757 shared,8,0.8494055482166446,0.8322324966974901,0.017173051519154492,"[0.0, 0.03426800809892586]",33.0,20.0,0.09837064844049181,False,0.8531645569620253
+(c),b·both·prod,T,757 shared,8,0.8348745046235139,0.8322324966974901,0.0026420079260237594,"[-0.013495732574679961, 0.018335727168331796]",18.0,16.0,0.8641662404406816,False,0.839240506329114
+(c),b·both·vec,T,757 shared,8,0.8428005284015853,0.8322324966974901,0.010568031704095149,"[-0.005429085839533576, 0.02621298847192866]",23.0,15.0,0.2558750795433298,False,0.8468354430379746
+(c),a·raw·prod,T,757 shared,9,0.8269484808454426,,,,,,,,0.8208020050125313
+(c),a·raw·vec,T,757 shared,9,0.8441215323645971,0.8269484808454426,0.017173051519154492,"[0.002716841966483022, 0.032293782333184945]",22.0,9.0,0.029449373483657837,True,0.8358395989974937
+(c),a·td·prod,T,757 shared,9,0.8269484808454426,0.8269484808454426,0.0,"[-0.016997276600216372, 0.017380442878506687]",18.0,18.0,1.0,False,0.818295739348371
+(c),a·td·vec,T,757 shared,9,0.8428005284015853,0.8269484808454426,0.015852047556142668,"[-0.004385964912280607, 0.036177114930906605]",29.0,17.0,0.10380535550410741,False,0.8345864661654135
+(c),a·he·prod,T,757 shared,9,0.8177014531043593,0.8269484808454426,-0.009247027741083325,"[-0.029334312416555396, 0.00988704929710245]",29.0,36.0,0.45702078541058977,False,0.8120300751879699
+(c),a·he·vec,T,757 shared,9,0.8335535006605019,0.8269484808454426,0.006605019815059343,"[-0.013642927085770154, 0.024970307225736694]",27.0,22.0,0.5681724128491652,False,0.8283208020050126
+(c),a·both·prod,T,757 shared,9,0.8375165125495376,0.8269484808454426,0.010568031704095038,"[-0.004027389071543119, 0.024325098737706153]",19.0,11.0,0.20048842206597334,False,0.8320802005012531
+(c),a·both·vec,T,757 shared,9,0.8414795244385733,0.8269484808454426,0.014531043593130732,"[0.001398503867123091, 0.027088175115924717]",21.0,10.0,0.07075554598122835,False,0.8358395989974937
+(c),b·raw·prod,T,757 shared,9,0.8322324966974901,0.8269484808454426,0.005284015852047519,"[-0.007957559681697646, 0.018107061133843843]",17.0,13.0,0.5846647117286922,False,0.8329113924050633
+(c),b·raw·vec,T,757 shared,9,0.8361955085865258,0.8269484808454426,0.009247027741083214,"[-0.0068043563579277926, 0.02469390878481784]",24.0,17.0,0.34888887944907765,False,0.839240506329114
+(c),b·td·prod,T,757 shared,9,0.8295904887714664,0.8269484808454426,0.0026420079260237594,"[-0.014766094284914188, 0.020408858366234787]",22.0,20.0,0.8776143287523154,False,0.8329113924050633
+(c),b·td·vec,T,757 shared,9,0.8375165125495376,0.8269484808454426,0.010568031704095038,"[-0.00833391364902504, 0.029716723327015457]",26.0,18.0,0.2912152365458951,False,0.8405063291139241
+(c),b·he·prod,T,757 shared,9,0.8243064729194187,0.8269484808454426,-0.0026420079260238705,"[-0.023881489413916986, 0.016973726915386716]",29.0,31.0,0.8974218269914307,False,0.8215189873417722
+(c),b·he·vec,T,757 shared,9,0.8309114927344782,0.8269484808454426,0.003963011889035584,"[-0.015774232349136476, 0.023285899094437238]",31.0,28.0,0.794843653982861,False,0.8341772151898734
+(c),b·both·prod,T,757 shared,9,0.8282694848084544,0.8269484808454426,0.0013210039630118242,"[-0.01532033426183843, 0.017242977707684997]",20.0,19.0,1.0,False,0.8316455696202532
+(c),b·both·vec,T,757 shared,9,0.8348745046235139,0.8269484808454426,0.007926023778071278,"[-0.008185818442063827, 0.0241257643192879]",21.0,15.0,0.4050322461407632,False,0.839240506329114
+(c),a·raw·prod,T,757 shared,10,0.8388375165125496,,,,,,,,0.8358395989974937
+(c),a·raw·vec,T,757 shared,10,0.8467635402906208,0.8388375165125496,0.007926023778071278,"[-0.003585422687391007, 0.01947171396058738]",16.0,10.0,0.32693958282470703,False,0.8408521303258145
+(c),a·td·prod,T,757 shared,10,0.8295904887714664,0.8388375165125496,-0.009247027741083214,"[-0.02357945548068626, 0.0040760869565217295]",9.0,16.0,0.2295229434967041,False,0.8145363408521303
+(c),a·td·vec,T,757 shared,10,0.8467635402906208,0.8388375165125496,0.007926023778071278,"[-0.00685941910689386, 0.022545800117522836]",18.0,12.0,0.36159460805356514,False,0.8395989974937343
+(c),a·he·prod,T,757 shared,10,0.8150594451783355,0.8388375165125496,-0.023778071334214057,"[-0.04441485770863651, -0.004543094146209882]",20.0,38.0,0.024746035842440804,False,0.8082706766917294
+(c),a·he·vec,T,757 shared,10,0.8494055482166446,0.8388375165125496,0.010568031704095038,"[-0.008119354874198256, 0.028005485337898973]",29.0,21.0,0.3222363203575469,False,0.8383458646616542
+(c),a·both·prod,T,757 shared,10,0.8375165125495376,0.8388375165125496,-0.0013210039630119352,"[-0.016817827022589316, 0.013294122480035904]",14.0,15.0,1.0,False,0.8295739348370927
+(c),a·both·vec,T,757 shared,10,0.8533685601056803,0.8388375165125496,0.014531043593130732,"[0.0025031289111389077, 0.02678598616669568]",18.0,7.0,0.043285250663757324,True,0.8483709273182958
+(c),b·raw·prod,T,757 shared,10,0.8414795244385733,0.8388375165125496,0.0026420079260237594,"[-0.010189925658228684, 0.0157370484268865]",14.0,12.0,0.8450189828872681,False,0.8430379746835444
+(c),b·raw·vec,T,757 shared,10,0.8494055482166446,0.8388375165125496,0.010568031704095038,"[-0.003462250237965924, 0.025780304044392785]",18.0,10.0,0.1849333420395851,False,0.8518987341772152
+(c),b·td·prod,T,757 shared,10,0.8335535006605019,0.8388375165125496,-0.00528401585204763,"[-0.019490986488737518, 0.007151584025760857]",11.0,15.0,0.557197093963623,False,0.8367088607594937
+(c),b·td·vec,T,757 shared,10,0.8428005284015853,0.8388375165125496,0.003963011889035695,"[-0.015153613699320057, 0.022920088333076568]",23.0,20.0,0.7607916425613439,False,0.8468354430379746
+(c),b·he·prod,T,757 shared,10,0.8295904887714664,0.8388375165125496,-0.009247027741083214,"[-0.02891933028919325, 0.009615715268225548]",23.0,30.0,0.4101027163746913,False,0.830379746835443
+(c),b·he·vec,T,757 shared,10,0.8507265521796565,0.8388375165125496,0.011889035667106973,"[-0.005495839112343947, 0.028986007686764362]",28.0,19.0,0.24296021728332556,False,0.8544303797468354
+(c),b·both·prod,T,757 shared,10,0.8388375165125496,0.8388375165125496,0.0,"[-0.014667647058823577, 0.014341590612777066]",16.0,16.0,1.0,False,0.8430379746835444
+(c),b·both·vec,T,757 shared,10,0.8441215323645971,0.8388375165125496,0.005284015852047519,"[-0.008304129792054308, 0.01884257255321029]",17.0,13.0,0.5846647117286922,False,0.8481012658227848
+(c),a·raw·prod,T,757 shared,11,0.8428005284015853,,,,,,,,0.8358395989974937
+(c),a·raw·vec,T,757 shared,11,0.8375165125495376,0.8428005284015853,-0.00528401585204763,"[-0.015692242197010983, 0.005202240410685312]",7.0,11.0,0.480682373046875,False,0.8270676691729323
+(c),a·td·prod,T,757 shared,11,0.8348745046235139,0.8428005284015853,-0.00792602377807139,"[-0.023678533636264584, 0.007974587702331266]",12.0,18.0,0.36159460805356514,False,0.8195488721804511
+(c),a·td·vec,T,757 shared,11,0.8401585204755614,0.8428005284015853,-0.0026420079260238705,"[-0.020436664299972887, 0.014493710872437013]",18.0,20.0,0.8714146793645341,False,0.8270676691729323
+(c),a·he·prod,T,757 shared,11,0.821664464993395,0.8428005284015853,-0.021136063408190298,"[-0.03921639876880982, -0.003989361702127711]",21.0,37.0,0.047940324071666984,False,0.8095238095238095
+(c),a·he·vec,T,757 shared,11,0.8414795244385733,0.8428005284015853,-0.0013210039630119352,"[-0.020152065796298586, 0.017497175585267807]",28.0,29.0,1.0,False,0.8308270676691729
+(c),a·both·prod,T,757 shared,11,0.8388375165125496,0.8428005284015853,-0.003963011889035695,"[-0.0187170471765458, 0.011041057846761173]",13.0,16.0,0.711071103811264,False,0.8270676691729323
+(c),a·both·vec,T,757 shared,11,0.8480845442536328,0.8428005284015853,0.005284015852047519,"[-0.006803495885825864, 0.018421519223590834]",12.0,8.0,0.5034446716308594,False,0.8383458646616542
+(c),b·raw·prod,T,757 shared,11,0.8494055482166446,0.8428005284015853,0.006605019815059343,"[-0.008427900357322356, 0.023080551523947727]",15.0,10.0,0.42435622215270996,False,0.8493670886075949
+(c),b·raw·vec,T,757 shared,11,0.8520475561426685,0.8428005284015853,0.009247027741083214,"[-0.00810832748332751, 0.027855541374373786]",20.0,13.0,0.296206368599087,False,0.8531645569620253
+(c),b·td·prod,T,757 shared,11,0.8428005284015853,0.8428005284015853,0.0,"[-0.01820471345943877, 0.018716827895611732]",17.0,17.0,1.0,False,0.8443037974683544
+(c),b·td·vec,T,757 shared,11,0.845442536327609,0.8428005284015853,0.0026420079260237594,"[-0.015686414366031666, 0.02051983584131323]",22.0,20.0,0.8776143287523154,False,0.8481012658227848
+(c),b·he·prod,T,757 shared,11,0.8256274768824307,0.8428005284015853,-0.017173051519154603,"[-0.0377634230176604, 0.0027668304426581303]",26.0,39.0,0.1360323948778921,False,0.8278481012658228
+(c),b·he·vec,T,757 shared,11,0.845442536327609,0.8428005284015853,0.0026420079260237594,"[-0.017136226234728345, 0.022663693166978027]",28.0,26.0,0.8919231511047488,False,0.8493670886075949
+(c),b·both·prod,T,757 shared,11,0.8401585204755614,0.8428005284015853,-0.0026420079260238705,"[-0.018138312065552963, 0.012950048389165492]",16.0,18.0,0.8641662404406816,False,0.8430379746835444
+(c),b·both·vec,T,757 shared,11,0.8560105680317041,0.8428005284015853,0.013210039630118797,"[-0.005980562596130911, 0.032955103392365744]",25.0,15.0,0.1538599441628321,False,0.8582278481012658
+(c),a·raw·prod,T,757 shared,12,0.8361955085865258,,,,,,,,0.8308270676691729
+(c),a·raw·vec,T,757 shared,12,0.8467635402906208,0.8361955085865258,0.010568031704095038,"[0.0, 0.021333428165007093]",15.0,7.0,0.13380050659179688,False,0.8408521303258145
+(c),a·td·prod,T,757 shared,12,0.8295904887714664,0.8361955085865258,-0.006605019815059454,"[-0.022890662469102454, 0.008404247775059458]",14.0,19.0,0.48685024166479707,False,0.8208020050125313
+(c),a·td·vec,T,757 shared,12,0.8467635402906208,0.8361955085865258,0.010568031704095038,"[-0.0058914512827318855, 0.027705400431504712]",23.0,15.0,0.2558750795433298,False,0.8383458646616542
+(c),a·he·prod,T,757 shared,12,0.8150594451783355,0.8361955085865258,-0.021136063408190298,"[-0.0389306667451534, -0.0038018018881946377]",21.0,37.0,0.047940324071666984,False,0.8082706766917294
+(c),a·he·vec,T,757 shared,12,0.8375165125495376,0.8361955085865258,0.0013210039630118242,"[-0.016973634338223766, 0.019432569663764384]",26.0,25.0,1.0,False,0.8308270676691729
+(c),a·both·prod,T,757 shared,12,0.8414795244385733,0.8361955085865258,0.005284015852047519,"[-0.008583690987124415, 0.018567733990147786]",15.0,11.0,0.557197093963623,False,0.8370927318295739
+(c),a·both·vec,T,757 shared,12,0.8348745046235139,0.8361955085865258,-0.0013210039630119352,"[-0.015559249672437993, 0.011984420772303642]",14.0,15.0,1.0,False,0.8308270676691729
+(c),b·raw·prod,T,757 shared,12,0.8282694848084544,0.8361955085865258,-0.00792602377807139,"[-0.021535530660263202, 0.004213483146067401]",8.0,14.0,0.28627872467041016,False,0.830379746835443
+(c),b·raw·vec,T,757 shared,12,0.8428005284015853,0.8361955085865258,0.006605019815059454,"[-0.00770460643342006, 0.021645168093070707]",19.0,14.0,0.48685024166479707,False,0.8468354430379746
+(c),b·td·prod,T,757 shared,12,0.8335535006605019,0.8361955085865258,-0.0026420079260238705,"[-0.018230058504566174, 0.012987952712988885]",15.0,17.0,0.860050065908581,False,0.8354430379746836
+(c),b·td·vec,T,757 shared,12,0.845442536327609,0.8361955085865258,0.009247027741083214,"[-0.006613756613756627, 0.02560468202477188]",21.0,14.0,0.31050465907901537,False,0.8481012658227848
+(c),b·he·prod,T,757 shared,12,0.8243064729194187,0.8361955085865258,-0.011889035667107084,"[-0.029492787826152642, 0.005518199233716428]",25.0,34.0,0.2975952082844287,False,0.8265822784810126
+(c),b·he·vec,T,757 shared,12,0.8414795244385733,0.8361955085865258,0.005284015852047519,"[-0.012913411021541468, 0.023407246003002043]",30.0,26.0,0.6888797607233395,False,0.8455696202531645
+(c),b·both·prod,T,757 shared,12,0.8322324966974901,0.8361955085865258,-0.003963011889035695,"[-0.021768362538399897, 0.013733263108614259]",15.0,18.0,0.7283324808813632,False,0.8367088607594937
+(c),b·both·vec,T,757 shared,12,0.8428005284015853,0.8361955085865258,0.006605019815059454,"[-0.00848656294200845, 0.022456212574850264]",19.0,14.0,0.48685024166479707,False,0.8468354430379746
+(c),a·raw·prod,T,757 shared,13,0.8269484808454426,,,,,,,,0.8208020050125313
+(c),a·raw·vec,T,757 shared,13,0.8480845442536328,0.8269484808454426,0.021136063408190187,"[0.0043516180642859175, 0.039474148170143275]",24.0,8.0,0.0070003666914999485,True,0.8408521303258145
+(c),a·td·prod,T,757 shared,13,0.8256274768824307,0.8269484808454426,-0.0013210039630119352,"[-0.015789851784633938, 0.013194361820510536]",14.0,15.0,1.0,False,0.8220551378446115
+(c),a·td·vec,T,757 shared,13,0.845442536327609,0.8269484808454426,0.018494055482166427,"[-0.0013871559916975667, 0.038946534565091236]",30.0,16.0,0.054076031858869555,False,0.8383458646616542
+(c),a·he·prod,T,757 shared,13,0.8229854689564069,0.8269484808454426,-0.003963011889035695,"[-0.021583190880586595, 0.013063074187493837]",26.0,29.0,0.7877061896700431,False,0.8145363408521303
+(c),a·he·vec,T,757 shared,13,0.8480845442536328,0.8269484808454426,0.021136063408190187,"[0.0012802061036122166, 0.041131196557822346]",37.0,21.0,0.047940324071666984,True,0.8421052631578947
+(c),a·both·prod,T,757 shared,13,0.8414795244385733,0.8269484808454426,0.014531043593130732,"[0.004243131637618894, 0.025940683755606396]",15.0,4.0,0.0192108154296875,True,0.8370927318295739
+(c),a·both·vec,T,757 shared,13,0.8494055482166446,0.8269484808454426,0.02245706737120201,"[0.009332095490716261, 0.036337869978858295]",22.0,5.0,0.0015137195587158203,True,0.8446115288220551
+(c),b·raw·prod,T,757 shared,13,0.8414795244385733,0.8269484808454426,0.014531043593130732,"[-0.0022757893304299827, 0.03222053275848789]",25.0,14.0,0.10812902140605732,False,0.8430379746835444
+(c),b·raw·vec,T,757 shared,13,0.845442536327609,0.8269484808454426,0.018494055482166427,"[-0.0012757148751669444, 0.03820837843961636]",30.0,16.0,0.054076031858869555,False,0.8493670886075949
+(c),b·td·prod,T,757 shared,13,0.8375165125495376,0.8269484808454426,0.010568031704095038,"[-0.005215464716960224, 0.027888909478365684]",23.0,15.0,0.2558750795433298,False,0.8405063291139241
+(c),b·td·vec,T,757 shared,13,0.8507265521796565,0.8269484808454426,0.023778071334213946,"[0.0039160671177854295, 0.044755289467565657]",33.0,15.0,0.01328328156224501,True,0.8544303797468354
+(c),b·he·prod,T,757 shared,13,0.8335535006605019,0.8269484808454426,0.006605019815059343,"[-0.011959042900074698, 0.02445004385032423]",32.0,27.0,0.6029232012571504,False,0.8341772151898734
+(c),b·he·vec,T,757 shared,13,0.8520475561426685,0.8269484808454426,0.02509907529722588,"[0.005419505612060197, 0.04466919163460145]",38.0,19.0,0.016348103897376145,True,0.8556962025316456
+(c),b·both·prod,T,757 shared,13,0.8375165125495376,0.8269484808454426,0.010568031704095038,"[-0.005924434303233133, 0.0280972987372191]",23.0,15.0,0.2558750795433298,False,0.8405063291139241
+(c),b·both·vec,T,757 shared,13,0.8480845442536328,0.8269484808454426,0.021136063408190187,"[0.003957523260658244, 0.03966419254161333]",27.0,11.0,0.013852965261321515,True,0.850632911392405
+(c),a·raw·prod,T,757 shared,14,0.8361955085865258,,,,,,,,0.8283208020050126
+(c),a·raw·vec,T,757 shared,14,0.8414795244385733,0.8361955085865258,0.005284015852047519,"[-0.008838383838383868, 0.01963350785340312]",17.0,13.0,0.5846647117286922,False,0.8358395989974937
+(c),a·td·prod,T,757 shared,14,0.8269484808454426,0.8361955085865258,-0.009247027741083214,"[-0.020352944044069274, 0.0013569907460468191]",9.0,16.0,0.2295229434967041,False,0.8145363408521303
+(c),a·td·vec,T,757 shared,14,0.8348745046235139,0.8361955085865258,-0.0013210039630119352,"[-0.01733333333333331, 0.014749658490229939]",15.0,16.0,1.0,False,0.8258145363408521
+(c),a·he·prod,T,757 shared,14,0.8243064729194187,0.8361955085865258,-0.011889035667107084,"[-0.028481334695910594, 0.003911984518884306]",19.0,28.0,0.24296021728332556,False,0.8145363408521303
+(c),a·he·vec,T,757 shared,14,0.8401585204755614,0.8361955085865258,0.003963011889035584,"[-0.016706942911808582, 0.02533391442155307]",27.0,24.0,0.7797679305530743,False,0.8320802005012531
+(c),a·both·prod,T,757 shared,14,0.8322324966974901,0.8361955085865258,-0.003963011889035695,"[-0.018571539141972578, 0.010127040909924721]",10.0,13.0,0.6776394844055176,False,0.8270676691729323
+(c),a·both·vec,T,757 shared,14,0.8467635402906208,0.8361955085865258,0.010568031704095038,"[-0.0015700444215541204, 0.02453987730061347]",17.0,9.0,0.16863754391670227,False,0.8395989974937343
+(c),b·raw·prod,T,757 shared,14,0.8414795244385733,0.8361955085865258,0.005284015852047519,"[-0.004819714165003461, 0.01601024693697108]",11.0,7.0,0.480682373046875,False,0.8443037974683544
+(c),b·raw·vec,T,757 shared,14,0.8375165125495376,0.8361955085865258,0.0013210039630118242,"[-0.013239066966197852, 0.016604941004037914]",17.0,16.0,1.0,False,0.8405063291139241
+(c),b·td·prod,T,757 shared,14,0.8295904887714664,0.8361955085865258,-0.006605019815059454,"[-0.01896415234481537, 0.005065078565509172]",12.0,17.0,0.45825831964612007,False,0.8341772151898734
+(c),b·td·vec,T,757 shared,14,0.8375165125495376,0.8361955085865258,0.0013210039630118242,"[-0.014569536423841067, 0.01734841002377397]",20.0,19.0,1.0,False,0.8417721518987342
+(c),b·he·prod,T,757 shared,14,0.8243064729194187,0.8361955085865258,-0.011889035667107084,"[-0.03180784927364618, 0.009161560867818353]",25.0,34.0,0.2975952082844287,False,0.8265822784810126
+(c),b·he·vec,T,757 shared,14,0.8507265521796565,0.8361955085865258,0.014531043593130732,"[-0.0029416115558649394, 0.03466017637035992]",31.0,20.0,0.16077960181198847,False,0.8518987341772152
+(c),b·both·prod,T,757 shared,14,0.8361955085865258,0.8361955085865258,0.0,"[-0.015235765046267747, 0.015565168198250339]",16.0,16.0,1.0,False,0.8405063291139241
+(c),b·both·vec,T,757 shared,14,0.8507265521796565,0.8361955085865258,0.014531043593130732,"[-0.0014067187817501047, 0.034341038562664315]",21.0,10.0,0.07075554598122835,False,0.8544303797468354
+(c),a·raw·prod,T,757 shared,15,0.8361955085865258,,,,,,,,0.8320802005012531
+(c),a·raw·vec,T,757 shared,15,0.8441215323645971,0.8361955085865258,0.007926023778071278,"[-0.002770372054138062, 0.018944519621109657]",14.0,8.0,0.28627872467041016,False,0.8395989974937343
+(c),a·td·prod,T,757 shared,15,0.8243064729194187,0.8361955085865258,-0.011889035667107084,"[-0.028572357421512175, 0.002680965147453085]",9.0,18.0,0.12207812070846558,False,0.8145363408521303
+(c),a·td·vec,T,757 shared,15,0.8375165125495376,0.8361955085865258,0.0013210039630118242,"[-0.016366766707754984, 0.017972603202486382]",20.0,19.0,1.0,False,0.8308270676691729
+(c),a·he·prod,T,757 shared,15,0.8177014531043593,0.8361955085865258,-0.018494055482166538,"[-0.0369843527738265, -0.0012450229027091797]",19.0,33.0,0.07039422106706228,False,0.8145363408521303
+(c),a·he·vec,T,757 shared,15,0.8269484808454426,0.8361955085865258,-0.009247027741083214,"[-0.029703639282847118, 0.010256739409499317]",22.0,29.0,0.4010619910279374,False,0.8245614035087719
+(c),a·both·prod,T,757 shared,15,0.8361955085865258,0.8361955085865258,0.0,"[-0.014151277460046015, 0.013055970447056725]",10.0,10.0,1.0,False,0.8333333333333334
+(c),a·both·vec,T,757 shared,15,0.8388375165125496,0.8361955085865258,0.0026420079260237594,"[-0.011834319526627168, 0.01633176823440416]",15.0,13.0,0.8505540192127228,False,0.8320802005012531
+(c),b·raw·prod,T,757 shared,15,0.845442536327609,0.8361955085865258,0.009247027741083214,"[-0.002736071810055629, 0.021980042016806728]",14.0,7.0,0.18924713134765625,False,0.8481012658227848
+(c),b·raw·vec,T,757 shared,15,0.8507265521796565,0.8361955085865258,0.014531043593130732,"[0.0013714621651129161, 0.02910382066415535]",23.0,12.0,0.08953107893466952,False,0.8544303797468354
+(c),b·td·prod,T,757 shared,15,0.8282694848084544,0.8361955085865258,-0.00792602377807139,"[-0.025062739302081062, 0.0073441662466700525]",13.0,19.0,0.37708558747544885,False,0.830379746835443
+(c),b·td·vec,T,757 shared,15,0.8414795244385733,0.8361955085865258,0.005284015852047519,"[-0.013949091665955121, 0.023960091562810704]",25.0,21.0,0.6587380770236564,False,0.8455696202531645
+(c),b·he·prod,T,757 shared,15,0.8295904887714664,0.8361955085865258,-0.006605019815059454,"[-0.02403250747832549, 0.01052871176423608]",23.0,28.0,0.5758493477318467,False,0.8316455696202532
+(c),b·he·vec,T,757 shared,15,0.8480845442536328,0.8361955085865258,0.011889035667106973,"[-0.007281996314931613, 0.03141511059179521]",32.0,23.0,0.2806097176983541,False,0.850632911392405
+(c),b·both·prod,T,757 shared,15,0.8388375165125496,0.8361955085865258,0.0026420079260237594,"[-0.010582360979711972, 0.01639447887090423]",17.0,15.0,0.860050065908581,False,0.8430379746835444
+(c),b·both·vec,T,757 shared,15,0.8467635402906208,0.8361955085865258,0.010568031704095038,"[-0.0026670241286863654, 0.023952284585935284]",19.0,11.0,0.20048842206597334,False,0.850632911392405
+(c),a·raw·prod,T,757 shared,16,0.8295904887714664,,,,,,,,0.8233082706766918
+(c),a·raw·vec,T,757 shared,16,0.8414795244385733,0.8295904887714664,0.011889035667106973,"[-0.0013108756888525169, 0.024691759379665744]",19.0,10.0,0.13604594767093658,False,0.8345864661654135
+(c),a·td·prod,T,757 shared,16,0.8163804491413474,0.8295904887714664,-0.013210039630118908,"[-0.031788290043062155, 0.004825528583987825]",14.0,24.0,0.14330665429588407,False,0.8082706766917294
+(c),a·td·vec,T,757 shared,16,0.8414795244385733,0.8295904887714664,0.011889035667106973,"[-0.00834579762395014, 0.03125]",28.0,19.0,0.24296021728332556,False,0.8333333333333334
+(c),a·he·prod,T,757 shared,16,0.8256274768824307,0.8295904887714664,-0.003963011889035695,"[-0.019391568469851954, 0.011976646706586802]",23.0,26.0,0.7754496546815659,False,0.8157894736842105
+(c),a·he·vec,T,757 shared,16,0.8388375165125496,0.8295904887714664,0.009247027741083214,"[-0.008558420495863148, 0.02709376293270313]",30.0,23.0,0.4101027163746913,False,0.8345864661654135
+(c),a·both·prod,T,757 shared,16,0.8348745046235139,0.8295904887714664,0.005284015852047519,"[-0.009079412805093705, 0.020050304845207572]",16.0,12.0,0.5715881884098053,False,0.8320802005012531
+(c),a·both·vec,T,757 shared,16,0.8428005284015853,0.8295904887714664,0.013210039630118908,"[0.0022739346248983163, 0.024531024531024515]",16.0,6.0,0.052478790283203125,False,0.8370927318295739
+(c),b·raw·prod,T,757 shared,16,0.8388375165125496,0.8295904887714664,0.009247027741083214,"[-0.0048902751809770575, 0.02421307506053272]",17.0,10.0,0.24778856337070465,False,0.8417721518987342
+(c),b·raw·vec,T,757 shared,16,0.8467635402906208,0.8295904887714664,0.017173051519154492,"[0.0014260814530549118, 0.0330073349633252]",25.0,12.0,0.04703102743951604,True,0.8493670886075949
+(c),b·td·prod,T,757 shared,16,0.8269484808454426,0.8295904887714664,-0.0026420079260237594,"[-0.02008099421815953, 0.012904060426490858]",18.0,20.0,0.8714146793645341,False,0.8291139240506329
+(c),b·td·vec,T,757 shared,16,0.8428005284015853,0.8295904887714664,0.013210039630118908,"[-0.0036769233555491027, 0.030265772478887183]",24.0,14.0,0.14330665429588407,False,0.8455696202531645
+(c),b·he·prod,T,757 shared,16,0.8295904887714664,0.8295904887714664,0.0,"[-0.01824829414059901, 0.017881705639614887]",28.0,28.0,1.0,False,0.8316455696202532
+(c),b·he·vec,T,757 shared,16,0.845442536327609,0.8295904887714664,0.015852047556142668,"[-0.0028249586459856923, 0.035007770231380166]",33.0,21.0,0.13367423536410522,False,0.8481012658227848
+(c),b·both·prod,T,757 shared,16,0.8388375165125496,0.8295904887714664,0.009247027741083214,"[-0.00431049987596128, 0.02374732907099757]",20.0,13.0,0.296206368599087,False,0.8430379746835444
+(c),b·both·vec,T,757 shared,16,0.8441215323645971,0.8295904887714664,0.014531043593130732,"[-0.002621577332387112, 0.03218309046868387]",24.0,13.0,0.09887174959294498,False,0.8481012658227848
+(c),a·raw·prod,T,757 shared,17,0.8348745046235139,,,,,,,,0.8270676691729323
+(c),a·raw·vec,T,757 shared,17,0.8414795244385733,0.8348745046235139,0.006605019815059454,"[-0.004161760569527558, 0.01831553495869438]",15.0,10.0,0.42435622215270996,False,0.8308270676691729
+(c),a·td·prod,T,757 shared,17,0.8269484808454426,0.8348745046235139,-0.007926023778071278,"[-0.021712060636348528, 0.004656803726710337]",12.0,18.0,0.36159460805356514,False,0.8132832080200502
+(c),a·td·vec,T,757 shared,17,0.8309114927344782,0.8348745046235139,-0.003963011889035695,"[-0.018544990927070442, 0.01100450547743283]",16.0,19.0,0.735878800856881,False,0.8208020050125313
+(c),a·he·prod,T,757 shared,17,0.8229854689564069,0.8348745046235139,-0.011889035667106973,"[-0.030263199376120035, 0.005618293855653415]",20.0,29.0,0.2528697301676033,False,0.8132832080200502
+(c),a·he·vec,T,757 shared,17,0.8388375165125496,0.8348745046235139,0.003963011889035695,"[-0.01462105263157903, 0.02182284980744542]",29.0,26.0,0.7877061896700431,False,0.8283208020050126
+(c),a·both·prod,T,757 shared,17,0.8335535006605019,0.8348745046235139,-0.0013210039630119352,"[-0.012920640232000504, 0.01192132133716778]",12.0,13.0,1.0,False,0.8270676691729323
+(c),a·both·vec,T,757 shared,17,0.8375165125495376,0.8348745046235139,0.0026420079260237594,"[-0.008862629246676471, 0.014398188662733704]",14.0,12.0,0.8450189828872681,False,0.8308270676691729
+(c),b·raw·prod,T,757 shared,17,0.8441215323645971,0.8348745046235139,0.009247027741083214,"[-0.0042410050550103955, 0.02266742323097468]",16.0,9.0,0.2295229434967041,False,0.8455696202531645
+(c),b·raw·vec,T,757 shared,17,0.8494055482166446,0.8348745046235139,0.014531043593130732,"[0.001185418693330376, 0.029851230858693623]",24.0,13.0,0.09887174959294498,False,0.8518987341772152
+(c),b·td·prod,T,757 shared,17,0.8335535006605019,0.8348745046235139,-0.0013210039630119352,"[-0.015759312320916874, 0.012407547674211369]",17.0,18.0,1.0,False,0.8354430379746836
+(c),b·td·vec,T,757 shared,17,0.8441215323645971,0.8348745046235139,0.009247027741083214,"[-0.007417716731546181, 0.026612044817927057]",25.0,18.0,0.3603776529357674,False,0.8481012658227848
+(c),b·he·prod,T,757 shared,17,0.8243064729194187,0.8348745046235139,-0.010568031704095149,"[-0.027678080342410257, 0.006803185121251775]",23.0,31.0,0.3408909412200971,False,0.8265822784810126
+(c),b·he·vec,T,757 shared,17,0.8428005284015853,0.8348745046235139,0.00792602377807139,"[-0.010558318439661166, 0.02695835971616251]",34.0,28.0,0.52577336017565,False,0.8443037974683544
+(c),b·both·prod,T,757 shared,17,0.8348745046235139,0.8348745046235139,0.0,"[-0.014824797843665749, 0.015915119363395184]",20.0,20.0,1.0,False,0.8379746835443038
+(c),b·both·vec,T,757 shared,17,0.8467635402906208,0.8348745046235139,0.011889035667106973,"[-0.0037365752488318247, 0.028351629120529458]",24.0,15.0,0.19959086691960698,False,0.850632911392405
+(c),a·raw·prod,T,757 shared,18,0.8322324966974901,,,,,,,,0.8270676691729323
+(c),a·raw·vec,T,757 shared,18,0.8414795244385733,0.8322324966974901,0.009247027741083214,"[-0.006926658567913507, 0.025471125809671032]",20.0,13.0,0.296206368599087,False,0.8370927318295739
+(c),a·td·prod,T,757 shared,18,0.8256274768824307,0.8322324966974901,-0.006605019815059454,"[-0.019608976538592247, 0.006983484392702326]",11.0,16.0,0.44206833839416504,False,0.8170426065162907
+(c),a·td·vec,T,757 shared,18,0.8467635402906208,0.8322324966974901,0.014531043593130732,"[-0.0014009068974124266, 0.031609195402298895]",23.0,12.0,0.08953107893466952,False,0.8383458646616542
+(c),a·he·prod,T,757 shared,18,0.8243064729194187,0.8322324966974901,-0.00792602377807139,"[-0.02727303733101819, 0.010755979811279293]",24.0,30.0,0.49661743531793345,False,0.8132832080200502
+(c),a·he·vec,T,757 shared,18,0.8322324966974901,0.8322324966974901,0.0,"[-0.023077367205542754, 0.022099627125706713]",32.0,32.0,1.0,False,0.8258145363408521
+(c),a·both·prod,T,757 shared,18,0.8309114927344782,0.8322324966974901,-0.0013210039630119352,"[-0.014905191132656587, 0.012486092175575515]",12.0,13.0,1.0,False,0.8283208020050126
+(c),a·both·vec,T,757 shared,18,0.8388375165125496,0.8322324966974901,0.006605019815059454,"[-0.008051583827772948, 0.02160111456225401]",17.0,12.0,0.45825831964612007,False,0.8358395989974937
+(c),b·raw·prod,T,757 shared,18,0.8361955085865258,0.8322324966974901,0.003963011889035695,"[-0.012871677813462969, 0.02174135476600031]",20.0,17.0,0.7428293587290682,False,0.839240506329114
+(c),b·raw·vec,T,757 shared,18,0.8428005284015853,0.8322324966974901,0.010568031704095149,"[-0.009616545893719882, 0.03089925395674752]",29.0,21.0,0.3222363203575469,False,0.8455696202531645
+(c),b·td·prod,T,757 shared,18,0.8282694848084544,0.8322324966974901,-0.003963011889035695,"[-0.019841269841269774, 0.012403368083400156]",18.0,21.0,0.7492586247608418,False,0.8316455696202532
+(c),b·td·vec,T,757 shared,18,0.8414795244385733,0.8322324966974901,0.009247027741083214,"[-0.008452202577165108, 0.02754820936639113]",27.0,20.0,0.38169339766321275,False,0.8455696202531645
+(c),b·he·prod,T,757 shared,18,0.8190224570673712,0.8322324966974901,-0.013210039630118908,"[-0.035276524720317594, 0.007886721698772532]",28.0,38.0,0.2678116648465871,False,0.8202531645569621
+(c),b·he·vec,T,757 shared,18,0.8348745046235139,0.8322324966974901,0.0026420079260237594,"[-0.020062697747999233, 0.026442625661375674]",35.0,33.0,0.9035973456835127,False,0.839240506329114
+(c),b·both·prod,T,757 shared,18,0.8348745046235139,0.8322324966974901,0.0026420079260237594,"[-0.01378259008931206, 0.02049465971187286]",20.0,18.0,0.8714146793645341,False,0.839240506329114
+(c),b·both·vec,T,757 shared,18,0.8295904887714664,0.8322324966974901,-0.0026420079260237594,"[-0.02055002327437156, 0.016670168067226782]",21.0,23.0,0.880395821280672,False,0.8341772151898734
+(c),a·raw·prod,T,757 shared,19,0.8309114927344782,,,,,,,,0.8258145363408521
+(c),a·raw·vec,T,757 shared,19,0.8441215323645971,0.8309114927344782,0.013210039630118908,"[0.0, 0.02722080768248739]",17.0,7.0,0.06391465663909912,False,0.8358395989974937
+(c),a·td·prod,T,757 shared,19,0.8309114927344782,0.8309114927344782,0.0,"[-0.017167523712871578, 0.017054416163095876]",16.0,16.0,1.0,False,0.8220551378446115
+(c),a·td·vec,T,757 shared,19,0.8441215323645971,0.8309114927344782,0.013210039630118908,"[-0.003660240872595063, 0.030265772478887294]",23.0,13.0,0.13249816396273675,False,0.8320802005012531
+(c),a·he·prod,T,757 shared,19,0.821664464993395,0.8309114927344782,-0.009247027741083214,"[-0.027261743832375816, 0.007957823876906089]",22.0,29.0,0.4010619910279374,False,0.8157894736842105
+(c),a·he·vec,T,757 shared,19,0.8428005284015853,0.8309114927344782,0.011889035667107084,"[-0.006994238156209975, 0.031516746411483214]",31.0,22.0,0.27167916606550335,False,0.8358395989974937
+(c),a·both·prod,T,757 shared,19,0.8388375165125496,0.8309114927344782,0.00792602377807139,"[-0.005487345820526365, 0.021677084814669217]",17.0,11.0,0.34492845088243484,False,0.8358395989974937
+(c),a·both·vec,T,757 shared,19,0.8480845442536328,0.8309114927344782,0.017173051519154603,"[0.004359678596597211, 0.03117086038961037]",21.0,8.0,0.0241195447742939,True,0.8408521303258145
+(c),b·raw·prod,T,757 shared,19,0.8414795244385733,0.8309114927344782,0.010568031704095149,"[-0.005658716054755741, 0.02786460755524254]",22.0,14.0,0.24298495403490966,False,0.8443037974683544
+(c),b·raw·vec,T,757 shared,19,0.8507265521796565,0.8309114927344782,0.019815059445178362,"[0.001324459511545656, 0.039326661643790714]",31.0,16.0,0.03998605682605215,True,0.8531645569620253
+(c),b·td·prod,T,757 shared,19,0.8282694848084544,0.8309114927344782,-0.0026420079260237594,"[-0.0194515438794616, 0.014341590612776955]",18.0,20.0,0.8714146793645341,False,0.8316455696202532
+(c),b·td·vec,T,757 shared,19,0.8401585204755614,0.8309114927344782,0.009247027741083214,"[-0.008516594921704456, 0.027212740485006996]",27.0,20.0,0.38169339766321275,False,0.8430379746835444
+(c),b·he·prod,T,757 shared,19,0.8282694848084544,0.8309114927344782,-0.0026420079260237594,"[-0.024363517637534953, 0.01825564971751401]",27.0,29.0,0.8938530948350216,False,0.8291139240506329
+(c),b·he·vec,T,757 shared,19,0.8560105680317041,0.8309114927344782,0.02509907529722588,"[0.0030665551217699373, 0.04695111847555921]",40.0,21.0,0.0204147137996349,True,0.859493670886076
+(c),b·both·prod,T,757 shared,19,0.8467635402906208,0.8309114927344782,0.015852047556142668,"[-0.0022839648248385714, 0.0343660817914931]",29.0,17.0,0.10380535550410741,False,0.850632911392405
+(c),b·both·vec,T,757 shared,19,0.8480845442536328,0.8309114927344782,0.017173051519154603,"[0.0, 0.034760847869155266]",27.0,14.0,0.05958388801809633,False,0.8518987341772152
+(c),a·raw·prod,T,757 shared,20,0.8256274768824307,,,,,,,,0.8245614035087719
+(c),a·raw·vec,T,757 shared,20,0.8428005284015853,0.8256274768824307,0.017173051519154603,"[0.0020897196539377623, 0.03276593687557745]",26.0,13.0,0.05325191409792752,False,0.8370927318295739
+(c),a·td·prod,T,757 shared,20,0.8295904887714664,0.8256274768824307,0.003963011889035695,"[-0.009986448951936617, 0.018156469867907105]",17.0,14.0,0.720100131817162,False,0.8195488721804511
+(c),a·td·vec,T,757 shared,20,0.8348745046235139,0.8256274768824307,0.009247027741083214,"[-0.003937137210673888, 0.022786618444846276]",17.0,10.0,0.24778856337070465,False,0.8233082706766918
+(c),a·he·prod,T,757 shared,20,0.8229854689564069,0.8256274768824307,-0.0026420079260237594,"[-0.020929211622658393, 0.01528746695527206]",27.0,29.0,0.8938530948350216,False,0.8170426065162907
+(c),a·he·vec,T,757 shared,20,0.8375165125495376,0.8256274768824307,0.011889035667106973,"[-0.004846575610711284, 0.028770358749334653]",30.0,21.0,0.2624375357110438,False,0.8308270676691729
+(c),a·both·prod,T,757 shared,20,0.8335535006605019,0.8256274768824307,0.007926023778071278,"[-0.005714490087880603, 0.021964850931559282]",17.0,11.0,0.34492845088243484,False,0.8283208020050126
+(c),a·both·vec,T,757 shared,20,0.845442536327609,0.8256274768824307,0.019815059445178362,"[0.007740941653898667, 0.03237555901224966]",20.0,5.0,0.004077315330505371,True,0.8395989974937343
+(c),b·raw·prod,T,757 shared,20,0.8295904887714664,0.8256274768824307,0.003963011889035695,"[-0.009524188053599785, 0.017647244269712974]",15.0,12.0,0.7011080384254456,False,0.8329113924050633
+(c),b·raw·vec,T,757 shared,20,0.8361955085865258,0.8256274768824307,0.010568031704095149,"[-0.002817200231089506, 0.024971310235464745]",19.0,11.0,0.20048842206597334,False,0.8405063291139241
+(c),b·td·prod,T,757 shared,20,0.8295904887714664,0.8256274768824307,0.003963011889035695,"[-0.009791586753612008, 0.017882806404514274]",17.0,14.0,0.720100131817162,False,0.8316455696202532
+(c),b·td·vec,T,757 shared,20,0.8414795244385733,0.8256274768824307,0.015852047556142668,"[-0.0013071895424836555, 0.032345852648256256]",25.0,13.0,0.07295138851623051,False,0.8455696202531645
+(c),b·he·prod,T,757 shared,20,0.8256274768824307,0.8256274768824307,0.0,"[-0.020204412186820755, 0.0200453119018144]",28.0,28.0,1.0,False,0.8278481012658228
+(c),b·he·vec,T,757 shared,20,0.8441215323645971,0.8256274768824307,0.018494055482166427,"[0.0, 0.03703703703703698]",33.0,19.0,0.07039422106706228,False,0.8468354430379746
+(c),b·both·prod,T,757 shared,20,0.8401585204755614,0.8256274768824307,0.014531043593130732,"[0.0, 0.029448033466754654]",22.0,11.0,0.08014331245794892,False,0.8443037974683544
+(c),b·both·vec,T,757 shared,20,0.8441215323645971,0.8256274768824307,0.018494055482166427,"[0.002953883916934558, 0.034124863542749115]",23.0,9.0,0.020061607006937265,True,0.8481012658227848
+(e),nested pick,S nested,757 shared,662,0.7952443857331571,0.7952443857331571,0.0,"[-0.022697017752521947, 0.02093845154399219]",29.0,29.0,1.0,False,
+(e),nested pick,S nested,757 shared,1,0.8071334214002642,0.7899603698811096,0.017173051519154603,"[-0.0026561307959650725, 0.03343934986037319]",34.0,21.0,0.10478948242660333,False,
+(e),nested pick,S nested,757 shared,2,0.7912813738441216,0.7886393659180978,0.0026420079260237594,"[-0.01424117330772143, 0.01711523655820458]",16.0,14.0,0.8555355519056321,False,
+(e),nested pick,S nested,757 shared,3,0.7992073976221928,0.8071334214002642,-0.00792602377807139,"[-0.0240972941539915, 0.008955223880596996]",24.0,30.0,0.49661743531793345,False,
+(e),nested pick,S nested,757 shared,4,0.7939233817701453,0.7912813738441216,0.0026420079260237594,"[-0.017482870427015802, 0.022642297473769623]",27.0,25.0,0.8898839652765371,False,
+(e),nested pick,S nested,757 shared,5,0.7873183619550859,0.7846763540290621,0.0026420079260237594,"[-0.023416164097982348, 0.026539946887312114]",31.0,29.0,0.8974218269914307,False,
+(e),nested pick,S nested,757 shared,6,0.8044914134742405,0.7820343461030383,0.022457067371202122,"[0.0035773400645535275, 0.04084255713307182]",35.0,18.0,0.027008317653722358,True,
+(e),nested pick,S nested,757 shared,7,0.8071334214002642,0.7886393659180978,0.018494055482166427,"[-0.00483910115878488, 0.044354966474508324]",34.0,20.0,0.0759047294891014,False,
+(e),nested pick,S nested,757 shared,8,0.8058124174372523,0.7833553500660502,0.022457067371202122,"[-0.005313511056445354, 0.04892161795039492]",37.0,20.0,0.03314396778750544,False,
+(e),nested pick,S nested,757 shared,9,0.8071334214002642,0.7952443857331571,0.011889035667107084,"[-0.01178146008240657, 0.03369468218878026]",33.0,24.0,0.2892437471090205,False,
+(e),nested pick,S nested,757 shared,10,0.8071334214002642,0.7873183619550859,0.019815059445178362,"[0.0034837177338653963, 0.039801986085508625]",36.0,21.0,0.06273668035582848,False,
+(e),nested pick,S nested,757 shared,11,0.7992073976221928,0.7859973579920739,0.013210039630118908,"[-0.01298748217100808, 0.041282353633788405]",33.0,23.0,0.2288055412343561,False,
+(e),nested pick,S nested,757 shared,12,0.8058124174372523,0.7926023778071334,0.013210039630118908,"[-0.010526870974905652, 0.0357142857142857]",32.0,22.0,0.22032849417661093,False,
+(e),nested pick,S nested,757 shared,13,0.7952443857331571,0.7912813738441216,0.003963011889035584,"[-0.011363905644118905, 0.01941747572815533]",18.0,15.0,0.7283324808813632,False,
+(e),nested pick,S nested,757 shared,14,0.8177014531043593,0.7939233817701453,0.023778071334213946,"[0.0011147651980461, 0.04570024246257648]",37.0,19.0,0.022241389472860106,True,
+(e),nested pick,S nested,757 shared,15,0.7965653896961691,0.7939233817701453,0.0026420079260237594,"[-0.010702110146662745, 0.0180327868852459]",21.0,19.0,0.8746293123804207,False,
+(e),nested pick,S nested,757 shared,16,0.808454425363276,0.8018494055482166,0.006605019815059454,"[-0.015338603114676755, 0.029412847613272102]",27.0,22.0,0.5681724128491652,False,
+(e),nested pick,S nested,757 shared,17,0.7859973579920739,0.7714663143989432,0.014531043593130732,"[-0.0017926016830294154, 0.03218021398914074]",35.0,24.0,0.19252645776146274,False,
+(e),nested pick,S nested,757 shared,18,0.7965653896961691,0.7873183619550859,0.009247027741083214,"[-0.012567607240043813, 0.029988754325259492]",30.0,23.0,0.4101027163746913,False,
+(e),nested pick,S nested,757 shared,19,0.8071334214002642,0.7886393659180978,0.018494055482166427,"[0.0010680101861608672, 0.03577284270673508]",31.0,17.0,0.05946337525377034,False,
+(e),nested pick,S nested,757 shared,20,0.7926023778071334,0.7846763540290621,0.007926023778071278,"[-0.009845288326300942, 0.02631945462542152]",32.0,26.0,0.5118423084381691,False,
+(e),nested pick,S nested,798 production kept,662,0.7844611528822055,0.7919799498746867,-0.007518796992481147,"[-0.03486330890954985, 0.01597507987220445]",32.0,38.0,0.5504125118224712,False,
+(e),nested pick,S nested,798 production kept,1,0.7919799498746867,0.7869674185463659,0.005012531328320802,"[-0.020307158396353525, 0.025346806234293]",35.0,31.0,0.7122308826373509,False,
+(e),nested pick,S nested,798 production kept,2,0.7794486215538847,0.7857142857142857,-0.006265664160400974,"[-0.027154220799877855, 0.011494252873563208]",18.0,23.0,0.5327092552361137,False,
+(e),nested pick,S nested,798 production kept,3,0.7882205513784462,0.7994987468671679,-0.011278195488721776,"[-0.03308395235075638, 0.008423744545845302]",30.0,39.0,0.3355576182340152,False,
+(e),nested pick,S nested,798 production kept,4,0.7832080200501254,0.7894736842105263,-0.006265664160400974,"[-0.029448757178818577, 0.015386904761904675]",29.0,34.0,0.6146550157654618,False,
+(e),nested pick,S nested,798 production kept,5,0.7694235588972431,0.7781954887218046,-0.00877192982456143,"[-0.04636011568251918, 0.020318092061752453]",34.0,41.0,0.48868297090314317,False,
+(e),nested pick,S nested,798 production kept,6,0.7994987468671679,0.7781954887218046,0.02130325814536338,"[0.0036895290971257853, 0.03768885410659856]",38.0,21.0,0.036343179957053884,True,
+(e),nested pick,S nested,798 production kept,7,0.7957393483709273,0.7832080200501254,0.012531328320801949,"[-0.013784461152882125, 0.03814740785888427]",36.0,26.0,0.25285439418811073,False,
+(e),nested pick,S nested,798 production kept,8,0.7919799498746867,0.7832080200501254,0.00877192982456132,"[-0.02649006622516548, 0.03703703703703698]",39.0,32.0,0.47668779343427553,False,
+(e),nested pick,S nested,798 production kept,9,0.7982456140350878,0.7882205513784462,0.010025062656641603,"[-0.015625, 0.03286985801649375]",38.0,30.0,0.39612484029702977,False,
+(e),nested pick,S nested,798 production kept,10,0.7944862155388471,0.7807017543859649,0.013784461152882233,"[-0.009143994749507741, 0.03850913663656697]",41.0,30.0,0.23509756240834187,False,
+(e),nested pick,S nested,798 production kept,11,0.7882205513784462,0.7844611528822055,0.003759398496240629,"[-0.021918559858691792, 0.027821069488041625]",35.0,32.0,0.8071946913670247,False,
+(e),nested pick,S nested,798 production kept,12,0.7894736842105263,0.7869674185463659,0.0025062656641604564,"[-0.027158834692829315, 0.027207918804083086]",36.0,34.0,0.9049745264594622,False,
+(e),nested pick,S nested,798 production kept,13,0.7832080200501254,0.7882205513784462,-0.005012531328320802,"[-0.03267993638133219, 0.0176483602290474]",19.0,23.0,0.6439689563703723,False,
+(e),nested pick,S nested,798 production kept,14,0.8057644110275689,0.7907268170426065,0.015037593984962405,"[-0.010974313752091517, 0.0380097122375302]",40.0,28.0,0.1818100545355934,False,
+(e),nested pick,S nested,798 production kept,15,0.7882205513784462,0.7944862155388471,-0.006265664160400974,"[-0.023696682464455, 0.010817510994587295]",22.0,27.0,0.5681724128491652,False,
+(e),nested pick,S nested,798 production kept,16,0.8007518796992481,0.8007518796992481,0.0,"[-0.02184875994909902, 0.021962334883271893]",29.0,29.0,1.0,False,
+(e),nested pick,S nested,798 production kept,17,0.7706766917293233,0.7644110275689223,0.006265664160400974,"[-0.022059635709954117, 0.02950714902769691]",38.0,33.0,0.6353076420876663,False,
+(e),nested pick,S nested,798 production kept,18,0.7857142857142857,0.7857142857142857,0.0,"[-0.027491881620556175, 0.02416954960418213]",32.0,32.0,1.0,False,
+(e),nested pick,S nested,798 production kept,19,0.7944862155388471,0.7819548872180451,0.01253132832080206,"[-0.009772385501963434, 0.03229371796671833]",33.0,23.0,0.2288055412343561,False,
+(e),nested pick,S nested,798 production kept,20,0.7781954887218046,0.7781954887218046,0.0,"[-0.023178687134512883, 0.020833850546176792]",34.0,34.0,1.0,False,

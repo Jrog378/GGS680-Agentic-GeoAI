@@ -1,0 +1,7 @@
+{
+ "A-ft": {
+  "when": "2026-10-26 20:44 EDT (decided at the logged projection after the first B-ft outer fold)",
+  "why": "Projection after the first fine-tune (B-ft outer fold 1: 5,776 s; 6 epochs chosen on inner fold 1, against phase 2's 3): total GPU run ~11.3 h against the ~7 h budget. B-ft alone runs to ~7.3 h. The plan's order is B-head, B-ft, A-head, A-ft, so A-ft (last; ~2.4 h at phase 2's settings) is not run. Epochs were not cut. A-head was run from cached frozen tokens (identical procedure; spatialcv_ahead_cached.py), which needs minutes, not GPU hours.",
+  "would need": "about 2.4 h of the Mac GPU alone (5 outer folds x up to 20 epochs of ~68 s, plus predictions)"
+ }
+}

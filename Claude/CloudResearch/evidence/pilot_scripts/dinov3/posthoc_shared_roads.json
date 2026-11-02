@@ -1,0 +1,86 @@
+{
+ "tile rule": {
+  "validation roads": 124,
+  "sharing an id with a training road": 87,
+  "shared id": {
+   "roads": 87,
+   "flooded": 42,
+   "base + DINOv2 cues (production)": 0.897,
+   "base + DINOv3 cues (frozen)": 0.862,
+   "base + DINOv2 cues + DINOv3 head cues": 0.92,
+   "base + DINOv2 cues + DINOv3 fine-tuned cues": 0.931,
+   "base + DINOv3 fine-tuned cues": 0.931,
+   "base + DINOv2 cues + DINOv3 fine-tuned cues vs production: fixed / broken / McNemar p": [
+    4,
+    1,
+    0.375
+   ],
+   "base + DINOv3 fine-tuned cues vs production: fixed / broken / McNemar p": [
+    4,
+    1,
+    0.375
+   ]
+  },
+  "not shared": {
+   "roads": 37,
+   "flooded": 21,
+   "base + DINOv2 cues (production)": 0.73,
+   "base + DINOv3 cues (frozen)": 0.784,
+   "base + DINOv2 cues + DINOv3 head cues": 0.838,
+   "base + DINOv2 cues + DINOv3 fine-tuned cues": 0.838,
+   "base + DINOv3 fine-tuned cues": 0.784,
+   "base + DINOv2 cues + DINOv3 fine-tuned cues vs production: fixed / broken / McNemar p": [
+    4,
+    0,
+    0.125
+   ],
+   "base + DINOv3 fine-tuned cues vs production: fixed / broken / McNemar p": [
+    2,
+    0,
+    0.5
+   ]
+  }
+ },
+ "production cloud rule": {
+  "validation roads": 104,
+  "sharing an id with a training road": 77,
+  "shared id": {
+   "roads": 77,
+   "flooded": 39,
+   "base + DINOv2 cues (production)": 0.831,
+   "base + DINOv3 cues (frozen)": 0.831,
+   "base + DINOv2 cues + DINOv3 head cues": 0.935,
+   "base + DINOv2 cues + DINOv3 fine-tuned cues": 0.935,
+   "base + DINOv3 fine-tuned cues": 0.961,
+   "base + DINOv2 cues + DINOv3 fine-tuned cues vs production: fixed / broken / McNemar p": [
+    10,
+    2,
+    0.03857421875
+   ],
+   "base + DINOv3 fine-tuned cues vs production: fixed / broken / McNemar p": [
+    10,
+    0,
+    0.001953125
+   ]
+  },
+  "not shared": {
+   "roads": 27,
+   "flooded": 17,
+   "base + DINOv2 cues (production)": 0.778,
+   "base + DINOv3 cues (frozen)": 0.778,
+   "base + DINOv2 cues + DINOv3 head cues": 0.815,
+   "base + DINOv2 cues + DINOv3 fine-tuned cues": 0.778,
+   "base + DINOv3 fine-tuned cues": 0.778,
+   "base + DINOv2 cues + DINOv3 fine-tuned cues vs production: fixed / broken / McNemar p": [
+    0,
+    0,
+    1.0
+   ],
+   "base + DINOv3 fine-tuned cues vs production: fixed / broken / McNemar p": [
+    0,
+    0,
+    1.0
+   ]
+  }
+ }
+}

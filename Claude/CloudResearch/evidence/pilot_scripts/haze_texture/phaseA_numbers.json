@@ -1,0 +1,1159 @@
+{
+ "agreement_spearman": {
+  "all 1037": {
+   "rise_med": {
+    "rise_med": 1.0,
+    "hot_post_med": 0.28,
+    "atten_med": 0.196,
+    "spot_post_mean": 0.565,
+    "rise_p90": 0.91,
+    "hot_post_p90": 0.265,
+    "atten_p90": 0.179,
+    "cloud_dark_rise_road": 0.648,
+    "cloud_bright_road": 0.495,
+    "cloud_dark_road": 0.638,
+    "spot_road": 0.595
+   },
+   "hot_post_med": {
+    "rise_med": 0.28,
+    "hot_post_med": 1.0,
+    "atten_med": 0.222,
+    "spot_post_mean": 0.141,
+    "rise_p90": 0.266,
+    "hot_post_p90": 0.832,
+    "atten_p90": 0.18,
+    "cloud_dark_rise_road": 0.36,
+    "cloud_bright_road": 0.217,
+    "cloud_dark_road": 0.35,
+    "spot_road": 0.321
+   },
+   "atten_med": {
+    "rise_med": 0.196,
+    "hot_post_med": 0.222,
+    "atten_med": 1.0,
+    "spot_post_mean": 0.099,
+    "rise_p90": 0.198,
+    "hot_post_p90": 0.088,
+    "atten_p90": 0.909,
+    "cloud_dark_rise_road": 0.332,
+    "cloud_bright_road": 0.343,
+    "cloud_dark_road": 0.305,
+    "spot_road": 0.286
+   },
+   "spot_post_mean": {
+    "rise_med": 0.565,
+    "hot_post_med": 0.141,
+    "atten_med": 0.099,
+    "spot_post_mean": 1.0,
+    "rise_p90": 0.599,
+    "hot_post_p90": 0.181,
+    "atten_p90": 0.126,
+    "cloud_dark_rise_road": 0.628,
+    "cloud_bright_road": 0.583,
+    "cloud_dark_road": 0.679,
+    "spot_road": 0.612
+   },
+   "rise_p90": {
+    "rise_med": 0.91,
+    "hot_post_med": 0.266,
+    "atten_med": 0.198,
+    "spot_post_mean": 0.599,
+    "rise_p90": 1.0,
+    "hot_post_p90": 0.303,
+    "atten_p90": 0.209,
+    "cloud_dark_rise_road": 0.685,
+    "cloud_bright_road": 0.518,
+    "cloud_dark_road": 0.694,
+    "spot_road": 0.674
+   },
+   "hot_post_p90": {
+    "rise_med": 0.265,
+    "hot_post_med": 0.832,
+    "atten_med": 0.088,
+    "spot_post_mean": 0.181,
+    "rise_p90": 0.303,
+    "hot_post_p90": 1.0,
+    "atten_p90": 0.112,
+    "cloud_dark_rise_road": 0.294,
+    "cloud_bright_road": 0.181,
+    "cloud_dark_road": 0.296,
+    "spot_road": 0.256
+   },
+   "atten_p90": {
+    "rise_med": 0.179,
+    "hot_post_med": 0.18,
+    "atten_med": 0.909,
+    "spot_post_mean": 0.126,
+    "rise_p90": 0.209,
+    "hot_post_p90": 0.112,
+    "atten_p90": 1.0,
+    "cloud_dark_rise_road": 0.303,
+    "cloud_bright_road": 0.349,
+    "cloud_dark_road": 0.299,
+    "spot_road": 0.257
+   },
+   "cloud_dark_rise_road": {
+    "rise_med": 0.648,
+    "hot_post_med": 0.36,
+    "atten_med": 0.332,
+    "spot_post_mean": 0.628,
+    "rise_p90": 0.685,
+    "hot_post_p90": 0.294,
+    "atten_p90": 0.303,
+    "cloud_dark_rise_road": 1.0,
+    "cloud_bright_road": 0.727,
+    "cloud_dark_road": 0.901,
+    "spot_road": 0.811
+   },
+   "cloud_bright_road": {
+    "rise_med": 0.495,
+    "hot_post_med": 0.217,
+    "atten_med": 0.343,
+    "spot_post_mean": 0.583,
+    "rise_p90": 0.518,
+    "hot_post_p90": 0.181,
+    "atten_p90": 0.349,
+    "cloud_dark_rise_road": 0.727,
+    "cloud_bright_road": 1.0,
+    "cloud_dark_road": 0.71,
+    "spot_road": 0.667
+   },
+   "cloud_dark_road": {
+    "rise_med": 0.638,
+    "hot_post_med": 0.35,
+    "atten_med": 0.305,
+    "spot_post_mean": 0.679,
+    "rise_p90": 0.694,
+    "hot_post_p90": 0.296,
+    "atten_p90": 0.299,
+    "cloud_dark_rise_road": 0.901,
+    "cloud_bright_road": 0.71,
+    "cloud_dark_road": 1.0,
+    "spot_road": 0.784
+   },
+   "spot_road": {
+    "rise_med": 0.595,
+    "hot_post_med": 0.321,
+    "atten_med": 0.286,
+    "spot_post_mean": 0.612,
+    "rise_p90": 0.674,
+    "hot_post_p90": 0.256,
+    "atten_p90": 0.257,
+    "cloud_dark_rise_road": 0.811,
+    "cloud_bright_road": 0.667,
+    "cloud_dark_road": 0.784,
+    "spot_road": 1.0
+   }
+  },
+  "kept 798": {
+   "rise_med": {
+    "rise_med": 1.0,
+    "hot_post_med": 0.065,
+    "atten_med": -0.168,
+    "spot_post_mean": 0.308,
+    "rise_p90": 0.843,
+    "hot_post_p90": 0.076,
+    "atten_p90": -0.169,
+    "cloud_dark_rise_road": 0.263,
+    "cloud_bright_road": 0.067,
+    "cloud_dark_road": 0.291,
+    "spot_road": 0.26
+   },
+   "hot_post_med": {
+    "rise_med": 0.065,
+    "hot_post_med": 1.0,
+    "atten_med": 0.174,
+    "spot_post_mean": -0.106,
+    "rise_p90": 0.046,
+    "hot_post_p90": 0.758,
+    "atten_p90": 0.132,
+    "cloud_dark_rise_road": 0.151,
+    "cloud_bright_road": -0.059,
+    "cloud_dark_road": 0.134,
+    "spot_road": 0.144
+   },
+   "atten_med": {
+    "rise_med": -0.168,
+    "hot_post_med": 0.174,
+    "atten_med": 1.0,
+    "spot_post_mean": -0.26,
+    "rise_p90": -0.159,
+    "hot_post_p90": 0.0,
+    "atten_p90": 0.884,
+    "cloud_dark_rise_road": -0.006,
+    "cloud_bright_road": -0.033,
+    "cloud_dark_road": -0.036,
+    "spot_road": -0.004
+   },
+   "spot_post_mean": {
+    "rise_med": 0.308,
+    "hot_post_med": -0.106,
+    "atten_med": -0.26,
+    "spot_post_mean": 1.0,
+    "rise_p90": 0.367,
+    "hot_post_p90": 0.03,
+    "atten_p90": -0.204,
+    "cloud_dark_rise_road": 0.208,
+    "cloud_bright_road": 0.088,
+    "cloud_dark_road": 0.358,
+    "spot_road": 0.258
+   },
+   "rise_p90": {
+    "rise_med": 0.843,
+    "hot_post_med": 0.046,
+    "atten_med": -0.159,
+    "spot_post_mean": 0.367,
+    "rise_p90": 1.0,
+    "hot_post_p90": 0.136,
+    "atten_p90": -0.118,
+    "cloud_dark_rise_road": 0.359,
+    "cloud_bright_road": 0.121,
+    "cloud_dark_road": 0.422,
+    "spot_road": 0.414
+   },
+   "hot_post_p90": {
+    "rise_med": 0.076,
+    "hot_post_med": 0.758,
+    "atten_med": 0.0,
+    "spot_post_mean": 0.03,
+    "rise_p90": 0.136,
+    "hot_post_p90": 1.0,
+    "atten_p90": 0.059,
+    "cloud_dark_rise_road": 0.14,
+    "cloud_bright_road": 0.01,
+    "cloud_dark_road": 0.151,
+    "spot_road": 0.097
+   },
+   "atten_p90": {
+    "rise_med": -0.169,
+    "hot_post_med": 0.132,
+    "atten_med": 0.884,
+    "spot_post_mean": -0.204,
+    "rise_p90": -0.118,
+    "hot_post_p90": 0.059,
+    "atten_p90": 1.0,
+    "cloud_dark_rise_road": -0.005,
+    "cloud_bright_road": 0.022,
+    "cloud_dark_road": 0.01,
+    "spot_road": -0.025
+   },
+   "cloud_dark_rise_road": {
+    "rise_med": 0.263,
+    "hot_post_med": 0.151,
+    "atten_med": -0.006,
+    "spot_post_mean": 0.208,
+    "rise_p90": 0.359,
+    "hot_post_p90": 0.14,
+    "atten_p90": -0.005,
+    "cloud_dark_rise_road": 1.0,
+    "cloud_bright_road": 0.021,
+    "cloud_dark_road": 0.633,
+    "spot_road": 0.472
+   },
+   "cloud_bright_road": {
+    "rise_med": 0.067,
+    "hot_post_med": -0.059,
+    "atten_med": -0.033,
+    "spot_post_mean": 0.088,
+    "rise_p90": 0.121,
+    "hot_post_p90": 0.01,
+    "atten_p90": 0.022,
+    "cloud_dark_rise_road": 0.021,
+    "cloud_bright_road": 1.0,
+    "cloud_dark_road": 0.128,
+    "spot_road": 0.02
+   },
+   "cloud_dark_road": {
+    "rise_med": 0.291,
+    "hot_post_med": 0.134,
+    "atten_med": -0.036,
+    "spot_post_mean": 0.358,
+    "rise_p90": 0.422,
+    "hot_post_p90": 0.151,
+    "atten_p90": 0.01,
+    "cloud_dark_rise_road": 0.633,
+    "cloud_bright_road": 0.128,
+    "cloud_dark_road": 1.0,
+    "spot_road": 0.449
+   },
+   "spot_road": {
+    "rise_med": 0.26,
+    "hot_post_med": 0.144,
+    "atten_med": -0.004,
+    "spot_post_mean": 0.258,
+    "rise_p90": 0.414,
+    "hot_post_p90": 0.097,
+    "atten_p90": -0.025,
+    "cloud_dark_rise_road": 0.472,
+    "cloud_bright_road": 0.02,
+    "cloud_dark_road": 0.449,
+    "spot_road": 1.0
+   }
+  }
+ },
+ "tile_agreement_spearman": {
+  "raw_rise_med": {
+   "raw_rise_med": 1.0,
+   "rise_p90": 0.268,
+   "atten_med": 0.128,
+   "hot_post_p90": 0.085,
+   "spot_post_mean": 0.556,
+   "mask_bright": 0.297,
+   "mask_dark": 0.542,
+   "mask_dark_rise": 0.743
+  },
+  "rise_p90": {
+   "raw_rise_med": 0.268,
+   "rise_p90": 1.0,
+   "atten_med": 0.021,
+   "hot_post_p90": 0.41,
+   "spot_post_mean": 0.676,
+   "mask_bright": 0.666,
+   "mask_dark": 0.763,
+   "mask_dark_rise": 0.627
+  },
+  "atten_med": {
+   "raw_rise_med": 0.128,
+   "rise_p90": 0.021,
+   "atten_med": 1.0,
+   "hot_post_p90": 0.125,
+   "spot_post_mean": 0.149,
+   "mask_bright": 0.122,
+   "mask_dark": -0.109,
+   "mask_dark_rise": 0.115
+  },
+  "hot_post_p90": {
+   "raw_rise_med": 0.085,
+   "rise_p90": 0.41,
+   "atten_med": 0.125,
+   "hot_post_p90": 1.0,
+   "spot_post_mean": 0.36,
+   "mask_bright": 0.277,
+   "mask_dark": 0.292,
+   "mask_dark_rise": 0.276
+  },
+  "spot_post_mean": {
+   "raw_rise_med": 0.556,
+   "rise_p90": 0.676,
+   "atten_med": 0.149,
+   "hot_post_p90": 0.36,
+   "spot_post_mean": 1.0,
+   "mask_bright": 0.704,
+   "mask_dark": 0.812,
+   "mask_dark_rise": 0.781
+  },
+  "mask_bright": {
+   "raw_rise_med": 0.297,
+   "rise_p90": 0.666,
+   "atten_med": 0.122,
+   "hot_post_p90": 0.277,
+   "spot_post_mean": 0.704,
+   "mask_bright": 1.0,
+   "mask_dark": 0.673,
+   "mask_dark_rise": 0.546
+  },
+  "mask_dark": {
+   "raw_rise_med": 0.542,
+   "rise_p90": 0.763,
+   "atten_med": -0.109,
+   "hot_post_p90": 0.292,
+   "spot_post_mean": 0.812,
+   "mask_bright": 0.673,
+   "mask_dark": 1.0,
+   "mask_dark_rise": 0.777
+  },
+  "mask_dark_rise": {
+   "raw_rise_med": 0.743,
+   "rise_p90": 0.627,
+   "atten_med": 0.115,
+   "hot_post_p90": 0.276,
+   "spot_post_mean": 0.781,
+   "mask_bright": 0.546,
+   "mask_dark": 0.777,
+   "mask_dark_rise": 1.0
+  }
+ },
+ "step2": {
+  "null 99th percentile (before-date version, kept roads)": {
+   "rise": 64.98270248413085,
+   "hot": 17.782416076660148,
+   "atten": 1.2967051768302904,
+   "spot": 0.7518571722220748
+  },
+  "kept roads above it, per score": {
+   "rise": 1,
+   "hot": 0,
+   "atten": 17,
+   "spot": 1
+  },
+  "share above it (expected 0.01 if no haze)": {
+   "rise": 0.0012531328320802004,
+   "hot": 0.0,
+   "atten": 0.021303258145363407,
+   "spot": 0.0012531328320802004
+  },
+  "above on rise and HOT": 0,
+  "above on >= 2 of 4 scores": 1,
+  "above on >= 2 of 4, flooded / not": [
+   0,
+   1
+  ],
+  "above on >= 2 of 4 and no pixel under any mask": 0,
+  "kept roads with no pixel under any mask": 692,
+  "above on >= 2 of 4, tiles": 1,
+  "above on rise, flooded / not": [
+   0,
+   1
+  ]
+ },
+ "step3_summary": {
+  "rise \u00b7 flood-ward \u00b7 texture + classical (31)": {
+   "mean spearman": -0.0893291543048508,
+   "95% CI": [
+    -0.12536528295767485,
+    -0.04369139878636944
+   ],
+   "within-tile mean r": -0.09068469720627621,
+   "features with CI above 0": 6,
+   "features with CI below 0": 15,
+   "features with BH q < 0.05": 21
+  },
+  "rise \u00b7 flood-ward \u00b7 DINOv2 (3)": {
+   "mean spearman": 0.10895586657235239,
+   "95% CI": [
+    -0.033807984641982244,
+    0.23998493468199453
+   ],
+   "within-tile mean r": 0.024934509743235408,
+   "features with CI above 0": 1,
+   "features with CI below 0": 0,
+   "features with BH q < 0.05": 0
+  },
+  "rise \u00b7 absolute \u00b7 texture + classical (31)": {
+   "mean spearman": 0.047099884294354986,
+   "95% CI": [
+    -0.016657944479106703,
+    0.10479292856745863
+   ],
+   "within-tile mean r": 0.1094977647067665,
+   "features with CI above 0": 11,
+   "features with CI below 0": 4,
+   "features with BH q < 0.05": 15
+  },
+  "rise \u00b7 absolute \u00b7 DINOv2 (3)": {
+   "mean spearman": 0.10895586657235239,
+   "95% CI": [
+    -0.033807984641982244,
+    0.23998493468199453
+   ],
+   "within-tile mean r": 0.024934509743235408,
+   "features with CI above 0": 1,
+   "features with CI below 0": 0,
+   "features with BH q < 0.05": 0
+  },
+  "hot \u00b7 flood-ward \u00b7 texture + classical (31)": {
+   "mean spearman": 0.006868539737002727,
+   "95% CI": [
+    -0.03792927902059836,
+    0.05730154957696784
+   ],
+   "within-tile mean r": 0.010198278223881842,
+   "features with CI above 0": 7,
+   "features with CI below 0": 3,
+   "features with BH q < 0.05": 6
+  },
+  "hot \u00b7 flood-ward \u00b7 DINOv2 (3)": {
+   "mean spearman": 0.21126952581503441,
+   "95% CI": [
+    0.07653678486200878,
+    0.325602393341016
+   ],
+   "within-tile mean r": 0.04909918631215854,
+   "features with CI above 0": 3,
+   "features with CI below 0": 0,
+   "features with BH q < 0.05": 3
+  },
+  "hot \u00b7 absolute \u00b7 texture + classical (31)": {
+   "mean spearman": 0.05398261956680789,
+   "95% CI": [
+    -0.022617917586360482,
+    0.11986223020744939
+   ],
+   "within-tile mean r": 0.03542021790942522,
+   "features with CI above 0": 5,
+   "features with CI below 0": 1,
+   "features with BH q < 0.05": 0
+  },
+  "hot \u00b7 absolute \u00b7 DINOv2 (3)": {
+   "mean spearman": 0.21126952581503441,
+   "95% CI": [
+    0.07653678486200878,
+    0.325602393341016
+   ],
+   "within-tile mean r": 0.04909918631215854,
+   "features with CI above 0": 3,
+   "features with CI below 0": 0,
+   "features with BH q < 0.05": 1
+  },
+  "atten \u00b7 flood-ward \u00b7 texture + classical (31)": {
+   "mean spearman": -0.03305871245007315,
+   "95% CI": [
+    -0.0844042541627518,
+    0.020716810881945696
+   ],
+   "within-tile mean r": -0.08864744100970057,
+   "features with CI above 0": 11,
+   "features with CI below 0": 13,
+   "features with BH q < 0.05": 24
+  },
+  "atten \u00b7 flood-ward \u00b7 DINOv2 (3)": {
+   "mean spearman": 0.2133865284234339,
+   "95% CI": [
+    0.06486192070004616,
+    0.34367334958928814
+   ],
+   "within-tile mean r": 0.13099024186601912,
+   "features with CI above 0": 2,
+   "features with CI below 0": 0,
+   "features with BH q < 0.05": 2
+  },
+  "atten \u00b7 absolute \u00b7 texture + classical (31)": {
+   "mean spearman": 0.1676762930672273,
+   "95% CI": [
+    0.09862359095804793,
+    0.2325977306304579
+   ],
+   "within-tile mean r": 0.18186916071029716,
+   "features with CI above 0": 17,
+   "features with CI below 0": 1,
+   "features with BH q < 0.05": 18
+  },
+  "atten \u00b7 absolute \u00b7 DINOv2 (3)": {
+   "mean spearman": 0.2133865284234339,
+   "95% CI": [
+    0.06486192070004616,
+    0.34367334958928814
+   ],
+   "within-tile mean r": 0.13099024186601912,
+   "features with CI above 0": 2,
+   "features with CI below 0": 0,
+   "features with BH q < 0.05": 2
+  },
+  "spot \u00b7 flood-ward \u00b7 texture + classical (31)": {
+   "mean spearman": -0.09759221495315787,
+   "95% CI": [
+    -0.14901238464608293,
+    -0.042132984120309046
+   ],
+   "within-tile mean r": -0.06071245290082841,
+   "features with CI above 0": 0,
+   "features with CI below 0": 12,
+   "features with BH q < 0.05": 9
+  },
+  "spot \u00b7 flood-ward \u00b7 DINOv2 (3)": {
+   "mean spearman": -0.3833828553705081,
+   "95% CI": [
+    -0.511613841542951,
+    -0.22578368276396135
+   ],
+   "within-tile mean r": -0.06445639828322915,
+   "features with CI above 0": 0,
+   "features with CI below 0": 3,
+   "features with BH q < 0.05": 3
+  },
+  "spot \u00b7 absolute \u00b7 texture + classical (31)": {
+   "mean spearman": -0.12652828998812654,
+   "95% CI": [
+    -0.21193801077038008,
+    -0.03345507089110514
+   ],
+   "within-tile mean r": -0.016405264628313106,
+   "features with CI above 0": 1,
+   "features with CI below 0": 12,
+   "features with BH q < 0.05": 9
+  },
+  "spot \u00b7 absolute \u00b7 DINOv2 (3)": {
+   "mean spearman": -0.3833828553705081,
+   "95% CI": [
+    -0.511613841542951,
+    -0.22578368276396135
+   ],
+   "within-tile mean r": -0.06445639828322915,
+   "features with CI above 0": 0,
+   "features with CI below 0": 3,
+   "features with BH q < 0.05": 3
+  }
+ },
+ "step3_n_unchanged": 357,
+ "step4": {
+  "production S accuracy (mean over 21 seeds) on the 798": 0.7857739587062895,
+  "rise": {
+   "all 798": {
+    "quartile error rates": [
+     0.17285714285714285,
+     0.19621919119406558,
+     0.22349844460397228,
+     0.2642857142857143
+    ],
+    "quartile 95% CIs": [
+     [
+      0.10933466679587425,
+      0.2438471127087198
+     ],
+     [
+      0.11721560846560847,
+      0.29037540852983273
+     ],
+     [
+      0.15197310177944345,
+      0.3133722158218125
+     ],
+     [
+      0.2102889303869696,
+      0.3353367562669888
+     ]
+    ],
+    "Q4 - Q1": 0.09142857142857144,
+    "Q4 - Q1 95% CI": [
+     0.008322471457727841,
+     0.17957903217961207
+    ],
+    "n per quartile": [
+     200,
+     199,
+     199,
+     200
+    ]
+   },
+   "not flooded: false alarms": {
+    "quartile error rates": [
+     0.32102728731942215,
+     0.3124665596575709,
+     0.26431246655965757,
+     0.2873015873015873
+    ],
+    "quartile 95% CIs": [
+     [
+      0.22410830599948822,
+      0.42244058913888133
+     ],
+     [
+      0.19436147186147182,
+      0.4541778673835125
+     ],
+     [
+      0.1456576797385621,
+      0.4211561125307755
+     ],
+     [
+      0.19439992983570967,
+      0.4214801681113738
+     ]
+    ],
+    "Q4 - Q1": -0.03372570001783487,
+    "Q4 - Q1 95% CI": [
+     -0.15639676989209342,
+     0.09860803397161982
+    ],
+    "n per quartile": [
+     89,
+     89,
+     89,
+     90
+    ]
+   },
+   "flooded: misses": {
+    "quartile error rates": [
+     0.10043290043290044,
+     0.12294372294372294,
+     0.1489177489177489,
+     0.21836121836121836
+    ],
+    "quartile 95% CIs": [
+     [
+      0.022135804073929646,
+      0.21164180531650414
+     ],
+     [
+      0.06054080337569435,
+      0.21550751879699248
+     ],
+     [
+      0.07222283682015226,
+      0.27545397469332555
+     ],
+     [
+      0.15147679395105199,
+      0.3185350420106518
+     ]
+    ],
+    "Q4 - Q1": 0.11792831792831791,
+    "Q4 - Q1 95% CI": [
+     0.009538431741823554,
+     0.23943597484111273
+    ],
+    "n per quartile": [
+     110,
+     110,
+     110,
+     111
+    ]
+   },
+   "logistic: error ~ z(haze) + flooded": {
+    "haze log-odds per SD": 0.0361541862901667,
+    "95% CI": [
+     -0.1309070207180448,
+     0.24193341465830295
+    ],
+    "odds ratio per SD": 1.0368156969331304,
+    "flooded coef": -0.8759381826688145
+   },
+   "logistic within false alarms (not flooded)": {
+    "haze log-odds per SD": -0.11756265673014824,
+    "95% CI": [
+     -0.4380354205367747,
+     0.08839807523616175
+    ]
+   },
+   "logistic within misses (flooded)": {
+    "haze log-odds per SD": 0.22140781946789378,
+    "95% CI": [
+     -0.09326202693505381,
+     0.9232159804610508
+    ]
+   }
+  },
+  "hot": {
+   "all 798": {
+    "quartile error rates": [
+     0.22785714285714284,
+     0.17875089734386215,
+     0.19669777458722185,
+     0.2533333333333333
+    ],
+    "quartile 95% CIs": [
+     [
+      0.15707947881489703,
+      0.28927017701770164
+     ],
+     [
+      0.11128975191475192,
+      0.2599180228321593
+     ],
+     [
+      0.1225347466572836,
+      0.29199227908480874
+     ],
+     [
+      0.18297664593581178,
+      0.34033836939030926
+     ]
+    ],
+    "Q4 - Q1": 0.025476190476190458,
+    "Q4 - Q1 95% CI": [
+     -0.06981469543344342,
+     0.1316417743487047
+    ],
+    "n per quartile": [
+     200,
+     199,
+     199,
+     200
+    ]
+   },
+   "not flooded: false alarms": {
+    "quartile error rates": [
+     0.25896201177100053,
+     0.21829855537720705,
+     0.3081861958266453,
+     0.39841269841269844
+    ],
+    "quartile 95% CIs": [
+     [
+      0.15304421768707482,
+      0.37974947288857036
+     ],
+     [
+      0.11491529304029302,
+      0.36334726916918697
+     ],
+     [
+      0.20187633738941582,
+      0.4317505030181086
+     ],
+     [
+      0.25022125871625245,
+      0.5506370684458856
+     ]
+    ],
+    "Q4 - Q1": 0.1394506866416979,
+    "Q4 - Q1 95% CI": [
+     -0.040392714520621514,
+     0.3135539046974417
+    ],
+    "n per quartile": [
+     89,
+     89,
+     89,
+     90
+    ]
+   },
+   "flooded: misses": {
+    "quartile error rates": [
+     0.22640692640692642,
+     0.11255411255411256,
+     0.1064935064935065,
+     0.14586014586014587
+    ],
+    "quartile 95% CIs": [
+     [
+      0.12530545112781952,
+      0.32597444586969027
+     ],
+     [
+      0.05823250093411385,
+      0.18949600657074883
+     ],
+     [
+      0.045862921614926964,
+      0.21929012345679008
+     ],
+     [
+      0.08613720154494381,
+      0.24405470521541944
+     ]
+    ],
+    "Q4 - Q1": -0.08054678054678055,
+    "Q4 - Q1 95% CI": [
+     -0.18064686175151295,
+     0.03084057027066147
+    ],
+    "n per quartile": [
+     110,
+     110,
+     110,
+     111
+    ]
+   },
+   "logistic: error ~ z(haze) + flooded": {
+    "haze log-odds per SD": -0.020408397498765843,
+    "95% CI": [
+     -0.23063331201261786,
+     0.24471488202527533
+    ],
+    "odds ratio per SD": 0.9797984443520981,
+    "flooded coef": -0.8821760558982603
+   },
+   "logistic within false alarms (not flooded)": {
+    "haze log-odds per SD": 0.11549963900351419,
+    "95% CI": [
+     -0.18988712957452636,
+     0.529235916062146
+    ]
+   },
+   "logistic within misses (flooded)": {
+    "haze log-odds per SD": -0.2908010629089881,
+    "95% CI": [
+     -0.6132467143217887,
+     0.07892442979451163
+    ]
+   }
+  },
+  "atten": {
+   "all 798": {
+    "quartile error rates": [
+     0.1811904761904762,
+     0.16870064608758076,
+     0.208183776022972,
+     0.2985714285714286
+    ],
+    "quartile 95% CIs": [
+     [
+      0.1160688628899836,
+      0.25704810495626823
+     ],
+     [
+      0.12044587065595469,
+      0.2305376536579544
+     ],
+     [
+      0.1335131195335277,
+      0.3051056858408618
+     ],
+     [
+      0.2000373258525979,
+      0.4071922857813075
+     ]
+    ],
+    "Q4 - Q1": 0.11738095238095239,
+    "Q4 - Q1 95% CI": [
+     0.0026765853372198362,
+     0.23918691635300512
+    ],
+    "n per quartile": [
+     200,
+     199,
+     199,
+     200
+    ]
+   },
+   "not flooded: false alarms": {
+    "quartile error rates": [
+     0.15676832530765114,
+     0.2386302835741038,
+     0.24130551096843234,
+     0.5455026455026455
+    ],
+    "quartile 95% CIs": [
+     [
+      0.05713704994192799,
+      0.2724558627581612
+     ],
+     [
+      0.12476739754282128,
+      0.38872642238713634
+     ],
+     [
+      0.140381317277869,
+      0.3741539653836217
+     ],
+     [
+      0.3997863625648279,
+      0.6922114946457051
+     ]
+    ],
+    "Q4 - Q1": 0.3887343201949943,
+    "Q4 - Q1 95% CI": [
+     0.21175748269711406,
+     0.5669678365356249
+    ],
+    "n per quartile": [
+     89,
+     89,
+     89,
+     90
+    ]
+   },
+   "flooded: misses": {
+    "quartile error rates": [
+     0.11255411255411255,
+     0.158008658008658,
+     0.12424242424242425,
+     0.19605319605319607
+    ],
+    "quartile 95% CIs": [
+     [
+      0.05485901380895397,
+      0.1956026481469462
+     ],
+     [
+      0.09273146100545482,
+      0.2769968294616182
+     ],
+     [
+      0.05396584896584897,
+      0.21971660923141184
+     ],
+     [
+      0.08602800968872397,
+      0.33869457384403034
+     ]
+    ],
+    "Q4 - Q1": 0.08349908349908353,
+    "Q4 - Q1 95% CI": [
+     -0.036807471764403674,
+     0.2194346380151892
+    ],
+    "n per quartile": [
+     110,
+     110,
+     110,
+     111
+    ]
+   },
+   "logistic: error ~ z(haze) + flooded": {
+    "haze log-odds per SD": 0.36638265301551726,
+    "95% CI": [
+     0.13736075921103294,
+     0.6240961993450101
+    ],
+    "odds ratio per SD": 1.4425071167577697,
+    "flooded coef": -1.102267552130734
+   },
+   "logistic within false alarms (not flooded)": {
+    "haze log-odds per SD": 0.6189791803124475,
+    "95% CI": [
+     0.26001693687573546,
+     1.1569269325200588
+    ]
+   },
+   "logistic within misses (flooded)": {
+    "haze log-odds per SD": 0.10136524869407616,
+    "95% CI": [
+     -0.3388569562319555,
+     0.44560016213946857
+    ]
+   }
+  },
+  "spot": {
+   "all 798": {
+    "quartile error rates": [
+     0.2957142857142857,
+     0.20890165111270637,
+     0.2165589854032065,
+     0.1357142857142857
+    ],
+    "quartile 95% CIs": [
+     [
+      0.20099007170435743,
+      0.4056183822901545
+     ],
+     [
+      0.14470968611555773,
+      0.2885251229678474
+     ],
+     [
+      0.14699553146758118,
+      0.29554557091653866
+     ],
+     [
+      0.08050770646422821,
+      0.20402445460942994
+     ]
+    ],
+    "Q4 - Q1": -0.16,
+    "Q4 - Q1 95% CI": [
+     -0.2905868489048076,
+     -0.04566635039354937
+    ],
+    "n per quartile": [
+     200,
+     199,
+     199,
+     200
+    ]
+   },
+   "not flooded: false alarms": {
+    "quartile error rates": [
+     0.5719636169074371,
+     0.3606206527554842,
+     0.19796682718031033,
+     0.05714285714285715
+    ],
+    "quartile 95% CIs": [
+     [
+      0.44867294204503505,
+      0.6881659488454148
+     ],
+     [
+      0.2369529770671155,
+      0.49821767416644075
+     ],
+     [
+      0.09522792022792022,
+      0.34415476190476174
+     ],
+     [
+      0.01604426453621608,
+      0.11972948554421767
+     ]
+    ],
+    "Q4 - Q1": -0.51482075976458,
+    "Q4 - Q1 95% CI": [
+     -0.6446329824183193,
+     -0.3807283435840377
+    ],
+    "n per quartile": [
+     89,
+     89,
+     89,
+     90
+    ]
+   },
+   "flooded: misses": {
+    "quartile error rates": [
+     0.12164502164502165,
+     0.11515151515151516,
+     0.141991341991342,
+     0.21192621192621194
+    ],
+    "quartile 95% CIs": [
+     [
+      0.0572077321036016,
+      0.21839321935670816
+     ],
+     [
+      0.050865377730039386,
+      0.2116679467485918
+     ],
+     [
+      0.06139662098508684,
+      0.24490105132962273
+     ],
+     [
+      0.1357081280788177,
+      0.33610374208690763
+     ]
+    ],
+    "Q4 - Q1": 0.09028119028119029,
+    "Q4 - Q1 95% CI": [
+     -0.018756390235500697,
+     0.21124676747661453
+    ],
+    "n per quartile": [
+     110,
+     110,
+     110,
+     111
+    ]
+   },
+   "logistic: error ~ z(haze) + flooded": {
+    "haze log-odds per SD": -0.6163187668278322,
+    "95% CI": [
+     -0.9274136828023927,
+     -0.35125971932535544
+    ],
+    "odds ratio per SD": 0.5399283859509295,
+    "flooded coef": -1.233037418458579
+   },
+   "logistic within false alarms (not flooded)": {
+    "haze log-odds per SD": -1.1272461783350822,
+    "95% CI": [
+     -1.6051258868857368,
+     -0.7728538489391914
+    ]
+   },
+   "logistic within misses (flooded)": {
+    "haze log-odds per SD": 0.502008946575263,
+    "95% CI": [
+     0.06293147155874813,
+     0.9947401504714063
+    ]
+   }
+  }
+ },
+ "phase B gate": {
+  "rise": {
+   "inflation CI": [
+    -0.12536528295767485,
+    -0.04369139878636944
+   ],
+   "error CI": [
+    -0.1309070207180448,
+    0.24193341465830295
+   ],
+   "both exclude 0 upward": false
+  },
+  "hot": {
+   "inflation CI": [
+    -0.03792927902059836,
+    0.05730154957696784
+   ],
+   "error CI": [
+    -0.23063331201261786,
+    0.24471488202527533
+   ],
+   "both exclude 0 upward": false
+  }
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "epochs (chosen on inner fold 1)": 1,
+ "es history": [
+  {
+   "epoch": 1,
+   "train loss": 0.25615283281589335,
+   "eval loss": 0.40910737292569643
+  },
+  {
+   "epoch": 2,
+   "train loss": 0.10994071967095423,
+   "eval loss": 0.5370537011408123
+  },
+  {
+   "epoch": 3,
+   "train loss": 0.07494613861779265,
+   "eval loss": 0.47635649648056555
+  },
+  {
+   "epoch": 4,
+   "train loss": 0.057359067315912,
+   "eval loss": 0.5024383341179786
+  }
+ ],
+ "cross-fit histories": [
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.25615283281589335
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.2734020245430076
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.30863842582528034
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.3226343034720267
+   }
+  ],
+  [
+   {
+    "epoch": 1,
+    "train loss": 0.3022177486750773
+   }
+  ]
+ ],
+ "seconds": 6.3,
+ "es fit tiles": 147,
+ "es eval tiles": 31,
+ "es target roads": 422,
+ "es eval roads": 100,
+ "cross-fit target roads": [
+  422,
+  401,
+  353,
+  383,
+  364
+ ],
+ "cross-fit fit tiles": [
+  147,
+  149,
+  139,
+  124,
+  153
+ ],
+ "held-out road tiles": 47
+}

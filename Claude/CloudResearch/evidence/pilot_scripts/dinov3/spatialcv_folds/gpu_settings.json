@@ -1,0 +1,39 @@
+{
+ "trunk depth (frozen, cached)": 20,
+ "A-ft": {
+  "trained blocks": 2,
+  "n_frozen": 2,
+  "lr blocks": 2e-05,
+  "lr head": 0.001,
+  "max epochs": 20,
+  "patience": 4
+ },
+ "A-head": {
+  "trained blocks": 0,
+  "n_frozen": 4,
+  "lr head": 0.001,
+  "max epochs": 12,
+  "patience": 3
+ },
+ "B-ft": {
+  "trained blocks": 2,
+  "n_frozen": 2,
+  "lr blocks": 1e-05,
+  "lr head": 0.001,
+  "max epochs": 10,
+  "patience": 3
+ },
+ "B-head": {
+  "trained blocks": 0,
+  "lr head": 0.001,
+  "batch (patches)": 256,
+  "max epochs": 40,
+  "patience": 3
+ },
+ "epoch": "one random window (of those holding target cells) from every fit tile; one optimiser step per tile",
+ "per-epoch evaluation": "a fixed seeded subset of 2 target windows per inner-fold-1 tile",
+ "optimiser": "AdamW (weight decay 0.05 blocks, 1e-4 head), gradient norm clipped at 1, float32",
+ "early stopping / cut-off tiles": "inner fold 1 of nested_spatial_folds / nested_cell_folds (seed 662) inside each outer-training fold; fit on the other 4 inner folds' tiles",
+ "Track B cross-fitting": "the outer fold's 5 inner folds: model j is fit on the outer-training tiles outside inner fold j (targets: inner-training roads, purged) and gives inner fold j's cues; held-out roads take the mean of the 5 models' probability grids",
+ "Track B targets": "the roads production's cloud rule assesses, among each model's (purged) training roads"
+}

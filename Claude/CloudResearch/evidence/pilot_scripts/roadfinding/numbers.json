@@ -1,0 +1,916 @@
+{
+ "plan": "outputs/preregistration_roadfinding_cloud.md",
+ "code": "5be95c2",
+ "module hashes": {
+  "sn8.py": "632a97d7a906",
+  "sn8_canny.py": "a9bc4356dd7f",
+  "sn8_cloudref.py": "913753cd24ef",
+  "sn8_cloudroads.py": "5c2a0e7857ec",
+  "sn8_clouds.py": "6b64958daaae",
+  "sn8_cloudsym.py": "cbe503f961b0",
+  "sn8_coreg.py": "59aca0590acf",
+  "sn8_cutoff.py": "75e4200826a6",
+  "sn8_data.py": "1b76e731765b",
+  "sn8_detect.py": "41db69cd4fec",
+  "sn8_dino.py": "643369fb2069",
+  "sn8_dino_cells.py": "7df41ebbec3a",
+  "sn8_glcm.py": "d441e9676fd8",
+  "sn8_grey.py": "c85b34c51a66",
+  "sn8_heldout.py": "64c756a89a09",
+  "sn8_lines.py": "2a7a339c5d08",
+  "sn8_models.py": "ac146f0ddd37",
+  "sn8_reduce.py": "9e777f3aed48",
+  "sn8_refhaze.py": "cd2e272380d4",
+  "sn8_results.py": "17b2a5d8e515",
+  "sn8_roads.py": "e385e4ed6c65",
+  "sn8_stages.py": "d94663f97936",
+  "sn8_texture.py": "2275da747a7e",
+  "sn8_torchgeo.py": "31dd465c7957"
+ },
+ "detector": {
+  "model": "Random forest",
+  "features": "classical + DINOv2",
+  "columns": 44,
+  "cut-off": 0.75
+ },
+ "tiles": {
+  "train": 186,
+  "val": 40
+ },
+ "reproduction check": [
+  {
+   "tile_id": "2_15_46",
+   "cells": 83083,
+   "max |diff| classical": 0.0,
+   "max |diff| DINOv2": 0.0
+  },
+  {
+   "tile_id": "0_21_21",
+   "cells": 94139,
+   "max |diff| classical": 0.0,
+   "max |diff| DINOv2": 0.0
+  }
+ ],
+ "scored cells": [
+  {
+   "group": "clear",
+   "label": 0,
+   "cells": 735916,
+   "weighted": 14718306.8351,
+   "tiles": 222
+  },
+  {
+   "group": "clear",
+   "label": 1,
+   "cells": 16240,
+   "weighted": 324800.1649,
+   "tiles": 208
+  },
+  {
+   "group": "correctable",
+   "label": 0,
+   "cells": 588540,
+   "weighted": 2354155.0,
+   "tiles": 120
+  },
+  {
+   "group": "correctable",
+   "label": 1,
+   "cells": 46239,
+   "weighted": 46239.0,
+   "tiles": 66
+  },
+  {
+   "group": "fade",
+   "label": 0,
+   "cells": 182995,
+   "weighted": 731961.0,
+   "tiles": 122
+  },
+  {
+   "group": "fade",
+   "label": 1,
+   "cells": 22617,
+   "weighted": 22617.0,
+   "tiles": 72
+  },
+  {
+   "group": "opaque",
+   "label": 0,
+   "cells": 197338,
+   "weighted": 789359.0,
+   "tiles": 74
+  },
+  {
+   "group": "opaque",
+   "label": 1,
+   "cells": 26120,
+   "weighted": 26120.0,
+   "tiles": 27
+  }
+ ],
+ "module files changed during the run": [],
+ "set-aside roads": {
+  "n": 239,
+  "decisions": {
+   "CORRECT": 136,
+   "CANNOT ASSESS": 88,
+   "ASSESS": 15
+  },
+  "duplicates": 0,
+  "CORRECT on opaque-cloud tiles": 55
+ },
+ "stored cells": 2094296,
+ "results": {
+  "correctable, vs as it is": [
+   {
+    "arm": "as it is",
+    "tiles": 120,
+    "precision": 0.5169,
+    "recall": 0.0103,
+    "F1": 0.0201,
+    "F1 95% CI": "0.004-0.047",
+    "F1 - as it is": 0.0,
+    "F1 diff 95% CI": "+0.000 to +0.000",
+    "recall - as it is": 0.0,
+    "recall diff 95% CI": "+0.000 to +0.000",
+    "precision - as it is": 0.0,
+    "precision diff 95% CI": "+0.000 to +0.000"
+   },
+   {
+    "arm": "two-date",
+    "tiles": 120,
+    "precision": 0.6284,
+    "recall": 0.0086,
+    "F1": 0.017,
+    "F1 95% CI": "0.003-0.039",
+    "F1 - as it is": -0.0031,
+    "F1 diff 95% CI": "-0.011 to +0.003",
+    "recall - as it is": -0.0016,
+    "recall diff 95% CI": "-0.006 to +0.002",
+    "precision - as it is": 0.1115,
+    "precision diff 95% CI": "-0.071 to +0.295"
+   },
+   {
+    "arm": "single image (He)",
+    "tiles": 120,
+    "precision": 0.3609,
+    "recall": 0.0123,
+    "F1": 0.0237,
+    "F1 95% CI": "0.006-0.053",
+    "F1 - as it is": 0.0036,
+    "F1 diff 95% CI": "-0.000 to +0.009",
+    "recall - as it is": 0.002,
+    "recall diff 95% CI": "-0.000 to +0.005",
+    "precision - as it is": -0.156,
+    "precision diff 95% CI": "-0.350 to +0.032"
+   },
+   {
+    "arm": "before",
+    "tiles": 120,
+    "precision": 0.6918,
+    "recall": 0.5959,
+    "F1": 0.6403,
+    "F1 95% CI": "0.586-0.690",
+    "F1 - as it is": 0.6201,
+    "F1 diff 95% CI": "+0.559 to +0.672",
+    "recall - as it is": 0.5856,
+    "recall diff 95% CI": "+0.524 to +0.655",
+    "precision - as it is": 0.175,
+    "precision diff 95% CI": "-0.091 to +0.487"
+   }
+  ],
+  "correctable, two-date vs single image": [
+   {
+    "arm": "single image (He)",
+    "tiles": 120,
+    "precision": 0.3609,
+    "recall": 0.0123,
+    "F1": 0.0237,
+    "F1 95% CI": "0.006-0.053",
+    "F1 - single image (He)": 0.0,
+    "F1 diff 95% CI": "+0.000 to +0.000",
+    "recall - single image (He)": 0.0,
+    "recall diff 95% CI": "+0.000 to +0.000",
+    "precision - single image (He)": 0.0,
+    "precision diff 95% CI": "+0.000 to +0.000"
+   },
+   {
+    "arm": "two-date",
+    "tiles": 120,
+    "precision": 0.6284,
+    "recall": 0.0086,
+    "F1": 0.017,
+    "F1 95% CI": "0.003-0.039",
+    "F1 - single image (He)": -0.0067,
+    "F1 diff 95% CI": "-0.018 to +0.002",
+    "recall - single image (He)": -0.0036,
+    "recall diff 95% CI": "-0.010 to +0.001",
+    "precision - single image (He)": 0.2674,
+    "precision diff 95% CI": "+0.018 to +0.462"
+   }
+  ],
+  "correctable, McNemar on cells vs as it is": {
+   "two-date": {
+    "road cells: found by arm only": 110,
+    "road cells: found by baseline only": 186,
+    "road cells McNemar p": 1.1764272706544176e-05,
+    "not-road cells: false alarm removed": 84,
+    "not-road cells: false alarm added": 32,
+    "not-road cells McNemar p": 1.481143728223155e-06
+   },
+   "single image (He)": {
+    "road cells: found by arm only": 152,
+    "road cells: found by baseline only": 60,
+    "road cells McNemar p": 2.1491034866238897e-10,
+    "not-road cells: false alarm removed": 36,
+    "not-road cells: false alarm added": 176,
+    "not-road cells McNemar p": 2.4474841314101658e-23
+   },
+   "before": {
+    "road cells: found by arm only": 27264,
+    "road cells: found by baseline only": 187,
+    "road cells McNemar p": 0.0,
+    "not-road cells: false alarm removed": 104,
+    "not-road cells: false alarm added": 3061,
+    "not-road cells McNemar p": 0.0
+   }
+  },
+  "share of the as-it-is to before gap closed (descriptive)": {
+   "two-date": -0.005032314027288004,
+   "single image (He)": 0.005763059914211589
+  },
+  "opaque, vs as it is": [
+   {
+    "arm": "as it is",
+    "tiles": 74,
+    "precision": null,
+    "recall": 0.0,
+    "F1": 0.0,
+    "F1 95% CI": "0.000-0.000",
+    "F1 - as it is": 0.0,
+    "F1 diff 95% CI": "+0.000 to +0.000",
+    "recall - as it is": 0.0,
+    "recall diff 95% CI": "+0.000 to +0.000",
+    "precision - as it is": null,
+    "precision diff 95% CI": "+nan to +nan"
+   },
+   {
+    "arm": "two-date",
+    "tiles": 74,
+    "precision": null,
+    "recall": 0.0,
+    "F1": 0.0,
+    "F1 95% CI": "0.000-0.000",
+    "F1 - as it is": 0.0,
+    "F1 diff 95% CI": "+0.000 to +0.000",
+    "recall - as it is": 0.0,
+    "recall diff 95% CI": "+0.000 to +0.000",
+    "precision - as it is": null,
+    "precision diff 95% CI": "+nan to +nan"
+   },
+   {
+    "arm": "single image (He)",
+    "tiles": 74,
+    "precision": null,
+    "recall": 0.0,
+    "F1": 0.0,
+    "F1 95% CI": "0.000-0.000",
+    "F1 - as it is": 0.0,
+    "F1 diff 95% CI": "+0.000 to +0.000",
+    "recall - as it is": 0.0,
+    "recall diff 95% CI": "+0.000 to +0.000",
+    "precision - as it is": null,
+    "precision diff 95% CI": "+nan to +nan"
+   },
+   {
+    "arm": "before",
+    "tiles": 74,
+    "precision": 0.7906,
+    "recall": 0.6956,
+    "F1": 0.74,
+    "F1 95% CI": "0.649-0.805",
+    "F1 - as it is": 0.74,
+    "F1 diff 95% CI": "+0.649 to +0.805",
+    "recall - as it is": 0.6956,
+    "recall diff 95% CI": "+0.566 to +0.804",
+    "precision - as it is": null,
+    "precision diff 95% CI": "+nan to +nan"
+   }
+  ],
+  "fade, vs as it is": [
+   {
+    "arm": "as it is",
+    "tiles": 122,
+    "precision": 0.6246,
+    "recall": 0.0683,
+    "F1": 0.1231,
+    "F1 95% CI": "0.050-0.207",
+    "F1 - as it is": 0.0,
+    "F1 diff 95% CI": "+0.000 to +0.000",
+    "recall - as it is": 0.0,
+    "recall diff 95% CI": "+0.000 to +0.000",
+    "precision - as it is": 0.0,
+    "precision diff 95% CI": "+0.000 to +0.000"
+   },
+   {
+    "arm": "two-date",
+    "tiles": 122,
+    "precision": 0.5594,
+    "recall": 0.0512,
+    "F1": 0.0938,
+    "F1 95% CI": "0.027-0.174",
+    "F1 - as it is": -0.0293,
+    "F1 diff 95% CI": "-0.059 to -0.003",
+    "recall - as it is": -0.0171,
+    "recall diff 95% CI": "-0.036 to -0.001",
+    "precision - as it is": -0.0652,
+    "precision diff 95% CI": "-0.221 to +0.019"
+   },
+   {
+    "arm": "single image (He)",
+    "tiles": 122,
+    "precision": 0.4473,
+    "recall": 0.0562,
+    "F1": 0.0999,
+    "F1 95% CI": "0.036-0.178",
+    "F1 - as it is": -0.0232,
+    "F1 diff 95% CI": "-0.051 to +0.000",
+    "recall - as it is": -0.012,
+    "recall diff 95% CI": "-0.029 to +0.002",
+    "precision - as it is": -0.1773,
+    "precision diff 95% CI": "-0.353 to -0.053"
+   },
+   {
+    "arm": "before",
+    "tiles": 122,
+    "precision": 0.6951,
+    "recall": 0.722,
+    "F1": 0.7083,
+    "F1 95% CI": "0.640-0.770",
+    "F1 - as it is": 0.5852,
+    "F1 diff 95% CI": "+0.469 to +0.687",
+    "recall - as it is": 0.6537,
+    "recall diff 95% CI": "+0.556 to +0.739",
+    "precision - as it is": 0.0705,
+    "precision diff 95% CI": "-0.060 to +0.241"
+   }
+  ],
+  "clear, vs as it is": [
+   {
+    "arm": "as it is",
+    "tiles": 222,
+    "precision": 0.5937,
+    "recall": 0.2135,
+    "F1": 0.3141,
+    "F1 95% CI": "0.266-0.360",
+    "F1 - as it is": 0.0,
+    "F1 diff 95% CI": "+0.000 to +0.000",
+    "recall - as it is": 0.0,
+    "recall diff 95% CI": "+0.000 to +0.000",
+    "precision - as it is": 0.0,
+    "precision diff 95% CI": "+0.000 to +0.000"
+   },
+   {
+    "arm": "two-date",
+    "tiles": 222,
+    "precision": 0.5879,
+    "recall": 0.2131,
+    "F1": 0.3128,
+    "F1 95% CI": "0.266-0.358",
+    "F1 - as it is": -0.0014,
+    "F1 diff 95% CI": "-0.008 to +0.006",
+    "recall - as it is": -0.0005,
+    "recall diff 95% CI": "-0.006 to +0.005",
+    "precision - as it is": -0.0058,
+    "precision diff 95% CI": "-0.015 to +0.004"
+   },
+   {
+    "arm": "single image (He)",
+    "tiles": 222,
+    "precision": 0.5814,
+    "recall": 0.2003,
+    "F1": 0.298,
+    "F1 95% CI": "0.252-0.343",
+    "F1 - as it is": -0.0162,
+    "F1 diff 95% CI": "-0.026 to -0.006",
+    "recall - as it is": -0.0132,
+    "recall diff 95% CI": "-0.022 to -0.005",
+    "precision - as it is": -0.0123,
+    "precision diff 95% CI": "-0.032 to +0.007"
+   },
+   {
+    "arm": "before",
+    "tiles": 222,
+    "precision": 0.7164,
+    "recall": 0.685,
+    "F1": 0.7003,
+    "F1 95% CI": "0.673-0.725",
+    "F1 - as it is": 0.3862,
+    "F1 diff 95% CI": "+0.333 to +0.440",
+    "recall - as it is": 0.4714,
+    "recall diff 95% CI": "+0.429 to +0.515",
+    "precision - as it is": 0.1227,
+    "precision diff 95% CI": "+0.073 to +0.171"
+   }
+  ],
+  "clear on gated tiles, vs as it is": [
+   {
+    "arm": "as it is",
+    "tiles": 119,
+    "precision": 0.6121,
+    "recall": 0.2169,
+    "F1": 0.3203,
+    "F1 95% CI": "0.253-0.388",
+    "F1 - as it is": 0.0,
+    "F1 diff 95% CI": "+0.000 to +0.000",
+    "recall - as it is": 0.0,
+    "recall diff 95% CI": "+0.000 to +0.000",
+    "precision - as it is": 0.0,
+    "precision diff 95% CI": "+0.000 to +0.000"
+   },
+   {
+    "arm": "two-date",
+    "tiles": 119,
+    "precision": 0.6149,
+    "recall": 0.215,
+    "F1": 0.3186,
+    "F1 95% CI": "0.249-0.385",
+    "F1 - as it is": -0.0017,
+    "F1 diff 95% CI": "-0.016 to +0.012",
+    "recall - as it is": -0.0019,
+    "recall diff 95% CI": "-0.014 to +0.010",
+    "precision - as it is": 0.0029,
+    "precision diff 95% CI": "-0.015 to +0.020"
+   },
+   {
+    "arm": "single image (He)",
+    "tiles": 119,
+    "precision": 0.6017,
+    "recall": 0.1971,
+    "F1": 0.2969,
+    "F1 95% CI": "0.228-0.365",
+    "F1 - as it is": -0.0234,
+    "F1 diff 95% CI": "-0.039 to -0.010",
+    "recall - as it is": -0.0199,
+    "recall diff 95% CI": "-0.034 to -0.009",
+    "precision - as it is": -0.0103,
+    "precision diff 95% CI": "-0.036 to +0.017"
+   },
+   {
+    "arm": "before",
+    "tiles": 119,
+    "precision": 0.7031,
+    "recall": 0.6725,
+    "F1": 0.6875,
+    "F1 95% CI": "0.647-0.723",
+    "F1 - as it is": 0.3672,
+    "F1 diff 95% CI": "+0.299 to +0.436",
+    "recall - as it is": 0.4556,
+    "recall diff 95% CI": "+0.398 to +0.508",
+    "precision - as it is": 0.0911,
+    "precision diff 95% CI": "+0.034 to +0.149"
+   }
+  ],
+  "flood confound (recall on road cells)": [
+   {
+    "group": "correctable",
+    "road label": "flooded = yes",
+    "arm": "as it is",
+    "tiles": 15,
+    "road cells": 4637,
+    "recall": 0.0179,
+    "recall - as it is": 0.0,
+    "95% CI": "+0.000 to +0.000"
+   },
+   {
+    "group": "correctable",
+    "road label": "flooded = yes",
+    "arm": "two-date",
+    "tiles": 15,
+    "road cells": 4637,
+    "recall": 0.0304,
+    "recall - as it is": 0.0125,
+    "95% CI": "-0.003 to +0.025"
+   },
+   {
+    "group": "correctable",
+    "road label": "flooded = yes",
+    "arm": "single image (He)",
+    "tiles": 15,
+    "road cells": 4637,
+    "recall": 0.0248,
+    "recall - as it is": 0.0069,
+    "95% CI": "-0.009 to +0.031"
+   },
+   {
+    "group": "correctable",
+    "road label": "flooded = yes",
+    "arm": "before",
+    "tiles": 15,
+    "road cells": 4637,
+    "recall": 0.5976,
+    "recall - as it is": 0.5797,
+    "95% CI": "+0.488 to +0.721"
+   },
+   {
+    "group": "correctable",
+    "road label": "not labelled flooded",
+    "arm": "as it is",
+    "tiles": 56,
+    "road cells": 41602,
+    "recall": 0.0094,
+    "recall - as it is": 0.0,
+    "95% CI": "+0.000 to +0.000"
+   },
+   {
+    "group": "correctable",
+    "road label": "not labelled flooded",
+    "arm": "two-date",
+    "tiles": 56,
+    "road cells": 41602,
+    "recall": 0.0062,
+    "recall - as it is": -0.0032,
+    "95% CI": "-0.008 to -0.001"
+   },
+   {
+    "group": "correctable",
+    "road label": "not labelled flooded",
+    "arm": "single image (He)",
+    "tiles": 56,
+    "road cells": 41602,
+    "recall": 0.0109,
+    "recall - as it is": 0.0014,
+    "95% CI": "+0.000 to +0.004"
+   },
+   {
+    "group": "correctable",
+    "road label": "not labelled flooded",
+    "arm": "before",
+    "tiles": 56,
+    "road cells": 41602,
+    "recall": 0.5957,
+    "recall - as it is": 0.5862,
+    "95% CI": "+0.514 to +0.662"
+   },
+   {
+    "group": "opaque",
+    "road label": "flooded = yes",
+    "arm": "as it is",
+    "tiles": 1,
+    "road cells": 4,
+    "recall": 0.0,
+    "recall - as it is": 0.0,
+    "95% CI": "+0.000 to +0.000"
+   },
+   {
+    "group": "opaque",
+    "road label": "flooded = yes",
+    "arm": "two-date",
+    "tiles": 1,
+    "road cells": 4,
+    "recall": 0.0,
+    "recall - as it is": 0.0,
+    "95% CI": "+0.000 to +0.000"
+   },
+   {
+    "group": "opaque",
+    "road label": "flooded = yes",
+    "arm": "single image (He)",
+    "tiles": 1,
+    "road cells": 4,
+    "recall": 0.0,
+    "recall - as it is": 0.0,
+    "95% CI": "+0.000 to +0.000"
+   },
+   {
+    "group": "opaque",
+    "road label": "flooded = yes",
+    "arm": "before",
+    "tiles": 1,
+    "road cells": 4,
+    "recall": 0.75,
+    "recall - as it is": 0.75,
+    "95% CI": "+0.750 to +0.750"
+   },
+   {
+    "group": "opaque",
+    "road label": "not labelled flooded",
+    "arm": "as it is",
+    "tiles": 26,
+    "road cells": 26116,
+    "recall": 0.0,
+    "recall - as it is": 0.0,
+    "95% CI": "+0.000 to +0.000"
+   },
+   {
+    "group": "opaque",
+    "road label": "not labelled flooded",
+    "arm": "two-date",
+    "tiles": 26,
+    "road cells": 26116,
+    "recall": 0.0,
+    "recall - as it is": 0.0,
+    "95% CI": "+0.000 to +0.000"
+   },
+   {
+    "group": "opaque",
+    "road label": "not labelled flooded",
+    "arm": "single image (He)",
+    "tiles": 26,
+    "road cells": 26116,
+    "recall": 0.0,
+    "recall - as it is": 0.0,
+    "95% CI": "+0.000 to +0.000"
+   },
+   {
+    "group": "opaque",
+    "road label": "not labelled flooded",
+    "arm": "before",
+    "tiles": 26,
+    "road cells": 26116,
+    "recall": 0.6956,
+    "recall - as it is": 0.6956,
+    "95% CI": "+0.563 to +0.803"
+   },
+   {
+    "group": "clear",
+    "road label": "flooded = yes",
+    "arm": "as it is",
+    "tiles": 103,
+    "road cells": 8313,
+    "recall": 0.0646,
+    "recall - as it is": 0.0,
+    "95% CI": "+0.000 to +0.000"
+   },
+   {
+    "group": "clear",
+    "road label": "flooded = yes",
+    "arm": "two-date",
+    "tiles": 103,
+    "road cells": 8313,
+    "recall": 0.0659,
+    "recall - as it is": 0.0013,
+    "95% CI": "-0.003 to +0.005"
+   },
+   {
+    "group": "clear",
+    "road label": "flooded = yes",
+    "arm": "single image (He)",
+    "tiles": 103,
+    "road cells": 8313,
+    "recall": 0.0635,
+    "recall - as it is": -0.0011,
+    "95% CI": "-0.012 to +0.009"
+   },
+   {
+    "group": "clear",
+    "road label": "flooded = yes",
+    "arm": "before",
+    "tiles": 103,
+    "road cells": 8313,
+    "recall": 0.6546,
+    "recall - as it is": 0.59,
+    "95% CI": "+0.550 to +0.630"
+   },
+   {
+    "group": "clear",
+    "road label": "not labelled flooded",
+    "arm": "as it is",
+    "tiles": 158,
+    "road cells": 7927,
+    "recall": 0.3698,
+    "recall - as it is": 0.0,
+    "95% CI": "+0.000 to +0.000"
+   },
+   {
+    "group": "clear",
+    "road label": "not labelled flooded",
+    "arm": "two-date",
+    "tiles": 158,
+    "road cells": 7927,
+    "recall": 0.3673,
+    "recall - as it is": -0.0024,
+    "95% CI": "-0.013 to +0.009"
+   },
+   {
+    "group": "clear",
+    "road label": "not labelled flooded",
+    "arm": "single image (He)",
+    "tiles": 158,
+    "road cells": 7927,
+    "recall": 0.3438,
+    "recall - as it is": -0.026,
+    "95% CI": "-0.039 to -0.014"
+   },
+   {
+    "group": "clear",
+    "road label": "not labelled flooded",
+    "arm": "before",
+    "tiles": 158,
+    "road cells": 7927,
+    "recall": 0.7168,
+    "recall - as it is": 0.347,
+    "95% CI": "+0.284 to +0.414"
+   }
+  ],
+  "correctable, AUC": [
+   {
+    "arm": "as it is",
+    "AUC": 0.6654,
+    "AUC 95% CI": "0.618-0.711",
+    "AUC - as it is": 0.0,
+    "AUC diff 95% CI": "+0.000 to +0.000"
+   },
+   {
+    "arm": "two-date",
+    "AUC": 0.655,
+    "AUC 95% CI": "0.605-0.703",
+    "AUC - as it is": -0.0105,
+    "AUC diff 95% CI": "-0.036 to +0.013"
+   },
+   {
+    "arm": "single image (He)",
+    "AUC": 0.6699,
+    "AUC 95% CI": "0.629-0.713",
+    "AUC - as it is": 0.0045,
+    "AUC diff 95% CI": "-0.016 to +0.027"
+   },
+   {
+    "arm": "before",
+    "AUC": 0.9821,
+    "AUC 95% CI": "0.974-0.989",
+    "AUC - as it is": 0.3166,
+    "AUC diff 95% CI": "+0.273 to +0.363"
+   }
+  ],
+  "per-arm cut-offs": {
+   "as it is": 0.59,
+   "two-date": 0.6,
+   "single image (He)": 0.55,
+   "before": 0.77
+  },
+  "correctable, own cut-offs": [
+   {
+    "arm": "as it is",
+    "tiles": 120,
+    "precision": 0.2475,
+    "recall": 0.0207,
+    "F1": 0.0381,
+    "F1 95% CI": "0.014-0.076",
+    "F1 - as it is": 0.0,
+    "F1 diff 95% CI": "+0.000 to +0.000",
+    "recall - as it is": 0.0,
+    "recall diff 95% CI": "+0.000 to +0.000",
+    "precision - as it is": 0.0,
+    "precision diff 95% CI": "+0.000 to +0.000"
+   },
+   {
+    "arm": "two-date",
+    "tiles": 120,
+    "precision": 0.3336,
+    "recall": 0.0209,
+    "F1": 0.0393,
+    "F1 95% CI": "0.011-0.080",
+    "F1 - as it is": 0.0012,
+    "F1 diff 95% CI": "-0.012 to +0.019",
+    "recall - as it is": 0.0002,
+    "recall diff 95% CI": "-0.007 to +0.010",
+    "precision - as it is": 0.0861,
+    "precision diff 95% CI": "+0.003 to +0.165"
+   },
+   {
+    "arm": "single image (He)",
+    "tiles": 120,
+    "precision": 0.1685,
+    "recall": 0.0263,
+    "F1": 0.0455,
+    "F1 95% CI": "0.019-0.084",
+    "F1 - as it is": 0.0073,
+    "F1 diff 95% CI": "+0.002 to +0.014",
+    "recall - as it is": 0.0056,
+    "recall diff 95% CI": "+0.002 to +0.011",
+    "precision - as it is": -0.079,
+    "precision diff 95% CI": "-0.146 to -0.014"
+   },
+   {
+    "arm": "before",
+    "tiles": 120,
+    "precision": 0.71,
+    "recall": 0.5766,
+    "F1": 0.6364,
+    "F1 95% CI": "0.581-0.687",
+    "F1 - as it is": 0.5983,
+    "F1 diff 95% CI": "+0.532 to +0.653",
+    "recall - as it is": 0.5559,
+    "recall diff 95% CI": "+0.492 to +0.626",
+    "precision - as it is": 0.4625,
+    "precision diff 95% CI": "+0.328 to +0.599"
+   }
+  ],
+  "roads visible": [
+   {
+    "roads": "151 could come back (ASSESS + CORRECT)",
+    "n": 151,
+    "as it is": 7,
+    "two-date": 5,
+    "single image (He)": 7,
+    "before": 89
+   },
+   {
+    "roads": "ASSESS",
+    "n": 15,
+    "as it is": 3,
+    "two-date": 3,
+    "single image (He)": 3,
+    "before": 6
+   },
+   {
+    "roads": "CORRECT",
+    "n": 136,
+    "as it is": 4,
+    "two-date": 2,
+    "single image (He)": 4,
+    "before": 83
+   },
+   {
+    "roads": "CORRECT, on tile-rule-scored tiles",
+    "n": 81,
+    "as it is": 3,
+    "two-date": 2,
+    "single image (He)": 3,
+    "before": 53
+   },
+   {
+    "roads": "CORRECT, on opaque-cloud tiles",
+    "n": 55,
+    "as it is": 1,
+    "two-date": 0,
+    "single image (He)": 1,
+    "before": 30
+   },
+   {
+    "roads": "CANNOT ASSESS",
+    "n": 88,
+    "as it is": 0,
+    "two-date": 0,
+    "single image (He)": 0,
+    "before": 50
+   },
+   {
+    "roads": "151, labelled flooded = yes",
+    "n": 27,
+    "as it is": 0,
+    "two-date": 0,
+    "single image (He)": 0,
+    "before": 16
+   },
+   {
+    "roads": "151, not labelled flooded",
+    "n": 124,
+    "as it is": 7,
+    "two-date": 5,
+    "single image (He)": 7,
+    "before": 73
+   }
+  ],
+  "151 roads vs as it is": {
+   "two-date": {
+    "newly visible": 0,
+    "lost": 2,
+    "McNemar p (roads)": 0.5,
+    "share visible - as it is": -0.01324503311258278,
+    "95% CI (tiles resampled)": "-0.036 to +0.000",
+    "tiles": 49
+   },
+   "single image (He)": {
+    "newly visible": 0,
+    "lost": 0,
+    "McNemar p (roads)": 1.0,
+    "share visible - as it is": 0.0,
+    "95% CI (tiles resampled)": "+0.000 to +0.000",
+    "tiles": 49
+   },
+   "before": {
+    "newly visible": 84,
+    "lost": 2,
+    "McNemar p (roads)": 9.672843288041967e-23,
+    "share visible - as it is": 0.543046357615894,
+    "95% CI (tiles resampled)": "+0.444 to +0.656",
+    "tiles": 49
+   }
+  },
+  "picture tile": {
+   "tile": "0_14_6",
+   "rule": "most OSM road cells in the correctable part of the gate",
+   "zoom px": [
+    392,
+    892,
+    245,
+    745
+   ],
+   "fold": 0
+  }
+ },
+ "run time s": 10637
+}

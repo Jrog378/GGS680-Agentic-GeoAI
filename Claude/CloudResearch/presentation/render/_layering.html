@@ -1,0 +1,65 @@
+<!doctype html><html><head><meta charset='utf-8'><style>@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500..800&display=swap');@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+* { box-sizing:border-box; margin:0; }
+html, body { margin:0; padding:0; background:#777; width:1920px; height:1080px; overflow:hidden; font-size:32px; line-height:1.4; }
+section { position:relative; width:1920px; height:1080px; overflow:hidden; }
+section:not([style*="display"]), div:not([style*="display"]) { display:flex; flex-direction:column; }
+h1 { font-size:96px; font-weight:600; line-height:1.1; } h2 { font-size:64px; font-weight:600; line-height:1.15; }
+h3 { font-size:44px; font-weight:600; line-height:1.2; } b { font-weight:600; } aside { display:none; }
+table { border-collapse:collapse; } td, th { padding:0.35em 0.6em; border:1px solid #C9CED5; vertical-align:top; }
+ul, ol { padding-left:1.2em; }
+</style></head><body><section id="layering" data-transition="fade" style="background:#120F1E;color:#D6D2DF;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:10px;background:linear-gradient(90deg, #000004 0%, #280B53 14%, #65156E 29%, #9F2A63 43%, #D44842 57%, #F57D15 71%, #FAC228 86%, #FCFFA4 100%)"></div>
+
+<p style="position:absolute;left:458px;top:404px;width:115px;font-family:'Archivo', Arial, sans-serif;font-size:72px;font-weight:800;line-height:1.0;color:#FCA50A;text-align:center">+</p>
+<svg style="position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:visible" width="1920" height="1080"><defs><marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 z" fill="#FCA50A"/></marker></defs><line x1="917" y1="449" x2="1004" y2="449" stroke="#FCA50A" stroke-width="4" marker-end="url(#ah)"/></svg>
+<svg style="position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:visible" width="1920" height="1080"><defs><marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 z" fill="#FCA50A"/></marker></defs><line x1="1362" y1="449" x2="1449" y2="449" stroke="#FCA50A" stroke-width="4" marker-end="url(#ah)"/></svg>
+<p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;text-transform:uppercase;color:#A39EB2">11 · Supporting · two-date de-hazing, step by step</p>
+<h2 style="font-family:'Archivo', Arial, sans-serif;font-size:60px;font-weight:700;line-height:1.1;letter-spacing:-1px;color:#F6F4EF">How the two images are layered</h2>
+<div style="display:flex;justify-content:space-between;align-items:start">
+<div style="width:330px;display:flex;flex-direction:column;gap:10px"><img src="file:///Users/jusrogers/Masters/GGS662/Agentic-GeoAI/Claude/CloudResearch/presentation/assets/P5_before.png" alt="Before image of tile 2_23_44, clear" style="width:330px;height:330px;object-fit:cover;border:2px solid #3B3550;border-radius:2px"><p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;color:#FCA50A">1 · BEFORE</p><p style="font-size:24px;line-height:1.38;color:#D6D2DF;">Clear reference: the ground's darkest pixels</p></div>
+<div style="width:330px;display:flex;flex-direction:column;gap:10px"><img src="file:///Users/jusrogers/Masters/GGS662/Agentic-GeoAI/Claude/CloudResearch/presentation/assets/P5_after.png" alt="After image of the same tile with cloud" style="width:330px;height:330px;object-fit:cover;border:2px solid #3B3550;border-radius:2px"><p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;color:#FCA50A">2 · AFTER</p><p style="font-size:24px;line-height:1.38;color:#D6D2DF;">Ground dimmed by t, plus airlight A(1 − t)</p></div>
+<div style="width:330px;display:flex;flex-direction:column;gap:10px"><img src="file:///Users/jusrogers/Masters/GGS662/Agentic-GeoAI/Claude/CloudResearch/presentation/assets/P5_t_revised.png" alt="Fitted haze t in the inferno colour scale: bright yellow (t = 1, clear) over the forest and houses, darker under the cloud, black over the thick core" style="width:330px;height:330px;object-fit:cover;border:2px solid #3B3550;border-radius:2px"><p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;color:#FCA50A">3 · HAZE t</p><p style="font-size:24px;line-height:1.38;color:#D6D2DF;">Inside the cloud mask only; houses stay at 1</p></div>
+<div style="width:330px;display:flex;flex-direction:column;gap:10px"><img src="file:///Users/jusrogers/Masters/GGS662/Agentic-GeoAI/Claude/CloudResearch/presentation/assets/P5_revised.png" alt="The corrected after image, with the opaque core in orange" style="width:330px;height:330px;object-fit:cover;border:2px solid #3B3550;border-radius:2px"><p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;color:#FCA50A">4 · CORRECTED</p><p style="font-size:24px;line-height:1.38;color:#D6D2DF;">Orange: opaque (t below 0.2), cannot assess</p></div>
+</div>
+<p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;color:#F4E3B0;background:#0B0913;border:2px solid #3B3550;padding:12px 24px;border-radius:4px">t = (A − dark after) ÷ (A − tone(dark before))  ·  corrected = (after − A) ÷ t + A</p>
+<p style="font-size:24px;line-height:1.38;color:#D6D2DF;">Standard haze model and dark channel as used by He et al. (2011). Our rules: the before image's darkest pixels in place of He's zero assumption, the tone curve, a 2,500 m² cloud minimum, a 20 m fade past the mask, and t below 0.2 left as opaque. Imagery: Maxar via SpaceNet 8, tile 2_23_44.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;letter-spacing:1px;color:#A39EB2">SEEING THROUGH CLOUDS · GGS 662 · 30 OCT 2026</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;color:#A39EB2;text-align:right">12 / 15</p>
+<aside>This is how the two images are layered. The haze model says a hazy pixel is the ground dimmed by t, plus the airlight A times one minus t. The dark channel, the darkest pixel in a 20 metre square, is the key: under cloud even the darkest pixel brightens. He's method, which de-hazes the after image without the before image, assumes the ground's darkest pixel is black. We have the before image, so we know how dark it really was, once the two dates' grey levels are matched with a curve on clear pixels. How much it brightened gives t. We only do this inside the cloud mask, fading out over 20 metres past it, and only for cloud blobs of at least 2,500 square metres, so a changed roof is not read as haze. Where t drops below 0.2 the ground cannot be recovered, so that part is cannot assess.</aside>
+</section>
+<pre id='__report' style='display:none'></pre>
+<script>
+function run(){
+ const S=document.querySelector('section'); const out={over:[],broken:[],below:[],outside:[],h2:null};
+ const all=[...S.querySelectorAll('*')].filter(e=>e.tagName!=='ASIDE' && !e.closest('aside') && !e.closest('svg'));
+ const footLike=e=>{let x=e; while(x&&x!==S){ if(x.style&&x.style.position==='absolute'&&(parseFloat(x.style.bottom)<=96||parseFloat(x.style.top)>=900)) return true; x=x.parentElement;} return false;};
+ const deco=e=>{let x=e; while(x&&x!==S){ if(x.style&&x.style.position==='absolute'&&!x.textContent.trim()) return true; x=x.parentElement;} return false;};
+ const h2=S.querySelector('h2'); if(h2){const r=h2.getBoundingClientRect(); out.h2=[Math.round(r.top),Math.round(r.bottom)];}
+ const isText=e=>[...e.childNodes].some(n=>n.nodeType===3&&n.textContent.trim());
+ const lab=e=>e.tagName.toLowerCase()+': '+(e.textContent||e.getAttribute('alt')||'').trim().slice(0,50);
+ for(const e of all){
+   const r=e.getBoundingClientRect(); if(r.width===0&&r.height===0) continue;
+   const foot=footLike(e), dec=deco(e);
+   if(isText(e)){
+     if(e.scrollWidth>e.clientWidth+1 && getComputedStyle(e).whiteSpace!=='nowrap') out.over.push(lab(e)+' (w '+e.scrollWidth+'>'+e.clientWidth+')');
+     const fs=parseFloat(getComputedStyle(e).fontSize)||24;
+     if(e.scrollHeight>e.clientHeight+Math.max(3,0.2*fs)) out.over.push(lab(e)+' (h '+e.scrollHeight+'>'+e.clientHeight+')');
+     for(const n of e.childNodes){ if(n.nodeType!==3) continue; const t=n.textContent; const re=/\S+/g; let m;
+       while((m=re.exec(t))){ const rg=document.createRange(); rg.setStart(n,m.index); rg.setEnd(n,m.index+m[0].length);
+         const rs=[...rg.getClientRects()].filter(x=>x.width>0); if(rs.length>1) out.broken.push(m[0]+' in '+lab(e));
+         for(const x of rs){ if(!foot && x.bottom>920+1) out.below.push('text "'+m[0]+'" bottom '+Math.round(x.bottom));
+           if(x.right>1792+1||x.left<128-1) out.outside.push('text "'+m[0]+'" x '+Math.round(x.left)+'-'+Math.round(x.right)); }
+       } }
+   }
+   if(!foot && !dec && r.bottom>920+1 && e.tagName!=='SECTION') out.below.push(lab(e)+' bottom '+Math.round(r.bottom));
+   if(!dec && (r.right>1792+1||r.left<128-1) && e.tagName!=='SECTION') out.outside.push(lab(e)+' x '+Math.round(r.left)+'-'+Math.round(r.right));
+ }
+ for(const e of all){ if(e.tagName!=='DIV') continue; const pr=e.getBoundingClientRect();
+   for(const c of e.children){ if(c.style.position==='absolute') continue; const cr=c.getBoundingClientRect();
+     if(cr.bottom>pr.bottom+2 || cr.right>pr.right+2) out.over.push('child '+lab(c)+' spills out of its div'); } }
+ for(const k of ['below','outside','over','broken']) out[k]=[...new Set(out[k])].slice(0,25);
+ document.getElementById('__report').textContent=JSON.stringify(out);
+}
+document.fonts.ready.then(()=>setTimeout(run,80));
+</script>
+</body></html>

@@ -1,0 +1,20 @@
+{
+ "A-head (cached) token cache (s)": 498.5,
+ "A-head (cached) check max diff 0_10_2": 0.0,
+ "A-head (cached) check max diff 0_14_7": 0.0,
+ "A-head outer 0 (s)": 292.4,
+ "A-head outer 1 (s)": 262.0,
+ "A-head outer 2 (s)": 269.3,
+ "A-head outer 3 (s)": 325.9,
+ "A-head outer 4 (s)": 322.7,
+ "A-head (cached) total (s)": 2618.6,
+ "trunk reproduction cosine (min)": 0.9999998807907104,
+ "Track A targets (s)": 79.8,
+ "A-ft outer 0 (s)": 2601.0,
+ "A-ft outer 1 (s)": 1755.8,
+ "A-ft outer 2 (s)": 3164.2,
+ "A-ft outer 3 (s)": 1775.4,
+ "A-ft outer 4 (s)": 1886.4,
+ "stage A-ft finished at (s since start)": 8678.8,
+ "total this run (s)": 8678.8
+}

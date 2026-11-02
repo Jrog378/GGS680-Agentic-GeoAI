@@ -1,0 +1,1081 @@
+arm,scope,learner,image,type,fold,TP,FP,FN,TN
+D0,all,random forest,barren_3,barren,0,5977,697,430,50496
+D0,band,random forest,barren_3,barren,0,1470,620,367,1633
+D0,interior,random forest,barren_3,barren,0,4507,77,63,48863
+D5a weighted,all,random forest,barren_3,barren,0,5993,715,414,50478
+D5a weighted,band,random forest,barren_3,barren,0,1482,637,355,1616
+D5a weighted,interior,random forest,barren_3,barren,0,4511,78,59,48862
+D5b edge-sampled,all,random forest,barren_3,barren,0,5991,713,416,50480
+D5b edge-sampled,band,random forest,barren_3,barren,0,1483,631,354,1622
+D5b edge-sampled,interior,random forest,barren_3,barren,0,4508,82,62,48858
+D0,all,random forest,barren_4,barren,0,4151,1684,276,51489
+D0,band,random forest,barren_4,barren,0,3140,1389,276,3481
+D0,interior,random forest,barren_4,barren,0,1011,295,0,48008
+D5a weighted,all,random forest,barren_4,barren,0,4160,1722,267,51451
+D5a weighted,band,random forest,barren_4,barren,0,3149,1404,267,3466
+D5a weighted,interior,random forest,barren_4,barren,0,1011,318,0,47985
+D5b edge-sampled,all,random forest,barren_4,barren,0,4189,1778,238,51395
+D5b edge-sampled,band,random forest,barren_4,barren,0,3178,1458,238,3412
+D5b edge-sampled,interior,random forest,barren_4,barren,0,1011,320,0,47983
+D0,all,random forest,barren_8,barren,0,1217,610,23,55750
+D0,band,random forest,barren_8,barren,0,564,352,22,365
+D0,interior,random forest,barren_8,barren,0,653,258,1,55385
+D5a weighted,all,random forest,barren_8,barren,0,1223,634,17,55726
+D5a weighted,band,random forest,barren_8,barren,0,569,368,17,349
+D5a weighted,interior,random forest,barren_8,barren,0,654,266,0,55377
+D5b edge-sampled,all,random forest,barren_8,barren,0,1224,650,16,55710
+D5b edge-sampled,band,random forest,barren_8,barren,0,570,383,16,334
+D5b edge-sampled,interior,random forest,barren_8,barren,0,654,267,0,55376
+D0,all,random forest,barren_16,barren,0,4872,424,408,51896
+D0,band,random forest,barren_16,barren,0,1916,351,367,2153
+D0,interior,random forest,barren_16,barren,0,2956,73,41,49743
+D5a weighted,all,random forest,barren_16,barren,0,4880,426,400,51894
+D5a weighted,band,random forest,barren_16,barren,0,1923,350,360,2154
+D5a weighted,interior,random forest,barren_16,barren,0,2957,76,40,49740
+D5b edge-sampled,all,random forest,barren_16,barren,0,4903,435,377,51885
+D5b edge-sampled,band,random forest,barren_16,barren,0,1944,366,339,2138
+D5b edge-sampled,interior,random forest,barren_16,barren,0,2959,69,38,49747
+D0,all,random forest,barren_27,barren,0,16810,2941,9840,28009
+D0,band,random forest,barren_27,barren,0,4438,1288,5793,7488
+D0,interior,random forest,barren_27,barren,0,12372,1653,4047,20521
+D5a weighted,all,random forest,barren_27,barren,0,17374,3115,9276,27835
+D5a weighted,band,random forest,barren_27,barren,0,4719,1386,5512,7390
+D5a weighted,interior,random forest,barren_27,barren,0,12655,1729,3764,20445
+D5b edge-sampled,all,random forest,barren_27,barren,0,16300,2665,10350,28285
+D5b edge-sampled,band,random forest,barren_27,barren,0,4165,1128,6066,7648
+D5b edge-sampled,interior,random forest,barren_27,barren,0,12135,1537,4284,20637
+D0,all,random forest,snow_1,snow,0,20774,3208,1407,32211
+D0,band,random forest,snow_1,snow,0,4477,1615,1292,3876
+D0,interior,random forest,snow_1,snow,0,16297,1593,115,28335
+D5a weighted,all,random forest,snow_1,snow,0,20848,3465,1333,31954
+D5a weighted,band,random forest,snow_1,snow,0,4535,1748,1234,3743
+D5a weighted,interior,random forest,snow_1,snow,0,16313,1717,99,28211
+D5b edge-sampled,all,random forest,snow_1,snow,0,20956,3518,1225,31901
+D5b edge-sampled,band,random forest,snow_1,snow,0,4624,1765,1145,3726
+D5b edge-sampled,interior,random forest,snow_1,snow,0,16332,1753,80,28175
+D0,all,random forest,snow_3,snow,0,35131,962,4815,16692
+D0,band,random forest,snow_3,snow,0,3224,556,2207,3776
+D0,interior,random forest,snow_3,snow,0,31907,406,2608,12916
+D5a weighted,all,random forest,snow_3,snow,0,35514,1003,4432,16651
+D5a weighted,band,random forest,snow_3,snow,0,3284,577,2147,3755
+D5a weighted,interior,random forest,snow_3,snow,0,32230,426,2285,12896
+D5b edge-sampled,all,random forest,snow_3,snow,0,35936,1037,4010,16617
+D5b edge-sampled,band,random forest,snow_3,snow,0,3350,604,2081,3728
+D5b edge-sampled,interior,random forest,snow_3,snow,0,32586,433,1929,12889
+D0,all,random forest,snow_7,snow,0,12047,630,1227,43696
+D0,band,random forest,snow_7,snow,0,2550,319,1148,3890
+D0,interior,random forest,snow_7,snow,0,9497,311,79,39806
+D5a weighted,all,random forest,snow_7,snow,0,12149,668,1125,43658
+D5a weighted,band,random forest,snow_7,snow,0,2641,356,1057,3853
+D5a weighted,interior,random forest,snow_7,snow,0,9508,312,68,39805
+D5b edge-sampled,all,random forest,snow_7,snow,0,12179,728,1095,43598
+D5b edge-sampled,band,random forest,snow_7,snow,0,2663,377,1035,3832
+D5b edge-sampled,interior,random forest,snow_7,snow,0,9516,351,60,39766
+D0,all,random forest,snow_18,snow,0,24045,806,6514,26235
+D0,band,random forest,snow_18,snow,0,2690,511,2875,4353
+D0,interior,random forest,snow_18,snow,0,21355,295,3639,21882
+D5a weighted,all,random forest,snow_18,snow,0,23687,825,6872,26216
+D5a weighted,band,random forest,snow_18,snow,0,2762,515,2803,4349
+D5a weighted,interior,random forest,snow_18,snow,0,20925,310,4069,21867
+D5b edge-sampled,all,random forest,snow_18,snow,0,23131,862,7428,26179
+D5b edge-sampled,band,random forest,snow_18,snow,0,2788,533,2777,4331
+D5b edge-sampled,interior,random forest,snow_18,snow,0,20343,329,4651,21848
+D0,all,random forest,snow_22,snow,0,7887,551,2292,46870
+D0,band,random forest,snow_22,snow,0,1496,383,1261,2447
+D0,interior,random forest,snow_22,snow,0,6391,168,1031,44423
+D5a weighted,all,random forest,snow_22,snow,0,7969,595,2210,46826
+D5a weighted,band,random forest,snow_22,snow,0,1553,401,1204,2429
+D5a weighted,interior,random forest,snow_22,snow,0,6416,194,1006,44397
+D5b edge-sampled,all,random forest,snow_22,snow,0,8120,617,2059,46804
+D5b edge-sampled,band,random forest,snow_22,snow,0,1586,435,1171,2395
+D5b edge-sampled,interior,random forest,snow_22,snow,0,6534,182,888,44409
+D0,all,random forest,urban_6,urban,0,7991,33,3942,45634
+D0,band,random forest,urban_6,urban,0,955,33,2037,2781
+D0,interior,random forest,urban_6,urban,0,7036,0,1905,42853
+D5a weighted,all,random forest,urban_6,urban,0,8216,38,3717,45629
+D5a weighted,band,random forest,urban_6,urban,0,1005,38,1987,2776
+D5a weighted,interior,random forest,urban_6,urban,0,7211,0,1730,42853
+D5b edge-sampled,all,random forest,urban_6,urban,0,8195,31,3738,45636
+D5b edge-sampled,band,random forest,urban_6,urban,0,1005,31,1987,2783
+D5b edge-sampled,interior,random forest,urban_6,urban,0,7190,0,1751,42853
+D0,all,random forest,urban_17,urban,0,4369,186,3223,49822
+D0,band,random forest,urban_17,urban,0,1608,119,2513,5112
+D0,interior,random forest,urban_17,urban,0,2761,67,710,44710
+D5a weighted,all,random forest,urban_17,urban,0,4433,171,3159,49837
+D5a weighted,band,random forest,urban_17,urban,0,1638,117,2483,5114
+D5a weighted,interior,random forest,urban_17,urban,0,2795,54,676,44723
+D5b edge-sampled,all,random forest,urban_17,urban,0,4450,177,3142,49831
+D5b edge-sampled,band,random forest,urban_17,urban,0,1660,115,2461,5116
+D5b edge-sampled,interior,random forest,urban_17,urban,0,2790,62,681,44715
+D0,all,random forest,urban_20,urban,0,14511,220,4465,38404
+D0,band,random forest,urban_20,urban,0,4144,194,3568,6999
+D0,interior,random forest,urban_20,urban,0,10367,26,897,31405
+D5a weighted,all,random forest,urban_20,urban,0,14897,253,4079,38371
+D5a weighted,band,random forest,urban_20,urban,0,4435,214,3277,6979
+D5a weighted,interior,random forest,urban_20,urban,0,10462,39,802,31392
+D5b edge-sampled,all,random forest,urban_20,urban,0,14685,221,4291,38403
+D5b edge-sampled,band,random forest,urban_20,urban,0,4302,195,3410,6998
+D5b edge-sampled,interior,random forest,urban_20,urban,0,10383,26,881,31405
+D0,all,random forest,urban_22,urban,0,25810,123,3597,28070
+D0,band,random forest,urban_22,urban,0,2607,110,2767,4523
+D0,interior,random forest,urban_22,urban,0,23203,13,830,23547
+D5a weighted,all,random forest,urban_22,urban,0,25930,143,3477,28050
+D5a weighted,band,random forest,urban_22,urban,0,2685,126,2689,4507
+D5a weighted,interior,random forest,urban_22,urban,0,23245,17,788,23543
+D5b edge-sampled,all,random forest,urban_22,urban,0,25985,153,3422,28040
+D5b edge-sampled,band,random forest,urban_22,urban,0,2752,135,2622,4498
+D5b edge-sampled,interior,random forest,urban_22,urban,0,23233,18,800,23542
+D0,all,random forest,urban_23,urban,0,25502,553,13001,18544
+D0,band,random forest,urban_23,urban,0,6636,297,9350,8015
+D0,interior,random forest,urban_23,urban,0,18866,256,3651,10529
+D5a weighted,all,random forest,urban_23,urban,0,26047,578,12456,18519
+D5a weighted,band,random forest,urban_23,urban,0,6892,302,9094,8010
+D5a weighted,interior,random forest,urban_23,urban,0,19155,276,3362,10509
+D5b edge-sampled,all,random forest,urban_23,urban,0,26242,619,12261,18478
+D5b edge-sampled,band,random forest,urban_23,urban,0,7079,341,8907,7971
+D5b edge-sampled,interior,random forest,urban_23,urban,0,19163,278,3354,10507
+D0,all,random forest,vegetation_14,vegetation,0,24846,141,885,31728
+D0,band,random forest,vegetation_14,vegetation,0,1833,119,815,2504
+D0,interior,random forest,vegetation_14,vegetation,0,23013,22,70,29224
+D5a weighted,all,random forest,vegetation_14,vegetation,0,24884,156,847,31713
+D5a weighted,band,random forest,vegetation_14,vegetation,0,1866,127,782,2496
+D5a weighted,interior,random forest,vegetation_14,vegetation,0,23018,29,65,29217
+D5b edge-sampled,all,random forest,vegetation_14,vegetation,0,24824,151,907,31718
+D5b edge-sampled,band,random forest,vegetation_14,vegetation,0,1816,120,832,2503
+D5b edge-sampled,interior,random forest,vegetation_14,vegetation,0,23008,31,75,29215
+D0,all,random forest,vegetation_18,vegetation,0,12152,729,135,44584
+D0,band,random forest,vegetation_18,vegetation,0,2520,727,71,2152
+D0,interior,random forest,vegetation_18,vegetation,0,9632,2,64,42432
+D5a weighted,all,random forest,vegetation_18,vegetation,0,12158,694,129,44619
+D5a weighted,band,random forest,vegetation_18,vegetation,0,2523,687,68,2192
+D5a weighted,interior,random forest,vegetation_18,vegetation,0,9635,7,61,42427
+D5b edge-sampled,all,random forest,vegetation_18,vegetation,0,12152,697,135,44616
+D5b edge-sampled,band,random forest,vegetation_18,vegetation,0,2516,694,75,2185
+D5b edge-sampled,interior,random forest,vegetation_18,vegetation,0,9636,3,60,42431
+D0,all,random forest,vegetation_19,vegetation,0,14940,257,1380,41023
+D0,band,random forest,vegetation_19,vegetation,0,3513,256,1265,4016
+D0,interior,random forest,vegetation_19,vegetation,0,11427,1,115,37007
+D5a weighted,all,random forest,vegetation_19,vegetation,0,14917,223,1403,41057
+D5a weighted,band,random forest,vegetation_19,vegetation,0,3495,221,1283,4051
+D5a weighted,interior,random forest,vegetation_19,vegetation,0,11422,2,120,37006
+D5b edge-sampled,all,random forest,vegetation_19,vegetation,0,14969,256,1351,41024
+D5b edge-sampled,band,random forest,vegetation_19,vegetation,0,3546,255,1232,4017
+D5b edge-sampled,interior,random forest,vegetation_19,vegetation,0,11423,1,119,37007
+D0,all,random forest,vegetation_27,vegetation,0,37711,169,2716,17004
+D0,band,random forest,vegetation_27,vegetation,0,3379,151,2030,3648
+D0,interior,random forest,vegetation_27,vegetation,0,34332,18,686,13356
+D5a weighted,all,random forest,vegetation_27,vegetation,0,37866,166,2561,17007
+D5a weighted,band,random forest,vegetation_27,vegetation,0,3472,130,1937,3669
+D5a weighted,interior,random forest,vegetation_27,vegetation,0,34394,36,624,13338
+D5b edge-sampled,all,random forest,vegetation_27,vegetation,0,37767,195,2660,16978
+D5b edge-sampled,band,random forest,vegetation_27,vegetation,0,3411,163,1998,3636
+D5b edge-sampled,interior,random forest,vegetation_27,vegetation,0,34356,32,662,13342
+D0,all,random forest,water_4,water,0,14299,577,1028,41696
+D0,band,random forest,water_4,water,0,4400,499,938,3592
+D0,interior,random forest,water_4,water,0,9899,78,90,38104
+D5a weighted,all,random forest,water_4,water,0,14289,575,1038,41698
+D5a weighted,band,random forest,water_4,water,0,4395,490,943,3601
+D5a weighted,interior,random forest,water_4,water,0,9894,85,95,38097
+D5b edge-sampled,all,random forest,water_4,water,0,14112,532,1215,41741
+D5b edge-sampled,band,random forest,water_4,water,0,4225,460,1113,3631
+D5b edge-sampled,interior,random forest,water_4,water,0,9887,72,102,38110
+D0,all,random forest,water_7,water,0,26427,2758,1329,27086
+D0,band,random forest,water_7,water,0,6974,2406,1166,4879
+D0,interior,random forest,water_7,water,0,19453,352,163,22207
+D5a weighted,all,random forest,water_7,water,0,26578,2784,1178,27060
+D5a weighted,band,random forest,water_7,water,0,7124,2397,1016,4888
+D5a weighted,interior,random forest,water_7,water,0,19454,387,162,22172
+D5b edge-sampled,all,random forest,water_7,water,0,26463,3012,1293,26832
+D5b edge-sampled,band,random forest,water_7,water,0,7005,2554,1135,4731
+D5b edge-sampled,interior,random forest,water_7,water,0,19458,458,158,22101
+D0,all,random forest,water_9,water,0,7282,2770,825,46723
+D0,band,random forest,water_9,water,0,3436,1635,752,4022
+D0,interior,random forest,water_9,water,0,3846,1135,73,42701
+D5a weighted,all,random forest,water_9,water,0,7299,2831,808,46662
+D5a weighted,band,random forest,water_9,water,0,3449,1658,739,3999
+D5a weighted,interior,random forest,water_9,water,0,3850,1173,69,42663
+D5b edge-sampled,all,random forest,water_9,water,0,7313,2982,794,46511
+D5b edge-sampled,band,random forest,water_9,water,0,3475,1720,713,3937
+D5b edge-sampled,interior,random forest,water_9,water,0,3838,1262,81,42574
+D0,all,random forest,water_11,water,0,6276,3627,12,47685
+D0,band,random forest,water_11,water,0,2923,2464,11,1640
+D0,interior,random forest,water_11,water,0,3353,1163,1,46045
+D5a weighted,all,random forest,water_11,water,0,6271,3612,17,47700
+D5a weighted,band,random forest,water_11,water,0,2919,2418,15,1686
+D5a weighted,interior,random forest,water_11,water,0,3352,1194,2,46014
+D5b edge-sampled,all,random forest,water_11,water,0,6276,3937,12,47375
+D5b edge-sampled,band,random forest,water_11,water,0,2923,2558,11,1546
+D5b edge-sampled,interior,random forest,water_11,water,0,3353,1379,1,45829
+D0,all,random forest,water_26,water,0,9359,39,12720,35482
+D0,band,random forest,water_26,water,0,968,39,4436,5521
+D0,interior,random forest,water_26,water,0,8391,0,8284,29961
+D5a weighted,all,random forest,water_26,water,0,9294,70,12785,35451
+D5a weighted,band,random forest,water_26,water,0,1021,63,4383,5497
+D5a weighted,interior,random forest,water_26,water,0,8273,7,8402,29954
+D5b edge-sampled,all,random forest,water_26,water,0,9298,62,12781,35459
+D5b edge-sampled,band,random forest,water_26,water,0,1152,59,4252,5501
+D5b edge-sampled,interior,random forest,water_26,water,0,8146,3,8529,29958
+D0,all,random forest,barren_10,barren,1,16811,13734,1100,25955
+D0,band,random forest,barren_10,barren,1,7082,6374,455,2485
+D0,interior,random forest,barren_10,barren,1,9729,7360,645,23470
+D5a weighted,all,random forest,barren_10,barren,1,16786,14028,1125,25661
+D5a weighted,band,random forest,barren_10,barren,1,7075,6373,462,2486
+D5a weighted,interior,random forest,barren_10,barren,1,9711,7655,663,23175
+D5b edge-sampled,all,random forest,barren_10,barren,1,16791,13883,1120,25806
+D5b edge-sampled,band,random forest,barren_10,barren,1,7096,6340,441,2519
+D5b edge-sampled,interior,random forest,barren_10,barren,1,9695,7543,679,23287
+D0,all,random forest,barren_13,barren,1,9756,2300,190,45354
+D0,band,random forest,barren_13,barren,1,4837,2152,189,3704
+D0,interior,random forest,barren_13,barren,1,4919,148,1,41650
+D5a weighted,all,random forest,barren_13,barren,1,9769,2423,177,45231
+D5a weighted,band,random forest,barren_13,barren,1,4851,2236,175,3620
+D5a weighted,interior,random forest,barren_13,barren,1,4918,187,2,41611
+D5b edge-sampled,all,random forest,barren_13,barren,1,9758,2308,188,45346
+D5b edge-sampled,band,random forest,barren_13,barren,1,4840,2155,186,3701
+D5b edge-sampled,interior,random forest,barren_13,barren,1,4918,153,2,41645
+D0,all,random forest,barren_17,barren,1,23487,1181,2511,30421
+D0,band,random forest,barren_17,barren,1,4828,1047,1422,4264
+D0,interior,random forest,barren_17,barren,1,18659,134,1089,26157
+D5a weighted,all,random forest,barren_17,barren,1,23835,1311,2163,30291
+D5a weighted,band,random forest,barren_17,barren,1,4946,1143,1304,4168
+D5a weighted,interior,random forest,barren_17,barren,1,18889,168,859,26123
+D5b edge-sampled,all,random forest,barren_17,barren,1,23722,1244,2276,30358
+D5b edge-sampled,band,random forest,barren_17,barren,1,4869,1099,1381,4212
+D5b edge-sampled,interior,random forest,barren_17,barren,1,18853,145,895,26146
+D0,all,random forest,barren_18,barren,1,2330,1558,743,52969
+D0,band,random forest,barren_18,barren,1,1485,643,693,2699
+D0,interior,random forest,barren_18,barren,1,845,915,50,50270
+D5a weighted,all,random forest,barren_18,barren,1,2402,1742,671,52785
+D5a weighted,band,random forest,barren_18,barren,1,1552,729,626,2613
+D5a weighted,interior,random forest,barren_18,barren,1,850,1013,45,50172
+D5b edge-sampled,all,random forest,barren_18,barren,1,2377,1720,696,52807
+D5b edge-sampled,band,random forest,barren_18,barren,1,1528,688,650,2654
+D5b edge-sampled,interior,random forest,barren_18,barren,1,849,1032,46,50153
+D0,all,random forest,barren_29,barren,1,3961,3886,1,49752
+D0,band,random forest,barren_29,barren,1,3001,2774,1,1328
+D0,interior,random forest,barren_29,barren,1,960,1112,0,48424
+D5a weighted,all,random forest,barren_29,barren,1,3961,4074,1,49564
+D5a weighted,band,random forest,barren_29,barren,1,3001,2809,1,1293
+D5a weighted,interior,random forest,barren_29,barren,1,960,1265,0,48271
+D5b edge-sampled,all,random forest,barren_29,barren,1,3961,4039,1,49599
+D5b edge-sampled,band,random forest,barren_29,barren,1,3001,2796,1,1306
+D5b edge-sampled,interior,random forest,barren_29,barren,1,960,1243,0,48293
+D0,all,random forest,snow_5,snow,1,4365,708,418,52109
+D0,band,random forest,snow_5,snow,1,1243,586,342,1147
+D0,interior,random forest,snow_5,snow,1,3122,122,76,50962
+D5a weighted,all,random forest,snow_5,snow,1,4381,748,402,52069
+D5a weighted,band,random forest,snow_5,snow,1,1259,600,326,1133
+D5a weighted,interior,random forest,snow_5,snow,1,3122,148,76,50936
+D5b edge-sampled,all,random forest,snow_5,snow,1,4395,732,388,52085
+D5b edge-sampled,band,random forest,snow_5,snow,1,1268,606,317,1127
+D5b edge-sampled,interior,random forest,snow_5,snow,1,3127,126,71,50958
+D0,all,random forest,snow_9,snow,1,24424,1594,4928,26654
+D0,band,random forest,snow_9,snow,1,4066,1050,2977,4764
+D0,interior,random forest,snow_9,snow,1,20358,544,1951,21890
+D5a weighted,all,random forest,snow_9,snow,1,24552,1655,4800,26593
+D5a weighted,band,random forest,snow_9,snow,1,4140,1097,2903,4717
+D5a weighted,interior,random forest,snow_9,snow,1,20412,558,1897,21876
+D5b edge-sampled,all,random forest,snow_9,snow,1,24628,1573,4724,26675
+D5b edge-sampled,band,random forest,snow_9,snow,1,4130,1031,2913,4783
+D5b edge-sampled,interior,random forest,snow_9,snow,1,20498,542,1811,21892
+D0,all,random forest,snow_19,snow,1,9742,2286,1601,43971
+D0,band,random forest,snow_19,snow,1,3026,922,1063,3388
+D0,interior,random forest,snow_19,snow,1,6716,1364,538,40583
+D5a weighted,all,random forest,snow_19,snow,1,9763,2500,1580,43757
+D5a weighted,band,random forest,snow_19,snow,1,3044,993,1045,3317
+D5a weighted,interior,random forest,snow_19,snow,1,6719,1507,535,40440
+D5b edge-sampled,all,random forest,snow_19,snow,1,9858,2498,1485,43759
+D5b edge-sampled,band,random forest,snow_19,snow,1,3113,995,976,3315
+D5b edge-sampled,interior,random forest,snow_19,snow,1,6745,1503,509,40444
+D0,all,random forest,snow_20,snow,1,28234,500,4454,24412
+D0,band,random forest,snow_20,snow,1,3855,458,2322,5032
+D0,interior,random forest,snow_20,snow,1,24379,42,2132,19380
+D5a weighted,all,random forest,snow_20,snow,1,28406,555,4282,24357
+D5a weighted,band,random forest,snow_20,snow,1,3908,509,2269,4981
+D5a weighted,interior,random forest,snow_20,snow,1,24498,46,2013,19376
+D5b edge-sampled,all,random forest,snow_20,snow,1,28335,505,4353,24407
+D5b edge-sampled,band,random forest,snow_20,snow,1,3871,461,2306,5029
+D5b edge-sampled,interior,random forest,snow_20,snow,1,24464,44,2047,19378
+D0,all,random forest,snow_27,snow,1,3705,519,347,53029
+D0,band,random forest,snow_27,snow,1,1714,442,316,2164
+D0,interior,random forest,snow_27,snow,1,1991,77,31,50865
+D5a weighted,all,random forest,snow_27,snow,1,3735,572,317,52976
+D5a weighted,band,random forest,snow_27,snow,1,1742,478,288,2128
+D5a weighted,interior,random forest,snow_27,snow,1,1993,94,29,50848
+D5b edge-sampled,all,random forest,snow_27,snow,1,3691,520,361,53028
+D5b edge-sampled,band,random forest,snow_27,snow,1,1705,446,325,2160
+D5b edge-sampled,interior,random forest,snow_27,snow,1,1986,74,36,50868
+D0,all,random forest,urban_3,urban,1,9465,331,2039,45765
+D0,band,random forest,urban_3,urban,1,4522,307,1942,6968
+D0,interior,random forest,urban_3,urban,1,4943,24,97,38797
+D5a weighted,all,random forest,urban_3,urban,1,9628,433,1876,45663
+D5a weighted,band,random forest,urban_3,urban,1,4682,386,1782,6889
+D5a weighted,interior,random forest,urban_3,urban,1,4946,47,94,38774
+D5b edge-sampled,all,random forest,urban_3,urban,1,9470,304,2034,45792
+D5b edge-sampled,band,random forest,urban_3,urban,1,4520,276,1944,6999
+D5b edge-sampled,interior,random forest,urban_3,urban,1,4950,28,90,38793
+D0,all,random forest,urban_5,urban,1,31491,85,17623,8401
+D0,band,random forest,urban_5,urban,1,3201,73,7079,5626
+D0,interior,random forest,urban_5,urban,1,28290,12,10544,2775
+D5a weighted,all,random forest,urban_5,urban,1,31992,109,17122,8377
+D5a weighted,band,random forest,urban_5,urban,1,3415,93,6865,5606
+D5a weighted,interior,random forest,urban_5,urban,1,28577,16,10257,2771
+D5b edge-sampled,all,random forest,urban_5,urban,1,32771,103,16343,8383
+D5b edge-sampled,band,random forest,urban_5,urban,1,3590,87,6690,5612
+D5b edge-sampled,interior,random forest,urban_5,urban,1,29181,16,9653,2771
+D0,all,random forest,urban_9,urban,1,18947,195,3833,34625
+D0,band,random forest,urban_9,urban,1,2203,185,1961,3861
+D0,interior,random forest,urban_9,urban,1,16744,10,1872,30764
+D5a weighted,all,random forest,urban_9,urban,1,19014,232,3766,34588
+D5a weighted,band,random forest,urban_9,urban,1,2281,219,1883,3827
+D5a weighted,interior,random forest,urban_9,urban,1,16733,13,1883,30761
+D5b edge-sampled,all,random forest,urban_9,urban,1,19148,237,3632,34583
+D5b edge-sampled,band,random forest,urban_9,urban,1,2263,226,1901,3820
+D5b edge-sampled,interior,random forest,urban_9,urban,1,16885,11,1731,30763
+D0,all,random forest,urban_11,urban,1,9055,595,1229,46721
+D0,band,random forest,urban_11,urban,1,3168,469,1171,4175
+D0,interior,random forest,urban_11,urban,1,5887,126,58,42546
+D5a weighted,all,random forest,urban_11,urban,1,9127,650,1157,46666
+D5a weighted,band,random forest,urban_11,urban,1,3229,510,1110,4134
+D5a weighted,interior,random forest,urban_11,urban,1,5898,140,47,42532
+D5b edge-sampled,all,random forest,urban_11,urban,1,9114,576,1170,46740
+D5b edge-sampled,band,random forest,urban_11,urban,1,3217,449,1122,4195
+D5b edge-sampled,interior,random forest,urban_11,urban,1,5897,127,48,42545
+D0,all,random forest,urban_26,urban,1,12073,821,4181,40525
+D0,band,random forest,urban_26,urban,1,2771,620,2335,4671
+D0,interior,random forest,urban_26,urban,1,9302,201,1846,35854
+D5a weighted,all,random forest,urban_26,urban,1,12179,946,4075,40400
+D5a weighted,band,random forest,urban_26,urban,1,2830,712,2276,4579
+D5a weighted,interior,random forest,urban_26,urban,1,9349,234,1799,35821
+D5b edge-sampled,all,random forest,urban_26,urban,1,12143,889,4111,40457
+D5b edge-sampled,band,random forest,urban_26,urban,1,2798,681,2308,4610
+D5b edge-sampled,interior,random forest,urban_26,urban,1,9345,208,1803,35847
+D0,all,random forest,vegetation_5,vegetation,1,35528,678,2232,19162
+D0,band,random forest,vegetation_5,vegetation,1,4814,614,1445,4851
+D0,interior,random forest,vegetation_5,vegetation,1,30714,64,787,14311
+D5a weighted,all,random forest,vegetation_5,vegetation,1,35586,710,2174,19130
+D5a weighted,band,random forest,vegetation_5,vegetation,1,4862,636,1397,4829
+D5a weighted,interior,random forest,vegetation_5,vegetation,1,30724,74,777,14301
+D5b edge-sampled,all,random forest,vegetation_5,vegetation,1,35509,629,2251,19211
+D5b edge-sampled,band,random forest,vegetation_5,vegetation,1,4797,560,1462,4905
+D5b edge-sampled,interior,random forest,vegetation_5,vegetation,1,30712,69,789,14306
+D0,all,random forest,vegetation_10,vegetation,1,27990,187,3809,25614
+D0,band,random forest,vegetation_10,vegetation,1,3133,166,2341,4507
+D0,interior,random forest,vegetation_10,vegetation,1,24857,21,1468,21107
+D5a weighted,all,random forest,vegetation_10,vegetation,1,28079,209,3720,25592
+D5a weighted,band,random forest,vegetation_10,vegetation,1,3189,175,2285,4498
+D5a weighted,interior,random forest,vegetation_10,vegetation,1,24890,34,1435,21094
+D5b edge-sampled,all,random forest,vegetation_10,vegetation,1,27953,169,3846,25632
+D5b edge-sampled,band,random forest,vegetation_10,vegetation,1,3070,148,2404,4525
+D5b edge-sampled,interior,random forest,vegetation_10,vegetation,1,24883,21,1442,21107
+D0,all,random forest,vegetation_12,vegetation,1,12823,198,1179,43400
+D0,band,random forest,vegetation_12,vegetation,1,3252,198,968,3681
+D0,interior,random forest,vegetation_12,vegetation,1,9571,0,211,39719
+D5a weighted,all,random forest,vegetation_12,vegetation,1,12860,198,1142,43400
+D5a weighted,band,random forest,vegetation_12,vegetation,1,3264,198,956,3681
+D5a weighted,interior,random forest,vegetation_12,vegetation,1,9596,0,186,39719
+D5b edge-sampled,all,random forest,vegetation_12,vegetation,1,12804,180,1198,43418
+D5b edge-sampled,band,random forest,vegetation_12,vegetation,1,3226,180,994,3699
+D5b edge-sampled,interior,random forest,vegetation_12,vegetation,1,9578,0,204,39719
+D0,all,random forest,vegetation_23,vegetation,1,18478,922,307,37893
+D0,band,random forest,vegetation_23,vegetation,1,2730,801,200,2435
+D0,interior,random forest,vegetation_23,vegetation,1,15748,121,107,35458
+D5a weighted,all,random forest,vegetation_23,vegetation,1,18491,957,294,37858
+D5a weighted,band,random forest,vegetation_23,vegetation,1,2731,809,199,2427
+D5a weighted,interior,random forest,vegetation_23,vegetation,1,15760,148,95,35431
+D5b edge-sampled,all,random forest,vegetation_23,vegetation,1,18486,916,299,37899
+D5b edge-sampled,band,random forest,vegetation_23,vegetation,1,2726,747,204,2489
+D5b edge-sampled,interior,random forest,vegetation_23,vegetation,1,15760,169,95,35410
+D0,all,random forest,vegetation_30,vegetation,1,35353,433,2849,18965
+D0,band,random forest,vegetation_30,vegetation,1,2036,302,1666,3022
+D0,interior,random forest,vegetation_30,vegetation,1,33317,131,1183,15943
+D5a weighted,all,random forest,vegetation_30,vegetation,1,35375,437,2827,18961
+D5a weighted,band,random forest,vegetation_30,vegetation,1,2064,315,1638,3009
+D5a weighted,interior,random forest,vegetation_30,vegetation,1,33311,122,1189,15952
+D5b edge-sampled,all,random forest,vegetation_30,vegetation,1,35482,443,2720,18955
+D5b edge-sampled,band,random forest,vegetation_30,vegetation,1,2090,316,1612,3008
+D5b edge-sampled,interior,random forest,vegetation_30,vegetation,1,33392,127,1108,15947
+D0,all,random forest,water_13,water,1,20441,383,5470,31306
+D0,band,random forest,water_13,water,1,6874,318,4926,10524
+D0,interior,random forest,water_13,water,1,13567,65,544,20782
+D5a weighted,all,random forest,water_13,water,1,20536,433,5375,31256
+D5a weighted,band,random forest,water_13,water,1,6951,353,4849,10489
+D5a weighted,interior,random forest,water_13,water,1,13585,80,526,20767
+D5b edge-sampled,all,random forest,water_13,water,1,20549,460,5362,31229
+D5b edge-sampled,band,random forest,water_13,water,1,6989,387,4811,10455
+D5b edge-sampled,interior,random forest,water_13,water,1,13560,73,551,20774
+D0,all,random forest,water_16,water,1,32346,506,3960,20788
+D0,band,random forest,water_16,water,1,4063,436,1575,3777
+D0,interior,random forest,water_16,water,1,28283,70,2385,17011
+D5a weighted,all,random forest,water_16,water,1,32361,533,3945,20761
+D5a weighted,band,random forest,water_16,water,1,4077,464,1561,3749
+D5a weighted,interior,random forest,water_16,water,1,28284,69,2384,17012
+D5b edge-sampled,all,random forest,water_16,water,1,32480,535,3826,20759
+D5b edge-sampled,band,random forest,water_16,water,1,4099,449,1539,3764
+D5b edge-sampled,interior,random forest,water_16,water,1,28381,86,2287,16995
+D0,all,random forest,water_17,water,1,24108,2737,1439,29316
+D0,band,random forest,water_17,water,1,6466,1871,1279,4257
+D0,interior,random forest,water_17,water,1,17642,866,160,25059
+D5a weighted,all,random forest,water_17,water,1,24213,3181,1334,28872
+D5a weighted,band,random forest,water_17,water,1,6558,2002,1187,4126
+D5a weighted,interior,random forest,water_17,water,1,17655,1179,147,24746
+D5b edge-sampled,all,random forest,water_17,water,1,24137,3223,1410,28830
+D5b edge-sampled,band,random forest,water_17,water,1,6513,2001,1232,4127
+D5b edge-sampled,interior,random forest,water_17,water,1,17624,1222,178,24703
+D0,all,random forest,water_29,water,1,7509,411,829,48851
+D0,band,random forest,water_29,water,1,2253,328,691,2554
+D0,interior,random forest,water_29,water,1,5256,83,138,46297
+D5a weighted,all,random forest,water_29,water,1,7539,419,799,48843
+D5a weighted,band,random forest,water_29,water,1,2263,282,681,2600
+D5a weighted,interior,random forest,water_29,water,1,5276,137,118,46243
+D5b edge-sampled,all,random forest,water_29,water,1,7378,393,960,48869
+D5b edge-sampled,band,random forest,water_29,water,1,2139,259,805,2623
+D5b edge-sampled,interior,random forest,water_29,water,1,5239,134,155,46246
+D0,all,random forest,barren_5,barren,2,16278,4639,522,36161
+D0,band,random forest,barren_5,barren,2,5793,3071,396,3398
+D0,interior,random forest,barren_5,barren,2,10485,1568,126,32763
+D5a weighted,all,random forest,barren_5,barren,2,16346,4645,454,36155
+D5a weighted,band,random forest,barren_5,barren,2,5827,3106,362,3363
+D5a weighted,interior,random forest,barren_5,barren,2,10519,1539,92,32792
+D5b edge-sampled,all,random forest,barren_5,barren,2,16314,4404,486,36396
+D5b edge-sampled,band,random forest,barren_5,barren,2,5807,3030,382,3439
+D5b edge-sampled,interior,random forest,barren_5,barren,2,10507,1374,104,32957
+D0,all,random forest,barren_9,barren,2,14027,9626,159,33788
+D0,band,random forest,barren_9,barren,2,4997,4808,148,867
+D0,interior,random forest,barren_9,barren,2,9030,4818,11,32921
+D5a weighted,all,random forest,barren_9,barren,2,14021,9691,165,33723
+D5a weighted,band,random forest,barren_9,barren,2,4990,4800,155,875
+D5a weighted,interior,random forest,barren_9,barren,2,9031,4891,10,32848
+D5b edge-sampled,all,random forest,barren_9,barren,2,14024,9321,162,34093
+D5b edge-sampled,band,random forest,barren_9,barren,2,4991,4789,154,886
+D5b edge-sampled,interior,random forest,barren_9,barren,2,9033,4532,8,33207
+D0,all,random forest,barren_12,barren,2,9267,5689,943,41701
+D0,band,random forest,barren_12,barren,2,5672,3330,800,4410
+D0,interior,random forest,barren_12,barren,2,3595,2359,143,37291
+D5a weighted,all,random forest,barren_12,barren,2,9306,5745,904,41645
+D5a weighted,band,random forest,barren_12,barren,2,5709,3413,763,4327
+D5a weighted,interior,random forest,barren_12,barren,2,3597,2332,141,37318
+D5b edge-sampled,all,random forest,barren_12,barren,2,9299,5511,911,41879
+D5b edge-sampled,band,random forest,barren_12,barren,2,5704,3314,768,4426
+D5b edge-sampled,interior,random forest,barren_12,barren,2,3595,2197,143,37453
+D0,all,random forest,barren_15,barren,2,1441,1,23351,32807
+D0,band,random forest,barren_15,barren,2,142,1,8005,5828
+D0,interior,random forest,barren_15,barren,2,1299,0,15346,26979
+D5a weighted,all,random forest,barren_15,barren,2,1655,3,23137,32805
+D5a weighted,band,random forest,barren_15,barren,2,180,3,7967,5826
+D5a weighted,interior,random forest,barren_15,barren,2,1475,0,15170,26979
+D5b edge-sampled,all,random forest,barren_15,barren,2,1438,0,23354,32808
+D5b edge-sampled,band,random forest,barren_15,barren,2,127,0,8020,5829
+D5b edge-sampled,interior,random forest,barren_15,barren,2,1311,0,15334,26979
+D0,all,random forest,barren_26,barren,2,17535,242,2744,37079
+D0,band,random forest,barren_26,barren,2,2303,203,1972,3135
+D0,interior,random forest,barren_26,barren,2,15232,39,772,33944
+D5a weighted,all,random forest,barren_26,barren,2,17602,262,2677,37059
+D5a weighted,band,random forest,barren_26,barren,2,2357,217,1918,3121
+D5a weighted,interior,random forest,barren_26,barren,2,15245,45,759,33938
+D5b edge-sampled,all,random forest,barren_26,barren,2,17672,281,2607,37040
+D5b edge-sampled,band,random forest,barren_26,barren,2,2420,230,1855,3108
+D5b edge-sampled,interior,random forest,barren_26,barren,2,15252,51,752,33932
+D0,all,random forest,snow_2,snow,2,14620,921,2745,39314
+D0,band,random forest,snow_2,snow,2,2961,739,2136,4521
+D0,interior,random forest,snow_2,snow,2,11659,182,609,34793
+D5a weighted,all,random forest,snow_2,snow,2,14762,995,2603,39240
+D5a weighted,band,random forest,snow_2,snow,2,3050,785,2047,4475
+D5a weighted,interior,random forest,snow_2,snow,2,11712,210,556,34765
+D5b edge-sampled,all,random forest,snow_2,snow,2,14814,1018,2551,39217
+D5b edge-sampled,band,random forest,snow_2,snow,2,3069,797,2028,4463
+D5b edge-sampled,interior,random forest,snow_2,snow,2,11745,221,523,34754
+D0,all,random forest,snow_4,snow,2,15868,4090,900,36742
+D0,band,random forest,snow_4,snow,2,3381,1448,777,2757
+D0,interior,random forest,snow_4,snow,2,12487,2642,123,33985
+D5a weighted,all,random forest,snow_4,snow,2,15904,4206,864,36626
+D5a weighted,band,random forest,snow_4,snow,2,3423,1491,735,2714
+D5a weighted,interior,random forest,snow_4,snow,2,12481,2715,129,33912
+D5b edge-sampled,all,random forest,snow_4,snow,2,15982,4416,786,36416
+D5b edge-sampled,band,random forest,snow_4,snow,2,3478,1576,680,2629
+D5b edge-sampled,interior,random forest,snow_4,snow,2,12504,2840,106,33787
+D0,all,random forest,snow_8,snow,2,3437,1731,1892,50540
+D0,band,random forest,snow_8,snow,2,389,64,1062,1521
+D0,interior,random forest,snow_8,snow,2,3048,1667,830,49019
+D5a weighted,all,random forest,snow_8,snow,2,3444,1754,1885,50517
+D5a weighted,band,random forest,snow_8,snow,2,397,72,1054,1513
+D5a weighted,interior,random forest,snow_8,snow,2,3047,1682,831,49004
+D5b edge-sampled,all,random forest,snow_8,snow,2,3448,1739,1881,50532
+D5b edge-sampled,band,random forest,snow_8,snow,2,408,77,1043,1508
+D5b edge-sampled,interior,random forest,snow_8,snow,2,3040,1662,838,49024
+D0,all,random forest,snow_21,snow,2,7327,1186,3340,45747
+D0,band,random forest,snow_21,snow,2,2079,502,2265,4940
+D0,interior,random forest,snow_21,snow,2,5248,684,1075,40807
+D5a weighted,all,random forest,snow_21,snow,2,7408,1350,3259,45583
+D5a weighted,band,random forest,snow_21,snow,2,2141,559,2203,4883
+D5a weighted,interior,random forest,snow_21,snow,2,5267,791,1056,40700
+D5b edge-sampled,all,random forest,snow_21,snow,2,7414,1326,3253,45607
+D5b edge-sampled,band,random forest,snow_21,snow,2,2116,543,2228,4899
+D5b edge-sampled,interior,random forest,snow_21,snow,2,5298,783,1025,40708
+D0,all,random forest,snow_30,snow,2,17856,2352,2492,34900
+D0,band,random forest,snow_30,snow,2,4999,1488,2056,5399
+D0,interior,random forest,snow_30,snow,2,12857,864,436,29501
+D5a weighted,all,random forest,snow_30,snow,2,17852,2449,2496,34803
+D5a weighted,band,random forest,snow_30,snow,2,4981,1499,2074,5388
+D5a weighted,interior,random forest,snow_30,snow,2,12871,950,422,29415
+D5b edge-sampled,all,random forest,snow_30,snow,2,17918,2288,2430,34964
+D5b edge-sampled,band,random forest,snow_30,snow,2,5025,1494,2030,5393
+D5b edge-sampled,interior,random forest,snow_30,snow,2,12893,794,400,29571
+D0,all,random forest,urban_1,urban,2,11638,1823,540,45759
+D0,band,random forest,urban_1,urban,2,6127,1408,533,5382
+D0,interior,random forest,urban_1,urban,2,5511,415,7,40377
+D5a weighted,all,random forest,urban_1,urban,2,11711,2002,467,45580
+D5a weighted,band,random forest,urban_1,urban,2,6198,1531,462,5259
+D5a weighted,interior,random forest,urban_1,urban,2,5513,471,5,40321
+D5b edge-sampled,all,random forest,urban_1,urban,2,11739,1956,439,45626
+D5b edge-sampled,band,random forest,urban_1,urban,2,6229,1517,431,5273
+D5b edge-sampled,interior,random forest,urban_1,urban,2,5510,439,8,40353
+D0,all,random forest,urban_12,urban,2,10684,365,13737,32814
+D0,band,random forest,urban_12,urban,2,3480,168,9191,12038
+D0,interior,random forest,urban_12,urban,2,7204,197,4546,20776
+D5a weighted,all,random forest,urban_12,urban,2,11239,452,13182,32727
+D5a weighted,band,random forest,urban_12,urban,2,3818,213,8853,11993
+D5a weighted,interior,random forest,urban_12,urban,2,7421,239,4329,20734
+D5b edge-sampled,all,random forest,urban_12,urban,2,11335,491,13086,32688
+D5b edge-sampled,band,random forest,urban_12,urban,2,3937,252,8734,11954
+D5b edge-sampled,interior,random forest,urban_12,urban,2,7398,239,4352,20734
+D0,all,random forest,urban_13,urban,2,19869,4,11216,26511
+D0,band,random forest,urban_13,urban,2,123,3,2653,2607
+D0,interior,random forest,urban_13,urban,2,19746,1,8563,23904
+D5a weighted,all,random forest,urban_13,urban,2,19932,5,11153,26510
+D5a weighted,band,random forest,urban_13,urban,2,120,5,2656,2605
+D5a weighted,interior,random forest,urban_13,urban,2,19812,0,8497,23905
+D5b edge-sampled,all,random forest,urban_13,urban,2,19622,7,11463,26508
+D5b edge-sampled,band,random forest,urban_13,urban,2,91,5,2685,2605
+D5b edge-sampled,interior,random forest,urban_13,urban,2,19531,2,8778,23903
+D0,all,random forest,urban_27,urban,2,35561,543,3000,18496
+D0,band,random forest,urban_27,urban,2,1993,414,1105,1459
+D0,interior,random forest,urban_27,urban,2,33568,129,1895,17037
+D5a weighted,all,random forest,urban_27,urban,2,35647,619,2914,18420
+D5a weighted,band,random forest,urban_27,urban,2,2017,463,1081,1410
+D5a weighted,interior,random forest,urban_27,urban,2,33630,156,1833,17010
+D5b edge-sampled,all,random forest,urban_27,urban,2,35478,613,3083,18426
+D5b edge-sampled,band,random forest,urban_27,urban,2,2021,461,1077,1412
+D5b edge-sampled,interior,random forest,urban_27,urban,2,33457,152,2006,17014
+D0,all,random forest,vegetation_8,vegetation,2,1827,132,2721,52920
+D0,band,random forest,vegetation_8,vegetation,2,1827,88,2721,22807
+D0,interior,random forest,vegetation_8,vegetation,2,0,44,0,30113
+D5a weighted,all,random forest,vegetation_8,vegetation,2,1686,153,2862,52899
+D5a weighted,band,random forest,vegetation_8,vegetation,2,1686,105,2862,22790
+D5a weighted,interior,random forest,vegetation_8,vegetation,2,0,48,0,30109
+D5b edge-sampled,all,random forest,vegetation_8,vegetation,2,1852,167,2696,52885
+D5b edge-sampled,band,random forest,vegetation_8,vegetation,2,1852,126,2696,22769
+D5b edge-sampled,interior,random forest,vegetation_8,vegetation,2,0,41,0,30116
+D0,all,random forest,vegetation_11,vegetation,2,22200,80,2523,32797
+D0,band,random forest,vegetation_11,vegetation,2,2295,44,1881,3524
+D0,interior,random forest,vegetation_11,vegetation,2,19905,36,642,29273
+D5a weighted,all,random forest,vegetation_11,vegetation,2,22273,88,2450,32789
+D5a weighted,band,random forest,vegetation_11,vegetation,2,2322,59,1854,3509
+D5a weighted,interior,random forest,vegetation_11,vegetation,2,19951,29,596,29280
+D5b edge-sampled,all,random forest,vegetation_11,vegetation,2,22241,54,2482,32823
+D5b edge-sampled,band,random forest,vegetation_11,vegetation,2,2265,45,1911,3523
+D5b edge-sampled,interior,random forest,vegetation_11,vegetation,2,19976,9,571,29300
+D0,all,random forest,vegetation_15,vegetation,2,27033,155,4359,26053
+D0,band,random forest,vegetation_15,vegetation,2,5616,155,3355,7070
+D0,interior,random forest,vegetation_15,vegetation,2,21417,0,1004,18983
+D5a weighted,all,random forest,vegetation_15,vegetation,2,27255,176,4137,26032
+D5a weighted,band,random forest,vegetation_15,vegetation,2,5776,176,3195,7049
+D5a weighted,interior,random forest,vegetation_15,vegetation,2,21479,0,942,18983
+D5b edge-sampled,all,random forest,vegetation_15,vegetation,2,27060,259,4332,25949
+D5b edge-sampled,band,random forest,vegetation_15,vegetation,2,5631,259,3340,6966
+D5b edge-sampled,interior,random forest,vegetation_15,vegetation,2,21429,0,992,18983
+D0,all,random forest,vegetation_20,vegetation,2,23186,2637,1239,30538
+D0,band,random forest,vegetation_20,vegetation,2,4726,2038,894,3258
+D0,interior,random forest,vegetation_20,vegetation,2,18460,599,345,27280
+D5a weighted,all,random forest,vegetation_20,vegetation,2,23202,2784,1223,30391
+D5a weighted,band,random forest,vegetation_20,vegetation,2,4735,2052,885,3244
+D5a weighted,interior,random forest,vegetation_20,vegetation,2,18467,732,338,27147
+D5b edge-sampled,all,random forest,vegetation_20,vegetation,2,23160,2672,1265,30503
+D5b edge-sampled,band,random forest,vegetation_20,vegetation,2,4714,2050,906,3246
+D5b edge-sampled,interior,random forest,vegetation_20,vegetation,2,18446,622,359,27257
+D0,all,random forest,vegetation_24,vegetation,2,33356,224,5324,18696
+D0,band,random forest,vegetation_24,vegetation,2,2738,205,2741,3623
+D0,interior,random forest,vegetation_24,vegetation,2,30618,19,2583,15073
+D5a weighted,all,random forest,vegetation_24,vegetation,2,33557,249,5123,18671
+D5a weighted,band,random forest,vegetation_24,vegetation,2,2850,231,2629,3597
+D5a weighted,interior,random forest,vegetation_24,vegetation,2,30707,18,2494,15074
+D5b edge-sampled,all,random forest,vegetation_24,vegetation,2,33185,228,5495,18692
+D5b edge-sampled,band,random forest,vegetation_24,vegetation,2,2776,207,2703,3621
+D5b edge-sampled,interior,random forest,vegetation_24,vegetation,2,30409,21,2792,15071
+D0,all,random forest,water_1,water,2,30449,260,9979,16912
+D0,band,random forest,water_1,water,2,4442,157,5721,7139
+D0,interior,random forest,water_1,water,2,26007,103,4258,9773
+D5a weighted,all,random forest,water_1,water,2,30014,275,10414,16897
+D5a weighted,band,random forest,water_1,water,2,4385,165,5778,7131
+D5a weighted,interior,random forest,water_1,water,2,25629,110,4636,9766
+D5b edge-sampled,all,random forest,water_1,water,2,30201,284,10227,16888
+D5b edge-sampled,band,random forest,water_1,water,2,4489,183,5674,7113
+D5b edge-sampled,interior,random forest,water_1,water,2,25712,101,4553,9775
+D0,all,random forest,water_3,water,2,20968,2947,94,33591
+D0,band,random forest,water_3,water,2,4581,2413,80,2087
+D0,interior,random forest,water_3,water,2,16387,534,14,31504
+D5a weighted,all,random forest,water_3,water,2,20953,2929,109,33609
+D5a weighted,band,random forest,water_3,water,2,4565,2392,96,2108
+D5a weighted,interior,random forest,water_3,water,2,16388,537,13,31501
+D5b edge-sampled,all,random forest,water_3,water,2,20948,2976,114,33562
+D5b edge-sampled,band,random forest,water_3,water,2,4569,2383,92,2117
+D5b edge-sampled,interior,random forest,water_3,water,2,16379,593,22,31445
+D0,all,random forest,water_15,water,2,33756,817,2677,20350
+D0,band,random forest,water_15,water,2,5840,590,1986,6025
+D0,interior,random forest,water_15,water,2,27916,227,691,14325
+D5a weighted,all,random forest,water_15,water,2,33875,861,2558,20306
+D5a weighted,band,random forest,water_15,water,2,5896,629,1930,5986
+D5a weighted,interior,random forest,water_15,water,2,27979,232,628,14320
+D5b edge-sampled,all,random forest,water_15,water,2,33837,857,2596,20310
+D5b edge-sampled,band,random forest,water_15,water,2,5887,620,1939,5995
+D5b edge-sampled,interior,random forest,water_15,water,2,27950,237,657,14315
+D0,all,random forest,water_20,water,2,22662,162,3299,31477
+D0,band,random forest,water_20,water,2,3837,145,1886,4672
+D0,interior,random forest,water_20,water,2,18825,17,1413,26805
+D5a weighted,all,random forest,water_20,water,2,22836,200,3125,31439
+D5a weighted,band,random forest,water_20,water,2,4006,180,1717,4637
+D5a weighted,interior,random forest,water_20,water,2,18830,20,1408,26802
+D5b edge-sampled,all,random forest,water_20,water,2,22695,243,3266,31396
+D5b edge-sampled,band,random forest,water_20,water,2,4061,212,1662,4605
+D5b edge-sampled,interior,random forest,water_20,water,2,18634,31,1604,26791
+D0,all,random forest,water_21,water,2,24531,179,1928,30962
+D0,band,random forest,water_21,water,2,1338,135,1078,2399
+D0,interior,random forest,water_21,water,2,23193,44,850,28563
+D5a weighted,all,random forest,water_21,water,2,24616,193,1843,30948
+D5a weighted,band,random forest,water_21,water,2,1378,140,1038,2394
+D5a weighted,interior,random forest,water_21,water,2,23238,53,805,28554
+D5b edge-sampled,all,random forest,water_21,water,2,24483,149,1976,30992
+D5b edge-sampled,band,random forest,water_21,water,2,1296,116,1120,2418
+D5b edge-sampled,interior,random forest,water_21,water,2,23187,33,856,28574
+D0,all,random forest,barren_2,barren,3,14649,2447,1118,39386
+D0,band,random forest,barren_2,barren,3,5529,2049,990,4119
+D0,interior,random forest,barren_2,barren,3,9120,398,128,35267
+D5a weighted,all,random forest,barren_2,barren,3,14612,2458,1155,39375
+D5a weighted,band,random forest,barren_2,barren,3,5499,2049,1020,4119
+D5a weighted,interior,random forest,barren_2,barren,3,9113,409,135,35256
+D5b edge-sampled,all,random forest,barren_2,barren,3,14655,2517,1112,39316
+D5b edge-sampled,band,random forest,barren_2,barren,3,5528,2096,991,4072
+D5b edge-sampled,interior,random forest,barren_2,barren,3,9127,421,121,35244
+D0,all,random forest,barren_6,barren,3,16050,6631,36,34883
+D0,band,random forest,barren_6,barren,3,3980,3659,31,592
+D0,interior,random forest,barren_6,barren,3,12070,2972,5,34291
+D5a weighted,all,random forest,barren_6,barren,3,16051,6430,35,35084
+D5a weighted,band,random forest,barren_6,barren,3,3981,3578,30,673
+D5a weighted,interior,random forest,barren_6,barren,3,12070,2852,5,34411
+D5b edge-sampled,all,random forest,barren_6,barren,3,16066,6550,20,34964
+D5b edge-sampled,band,random forest,barren_6,barren,3,3996,3695,15,556
+D5b edge-sampled,interior,random forest,barren_6,barren,3,12070,2855,5,34408
+D0,all,random forest,barren_14,barren,3,6594,16589,535,33882
+D0,band,random forest,barren_14,barren,3,1983,1828,247,517
+D0,interior,random forest,barren_14,barren,3,4611,14761,288,33365
+D5a weighted,all,random forest,barren_14,barren,3,6622,16732,507,33739
+D5a weighted,band,random forest,barren_14,barren,3,1975,1816,255,529
+D5a weighted,interior,random forest,barren_14,barren,3,4647,14916,252,33210
+D5b edge-sampled,all,random forest,barren_14,barren,3,6778,18163,351,32308
+D5b edge-sampled,band,random forest,barren_14,barren,3,2026,1869,204,476
+D5b edge-sampled,interior,random forest,barren_14,barren,3,4752,16294,147,31832
+D0,all,random forest,barren_19,barren,3,10538,9530,267,37265
+D0,band,random forest,barren_19,barren,3,5058,4274,265,1357
+D0,interior,random forest,barren_19,barren,3,5480,5256,2,35908
+D5a weighted,all,random forest,barren_19,barren,3,10527,9455,278,37340
+D5a weighted,band,random forest,barren_19,barren,3,5047,4205,276,1426
+D5a weighted,interior,random forest,barren_19,barren,3,5480,5250,2,35914
+D5b edge-sampled,all,random forest,barren_19,barren,3,10538,9507,267,37288
+D5b edge-sampled,band,random forest,barren_19,barren,3,5058,4244,265,1387
+D5b edge-sampled,interior,random forest,barren_19,barren,3,5480,5263,2,35901
+D0,all,random forest,barren_28,barren,3,23504,1071,1400,31625
+D0,band,random forest,barren_28,barren,3,4108,857,1164,4154
+D0,interior,random forest,barren_28,barren,3,19396,214,236,27471
+D5a weighted,all,random forest,barren_28,barren,3,23573,1129,1331,31567
+D5a weighted,band,random forest,barren_28,barren,3,4165,910,1107,4101
+D5a weighted,interior,random forest,barren_28,barren,3,19408,219,224,27466
+D5b edge-sampled,all,random forest,barren_28,barren,3,23494,1043,1410,31653
+D5b edge-sampled,band,random forest,barren_28,barren,3,4102,846,1170,4165
+D5b edge-sampled,interior,random forest,barren_28,barren,3,19392,197,240,27488
+D0,all,random forest,snow_13,snow,3,7490,769,1649,47692
+D0,band,random forest,snow_13,snow,3,2479,575,1138,3766
+D0,interior,random forest,snow_13,snow,3,5011,194,511,43926
+D5a weighted,all,random forest,snow_13,snow,3,7620,956,1519,47505
+D5a weighted,band,random forest,snow_13,snow,3,2616,665,1001,3676
+D5a weighted,interior,random forest,snow_13,snow,3,5004,291,518,43829
+D5b edge-sampled,all,random forest,snow_13,snow,3,7594,882,1545,47579
+D5b edge-sampled,band,random forest,snow_13,snow,3,2587,610,1030,3731
+D5b edge-sampled,interior,random forest,snow_13,snow,3,5007,272,515,43848
+D0,all,random forest,snow_14,snow,3,14370,2087,2154,38989
+D0,band,random forest,snow_14,snow,3,4034,1608,1689,3813
+D0,interior,random forest,snow_14,snow,3,10336,479,465,35176
+D5a weighted,all,random forest,snow_14,snow,3,14385,2141,2139,38935
+D5a weighted,band,random forest,snow_14,snow,3,4044,1629,1679,3792
+D5a weighted,interior,random forest,snow_14,snow,3,10341,512,460,35143
+D5b edge-sampled,all,random forest,snow_14,snow,3,14599,2219,1925,38857
+D5b edge-sampled,band,random forest,snow_14,snow,3,4155,1706,1568,3715
+D5b edge-sampled,interior,random forest,snow_14,snow,3,10444,513,357,35142
+D0,all,random forest,snow_17,snow,3,6589,6760,474,43777
+D0,band,random forest,snow_17,snow,3,3641,1851,457,3217
+D0,interior,random forest,snow_17,snow,3,2948,4909,17,40560
+D5a weighted,all,random forest,snow_17,snow,3,6614,6942,449,43595
+D5a weighted,band,random forest,snow_17,snow,3,3665,1908,433,3160
+D5a weighted,interior,random forest,snow_17,snow,3,2949,5034,16,40435
+D5b edge-sampled,all,random forest,snow_17,snow,3,6647,7270,416,43267
+D5b edge-sampled,band,random forest,snow_17,snow,3,3696,1943,402,3125
+D5b edge-sampled,interior,random forest,snow_17,snow,3,2951,5327,14,40142
+D0,all,random forest,snow_23,snow,3,8473,2612,2551,43964
+D0,band,random forest,snow_23,snow,3,2588,542,1987,4173
+D0,interior,random forest,snow_23,snow,3,5885,2070,564,39791
+D5a weighted,all,random forest,snow_23,snow,3,8537,2624,2487,43952
+D5a weighted,band,random forest,snow_23,snow,3,2621,556,1954,4159
+D5a weighted,interior,random forest,snow_23,snow,3,5916,2068,533,39793
+D5b edge-sampled,all,random forest,snow_23,snow,3,8506,2695,2518,43881
+D5b edge-sampled,band,random forest,snow_23,snow,3,2603,537,1972,4178
+D5b edge-sampled,interior,random forest,snow_23,snow,3,5903,2158,546,39703
+D0,all,random forest,urban_2,urban,3,8785,2362,216,48397
+D0,band,random forest,urban_2,urban,3,4366,2125,216,3134
+D0,interior,random forest,urban_2,urban,3,4419,237,0,45263
+D5a weighted,all,random forest,urban_2,urban,3,8816,2434,185,48325
+D5a weighted,band,random forest,urban_2,urban,3,4397,2179,185,3080
+D5a weighted,interior,random forest,urban_2,urban,3,4419,255,0,45245
+D5b edge-sampled,all,random forest,urban_2,urban,3,8793,2339,208,48420
+D5b edge-sampled,band,random forest,urban_2,urban,3,4374,2115,208,3144
+D5b edge-sampled,interior,random forest,urban_2,urban,3,4419,224,0,45276
+D0,all,random forest,urban_7,urban,3,15634,731,6877,34358
+D0,band,random forest,urban_7,urban,3,2510,511,3639,5617
+D0,interior,random forest,urban_7,urban,3,13124,220,3238,28741
+D5a weighted,all,random forest,urban_7,urban,3,15796,783,6715,34306
+D5a weighted,band,random forest,urban_7,urban,3,2628,549,3521,5579
+D5a weighted,interior,random forest,urban_7,urban,3,13168,234,3194,28727
+D5b edge-sampled,all,random forest,urban_7,urban,3,15745,732,6766,34357
+D5b edge-sampled,band,random forest,urban_7,urban,3,2592,512,3557,5616
+D5b edge-sampled,interior,random forest,urban_7,urban,3,13153,220,3209,28741
+D0,all,random forest,urban_16,urban,3,8551,1013,1953,46083
+D0,band,random forest,urban_16,urban,3,3001,468,1613,5041
+D0,interior,random forest,urban_16,urban,3,5550,545,340,41042
+D5a weighted,all,random forest,urban_16,urban,3,8684,1066,1820,46030
+D5a weighted,band,random forest,urban_16,urban,3,3091,514,1523,4995
+D5a weighted,interior,random forest,urban_16,urban,3,5593,552,297,41035
+D5b edge-sampled,all,random forest,urban_16,urban,3,8743,1014,1761,46082
+D5b edge-sampled,band,random forest,urban_16,urban,3,3135,498,1479,5011
+D5b edge-sampled,interior,random forest,urban_16,urban,3,5608,516,282,41071
+D0,all,random forest,urban_18,urban,3,3582,103,1509,52406
+D0,band,random forest,urban_18,urban,3,1200,92,1144,2564
+D0,interior,random forest,urban_18,urban,3,2382,11,365,49842
+D5a weighted,all,random forest,urban_18,urban,3,3622,116,1469,52393
+D5a weighted,band,random forest,urban_18,urban,3,1239,110,1105,2546
+D5a weighted,interior,random forest,urban_18,urban,3,2383,6,364,49847
+D5b edge-sampled,all,random forest,urban_18,urban,3,3642,108,1449,52401
+D5b edge-sampled,band,random forest,urban_18,urban,3,1265,100,1079,2556
+D5b edge-sampled,interior,random forest,urban_18,urban,3,2377,8,370,49845
+D0,all,random forest,urban_25,urban,3,24342,758,3274,29226
+D0,band,random forest,urban_25,urban,3,2732,563,1601,3627
+D0,interior,random forest,urban_25,urban,3,21610,195,1673,25599
+D5a weighted,all,random forest,urban_25,urban,3,24379,752,3237,29232
+D5a weighted,band,random forest,urban_25,urban,3,2749,557,1584,3633
+D5a weighted,interior,random forest,urban_25,urban,3,21630,195,1653,25599
+D5b edge-sampled,all,random forest,urban_25,urban,3,24395,773,3221,29211
+D5b edge-sampled,band,random forest,urban_25,urban,3,2759,585,1574,3605
+D5b edge-sampled,interior,random forest,urban_25,urban,3,21636,188,1647,25606
+D0,all,random forest,vegetation_7,vegetation,3,14361,2081,304,40854
+D0,band,random forest,vegetation_7,vegetation,3,4146,1718,286,4050
+D0,interior,random forest,vegetation_7,vegetation,3,10215,363,18,36804
+D5a weighted,all,random forest,vegetation_7,vegetation,3,14412,2101,253,40834
+D5a weighted,band,random forest,vegetation_7,vegetation,3,4193,1764,239,4004
+D5a weighted,interior,random forest,vegetation_7,vegetation,3,10219,337,14,36830
+D5b edge-sampled,all,random forest,vegetation_7,vegetation,3,14364,1863,301,41072
+D5b edge-sampled,band,random forest,vegetation_7,vegetation,3,4146,1574,286,4194
+D5b edge-sampled,interior,random forest,vegetation_7,vegetation,3,10218,289,15,36878
+D0,all,random forest,vegetation_9,vegetation,3,36216,334,3659,17391
+D0,band,random forest,vegetation_9,vegetation,3,4357,295,2781,5103
+D0,interior,random forest,vegetation_9,vegetation,3,31859,39,878,12288
+D5a weighted,all,random forest,vegetation_9,vegetation,3,36236,332,3639,17393
+D5a weighted,band,random forest,vegetation_9,vegetation,3,4387,298,2751,5100
+D5a weighted,interior,random forest,vegetation_9,vegetation,3,31849,34,888,12293
+D5b edge-sampled,all,random forest,vegetation_9,vegetation,3,36240,359,3635,17366
+D5b edge-sampled,band,random forest,vegetation_9,vegetation,3,4342,312,2796,5086
+D5b edge-sampled,interior,random forest,vegetation_9,vegetation,3,31898,47,839,12280
+D0,all,random forest,vegetation_13,vegetation,3,13681,689,2754,40476
+D0,band,random forest,vegetation_13,vegetation,3,8686,470,2648,12060
+D0,interior,random forest,vegetation_13,vegetation,3,4995,219,106,28416
+D5a weighted,all,random forest,vegetation_13,vegetation,3,14118,896,2317,40269
+D5a weighted,band,random forest,vegetation_13,vegetation,3,9101,661,2233,11869
+D5a weighted,interior,random forest,vegetation_13,vegetation,3,5017,235,84,28400
+D5b edge-sampled,all,random forest,vegetation_13,vegetation,3,13903,866,2532,40299
+D5b edge-sampled,band,random forest,vegetation_13,vegetation,3,8896,634,2438,11896
+D5b edge-sampled,interior,random forest,vegetation_13,vegetation,3,5007,232,94,28403
+D0,all,random forest,vegetation_16,vegetation,3,6019,2136,75,49370
+D0,band,random forest,vegetation_16,vegetation,3,1668,1138,54,909
+D0,interior,random forest,vegetation_16,vegetation,3,4351,998,21,48461
+D5a weighted,all,random forest,vegetation_16,vegetation,3,6013,2101,81,49405
+D5a weighted,band,random forest,vegetation_16,vegetation,3,1666,1126,56,921
+D5a weighted,interior,random forest,vegetation_16,vegetation,3,4347,975,25,48484
+D5b edge-sampled,all,random forest,vegetation_16,vegetation,3,6016,2154,78,49352
+D5b edge-sampled,band,random forest,vegetation_16,vegetation,3,1666,1161,56,886
+D5b edge-sampled,interior,random forest,vegetation_16,vegetation,3,4350,993,22,48466
+D0,all,random forest,vegetation_17,vegetation,3,15756,5462,68,36314
+D0,band,random forest,vegetation_17,vegetation,3,3663,2407,65,1160
+D0,interior,random forest,vegetation_17,vegetation,3,12093,3055,3,35154
+D5a weighted,all,random forest,vegetation_17,vegetation,3,15764,5560,60,36216
+D5a weighted,band,random forest,vegetation_17,vegetation,3,3668,2457,60,1110
+D5a weighted,interior,random forest,vegetation_17,vegetation,3,12096,3103,0,35106
+D5b edge-sampled,all,random forest,vegetation_17,vegetation,3,15764,5313,60,36463
+D5b edge-sampled,band,random forest,vegetation_17,vegetation,3,3668,2394,60,1173
+D5b edge-sampled,interior,random forest,vegetation_17,vegetation,3,12096,2919,0,35290
+D0,all,random forest,water_5,water,3,19922,5641,463,31574
+D0,band,random forest,water_5,water,3,10172,4674,415,3815
+D0,interior,random forest,water_5,water,3,9750,967,48,27759
+D5a weighted,all,random forest,water_5,water,3,19995,5853,390,31362
+D5a weighted,band,random forest,water_5,water,3,10225,4771,362,3718
+D5a weighted,interior,random forest,water_5,water,3,9770,1082,28,27644
+D5b edge-sampled,all,random forest,water_5,water,3,19927,5690,458,31525
+D5b edge-sampled,band,random forest,water_5,water,3,10158,4684,429,3805
+D5b edge-sampled,interior,random forest,water_5,water,3,9769,1006,29,27720
+D0,all,random forest,water_10,water,3,14019,13468,295,29818
+D0,band,random forest,water_10,water,3,4735,3965,248,1230
+D0,interior,random forest,water_10,water,3,9284,9503,47,28588
+D5a weighted,all,random forest,water_10,water,3,14012,13692,302,29594
+D5a weighted,band,random forest,water_10,water,3,4726,3943,257,1252
+D5a weighted,interior,random forest,water_10,water,3,9286,9749,45,28342
+D5b edge-sampled,all,random forest,water_10,water,3,14019,13432,295,29854
+D5b edge-sampled,band,random forest,water_10,water,3,4740,3989,243,1206
+D5b edge-sampled,interior,random forest,water_10,water,3,9279,9443,52,28648
+D0,all,random forest,water_18,water,3,22771,3402,1644,29783
+D0,band,random forest,water_18,water,3,5721,1622,1462,4574
+D0,interior,random forest,water_18,water,3,17050,1780,182,25209
+D5a weighted,all,random forest,water_18,water,3,22785,3477,1630,29708
+D5a weighted,band,random forest,water_18,water,3,5748,1661,1435,4535
+D5a weighted,interior,random forest,water_18,water,3,17037,1816,195,25173
+D5b edge-sampled,all,random forest,water_18,water,3,22805,3379,1610,29806
+D5b edge-sampled,band,random forest,water_18,water,3,5755,1610,1428,4586
+D5b edge-sampled,interior,random forest,water_18,water,3,17050,1769,182,25220
+D0,all,random forest,water_19,water,3,6656,1204,304,49436
+D0,band,random forest,water_19,water,3,3913,995,302,5262
+D0,interior,random forest,water_19,water,3,2743,209,2,44174
+D5a weighted,all,random forest,water_19,water,3,6632,1232,328,49408
+D5a weighted,band,random forest,water_19,water,3,3889,998,326,5259
+D5a weighted,interior,random forest,water_19,water,3,2743,234,2,44149
+D5b edge-sampled,all,random forest,water_19,water,3,6652,1401,308,49239
+D5b edge-sampled,band,random forest,water_19,water,3,3907,1179,308,5078
+D5b edge-sampled,interior,random forest,water_19,water,3,2745,222,0,44161
+D0,all,random forest,water_27,water,3,15439,3635,670,37856
+D0,band,random forest,water_27,water,3,5071,2075,593,3678
+D0,interior,random forest,water_27,water,3,10368,1560,77,34178
+D5a weighted,all,random forest,water_27,water,3,15424,3683,685,37808
+D5a weighted,band,random forest,water_27,water,3,5059,2115,605,3638
+D5a weighted,interior,random forest,water_27,water,3,10365,1568,80,34170
+D5b edge-sampled,all,random forest,water_27,water,3,15438,3681,671,37810
+D5b edge-sampled,band,random forest,water_27,water,3,5074,2094,590,3659
+D5b edge-sampled,interior,random forest,water_27,water,3,10364,1587,81,34151
+D0,all,random forest,barren_1,barren,4,19655,369,1746,35830
+D0,band,random forest,barren_1,barren,4,3944,338,1435,4958
+D0,interior,random forest,barren_1,barren,4,15711,31,311,30872
+D5a weighted,all,random forest,barren_1,barren,4,19572,359,1829,35840
+D5a weighted,band,random forest,barren_1,barren,4,3904,328,1475,4968
+D5a weighted,interior,random forest,barren_1,barren,4,15668,31,354,30872
+D5b edge-sampled,all,random forest,barren_1,barren,4,19553,394,1848,35805
+D5b edge-sampled,band,random forest,barren_1,barren,4,3912,364,1467,4932
+D5b edge-sampled,interior,random forest,barren_1,barren,4,15641,30,381,30873
+D0,all,random forest,barren_20,barren,4,17916,3556,7908,28220
+D0,band,random forest,barren_20,barren,4,4647,1869,4334,6333
+D0,interior,random forest,barren_20,barren,4,13269,1687,3574,21887
+D5a weighted,all,random forest,barren_20,barren,4,18376,3630,7448,28146
+D5a weighted,band,random forest,barren_20,barren,4,4720,1919,4261,6283
+D5a weighted,interior,random forest,barren_20,barren,4,13656,1711,3187,21863
+D5b edge-sampled,all,random forest,barren_20,barren,4,18306,3350,7518,28426
+D5b edge-sampled,band,random forest,barren_20,barren,4,4752,1871,4229,6331
+D5b edge-sampled,interior,random forest,barren_20,barren,4,13554,1479,3289,22095
+D0,all,random forest,barren_23,barren,4,12804,1004,4990,38802
+D0,band,random forest,barren_23,barren,4,3025,726,3934,6396
+D0,interior,random forest,barren_23,barren,4,9779,278,1056,32406
+D5a weighted,all,random forest,barren_23,barren,4,12727,989,5067,38817
+D5a weighted,band,random forest,barren_23,barren,4,2984,719,3975,6403
+D5a weighted,interior,random forest,barren_23,barren,4,9743,270,1092,32414
+D5b edge-sampled,all,random forest,barren_23,barren,4,12821,1076,4973,38730
+D5b edge-sampled,band,random forest,barren_23,barren,4,3051,760,3908,6362
+D5b edge-sampled,interior,random forest,barren_23,barren,4,9770,316,1065,32368
+D0,all,random forest,barren_24,barren,4,6094,2161,731,48614
+D0,band,random forest,barren_24,barren,4,2462,1383,713,2871
+D0,interior,random forest,barren_24,barren,4,3632,778,18,45743
+D5a weighted,all,random forest,barren_24,barren,4,6058,1991,767,48784
+D5a weighted,band,random forest,barren_24,barren,4,2430,1304,745,2950
+D5a weighted,interior,random forest,barren_24,barren,4,3628,687,22,45834
+D5b edge-sampled,all,random forest,barren_24,barren,4,6077,2212,748,48563
+D5b edge-sampled,band,random forest,barren_24,barren,4,2445,1365,730,2889
+D5b edge-sampled,interior,random forest,barren_24,barren,4,3632,847,18,45674
+D0,all,random forest,snow_6,snow,4,13103,9883,4270,30344
+D0,band,random forest,snow_6,snow,4,2252,1717,1723,3192
+D0,interior,random forest,snow_6,snow,4,10851,8166,2547,27152
+D5a weighted,all,random forest,snow_6,snow,4,13092,10145,4281,30082
+D5a weighted,band,random forest,snow_6,snow,4,2317,1771,1658,3138
+D5a weighted,interior,random forest,snow_6,snow,4,10775,8374,2623,26944
+D5b edge-sampled,all,random forest,snow_6,snow,4,13218,10111,4155,30116
+D5b edge-sampled,band,random forest,snow_6,snow,4,2275,1741,1700,3168
+D5b edge-sampled,interior,random forest,snow_6,snow,4,10943,8370,2455,26948
+D0,all,random forest,snow_11,snow,4,7934,4559,1338,43769
+D0,band,random forest,snow_11,snow,4,3501,1896,1278,3888
+D0,interior,random forest,snow_11,snow,4,4433,2663,60,39881
+D5a weighted,all,random forest,snow_11,snow,4,7923,4396,1349,43932
+D5a weighted,band,random forest,snow_11,snow,4,3496,1863,1283,3921
+D5a weighted,interior,random forest,snow_11,snow,4,4427,2533,66,40011
+D5b edge-sampled,all,random forest,snow_11,snow,4,8072,4691,1200,43637
+D5b edge-sampled,band,random forest,snow_11,snow,4,3636,1959,1143,3825
+D5b edge-sampled,interior,random forest,snow_11,snow,4,4436,2732,57,39812
+D0,all,random forest,snow_15,snow,4,9299,439,2616,45246
+D0,band,random forest,snow_15,snow,4,2019,354,1515,3146
+D0,interior,random forest,snow_15,snow,4,7280,85,1101,42100
+D5a weighted,all,random forest,snow_15,snow,4,9003,366,2912,45319
+D5a weighted,band,random forest,snow_15,snow,4,1856,283,1678,3217
+D5a weighted,interior,random forest,snow_15,snow,4,7147,83,1234,42102
+D5b edge-sampled,all,random forest,snow_15,snow,4,8686,314,3229,45371
+D5b edge-sampled,band,random forest,snow_15,snow,4,1731,239,1803,3261
+D5b edge-sampled,interior,random forest,snow_15,snow,4,6955,75,1426,42110
+D0,all,random forest,snow_24,snow,4,5967,17485,198,33950
+D0,band,random forest,snow_24,snow,4,3336,2168,198,1721
+D0,interior,random forest,snow_24,snow,4,2631,15317,0,32229
+D5a weighted,all,random forest,snow_24,snow,4,5930,17652,235,33783
+D5a weighted,band,random forest,snow_24,snow,4,3299,2140,235,1749
+D5a weighted,interior,random forest,snow_24,snow,4,2631,15512,0,32034
+D5b edge-sampled,all,random forest,snow_24,snow,4,5960,18703,205,32732
+D5b edge-sampled,band,random forest,snow_24,snow,4,3329,2194,205,1695
+D5b edge-sampled,interior,random forest,snow_24,snow,4,2631,16509,0,31037
+D0,all,random forest,snow_28,snow,4,8961,1690,1983,44966
+D0,band,random forest,snow_28,snow,4,3633,746,1668,5482
+D0,interior,random forest,snow_28,snow,4,5328,944,315,39484
+D5a weighted,all,random forest,snow_28,snow,4,9003,1706,1941,44950
+D5a weighted,band,random forest,snow_28,snow,4,3674,751,1627,5477
+D5a weighted,interior,random forest,snow_28,snow,4,5329,955,314,39473
+D5b edge-sampled,all,random forest,snow_28,snow,4,8987,1909,1957,44747
+D5b edge-sampled,band,random forest,snow_28,snow,4,3661,779,1640,5449
+D5b edge-sampled,interior,random forest,snow_28,snow,4,5326,1130,317,39298
+D0,all,random forest,urban_4,urban,4,31463,31,4014,22092
+D0,band,random forest,urban_4,urban,4,1298,20,2377,3222
+D0,interior,random forest,urban_4,urban,4,30165,11,1637,18870
+D5a weighted,all,random forest,urban_4,urban,4,31564,42,3913,22081
+D5a weighted,band,random forest,urban_4,urban,4,1379,29,2296,3213
+D5a weighted,interior,random forest,urban_4,urban,4,30185,13,1617,18868
+D5b edge-sampled,all,random forest,urban_4,urban,4,31600,34,3877,22089
+D5b edge-sampled,band,random forest,urban_4,urban,4,1350,23,2325,3219
+D5b edge-sampled,interior,random forest,urban_4,urban,4,30250,11,1552,18870
+D0,all,random forest,urban_14,urban,4,9418,117,1355,46710
+D0,band,random forest,urban_14,urban,4,2293,75,1271,3632
+D0,interior,random forest,urban_14,urban,4,7125,42,84,43078
+D5a weighted,all,random forest,urban_14,urban,4,9508,175,1265,46652
+D5a weighted,band,random forest,urban_14,urban,4,2382,107,1182,3600
+D5a weighted,interior,random forest,urban_14,urban,4,7126,68,83,43052
+D5b edge-sampled,all,random forest,urban_14,urban,4,9503,130,1270,46697
+D5b edge-sampled,band,random forest,urban_14,urban,4,2380,87,1184,3620
+D5b edge-sampled,interior,random forest,urban_14,urban,4,7123,43,86,43077
+D0,all,random forest,urban_19,urban,4,7447,574,1876,47703
+D0,band,random forest,urban_19,urban,4,3554,394,1740,6712
+D0,interior,random forest,urban_19,urban,4,3893,180,136,40991
+D5a weighted,all,random forest,urban_19,urban,4,7536,634,1787,47643
+D5a weighted,band,random forest,urban_19,urban,4,3648,463,1646,6643
+D5a weighted,interior,random forest,urban_19,urban,4,3888,171,141,41000
+D5b edge-sampled,all,random forest,urban_19,urban,4,7470,571,1853,47706
+D5b edge-sampled,band,random forest,urban_19,urban,4,3575,412,1719,6694
+D5b edge-sampled,interior,random forest,urban_19,urban,4,3895,159,134,41012
+D0,all,random forest,urban_24,urban,4,23576,691,7217,26116
+D0,band,random forest,urban_24,urban,4,2155,320,2874,4685
+D0,interior,random forest,urban_24,urban,4,21421,371,4343,21431
+D5a weighted,all,random forest,urban_24,urban,4,23851,725,6942,26082
+D5a weighted,band,random forest,urban_24,urban,4,2222,338,2807,4667
+D5a weighted,interior,random forest,urban_24,urban,4,21629,387,4135,21415
+D5b edge-sampled,all,random forest,urban_24,urban,4,23603,691,7190,26116
+D5b edge-sampled,band,random forest,urban_24,urban,4,2213,324,2816,4681
+D5b edge-sampled,interior,random forest,urban_24,urban,4,21390,367,4374,21435
+D0,all,random forest,urban_28,urban,4,15108,2351,1432,38709
+D0,band,random forest,urban_28,urban,4,4309,1664,1042,4098
+D0,interior,random forest,urban_28,urban,4,10799,687,390,34611
+D5a weighted,all,random forest,urban_28,urban,4,15150,2488,1390,38572
+D5a weighted,band,random forest,urban_28,urban,4,4347,1730,1004,4032
+D5a weighted,interior,random forest,urban_28,urban,4,10803,758,386,34540
+D5b edge-sampled,all,random forest,urban_28,urban,4,15035,2115,1505,38945
+D5b edge-sampled,band,random forest,urban_28,urban,4,4255,1561,1096,4201
+D5b edge-sampled,interior,random forest,urban_28,urban,4,10780,554,409,34744
+D0,all,random forest,vegetation_1,vegetation,4,17506,85,2842,37167
+D0,band,random forest,vegetation_1,vegetation,4,3244,71,2609,5053
+D0,interior,random forest,vegetation_1,vegetation,4,14262,14,233,32114
+D5a weighted,all,random forest,vegetation_1,vegetation,4,17486,81,2862,37171
+D5a weighted,band,random forest,vegetation_1,vegetation,4,3221,66,2632,5058
+D5a weighted,interior,random forest,vegetation_1,vegetation,4,14265,15,230,32113
+D5b edge-sampled,all,random forest,vegetation_1,vegetation,4,17496,88,2852,37164
+D5b edge-sampled,band,random forest,vegetation_1,vegetation,4,3243,77,2610,5047
+D5b edge-sampled,interior,random forest,vegetation_1,vegetation,4,14253,11,242,32117
+D0,all,random forest,vegetation_2,vegetation,4,20319,648,910,35723
+D0,band,random forest,vegetation_2,vegetation,4,4393,579,712,3890
+D0,interior,random forest,vegetation_2,vegetation,4,15926,69,198,31833
+D5a weighted,all,random forest,vegetation_2,vegetation,4,20383,694,846,35677
+D5a weighted,band,random forest,vegetation_2,vegetation,4,4440,628,665,3841
+D5a weighted,interior,random forest,vegetation_2,vegetation,4,15943,66,181,31836
+D5b edge-sampled,all,random forest,vegetation_2,vegetation,4,20310,615,919,35756
+D5b edge-sampled,band,random forest,vegetation_2,vegetation,4,4380,552,725,3917
+D5b edge-sampled,interior,random forest,vegetation_2,vegetation,4,15930,63,194,31839
+D0,all,random forest,vegetation_4,vegetation,4,8617,964,1237,46782
+D0,band,random forest,vegetation_4,vegetation,4,3530,836,979,4927
+D0,interior,random forest,vegetation_4,vegetation,4,5087,128,258,41855
+D5a weighted,all,random forest,vegetation_4,vegetation,4,8657,1008,1197,46738
+D5a weighted,band,random forest,vegetation_4,vegetation,4,3568,872,941,4891
+D5a weighted,interior,random forest,vegetation_4,vegetation,4,5089,136,256,41847
+D5b edge-sampled,all,random forest,vegetation_4,vegetation,4,8613,933,1241,46813
+D5b edge-sampled,band,random forest,vegetation_4,vegetation,4,3535,806,974,4957
+D5b edge-sampled,interior,random forest,vegetation_4,vegetation,4,5078,127,267,41856
+D0,all,random forest,vegetation_6,vegetation,4,4240,870,404,52086
+D0,band,random forest,vegetation_6,vegetation,4,1839,481,391,2368
+D0,interior,random forest,vegetation_6,vegetation,4,2401,389,13,49718
+D5a weighted,all,random forest,vegetation_6,vegetation,4,4301,1058,343,51898
+D5a weighted,band,random forest,vegetation_6,vegetation,4,1904,532,326,2317
+D5a weighted,interior,random forest,vegetation_6,vegetation,4,2397,526,17,49581
+D5b edge-sampled,all,random forest,vegetation_6,vegetation,4,4282,1122,362,51834
+D5b edge-sampled,band,random forest,vegetation_6,vegetation,4,1880,541,350,2308
+D5b edge-sampled,interior,random forest,vegetation_6,vegetation,4,2402,581,12,49526
+D0,all,random forest,vegetation_26,vegetation,4,14096,946,1046,41512
+D0,band,random forest,vegetation_26,vegetation,4,4474,829,989,6678
+D0,interior,random forest,vegetation_26,vegetation,4,9622,117,57,34834
+D5a weighted,all,random forest,vegetation_26,vegetation,4,14130,1004,1012,41454
+D5a weighted,band,random forest,vegetation_26,vegetation,4,4505,861,958,6646
+D5a weighted,interior,random forest,vegetation_26,vegetation,4,9625,143,54,34808
+D5b edge-sampled,all,random forest,vegetation_26,vegetation,4,14050,884,1092,41574
+D5b edge-sampled,band,random forest,vegetation_26,vegetation,4,4426,760,1037,6747
+D5b edge-sampled,interior,random forest,vegetation_26,vegetation,4,9624,124,55,34827
+D0,all,random forest,water_2,water,4,17255,1739,1621,36985
+D0,band,random forest,water_2,water,4,6291,1287,1480,8192
+D0,interior,random forest,water_2,water,4,10964,452,141,28793
+D5a weighted,all,random forest,water_2,water,4,17208,1743,1668,36981
+D5a weighted,band,random forest,water_2,water,4,6245,1295,1526,8184
+D5a weighted,interior,random forest,water_2,water,4,10963,448,142,28797
+D5b edge-sampled,all,random forest,water_2,water,4,16951,1549,1925,37175
+D5b edge-sampled,band,random forest,water_2,water,4,6016,1114,1755,8365
+D5b edge-sampled,interior,random forest,water_2,water,4,10935,435,170,28810
+D0,all,random forest,water_8,water,4,7650,2779,15,47156
+D0,band,random forest,water_8,water,4,3235,2364,15,1166
+D0,interior,random forest,water_8,water,4,4415,415,0,45990
+D5a weighted,all,random forest,water_8,water,4,7648,2611,17,47324
+D5a weighted,band,random forest,water_8,water,4,3233,2260,17,1270
+D5a weighted,interior,random forest,water_8,water,4,4415,351,0,46054
+D5b edge-sampled,all,random forest,water_8,water,4,7649,2732,16,47203
+D5b edge-sampled,band,random forest,water_8,water,4,3234,2290,16,1240
+D5b edge-sampled,interior,random forest,water_8,water,4,4415,442,0,45963
+D0,all,random forest,water_14,water,4,42428,1262,3864,10046
+D0,band,random forest,water_14,water,4,10064,1137,2674,5094
+D0,interior,random forest,water_14,water,4,32364,125,1190,4952
+D5a weighted,all,random forest,water_14,water,4,42403,1219,3889,10089
+D5a weighted,band,random forest,water_14,water,4,10043,1090,2695,5141
+D5a weighted,interior,random forest,water_14,water,4,32360,129,1194,4948
+D5b edge-sampled,all,random forest,water_14,water,4,42391,1222,3901,10086
+D5b edge-sampled,band,random forest,water_14,water,4,10016,1089,2722,5142
+D5b edge-sampled,interior,random forest,water_14,water,4,32375,133,1179,4944
+D0,all,random forest,water_23,water,4,33738,674,1056,22132
+D0,band,random forest,water_23,water,4,5608,634,839,4837
+D0,interior,random forest,water_23,water,4,28130,40,217,17295
+D5a weighted,all,random forest,water_23,water,4,33716,677,1078,22129
+D5a weighted,band,random forest,water_23,water,4,5570,637,877,4834
+D5a weighted,interior,random forest,water_23,water,4,28146,40,201,17295
+D5b edge-sampled,all,random forest,water_23,water,4,33586,542,1208,22264
+D5b edge-sampled,band,random forest,water_23,water,4,5446,518,1001,4953
+D5b edge-sampled,interior,random forest,water_23,water,4,28140,24,207,17311
+D0,all,random forest,water_24,water,4,24819,6092,225,26464
+D0,band,random forest,water_24,water,4,10241,5179,157,4511
+D0,interior,random forest,water_24,water,4,14578,913,68,21953
+D5a weighted,all,random forest,water_24,water,4,24836,5988,208,26568
+D5a weighted,band,random forest,water_24,water,4,10247,5041,151,4649
+D5a weighted,interior,random forest,water_24,water,4,14589,947,57,21919
+D5b edge-sampled,all,random forest,water_24,water,4,24841,5903,203,26653
+D5b edge-sampled,band,random forest,water_24,water,4,10246,4911,152,4779
+D5b edge-sampled,interior,random forest,water_24,water,4,14595,992,51,21874

@@ -1,0 +1,1020 @@
+{
+ "run": "2026-10-26T03:04:23",
+ "plan": "outputs/preregistration_dinov3_baseline.md",
+ "GeoAI-Roads commit": "55c8fc2",
+ "model": "vit_large_patch16_dinov3.sat493m",
+ "licence": "Meta DINOv3 License (timm license tag 'dinov3-license'); research use only here, not Apache-2.0",
+ "normalisation": {
+  "mean": [
+   0.43,
+   0.411,
+   0.296
+  ],
+  "std": [
+   0.213,
+   0.156,
+   0.143
+  ]
+ },
+ "code hashes": {
+  "sn8.py": "632a97d7a906",
+  "sn8_canny.py": "a9bc4356dd7f",
+  "sn8_cloudedge.py": "4f7e3d920872",
+  "sn8_cloudref.py": "913753cd24ef",
+  "sn8_cloudroads.py": "df4dd1f651f9",
+  "sn8_clouds.py": "6b64958daaae",
+  "sn8_cloudspot.py": "9812614af34f",
+  "sn8_cloudsym.py": "cbe503f961b0",
+  "sn8_coreg.py": "59aca0590acf",
+  "sn8_cutoff.py": "75e4200826a6",
+  "sn8_data.py": "1b76e731765b",
+  "sn8_detect.py": "41db69cd4fec",
+  "sn8_dino.py": "643369fb2069",
+  "sn8_dino_cells.py": "7df41ebbec3a",
+  "sn8_glcm.py": "d441e9676fd8",
+  "sn8_grey.py": "c85b34c51a66",
+  "sn8_heldout.py": "64c756a89a09",
+  "sn8_lines.py": "2a7a339c5d08",
+  "sn8_models.py": "ac146f0ddd37",
+  "sn8_reduce.py": "9e777f3aed48",
+  "sn8_refhaze.py": "cd2e272380d4",
+  "sn8_results.py": "17b2a5d8e515",
+  "sn8_roads.py": "e385e4ed6c65",
+  "sn8_stages.py": "d94663f97936",
+  "sn8_texture.py": "2275da747a7e",
+  "sn8_torchgeo.py": "31dd465c7957",
+  "dinov3_bench.py": "b04259715be1",
+  "run_phase1.py": "28aebcaadd2c"
+ },
+ "data": {
+  "train tiles": 186,
+  "val tiles": 40,
+  "roads (tile rule)": 891,
+  "roads (production cloud rule)": 798,
+  "training cells": 205581,
+  "validation cells": 338885,
+  "road share sampled / real": [
+   0.2499744626205729,
+   0.02206471425608241
+  ]
+ },
+ "times (s)": {
+  "Track B road tokens, train": 2990.0,
+  "Track B road tokens, val": 589.2,
+  "Track A cell basis (training tiles)": 1778.8,
+  "Track A cell features, train": 329.3,
+  "Track A cell features, val": 244.1,
+  "note": "Track B times from the first features run (features_trackB.log), stopped after Track B; the cell basis also built the float32 before-image trunk cache; the GPU was shared with another agent's job and ran about 3.5x slower than benchmarked",
+  "road prior (training tiles)": 182.6,
+  "Track A detector fits (all arms, s)": 5519.2,
+  "Track B DINOv2 cues (891 roads)": 2.3,
+  "Track B DINOv2 cues + vector (891 roads)": 5.1,
+  "Track B base (production without DINO) (891 roads)": 2.7,
+  "Track B base + DINOv2 cues (production) (891 roads)": 2.7,
+  "Track B base + DINOv2 cues + vector (891 roads)": 5.0,
+  "Track B DINOv3 cues (891 roads)": 2.1,
+  "Track B DINOv3 cues + vector (891 roads)": 5.7,
+  "Track B base + DINOv3 cues (891 roads)": 2.7,
+  "Track B base + DINOv3 cues + vector (891 roads)": 6.0,
+  "Track B DINOv2 + DINOv3 cues (891 roads)": 2.2,
+  "Track B DINOv2 + DINOv3 cues + vectors (891 roads)": 7.8,
+  "Track B base + DINOv2 + DINOv3 cues (891 roads)": 2.7,
+  "Track B base + DINOv2 + DINOv3 cues + vectors (891 roads)": 7.8,
+  "Track B base (production without DINO) (798 roads)": 2.2,
+  "Track B base + DINOv2 cues (production) (798 roads)": 2.7,
+  "Track B base + DINOv2 cues + vector (798 roads)": 5.3,
+  "Track B base + DINOv3 cues (798 roads)": 2.9,
+  "Track B base + DINOv3 cues + vector (798 roads)": 4.9,
+  "Track B base + DINOv2 + DINOv3 cues (798 roads)": 2.9,
+  "Track B base + DINOv2 + DINOv3 cues + vectors (798 roads)": 9.4,
+  "pictures": 346.0,
+  "this run total": 3134.1,
+  "Track A detector fits, per arm (s)": {
+   "classical": 650,
+   "classical + DINOv2": 1309,
+   "DINOv2 only": 1093,
+   "classical + DINOv3": 550,
+   "DINOv3 only": 565,
+   "classical + DINOv2 + DINOv3": 652,
+   "DINOv2 + DINOv3": 703
+  },
+  "fix": "times merged after the run from features_trackB.log / features.log / trackA2.log / phase1.log (the all run had overwritten the feature times with its cache reads)"
+ },
+ "DINOv2 reproduction (now, logged)": {
+  "DINOv2 cues": [
+   0.715,
+   0.715
+  ],
+  "DINOv2 cues + vector": [
+   0.833,
+   0.833
+  ],
+  "base (production without DINO)": [
+   0.831,
+   0.831
+  ],
+  "base + DINOv2 cues (production)": [
+   0.843,
+   0.843
+  ],
+  "base + DINOv2 cues + vector": [
+   0.847,
+   0.847
+  ]
+ },
+ "Track A": {
+  "validation cells": [
+   {
+    "cut-off": "classical (0.77)",
+    "cells called road": 7321,
+    "precision": 0.506,
+    "recall": 0.514,
+    "F1": 0.51,
+    "F1 95% CI": "0.442-0.581",
+    "F1 vs classical (0.77)": 0.0,
+    "95% CI of the difference": "+0.000 to +0.000"
+   },
+   {
+    "cut-off": "classical + DINOv2 (0.75)",
+    "cells called road": 7580,
+    "precision": 0.696,
+    "recall": 0.732,
+    "F1": 0.713,
+    "F1 95% CI": "0.651-0.772",
+    "F1 vs classical (0.77)": 0.203,
+    "95% CI of the difference": "+0.159 to +0.248"
+   },
+   {
+    "cut-off": "DINOv2 only (0.76)",
+    "cells called road": 7777,
+    "precision": 0.658,
+    "recall": 0.71,
+    "F1": 0.683,
+    "F1 95% CI": "0.620-0.745",
+    "F1 vs classical (0.77)": 0.173,
+    "95% CI of the difference": "+0.117 to +0.228"
+   },
+   {
+    "cut-off": "classical + DINOv3 (0.71)",
+    "cells called road": 7368,
+    "precision": 0.738,
+    "recall": 0.755,
+    "F1": 0.747,
+    "F1 95% CI": "0.690-0.802",
+    "F1 vs classical (0.77)": 0.237,
+    "95% CI of the difference": "+0.194 to +0.284"
+   },
+   {
+    "cut-off": "DINOv3 only (0.69)",
+    "cells called road": 7660,
+    "precision": 0.711,
+    "recall": 0.756,
+    "F1": 0.733,
+    "F1 95% CI": "0.672-0.793",
+    "F1 vs classical (0.77)": 0.223,
+    "95% CI of the difference": "+0.173 to +0.275"
+   },
+   {
+    "cut-off": "classical + DINOv2 + DINOv3 (0.70)",
+    "cells called road": 7848,
+    "precision": 0.722,
+    "recall": 0.786,
+    "F1": 0.753,
+    "F1 95% CI": "0.689-0.811",
+    "F1 vs classical (0.77)": 0.243,
+    "95% CI of the difference": "+0.196 to +0.289"
+   },
+   {
+    "cut-off": "DINOv2 + DINOv3 (0.72)",
+    "cells called road": 7582,
+    "precision": 0.732,
+    "recall": 0.771,
+    "F1": 0.751,
+    "F1 95% CI": "0.687-0.811",
+    "F1 vs classical (0.77)": 0.241,
+    "95% CI of the difference": "+0.192 to +0.291"
+   }
+  ],
+  "counts": [
+   {
+    "arm": "classical (0.77)",
+    "TP": 3704,
+    "FN": 3501,
+    "FP": 3617,
+    "TN": 328063
+   },
+   {
+    "arm": "classical + DINOv2 (0.75)",
+    "TP": 5274,
+    "FN": 1931,
+    "FP": 2306,
+    "TN": 329374
+   },
+   {
+    "arm": "DINOv2 only (0.76)",
+    "TP": 5116,
+    "FN": 2089,
+    "FP": 2661,
+    "TN": 329019
+   },
+   {
+    "arm": "classical + DINOv3 (0.71)",
+    "TP": 5441,
+    "FN": 1764,
+    "FP": 1927,
+    "TN": 329753
+   },
+   {
+    "arm": "DINOv3 only (0.69)",
+    "TP": 5447,
+    "FN": 1758,
+    "FP": 2213,
+    "TN": 329467
+   },
+   {
+    "arm": "classical + DINOv2 + DINOv3 (0.70)",
+    "TP": 5666,
+    "FN": 1539,
+    "FP": 2182,
+    "TN": 329498
+   },
+   {
+    "arm": "DINOv2 + DINOv3 (0.72)",
+    "TP": 5552,
+    "FN": 1653,
+    "FP": 2030,
+    "TN": 329650
+   }
+  ],
+  "pairs": [
+   {
+    "arm": "classical + DINOv3 (0.71)",
+    "against": "classical + DINOv2 (0.75)",
+    "F1": 0.747,
+    "F1 difference": 0.033,
+    "95% CI of the difference": "+0.014 to +0.057"
+   },
+   {
+    "arm": "DINOv3 only (0.69)",
+    "against": "DINOv2 only (0.76)",
+    "F1": 0.733,
+    "F1 difference": 0.05,
+    "95% CI of the difference": "+0.021 to +0.082"
+   },
+   {
+    "arm": "classical + DINOv2 + DINOv3 (0.70)",
+    "against": "classical + DINOv2 (0.75)",
+    "F1": 0.753,
+    "F1 difference": 0.039,
+    "95% CI of the difference": "+0.027 to +0.052"
+   },
+   {
+    "arm": "DINOv2 + DINOv3 (0.72)",
+    "against": "DINOv2 only (0.76)",
+    "F1": 0.751,
+    "F1 difference": 0.068,
+    "95% CI of the difference": "+0.051 to +0.090"
+   },
+   {
+    "arm": "classical + DINOv2 + DINOv3 (0.70)",
+    "against": "classical + DINOv3 (0.71)",
+    "F1": 0.753,
+    "F1 difference": 0.006,
+    "95% CI of the difference": "-0.010 to +0.021"
+   }
+  ],
+  "cut-offs": {
+   "classical": 0.77,
+   "classical + DINOv2": 0.75,
+   "DINOv2 only": 0.76,
+   "classical + DINOv3": 0.71,
+   "DINOv3 only": 0.69,
+   "classical + DINOv2 + DINOv3": 0.7,
+   "DINOv2 + DINOv3": 0.72
+  }
+ },
+ "Track B": {
+  "891 roads": [
+   {
+    "features": "DINOv2 cues",
+    "TP": 369,
+    "FN": 96,
+    "FP": 158,
+    "TN": 268,
+    "accuracy": 0.715,
+    "accuracy 95% CI": "0.67-0.76",
+    "precision": 0.7,
+    "recall": 0.794,
+    "dry kept dry": 0.629,
+    "F1": 0.744,
+    "MCC": 0.429
+   },
+   {
+    "features": "DINOv2 cues + vector",
+    "TP": 408,
+    "FN": 57,
+    "FP": 92,
+    "TN": 334,
+    "accuracy": 0.833,
+    "accuracy 95% CI": "0.79-0.87",
+    "precision": 0.816,
+    "recall": 0.877,
+    "dry kept dry": 0.784,
+    "F1": 0.846,
+    "MCC": 0.666
+   },
+   {
+    "features": "base (production without DINO)",
+    "TP": 401,
+    "FN": 64,
+    "FP": 87,
+    "TN": 339,
+    "accuracy": 0.831,
+    "accuracy 95% CI": "0.79-0.86",
+    "precision": 0.822,
+    "recall": 0.862,
+    "dry kept dry": 0.796,
+    "F1": 0.842,
+    "MCC": 0.661
+   },
+   {
+    "features": "base + DINOv2 cues (production)",
+    "TP": 408,
+    "FN": 57,
+    "FP": 83,
+    "TN": 343,
+    "accuracy": 0.843,
+    "accuracy 95% CI": "0.81-0.88",
+    "precision": 0.831,
+    "recall": 0.877,
+    "dry kept dry": 0.805,
+    "F1": 0.854,
+    "MCC": 0.686
+   },
+   {
+    "features": "base + DINOv2 cues + vector",
+    "TP": 409,
+    "FN": 56,
+    "FP": 80,
+    "TN": 346,
+    "accuracy": 0.847,
+    "accuracy 95% CI": "0.81-0.88",
+    "precision": 0.836,
+    "recall": 0.88,
+    "dry kept dry": 0.812,
+    "F1": 0.857,
+    "MCC": 0.694
+   },
+   {
+    "features": "DINOv3 cues",
+    "TP": 389,
+    "FN": 76,
+    "FP": 172,
+    "TN": 254,
+    "accuracy": 0.722,
+    "accuracy 95% CI": "0.67-0.77",
+    "precision": 0.693,
+    "recall": 0.837,
+    "dry kept dry": 0.596,
+    "F1": 0.758,
+    "MCC": 0.448
+   },
+   {
+    "features": "DINOv3 cues + vector",
+    "TP": 413,
+    "FN": 52,
+    "FP": 88,
+    "TN": 338,
+    "accuracy": 0.843,
+    "accuracy 95% CI": "0.80-0.88",
+    "precision": 0.824,
+    "recall": 0.888,
+    "dry kept dry": 0.793,
+    "F1": 0.855,
+    "MCC": 0.686
+   },
+   {
+    "features": "base + DINOv3 cues",
+    "TP": 405,
+    "FN": 60,
+    "FP": 88,
+    "TN": 338,
+    "accuracy": 0.834,
+    "accuracy 95% CI": "0.80-0.87",
+    "precision": 0.822,
+    "recall": 0.871,
+    "dry kept dry": 0.793,
+    "F1": 0.846,
+    "MCC": 0.668
+   },
+   {
+    "features": "base + DINOv3 cues + vector",
+    "TP": 410,
+    "FN": 55,
+    "FP": 90,
+    "TN": 336,
+    "accuracy": 0.837,
+    "accuracy 95% CI": "0.80-0.87",
+    "precision": 0.82,
+    "recall": 0.882,
+    "dry kept dry": 0.789,
+    "F1": 0.85,
+    "MCC": 0.675
+   },
+   {
+    "features": "DINOv2 + DINOv3 cues",
+    "TP": 387,
+    "FN": 78,
+    "FP": 134,
+    "TN": 292,
+    "accuracy": 0.762,
+    "accuracy 95% CI": "0.72-0.80",
+    "precision": 0.743,
+    "recall": 0.832,
+    "dry kept dry": 0.685,
+    "F1": 0.785,
+    "MCC": 0.525
+   },
+   {
+    "features": "DINOv2 + DINOv3 cues + vectors",
+    "TP": 425,
+    "FN": 40,
+    "FP": 86,
+    "TN": 340,
+    "accuracy": 0.859,
+    "accuracy 95% CI": "0.82-0.89",
+    "precision": 0.832,
+    "recall": 0.914,
+    "dry kept dry": 0.798,
+    "F1": 0.871,
+    "MCC": 0.719
+   },
+   {
+    "features": "base + DINOv2 + DINOv3 cues",
+    "TP": 411,
+    "FN": 54,
+    "FP": 84,
+    "TN": 342,
+    "accuracy": 0.845,
+    "accuracy 95% CI": "0.81-0.88",
+    "precision": 0.83,
+    "recall": 0.884,
+    "dry kept dry": 0.803,
+    "F1": 0.856,
+    "MCC": 0.69
+   },
+   {
+    "features": "base + DINOv2 + DINOv3 cues + vectors",
+    "TP": 415,
+    "FN": 50,
+    "FP": 85,
+    "TN": 341,
+    "accuracy": 0.848,
+    "accuracy 95% CI": "0.81-0.88",
+    "precision": 0.83,
+    "recall": 0.892,
+    "dry kept dry": 0.8,
+    "F1": 0.86,
+    "MCC": 0.698
+   },
+   {
+    "features": "always \"flooded\"",
+    "TP": 465,
+    "FN": 0,
+    "FP": 426,
+    "TN": 0,
+    "accuracy": 0.522,
+    "accuracy 95% CI": "0.44-0.60",
+    "precision": 0.522,
+    "recall": 1.0,
+    "dry kept dry": 0.0,
+    "F1": 0.686,
+    "MCC": 0.0
+   }
+  ],
+  "891 paired": [
+   {
+    "arm": "DINOv3 cues",
+    "against": "DINOv2 cues",
+    "accuracy difference": 0.0067,
+    "95% CI": "-0.030 to +0.046",
+    "roads fixed": 114,
+    "roads broken": 108,
+    "McNemar p": 0.7373
+   },
+   {
+    "arm": "DINOv3 cues + vector",
+    "against": "DINOv2 cues + vector",
+    "accuracy difference": 0.0101,
+    "95% CI": "-0.020 to +0.040",
+    "roads fixed": 57,
+    "roads broken": 48,
+    "McNemar p": 0.4351
+   },
+   {
+    "arm": "base + DINOv3 cues",
+    "against": "base + DINOv2 cues (production)",
+    "accuracy difference": -0.009,
+    "95% CI": "-0.024 to +0.005",
+    "roads fixed": 13,
+    "roads broken": 21,
+    "McNemar p": 0.2295
+   },
+   {
+    "arm": "base + DINOv3 cues + vector",
+    "against": "base + DINOv2 cues + vector",
+    "accuracy difference": -0.0101,
+    "95% CI": "-0.025 to +0.005",
+    "roads fixed": 16,
+    "roads broken": 25,
+    "McNemar p": 0.211
+   },
+   {
+    "arm": "DINOv2 + DINOv3 cues",
+    "against": "DINOv2 cues",
+    "accuracy difference": 0.0471,
+    "95% CI": "+0.021 to +0.075",
+    "roads fixed": 88,
+    "roads broken": 46,
+    "McNemar p": 0.0004
+   },
+   {
+    "arm": "DINOv2 + DINOv3 cues + vectors",
+    "against": "DINOv2 cues + vector",
+    "accuracy difference": 0.0258,
+    "95% CI": "+0.002 to +0.049",
+    "roads fixed": 51,
+    "roads broken": 28,
+    "McNemar p": 0.0128
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues",
+    "against": "base + DINOv2 cues (production)",
+    "accuracy difference": 0.0022,
+    "95% CI": "-0.013 to +0.016",
+    "roads fixed": 21,
+    "roads broken": 19,
+    "McNemar p": 0.8746
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues + vectors",
+    "against": "base + DINOv2 cues + vector",
+    "accuracy difference": 0.0011,
+    "95% CI": "-0.013 to +0.015",
+    "roads fixed": 20,
+    "roads broken": 19,
+    "McNemar p": 1.0
+   },
+   {
+    "arm": "DINOv3 cues",
+    "against": "base + DINOv2 cues (production)",
+    "accuracy difference": -0.1212,
+    "95% CI": "-0.160 to -0.083",
+    "roads fixed": 62,
+    "roads broken": 170,
+    "McNemar p": 0.0
+   },
+   {
+    "arm": "DINOv3 cues + vector",
+    "against": "base + DINOv2 cues (production)",
+    "accuracy difference": 0.0,
+    "95% CI": "-0.025 to +0.025",
+    "roads fixed": 51,
+    "roads broken": 51,
+    "McNemar p": 1.0
+   },
+   {
+    "arm": "base + DINOv3 cues + vector",
+    "against": "base + DINOv2 cues (production)",
+    "accuracy difference": -0.0056,
+    "95% CI": "-0.023 to +0.012",
+    "roads fixed": 26,
+    "roads broken": 31,
+    "McNemar p": 0.5966
+   },
+   {
+    "arm": "DINOv2 + DINOv3 cues",
+    "against": "base + DINOv2 cues (production)",
+    "accuracy difference": -0.0808,
+    "95% CI": "-0.115 to -0.048",
+    "roads fixed": 55,
+    "roads broken": 127,
+    "McNemar p": 0.0
+   },
+   {
+    "arm": "DINOv2 + DINOv3 cues + vectors",
+    "against": "base + DINOv2 cues (production)",
+    "accuracy difference": 0.0157,
+    "95% CI": "-0.006 to +0.037",
+    "roads fixed": 54,
+    "roads broken": 40,
+    "McNemar p": 0.1797
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues + vectors",
+    "against": "base + DINOv2 cues (production)",
+    "accuracy difference": 0.0056,
+    "95% CI": "-0.013 to +0.023",
+    "roads fixed": 31,
+    "roads broken": 26,
+    "McNemar p": 0.5966
+   },
+   {
+    "arm": "DINOv2 + DINOv3 cues",
+    "against": "DINOv3 cues",
+    "accuracy difference": 0.0404,
+    "95% CI": "+0.010 to +0.068",
+    "roads fixed": 93,
+    "roads broken": 57,
+    "McNemar p": 0.0041
+   },
+   {
+    "arm": "DINOv2 + DINOv3 cues + vectors",
+    "against": "DINOv3 cues + vector",
+    "accuracy difference": 0.0157,
+    "95% CI": "+0.002 to +0.030",
+    "roads fixed": 25,
+    "roads broken": 11,
+    "McNemar p": 0.0288
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues",
+    "against": "base + DINOv3 cues",
+    "accuracy difference": 0.0112,
+    "95% CI": "+0.001 to +0.022",
+    "roads fixed": 18,
+    "roads broken": 8,
+    "McNemar p": 0.0755
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues + vectors",
+    "against": "base + DINOv3 cues + vector",
+    "accuracy difference": 0.0112,
+    "95% CI": "+0.002 to +0.021",
+    "roads fixed": 14,
+    "roads broken": 4,
+    "McNemar p": 0.0309
+   },
+   {
+    "arm": "base + DINOv2 cues (production)",
+    "against": "base (production without DINO)",
+    "accuracy difference": 0.0123,
+    "95% CI": "+0.002 to +0.023",
+    "roads fixed": 17,
+    "roads broken": 6,
+    "McNemar p": 0.0347
+   },
+   {
+    "arm": "base + DINOv2 cues + vector",
+    "against": "base (production without DINO)",
+    "accuracy difference": 0.0168,
+    "95% CI": "+0.003 to +0.031",
+    "roads fixed": 28,
+    "roads broken": 13,
+    "McNemar p": 0.0275
+   },
+   {
+    "arm": "base + DINOv3 cues",
+    "against": "base (production without DINO)",
+    "accuracy difference": 0.0034,
+    "95% CI": "-0.011 to +0.018",
+    "roads fixed": 22,
+    "roads broken": 19,
+    "McNemar p": 0.7552
+   },
+   {
+    "arm": "base + DINOv3 cues + vector",
+    "against": "base (production without DINO)",
+    "accuracy difference": 0.0067,
+    "95% CI": "-0.012 to +0.026",
+    "roads fixed": 35,
+    "roads broken": 29,
+    "McNemar p": 0.5323
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues",
+    "against": "base (production without DINO)",
+    "accuracy difference": 0.0146,
+    "95% CI": "-0.001 to +0.030",
+    "roads fixed": 31,
+    "roads broken": 18,
+    "McNemar p": 0.0854
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues + vectors",
+    "against": "base (production without DINO)",
+    "accuracy difference": 0.018,
+    "95% CI": "-0.002 to +0.038",
+    "roads fixed": 43,
+    "roads broken": 27,
+    "McNemar p": 0.0722
+   }
+  ],
+  "DINOv3 single cues": [
+   {
+    "features": "dino3_change_pooled",
+    "TP": 407,
+    "FN": 58,
+    "FP": 220,
+    "TN": 206,
+    "accuracy": 0.688,
+    "accuracy 95% CI": "0.63-0.74",
+    "flooded found": 0.875,
+    "dry kept dry": 0.484,
+    "MCC": 0.393
+   },
+   {
+    "features": "dino3_change_mean",
+    "TP": 402,
+    "FN": 63,
+    "FP": 216,
+    "TN": 210,
+    "accuracy": 0.687,
+    "accuracy 95% CI": "0.63-0.74",
+    "flooded found": 0.865,
+    "dry kept dry": 0.493,
+    "MCC": 0.387
+   },
+   {
+    "features": "dino3_change_max",
+    "TP": 399,
+    "FN": 66,
+    "FP": 256,
+    "TN": 170,
+    "accuracy": 0.639,
+    "accuracy 95% CI": "0.58-0.69",
+    "flooded found": 0.858,
+    "dry kept dry": 0.399,
+    "MCC": 0.291
+   },
+   {
+    "features": "always \"flooded\"",
+    "TP": 465,
+    "FN": 0,
+    "FP": 426,
+    "TN": 0,
+    "accuracy": 0.522,
+    "accuracy 95% CI": "0.44-0.60",
+    "flooded found": 1.0,
+    "dry kept dry": 0.0,
+    "MCC": 0.0
+   }
+  ],
+  "798 roads": [
+   {
+    "features": "base (production without DINO)",
+    "TP": 381,
+    "FN": 60,
+    "FP": 89,
+    "TN": 268,
+    "accuracy": 0.813,
+    "accuracy 95% CI": "0.78-0.85",
+    "precision": 0.811,
+    "recall": 0.864,
+    "dry kept dry": 0.751,
+    "F1": 0.836,
+    "MCC": 0.621
+   },
+   {
+    "features": "base + DINOv2 cues (production)",
+    "TP": 394,
+    "FN": 47,
+    "FP": 89,
+    "TN": 268,
+    "accuracy": 0.83,
+    "accuracy 95% CI": "0.79-0.86",
+    "precision": 0.816,
+    "recall": 0.893,
+    "dry kept dry": 0.751,
+    "F1": 0.853,
+    "MCC": 0.655
+   },
+   {
+    "features": "base + DINOv2 cues + vector",
+    "TP": 394,
+    "FN": 47,
+    "FP": 88,
+    "TN": 269,
+    "accuracy": 0.831,
+    "accuracy 95% CI": "0.80-0.87",
+    "precision": 0.817,
+    "recall": 0.893,
+    "dry kept dry": 0.754,
+    "F1": 0.854,
+    "MCC": 0.658
+   },
+   {
+    "features": "base + DINOv3 cues",
+    "TP": 394,
+    "FN": 47,
+    "FP": 91,
+    "TN": 266,
+    "accuracy": 0.827,
+    "accuracy 95% CI": "0.79-0.86",
+    "precision": 0.812,
+    "recall": 0.893,
+    "dry kept dry": 0.745,
+    "F1": 0.851,
+    "MCC": 0.65
+   },
+   {
+    "features": "base + DINOv3 cues + vector",
+    "TP": 395,
+    "FN": 46,
+    "FP": 90,
+    "TN": 267,
+    "accuracy": 0.83,
+    "accuracy 95% CI": "0.79-0.87",
+    "precision": 0.814,
+    "recall": 0.896,
+    "dry kept dry": 0.748,
+    "F1": 0.853,
+    "MCC": 0.655
+   },
+   {
+    "features": "base + DINOv2 + DINOv3 cues",
+    "TP": 394,
+    "FN": 47,
+    "FP": 88,
+    "TN": 269,
+    "accuracy": 0.831,
+    "accuracy 95% CI": "0.79-0.87",
+    "precision": 0.817,
+    "recall": 0.893,
+    "dry kept dry": 0.754,
+    "F1": 0.854,
+    "MCC": 0.658
+   },
+   {
+    "features": "base + DINOv2 + DINOv3 cues + vectors",
+    "TP": 399,
+    "FN": 42,
+    "FP": 89,
+    "TN": 268,
+    "accuracy": 0.836,
+    "accuracy 95% CI": "0.80-0.87",
+    "precision": 0.818,
+    "recall": 0.905,
+    "dry kept dry": 0.751,
+    "F1": 0.859,
+    "MCC": 0.669
+   },
+   {
+    "features": "always \"flooded\"",
+    "TP": 441,
+    "FN": 0,
+    "FP": 357,
+    "TN": 0,
+    "accuracy": 0.553,
+    "accuracy 95% CI": "0.47-0.63",
+    "precision": 0.553,
+    "recall": 1.0,
+    "dry kept dry": 0.0,
+    "F1": 0.712,
+    "MCC": 0.0
+   }
+  ],
+  "798 paired": [
+   {
+    "arm": "base + DINOv3 cues",
+    "against": "base + DINOv2 cues (production)",
+    "accuracy difference": -0.0025,
+    "95% CI": "-0.018 to +0.013",
+    "roads fixed": 18,
+    "roads broken": 20,
+    "McNemar p": 0.8714
+   },
+   {
+    "arm": "base + DINOv3 cues + vector",
+    "against": "base + DINOv2 cues + vector",
+    "accuracy difference": -0.0013,
+    "95% CI": "-0.018 to +0.016",
+    "roads fixed": 25,
+    "roads broken": 26,
+    "McNemar p": 1.0
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues",
+    "against": "base + DINOv2 cues (production)",
+    "accuracy difference": 0.0013,
+    "95% CI": "-0.014 to +0.017",
+    "roads fixed": 19,
+    "roads broken": 18,
+    "McNemar p": 1.0
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues + vectors",
+    "against": "base + DINOv2 cues + vector",
+    "accuracy difference": 0.005,
+    "95% CI": "-0.011 to +0.022",
+    "roads fixed": 23,
+    "roads broken": 19,
+    "McNemar p": 0.644
+   },
+   {
+    "arm": "base + DINOv3 cues + vector",
+    "against": "base + DINOv2 cues (production)",
+    "accuracy difference": 0.0,
+    "95% CI": "-0.019 to +0.017",
+    "roads fixed": 25,
+    "roads broken": 25,
+    "McNemar p": 1.0
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues + vectors",
+    "against": "base + DINOv2 cues (production)",
+    "accuracy difference": 0.0063,
+    "95% CI": "-0.012 to +0.024",
+    "roads fixed": 28,
+    "roads broken": 23,
+    "McNemar p": 0.5758
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues",
+    "against": "base + DINOv3 cues",
+    "accuracy difference": 0.0038,
+    "95% CI": "-0.005 to +0.013",
+    "roads fixed": 9,
+    "roads broken": 6,
+    "McNemar p": 0.6072
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues + vectors",
+    "against": "base + DINOv3 cues + vector",
+    "accuracy difference": 0.0063,
+    "95% CI": "-0.008 to +0.021",
+    "roads fixed": 19,
+    "roads broken": 14,
+    "McNemar p": 0.4869
+   },
+   {
+    "arm": "base + DINOv2 cues (production)",
+    "against": "base (production without DINO)",
+    "accuracy difference": 0.0163,
+    "95% CI": "+0.005 to +0.028",
+    "roads fixed": 20,
+    "roads broken": 7,
+    "McNemar p": 0.0192
+   },
+   {
+    "arm": "base + DINOv2 cues + vector",
+    "against": "base (production without DINO)",
+    "accuracy difference": 0.0175,
+    "95% CI": "-0.001 to +0.037",
+    "roads fixed": 32,
+    "roads broken": 18,
+    "McNemar p": 0.0649
+   },
+   {
+    "arm": "base + DINOv3 cues",
+    "against": "base (production without DINO)",
+    "accuracy difference": 0.0138,
+    "95% CI": "-0.003 to +0.031",
+    "roads fixed": 31,
+    "roads broken": 20,
+    "McNemar p": 0.1608
+   },
+   {
+    "arm": "base + DINOv3 cues + vector",
+    "against": "base (production without DINO)",
+    "accuracy difference": 0.0163,
+    "95% CI": "-0.004 to +0.036",
+    "roads fixed": 38,
+    "roads broken": 25,
+    "McNemar p": 0.1299
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues",
+    "against": "base (production without DINO)",
+    "accuracy difference": 0.0175,
+    "95% CI": "+0.000 to +0.035",
+    "roads fixed": 34,
+    "roads broken": 20,
+    "McNemar p": 0.0759
+   },
+   {
+    "arm": "base + DINOv2 + DINOv3 cues + vectors",
+    "against": "base (production without DINO)",
+    "accuracy difference": 0.0226,
+    "95% CI": "+0.003 to +0.043",
+    "roads fixed": 41,
+    "roads broken": 23,
+    "McNemar p": 0.0328
+   }
+  ]
+ },
+ "pictures": {
+  "tile B": "2_15_48",
+  "tile A": "0_14_7",
+  "patch change, median / 99th percentile": {
+   "DINOv2": [
+    0.3700837790966034,
+    0.8557600378990173
+   ],
+   "DINOv3": [
+    0.4434961974620819,
+    0.7607024312019348
+   ]
+  }
+ }
+}

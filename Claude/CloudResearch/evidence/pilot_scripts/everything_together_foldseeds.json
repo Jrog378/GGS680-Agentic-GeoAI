@@ -1,0 +1,89 @@
+{
+ "post hoc": "POST HOC (chosen 2026-10-26 ~00:30 EDT, after seeing evaluate_everything_together.py's results; not in the test\nplan). Why: the best-so-far arm's gain over production on the 798 assessable roads was +0.1 points with production's\nfold split (seed 662 over the 798) but +2.3 points (p = 0.001) with tonight's split (seed 662 over all 1,037 roads),\nso the arm differences may be mostly fold luck. Check: the primary comparison (set (i), the 798, folds over the 798,\nproduction model, model seed 662 unchanged) repeated over 20 other fold seeds (1-20); per seed the accuracy of each\narm, the gain over production, McNemar's exact test and the promotion rule (sn8_stages.confirm, read-only).\nDevelopment data only; cached tables only. Writes everything_together_foldseeds.json and .csv.",
+ "seeds": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20
+ ],
+ "summary over the 20 new seeds": {
+  "production": {
+   "mean accuracy": 0.824874686716792,
+   "sd": 0.006164263246844112,
+   "min": 0.8157894736842105,
+   "max": 0.8421052631578947
+  },
+  "production + DINOv2 vector (best so far)": {
+   "mean accuracy": 0.8359649122807019,
+   "sd": 0.00555827406139617,
+   "min": 0.8233082706766918,
+   "max": 0.8446115288220551,
+   "mean gain vs production": 0.011095,
+   "min gain": 0.0013,
+   "max gain": 0.0226,
+   "seeds with gain > 0": 20,
+   "seeds the rule passes": 3,
+   "seeds with McNemar p < 0.05": 4
+  },
+  "both cues": {
+   "mean accuracy": 0.8209273182957393,
+   "sd": 0.006716408055541136,
+   "min": 0.8095238095238095,
+   "max": 0.8308270676691729,
+   "mean gain vs production": -0.003940000000000001,
+   "min gain": -0.015,
+   "max gain": 0.005,
+   "seeds with gain > 0": 5,
+   "seeds the rule passes": 0,
+   "seeds with McNemar p < 0.05": 0
+  },
+  "everything together": {
+   "mean accuracy": 0.8328947368421054,
+   "sd": 0.006842887973425212,
+   "min": 0.8195488721804511,
+   "max": 0.8458646616541353,
+   "mean gain vs production": 0.008015000000000001,
+   "min gain": -0.0038,
+   "max gain": 0.0175,
+   "seeds with gain > 0": 16,
+   "seeds the rule passes": 3,
+   "seeds with McNemar p < 0.05": 3
+  },
+  "without classical (raw)": {
+   "mean accuracy": 0.8320175438596491,
+   "sd": 0.0073798330875543185,
+   "min": 0.8145363408521303,
+   "max": 0.843358395989975,
+   "mean gain vs production": 0.007150000000000001,
+   "min gain": -0.01,
+   "max gain": 0.0226,
+   "seeds with gain > 0": 16,
+   "seeds the rule passes": 1,
+   "seeds with McNemar p < 0.05": 2
+  },
+  "everything minus best so far": {
+   "mean": -0.0030800000000000003,
+   "min": -0.01,
+   "max": 0.0063,
+   "seeds > 0": 3,
+   "seeds < 0": 17,
+   "seeds with McNemar p < 0.05": 0
+  }
+ }
+}

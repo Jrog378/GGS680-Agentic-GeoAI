@@ -1,0 +1,1243 @@
+{
+ "best": "e: He 2013 r50, eps 0.01",
+ "chosen": {
+  "a": {
+   "setting": "a: soft gate 0.25, cap 160",
+   "passes guards": false
+  },
+  "b": {
+   "setting": "b: data fade 80",
+   "passes guards": false
+  },
+  "c": {
+   "setting": "c: guided r20, eps 0.0001",
+   "passes guards": true
+  },
+  "d": {
+   "setting": "d: window 11",
+   "passes guards": false
+  },
+  "e": {
+   "setting": "e: He 2013 r50, eps 0.01",
+   "passes guards": true
+  }
+ },
+ "combination": null,
+ "choose": {
+  "as it is": {
+   "tiles": 50,
+   "ring score": 35.4893473387,
+   "grey ring score": 40.6666669846,
+   "hazy excess": 0.6373977642,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.503924551,
+   "seam vs current": 0.5884248779,
+   "seam index": 2.5985800832,
+   "texture copied": -0.0036029873,
+   "opaque share of gate": 0.0,
+   "passes guards": false
+  },
+  "current": {
+   "tiles": 50,
+   "ring score": 12.4486698359,
+   "grey ring score": 27.634724617,
+   "hazy excess": 0.0428699522,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 1.0,
+   "seam vs current": 1.0,
+   "seam index": 5.5255028795,
+   "texture copied": 0.0,
+   "opaque share of gate": 0.0001022733,
+   "passes guards": true
+  },
+  "a: soft gate 0.25, cap 80": {
+   "tiles": 50,
+   "ring score": 7.307214475,
+   "grey ring score": 14.6472315788,
+   "hazy excess": -0.0273611802,
+   "clear ground changed (mean)": 0.0822169152,
+   "clear ground changed (max)": 0.2762186471,
+   "tiles over 1%": 48,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.1287432537,
+   "detail kept vs current": 0.9989773086,
+   "seam vs current": 0.8298202446,
+   "seam index": 4.36969631,
+   "texture copied": 0.0008184592,
+   "opaque share of gate": 0.0001022733,
+   "passes guards": false
+  },
+  "a: soft gate 0.25, cap 160": {
+   "tiles": 50,
+   "ring score": 4.7793111265,
+   "grey ring score": 12.720594883,
+   "hazy excess": -0.0103904727,
+   "clear ground changed (mean)": 0.147544561,
+   "clear ground changed (max)": 0.3684450036,
+   "tiles over 1%": 48,
+   "far ground changed (mean)": 0.0869264969,
+   "area changed beyond margin (mean)": 0.2094339454,
+   "detail kept vs current": 0.9989773086,
+   "seam vs current": 0.7862147919,
+   "seam index": 3.2900446422,
+   "texture copied": 0.0008184592,
+   "opaque share of gate": 0.0001022733,
+   "passes guards": false
+  },
+  "a: soft gate 0.5, cap 80": {
+   "tiles": 50,
+   "ring score": 7.6448924939,
+   "grey ring score": 13.5932502747,
+   "hazy excess": -0.027209228,
+   "clear ground changed (mean)": 0.0305080448,
+   "clear ground changed (max)": 0.1075340738,
+   "tiles over 1%": 36,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0783214995,
+   "detail kept vs current": 0.999470905,
+   "seam vs current": 0.9112425179,
+   "seam index": 3.9551124288,
+   "texture copied": -0.0001512996,
+   "opaque share of gate": 0.0001022733,
+   "passes guards": false
+  },
+  "a: soft gate 0.5, cap 160": {
+   "tiles": 50,
+   "ring score": 6.7280763222,
+   "grey ring score": 13.0395159721,
+   "hazy excess": -0.0108562142,
+   "clear ground changed (mean)": 0.0464072562,
+   "clear ground changed (max)": 0.1774268255,
+   "tiles over 1%": 38,
+   "far ground changed (mean)": 0.0377942354,
+   "area changed beyond margin (mean)": 0.1136543049,
+   "detail kept vs current": 0.999470905,
+   "seam vs current": 0.8943268741,
+   "seam index": 3.4934289039,
+   "texture copied": -0.0001512996,
+   "opaque share of gate": 0.0001022733,
+   "passes guards": false
+  },
+  "b: data fade 40": {
+   "tiles": 50,
+   "ring score": 10.0244817481,
+   "grey ring score": 21.6429681778,
+   "hazy excess": 0.0,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.9989773086,
+   "seam vs current": 1.2956088187,
+   "seam index": 7.415337503,
+   "texture copied": 0.000812438,
+   "opaque share of gate": 0.0001022733,
+   "passes guards": false
+  },
+  "b: data fade 80": {
+   "tiles": 50,
+   "ring score": 6.2669237355,
+   "grey ring score": 14.5491037369,
+   "hazy excess": -0.0269739145,
+   "clear ground changed (mean)": 0.0407020889,
+   "clear ground changed (max)": 0.1845758492,
+   "tiles over 1%": 42,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.069383451,
+   "detail kept vs current": 0.9989773086,
+   "seam vs current": 0.8718186864,
+   "seam index": 5.0071551062,
+   "texture copied": 0.000812438,
+   "opaque share of gate": 0.0001022733,
+   "passes guards": false
+  },
+  "b: data fade 120": {
+   "tiles": 50,
+   "ring score": 7.1436373154,
+   "grey ring score": 14.0270495415,
+   "hazy excess": -0.0271400231,
+   "clear ground changed (mean)": 0.0906556459,
+   "clear ground changed (max)": 0.3525470461,
+   "tiles over 1%": 47,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.1360637655,
+   "detail kept vs current": 0.9989773086,
+   "seam vs current": 0.7954486884,
+   "seam index": 3.8464638104,
+   "texture copied": 0.000812438,
+   "opaque share of gate": 0.0001022733,
+   "passes guards": false
+  },
+  "c: guided r20, eps 0.0001": {
+   "tiles": 50,
+   "ring score": 12.7043524384,
+   "grey ring score": 27.3714346886,
+   "hazy excess": 0.0412777882,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 1.0008068619,
+   "seam vs current": 0.9581642392,
+   "seam index": 5.4609776198,
+   "texture copied": 0.0568162112,
+   "opaque share of gate": 0.0005073134,
+   "passes guards": true
+  },
+  "c: guided r20, eps 0.01": {
+   "tiles": 50,
+   "ring score": 12.7126062214,
+   "grey ring score": 27.3644657135,
+   "hazy excess": 0.0418445905,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.9944522534,
+   "seam vs current": 0.9582266929,
+   "seam index": 5.4431279008,
+   "texture copied": 0.0251692895,
+   "opaque share of gate": 0.0004021659,
+   "passes guards": true
+  },
+  "c: guided r60, eps 0.0001": {
+   "tiles": 50,
+   "ring score": 12.6098366212,
+   "grey ring score": 26.6505813599,
+   "hazy excess": 0.0634746807,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.9942270041,
+   "seam vs current": 0.9296059407,
+   "seam index": 5.413036413,
+   "texture copied": 0.1125423716,
+   "opaque share of gate": 0.0,
+   "passes guards": false
+  },
+  "c: guided r60, eps 0.01": {
+   "tiles": 50,
+   "ring score": 13.1947466257,
+   "grey ring score": 26.6907968521,
+   "hazy excess": 0.0639232124,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.9759055868,
+   "seam vs current": 0.9176312551,
+   "seam index": 5.4260503207,
+   "texture copied": 0.0732837893,
+   "opaque share of gate": 0.0,
+   "passes guards": true
+  },
+  "d: window 11": {
+   "tiles": 50,
+   "ring score": 10.7798942052,
+   "grey ring score": 25.6185727119,
+   "hazy excess": 0.0190732655,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 1.0582153497,
+   "seam vs current": 1.1707558849,
+   "seam index": 6.9117459395,
+   "texture copied": 0.0200457376,
+   "opaque share of gate": 0.0099310661,
+   "passes guards": false
+  },
+  "d: window 21": {
+   "tiles": 50,
+   "ring score": 10.8736906911,
+   "grey ring score": 26.3407711983,
+   "hazy excess": 0.0212116939,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 1.0281811472,
+   "seam vs current": 1.1188243885,
+   "seam index": 6.5316515285,
+   "texture copied": 0.0093086913,
+   "opaque share of gate": 0.0030051201,
+   "passes guards": false
+  },
+  "e: He 2013 r20, eps 0.001": {
+   "tiles": 50,
+   "ring score": 10.6097887158,
+   "grey ring score": 24.5794739723,
+   "hazy excess": 0.0231475862,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.9596264256,
+   "seam vs current": 1.0817438019,
+   "seam index": 6.5941208853,
+   "texture copied": -0.0033380312,
+   "opaque share of gate": 0.0020389108,
+   "passes guards": false
+  },
+  "e: He 2013 r20, eps 0.01": {
+   "tiles": 50,
+   "ring score": 9.9423632811,
+   "grey ring score": 24.6909651756,
+   "hazy excess": 0.0218309303,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 1.0326508859,
+   "seam vs current": 1.0913665953,
+   "seam index": 6.6171862826,
+   "texture copied": -0.002182352,
+   "opaque share of gate": 0.0017020709,
+   "passes guards": false
+  },
+  "e: He 2013 r50, eps 0.001": {
+   "tiles": 50,
+   "ring score": 12.455579559,
+   "grey ring score": 25.0133676529,
+   "hazy excess": 0.0409533508,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.832886586,
+   "seam vs current": 0.9925887438,
+   "seam index": 6.1988813588,
+   "texture copied": -0.0038208958,
+   "opaque share of gate": 0.001209239,
+   "passes guards": false
+  },
+  "e: He 2013 r50, eps 0.01": {
+   "tiles": 50,
+   "ring score": 11.3271176815,
+   "grey ring score": 25.2287092209,
+   "hazy excess": 0.0372362639,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.9615272161,
+   "seam vs current": 1.0148239612,
+   "seam index": 6.1405518877,
+   "texture copied": -0.0020986859,
+   "opaque share of gate": 0.0,
+   "passes guards": true
+  }
+ },
+ "report": {
+  "as it is": {
+   "tiles": 49,
+   "ring score": 39.2340854623,
+   "grey ring score": 42.75,
+   "hazy excess": 0.6295320491,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.4969648226,
+   "seam vs current": 0.5938220569,
+   "seam index": 2.0501513674,
+   "texture copied": -0.0052226258,
+   "opaque share of gate": 0.0,
+   "passes guards": false
+  },
+  "current": {
+   "tiles": 49,
+   "ring score": 17.345872879,
+   "grey ring score": 27.9280719757,
+   "hazy excess": 0.0605455028,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 1.0,
+   "seam vs current": 1.0,
+   "seam index": 4.1812694974,
+   "texture copied": 0.0,
+   "opaque share of gate": 0.0024228806,
+   "passes guards": true
+  },
+  "a: soft gate 0.25, cap 80": {
+   "tiles": 49,
+   "ring score": 6.3498832204,
+   "grey ring score": 12.2983512878,
+   "hazy excess": -0.0385309663,
+   "clear ground changed (mean)": 0.0801450889,
+   "clear ground changed (max)": 0.3015469685,
+   "tiles over 1%": 43,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.1180281379,
+   "detail kept vs current": 0.9985756847,
+   "seam vs current": 0.8457708418,
+   "seam index": 2.7880280211,
+   "texture copied": 0.0004787794,
+   "opaque share of gate": 0.0024228806,
+   "passes guards": false
+  },
+  "a: soft gate 0.25, cap 160": {
+   "tiles": 49,
+   "ring score": 5.3894131184,
+   "grey ring score": 13.7906599045,
+   "hazy excess": -0.0200025476,
+   "clear ground changed (mean)": 0.1345342011,
+   "clear ground changed (max)": 0.4531614319,
+   "tiles over 1%": 45,
+   "far ground changed (mean)": 0.0715390852,
+   "area changed beyond margin (mean)": 0.1873289861,
+   "detail kept vs current": 0.9985756847,
+   "seam vs current": 0.7361867249,
+   "seam index": 2.4798470427,
+   "texture copied": 0.0004787794,
+   "opaque share of gate": 0.0024228806,
+   "passes guards": false
+  },
+  "a: soft gate 0.5, cap 80": {
+   "tiles": 49,
+   "ring score": 6.4677939892,
+   "grey ring score": 13.1772909164,
+   "hazy excess": -0.0368500308,
+   "clear ground changed (mean)": 0.0264995222,
+   "clear ground changed (max)": 0.1094355694,
+   "tiles over 1%": 33,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.066979055,
+   "detail kept vs current": 0.9986246008,
+   "seam vs current": 0.863523113,
+   "seam index": 2.9023180379,
+   "texture copied": 0.0,
+   "opaque share of gate": 0.0024228806,
+   "passes guards": false
+  },
+  "a: soft gate 0.5, cap 160": {
+   "tiles": 49,
+   "ring score": 6.103733182,
+   "grey ring score": 13.8315029144,
+   "hazy excess": -0.019519506,
+   "clear ground changed (mean)": 0.0373033816,
+   "clear ground changed (max)": 0.1094355694,
+   "tiles over 1%": 36,
+   "far ground changed (mean)": 0.029486651,
+   "area changed beyond margin (mean)": 0.0960766901,
+   "detail kept vs current": 0.9986246008,
+   "seam vs current": 0.8247278872,
+   "seam index": 2.7508164012,
+   "texture copied": 0.0,
+   "opaque share of gate": 0.0024228806,
+   "passes guards": false
+  },
+  "b: data fade 40": {
+   "tiles": 49,
+   "ring score": 12.0440645218,
+   "grey ring score": 17.9715328217,
+   "hazy excess": 0.0,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.9985705885,
+   "seam vs current": 1.1694254555,
+   "seam index": 4.9573697709,
+   "texture copied": 0.0014447101,
+   "opaque share of gate": 0.0024228806,
+   "passes guards": false
+  },
+  "b: data fade 80": {
+   "tiles": 49,
+   "ring score": 6.3423652351,
+   "grey ring score": 16.3779392242,
+   "hazy excess": -0.0390762682,
+   "clear ground changed (mean)": 0.0468977783,
+   "clear ground changed (max)": 0.1864911324,
+   "tiles over 1%": 38,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0705261369,
+   "detail kept vs current": 0.9985705885,
+   "seam vs current": 0.8579465147,
+   "seam index": 3.0364903996,
+   "texture copied": 0.0014447101,
+   "opaque share of gate": 0.0024228806,
+   "passes guards": false
+  },
+  "b: data fade 120": {
+   "tiles": 49,
+   "ring score": 6.2321302891,
+   "grey ring score": 13.049738884,
+   "hazy excess": -0.039490419,
+   "clear ground changed (mean)": 0.0993726665,
+   "clear ground changed (max)": 0.3936881952,
+   "tiles over 1%": 45,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.1365682051,
+   "detail kept vs current": 0.9985705885,
+   "seam vs current": 0.7275907819,
+   "seam index": 2.6640849298,
+   "texture copied": 0.0014447101,
+   "opaque share of gate": 0.0024228806,
+   "passes guards": false
+  },
+  "c: guided r20, eps 0.0001": {
+   "tiles": 49,
+   "ring score": 17.0971254706,
+   "grey ring score": 27.8880252838,
+   "hazy excess": 0.0627366129,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 1.0057880541,
+   "seam vs current": 0.9428872544,
+   "seam index": 3.9769390602,
+   "texture copied": 0.0603085158,
+   "opaque share of gate": 0.0011424564,
+   "passes guards": true
+  },
+  "c: guided r20, eps 0.01": {
+   "tiles": 49,
+   "ring score": 17.1399086912,
+   "grey ring score": 27.8360939026,
+   "hazy excess": 0.0681817547,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.9945647142,
+   "seam vs current": 0.9402818277,
+   "seam index": 3.9260756832,
+   "texture copied": 0.0387925335,
+   "opaque share of gate": 0.0011311449,
+   "passes guards": true
+  },
+  "c: guided r60, eps 0.0001": {
+   "tiles": 49,
+   "ring score": 17.7869778546,
+   "grey ring score": 28.2229576111,
+   "hazy excess": 0.0894374731,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 1.0005987382,
+   "seam vs current": 0.9003638538,
+   "seam index": 3.7778789444,
+   "texture copied": 0.1102622324,
+   "opaque share of gate": 0.0007852992,
+   "passes guards": false
+  },
+  "c: guided r60, eps 0.01": {
+   "tiles": 49,
+   "ring score": 18.6643363535,
+   "grey ring score": 28.1679267883,
+   "hazy excess": 0.0909547037,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.9764683571,
+   "seam vs current": 0.8931484388,
+   "seam index": 3.7453306414,
+   "texture copied": 0.0620415227,
+   "opaque share of gate": 0.0,
+   "passes guards": true
+  },
+  "d: window 11": {
+   "tiles": 49,
+   "ring score": 12.0780545208,
+   "grey ring score": 23.0390453339,
+   "hazy excess": 0.0202344921,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 1.052082744,
+   "seam vs current": 1.2592688463,
+   "seam index": 5.1068470707,
+   "texture copied": 0.0314032268,
+   "opaque share of gate": 0.0029975341,
+   "passes guards": false
+  },
+  "d: window 21": {
+   "tiles": 49,
+   "ring score": 13.1655137539,
+   "grey ring score": 25.0261106491,
+   "hazy excess": 0.0215910654,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 1.0229123978,
+   "seam vs current": 1.1716407875,
+   "seam index": 4.9251175795,
+   "texture copied": 0.0142883214,
+   "opaque share of gate": 0.0024228806,
+   "passes guards": false
+  },
+  "e: He 2013 r20, eps 0.001": {
+   "tiles": 49,
+   "ring score": 13.2288081646,
+   "grey ring score": 21.5747156143,
+   "hazy excess": 0.0228512097,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.9480109475,
+   "seam vs current": 1.086845533,
+   "seam index": 5.1925847547,
+   "texture copied": -0.0019514798,
+   "opaque share of gate": 0.047960245,
+   "passes guards": false
+  },
+  "e: He 2013 r20, eps 0.01": {
+   "tiles": 49,
+   "ring score": 12.8215277195,
+   "grey ring score": 21.4738178253,
+   "hazy excess": 0.0172729996,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 1.0102996542,
+   "seam vs current": 1.1117990677,
+   "seam index": 5.1474475696,
+   "texture copied": -0.0021200865,
+   "opaque share of gate": 0.0284987865,
+   "passes guards": false
+  },
+  "e: He 2013 r50, eps 0.001": {
+   "tiles": 49,
+   "ring score": 15.5500853327,
+   "grey ring score": 22.5029459,
+   "hazy excess": 0.0370332052,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.8071598863,
+   "seam vs current": 1.0270263794,
+   "seam index": 4.8814217171,
+   "texture copied": -0.0031449526,
+   "opaque share of gate": 0.01051603,
+   "passes guards": false
+  },
+  "e: He 2013 r50, eps 0.01": {
+   "tiles": 49,
+   "ring score": 14.9970974922,
+   "grey ring score": 22.8127784729,
+   "hazy excess": 0.0358442351,
+   "clear ground changed (mean)": 0.0,
+   "clear ground changed (max)": 0.0,
+   "tiles over 1%": 0,
+   "far ground changed (mean)": 0.0,
+   "area changed beyond margin (mean)": 0.0,
+   "detail kept vs current": 0.9518658128,
+   "seam vs current": 1.0312849301,
+   "seam index": 4.7134980547,
+   "texture copied": -0.0051829636,
+   "opaque share of gate": 0.0,
+   "passes guards": true
+  }
+ },
+ "paired, report half": {
+  "a: soft gate 0.25, cap 160": {
+   "ring score": {
+    "tiles": 49,
+    "better": 44,
+    "worse": 5,
+    "sign p": 7.59715845788378e-09,
+    "median diff": -12.040400436946324,
+    "mean diff": -10.295635142211667,
+    "mean diff 95% CI": [
+     -13.121642380708577,
+     -7.32077117016909
+    ]
+   },
+   "grey ring score": {
+    "tiles": 49,
+    "better": 44,
+    "worse": 5,
+    "sign p": 7.59715845788378e-09,
+    "median diff": -13.818336486816406,
+    "mean diff": -13.137738578173579,
+    "mean diff 95% CI": [
+     -16.544394402114712,
+     -9.676091056453938
+    ]
+   },
+   "hazy excess": {
+    "tiles": 49,
+    "better": 41,
+    "worse": 3,
+    "sign p": 1.6183321349672042e-09,
+    "median diff": -0.11966190122611431,
+    "mean diff": -0.18042301363793162,
+    "mean diff 95% CI": [
+     -0.2364265821344215,
+     -0.12903791248047758
+    ]
+   }
+  },
+  "b: data fade 80": {
+   "ring score": {
+    "tiles": 49,
+    "better": 43,
+    "worse": 6,
+    "sign p": 5.7277652842913085e-08,
+    "median diff": -10.558815785816737,
+    "mean diff": -9.097832911707622,
+    "mean diff 95% CI": [
+     -11.723995624825147,
+     -6.272122132232037
+    ]
+   },
+   "grey ring score": {
+    "tiles": 49,
+    "better": 43,
+    "worse": 6,
+    "sign p": 5.7277652842913085e-08,
+    "median diff": -13.641357421875004,
+    "mean diff": -11.787683068489542,
+    "mean diff 95% CI": [
+     -14.781991724578702,
+     -8.71757101745022
+    ]
+   },
+   "hazy excess": {
+    "tiles": 49,
+    "better": 43,
+    "worse": 0,
+    "sign p": 2.2737367544323206e-13,
+    "median diff": -0.1780369275122983,
+    "mean diff": -0.19495767418419793,
+    "mean diff 95% CI": [
+     -0.2511568106036844,
+     -0.14334837607521145
+    ]
+   }
+  },
+  "c: guided r20, eps 0.0001": {
+   "ring score": {
+    "tiles": 49,
+    "better": 20,
+    "worse": 29,
+    "sign p": 0.2528697301676033,
+    "median diff": 0.06262089524950376,
+    "mean diff": 0.17080637923071126,
+    "mean diff 95% CI": [
+     -0.016288442506951654,
+     0.3665700488579882
+    ]
+   },
+   "grey ring score": {
+    "tiles": 49,
+    "better": 41,
+    "worse": 8,
+    "sign p": 1.9646537765538596e-06,
+    "median diff": -0.22905826568603516,
+    "mean diff": -0.230817366619499,
+    "mean diff 95% CI": [
+     -0.3093710364127644,
+     -0.1536270603841666
+    ]
+   },
+   "hazy excess": {
+    "tiles": 49,
+    "better": 15,
+    "worse": 28,
+    "sign p": 0.0659940344557981,
+    "median diff": 0.00014268295846629926,
+    "mean diff": 0.006268645344321165,
+    "mean diff 95% CI": [
+     0.002606164566602718,
+     0.010541606241728528
+    ]
+   }
+  },
+  "d: window 11": {
+   "ring score": {
+    "tiles": 49,
+    "better": 40,
+    "worse": 9,
+    "sign p": 9.263546409954415e-06,
+    "median diff": -3.0507415533065796,
+    "mean diff": -4.443676853555566,
+    "mean diff 95% CI": [
+     -5.93120548806335,
+     -3.091391420272172
+    ]
+   },
+   "grey ring score": {
+    "tiles": 49,
+    "better": 34,
+    "worse": 15,
+    "sign p": 0.009399241523873059,
+    "median diff": -3.146759033203125,
+    "mean diff": -2.81559099469866,
+    "mean diff 95% CI": [
+     -3.8150313776366565,
+     -1.871117780159932
+    ]
+   },
+   "hazy excess": {
+    "tiles": 49,
+    "better": 31,
+    "worse": 12,
+    "sign p": 0.005401572654591291,
+    "median diff": -0.011903018656149705,
+    "mean diff": -0.08533784679849364,
+    "mean diff 95% CI": [
+     -0.12375057808623761,
+     -0.051832613798576226
+    ]
+   }
+  },
+  "e: He 2013 r50, eps 0.01": {
+   "ring score": {
+    "tiles": 49,
+    "better": 35,
+    "worse": 14,
+    "sign p": 0.003801654409748778,
+    "median diff": -1.9742303490638733,
+    "mean diff": -2.867896193728787,
+    "mean diff 95% CI": [
+     -4.304272443991498,
+     -1.5908754470450324
+    ]
+   },
+   "grey ring score": {
+    "tiles": 49,
+    "better": 44,
+    "worse": 5,
+    "sign p": 7.59715845788378e-09,
+    "median diff": -3.3219375610351562,
+    "mean diff": -3.421713167307328,
+    "mean diff 95% CI": [
+     -4.415451780630618,
+     -2.532476837781011
+    ]
+   },
+   "hazy excess": {
+    "tiles": 49,
+    "better": 27,
+    "worse": 16,
+    "sign p": 0.12628947438543037,
+    "median diff": -0.00046260332201559996,
+    "mean diff": -0.058475117894124566,
+    "mean diff 95% CI": [
+     -0.09495244919690131,
+     -0.028789972431843152
+    ]
+   }
+  }
+ },
+ "bands report": [
+  {
+   "arm": "as it is",
+   "measure": "residual",
+   "inside, deep": 88.91136169433594,
+   "inside, edge 0-20": 69.906005859375,
+   "out 0-10": 62.751930236816406,
+   "out 10-20": 56.1552677154541,
+   "out 20-40": 44.60351085662842,
+   "out 40-80": 30.346221923828125,
+   "out 80-120": 20.594528198242188,
+   "far": 6.136483601161409
+  },
+  {
+   "arm": "as it is",
+   "measure": "hazy share",
+   "inside, deep": 1.0,
+   "inside, edge 0-20": 1.0,
+   "out 0-10": 1.0,
+   "out 10-20": 0.9558438126280088,
+   "out 20-40": 0.6546162072243346,
+   "out 40-80": 0.402269549183878,
+   "out 80-120": 0.1789623036986875,
+   "far": 0.0452471351308595
+  },
+  {
+   "arm": "as it is",
+   "measure": "grey residual",
+   "inside, deep": 78.0,
+   "inside, edge 0-20": 57.0,
+   "out 0-10": 52.0,
+   "out 10-20": 44.0,
+   "out 20-40": 34.0,
+   "out 40-80": 21.0,
+   "out 80-120": 8.0,
+   "far": -5.0
+  },
+  {
+   "arm": "as it is",
+   "measure": "detail",
+   "inside, deep": 3.139653205871582,
+   "inside, edge 0-20": 3.5823869705200195,
+   "out 0-10": 3.877645254135132,
+   "out 10-20": 3.767666816711426,
+   "out 20-40": 3.9659807682037354,
+   "out 40-80": 3.837488651275635,
+   "out 80-120": 3.663587808609009,
+   "far": 4.213074684143066
+  },
+  {
+   "arm": "current",
+   "measure": "residual",
+   "inside, deep": 6.787958780924477,
+   "inside, edge 0-20": 11.021605491638184,
+   "out 0-10": 14.473145246505736,
+   "out 10-20": 17.869384765625,
+   "out 20-40": 26.367915153503414,
+   "out 40-80": 28.964008331298828,
+   "out 80-120": 20.594528198242188,
+   "far": 6.136483601161409
+  },
+  {
+   "arm": "current",
+   "measure": "hazy share",
+   "inside, deep": 0.0002729909571745,
+   "inside, edge 0-20": 0.0,
+   "out 0-10": 0.001168858275934,
+   "out 10-20": 0.0128488255370407,
+   "out 20-40": 0.1844143491258266,
+   "out 40-80": 0.3713695256716455,
+   "out 80-120": 0.1789623036986875,
+   "far": 0.0452471351308595
+  },
+  {
+   "arm": "current",
+   "measure": "grey residual",
+   "inside, deep": 12.795875549316406,
+   "inside, edge 0-20": 9.409805297851562,
+   "out 0-10": 14.6390380859375,
+   "out 10-20": 25.847705841064453,
+   "out 20-40": 28.418190002441406,
+   "out 40-80": 21.0,
+   "out 80-120": 8.0,
+   "far": -5.0
+  },
+  {
+   "arm": "current",
+   "measure": "detail",
+   "inside, deep": 6.851896286010742,
+   "inside, edge 0-20": 5.819845676422119,
+   "out 0-10": 6.477829933166504,
+   "out 10-20": 4.978076934814453,
+   "out 20-40": 3.9540205001831055,
+   "out 40-80": 3.8279974460601807,
+   "out 80-120": 3.663587808609009,
+   "far": 4.213074684143066
+  },
+  {
+   "arm": "e: He 2013 r50, eps 0.01",
+   "measure": "residual",
+   "inside, deep": 1.2543935775756836,
+   "inside, edge 0-20": 5.280896707014605,
+   "out 0-10": 9.367828369140623,
+   "out 10-20": 14.502227783203123,
+   "out 20-40": 24.40106201171875,
+   "out 40-80": 28.677379608154297,
+   "out 80-120": 20.594528198242188,
+   "far": 6.136483601161409
+  },
+  {
+   "arm": "e: He 2013 r50, eps 0.01",
+   "measure": "hazy share",
+   "inside, deep": 0.0058438243376818,
+   "inside, edge 0-20": 0.0013332222314807,
+   "out 0-10": 0.0009446114212108,
+   "out 10-20": 0.0117046445025526,
+   "out 20-40": 0.110486784014678,
+   "out 40-80": 0.3651573463351854,
+   "out 80-120": 0.1789623036986875,
+   "far": 0.0452471351308595
+  },
+  {
+   "arm": "e: He 2013 r50, eps 0.01",
+   "measure": "grey residual",
+   "inside, deep": 6.598541259765625,
+   "inside, edge 0-20": 2.6152915954589844,
+   "out 0-10": 7.270339965820312,
+   "out 10-20": 18.264175415039062,
+   "out 20-40": 26.207603454589844,
+   "out 40-80": 21.0,
+   "out 80-120": 8.0,
+   "far": -5.0
+  },
+  {
+   "arm": "e: He 2013 r50, eps 0.01",
+   "measure": "detail",
+   "inside, deep": 6.448999881744385,
+   "inside, edge 0-20": 5.4100871086120605,
+   "out 0-10": 7.086519241333008,
+   "out 10-20": 5.150186061859131,
+   "out 20-40": 3.9408466815948486,
+   "out 40-80": 3.8270726203918457,
+   "out 80-120": 3.663587808609009,
+   "far": 4.213074684143066
+  }
+ ],
+ "bands all": [
+  {
+   "arm": "as it is",
+   "measure": "residual",
+   "inside, deep": 78.94942855834961,
+   "inside, edge 0-20": 63.48438143730163,
+   "out 0-10": 55.75787925720215,
+   "out 10-20": 50.13831329345703,
+   "out 20-40": 42.20880126953125,
+   "out 40-80": 30.346221923828125,
+   "out 80-120": 20.594528198242188,
+   "far": 5.450922012329102
+  },
+  {
+   "arm": "as it is",
+   "measure": "hazy share",
+   "inside, deep": 1.0,
+   "inside, edge 0-20": 1.0,
+   "out 0-10": 1.0,
+   "out 10-20": 0.9341376338791088,
+   "out 20-40": 0.6546162072243346,
+   "out 40-80": 0.3704933291964009,
+   "out 80-120": 0.1786387400232722,
+   "far": 0.0390923519195064
+  },
+  {
+   "arm": "as it is",
+   "measure": "grey residual",
+   "inside, deep": 80.0,
+   "inside, edge 0-20": 57.0,
+   "out 0-10": 52.0,
+   "out 10-20": 44.0,
+   "out 20-40": 33.0,
+   "out 40-80": 21.0,
+   "out 80-120": 9.0,
+   "far": -5.0
+  },
+  {
+   "arm": "as it is",
+   "measure": "detail",
+   "inside, deep": 3.232071876525879,
+   "inside, edge 0-20": 3.700783729553222,
+   "out 0-10": 3.970902442932129,
+   "out 10-20": 4.068685531616211,
+   "out 20-40": 4.144484996795654,
+   "out 40-80": 4.012431621551514,
+   "out 80-120": 4.144338130950928,
+   "far": 4.633701801300049
+  },
+  {
+   "arm": "current",
+   "measure": "residual",
+   "inside, deep": 5.979581832885742,
+   "inside, edge 0-20": 9.131265640258787,
+   "out 0-10": 12.14865493774414,
+   "out 10-20": 15.06704648335775,
+   "out 20-40": 23.69470977783203,
+   "out 40-80": 28.964008331298828,
+   "out 80-120": 20.594528198242188,
+   "far": 5.450922012329102
+  },
+  {
+   "arm": "current",
+   "measure": "hazy share",
+   "inside, deep": 4.82453177919083e-05,
+   "inside, edge 0-20": 0.0,
+   "out 0-10": 0.0,
+   "out 10-20": 0.0051070570242516,
+   "out 20-40": 0.0631573021056187,
+   "out 40-80": 0.2948939982084204,
+   "out 80-120": 0.1786387400232722,
+   "far": 0.0390923519195064
+  },
+  {
+   "arm": "current",
+   "measure": "grey residual",
+   "inside, deep": 14.641624450683594,
+   "inside, edge 0-20": 9.627090454101562,
+   "out 0-10": 15.300331115722656,
+   "out 10-20": 23.85698699951172,
+   "out 20-40": 25.78282165527344,
+   "out 40-80": 21.0,
+   "out 80-120": 9.0,
+   "far": -5.0
+  },
+  {
+   "arm": "current",
+   "measure": "detail",
+   "inside, deep": 7.441602230072021,
+   "inside, edge 0-20": 6.690566062927246,
+   "out 0-10": 6.8677873611450195,
+   "out 10-20": 5.22136926651001,
+   "out 20-40": 4.089095592498779,
+   "out 40-80": 4.014378547668457,
+   "out 80-120": 4.144338130950928,
+   "far": 4.633701801300049
+  },
+  {
+   "arm": "e: He 2013 r50, eps 0.01",
+   "measure": "residual",
+   "inside, deep": 1.6799236933390311,
+   "inside, edge 0-20": 6.168552875518799,
+   "out 0-10": 9.265220642089844,
+   "out 10-20": 14.203224182128906,
+   "out 20-40": 22.151046752929688,
+   "out 40-80": 28.677379608154297,
+   "out 80-120": 20.594528198242188,
+   "far": 5.450922012329102
+  },
+  {
+   "arm": "e: He 2013 r50, eps 0.01",
+   "measure": "hazy share",
+   "inside, deep": 0.0056910217497287,
+   "inside, edge 0-20": 0.000999181393557,
+   "out 0-10": 0.0004144218814753,
+   "out 10-20": 0.0082828556499525,
+   "out 20-40": 0.0899407569829311,
+   "out 40-80": 0.2880430638791039,
+   "out 80-120": 0.1786387400232722,
+   "far": 0.0390923519195064
+  },
+  {
+   "arm": "e: He 2013 r50, eps 0.01",
+   "measure": "grey residual",
+   "inside, deep": 8.208747863769531,
+   "inside, edge 0-20": 3.622283935546875,
+   "out 0-10": 7.617408752441406,
+   "out 10-20": 18.879451751708984,
+   "out 20-40": 24.04754638671875,
+   "out 40-80": 21.0,
+   "out 80-120": 9.0,
+   "far": -5.0
+  },
+  {
+   "arm": "e: He 2013 r50, eps 0.01",
+   "measure": "detail",
+   "inside, deep": 6.966928005218506,
+   "inside, edge 0-20": 6.074307918548584,
+   "out 0-10": 7.222917556762695,
+   "out 10-20": 5.395321846008301,
+   "out 20-40": 4.096253871917725,
+   "out 40-80": 4.014256954193115,
+   "out 80-120": 4.144338130950928,
+   "far": 4.633701801300049
+  }
+ ],
+ "cause": {
+  "residual": {
+   "out 0-10": {
+    "tiles with excess > 2": 99,
+    "median share removed": 0.8757428376666891,
+    "median excess as it is": 47.73791258675712,
+    "median excess current": 3.5762457847595215
+   },
+   "out 10-20": {
+    "tiles with excess > 2": 99,
+    "median share removed": 0.7590093327093679,
+    "median excess as it is": 41.66151189804077,
+    "median excess current": 8.089619755744934
+   },
+   "out 20-40": {
+    "tiles with excess > 2": 99,
+    "median share removed": 0.49453830237836915,
+    "median excess as it is": 33.600917543683735,
+    "median excess current": 15.923119862874353
+   },
+   "out 40-80": {
+    "tiles with excess > 2": 94,
+    "median share removed": 0.05827188845890818,
+    "median excess as it is": 23.46936273574829,
+    "median excess current": 21.180694580078125
+   },
+   "out 80-120": {
+    "tiles with excess > 2": 92,
+    "median share removed": 0.0,
+    "median excess as it is": 13.888755798339844,
+    "median excess current": 13.888755798339844
+   }
+  },
+  "grey residual": {
+   "out 0-10": {
+    "tiles with excess > 2": 98,
+    "median share removed": 0.614604576472159,
+    "median excess as it is": 54.0,
+    "median excess current": 21.300331115722656
+   },
+   "out 10-20": {
+    "tiles with excess > 2": 98,
+    "median share removed": 0.39865305815318025,
+    "median excess as it is": 48.0,
+    "median excess current": 29.039520263671875
+   },
+   "out 20-40": {
+    "tiles with excess > 2": 98,
+    "median share removed": 0.15765945238944812,
+    "median excess as it is": 39.0,
+    "median excess current": 32.75400161743164
+   },
+   "out 40-80": {
+    "tiles with excess > 2": 97,
+    "median share removed": 0.0,
+    "median excess as it is": 25.0,
+    "median excess current": 25.0
+   },
+   "out 80-120": {
+    "tiles with excess > 2": 90,
+    "median share removed": 0.0,
+    "median excess as it is": 14.0,
+    "median excess current": 14.0
+   }
+  },
+  "inside edge vs deep, current": {
+   "residual": {
+    "edge 0-20": 9.131265640258787,
+    "deep": 5.979581832885742
+   },
+   "grey residual": {
+    "edge 0-20": 9.627090454101562,
+    "deep": 14.641624450683594
+   }
+  },
+  "fade's own share removed (band middle)": {
+   "out 0-10": 0.875,
+   "out 10-20": 0.625,
+   "out 20-40": 0.25,
+   "out 40-80": 0.0,
+   "out 80-120": 0.0
+  }
+ }
+}

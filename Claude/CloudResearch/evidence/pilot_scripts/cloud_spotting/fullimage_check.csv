@@ -1,0 +1,481 @@
+arm,image,pixels,TP,FP,FN,TN
+rule: bright,barren_1,all,39196,0,303742,578662
+rule: dark,barren_1,all,164581,0,178357,578662
+rule: bright OR dark,barren_1,all,164878,0,178060,578662
+rule: bright AND dark,barren_1,all,38899,0,304039,578662
+rule: bright,barren_2,all,95545,21,157385,668649
+rule: dark,barren_2,all,252930,634115,0,34555
+rule: bright OR dark,barren_2,all,252930,634115,0,34555
+rule: bright AND dark,barren_2,all,95545,21,157385,668649
+rule: bright,barren_3,all,55942,321,46727,818610
+rule: dark,barren_3,all,102606,463660,63,355271
+rule: bright OR dark,barren_3,all,102606,463831,63,355100
+rule: bright AND dark,barren_3,all,55942,150,46727,818781
+rule: bright,barren_4,all,6368,92,64875,850265
+rule: dark,barren_4,all,33883,353489,37360,496868
+rule: bright OR dark,barren_4,all,34518,353489,36725,496868
+rule: bright AND dark,barren_4,all,5733,92,65510,850265
+rule: bright,barren_5,all,32883,0,236477,652240
+rule: dark,barren_5,all,258258,400435,11102,251805
+rule: bright OR dark,barren_5,all,258258,400435,11102,251805
+rule: bright AND dark,barren_5,all,32883,0,236477,652240
+rule: bright,barren_6,all,148583,0,109403,663614
+rule: dark,barren_6,all,257986,623745,0,39869
+rule: bright OR dark,barren_6,all,257986,623745,0,39869
+rule: bright AND dark,barren_6,all,148583,0,109403,663614
+rule: bright,barren_8,all,19281,215154,675,686490
+rule: dark,barren_8,all,19894,614344,62,287300
+rule: bright OR dark,barren_8,all,19894,618690,62,282954
+rule: bright AND dark,barren_8,all,19281,210808,675,690836
+rule: bright,barren_9,all,223035,135735,4635,558195
+rule: dark,barren_9,all,226668,663548,1002,30382
+rule: bright OR dark,barren_9,all,227104,665462,566,28468
+rule: bright AND dark,barren_9,all,222599,133821,5071,560109
+rule: bright,barren_10,all,47911,254,240347,633088
+rule: dark,barren_10,all,288028,571559,230,61783
+rule: bright OR dark,barren_10,all,288028,571559,230,61783
+rule: bright AND dark,barren_10,all,47911,254,240347,633088
+rule: bright,barren_12,all,101426,17954,62590,739630
+rule: dark,barren_12,all,164016,721862,0,35722
+rule: bright OR dark,barren_12,all,164016,721960,0,35624
+rule: bright AND dark,barren_12,all,101426,17856,62590,739728
+rule: bright,barren_13,all,22519,0,136880,762201
+rule: dark,barren_13,all,106397,8048,53002,754153
+rule: bright OR dark,barren_13,all,106397,8048,53002,754153
+rule: bright AND dark,barren_13,all,22519,0,136880,762201
+rule: bright,barren_14,all,113374,290503,1116,516607
+rule: dark,barren_14,all,114490,761109,0,46001
+rule: bright OR dark,barren_14,all,114490,761109,0,46001
+rule: bright AND dark,barren_14,all,113374,290503,1116,516607
+rule: bright,barren_15,all,0,0,398246,523354
+rule: dark,barren_15,all,137815,112,260431,523242
+rule: bright OR dark,barren_15,all,137815,112,260431,523242
+rule: bright AND dark,barren_15,all,0,0,398246,523354
+rule: bright,barren_16,all,26281,16,58336,836967
+rule: dark,barren_16,all,74406,56871,10211,780112
+rule: bright OR dark,barren_16,all,74413,56886,10204,780097
+rule: bright AND dark,barren_16,all,26274,1,58343,836982
+rule: bright,barren_17,all,340005,17405,77016,487174
+rule: dark,barren_17,all,414658,172118,2363,332461
+rule: bright OR dark,barren_17,all,414658,173779,2363,330800
+rule: bright AND dark,barren_17,all,340005,15744,77016,488835
+rule: bright,barren_18,all,16960,21,31970,872649
+rule: dark,barren_18,all,40767,90314,8163,782356
+rule: bright OR dark,barren_18,all,40865,90314,8065,782356
+rule: bright AND dark,barren_18,all,16862,21,32068,872649
+rule: bright,barren_19,all,133889,7792,39582,740337
+rule: dark,barren_19,all,173471,700357,0,47772
+rule: bright OR dark,barren_19,all,173471,700357,0,47772
+rule: bright AND dark,barren_19,all,133889,7792,39582,740337
+rule: bright,barren_20,all,283429,40560,130657,466954
+rule: dark,barren_20,all,408673,472552,5413,34962
+rule: bright OR dark,barren_20,all,409278,472625,4808,34889
+rule: bright AND dark,barren_20,all,282824,40487,131262,467027
+rule: bright,barren_23,all,98847,94,186453,636206
+rule: dark,barren_23,all,265174,238269,20126,398031
+rule: bright OR dark,barren_23,all,265344,238291,19956,398009
+rule: bright AND dark,barren_23,all,98677,72,186623,636228
+rule: bright,barren_24,all,43551,167,65849,812033
+rule: dark,barren_24,all,107026,544764,2374,267436
+rule: bright OR dark,barren_24,all,107026,544764,2374,267436
+rule: bright AND dark,barren_24,all,43551,167,65849,812033
+rule: bright,barren_26,all,117903,0,206289,597408
+rule: dark,barren_26,all,285396,5564,38796,591844
+rule: bright OR dark,barren_26,all,288536,5564,35656,591844
+rule: bright AND dark,barren_26,all,114763,0,209429,597408
+rule: bright,barren_27,all,159890,5888,267627,488195
+rule: dark,barren_27,all,426408,428700,1109,65383
+rule: bright OR dark,barren_27,all,426408,429156,1109,64927
+rule: bright AND dark,barren_27,all,159890,5432,267627,488651
+rule: bright,barren_28,all,293017,2143,106011,520429
+rule: dark,barren_28,all,399016,468772,12,53800
+rule: bright OR dark,barren_28,all,399016,468910,12,53662
+rule: bright AND dark,barren_28,all,293017,2005,106011,520567
+rule: bright,barren_29,all,28569,585,34822,857624
+rule: dark,barren_29,all,55925,697171,7466,161038
+rule: bright OR dark,barren_29,all,56039,697190,7352,161019
+rule: bright AND dark,barren_29,all,28455,566,34936,857643
+rule: bright,snow_1,all,287809,202726,67558,363507
+rule: dark,snow_1,all,352528,471840,2839,94393
+rule: bright OR dark,snow_1,all,352827,475675,2540,90558
+rule: bright AND dark,snow_1,all,287510,198891,67857,367342
+rule: bright,snow_2,all,57709,16796,220306,626789
+rule: dark,snow_2,all,232315,64994,45700,578591
+rule: bright OR dark,snow_2,all,232315,69733,45700,573852
+rule: bright AND dark,snow_2,all,57709,12057,220306,631528
+rule: bright,snow_3,all,92720,420,546975,281485
+rule: dark,snow_3,all,514011,51446,125684,230459
+rule: bright OR dark,snow_3,all,514382,51446,125313,230459
+rule: bright AND dark,snow_3,all,92349,420,547346,281485
+rule: bright,snow_4,all,6067,47417,262747,605369
+rule: dark,snow_4,all,214667,137815,54147,514971
+rule: bright OR dark,snow_4,all,214790,147225,54024,505561
+rule: bright AND dark,snow_4,all,5944,38007,262870,614779
+rule: bright,snow_5,all,0,607,76743,844250
+rule: dark,snow_5,all,53936,20494,22807,824363
+rule: bright OR dark,snow_5,all,53936,21072,22807,823785
+rule: bright AND dark,snow_5,all,0,29,76743,844828
+rule: bright,snow_6,all,772,74448,277127,569253
+rule: dark,snow_6,all,252669,299485,25230,344216
+rule: bright OR dark,snow_6,all,252669,302708,25230,340993
+rule: bright AND dark,snow_6,all,772,71225,277127,572476
+rule: bright,snow_7,all,0,1985,212990,706625
+rule: dark,snow_7,all,130551,8273,82439,700337
+rule: bright OR dark,snow_7,all,130551,9623,82439,698987
+rule: bright AND dark,snow_7,all,0,635,212990,707975
+rule: bright,snow_8,all,0,75350,85275,760975
+rule: dark,snow_8,all,83965,282794,1310,553531
+rule: bright OR dark,snow_8,all,83965,289175,1310,547150
+rule: bright AND dark,snow_8,all,0,68969,85275,767356
+rule: bright,snow_9,all,35,0,470118,451447
+rule: dark,snow_9,all,346414,2433,123739,449014
+rule: bright OR dark,snow_9,all,346414,2433,123739,449014
+rule: bright AND dark,snow_9,all,35,0,470118,451447
+rule: bright,snow_11,all,89797,94867,58778,678158
+rule: dark,snow_11,all,131888,214953,16687,558072
+rule: bright OR dark,snow_11,all,132468,218402,16107,554623
+rule: bright AND dark,snow_11,all,89217,91418,59358,681607
+rule: bright,snow_13,all,0,0,146654,774946
+rule: dark,snow_13,all,8264,0,138390,774946
+rule: bright OR dark,snow_13,all,8264,0,138390,774946
+rule: bright AND dark,snow_13,all,0,0,146654,774946
+rule: bright,snow_14,all,9363,36708,255879,619650
+rule: dark,snow_14,all,243515,106824,21727,549534
+rule: bright OR dark,snow_14,all,243643,111923,21599,544435
+rule: bright AND dark,snow_14,all,9235,31609,256007,624749
+rule: bright,snow_15,all,0,1,190898,730701
+rule: dark,snow_15,all,0,334,190898,730368
+rule: bright OR dark,snow_15,all,0,335,190898,730367
+rule: bright AND dark,snow_15,all,0,0,190898,730702
+rule: bright,snow_17,all,13660,255201,99893,552846
+rule: dark,snow_17,all,79437,410144,34116,397903
+rule: bright OR dark,snow_17,all,79486,410144,34067,397903
+rule: bright AND dark,snow_17,all,13611,255201,99942,552846
+rule: bright,snow_18,all,305,30020,488567,402708
+rule: dark,snow_18,all,439553,92321,49319,340407
+rule: bright OR dark,snow_18,all,439553,97158,49319,335570
+rule: bright AND dark,snow_18,all,305,25183,488567,407545
+rule: bright,snow_19,all,282,22914,181343,717061
+rule: dark,snow_19,all,118543,47621,63082,692354
+rule: bright OR dark,snow_19,all,118624,54013,63001,685962
+rule: bright AND dark,snow_19,all,201,16522,181424,723453
+rule: bright,snow_20,all,159778,38,363487,398297
+rule: dark,snow_20,all,398994,523,124271,397812
+rule: bright OR dark,snow_20,all,399003,561,124262,397774
+rule: bright AND dark,snow_20,all,159769,0,363496,398335
+rule: bright,snow_21,all,1717,1447,169122,749314
+rule: dark,snow_21,all,79149,27219,91690,723542
+rule: bright OR dark,snow_21,all,79260,27712,91579,723049
+rule: bright AND dark,snow_21,all,1606,954,169233,749807
+rule: bright,snow_22,all,0,198,163188,758214
+rule: dark,snow_22,all,101493,64172,61695,694240
+rule: bright OR dark,snow_22,all,101493,64367,61695,694045
+rule: bright AND dark,snow_22,all,0,3,163188,758409
+rule: bright,snow_23,all,94,44450,176550,700506
+rule: dark,snow_23,all,84848,50460,91796,694496
+rule: bright OR dark,snow_23,all,84848,54179,91796,690777
+rule: bright AND dark,snow_23,all,94,40731,176550,704225
+rule: bright,snow_24,all,84676,455328,14408,367188
+rule: dark,snow_24,all,98396,566579,688,255937
+rule: bright OR dark,snow_24,all,98448,577972,636,244544
+rule: bright AND dark,snow_24,all,84624,443935,14460,378581
+rule: bright,snow_27,all,0,3718,65038,852844
+rule: dark,snow_27,all,11330,756,53708,855806
+rule: bright OR dark,snow_27,all,11330,4071,53708,852491
+rule: bright AND dark,snow_27,all,0,403,65038,856159
+rule: bright,snow_28,all,21136,65109,154202,681153
+rule: dark,snow_28,all,93595,138163,81743,608099
+rule: bright OR dark,snow_28,all,93614,140449,81724,605813
+rule: bright AND dark,snow_28,all,21117,62823,154221,683439
+rule: bright,snow_30,all,19304,145454,306431,450411
+rule: dark,snow_30,all,265480,153724,60255,442141
+rule: bright OR dark,snow_30,all,265829,176125,59906,419740
+rule: bright AND dark,snow_30,all,18955,123053,306780,472812
+rule: bright,urban_1,all,1799,0,192944,761417
+rule: dark,urban_1,all,64439,313,130304,761104
+rule: bright OR dark,urban_1,all,64558,313,130185,761104
+rule: bright AND dark,urban_1,all,1680,0,193063,761417
+rule: bright,urban_2,all,55468,0,88848,811844
+rule: dark,urban_2,all,89965,1711,54351,810133
+rule: bright OR dark,urban_2,all,90141,1711,54175,810133
+rule: bright AND dark,urban_2,all,55292,0,89024,811844
+rule: bright,urban_3,all,0,0,184101,737499
+rule: dark,urban_3,all,28269,0,155832,737499
+rule: bright OR dark,urban_3,all,28269,0,155832,737499
+rule: bright AND dark,urban_3,all,0,0,184101,737499
+rule: bright,urban_4,all,55902,0,512525,353173
+rule: dark,urban_4,all,423562,0,144865,353173
+rule: bright OR dark,urban_4,all,423562,0,144865,353173
+rule: bright AND dark,urban_4,all,55902,0,512525,353173
+rule: bright,urban_5,all,3,0,786421,135176
+rule: dark,urban_5,all,226336,0,560088,135176
+rule: bright OR dark,urban_5,all,226336,0,560088,135176
+rule: bright AND dark,urban_5,all,3,0,786421,135176
+rule: bright,urban_6,all,19924,0,170968,730708
+rule: dark,urban_6,all,111519,0,79373,730708
+rule: bright OR dark,urban_6,all,111522,0,79370,730708
+rule: bright AND dark,urban_6,all,19921,0,170971,730708
+rule: bright,urban_7,all,44473,0,316784,560343
+rule: dark,urban_7,all,127868,0,233389,560343
+rule: bright OR dark,urban_7,all,127868,0,233389,560343
+rule: bright AND dark,urban_7,all,44473,0,316784,560343
+rule: bright,urban_9,all,0,0,365048,556552
+rule: dark,urban_9,all,199178,12,165870,556540
+rule: bright OR dark,urban_9,all,199178,12,165870,556540
+rule: bright AND dark,urban_9,all,0,0,365048,556552
+rule: bright,urban_11,all,41929,0,122878,756793
+rule: dark,urban_11,all,105439,1147,59368,755646
+rule: bright OR dark,urban_11,all,105747,1147,59060,755646
+rule: bright AND dark,urban_11,all,41621,0,123186,756793
+rule: bright,urban_12,all,0,0,392845,528755
+rule: dark,urban_12,all,801,0,392044,528755
+rule: bright OR dark,urban_12,all,801,0,392044,528755
+rule: bright AND dark,urban_12,all,0,0,392845,528755
+rule: bright,urban_13,all,0,0,498203,423397
+rule: dark,urban_13,all,149900,0,348303,423397
+rule: bright OR dark,urban_13,all,149900,0,348303,423397
+rule: bright AND dark,urban_13,all,0,0,498203,423397
+rule: bright,urban_14,all,28979,0,143548,749073
+rule: dark,urban_14,all,94054,90,78473,748983
+rule: bright OR dark,urban_14,all,94058,90,78469,748983
+rule: bright AND dark,urban_14,all,28975,0,143552,749073
+rule: bright,urban_16,all,37258,1,131064,753277
+rule: dark,urban_16,all,100736,9188,67586,744090
+rule: bright OR dark,urban_16,all,100744,9189,67578,744089
+rule: bright AND dark,urban_16,all,37250,0,131072,753278
+rule: bright,urban_17,all,2915,4,119352,799329
+rule: dark,urban_17,all,33335,0,88932,799333
+rule: bright OR dark,urban_17,all,33483,4,88784,799329
+rule: bright AND dark,urban_17,all,2767,0,119500,799333
+rule: bright,urban_18,all,2058,0,79467,840075
+rule: dark,urban_18,all,28066,255,53459,839820
+rule: bright OR dark,urban_18,all,28066,255,53459,839820
+rule: bright AND dark,urban_18,all,2058,0,79467,840075
+rule: bright,urban_19,all,75,0,149492,772033
+rule: dark,urban_19,all,15309,0,134258,772033
+rule: bright OR dark,urban_19,all,15309,0,134258,772033
+rule: bright AND dark,urban_19,all,75,0,149492,772033
+rule: bright,urban_20,all,16316,0,287819,617465
+rule: dark,urban_20,all,100942,0,203193,617465
+rule: bright OR dark,urban_20,all,100977,0,203158,617465
+rule: bright AND dark,urban_20,all,16281,0,287854,617465
+rule: bright,urban_22,all,36723,0,434389,450488
+rule: dark,urban_22,all,315991,0,155121,450488
+rule: bright OR dark,urban_22,all,315991,0,155121,450488
+rule: bright AND dark,urban_22,all,36723,0,434389,450488
+rule: bright,urban_23,all,85772,955,531231,303642
+rule: dark,urban_23,all,319095,5592,297908,299005
+rule: bright OR dark,urban_23,all,321740,5864,295263,298733
+rule: bright AND dark,urban_23,all,83127,683,533876,303914
+rule: bright,urban_24,all,9054,0,484293,428253
+rule: dark,urban_24,all,345512,147,147835,428106
+rule: bright OR dark,urban_24,all,345512,147,147835,428106
+rule: bright AND dark,urban_24,all,9054,0,484293,428253
+rule: bright,urban_25,all,124719,0,317438,479443
+rule: dark,urban_25,all,355337,1507,86820,477936
+rule: bright OR dark,urban_25,all,355337,1507,86820,477936
+rule: bright AND dark,urban_25,all,124719,0,317438,479443
+rule: bright,urban_26,all,52184,944,208106,660366
+rule: dark,urban_26,all,194650,30182,65640,631128
+rule: bright OR dark,urban_26,all,197813,30461,62477,630849
+rule: bright AND dark,urban_26,all,49021,665,211269,660645
+rule: bright,urban_27,all,411497,0,205293,304810
+rule: dark,urban_27,all,569795,137,46995,304673
+rule: bright OR dark,urban_27,all,573412,137,43378,304673
+rule: bright AND dark,urban_27,all,407880,0,208910,304810
+rule: bright,urban_28,all,98388,1017,167010,655185
+rule: dark,urban_28,all,263378,602408,2020,53794
+rule: bright OR dark,urban_28,all,263378,602420,2020,53782
+rule: bright AND dark,urban_28,all,98388,1005,167010,655197
+rule: bright,vegetation_1,all,86208,0,239247,596145
+rule: dark,vegetation_1,all,161603,0,163852,596145
+rule: bright OR dark,vegetation_1,all,162079,0,163376,596145
+rule: bright AND dark,vegetation_1,all,85732,0,239723,596145
+rule: bright,vegetation_2,all,96819,0,242972,581809
+rule: dark,vegetation_2,all,214136,14,125655,581795
+rule: bright OR dark,vegetation_2,all,214172,14,125619,581795
+rule: bright AND dark,vegetation_2,all,96783,0,243008,581809
+rule: bright,vegetation_4,all,28509,0,129517,763574
+rule: dark,vegetation_4,all,81678,41,76348,763533
+rule: bright OR dark,vegetation_4,all,82054,41,75972,763533
+rule: bright AND dark,vegetation_4,all,28133,0,129893,763574
+rule: bright,vegetation_5,all,256260,0,348435,316905
+rule: dark,vegetation_5,all,493878,1128,110817,315777
+rule: bright OR dark,vegetation_5,all,494077,1128,110618,315777
+rule: bright AND dark,vegetation_5,all,256061,0,348634,316905
+rule: bright,vegetation_6,all,41887,0,32481,847232
+rule: dark,vegetation_6,all,52679,1028,21689,846204
+rule: bright OR dark,vegetation_6,all,53367,1028,21001,846204
+rule: bright AND dark,vegetation_6,all,41199,0,33169,847232
+rule: bright,vegetation_7,all,128177,0,106878,686545
+rule: dark,vegetation_7,all,157789,27,77266,686518
+rule: bright OR dark,vegetation_7,all,158452,27,76603,686518
+rule: bright AND dark,vegetation_7,all,127514,0,107541,686545
+rule: bright,vegetation_8,all,0,0,72906,848694
+rule: dark,vegetation_8,all,0,0,72906,848694
+rule: bright OR dark,vegetation_8,all,0,0,72906,848694
+rule: bright AND dark,vegetation_8,all,0,0,72906,848694
+rule: bright,vegetation_9,all,170262,141,468267,282930
+rule: dark,vegetation_9,all,430646,30,207883,283041
+rule: bright OR dark,vegetation_9,all,431244,171,207285,282900
+rule: bright AND dark,vegetation_9,all,169664,0,468865,283071
+rule: bright,vegetation_10,all,165734,0,343473,412393
+rule: dark,vegetation_10,all,338967,0,170240,412393
+rule: bright OR dark,vegetation_10,all,338967,0,170240,412393
+rule: bright AND dark,vegetation_10,all,165734,0,343473,412393
+rule: bright,vegetation_11,all,151629,0,244393,525578
+rule: dark,vegetation_11,all,270648,0,125374,525578
+rule: bright OR dark,vegetation_11,all,270648,0,125374,525578
+rule: bright AND dark,vegetation_11,all,151629,0,244393,525578
+rule: bright,vegetation_12,all,28054,0,195638,697908
+rule: dark,vegetation_12,all,94215,0,129477,697908
+rule: bright OR dark,vegetation_12,all,94984,0,128708,697908
+rule: bright AND dark,vegetation_12,all,27285,0,196407,697908
+rule: bright,vegetation_13,all,9051,25,253601,658923
+rule: dark,vegetation_13,all,23145,0,239507,658948
+rule: bright OR dark,vegetation_13,all,23843,25,238809,658923
+rule: bright AND dark,vegetation_13,all,8353,0,254299,658948
+rule: bright,vegetation_14,all,221113,0,190905,509582
+rule: dark,vegetation_14,all,328522,0,83496,509582
+rule: bright OR dark,vegetation_14,all,328522,0,83496,509582
+rule: bright AND dark,vegetation_14,all,221113,0,190905,509582
+rule: bright,vegetation_15,all,112626,0,389618,419356
+rule: dark,vegetation_15,all,234119,0,268125,419356
+rule: bright OR dark,vegetation_15,all,234773,0,267471,419356
+rule: bright AND dark,vegetation_15,all,111972,0,390272,419356
+rule: bright,vegetation_16,all,0,219,97387,823994
+rule: dark,vegetation_16,all,77826,354,19561,823859
+rule: bright OR dark,vegetation_16,all,77826,573,19561,823640
+rule: bright AND dark,vegetation_16,all,0,0,97387,824213
+rule: bright,vegetation_17,all,169446,0,83528,668626
+rule: dark,vegetation_17,all,228772,15120,24202,653506
+rule: bright OR dark,vegetation_17,all,228798,15120,24176,653506
+rule: bright AND dark,vegetation_17,all,169420,0,83554,668626
+rule: bright,vegetation_18,all,83201,0,113268,725131
+rule: dark,vegetation_18,all,142926,0,53543,725131
+rule: bright OR dark,vegetation_18,all,143238,0,53231,725131
+rule: bright AND dark,vegetation_18,all,82889,0,113580,725131
+rule: bright,vegetation_19,all,102518,0,158534,660548
+rule: dark,vegetation_19,all,137362,0,123690,660548
+rule: bright OR dark,vegetation_19,all,138183,0,122869,660548
+rule: bright AND dark,vegetation_19,all,101697,0,159355,660548
+rule: bright,vegetation_20,all,172058,0,219011,530531
+rule: dark,vegetation_20,all,388879,322954,2190,207577
+rule: bright OR dark,vegetation_20,all,388879,322954,2190,207577
+rule: bright AND dark,vegetation_20,all,172058,0,219011,530531
+rule: bright,vegetation_23,all,139828,0,160860,620912
+rule: dark,vegetation_23,all,240638,0,60050,620912
+rule: bright OR dark,vegetation_23,all,240641,0,60047,620912
+rule: bright AND dark,vegetation_23,all,139825,0,160863,620912
+rule: bright,vegetation_24,all,109183,0,509612,302805
+rule: dark,vegetation_24,all,326329,2266,292466,300539
+rule: bright OR dark,vegetation_24,all,326329,2266,292466,300539
+rule: bright AND dark,vegetation_24,all,109183,0,509612,302805
+rule: bright,vegetation_26,all,128135,0,115085,678380
+rule: dark,vegetation_26,all,148573,30,94647,678350
+rule: bright OR dark,vegetation_26,all,149880,30,93340,678350
+rule: bright AND dark,vegetation_26,all,126828,0,116392,678380
+rule: bright,vegetation_27,all,349593,0,297762,274245
+rule: dark,vegetation_27,all,465733,0,181622,274245
+rule: bright OR dark,vegetation_27,all,467999,0,179356,274245
+rule: bright AND dark,vegetation_27,all,347327,0,300028,274245
+rule: bright,vegetation_30,all,327403,0,283899,310298
+rule: dark,vegetation_30,all,488282,107,123020,310191
+rule: bright OR dark,vegetation_30,all,489905,107,121397,310191
+rule: bright AND dark,vegetation_30,all,325780,0,285522,310298
+rule: bright,water_1,all,95516,0,551964,274120
+rule: dark,water_1,all,400812,1778,246668,272342
+rule: bright OR dark,water_1,all,400852,1778,246628,272342
+rule: bright AND dark,water_1,all,95476,0,552004,274120
+rule: bright,water_2,all,89251,641,213245,618463
+rule: dark,water_2,all,134292,4940,168204,614164
+rule: bright OR dark,water_2,all,135165,4940,167331,614164
+rule: bright AND dark,water_2,all,88378,641,214118,618463
+rule: bright,water_3,all,170923,0,166105,584572
+rule: dark,water_3,all,313492,18339,23536,566233
+rule: bright OR dark,water_3,all,313498,18339,23530,566233
+rule: bright AND dark,water_3,all,170917,0,166111,584572
+rule: bright,water_4,all,41881,0,203644,676075
+rule: dark,water_4,all,136882,274,108643,675801
+rule: bright OR dark,water_4,all,136882,274,108643,675801
+rule: bright AND dark,water_4,all,41881,0,203644,676075
+rule: bright,water_5,all,85056,0,241363,595181
+rule: dark,water_5,all,276883,201219,49536,393962
+rule: bright OR dark,water_5,all,277151,201219,49268,393962
+rule: bright AND dark,water_5,all,84788,0,241631,595181
+rule: bright,water_7,all,186850,77,256192,478481
+rule: dark,water_7,all,345176,5167,97866,473391
+rule: bright OR dark,water_7,all,348472,5244,94570,473314
+rule: bright AND dark,water_7,all,183554,0,259488,478558
+rule: bright,water_8,all,53138,0,69253,799209
+rule: dark,water_8,all,108546,427657,13845,371552
+rule: bright OR dark,water_8,all,108623,427657,13768,371552
+rule: bright AND dark,water_8,all,53061,0,69330,799209
+rule: bright,water_9,all,5070,2,125135,791393
+rule: dark,water_9,all,84086,162950,46119,628445
+rule: bright OR dark,water_9,all,84086,162950,46119,628445
+rule: bright AND dark,water_9,all,5070,2,125135,791393
+rule: bright,water_10,all,69901,1,159394,692304
+rule: dark,water_10,all,210614,383646,18681,308659
+rule: bright OR dark,water_10,all,211616,383646,17679,308659
+rule: bright AND dark,water_10,all,68899,1,160396,692304
+rule: bright,water_11,all,12243,0,88288,821069
+rule: dark,water_11,all,75292,6221,25239,814848
+rule: bright OR dark,water_11,all,75292,6221,25239,814848
+rule: bright AND dark,water_11,all,12243,0,88288,821069
+rule: bright,water_13,all,38292,0,376584,506724
+rule: dark,water_13,all,88192,1,326684,506723
+rule: bright OR dark,water_13,all,88835,1,326041,506723
+rule: bright AND dark,water_13,all,37649,0,377227,506724
+rule: bright,water_14,all,191739,13,548679,181169
+rule: dark,water_14,all,516703,4296,223715,176886
+rule: bright OR dark,water_14,all,518899,4296,221519,176886
+rule: bright AND dark,water_14,all,189543,13,550875,181169
+rule: bright,water_15,all,243182,2,340206,338210
+rule: dark,water_15,all,411581,342,171807,337870
+rule: bright OR dark,water_15,all,411982,342,171406,337870
+rule: bright AND dark,water_15,all,242781,2,340607,338210
+rule: bright,water_16,all,58276,36,523412,339876
+rule: dark,water_16,all,386073,3523,195615,336389
+rule: bright OR dark,water_16,all,386073,3523,195615,336389
+rule: bright AND dark,water_16,all,58276,36,523412,339876
+rule: bright,water_17,all,202024,215,207345,512016
+rule: dark,water_17,all,386413,100328,22956,411903
+rule: bright OR dark,water_17,all,388386,100328,20983,411903
+rule: bright AND dark,water_17,all,200051,215,209318,512016
+rule: bright,water_18,all,128758,107,262027,530708
+rule: dark,water_18,all,283186,58591,107599,472224
+rule: bright OR dark,water_18,all,283612,58698,107173,472117
+rule: bright AND dark,water_18,all,128332,0,262453,530815
+rule: bright,water_19,all,24104,473,87561,809462
+rule: dark,water_19,all,34215,2015,77450,807920
+rule: bright OR dark,water_19,all,34924,2199,76741,807736
+rule: bright AND dark,water_19,all,23395,289,88270,809646
+rule: bright,water_20,all,71718,0,343514,506368
+rule: dark,water_20,all,185864,4481,229368,501887
+rule: bright OR dark,water_20,all,188430,4481,226802,501887
+rule: bright AND dark,water_20,all,69152,0,346080,506368
+rule: bright,water_21,all,261645,0,162515,497440
+rule: dark,water_21,all,338584,0,85576,497440
+rule: bright OR dark,water_21,all,338593,0,85567,497440
+rule: bright AND dark,water_21,all,261636,0,162524,497440
+rule: bright,water_23,all,259095,0,297611,364894
+rule: dark,water_23,all,416840,346,139866,364548
+rule: bright OR dark,water_23,all,416864,346,139842,364548
+rule: bright AND dark,water_23,all,259071,0,297635,364894
+rule: bright,water_24,all,181616,992,219397,519595
+rule: dark,water_24,all,318187,31122,82826,489465
+rule: bright OR dark,water_24,all,319239,31574,81774,489013
+rule: bright AND dark,water_24,all,180564,540,220449,520047
+rule: bright,water_26,all,2333,0,351961,567306
+rule: dark,water_26,all,208568,66,145726,567240
+rule: bright OR dark,water_26,all,208568,66,145726,567240
+rule: bright AND dark,water_26,all,2333,0,351961,567306
+rule: bright,water_27,all,27836,0,229560,664204
+rule: dark,water_27,all,195914,15691,61482,648513
+rule: bright OR dark,water_27,all,195914,15691,61482,648513
+rule: bright AND dark,water_27,all,27836,0,229560,664204
+rule: bright,water_29,all,12437,38,120834,788291
+rule: dark,water_29,all,46565,650,86706,787679
+rule: bright OR dark,water_29,all,46565,688,86706,787641
+rule: bright AND dark,water_29,all,12437,0,120834,788329

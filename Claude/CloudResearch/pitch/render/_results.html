@@ -1,0 +1,61 @@
+<!doctype html><html><head><meta charset='utf-8'><style>@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500..800&display=swap');@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+* { box-sizing:border-box; margin:0; }
+html, body { margin:0; padding:0; background:#777; width:1920px; height:1080px; overflow:hidden; font-size:32px; line-height:1.4; }
+section { position:relative; width:1920px; height:1080px; overflow:hidden; }
+section:not([style*="display"]), div:not([style*="display"]) { display:flex; flex-direction:column; }
+h1 { font-size:96px; font-weight:600; line-height:1.1; } h2 { font-size:64px; font-weight:600; line-height:1.15; }
+h3 { font-size:44px; font-weight:600; line-height:1.2; } b { font-weight:600; } aside { display:none; }
+table { border-collapse:collapse; } td, th { padding:0.35em 0.6em; border:1px solid #C9CED5; vertical-align:top; }
+ul, ol { padding-left:1.2em; }
+</style></head><body><section id="results" data-transition="fade" style="background:#F0F1F2;color:#2E2B3B;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:10px;background:linear-gradient(90deg, #000004 0%, #280B53 14%, #65156E 29%, #9F2A63 43%, #D44842 57%, #F57D15 71%, #FAC228 86%, #FCFFA4 100%)"></div>
+<p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;text-transform:uppercase;color:#5C5A69">02 · Prototype results · Hurricane Ida · development data</p>
+<h2 style="font-family:'Archivo', Arial, sans-serif;font-size:60px;font-weight:700;line-height:1.1;letter-spacing:-1px;color:#16131F">A working prototype, scored where it never trained</h2>
+<div style="display:flex;gap:28px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:28px;border:2px solid #C9CED5;border-top:10px solid #23479A;border-radius:4px;flex:1;gap:16px"><p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#23479A">Flood calls in new areas</p><div style="display:flex;flex-direction:column;gap:4px"><p style="font-family:'Archivo', Arial, sans-serif;font-size:72px;font-weight:800;line-height:1.0;color:#16131F">78.6%</p><p style="font-size:24px;line-height:1.38;">of 798 roads called right, in areas the model never trained on</p></div><p style="font-size:24px;line-height:1.38;color:#5C5A69;">Always guessing “flooded” gets 55.3%. Scored with spatially blocked folds (Roberts et al. 2017), mean of 21 fold seeds.</p></div><div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:28px;border:2px solid #C9CED5;border-top:10px solid #BC3754;border-radius:4px;flex:1;gap:16px"><p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#BC3754">Cloud detection</p><div style="display:flex;flex-direction:column;gap:4px"><p style="font-family:'Archivo', Arial, sans-serif;font-size:72px;font-weight:800;line-height:1.0;color:#16131F">0.87</p><p style="font-size:24px;line-height:1.38;">F1 for our cloud spotter against expert cloud masks, vs 0.65 for the standard dark channel</p></div><p style="font-size:24px;line-height:1.38;color:#5C5A69;">+0.22 (95% CI +0.19 to +0.25), better on 112 of 120 images (HRC_WHU, Li et al. 2019).</p></div><div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:28px;border:2px solid #C9CED5;border-top:10px solid #0A7570;border-radius:4px;flex:1;gap:16px"><p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#0A7570">Foundation-model gain</p><div style="display:flex;flex-direction:column;gap:4px"><p style="font-family:'Archivo', Arial, sans-serif;font-size:72px;font-weight:800;line-height:1.0;color:#16131F">+1.3</p><p style="font-size:24px;line-height:1.38;">points of accuracy from the DINOv2 change vector (95% CI +0.4 to +2.4)</p></div><p style="font-size:24px;line-height:1.38;color:#5C5A69;">Better in 21 of 21 fold seeds. A newer model (DINOv3, Siméoni et al. 2025) reaches 83.0% as a research benchmark: room to grow.</p></div>
+</div>
+<div style="flex:1"></div>
+<div style="display:flex;gap:28px">
+<div style="display:flex;flex-direction:column;gap:8px;background:#E7EAED;padding:20px 28px;border-radius:4px;flex:1"><p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#BC3754">Where it stands</p><p style="font-size:24px;line-height:1.38;">One event, one sensor, roads only. De-hazing helps under thin cloud but is not yet significant. Today's models are research-only: SpaceNet 8 and HRC_WHU limit commercial use.</p></div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#E7EAED;padding:20px 28px;border-radius:4px;flex:1"><p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#420A68">Next</p><p style="font-size:24px;line-height:1.38;">Test on a second disaster; retrain on licence-clean data; then one final test on held-out areas that have never been scored.</p></div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1300px;font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;letter-spacing:1px;color:#5C5A69">SEEING THROUGH CLOUDS · JUSTIN ROGERS · GEORGE MASON UNIVERSITY</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;color:#5C5A69;text-align:right">03 / 03</p>
+<aside>These are prototype results on Hurricane Ida development data. The flood detector calls 78.6 percent of 798 roads right in areas it never trained on, against 55.3 percent for always guessing flooded; we score in held-out areas because splitting by tile overstated accuracy by about 4 points. Our cloud spotter reaches an F1 of 0.87 against expert cloud masks, against 0.65 for the standard dark-channel method, better on 112 of 120 images. Features from Meta's DINOv2 foundation model add 1.3 points, in every one of 21 fold splits, and a newer model, DINOv3, reaches 83 percent as a research benchmark, so there is room to grow. The limits are honest ones: one event, one sensor, roads only; the de-hazing gain under thin cloud is not yet significant; and the current models are research-only because of the training data's licences. Next: a second disaster, licence-clean training data, then one final test on areas that have never been scored.</aside>
+</section>
+<pre id='__report' style='display:none'></pre>
+<script>
+function run(){
+ const S=document.querySelector('section'); const out={over:[],broken:[],below:[],outside:[],h2:null};
+ const all=[...S.querySelectorAll('*')].filter(e=>e.tagName!=='ASIDE' && !e.closest('aside') && !e.closest('svg'));
+ const footLike=e=>{let x=e; while(x&&x!==S){ if(x.style&&x.style.position==='absolute'&&(parseFloat(x.style.bottom)<=96||parseFloat(x.style.top)>=900)) return true; x=x.parentElement;} return false;};
+ const deco=e=>{let x=e; while(x&&x!==S){ if(x.style&&x.style.position==='absolute'&&!x.textContent.trim()) return true; x=x.parentElement;} return false;};
+ const h2=S.querySelector('h2'); if(h2){const r=h2.getBoundingClientRect(); out.h2=[Math.round(r.top),Math.round(r.bottom)];}
+ const isText=e=>[...e.childNodes].some(n=>n.nodeType===3&&n.textContent.trim());
+ const lab=e=>e.tagName.toLowerCase()+': '+(e.textContent||e.getAttribute('alt')||'').trim().slice(0,50);
+ for(const e of all){
+   const r=e.getBoundingClientRect(); if(r.width===0&&r.height===0) continue;
+   const foot=footLike(e), dec=deco(e);
+   if(isText(e)){
+     if(e.scrollWidth>e.clientWidth+1 && getComputedStyle(e).whiteSpace!=='nowrap') out.over.push(lab(e)+' (w '+e.scrollWidth+'>'+e.clientWidth+')');
+     const fs=parseFloat(getComputedStyle(e).fontSize)||24;
+     if(e.scrollHeight>e.clientHeight+Math.max(3,0.2*fs)) out.over.push(lab(e)+' (h '+e.scrollHeight+'>'+e.clientHeight+')');
+     for(const n of e.childNodes){ if(n.nodeType!==3) continue; const t=n.textContent; const re=/\S+/g; let m;
+       while((m=re.exec(t))){ const rg=document.createRange(); rg.setStart(n,m.index); rg.setEnd(n,m.index+m[0].length);
+         const rs=[...rg.getClientRects()].filter(x=>x.width>0); if(rs.length>1) out.broken.push(m[0]+' in '+lab(e));
+         for(const x of rs){ if(!foot && x.bottom>920+1) out.below.push('text "'+m[0]+'" bottom '+Math.round(x.bottom));
+           if(x.right>1792+1||x.left<128-1) out.outside.push('text "'+m[0]+'" x '+Math.round(x.left)+'-'+Math.round(x.right)); }
+       } }
+   }
+   if(!foot && !dec && r.bottom>920+1 && e.tagName!=='SECTION') out.below.push(lab(e)+' bottom '+Math.round(r.bottom));
+   if(!dec && (r.right>1792+1||r.left<128-1) && e.tagName!=='SECTION') out.outside.push(lab(e)+' x '+Math.round(r.left)+'-'+Math.round(r.right));
+ }
+ for(const e of all){ if(e.tagName!=='DIV') continue; const pr=e.getBoundingClientRect();
+   for(const c of e.children){ if(c.style.position==='absolute') continue; const cr=c.getBoundingClientRect();
+     if(cr.bottom>pr.bottom+2 || cr.right>pr.right+2) out.over.push('child '+lab(c)+' spills out of its div'); } }
+ for(const k of ['below','outside','over','broken']) out[k]=[...new Set(out[k])].slice(0,25);
+ document.getElementById('__report').textContent=JSON.stringify(out);
+}
+document.fonts.ready.then(()=>setTimeout(run,80));
+</script>
+</body></html>

@@ -1,0 +1,2791 @@
+{
+ "what": "spatially blocked CV folds for flood per road; development data only (226 train + val tiles, 1,037 touched roads); no model fitted or scored",
+ "method": "Roberts et al. 2017, Ecography 40(8) 913-929: block CV, blocks larger than the dependence range, optional buffer",
+ "projection": {
+  "kind": "local equirectangular",
+  "lon0": -90.0433,
+  "lat0": 29.7201,
+  "R_m": 6371010.0,
+  "x": "R cos(lat0) (lon - lon0)",
+  "y": "R (lat - lat0)"
+ },
+ "route": "purge",
+ "why": "merging the 63 grid blocks that share a road id leaves 4 blocks, the largest holding 524 of 1037 dev roads (50.5%), > 25%, so the grid blocks are kept and each fold's training roads that share a road id with its held-out roads are purged",
+ "blocks": {
+  "route": "purge",
+  "block_tiles": 3,
+  "block_side_m": 1750.65,
+  "origin_m": [
+   -9520.96,
+   12387.5
+  ],
+  "grid blocks": 63,
+  "grid blocks with roads": 61,
+  "road ids": 597,
+  "road ids on more than one tile": 232,
+  "road ids crossing a grid-block edge": 114,
+  "roads with such ids": 418,
+  "merged blocks (with roads)": 4,
+  "merged block sizes (roads)": [
+   524,
+   459,
+   41,
+   13
+  ],
+  "merged block sizes (grid blocks)": [
+   31,
+   21,
+   6,
+   3
+  ],
+  "largest merged block: roads": 524,
+  "largest merged block: share of dev roads": 0.505304,
+  "merge threshold (share)": 0.25,
+  "blocks": 63,
+  "blocks with dev roads": 61,
+  "tiles per block": {
+   "min": 1.0,
+   "25%": 2.0,
+   "50%": 3.0,
+   "mean": 3.5873,
+   "75%": 5.0,
+   "max": 10.0
+  },
+  "roads per block (blocks with roads)": {
+   "min": 1.0,
+   "25%": 3.0,
+   "50%": 9.0,
+   "mean": 17.0,
+   "75%": 25.0,
+   "max": 94.0
+  },
+  "tiles per block (all)": {
+   "b00_04": 4,
+   "b00_05": 8,
+   "b00_06": 5,
+   "b01_01": 5,
+   "b01_02": 3,
+   "b01_03": 2,
+   "b01_04": 6,
+   "b01_05": 1,
+   "b01_06": 6,
+   "b01_07": 4,
+   "b01_08": 1,
+   "b01_09": 1,
+   "b01_10": 3,
+   "b01_11": 1,
+   "b02_00": 1,
+   "b02_01": 8,
+   "b02_02": 2,
+   "b02_03": 7,
+   "b02_04": 10,
+   "b02_07": 1,
+   "b02_08": 6,
+   "b02_09": 6,
+   "b02_10": 4,
+   "b02_11": 2,
+   "b03_01": 1,
+   "b03_04": 2,
+   "b04_00": 5,
+   "b04_01": 5,
+   "b05_00": 4,
+   "b05_01": 5,
+   "b05_02": 2,
+   "b06_05": 2,
+   "b06_06": 1,
+   "b07_05": 3,
+   "b07_06": 5,
+   "b07_07": 2,
+   "b07_09": 1,
+   "b07_10": 3,
+   "b07_11": 4,
+   "b08_05": 3,
+   "b08_06": 6,
+   "b08_07": 5,
+   "b08_08": 4,
+   "b08_09": 4,
+   "b08_10": 3,
+   "b08_11": 3,
+   "b08_12": 2,
+   "b09_06": 1,
+   "b09_07": 1,
+   "b09_08": 6,
+   "b09_09": 8,
+   "b09_10": 5,
+   "b09_11": 5,
+   "b09_12": 3,
+   "b09_13": 1,
+   "b10_09": 2,
+   "b10_10": 2,
+   "b10_11": 6,
+   "b10_12": 4,
+   "b10_13": 3,
+   "b11_11": 3,
+   "b11_12": 3,
+   "b11_13": 1
+  },
+  "roads per block (all)": {
+   "b00_04": 23,
+   "b00_05": 56,
+   "b00_06": 29,
+   "b01_01": 8,
+   "b01_02": 3,
+   "b01_03": 2,
+   "b01_04": 33,
+   "b01_05": 0,
+   "b01_06": 25,
+   "b01_07": 14,
+   "b01_08": 4,
+   "b01_09": 1,
+   "b01_10": 28,
+   "b01_11": 2,
+   "b02_00": 1,
+   "b02_01": 14,
+   "b02_02": 4,
+   "b02_03": 30,
+   "b02_04": 58,
+   "b02_07": 1,
+   "b02_08": 37,
+   "b02_09": 77,
+   "b02_10": 16,
+   "b02_11": 2,
+   "b03_01": 1,
+   "b03_04": 4,
+   "b04_00": 4,
+   "b04_01": 9,
+   "b05_00": 6,
+   "b05_01": 17,
+   "b05_02": 4,
+   "b06_05": 8,
+   "b06_06": 4,
+   "b07_05": 13,
+   "b07_06": 37,
+   "b07_07": 5,
+   "b07_09": 3,
+   "b07_10": 3,
+   "b07_11": 10,
+   "b08_05": 3,
+   "b08_06": 25,
+   "b08_07": 61,
+   "b08_08": 34,
+   "b08_09": 22,
+   "b08_10": 9,
+   "b08_11": 5,
+   "b08_12": 2,
+   "b09_06": 0,
+   "b09_07": 3,
+   "b09_08": 11,
+   "b09_09": 94,
+   "b09_10": 23,
+   "b09_11": 35,
+   "b09_12": 3,
+   "b09_13": 1,
+   "b10_09": 2,
+   "b10_10": 2,
+   "b10_11": 12,
+   "b10_12": 45,
+   "b10_13": 21,
+   "b11_11": 17,
+   "b11_12": 9,
+   "b11_13": 2
+  },
+  "dev tiles without a touched road": 9,
+  "blocks without a touched road": 2
+ },
+ "neighbours": {
+  "neighbour rule": "8-neighbour in the same region grid, or centroids within 600 m",
+  "min cross-region centroid distance m": 5814.35
+ },
+ "fold assignment": "StratifiedGroupKFold(5, shuffle=True, random_state=seed) over the 1,037 dev roads, groups = block, y = flooded; blocks without roads to the fold with the fewest tiles; purge relative to each fold's held-out dev roads",
+ "seeds": [
+  662,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20
+ ],
+ "summary over the 21 seeds": {
+  "leakage: held-out roads sharing a road id with the fold's training roads": {
+   "tile folds (1037)": {
+    "count": {
+     "seed 662": 608.0,
+     "mean": 606.762,
+     "sd": 15.013,
+     "min": 587.0,
+     "max": 628.0
+    },
+    "share": {
+     "seed 662": 0.586307,
+     "mean": 0.585113,
+     "sd": 0.0144773,
+     "min": 0.566056,
+     "max": 0.605593
+    }
+   },
+   "tile folds (798, own split)": {
+    "count": {
+     "seed 662": 484.0,
+     "mean": 453.857,
+     "sd": 18.3883,
+     "min": 408.0,
+     "max": 484.0
+    },
+    "share": {
+     "seed 662": 0.606516,
+     "mean": 0.568743,
+     "sd": 0.0230429,
+     "min": 0.511278,
+     "max": 0.606516
+    }
+   },
+   "tile folds (798, dev split)": {
+    "count": {
+     "seed 662": 453.0,
+     "mean": 453.667,
+     "sd": 13.0588,
+     "min": 433.0,
+     "max": 474.0
+    },
+    "share": {
+     "seed 662": 0.567669,
+     "mean": 0.568505,
+     "sd": 0.0163645,
+     "min": 0.542607,
+     "max": 0.593985
+    }
+   },
+   "spatial folds (1037)": {
+    "count": {
+     "seed 662": 0.0,
+     "mean": 0.0,
+     "sd": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "share": {
+     "seed 662": 0.0,
+     "mean": 0.0,
+     "sd": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   },
+   "spatial folds (798)": {
+    "count": {
+     "seed 662": 0.0,
+     "mean": 0.0,
+     "sd": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "share": {
+     "seed 662": 0.0,
+     "mean": 0.0,
+     "sd": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   },
+   "spatial buffered (1037)": {
+    "count": {
+     "seed 662": 0.0,
+     "mean": 0.0,
+     "sd": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "share": {
+     "seed 662": 0.0,
+     "mean": 0.0,
+     "sd": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   },
+   "grid blocks without purging (1037)": {
+    "count": {
+     "seed 662": 411.0,
+     "mean": 384.048,
+     "sd": 11.8974,
+     "min": 365.0,
+     "max": 411.0
+    },
+    "share": {
+     "seed 662": 0.396336,
+     "mean": 0.370345,
+     "sd": 0.0114729,
+     "min": 0.351977,
+     "max": 0.396336
+    }
+   }
+  },
+  "nearest training-tile centroid distance to each held-out tile": {
+   "tile folds": {
+    "median_m": {
+     "seed 662": 577.963,
+     "mean": 577.963,
+     "sd": 3.09262e-13,
+     "min": 577.963,
+     "max": 577.963
+    },
+    "min_m": {
+     "seed 662": 543.818,
+     "mean": 543.818,
+     "sd": 2.32989e-13,
+     "min": 543.818,
+     "max": 543.818
+    },
+    "share touching a training tile": {
+     "seed 662": 0.990783,
+     "mean": 0.98815,
+     "sd": 0.00856838,
+     "min": 0.967742,
+     "max": 1.0
+    }
+   },
+   "spatial folds": {
+    "median_m": {
+     "seed 662": 881.441,
+     "mean": 881.441,
+     "sd": 1.51143e-10,
+     "min": 881.441,
+     "max": 881.441
+    },
+    "min_m": {
+     "seed 662": 543.818,
+     "mean": 543.818,
+     "sd": 2.32989e-13,
+     "min": 543.818,
+     "max": 543.818
+    },
+    "share touching a training tile": {
+     "seed 662": 0.603687,
+     "mean": 0.583717,
+     "sd": 0.020831,
+     "min": 0.520737,
+     "max": 0.608295
+    }
+   },
+   "spatial buffered": {
+    "median_m": {
+     "seed 662": 1365.35,
+     "mean": 1455.59,
+     "sd": 44.4171,
+     "min": 1365.35,
+     "max": 1631.45
+    },
+    "min_m": {
+     "seed 662": 1087.64,
+     "mean": 1087.64,
+     "sd": 0.0,
+     "min": 1087.64,
+     "max": 1087.64
+    },
+    "share touching a training tile": {
+     "seed 662": 0.0,
+     "mean": 0.0,
+     "sd": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   }
+  },
+  "purged training roads (sum over folds)": {
+   "seed 662": 648.0,
+   "mean": 613.095,
+   "sd": 25.4419,
+   "min": 550.0,
+   "max": 657.0
+  },
+  "buffer-dropped training roads (sum over folds)": {
+   "seed 662": 814.0,
+   "mean": 743.238,
+   "sd": 34.502,
+   "min": 696.0,
+   "max": 814.0
+  },
+  "spatial held-out roads per fold": {
+   "min over folds and seeds": 201,
+   "max over folds and seeds": 223
+  },
+  "spatial held-out flooded share per fold": {
+   "min over folds and seeds": 0.436275,
+   "max over folds and seeds": 0.466019,
+   "dev flooded share": 0.451302
+  }
+ },
+ "per fold at seed 662": {
+  "spatial": [
+   {
+    "fold": 1,
+    "held-out tiles (with roads)": 41,
+    "held-out tiles (all, incl. roadless)": 45,
+    "1037: held-out roads": 204,
+    "1037: held-out flooded share": 0.45098,
+    "1037: training roads": 733,
+    "798: held-out roads": 150,
+    "798: held-out flooded share": 0.606667,
+    "798: training roads": 570,
+    "891: held-out roads": 172,
+    "891: held-out flooded share": 0.52907,
+    "891: training roads": 629,
+    "cloud group: trusted flooded (thin cloud)": 0,
+    "cloud group: dry-labelled (thin cloud)": 22,
+    "cloud group: control (assessable, same tiles)": 29,
+    "blocks": 15,
+    "purged training roads": 100,
+    "buffer-dropped training roads": 182,
+    "buffer-dropped training roads (798)": 98
+   },
+   {
+    "fold": 2,
+    "held-out tiles (with roads)": 56,
+    "held-out tiles (all, incl. roadless)": 58,
+    "1037: held-out roads": 205,
+    "1037: held-out flooded share": 0.453659,
+    "1037: training roads": 681,
+    "798: held-out roads": 180,
+    "798: held-out flooded share": 0.494444,
+    "798: training roads": 503,
+    "891: held-out roads": 188,
+    "891: held-out flooded share": 0.494681,
+    "891: training roads": 578,
+    "cloud group: trusted flooded (thin cloud)": 4,
+    "cloud group: dry-labelled (thin cloud)": 4,
+    "cloud group: control (assessable, same tiles)": 24,
+    "blocks": 14,
+    "purged training roads": 151,
+    "buffer-dropped training roads": 148,
+    "buffer-dropped training roads (798)": 75
+   },
+   {
+    "fold": 3,
+    "held-out tiles (with roads)": 47,
+    "held-out tiles (all, incl. roadless)": 48,
+    "1037: held-out roads": 202,
+    "1037: held-out flooded share": 0.455446,
+    "1037: training roads": 670,
+    "798: held-out roads": 148,
+    "798: held-out flooded share": 0.587838,
+    "798: training roads": 523,
+    "891: held-out roads": 176,
+    "891: held-out flooded share": 0.511364,
+    "891: training roads": 575,
+    "cloud group: trusted flooded (thin cloud)": 3,
+    "cloud group: dry-labelled (thin cloud)": 25,
+    "cloud group: control (assessable, same tiles)": 50,
+    "blocks": 12,
+    "purged training roads": 165,
+    "buffer-dropped training roads": 157,
+    "buffer-dropped training roads (798)": 110
+   },
+   {
+    "fold": 4,
+    "held-out tiles (with roads)": 33,
+    "held-out tiles (all, incl. roadless)": 35,
+    "1037: held-out roads": 222,
+    "1037: held-out flooded share": 0.45045,
+    "1037: training roads": 689,
+    "798: held-out roads": 194,
+    "798: held-out flooded share": 0.510309,
+    "798: training roads": 500,
+    "891: held-out roads": 212,
+    "891: held-out flooded share": 0.471698,
+    "891: training roads": 571,
+    "cloud group: trusted flooded (thin cloud)": 1,
+    "cloud group: dry-labelled (thin cloud)": 17,
+    "cloud group: control (assessable, same tiles)": 45,
+    "blocks": 12,
+    "purged training roads": 126,
+    "buffer-dropped training roads": 113,
+    "buffer-dropped training roads (798)": 78
+   },
+   {
+    "fold": 5,
+    "held-out tiles (with roads)": 40,
+    "held-out tiles (all, incl. roadless)": 40,
+    "1037: held-out roads": 204,
+    "1037: held-out flooded share": 0.446078,
+    "1037: training roads": 727,
+    "798: held-out roads": 126,
+    "798: held-out flooded share": 0.595238,
+    "798: training roads": 589,
+    "891: held-out roads": 143,
+    "891: held-out flooded share": 0.636364,
+    "891: training roads": 657,
+    "cloud group: trusted flooded (thin cloud)": 16,
+    "cloud group: dry-labelled (thin cloud)": 1,
+    "cloud group: control (assessable, same tiles)": 27,
+    "blocks": 10,
+    "purged training roads": 106,
+    "buffer-dropped training roads": 214,
+    "buffer-dropped training roads (798)": 169
+   }
+  ],
+  "spatial buffered": [
+   {
+    "fold": 1,
+    "held-out tiles (with roads)": 41,
+    "1037: held-out roads": 204,
+    "1037: held-out flooded share": 0.45098,
+    "1037: training roads": 551,
+    "798: held-out roads": 150,
+    "798: held-out flooded share": 0.606667,
+    "798: training roads": 472,
+    "891: held-out roads": 172,
+    "891: held-out flooded share": 0.52907,
+    "891: training roads": 523
+   },
+   {
+    "fold": 2,
+    "held-out tiles (with roads)": 56,
+    "1037: held-out roads": 205,
+    "1037: held-out flooded share": 0.453659,
+    "1037: training roads": 533,
+    "798: held-out roads": 180,
+    "798: held-out flooded share": 0.494444,
+    "798: training roads": 428,
+    "891: held-out roads": 188,
+    "891: held-out flooded share": 0.494681,
+    "891: training roads": 479
+   },
+   {
+    "fold": 3,
+    "held-out tiles (with roads)": 47,
+    "1037: held-out roads": 202,
+    "1037: held-out flooded share": 0.455446,
+    "1037: training roads": 513,
+    "798: held-out roads": 148,
+    "798: held-out flooded share": 0.587838,
+    "798: training roads": 413,
+    "891: held-out roads": 176,
+    "891: held-out flooded share": 0.511364,
+    "891: training roads": 463
+   },
+   {
+    "fold": 4,
+    "held-out tiles (with roads)": 33,
+    "1037: held-out roads": 222,
+    "1037: held-out flooded share": 0.45045,
+    "1037: training roads": 576,
+    "798: held-out roads": 194,
+    "798: held-out flooded share": 0.510309,
+    "798: training roads": 422,
+    "891: held-out roads": 212,
+    "891: held-out flooded share": 0.471698,
+    "891: training roads": 483
+   },
+   {
+    "fold": 5,
+    "held-out tiles (with roads)": 40,
+    "1037: held-out roads": 204,
+    "1037: held-out flooded share": 0.446078,
+    "1037: training roads": 513,
+    "798: held-out roads": 126,
+    "798: held-out flooded share": 0.595238,
+    "798: training roads": 420,
+    "891: held-out roads": 143,
+    "891: held-out flooded share": 0.636364,
+    "891: training roads": 476
+   }
+  ],
+  "tile (split over the 1,037)": [
+   {
+    "fold": 1,
+    "held-out tiles (with roads)": 52,
+    "1037: held-out roads": 207,
+    "1037: held-out flooded share": 0.449275,
+    "1037: training roads": 830,
+    "798: held-out roads": 151,
+    "798: held-out flooded share": 0.596026,
+    "798: training roads": 647,
+    "891: held-out roads": 159,
+    "891: held-out flooded share": 0.578616,
+    "891: training roads": 732
+   },
+   {
+    "fold": 2,
+    "held-out tiles (with roads)": 47,
+    "1037: held-out roads": 207,
+    "1037: held-out flooded share": 0.449275,
+    "1037: training roads": 830,
+    "798: held-out roads": 170,
+    "798: held-out flooded share": 0.547059,
+    "798: training roads": 628,
+    "891: held-out roads": 187,
+    "891: held-out flooded share": 0.497326,
+    "891: training roads": 704
+   },
+   {
+    "fold": 3,
+    "held-out tiles (with roads)": 42,
+    "1037: held-out roads": 206,
+    "1037: held-out flooded share": 0.451456,
+    "1037: training roads": 831,
+    "798: held-out roads": 143,
+    "798: held-out flooded share": 0.552448,
+    "798: training roads": 655,
+    "891: held-out roads": 167,
+    "891: held-out flooded share": 0.54491,
+    "891: training roads": 724
+   },
+   {
+    "fold": 4,
+    "held-out tiles (with roads)": 41,
+    "1037: held-out roads": 208,
+    "1037: held-out flooded share": 0.451923,
+    "1037: training roads": 829,
+    "798: held-out roads": 171,
+    "798: held-out flooded share": 0.51462,
+    "798: training roads": 627,
+    "891: held-out roads": 198,
+    "891: held-out flooded share": 0.474747,
+    "891: training roads": 693
+   },
+   {
+    "fold": 5,
+    "held-out tiles (with roads)": 35,
+    "1037: held-out roads": 209,
+    "1037: held-out flooded share": 0.454545,
+    "1037: training roads": 828,
+    "798: held-out roads": 163,
+    "798: held-out flooded share": 0.558282,
+    "798: training roads": 635,
+    "891: held-out roads": 180,
+    "891: held-out flooded share": 0.527778,
+    "891: training roads": 711
+   }
+  ],
+  "tile (split over the 798 itself)": [
+   {
+    "fold": 1,
+    "held-out tiles (with roads)": 47,
+    "798: held-out roads": 160,
+    "798: held-out flooded share": 0.55,
+    "798: training roads": 638
+   },
+   {
+    "fold": 2,
+    "held-out tiles (with roads)": 33,
+    "798: held-out roads": 159,
+    "798: held-out flooded share": 0.553459,
+    "798: training roads": 639
+   },
+   {
+    "fold": 3,
+    "held-out tiles (with roads)": 37,
+    "798: held-out roads": 159,
+    "798: held-out flooded share": 0.553459,
+    "798: training roads": 639
+   },
+   {
+    "fold": 4,
+    "held-out tiles (with roads)": 28,
+    "798: held-out roads": 161,
+    "798: held-out flooded share": 0.559006,
+    "798: training roads": 637
+   },
+   {
+    "fold": 5,
+    "held-out tiles (with roads)": 48,
+    "798: held-out roads": 159,
+    "798: held-out flooded share": 0.54717,
+    "798: training roads": 639
+   }
+  ]
+ },
+ "per seed": [
+  {
+   "seed": 662,
+   "leak": {
+    "tile folds (1037)": [
+     608,
+     0.586307
+    ],
+    "tile folds (798, own split)": [
+     484,
+     0.606516
+    ],
+    "tile folds (798, dev split)": [
+     453,
+     0.567669
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     411,
+     0.396336
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 604.752,
+     "share of held-out tiles touching a training tile": 0.990783,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 978.817,
+     "share of held-out tiles touching a training tile": 0.603687,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1365.35,
+     "min_m": 1087.64,
+     "mean_m": 1808.14,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    100,
+    151,
+    165,
+    126,
+    106
+   ],
+   "buffer-dropped per fold": [
+    182,
+    148,
+    157,
+    113,
+    214
+   ],
+   "held-out roads per fold": [
+    204,
+    205,
+    202,
+    222,
+    204
+   ],
+   "held-out flooded share per fold": [
+    0.45098,
+    0.453659,
+    0.455446,
+    0.45045,
+    0.446078
+   ],
+   "tile folds held-out roads per fold": [
+    207,
+    207,
+    206,
+    208,
+    209
+   ]
+  },
+  {
+   "seed": 1,
+   "leak": {
+    "tile folds (1037)": [
+     594,
+     0.572806
+    ],
+    "tile folds (798, own split)": [
+     451,
+     0.565163
+    ],
+    "tile folds (798, dev split)": [
+     433,
+     0.542607
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     369,
+     0.355834
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 599.744,
+     "share of held-out tiles touching a training tile": 0.995392,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 983.177,
+     "share of held-out tiles touching a training tile": 0.589862,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1631.45,
+     "min_m": 1087.64,
+     "mean_m": 1797.4,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    92,
+    158,
+    160,
+    101,
+    81
+   ],
+   "buffer-dropped per fold": [
+    164,
+    138,
+    160,
+    80,
+    175
+   ],
+   "held-out roads per fold": [
+    204,
+    205,
+    223,
+    202,
+    203
+   ],
+   "held-out flooded share per fold": [
+    0.45098,
+    0.453659,
+    0.457399,
+    0.450495,
+    0.44335
+   ],
+   "tile folds held-out roads per fold": [
+    209,
+    208,
+    206,
+    207,
+    207
+   ]
+  },
+  {
+   "seed": 2,
+   "leak": {
+    "tile folds (1037)": [
+     616,
+     0.594021
+    ],
+    "tile folds (798, own split)": [
+     457,
+     0.572682
+    ],
+    "tile folds (798, dev split)": [
+     445,
+     0.557644
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     384,
+     0.370299
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 596.182,
+     "share of held-out tiles touching a training tile": 0.995392,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 1023.08,
+     "share of held-out tiles touching a training tile": 0.571429,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1640.28,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    98,
+    128,
+    157,
+    112,
+    122
+   ],
+   "buffer-dropped per fold": [
+    184,
+    119,
+    119,
+    127,
+    246
+   ],
+   "held-out roads per fold": [
+    204,
+    219,
+    206,
+    206,
+    202
+   ],
+   "held-out flooded share per fold": [
+    0.446078,
+    0.447489,
+    0.466019,
+    0.446602,
+    0.450495
+   ],
+   "tile folds held-out roads per fold": [
+    206,
+    206,
+    210,
+    208,
+    207
+   ]
+  },
+  {
+   "seed": 3,
+   "leak": {
+    "tile folds (1037)": [
+     619,
+     0.596914
+    ],
+    "tile folds (798, own split)": [
+     445,
+     0.557644
+    ],
+    "tile folds (798, dev split)": [
+     472,
+     0.591479
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     373,
+     0.359691
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 600.999,
+     "share of held-out tiles touching a training tile": 0.981567,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 986.34,
+     "share of held-out tiles touching a training tile": 0.59447,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1725.69,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    118,
+    127,
+    130,
+    114,
+    89
+   ],
+   "buffer-dropped per fold": [
+    145,
+    132,
+    147,
+    93,
+    187
+   ],
+   "held-out roads per fold": [
+    206,
+    205,
+    202,
+    202,
+    222
+   ],
+   "held-out flooded share per fold": [
+    0.446602,
+    0.463415,
+    0.445545,
+    0.455446,
+    0.445946
+   ],
+   "tile folds held-out roads per fold": [
+    210,
+    207,
+    207,
+    206,
+    207
+   ]
+  },
+  {
+   "seed": 4,
+   "leak": {
+    "tile folds (1037)": [
+     627,
+     0.604629
+    ],
+    "tile folds (798, own split)": [
+     408,
+     0.511278
+    ],
+    "tile folds (798, dev split)": [
+     474,
+     0.593985
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     367,
+     0.353905
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 607.883,
+     "share of held-out tiles touching a training tile": 0.986175,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 1035.02,
+     "share of held-out tiles touching a training tile": 0.580645,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1763.37,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    128,
+    136,
+    139,
+    114,
+    83
+   ],
+   "buffer-dropped per fold": [
+    179,
+    127,
+    162,
+    125,
+    168
+   ],
+   "held-out roads per fold": [
+    223,
+    205,
+    202,
+    204,
+    203
+   ],
+   "held-out flooded share per fold": [
+    0.44843,
+    0.463415,
+    0.450495,
+    0.45098,
+    0.44335
+   ],
+   "tile folds held-out roads per fold": [
+    207,
+    210,
+    207,
+    206,
+    207
+   ]
+  },
+  {
+   "seed": 5,
+   "leak": {
+    "tile folds (1037)": [
+     587,
+     0.566056
+    ],
+    "tile folds (798, own split)": [
+     428,
+     0.536341
+    ],
+    "tile folds (798, dev split)": [
+     436,
+     0.546366
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     376,
+     0.362584
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 610.144,
+     "share of held-out tiles touching a training tile": 0.990783,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 1073.74,
+     "share of held-out tiles touching a training tile": 0.520737,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1624.06,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    139,
+    105,
+    154,
+    111,
+    130
+   ],
+   "buffer-dropped per fold": [
+    144,
+    108,
+    121,
+    107,
+    241
+   ],
+   "held-out roads per fold": [
+    204,
+    221,
+    206,
+    204,
+    202
+   ],
+   "held-out flooded share per fold": [
+    0.45098,
+    0.447964,
+    0.466019,
+    0.446078,
+    0.445545
+   ],
+   "tile folds held-out roads per fold": [
+    206,
+    207,
+    208,
+    207,
+    209
+   ]
+  },
+  {
+   "seed": 6,
+   "leak": {
+    "tile folds (1037)": [
+     595,
+     0.57377
+    ],
+    "tile folds (798, own split)": [
+     439,
+     0.550125
+    ],
+    "tile folds (798, dev split)": [
+     448,
+     0.561404
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     388,
+     0.374156
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 596.576,
+     "share of held-out tiles touching a training tile": 0.995392,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 1108.43,
+     "share of held-out tiles touching a training tile": 0.59447,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1792.89,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    124,
+    130,
+    118,
+    130,
+    115
+   ],
+   "buffer-dropped per fold": [
+    140,
+    124,
+    191,
+    115,
+    197
+   ],
+   "held-out roads per fold": [
+    205,
+    204,
+    221,
+    203,
+    204
+   ],
+   "held-out flooded share per fold": [
+    0.453659,
+    0.460784,
+    0.447964,
+    0.448276,
+    0.446078
+   ],
+   "tile folds held-out roads per fold": [
+    207,
+    207,
+    207,
+    207,
+    209
+   ]
+  },
+  {
+   "seed": 7,
+   "leak": {
+    "tile folds (1037)": [
+     587,
+     0.566056
+    ],
+    "tile folds (798, own split)": [
+     450,
+     0.56391
+    ],
+    "tile folds (798, dev split)": [
+     437,
+     0.547619
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     389,
+     0.375121
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 620.226,
+     "share of held-out tiles touching a training tile": 0.967742,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 1010.86,
+     "share of held-out tiles touching a training tile": 0.571429,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1787.69,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    129,
+    128,
+    143,
+    130,
+    65
+   ],
+   "buffer-dropped per fold": [
+    158,
+    132,
+    183,
+    139,
+    141
+   ],
+   "held-out roads per fold": [
+    205,
+    204,
+    222,
+    202,
+    204
+   ],
+   "held-out flooded share per fold": [
+    0.44878,
+    0.465686,
+    0.454955,
+    0.450495,
+    0.436275
+   ],
+   "tile folds held-out roads per fold": [
+    210,
+    206,
+    206,
+    206,
+    209
+   ]
+  },
+  {
+   "seed": 8,
+   "leak": {
+    "tile folds (1037)": [
+     606,
+     0.584378
+    ],
+    "tile folds (798, own split)": [
+     479,
+     0.600251
+    ],
+    "tile folds (798, dev split)": [
+     450,
+     0.56391
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     391,
+     0.377049
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 597.75,
+     "share of held-out tiles touching a training tile": 0.995392,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 965.798,
+     "share of held-out tiles touching a training tile": 0.608295,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1625.74,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    127,
+    134,
+    156,
+    128,
+    112
+   ],
+   "buffer-dropped per fold": [
+    164,
+    140,
+    152,
+    112,
+    196
+   ],
+   "held-out roads per fold": [
+    222,
+    206,
+    203,
+    205,
+    201
+   ],
+   "held-out flooded share per fold": [
+    0.445946,
+    0.466019,
+    0.448276,
+    0.44878,
+    0.447761
+   ],
+   "tile folds held-out roads per fold": [
+    207,
+    206,
+    209,
+    208,
+    207
+   ]
+  },
+  {
+   "seed": 9,
+   "leak": {
+    "tile folds (1037)": [
+     591,
+     0.569913
+    ],
+    "tile folds (798, own split)": [
+     484,
+     0.606516
+    ],
+    "tile folds (798, dev split)": [
+     446,
+     0.558897
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     382,
+     0.36837
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 623.146,
+     "share of held-out tiles touching a training tile": 0.967742,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 998.165,
+     "share of held-out tiles touching a training tile": 0.603687,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1712.64,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    109,
+    128,
+    144,
+    132,
+    102
+   ],
+   "buffer-dropped per fold": [
+    153,
+    134,
+    167,
+    119,
+    209
+   ],
+   "held-out roads per fold": [
+    206,
+    205,
+    202,
+    222,
+    202
+   ],
+   "held-out flooded share per fold": [
+    0.446602,
+    0.463415,
+    0.455446,
+    0.445946,
+    0.445545
+   ],
+   "tile folds held-out roads per fold": [
+    208,
+    209,
+    208,
+    206,
+    206
+   ]
+  },
+  {
+   "seed": 10,
+   "leak": {
+    "tile folds (1037)": [
+     597,
+     0.575699
+    ],
+    "tile folds (798, own split)": [
+     462,
+     0.578947
+    ],
+    "tile folds (798, dev split)": [
+     439,
+     0.550125
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     383,
+     0.369335
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 611.136,
+     "share of held-out tiles touching a training tile": 0.986175,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 982.541,
+     "share of held-out tiles touching a training tile": 0.59447,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1669.62,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    126,
+    129,
+    155,
+    123,
+    80
+   ],
+   "buffer-dropped per fold": [
+    125,
+    133,
+    180,
+    112,
+    189
+   ],
+   "held-out roads per fold": [
+    201,
+    207,
+    223,
+    204,
+    202
+   ],
+   "held-out flooded share per fold": [
+    0.447761,
+    0.463768,
+    0.44843,
+    0.45098,
+    0.445545
+   ],
+   "tile folds held-out roads per fold": [
+    209,
+    209,
+    206,
+    207,
+    206
+   ]
+  },
+  {
+   "seed": 11,
+   "leak": {
+    "tile folds (1037)": [
+     590,
+     0.568949
+    ],
+    "tile folds (798, own split)": [
+     450,
+     0.56391
+    ],
+    "tile folds (798, dev split)": [
+     441,
+     0.552632
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     402,
+     0.387657
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 598.4,
+     "share of held-out tiles touching a training tile": 0.995392,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 993.876,
+     "share of held-out tiles touching a training tile": 0.59447,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1756.78,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    122,
+    127,
+    151,
+    122,
+    91
+   ],
+   "buffer-dropped per fold": [
+    200,
+    135,
+    155,
+    123,
+    187
+   ],
+   "held-out roads per fold": [
+    204,
+    205,
+    223,
+    203,
+    202
+   ],
+   "held-out flooded share per fold": [
+    0.45098,
+    0.463415,
+    0.44843,
+    0.448276,
+    0.445545
+   ],
+   "tile folds held-out roads per fold": [
+    207,
+    210,
+    206,
+    206,
+    208
+   ]
+  },
+  {
+   "seed": 12,
+   "leak": {
+    "tile folds (1037)": [
+     619,
+     0.596914
+    ],
+    "tile folds (798, own split)": [
+     470,
+     0.588972
+    ],
+    "tile folds (798, dev split)": [
+     463,
+     0.580201
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     382,
+     0.36837
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 600.291,
+     "share of held-out tiles touching a training tile": 0.990783,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 1000.76,
+     "share of held-out tiles touching a training tile": 0.585253,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1766.48,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    116,
+    141,
+    143,
+    100,
+    103
+   ],
+   "buffer-dropped per fold": [
+    184,
+    111,
+    153,
+    119,
+    188
+   ],
+   "held-out roads per fold": [
+    203,
+    222,
+    205,
+    204,
+    203
+   ],
+   "held-out flooded share per fold": [
+    0.453202,
+    0.459459,
+    0.439024,
+    0.455882,
+    0.448276
+   ],
+   "tile folds held-out roads per fold": [
+    209,
+    207,
+    208,
+    207,
+    206
+   ]
+  },
+  {
+   "seed": 13,
+   "leak": {
+    "tile folds (1037)": [
+     623,
+     0.600771
+    ],
+    "tile folds (798, own split)": [
+     453,
+     0.567669
+    ],
+    "tile folds (798, dev split)": [
+     462,
+     0.578947
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     380,
+     0.366442
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 596.476,
+     "share of held-out tiles touching a training tile": 0.990783,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 994.22,
+     "share of held-out tiles touching a training tile": 0.585253,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1616.62,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    133,
+    132,
+    143,
+    126,
+    112
+   ],
+   "buffer-dropped per fold": [
+    136,
+    129,
+    125,
+    110,
+    215
+   ],
+   "held-out roads per fold": [
+    202,
+    205,
+    207,
+    219,
+    204
+   ],
+   "held-out flooded share per fold": [
+    0.455446,
+    0.463415,
+    0.449275,
+    0.442922,
+    0.446078
+   ],
+   "tile folds held-out roads per fold": [
+    208,
+    207,
+    208,
+    208,
+    206
+   ]
+  },
+  {
+   "seed": 14,
+   "leak": {
+    "tile folds (1037)": [
+     626,
+     0.603664
+    ],
+    "tile folds (798, own split)": [
+     456,
+     0.571429
+    ],
+    "tile folds (798, dev split)": [
+     471,
+     0.590226
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     400,
+     0.385728
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 594.128,
+     "share of held-out tiles touching a training tile": 0.990783,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 982.487,
+     "share of held-out tiles touching a training tile": 0.599078,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1587.82,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    114,
+    119,
+    141,
+    133,
+    115
+   ],
+   "buffer-dropped per fold": [
+    137,
+    135,
+    152,
+    118,
+    197
+   ],
+   "held-out roads per fold": [
+    202,
+    205,
+    203,
+    222,
+    205
+   ],
+   "held-out flooded share per fold": [
+    0.445545,
+    0.463415,
+    0.448276,
+    0.45045,
+    0.44878
+   ],
+   "tile folds held-out roads per fold": [
+    211,
+    206,
+    206,
+    207,
+    207
+   ]
+  },
+  {
+   "seed": 15,
+   "leak": {
+    "tile folds (1037)": [
+     621,
+     0.598843
+    ],
+    "tile folds (798, own split)": [
+     439,
+     0.550125
+    ],
+    "tile folds (798, dev split)": [
+     468,
+     0.586466
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     395,
+     0.380906
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 599.224,
+     "share of held-out tiles touching a training tile": 0.986175,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 988.051,
+     "share of held-out tiles touching a training tile": 0.580645,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1700.6,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    128,
+    141,
+    129,
+    125,
+    93
+   ],
+   "buffer-dropped per fold": [
+    171,
+    136,
+    124,
+    107,
+    165
+   ],
+   "held-out roads per fold": [
+    223,
+    205,
+    203,
+    201,
+    205
+   ],
+   "held-out flooded share per fold": [
+    0.452915,
+    0.463415,
+    0.448276,
+    0.447761,
+    0.443902
+   ],
+   "tile folds held-out roads per fold": [
+    206,
+    206,
+    207,
+    208,
+    210
+   ]
+  },
+  {
+   "seed": 16,
+   "leak": {
+    "tile folds (1037)": [
+     593,
+     0.571842
+    ],
+    "tile folds (798, own split)": [
+     448,
+     0.561404
+    ],
+    "tile folds (798, dev split)": [
+     451,
+     0.565163
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     389,
+     0.375121
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 602.482,
+     "share of held-out tiles touching a training tile": 0.995392,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 967.693,
+     "share of held-out tiles touching a training tile": 0.608295,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1647.0,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    126,
+    131,
+    147,
+    115,
+    89
+   ],
+   "buffer-dropped per fold": [
+    176,
+    131,
+    136,
+    98,
+    165
+   ],
+   "held-out roads per fold": [
+    222,
+    207,
+    201,
+    202,
+    205
+   ],
+   "held-out flooded share per fold": [
+    0.445946,
+    0.463768,
+    0.447761,
+    0.450495,
+    0.44878
+   ],
+   "tile folds held-out roads per fold": [
+    207,
+    207,
+    208,
+    208,
+    207
+   ]
+  },
+  {
+   "seed": 17,
+   "leak": {
+    "tile folds (1037)": [
+     618,
+     0.59595
+    ],
+    "tile folds (798, own split)": [
+     465,
+     0.582707
+    ],
+    "tile folds (798, dev split)": [
+     463,
+     0.580201
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     371,
+     0.357763
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 594.957,
+     "share of held-out tiles touching a training tile": 1.0,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 1001.07,
+     "share of held-out tiles touching a training tile": 0.580645,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1746.2,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    135,
+    144,
+    140,
+    118,
+    78
+   ],
+   "buffer-dropped per fold": [
+    161,
+    100,
+    170,
+    110,
+    181
+   ],
+   "held-out roads per fold": [
+    203,
+    221,
+    204,
+    205,
+    204
+   ],
+   "held-out flooded share per fold": [
+    0.448276,
+    0.457014,
+    0.45098,
+    0.453659,
+    0.446078
+   ],
+   "tile folds held-out roads per fold": [
+    207,
+    207,
+    207,
+    207,
+    209
+   ]
+  },
+  {
+   "seed": 18,
+   "leak": {
+    "tile folds (1037)": [
+     587,
+     0.566056
+    ],
+    "tile folds (798, own split)": [
+     467,
+     0.585213
+    ],
+    "tile folds (798, dev split)": [
+     445,
+     0.557644
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     388,
+     0.374156
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 605.87,
+     "share of held-out tiles touching a training tile": 0.981567,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 1011.46,
+     "share of held-out tiles touching a training tile": 0.580645,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1613.23,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    104,
+    141,
+    129,
+    106,
+    107
+   ],
+   "buffer-dropped per fold": [
+    122,
+    164,
+    151,
+    97,
+    201
+   ],
+   "held-out roads per fold": [
+    202,
+    204,
+    203,
+    206,
+    222
+   ],
+   "held-out flooded share per fold": [
+    0.450495,
+    0.460784,
+    0.448276,
+    0.446602,
+    0.45045
+   ],
+   "tile folds held-out roads per fold": [
+    209,
+    209,
+    205,
+    208,
+    206
+   ]
+  },
+  {
+   "seed": 19,
+   "leak": {
+    "tile folds (1037)": [
+     610,
+     0.588235
+    ],
+    "tile folds (798, own split)": [
+     459,
+     0.575188
+    ],
+    "tile folds (798, dev split)": [
+     465,
+     0.582707
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     380,
+     0.366442
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 609.056,
+     "share of held-out tiles touching a training tile": 0.981567,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 1044.71,
+     "share of held-out tiles touching a training tile": 0.557604,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1628.06,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    128,
+    136,
+    151,
+    106,
+    123
+   ],
+   "buffer-dropped per fold": [
+    120,
+    170,
+    116,
+    116,
+    198
+   ],
+   "held-out roads per fold": [
+    203,
+    222,
+    206,
+    204,
+    202
+   ],
+   "held-out flooded share per fold": [
+    0.448276,
+    0.445946,
+    0.466019,
+    0.45098,
+    0.445545
+   ],
+   "tile folds held-out roads per fold": [
+    208,
+    209,
+    207,
+    207,
+    206
+   ]
+  },
+  {
+   "seed": 20,
+   "leak": {
+    "tile folds (1037)": [
+     628,
+     0.605593
+    ],
+    "tile folds (798, own split)": [
+     437,
+     0.547619
+    ],
+    "tile folds (798, dev split)": [
+     465,
+     0.582707
+    ],
+    "spatial folds (1037)": [
+     0,
+     0.0
+    ],
+    "spatial folds (798)": [
+     0,
+     0.0
+    ],
+    "spatial buffered (1037)": [
+     0,
+     0.0
+    ],
+    "grid blocks without purging (1037)": [
+     365,
+     0.351977
+    ]
+   },
+   "nearest": {
+    "tile folds": {
+     "median_m": 577.963,
+     "min_m": 543.818,
+     "mean_m": 601.451,
+     "share of held-out tiles touching a training tile": 0.986175,
+     "held-out tiles": 217
+    },
+    "spatial folds": {
+     "median_m": 881.441,
+     "min_m": 543.818,
+     "mean_m": 1006.44,
+     "share of held-out tiles touching a training tile": 0.552995,
+     "held-out tiles": 217
+    },
+    "spatial buffered": {
+     "median_m": 1451.08,
+     "min_m": 1087.64,
+     "mean_m": 1676.3,
+     "share of held-out tiles touching a training tile": 0.0,
+     "held-out tiles": 217
+    }
+   },
+   "purged per fold": [
+    106,
+    127,
+    130,
+    116,
+    71
+   ],
+   "buffer-dropped per fold": [
+    152,
+    132,
+    153,
+    117,
+    142
+   ],
+   "held-out roads per fold": [
+    204,
+    205,
+    202,
+    205,
+    221
+   ],
+   "held-out flooded share per fold": [
+    0.446078,
+    0.463415,
+    0.455446,
+    0.443902,
+    0.447964
+   ],
+   "tile folds held-out roads per fold": [
+    209,
+    207,
+    206,
+    210,
+    205
+   ]
+  }
+ ],
+ "raw-label correlogram (dev roads on different tiles, different road ids)": [
+  {
+   "band_km": "0-1",
+   "pairs": 18919,
+   "correlation": 0.535718
+  },
+  {
+   "band_km": "1-2",
+   "pairs": 26021,
+   "correlation": 0.380951
+  },
+  {
+   "band_km": "2-3",
+   "pairs": 26285,
+   "correlation": 0.219453
+  },
+  {
+   "band_km": "3-4",
+   "pairs": 23360,
+   "correlation": 0.157911
+  },
+  {
+   "band_km": "4-6",
+   "pairs": 55005,
+   "correlation": 0.0838227
+  },
+  {
+   "band_km": "6-8",
+   "pairs": 42611,
+   "correlation": 0.149931
+  },
+  {
+   "band_km": "8-12",
+   "pairs": 119221,
+   "correlation": -0.217727
+  },
+  {
+   "band_km": "12-16",
+   "pairs": 125759,
+   "correlation": -0.132737
+  },
+  {
+   "band_km": "16-24",
+   "pairs": 92451,
+   "correlation": -0.0159428
+  }
+ ],
+ "block-size scan (sensitivity; primary is 3)": [
+  {
+   "block_tiles": 3,
+   "side_m": 1750.65,
+   "route": "purge",
+   "blocks": 63,
+   "blocks with roads": 61,
+   "largest merged share": 0.505304,
+   "held-out roads per fold (min, max over 21 seeds)": [
+    201,
+    223
+   ],
+   "training roads per fold (mean, min)": [
+    706.981,
+    654
+   ],
+   "held-out flooded share per fold (min, max)": [
+    0.436275,
+    0.466019
+   ],
+   "purged per seed (mean)": 613.095
+  },
+  {
+   "block_tiles": 4,
+   "side_m": 2334.21,
+   "route": "purge",
+   "blocks": 40,
+   "blocks with roads": 40,
+   "largest merged share": 0.504339,
+   "held-out roads per fold (min, max over 21 seeds)": [
+    191,
+    227
+   ],
+   "training roads per fold (mean, min)": [
+    727.143,
+    676
+   ],
+   "held-out flooded share per fold (min, max)": [
+    0.39,
+    0.502242
+   ],
+   "purged per seed (mean)": 512.286
+  },
+  {
+   "block_tiles": 5,
+   "side_m": 2917.76,
+   "route": "purge",
+   "blocks": 30,
+   "blocks with roads": 29,
+   "largest merged share": 0.504339,
+   "held-out roads per fold (min, max over 21 seeds)": [
+    183,
+    245
+   ],
+   "training roads per fold (mean, min)": [
+    762.971,
+    701
+   ],
+   "held-out flooded share per fold (min, max)": [
+    0.376238,
+    0.556485
+   ],
+   "purged per seed (mean)": 333.143
+  },
+  {
+   "block_tiles": 6,
+   "side_m": 3501.31,
+   "route": "purge",
+   "blocks": 26,
+   "blocks with roads": 26,
+   "largest merged share": 0.505304,
+   "held-out roads per fold (min, max over 21 seeds)": [
+    191,
+    242
+   ],
+   "training roads per fold (mean, min)": [
+    761.8,
+    740
+   ],
+   "held-out flooded share per fold (min, max)": [
+    0.375,
+    0.544554
+   ],
+   "purged per seed (mean)": 339.0
+  },
+  {
+   "block_tiles": 7,
+   "side_m": 4084.86,
+   "route": "purge",
+   "blocks": 20,
+   "blocks with roads": 19,
+   "largest merged share": 0.505304,
+   "held-out roads per fold (min, max over 21 seeds)": [
+    180,
+    241
+   ],
+   "training roads per fold (mean, min)": [
+    770.543,
+    751
+   ],
+   "held-out flooded share per fold (min, max)": [
+    0.330357,
+    0.526971
+   ],
+   "purged per seed (mean)": 295.286
+  }
+ ],
+ "size-matched tile folds (control)": "tile_folds(over='dev') with fold k's dev training roads subsampled (default_rng(seed)) to the size of spatial fold k's dev training roads",
+ "dev counts": {
+  "tiles": 226,
+  "roads": 1037,
+  "production rule": 798,
+  "tile rule": 891,
+  "flooded": 468,
+  "trusted flooded (thin cloud)": 24,
+  "dry-labelled (thin cloud)": 69,
+  "control (assessable, same tiles)": 175
+ }
+}
